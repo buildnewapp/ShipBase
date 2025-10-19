@@ -14,13 +14,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import type { HeaderDictionary } from "@/i18n/types";
+import type { HeaderDictionary, Locale } from "@/i18n/types";
 
 interface UserMenuProps {
   dictionary: HeaderDictionary;
+  locale: Locale;
 }
 
-export function UserMenu({ dictionary }: UserMenuProps) {
+export function UserMenu({ dictionary, locale }: UserMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const session = authClient.useSession();
@@ -92,13 +93,13 @@ export function UserMenu({ dictionary }: UserMenuProps) {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
-          <Link href="/profile" className="cursor-pointer">
+          <Link href={locale === 'en' ? '/profile' : `/${locale}/profile`} className="cursor-pointer">
             <User className="mr-2 h-4 w-4" />
             <span>{dictionary.userMenu.profile}</span>
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/membership" className="cursor-pointer">
+          <Link href={locale === 'en' ? '/membership' : `/${locale}/membership`} className="cursor-pointer">
             <Crown className="mr-2 h-4 w-4" />
             <span>{dictionary.userMenu.membership}</span>
           </Link>

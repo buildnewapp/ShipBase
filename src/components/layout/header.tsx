@@ -58,7 +58,7 @@ export function Header() {
           <LanguageSwitcher currentLocale={locale} />
           <ThemeSwitcher dictionary={dictionary.header} />
           {isAuthenticated ? (
-            <UserMenu dictionary={dictionary.header} />
+            <UserMenu dictionary={dictionary.header} locale={locale} />
           ) : (
             <>
               <Button variant="ghost" asChild>
@@ -126,7 +126,7 @@ export function Header() {
               {isAuthenticated ? (
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3 p-3 rounded-lg bg-neutral-50 dark:bg-neutral-900">
-                    <UserMenu dictionary={dictionary.header} />
+                    <UserMenu dictionary={dictionary.header} locale={locale} />
                     <div className="flex-1">
                       <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
                         {session.data?.user?.name || "用户"}
