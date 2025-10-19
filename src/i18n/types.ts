@@ -487,6 +487,73 @@ export interface PrivacyPageDictionary extends PageDictionary {
   };
 }
 
+export interface TermsPageDictionary extends PageDictionary {
+  lastUpdated: string;
+  introduction: {
+    title: string;
+    content: string;
+  };
+  serviceUse: {
+    title: string;
+    content: string;
+  };
+  userAccounts: {
+    title: string;
+    content: string;
+  };
+  intellectualProperty: {
+    title: string;
+    content: string;
+    points: string[];
+  };
+  prohibitedActivities: {
+    title: string;
+    content: string;
+    activities: string[];
+  };
+  privacyData: {
+    title: string;
+    content: string;
+    dataTypes: string[];
+    privacyPolicy: string;
+  };
+  pricingPayments: {
+    title: string;
+    points: string[];
+  };
+  termination: {
+    title: string;
+    content: string;
+  };
+  warranties: {
+    title: string;
+    content: string;
+  };
+  liability: {
+    title: string;
+    content: string;
+  };
+  indemnification: {
+    title: string;
+    content: string;
+  };
+  governingLaw: {
+    title: string;
+    content: string;
+  };
+  changes: {
+    title: string;
+    content: string;
+  };
+  contact: {
+    title: string;
+    content: string;
+  };
+  acknowledgment: {
+    content: string;
+  };
+}
+
 export interface PagesDictionary {
   features: FeaturesPageDictionary;
   pricing: PricingPageDictionary;
@@ -496,7 +563,7 @@ export interface PagesDictionary {
   contact: ContactPageDictionary;
   status: StatusPageDictionary;
   privacy: PrivacyPageDictionary;
-  terms: PageDictionary;
+  terms: TermsPageDictionary;
   security: PageDictionary;
   cookies: PageDictionary;
   login: PageDictionary;

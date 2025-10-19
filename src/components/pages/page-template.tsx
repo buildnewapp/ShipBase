@@ -1,11 +1,11 @@
-import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary, StatusPageDictionary, PrivacyPageDictionary } from "@/i18n/types";
+import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary, StatusPageDictionary, PrivacyPageDictionary, TermsPageDictionary } from "@/i18n/types";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users, Lock } from "lucide-react";
 
 interface PageTemplateProps {
-  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary | PrivacyPageDictionary;
+  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary | PrivacyPageDictionary | TermsPageDictionary;
 }
 
 export function PageTemplate({ dictionary }: PageTemplateProps) {
@@ -39,7 +39,7 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
       return <PrivacyContent dictionary={dictionary as PrivacyPageDictionary} />;
     }
     if (dictionary.title === "服务条款" || dictionary.title === "Terms of Service" || dictionary.title === "利用規約") {
-      return <TermsContent dictionary={dictionary as PageDictionary} />;
+      return <TermsContent dictionary={dictionary as TermsPageDictionary} />;
     }
     if (dictionary.title === "安全" || dictionary.title === "Security" || dictionary.title === "セキュリティ") {
       return <SecurityContent dictionary={dictionary as PageDictionary} />;
@@ -1380,55 +1380,226 @@ function PrivacyContent({ dictionary }: { dictionary: PrivacyPageDictionary }) {
 }
 
 // 服务条款页面内容
-function TermsContent({ dictionary }: { dictionary: PageDictionary }) {
+function TermsContent({ dictionary }: { dictionary: TermsPageDictionary }) {
   return (
-      <div className="space-y-16">
-        <div className="prose prose-neutral dark:prose-invert max-w-none">
-          <h2>服务条款</h2>
-          <p>最后更新：2024年1月1日</p>
+    <div className="space-y-16">
+      {/* 最后更新时间 */}
+      <div className="text-center">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+          {dictionary.lastUpdated}
+        </p>
+      </div>
 
-          <h3>1. 接受条款</h3>
-          <p>通过使用 ShipBase 服务，您同意遵守本服务条款。</p>
+      {/* 介绍 */}
+      <div className="prose prose-neutral dark:prose-invert max-w-none">
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.introduction.title}
+        </h2>
+        <p className="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
+          {dictionary.introduction.content}
+        </p>
+      </div>
 
-          <h3>2. 服务描述</h3>
-          <p>ShipBase 提供 AI SaaS 开发模板和相关服务，包括但不限于：</p>
-          <ul>
-            <li>代码模板和组件</li>
-            <li>技术文档和支持</li>
-            <li>部署和集成服务</li>
+      {/* 服务使用 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.serviceUse.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.serviceUse.content}
+          </p>
+        </Card>
+      </div>
+
+      {/* 用户账户 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.userAccounts.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.userAccounts.content}
+          </p>
+        </Card>
+      </div>
+
+      {/* 知识产权 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.intellectualProperty.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 mb-6 leading-relaxed">
+            {dictionary.intellectualProperty.content}
+          </p>
+          <ul className="space-y-3">
+            {dictionary.intellectualProperty.points.map((point, index) => (
+              <li key={index} className="flex items-start space-x-3">
+                <span className="text-blue-600 dark:text-blue-400 font-bold mt-1">•</span>
+                <span className="text-neutral-600 dark:text-neutral-300">{point}</span>
+              </li>
+            ))}
           </ul>
+        </Card>
+      </div>
 
-          <h3>3. 用户责任</h3>
-          <p>用户同意：</p>
-          <ul>
-            <li>提供准确的信息</li>
-            <li>遵守适用法律</li>
-            <li>不滥用服务</li>
-            <li>保护账户安全</li>
+      {/* 禁止活动 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.prohibitedActivities.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 mb-6 leading-relaxed">
+            {dictionary.prohibitedActivities.content}
+          </p>
+          <ul className="space-y-3">
+            {dictionary.prohibitedActivities.activities.map((activity, index) => (
+              <li key={index} className="flex items-start space-x-3">
+                <span className="text-red-600 dark:text-red-400 font-bold mt-1">•</span>
+                <span className="text-neutral-600 dark:text-neutral-300">{activity}</span>
+              </li>
+            ))}
           </ul>
+        </Card>
+      </div>
 
-          <h3>4. 知识产权</h3>
-          <p>ShipBase 及其内容受知识产权法保护。用户获得有限的、非独占的使用许可。</p>
+      {/* 隐私和数据收集 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.privacyData.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 mb-6 leading-relaxed">
+            {dictionary.privacyData.content}
+          </p>
+          <ul className="space-y-3 mb-6">
+            {dictionary.privacyData.dataTypes.map((dataType, index) => (
+              <li key={index} className="flex items-start space-x-3">
+                <span className="text-green-600 dark:text-green-400 font-bold mt-1">•</span>
+                <span className="text-neutral-600 dark:text-neutral-300">{dataType}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.privacyData.privacyPolicy}
+          </p>
+        </Card>
+      </div>
 
-          <h3>5. 服务可用性</h3>
-          <p>我们努力保持服务的高可用性，但不保证服务不会中断。</p>
+      {/* 定价和支付 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.pricingPayments.title}
+        </h2>
+        <Card className="p-8">
+          <ul className="space-y-3">
+            {dictionary.pricingPayments.points.map((point, index) => (
+              <li key={index} className="flex items-start space-x-3">
+                <span className="text-blue-600 dark:text-blue-400 font-bold mt-1">•</span>
+                <span className="text-neutral-600 dark:text-neutral-300">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </div>
 
-          <h3>6. 免责声明</h3>
-          <p>服务按&ldquo;现状&rdquo;提供，我们不提供任何明示或暗示的保证。</p>
+      {/* 终止 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.termination.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.termination.content}
+          </p>
+        </Card>
+      </div>
 
-          <h3>7. 责任限制</h3>
-          <p>我们的责任限于您支付的费用金额。</p>
+      {/* 免责声明 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.warranties.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.warranties.content}
+          </p>
+        </Card>
+      </div>
 
-          <h3>8. 终止</h3>
-          <p>我们保留随时终止服务的权利。</p>
+      {/* 责任限制 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.liability.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.liability.content}
+          </p>
+        </Card>
+      </div>
 
-          <h3>9. 争议解决</h3>
-          <p>任何争议应通过友好协商解决。</p>
+      {/* 赔偿 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.indemnification.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.indemnification.content}
+          </p>
+        </Card>
+      </div>
 
-          <h3>10. 联系我们</h3>
-          <p>如有疑问，请联系：legal@shipbase.com</p>
+      {/* 适用法律 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.governingLaw.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.governingLaw.content}
+          </p>
+        </Card>
+      </div>
+
+      {/* 条款变更 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.changes.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.changes.content}
+          </p>
+        </Card>
+      </div>
+
+      {/* 联系信息 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.contact.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.contact.content}
+          </p>
+        </Card>
+      </div>
+
+      {/* 确认声明 */}
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-8">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+            {dictionary.title === "服务条款" ? "确认条款" : "Acknowledgment"}
+          </h2>
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.acknowledgment.content}
+          </p>
         </div>
       </div>
+    </div>
   );
 }
 

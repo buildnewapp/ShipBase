@@ -1260,6 +1260,90 @@ export const enDictionary: AppDictionary = {
       title: "Terms of Service",
       subtitle: "Our terms and conditions",
       description: "Read our terms of service and understand your rights and responsibilities.",
+      lastUpdated: "Last updated: January 1, 2024",
+      introduction: {
+        title: "Introduction and Acceptance of Terms",
+        content: "Welcome to **ShipBase**, a NextJS boilerplate designed for building AI SaaS startups quickly and efficiently. By accessing or using our service, you agree to be bound by these Terms of Service. If you do not agree with any of these terms, please do not use our service."
+      },
+      serviceUse: {
+        title: "Use of the Service",
+        content: "ShipBase provides users with a comprehensive platform to build and launch AI SaaS startups using our pre-built templates and infrastructure. You agree to use the service in accordance with all applicable local, state, national, and international laws and regulations."
+      },
+      userAccounts: {
+        title: "User Accounts and Registration",
+        content: "To access certain features of the service, you need to create an account. You must provide accurate and complete information during the registration process. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account or any other breach of security."
+      },
+      intellectualProperty: {
+        title: "Content and Intellectual Property Rights",
+        content: "All content provided through ShipBase, including but not limited to templates, code, infrastructure setup, and documentation, is protected under copyright law. The copyright owner of ShipBase is **shipbase.ai**.",
+        points: [
+          "You acknowledge that you do not own the underlying technology or intellectual property that makes up the ShipBase service, and you agree to respect the intellectual property rights of shipbase.ai and any third parties.",
+          "While you retain ownership of your custom implementations and modifications, the core ShipBase platform and templates remain the property of shipbase.ai."
+        ]
+      },
+      prohibitedActivities: {
+        title: "Prohibited Activities",
+        content: "You agree not to engage in any of the following prohibited activities while using ShipBase:",
+        activities: [
+          "Unauthorized access to or distribution of our proprietary code and templates",
+          "Reselling or redistributing ShipBase templates without authorization",
+          "Interfering with or disrupting the security or performance of the service",
+          "Using the service for any illegal or unauthorized purpose",
+          "Attempting to bypass any security features of the service"
+        ]
+      },
+      privacyData: {
+        title: "Privacy and Data Collection",
+        content: "ShipBase collects the following types of data:",
+        dataTypes: [
+          "Account Information: Information you provide when creating an account",
+          "Usage Details: Data related to your activity on our service",
+          "Device Information: Information about the device you use to access our service",
+          "Cookies: Data that helps us enhance your experience with our service",
+          "Payment and Billing Information: Data necessary to process payments"
+        ],
+        privacyPolicy: "For more details on data collection practices, please refer to our separate Privacy Policy."
+      },
+      pricingPayments: {
+        title: "Pricing and Payments",
+        points: [
+          "All purchases are final and non-refundable unless otherwise required by law",
+          "Prices are subject to change with notice to users",
+          "You agree to pay all charges associated with your selected plan",
+          "Payment terms are based on your selected payment method and plan"
+        ]
+      },
+      termination: {
+        title: "Termination",
+        content: "We reserve the right to terminate or suspend your access to the service at our sole discretion, without notice, for conduct that we believe violates these Terms or is harmful to other users of the service, us, or third parties."
+      },
+      warranties: {
+        title: "Disclaimer of Warranties",
+        content: "The service is provided on an \"as is\" and \"as available\" basis. We make no warranties or representations about the accuracy, reliability, or availability of the service and disclaim all warranties to the fullest extent permitted by law."
+      },
+      liability: {
+        title: "Limitation of Liability",
+        content: "To the fullest extent permitted by law, shipbase.ai shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from the use of or inability to use the service."
+      },
+      indemnification: {
+        title: "Indemnification",
+        content: "You agree to indemnify and hold harmless shipbase.ai, its affiliates, and their respective officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including attorneys' fees) arising from your use of the service or violation of these Terms."
+      },
+      governingLaw: {
+        title: "Governing Law and Dispute Resolution",
+        content: "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which shipbase.ai operates, without regard to its conflict of law provisions. Any disputes arising from these Terms or the service will be resolved through binding arbitration in accordance with applicable laws."
+      },
+      changes: {
+        title: "Changes to These Terms",
+        content: "We reserve the right to update or modify these Terms at any time. Changes will be effective immediately upon posting on our website. Your continued use of the service after any changes signifies your acceptance of the new terms."
+      },
+      contact: {
+        title: "Contact Information",
+        content: "If you have any questions about these Terms, please contact us at support@shipbase.ai."
+      },
+      acknowledgment: {
+        content: "By using ShipBase, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. Thank you for choosing ShipBase!"
+      }
     },
     security: {
       title: "Security",
