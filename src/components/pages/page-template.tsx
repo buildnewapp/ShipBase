@@ -32,7 +32,7 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
               Coming Soon
             </h2>
             <p className="text-neutral-600 dark:text-neutral-300">
-              This page is currently under development. We're working hard to bring you amazing content and features.
+              This page is currently under development. We&apos;re working hard to bring you amazing content and features.
             </p>
             <div className="mt-6">
               <div className="flex items-center space-x-2 text-sm text-neutral-500 dark:text-neutral-400">

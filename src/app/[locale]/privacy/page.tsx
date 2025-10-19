@@ -1,17 +1,17 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
-import { getDictionary, locales, defaultLocale } from "@/i18n";
+import { getDictionary, locales } from "@/i18n";
 
 interface LocalePrivacyPageProps {
   params: {
-    locale?: string[];
+    locale: string;
   };
 }
 
 export default async function LocalePrivacyPage({ params }: LocalePrivacyPageProps) {
   const resolvedParams = await params;
   const localeParam = resolvedParams.locale?.[0];
-  const locale = localeParam || defaultLocale;
+  const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   
   if (!normalizedLocale) {
@@ -23,13 +23,13 @@ export default async function LocalePrivacyPage({ params }: LocalePrivacyPagePro
 }
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale: [locale] }));
+  return locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params }: LocalePrivacyPageProps) {
   const resolvedParams = await params;
   const localeParam = resolvedParams.locale?.[0];
-  const locale = localeParam || defaultLocale;
+  const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   
   if (!normalizedLocale) {

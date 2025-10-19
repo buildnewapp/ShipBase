@@ -6,9 +6,7 @@ import { schema } from "./schema";
 type DrizzleClient = NodePgDatabase<typeof schema>;
 
 declare global {
-  // eslint-disable-next-line no-var
   var __drizzleDb: DrizzleClient | undefined;
-  // eslint-disable-next-line no-var
   var __pgPool: Pool | undefined;
 }
 
