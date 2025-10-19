@@ -288,6 +288,11 @@ export const enDictionary: AppDictionary = {
     lightTheme: "Light",
     darkTheme: "Dark",
     systemTheme: "System",
+    userMenu: {
+      profile: "Profile",
+      membership: "Membership",
+      signOut: "Sign Out",
+    },
   },
   footer: {
     description: "A modern SaaS platform that helps you quickly build and deploy applications.",

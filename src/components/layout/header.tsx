@@ -4,13 +4,17 @@ import Link from "next/link";
 import { useState } from "react";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeSwitcher } from "./theme-switcher";
+import { UserMenu } from "./user-menu";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useLocale } from "@/hooks";
+import { authClient } from "@/lib/auth/client";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { locale, dictionary } = useLocale();
+  const session = authClient.useSession();
+  const isAuthenticated = Boolean(session.data?.user);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-md dark:border-neutral-800 dark:bg-neutral-950/80">
@@ -53,16 +57,22 @@ export function Header() {
         <div className="hidden md:flex items-center space-x-2">
           <LanguageSwitcher currentLocale={locale} />
           <ThemeSwitcher dictionary={dictionary.header} />
-          <Button variant="ghost" asChild>
-            <Link href="/login">
-              {dictionary.header.login}
-            </Link>
-          </Button>
-          <Button asChild>
-            <Link href="/signup">
-              {dictionary.header.signup}
-            </Link>
-          </Button>
+          {isAuthenticated ? (
+            <UserMenu dictionary={dictionary.header} />
+          ) : (
+            <>
+              <Button variant="ghost" asChild>
+                <Link href="/login">
+                  {dictionary.header.login}
+                </Link>
+              </Button>
+              <Button asChild>
+                <Link href="/signup">
+                  {dictionary.header.signup}
+                </Link>
+              </Button>
+            </>
+          )}
         </div>
 
         {/* Mobile menu button */}
@@ -111,23 +121,42 @@ export function Header() {
               </div>
             </div>
             
+            {/* 移动端用户菜单 */}
             <div className="pt-4 space-y-3">
-              <Button variant="ghost" asChild className="w-full justify-start">
-                <Link
-                  href="/login"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {dictionary.header.login}
-                </Link>
-              </Button>
-              <Button asChild className="w-full">
-                <Link
-                  href="/signup"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {dictionary.header.signup}
-                </Link>
-              </Button>
+              {isAuthenticated ? (
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 p-3 rounded-lg bg-neutral-50 dark:bg-neutral-900">
+                    <UserMenu dictionary={dictionary.header} />
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+                        {session.data?.user?.name || "用户"}
+                      </p>
+                      <p className="text-xs text-neutral-500 dark:text-neutral-400">
+                        {session.data?.user?.email}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <Button variant="ghost" asChild className="w-full justify-start">
+                    <Link
+                      href="/login"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {dictionary.header.login}
+                    </Link>
+                  </Button>
+                  <Button asChild className="w-full">
+                    <Link
+                      href="/signup"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {dictionary.header.signup}
+                    </Link>
+                  </Button>
+                </>
+              )}
             </div>
           </div>
         </div>

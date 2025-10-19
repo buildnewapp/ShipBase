@@ -288,6 +288,11 @@ export const jaDictionary: AppDictionary = {
     lightTheme: "ライト",
     darkTheme: "ダーク",
     systemTheme: "システム",
+    userMenu: {
+      profile: "プロフィール",
+      membership: "メンバーシップ",
+      signOut: "サインアウト",
+    },
   },
   footer: {
     description: "アプリケーションを迅速に構築・デプロイできるモダンなSaaSプラットフォーム。",

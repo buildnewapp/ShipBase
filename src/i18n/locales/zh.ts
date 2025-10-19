@@ -288,6 +288,11 @@ export const zhDictionary: AppDictionary = {
     lightTheme: "浅色",
     darkTheme: "深色",
     systemTheme: "跟随系统",
+    userMenu: {
+      profile: "用户信息",
+      membership: "会员中心",
+      signOut: "退出登录",
+    },
   },
   footer: {
     description: "现代化的SaaS平台，帮助您快速构建和部署应用程序。",

@@ -151,6 +151,11 @@ export interface HeaderDictionary {
   lightTheme: string;
   darkTheme: string;
   systemTheme: string;
+  userMenu: {
+    profile: string;
+    membership: string;
+    signOut: string;
+  };
 }
 
 export interface FooterDictionary {
