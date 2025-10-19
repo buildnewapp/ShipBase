@@ -10,7 +10,7 @@ export function HomePage({ dictionary }: HomePageProps) {
   const { home, authPanel } = dictionary;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-100 via-white to-neutral-200 px-6 py-16 font-sans dark:from-neutral-900 dark:via-neutral-950 dark:to-black sm:px-10 lg:px-16">
+    <div className="bg-gradient-to-br from-neutral-100 via-white to-neutral-200 px-6 py-16 font-sans dark:from-neutral-900 dark:via-neutral-950 dark:to-black sm:px-10 lg:px-16">
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
         <section className="max-w-xl space-y-6">
           <span className="inline-flex items-center rounded-full bg-neutral-900 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white dark:bg-white dark:text-neutral-900">
