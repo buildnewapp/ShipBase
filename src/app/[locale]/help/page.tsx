@@ -10,7 +10,6 @@ interface LocaleHelpPageProps {
 
 export default async function LocaleHelpPage({ params }: LocaleHelpPageProps) {
   const resolvedParams = await params;
-  const localeParam = resolvedParams.locale?.[0];
   const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   
@@ -28,7 +27,6 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: LocaleHelpPageProps) {
   const resolvedParams = await params;
-  const localeParam = resolvedParams.locale?.[0];
   const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   

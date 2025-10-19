@@ -10,7 +10,6 @@ interface LocalePrivacyPageProps {
 
 export default async function LocalePrivacyPage({ params }: LocalePrivacyPageProps) {
   const resolvedParams = await params;
-  const localeParam = resolvedParams.locale?.[0];
   const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   
@@ -28,7 +27,6 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: LocalePrivacyPageProps) {
   const resolvedParams = await params;
-  const localeParam = resolvedParams.locale?.[0];
   const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   
