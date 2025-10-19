@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleAboutPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleAboutPage({ params }: LocaleAboutPageProps) {
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: LocaleAboutPageProps) {
     return {
       title: "About Us - ShipBase",
       description: "Building the future of SaaS development",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -44,5 +44,5 @@ export async function generateMetadata({ params }: LocaleAboutPageProps) {
   return {
     title: `${dictionary.pages.about.title} - ShipBase`,
     description: dictionary.pages.about.subtitle,
-  };
+  };;
 }

@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocalePricingPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocalePricingPage({ params }: LocalePricingPageProps) {
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: LocalePricingPageProps) {
     return {
       title: "Pricing - ShipBase",
       description: "Simple, transparent pricing",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -44,5 +44,5 @@ export async function generateMetadata({ params }: LocalePricingPageProps) {
   return {
     title: `${dictionary.pages.pricing.title} - ShipBase`,
     description: dictionary.pages.pricing.subtitle,
-  };
+  };;
 }

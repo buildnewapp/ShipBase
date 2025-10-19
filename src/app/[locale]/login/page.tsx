@@ -3,9 +3,9 @@ import { AuthPanel } from "@/components/auth/auth-panel";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleLoginPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleLoginPage({ params }: LocaleLoginPageProps) {
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: LocaleLoginPageProps) {
     return {
       title: "Sign In - ShipBase",
       description: "Sign in to your account to continue your journey with ShipBase.",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -65,5 +65,5 @@ export async function generateMetadata({ params }: LocaleLoginPageProps) {
   return {
     title: `${dictionary.pages.login.title} - ShipBase`,
     description: dictionary.pages.login.description,
-  };
+  };;
 }

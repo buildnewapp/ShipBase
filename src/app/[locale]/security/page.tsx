@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleSecurityPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleSecurityPage({ params }: LocaleSecurityPageProps) {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LocaleSecurityPageProps) {
     return {
       title: "Security - ShipBase",
       description: "Your data is safe with us",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -42,5 +42,5 @@ export async function generateMetadata({ params }: LocaleSecurityPageProps) {
   return {
     title: `${dictionary.pages.security.title} - ShipBase`,
     description: dictionary.pages.security.subtitle,
-  };
+  };;
 }

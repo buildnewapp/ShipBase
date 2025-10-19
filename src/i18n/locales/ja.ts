@@ -516,16 +516,431 @@ export const jaDictionary: AppDictionary = {
       title: "ドキュメント",
       subtitle: "開始に必要なすべて",
       description: "素晴らしいアプリケーションを構築するのに役立つ包括的なガイド、APIリファレンス、チュートリアル。",
+      quickStart: {
+        title: "クイックスタート",
+        subtitle: "わずか数ステップでShipBaseを開始し、AI SaaSアプリケーションを構築",
+        steps: [
+          {
+            step: "1",
+            title: "ShipBaseをインストール",
+            description: "リポジトリをクローンし、依存関係をインストール",
+            code: "git clone https://github.com/your-repo/shipbase\ncd shipbase\npnpm install"
+          },
+          {
+            step: "2", 
+            title: "環境を設定",
+            description: "必要なAPIキーと設定をセットアップ",
+            code: "cp .env.example .env.local\n# .env.localファイルを編集"
+          },
+          {
+            step: "3",
+            title: "開発サーバーを開始",
+            description: "プロジェクトをローカルで実行",
+            code: "pnpm dev\n# http://localhost:3000 にアクセス"
+          },
+          {
+            step: "4",
+            title: "本番環境にデプロイ",
+            description: "Vercelへのワンクリックデプロイ",
+            code: "pnpm build\nvercel deploy"
+          }
+        ]
+      },
+      navigation: {
+        title: "ドキュメントナビゲーション",
+        subtitle: "必要なすべての情報を見つけるために、完全なドキュメントを閲覧",
+        sections: [
+          {
+            title: "クイックスタート",
+            description: "5分でShipBaseを起動",
+            icon: "Rocket",
+            links: [
+              { name: "インストールガイド", href: "#" },
+              { name: "環境セットアップ", href: "#" },
+              { name: "最初のアプリケーション", href: "#" }
+            ]
+          },
+          {
+            title: "コア機能",
+            description: "ShipBaseのコア機能について学ぶ",
+            icon: "Code",
+            links: [
+              { name: "認証", href: "#" },
+              { name: "決済統合", href: "#" },
+              { name: "データベース設定", href: "#" },
+              { name: "AI統合", href: "#" }
+            ]
+          },
+          {
+            title: "APIリファレンス",
+            description: "完全なAPIドキュメントと例",
+            icon: "Database",
+            links: [
+              { name: "REST API", href: "#" },
+              { name: "GraphQL", href: "#" },
+              { name: "Webhooks", href: "#" },
+              { name: "SDK", href: "#" }
+            ]
+          },
+          {
+            title: "デプロイメントガイド",
+            description: "アプリケーションを本番環境にデプロイ",
+            icon: "Globe",
+            links: [
+              { name: "Vercelデプロイメント", href: "#" },
+              { name: "Cloudflare Pages", href: "#" },
+              { name: "Dockerデプロイメント", href: "#" },
+              { name: "環境設定", href: "#" }
+            ]
+          },
+          {
+            title: "ベストプラクティス",
+            description: "開発と本番のベストプラクティス",
+            icon: "Shield",
+            links: [
+              { name: "セキュリティガイド", href: "#" },
+              { name: "パフォーマンス最適化", href: "#" },
+              { name: "監視とログ", href: "#" },
+              { name: "エラーハンドリング", href: "#" }
+            ]
+          },
+          {
+            title: "トラブルシューティング",
+            description: "一般的な問題と解決策",
+            icon: "Zap",
+            links: [
+              { name: "FAQ", href: "#" },
+              { name: "エラーコード", href: "#" },
+              { name: "デバッグのヒント", href: "#" },
+              { name: "コミュニティサポート", href: "#" }
+            ]
+          }
+        ]
+      },
+      support: {
+        title: "ヘルプが必要ですか？",
+        subtitle: "私たちのコミュニティとサポートチームがお手伝いします",
+        description: "Discordコミュニティに参加するか、FAQをチェックしてください。",
+        discordButton: "Discordに参加",
+        faqButton: "FAQを表示"
+      }
     },
     about: {
       title: "会社概要",
       subtitle: "SaaS開発の未来を構築",
       description: "私たちのミッション、チーム、ShipBaseを動かす技術について学んでください。",
+      mission: {
+        title: "私たちのミッション",
+        description: "アイデアを持つすべての開発者が自分のAI SaaS製品を素早く構築・リリースできるようにすることです。技術的障壁を下げることで、より多くの革新の可能性を解き放ち、素晴らしいアイデアをより早く現実に変えることができると信じています。",
+        subtitle: "アイデアから製品まで、わずか数時間で",
+        content: "従来のSaaS開発ではインフラストラクチャの構築に数ヶ月かかりますが、ShipBaseはこのプロセスを数時間に短縮します。認証、決済処理、データベース、AI統合など、完全なソリューションを提供し、開発者がコアビジネスロジックの開発に集中できるようにします。",
+        stats: {
+          title: "開発時間の節約",
+          value: "90%",
+          description: "開発時間の節約"
+        },
+        achievements: [
+          "250+ の成功事例",
+          "平均90%の開発時間節約",
+          "24/7 技術サポート"
+        ]
+      },
+      values: {
+        title: "コアバリュー",
+        subtitle: "これらの価値観が私たちのすべての決定を導き、開発者に最高のサービスを提供することを保証します",
+        items: [
+          {
+            icon: "Zap",
+            title: "高速配信",
+            description: "速度がすべてだと信じています。ShipBaseにより、開発者は数ヶ月ではなく数時間で製品をリリースできます。"
+          },
+          {
+            icon: "Shield",
+            title: "品質第一",
+            description: "最高基準を維持し、すべてのコンポーネントが厳密にテストされ、本番環境の要件を満たすことを保証します。"
+          },
+          {
+            icon: "Users",
+            title: "開発者優先",
+            description: "常に開発者の視点から考え、開発習慣に最も適したツールと体験を提供します。"
+          },
+          {
+            icon: "Rocket",
+            title: "継続的革新",
+            description: "新しい技術を継続的に探求し、最新のベストプラクティスをShipBaseに統合します。"
+          }
+        ]
+      },
+      team: {
+        title: "私たちのチーム",
+        subtitle: "Google、OpenAI、Airbnbなどの有名企業のシニアエンジニアとプロダクト専門家で構成",
+        members: [
+          {
+            name: "田中太郎",
+            role: "創設者 & CEO",
+            description: "10年以上のフルスタック開発経験、元Googleエンジニア",
+            avatar: "/api/placeholder/150/150"
+          },
+          {
+            name: "佐藤花子",
+            role: "CTO",
+            description: "AIと機械学習の専門家、元OpenAI研究者",
+            avatar: "/api/placeholder/150/150"
+          },
+          {
+            name: "鈴木一郎",
+            role: "プロダクト責任者",
+            description: "ユーザーエクスペリエンスの専門家、元Airbnbプロダクトマネージャー",
+            avatar: "/api/placeholder/150/150"
+          }
+        ]
+      },
+      cta: {
+        title: "私たちの旅に参加",
+        description: "私たちのミッションに興奮している、またはShipBaseについてもっと知りたい場合は、お気軽にお問い合わせください。",
+        primaryButton: "お問い合わせ",
+        secondaryButton: "求人を見る"
+      }
     },
     integrations: {
       title: "統合",
       subtitle: "お気に入りのツールと接続",
       description: "ShipBaseを既存のワークフローとサードパーティサービスとシームレスに統合。",
+      categories: [
+        {
+          name: "認証とセキュリティ",
+          description: "安全で信頼性の高いユーザー認証ソリューション",
+          icon: "Shield",
+          integrations: [
+            {
+              name: "Google OAuth",
+              description: "Googleアカウントでクイックログイン",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["ワンクリックログイン", "ユーザー情報同期", "安全で信頼性"],
+              documentation: "/docs/auth/google"
+            },
+            {
+              name: "GitHub OAuth",
+              description: "開発者フレンドリーなGitHubログイン",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["開発者認証", "リポジトリアクセス", "チーム協力"],
+              documentation: "/docs/auth/github"
+            },
+            {
+              name: "Magic Link",
+              description: "パスワードレスログイン体験",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["メール認証", "パスワードレスログイン", "安全で便利"],
+              documentation: "/docs/auth/magic-link"
+            }
+          ]
+        },
+        {
+          name: "決済と請求",
+          description: "完全な決済とサブスクリプション管理ソリューション",
+          icon: "CreditCard",
+          integrations: [
+            {
+              name: "Stripe",
+              description: "グローバルリーディング決済処理プラットフォーム",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["サブスクリプション管理", "一回払い", "請求書システム", "Webhookサポート"],
+              documentation: "/docs/payments/stripe"
+            },
+            {
+              name: "PayPal",
+              description: "グローバルユーザーに信頼される決済方法",
+              logo: "/api/placeholder/40/40",
+              status: "coming-soon",
+              features: ["PayPal決済", "サブスクリプション管理", "返金処理"]
+            }
+          ]
+        },
+        {
+          name: "データベースとストレージ",
+          description: "信頼性の高いデータストレージと管理サービス",
+          icon: "Database",
+          integrations: [
+            {
+              name: "Supabase",
+              description: "オープンソースのFirebase代替",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["PostgreSQLデータベース", "リアルタイム購読", "ファイルストレージ", "Row Level Security"],
+              documentation: "/docs/database/supabase"
+            },
+            {
+              name: "PlanetScale",
+              description: "サーバーレスMySQLデータベース",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["サーバーレスアーキテクチャ", "ブランチ管理", "自動スケーリング"]
+            }
+          ]
+        },
+        {
+          name: "AIと機械学習",
+          description: "強力なAIサービス統合",
+          icon: "Bot",
+          integrations: [
+            {
+              name: "OpenAI",
+              description: "リーディングAI言語モデルサービス",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["GPTモデル", "埋め込み", "画像生成", "API管理"],
+              documentation: "/docs/ai/openai"
+            },
+            {
+              name: "Anthropic",
+              description: "Claude AIモデルサービス",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["Claudeモデル", "長文処理", "安全な会話"],
+              documentation: "/docs/ai/anthropic"
+            },
+            {
+              name: "Hugging Face",
+              description: "オープンソースAIモデルプラットフォーム",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["オープンソースモデル", "モデルホスティング", "推論API"]
+            }
+          ]
+        },
+        {
+          name: "分析とモニタリング",
+          description: "ユーザー行動とシステムパフォーマンスの深い洞察",
+          icon: "BarChart3",
+          integrations: [
+            {
+              name: "Google Analytics",
+              description: "包括的なウェブサイト分析ツール",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["ユーザー行動分析", "コンバージョン追跡", "リアルタイムレポート", "カスタムイベント"],
+              documentation: "/docs/analytics/google"
+            },
+            {
+              name: "Mixpanel",
+              description: "プロダクト分析プラットフォーム",
+              logo: "/api/placeholder/40/40",
+              status: "coming-soon",
+              features: ["イベント追跡", "ユーザープロファイル", "ファネル分析"]
+            },
+            {
+              name: "Sentry",
+              description: "エラーモニタリングとパフォーマンス追跡",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["エラーモニタリング", "パフォーマンス追跡", "リリース追跡"]
+            }
+          ]
+        },
+        {
+          name: "コミュニケーションと通知",
+          description: "マルチチャネルユーザーコミュニケーションソリューション",
+          icon: "Mail",
+          integrations: [
+            {
+              name: "SendGrid",
+              description: "信頼性の高いメール配信サービス",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["メール送信", "テンプレート管理", "配信統計", "Webhookサポート"],
+              documentation: "/docs/email/sendgrid"
+            },
+            {
+              name: "Twilio",
+              description: "グローバルコミュニケーションプラットフォーム",
+              logo: "/api/placeholder/40/40",
+              status: "coming-soon",
+              features: ["SMS送信", "音声通話", "ビデオ通話"]
+            },
+            {
+              name: "Slack",
+              description: "チーム協力と通知",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["メッセージ送信", "チャンネル統合", "ワークフロー自動化"]
+            }
+          ]
+        }
+      ],
+      popularIntegrations: {
+        title: "人気の統合",
+        subtitle: "開発者に最も愛されている統合サービス",
+        items: [
+          {
+            name: "Stripe",
+            description: "グローバルリーディング決済処理プラットフォーム",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["サブスクリプション管理", "一回払い", "請求書システム"]
+          },
+          {
+            name: "OpenAI",
+            description: "リーディングAI言語モデルサービス",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["GPTモデル", "埋め込み", "画像生成"]
+          },
+          {
+            name: "Supabase",
+            description: "オープンソースのFirebase代替",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["PostgreSQL", "リアルタイム購読", "ファイルストレージ"]
+          },
+          {
+            name: "Google Analytics",
+            description: "包括的なウェブサイト分析ツール",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["ユーザー分析", "コンバージョン追跡", "リアルタイムレポート"]
+          }
+        ]
+      },
+      gettingStarted: {
+        title: "クイックスタート",
+        subtitle: "わずか数ステップで必要なサービスを統合",
+        steps: [
+          {
+            step: "1",
+            title: "統合サービスを選択",
+            description: "統合カタログを閲覧し、必要なサービスを選択",
+            code: "# 利用可能な統合を表示\nnpm run list-integrations"
+          },
+          {
+            step: "2",
+            title: "環境変数を設定",
+            description: "必要なAPIキーと設定を追加",
+            code: "# 環境変数を設定\ncp .env.example .env.local\n# .env.localファイルを編集"
+          },
+          {
+            step: "3",
+            title: "統合パッケージをインストール",
+            description: "対応する統合パッケージと依存関係をインストール",
+            code: "# 統合パッケージをインストール\npnpm add @shipbase/integrations-stripe"
+          },
+          {
+            step: "4",
+            title: "統合を初期化",
+            description: "アプリケーションで統合サービスを初期化",
+            code: "# 統合を初期化\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\nconst stripe = new StripeIntegration()"
+          }
+        ]
+      },
+      cta: {
+        title: "統合を始める準備はできましたか？",
+        subtitle: "ShipBaseの強力な統合機能を今すぐ使用開始",
+        primaryButton: "ドキュメントを表示",
+        secondaryButton: "サポートに連絡"
+      }
     },
     api: {
       title: "API ドキュメント",
@@ -536,11 +951,275 @@ export const jaDictionary: AppDictionary = {
       title: "ヘルプセンター",
       subtitle: "必要なサポートを取得",
       description: "よくある質問の回答、トラブルシューティングガイド、ベストプラクティスを見つけてください。",
+      searchPlaceholder: "ヘルプ記事を検索...",
+      popularArticles: {
+        title: "人気記事",
+        subtitle: "最も閲覧されたヘルプ記事",
+        articles: [
+          {
+            title: "ShipBaseの使い始め",
+            description: "最初のAI SaaSアプリケーションを素早くセットアップしてデプロイする方法を学ぶ",
+            href: "#",
+            tags: ["クイックスタート", "デプロイ", "セットアップ"]
+          },
+          {
+            title: "認証設定ガイド",
+            description: "Google OAuth、GitHub OAuth、Magic Linkの設定に関する詳細な説明",
+            href: "#",
+            tags: ["認証", "OAuth", "設定"]
+          },
+          {
+            title: "Stripe決済統合",
+            description: "サブスクリプション、一回払い、請求書管理の設定方法",
+            href: "#",
+            tags: ["決済", "Stripe", "サブスクリプション"]
+          },
+          {
+            title: "AI機能統合",
+            description: "OpenAI、AnthropicなどのAIサービスの統合完全ガイド",
+            href: "#",
+            tags: ["AI", "OpenAI", "統合"]
+          },
+          {
+            title: "データベース設定と移行",
+            description: "Supabaseデータベース設定とデータ移行のベストプラクティス",
+            href: "#",
+            tags: ["データベース", "Supabase", "移行"]
+          },
+          {
+            title: "本番環境へのデプロイ",
+            description: "VercelとCloudflareデプロイの詳細ステップ",
+            href: "#",
+            tags: ["デプロイ", "Vercel", "本番環境"]
+          }
+        ]
+      },
+      categories: [
+        {
+          title: "クイックスタート",
+          description: "新規ユーザー向けオンボーディングガイド",
+          icon: "Rocket",
+          articles: [
+            {
+              title: "インストールとセットアップ",
+              description: "ShipBaseプロジェクトをゼロからセットアップ",
+              href: "#",
+              tags: ["インストール", "セットアップ", "環境"]
+            },
+            {
+              title: "最初のアプリケーション",
+              description: "最初のAI SaaSアプリケーションを作成",
+              href: "#",
+              tags: ["チュートリアル", "アプリケーション", "開発"]
+            },
+            {
+              title: "環境変数設定",
+              description: "必要な環境変数を適切に設定",
+              href: "#",
+              tags: ["設定", "環境変数", "APIキー"]
+            }
+          ]
+        },
+        {
+          title: "コア機能",
+          description: "ShipBaseの主要機能の使用ガイド",
+          icon: "Code",
+          articles: [
+            {
+              title: "認証システム",
+              description: "ユーザーログイン、登録、セッション管理",
+              href: "#",
+              tags: ["認証", "ユーザー管理", "セッション"]
+            },
+            {
+              title: "決済処理",
+              description: "サブスクリプション管理と決済フロー",
+              href: "#",
+              tags: ["決済", "サブスクリプション", "請求"]
+            },
+            {
+              title: "データベース操作",
+              description: "データストレージとクエリのベストプラクティス",
+              href: "#",
+              tags: ["データベース", "クエリ", "ストレージ"]
+            },
+            {
+              title: "AI統合",
+              description: "AIサービスの統合と使用",
+              href: "#",
+              tags: ["AI", "機械学習", "API"]
+            }
+          ]
+        },
+        {
+          title: "デプロイと運用",
+          description: "本番環境デプロイと運用ガイド",
+          icon: "Globe",
+          articles: [
+            {
+              title: "Vercelデプロイ",
+              description: "Vercelを使用してアプリケーションをデプロイ",
+              href: "#",
+              tags: ["Vercel", "デプロイ", "CDN"]
+            },
+            {
+              title: "Cloudflare Pages",
+              description: "Cloudflare Pagesデプロイガイド",
+              href: "#",
+              tags: ["Cloudflare", "デプロイ", "エッジコンピューティング"]
+            },
+            {
+              title: "環境管理",
+              description: "開発、テスト、本番環境の管理",
+              href: "#",
+              tags: ["環境", "設定", "管理"]
+            },
+            {
+              title: "監視とログ",
+              description: "アプリケーション監視とログ記録",
+              href: "#",
+              tags: ["監視", "ログ", "分析"]
+            }
+          ]
+        },
+        {
+          title: "トラブルシューティング",
+          description: "一般的な問題と解決策",
+          icon: "Zap",
+          articles: [
+            {
+              title: "一般的なエラー",
+              description: "一般的なデプロイとランタイムエラーの解決",
+              href: "#",
+              tags: ["エラー", "デバッグ", "解決"]
+            },
+            {
+              title: "パフォーマンス最適化",
+              description: "アプリケーションのパフォーマンスを向上させるヒント",
+              href: "#",
+              tags: ["パフォーマンス", "最適化", "速度"]
+            },
+            {
+              title: "セキュリティベストプラクティス",
+              description: "アプリケーションとデータのセキュリティを保護",
+              href: "#",
+              tags: ["セキュリティ", "ベストプラクティス", "保護"]
+            }
+          ]
+        }
+      ],
+      faq: {
+        title: "よくある質問",
+        subtitle: "必要な回答を素早く見つける",
+        faqs: [
+          {
+            question: "ShipBaseはどのAIサービスをサポートしていますか？",
+            answer: "ShipBaseはOpenAI、Anthropic、Google AIなどの主流AIサービスをサポートし、異なるAIプロバイダーを管理するための統一インターフェースを提供します。"
+          },
+          {
+            question: "ShipBaseのインターフェースをカスタマイズするにはどうすればよいですか？",
+            answer: "ShipBaseはTailwind CSSとShadcn/UIを使用しているため、スタイルを簡単にカスタマイズできます。すべてのコンポーネントはカスタマイズ可能で、テーマ切り替えをサポートしています。"
+          },
+          {
+            question: "ShipBaseは複数言語をサポートしていますか？",
+            answer: "はい、ShipBaseには国際化サポートが組み込まれています。現在は中国語、英語、日本語をサポートしており、より多くの言語を簡単に追加できます。"
+          },
+          {
+            question: "ShipBaseのバージョンをアップグレードするにはどうすればよいですか？",
+            answer: "Gitで最新のコードをプルしてShipBaseをアップグレードできます。アップグレード前にカスタムコードをバックアップすることをお勧めします。"
+          },
+          {
+            question: "ShipBaseのパフォーマンスはどうですか？",
+            answer: "ShipBaseはNext.js 14+で構築され、Server ComponentsとEdge Runtimeサポートを提供し、優れたパフォーマンスを実現します。"
+          },
+          {
+            question: "技術サポートを受けるにはどうすればよいですか？",
+            answer: "メールでお問い合わせいただくか、Discordコミュニティに参加してリアルタイムのサポートを受けることができます。"
+          }
+        ]
+      },
+      contact: {
+        title: "さらにヘルプが必要ですか？",
+        subtitle: "サポートチームにお問い合わせ",
+        description: "ドキュメントで答えが見つからない場合、サポートチームがお手伝いします。",
+        emailButton: "メールを送信",
+        discordButton: "Discordに参加"
+      }
     },
     contact: {
       title: "お問い合わせ",
       subtitle: "お手伝いします",
       description: "サポート、パートナーシップ、一般的なお問い合わせについて私たちのチームにお問い合わせください。",
+      contactMethodsTitle: "お問い合わせ",
+      contactMethodsSubtitle: "お客様からのお声をお聞かせください。最適な連絡方法をお選びください",
+      teamTitle: "直接チーム連絡",
+      teamSubtitle: "ニーズに応じて適切なチームに連絡",
+      responseTimeTitle: "応答時間",
+      responseTimeSubtitle: "お客様のリクエストに迅速に対応することをお約束します",
+      contactMethods: [
+        {
+          icon: "Users",
+          title: "Discord コミュニティ",
+          description: "他の開発者とつながるDiscordコミュニティに参加",
+          action: "Discordに参加",
+          href: "#"
+        },
+        {
+          icon: "Zap",
+          title: "メールサポート",
+          description: "support@shipbase.com にメールを送信",
+          action: "メール送信",
+          href: "mailto:support@shipbase.com"
+        },
+        {
+          icon: "Shield",
+          title: "GitHub Issues",
+          description: "GitHubで問題を報告または提案",
+          action: "Issuesを表示",
+          href: "#"
+        },
+        {
+          icon: "Rocket",
+          title: "エンタープライズパートナーシップ",
+          description: "エンタープライズレベルのサポートとカスタム開発サービス",
+          action: "営業に連絡",
+          href: "mailto:sales@shipbase.com"
+        }
+      ],
+      team: [
+        {
+          name: "技術サポート",
+          email: "support@shipbase.com",
+          description: "技術的な問題とトラブルシューティング"
+        },
+        {
+          name: "営業チーム",
+          email: "sales@shipbase.com", 
+          description: "ビジネスパートナーシップとカスタムサービス"
+        },
+        {
+          name: "製品フィードバック",
+          email: "feedback@shipbase.com",
+          description: "製品提案と機能リクエスト"
+        }
+      ],
+      responseTimes: [
+        {
+          time: "< 1時間",
+          title: "Discord サポート",
+          description: "コミュニティサポートで迅速な対応"
+        },
+        {
+          time: "< 24時間",
+          title: "メールサポート",
+          description: "専門チームによる詳細な回答"
+        },
+        {
+          time: "< 48時間",
+          title: "エンタープライズサポート",
+          description: "カスタムソリューションと専用サポート"
+        }
+      ]
     },
     status: {
       title: "サービス状況",

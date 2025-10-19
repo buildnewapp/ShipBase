@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleStatusPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleStatusPage({ params }: LocaleStatusPageProps) {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LocaleStatusPageProps) {
     return {
       title: "Service Status - ShipBase",
       description: "Real-time system status",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -42,5 +42,5 @@ export async function generateMetadata({ params }: LocaleStatusPageProps) {
   return {
     title: `${dictionary.pages.status.title} - ShipBase`,
     description: dictionary.pages.status.subtitle,
-  };
+  };;
 }

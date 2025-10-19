@@ -42,6 +42,12 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface Testimonial {
+  quote: string;
+  author: string;
+  role: string;
+}
+
 export interface HomeDictionary {
   badgeLabel: string;
   heroTitle: string;
@@ -175,6 +181,89 @@ export interface PageDictionary {
   description: string;
 }
 
+export interface TeamMember {
+  name: string;
+  role: string;
+  description: string;
+  avatar: string;
+}
+
+export interface CompanyValue {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface AboutPageDictionary extends PageDictionary {
+  mission: {
+    title: string;
+    description: string;
+    subtitle: string;
+    content: string;
+    stats: {
+      title: string;
+      value: string;
+      description: string;
+    };
+    achievements: string[];
+  };
+  values: {
+    title: string;
+    subtitle: string;
+    items: CompanyValue[];
+  };
+  team: {
+    title: string;
+    subtitle: string;
+    members: TeamMember[];
+  };
+  cta: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+}
+
+export interface QuickStartStep {
+  step: string;
+  title: string;
+  description: string;
+  code: string;
+}
+
+export interface DocSectionLink {
+  name: string;
+  href: string;
+}
+
+export interface DocSection {
+  title: string;
+  description: string;
+  icon: string;
+  links: DocSectionLink[];
+}
+
+export interface DocsPageDictionary extends PageDictionary {
+  quickStart: {
+    title: string;
+    subtitle: string;
+    steps: QuickStartStep[];
+  };
+  navigation: {
+    title: string;
+    subtitle: string;
+    sections: DocSection[];
+  };
+  support: {
+    title: string;
+    subtitle: string;
+    description: string;
+    discordButton: string;
+    faqButton: string;
+  };
+}
+
 export interface PricingPlan {
   name: string;
   price: string;
@@ -242,15 +331,119 @@ export interface FeaturesPageDictionary extends PageDictionary {
   };
 }
 
+export interface IntegrationCategory {
+  name: string;
+  description: string;
+  icon: string;
+  integrations: IntegrationItem[];
+}
+
+export interface IntegrationItem {
+  name: string;
+  description: string;
+  logo: string;
+  status: "available" | "coming-soon" | "beta";
+  features: string[];
+  documentation?: string;
+}
+
+export interface IntegrationsPageDictionary extends PageDictionary {
+  categories: IntegrationCategory[];
+  popularIntegrations: {
+    title: string;
+    subtitle: string;
+    items: IntegrationItem[];
+  };
+  gettingStarted: {
+    title: string;
+    subtitle: string;
+    steps: QuickStartStep[];
+  };
+  cta: {
+    title: string;
+    subtitle: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+}
+
+export interface HelpCategory {
+  title: string;
+  description: string;
+  icon: string;
+  articles: HelpArticle[];
+}
+
+export interface HelpArticle {
+  title: string;
+  description: string;
+  href: string;
+  tags: string[];
+}
+
+export interface HelpPageDictionary extends PageDictionary {
+  searchPlaceholder: string;
+  popularArticles: {
+    title: string;
+    subtitle: string;
+    articles: HelpArticle[];
+  };
+  categories: HelpCategory[];
+  faq: {
+    title: string;
+    subtitle: string;
+    faqs: FAQItem[];
+  };
+  contact: {
+    title: string;
+    subtitle: string;
+    description: string;
+    emailButton: string;
+    discordButton: string;
+  };
+}
+
+export interface ContactMethod {
+  icon: string;
+  title: string;
+  description: string;
+  action: string;
+  href: string;
+}
+
+export interface ContactTeam {
+  name: string;
+  email: string;
+  description: string;
+}
+
+export interface ResponseTime {
+  time: string;
+  title: string;
+  description: string;
+}
+
+export interface ContactPageDictionary extends PageDictionary {
+  contactMethods: ContactMethod[];
+  team: ContactTeam[];
+  responseTimes: ResponseTime[];
+  contactMethodsTitle: string;
+  contactMethodsSubtitle: string;
+  teamTitle: string;
+  teamSubtitle: string;
+  responseTimeTitle: string;
+  responseTimeSubtitle: string;
+}
+
 export interface PagesDictionary {
   features: FeaturesPageDictionary;
   pricing: PricingPageDictionary;
-  docs: PageDictionary;
-  about: PageDictionary;
-  integrations: PageDictionary;
+  docs: DocsPageDictionary;
+  about: AboutPageDictionary;
+  integrations: IntegrationsPageDictionary;
   api: PageDictionary;
-  help: PageDictionary;
-  contact: PageDictionary;
+  help: HelpPageDictionary;
+  contact: ContactPageDictionary;
   status: PageDictionary;
   privacy: PageDictionary;
   terms: PageDictionary;

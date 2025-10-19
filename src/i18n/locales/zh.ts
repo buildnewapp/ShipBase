@@ -516,16 +516,431 @@ export const zhDictionary: AppDictionary = {
       title: "文档",
       subtitle: "开始所需的一切",
       description: "全面的指南、API参考和教程，帮助您构建出色的应用程序。",
+      quickStart: {
+        title: "快速开始",
+        subtitle: "只需几个简单步骤，您就可以开始使用 ShipBase 构建您的 AI SaaS 应用",
+        steps: [
+          {
+            step: "1",
+            title: "安装 ShipBase",
+            description: "克隆仓库并安装依赖",
+            code: "git clone https://github.com/your-repo/shipbase\ncd shipbase\npnpm install"
+          },
+          {
+            step: "2", 
+            title: "配置环境变量",
+            description: "设置必要的 API 密钥和配置",
+            code: "cp .env.example .env.local\n# 编辑 .env.local 文件"
+          },
+          {
+            step: "3",
+            title: "启动开发服务器",
+            description: "在本地运行项目",
+            code: "pnpm dev\n# 访问 http://localhost:3000"
+          },
+          {
+            step: "4",
+            title: "部署到生产环境",
+            description: "一键部署到 Vercel",
+            code: "pnpm build\nvercel deploy"
+          }
+        ]
+      },
+      navigation: {
+        title: "文档导航",
+        subtitle: "浏览我们的完整文档，找到您需要的所有信息",
+        sections: [
+          {
+            title: "快速开始",
+            description: "5 分钟快速上手 ShipBase",
+            icon: "Rocket",
+            links: [
+              { name: "安装指南", href: "#" },
+              { name: "环境配置", href: "#" },
+              { name: "第一个应用", href: "#" }
+            ]
+          },
+          {
+            title: "核心功能",
+            description: "了解 ShipBase 的核心功能",
+            icon: "Code",
+            links: [
+              { name: "身份验证", href: "#" },
+              { name: "支付集成", href: "#" },
+              { name: "数据库设置", href: "#" },
+              { name: "AI 集成", href: "#" }
+            ]
+          },
+          {
+            title: "API 参考",
+            description: "完整的 API 文档和示例",
+            icon: "Database",
+            links: [
+              { name: "REST API", href: "#" },
+              { name: "GraphQL", href: "#" },
+              { name: "Webhooks", href: "#" },
+              { name: "SDK", href: "#" }
+            ]
+          },
+          {
+            title: "部署指南",
+            description: "将您的应用部署到生产环境",
+            icon: "Globe",
+            links: [
+              { name: "Vercel 部署", href: "#" },
+              { name: "Cloudflare Pages", href: "#" },
+              { name: "Docker 部署", href: "#" },
+              { name: "环境配置", href: "#" }
+            ]
+          },
+          {
+            title: "最佳实践",
+            description: "开发和生产环境的最佳实践",
+            icon: "Shield",
+            links: [
+              { name: "安全指南", href: "#" },
+              { name: "性能优化", href: "#" },
+              { name: "监控和日志", href: "#" },
+              { name: "错误处理", href: "#" }
+            ]
+          },
+          {
+            title: "故障排除",
+            description: "常见问题和解决方案",
+            icon: "Zap",
+            links: [
+              { name: "常见问题", href: "#" },
+              { name: "错误代码", href: "#" },
+              { name: "调试技巧", href: "#" },
+              { name: "社区支持", href: "#" }
+            ]
+          }
+        ]
+      },
+      support: {
+        title: "需要帮助？",
+        subtitle: "我们的社区和支持团队随时为您提供帮助",
+        description: "加入我们的 Discord 社区或查看常见问题。",
+        discordButton: "加入 Discord",
+        faqButton: "查看 FAQ"
+      }
     },
     about: {
       title: "关于我们",
       subtitle: "构建SaaS开发的未来",
       description: "了解我们的使命、团队和驱动ShipBase的技术。",
+      mission: {
+        title: "我们的使命",
+        description: "让每个有想法的开发者都能快速构建和发布自己的 AI SaaS 产品。我们相信，通过降低技术门槛，可以释放更多创新潜力，让优秀的想法更快地变成现实。",
+        subtitle: "从想法到产品，只需几小时",
+        content: "传统的 SaaS 开发需要数月时间搭建基础设施，而 ShipBase 让这个过程缩短到几小时。我们提供完整的解决方案，包括身份验证、支付处理、数据库、AI 集成等，让开发者可以专注于核心业务逻辑的开发。",
+        stats: {
+          title: "开发时间节省",
+          value: "90%",
+          description: "开发时间节省"
+        },
+        achievements: [
+          "250+ 成功案例",
+          "平均节省 90% 开发时间",
+          "24/7 技术支持"
+        ]
+      },
+      values: {
+        title: "核心价值观",
+        subtitle: "这些价值观指导着我们的每一个决策，确保我们始终为开发者提供最好的服务",
+        items: [
+          {
+            icon: "Zap",
+            title: "快速交付",
+            description: "我们相信速度就是一切。通过 ShipBase，开发者可以在几小时内而不是几个月内发布产品。"
+          },
+          {
+            icon: "Shield",
+            title: "质量至上",
+            description: "我们坚持最高标准，确保每个组件都经过严格测试，符合生产环境要求。"
+          },
+          {
+            icon: "Users",
+            title: "开发者优先",
+            description: "我们始终站在开发者的角度思考问题，提供最符合开发习惯的工具和体验。"
+          },
+          {
+            icon: "Rocket",
+            title: "持续创新",
+            description: "我们不断探索新技术，将最新的最佳实践融入到 ShipBase 中。"
+          }
+        ]
+      },
+      team: {
+        title: "我们的团队",
+        subtitle: "由来自 Google、OpenAI、Airbnb 等知名公司的资深工程师和产品专家组成",
+        members: [
+          {
+            name: "张三",
+            role: "创始人 & CEO",
+            description: "10+ 年全栈开发经验，前 Google 工程师",
+            avatar: "/api/placeholder/150/150"
+          },
+          {
+            name: "李四",
+            role: "CTO",
+            description: "AI 和机器学习专家，前 OpenAI 研究员",
+            avatar: "/api/placeholder/150/150"
+          },
+          {
+            name: "王五",
+            role: "产品总监",
+            description: "用户体验专家，前 Airbnb 产品经理",
+            avatar: "/api/placeholder/150/150"
+          }
+        ]
+      },
+      cta: {
+        title: "加入我们的旅程",
+        description: "如果您对我们的使命感到兴奋，或者想要了解更多关于 ShipBase 的信息，我们很乐意与您交流。",
+        primaryButton: "联系我们",
+        secondaryButton: "查看职位"
+      }
     },
     integrations: {
       title: "集成",
       subtitle: "与您喜爱的工具连接",
       description: "将ShipBase与您现有的工作流程和第三方服务无缝集成。",
+      categories: [
+        {
+          name: "身份验证与安全",
+          description: "安全可靠的用户身份验证解决方案",
+          icon: "Shield",
+          integrations: [
+            {
+              name: "Google OAuth",
+              description: "使用Google账户快速登录",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["一键登录", "用户信息同步", "安全可靠"],
+              documentation: "/docs/auth/google"
+            },
+            {
+              name: "GitHub OAuth",
+              description: "开发者友好的GitHub登录",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["开发者认证", "仓库信息访问", "团队协作"],
+              documentation: "/docs/auth/github"
+            },
+            {
+              name: "Magic Link",
+              description: "无密码登录体验",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["邮件验证", "无密码登录", "安全便捷"],
+              documentation: "/docs/auth/magic-link"
+            }
+          ]
+        },
+        {
+          name: "支付与计费",
+          description: "完整的支付和订阅管理解决方案",
+          icon: "CreditCard",
+          integrations: [
+            {
+              name: "Stripe",
+              description: "全球领先的支付处理平台",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["订阅管理", "一次性支付", "发票系统", "Webhook支持"],
+              documentation: "/docs/payments/stripe"
+            },
+            {
+              name: "PayPal",
+              description: "全球用户信赖的支付方式",
+              logo: "/api/placeholder/40/40",
+              status: "coming-soon",
+              features: ["PayPal支付", "订阅管理", "退款处理"]
+            }
+          ]
+        },
+        {
+          name: "数据库与存储",
+          description: "可靠的数据存储和管理服务",
+          icon: "Database",
+          integrations: [
+            {
+              name: "Supabase",
+              description: "开源的Firebase替代方案",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["PostgreSQL数据库", "实时订阅", "文件存储", "Row Level Security"],
+              documentation: "/docs/database/supabase"
+            },
+            {
+              name: "PlanetScale",
+              description: "无服务器MySQL数据库",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["无服务器架构", "分支管理", "自动扩缩容"]
+            }
+          ]
+        },
+        {
+          name: "AI与机器学习",
+          description: "强大的AI服务集成",
+          icon: "Bot",
+          integrations: [
+            {
+              name: "OpenAI",
+              description: "领先的AI语言模型服务",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["GPT模型", "嵌入向量", "图像生成", "API管理"],
+              documentation: "/docs/ai/openai"
+            },
+            {
+              name: "Anthropic",
+              description: "Claude AI模型服务",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["Claude模型", "长文本处理", "安全对话"],
+              documentation: "/docs/ai/anthropic"
+            },
+            {
+              name: "Hugging Face",
+              description: "开源AI模型平台",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["开源模型", "模型托管", "推理API"]
+            }
+          ]
+        },
+        {
+          name: "分析与监控",
+          description: "深入了解用户行为和系统性能",
+          icon: "BarChart3",
+          integrations: [
+            {
+              name: "Google Analytics",
+              description: "全面的网站分析工具",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["用户行为分析", "转化跟踪", "实时报告", "自定义事件"],
+              documentation: "/docs/analytics/google"
+            },
+            {
+              name: "Mixpanel",
+              description: "产品分析平台",
+              logo: "/api/placeholder/40/40",
+              status: "coming-soon",
+              features: ["事件跟踪", "用户画像", "漏斗分析"]
+            },
+            {
+              name: "Sentry",
+              description: "错误监控和性能追踪",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["错误监控", "性能追踪", "发布跟踪"]
+            }
+          ]
+        },
+        {
+          name: "通信与通知",
+          description: "多渠道用户沟通解决方案",
+          icon: "Mail",
+          integrations: [
+            {
+              name: "SendGrid",
+              description: "可靠的邮件发送服务",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["邮件发送", "模板管理", "投递统计", "Webhook支持"],
+              documentation: "/docs/email/sendgrid"
+            },
+            {
+              name: "Twilio",
+              description: "全球通信平台",
+              logo: "/api/placeholder/40/40",
+              status: "coming-soon",
+              features: ["短信发送", "语音通话", "视频通话"]
+            },
+            {
+              name: "Slack",
+              description: "团队协作和通知",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["消息发送", "频道集成", "工作流自动化"]
+            }
+          ]
+        }
+      ],
+      popularIntegrations: {
+        title: "热门集成",
+        subtitle: "最受开发者欢迎的集成服务",
+        items: [
+          {
+            name: "Stripe",
+            description: "全球领先的支付处理平台",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["订阅管理", "一次性支付", "发票系统"]
+          },
+          {
+            name: "OpenAI",
+            description: "领先的AI语言模型服务",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["GPT模型", "嵌入向量", "图像生成"]
+          },
+          {
+            name: "Supabase",
+            description: "开源的Firebase替代方案",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["PostgreSQL", "实时订阅", "文件存储"]
+          },
+          {
+            name: "Google Analytics",
+            description: "全面的网站分析工具",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["用户分析", "转化跟踪", "实时报告"]
+          }
+        ]
+      },
+      gettingStarted: {
+        title: "快速开始",
+        subtitle: "只需几个步骤即可集成您需要的服务",
+        steps: [
+          {
+            step: "1",
+            title: "选择集成服务",
+            description: "浏览我们的集成目录，选择您需要的服务",
+            code: "# 查看可用集成\nnpm run list-integrations"
+          },
+          {
+            step: "2",
+            title: "配置环境变量",
+            description: "添加必要的API密钥和配置",
+            code: "# 配置环境变量\ncp .env.example .env.local\n# 编辑 .env.local 文件"
+          },
+          {
+            step: "3",
+            title: "安装集成包",
+            description: "安装对应的集成包和依赖",
+            code: "# 安装集成包\npnpm add @shipbase/integrations-stripe"
+          },
+          {
+            step: "4",
+            title: "初始化集成",
+            description: "在您的应用中初始化集成服务",
+            code: "# 初始化集成\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\nconst stripe = new StripeIntegration()"
+          }
+        ]
+      },
+      cta: {
+        title: "准备开始集成？",
+        subtitle: "立即开始使用ShipBase的强大集成功能",
+        primaryButton: "查看文档",
+        secondaryButton: "联系支持"
+      }
     },
     api: {
       title: "API文档",
@@ -536,11 +951,275 @@ export const zhDictionary: AppDictionary = {
       title: "帮助中心",
       subtitle: "获得您需要的支持",
       description: "查找常见问题的答案、故障排除指南和最佳实践。",
+      searchPlaceholder: "搜索帮助文章...",
+      popularArticles: {
+        title: "热门文章",
+        subtitle: "最常被查看的帮助文章",
+        articles: [
+          {
+            title: "如何开始使用 ShipBase",
+            description: "了解如何快速设置和部署您的第一个 AI SaaS 应用",
+            href: "#",
+            tags: ["快速开始", "部署", "设置"]
+          },
+          {
+            title: "身份验证配置指南",
+            description: "详细说明如何配置 Google OAuth、GitHub OAuth 和 Magic Link",
+            href: "#",
+            tags: ["身份验证", "OAuth", "配置"]
+          },
+          {
+            title: "Stripe 支付集成",
+            description: "如何设置订阅、一次性支付和发票管理",
+            href: "#",
+            tags: ["支付", "Stripe", "订阅"]
+          },
+          {
+            title: "AI 功能集成",
+            description: "集成 OpenAI、Anthropic 等 AI 服务的完整指南",
+            href: "#",
+            tags: ["AI", "OpenAI", "集成"]
+          },
+          {
+            title: "数据库设置和迁移",
+            description: "Supabase 数据库配置和数据迁移最佳实践",
+            href: "#",
+            tags: ["数据库", "Supabase", "迁移"]
+          },
+          {
+            title: "部署到生产环境",
+            description: "Vercel 和 Cloudflare 部署的详细步骤",
+            href: "#",
+            tags: ["部署", "Vercel", "生产环境"]
+          }
+        ]
+      },
+      categories: [
+        {
+          title: "快速开始",
+          description: "新用户入门指南",
+          icon: "Rocket",
+          articles: [
+            {
+              title: "安装和设置",
+              description: "从零开始设置 ShipBase 项目",
+              href: "#",
+              tags: ["安装", "设置", "环境"]
+            },
+            {
+              title: "第一个应用",
+              description: "创建您的第一个 AI SaaS 应用",
+              href: "#",
+              tags: ["教程", "应用", "开发"]
+            },
+            {
+              title: "环境变量配置",
+              description: "正确配置所有必要的环境变量",
+              href: "#",
+              tags: ["配置", "环境变量", "API 密钥"]
+            }
+          ]
+        },
+        {
+          title: "核心功能",
+          description: "ShipBase 主要功能的使用指南",
+          icon: "Code",
+          articles: [
+            {
+              title: "身份验证系统",
+              description: "用户登录、注册和会话管理",
+              href: "#",
+              tags: ["身份验证", "用户管理", "会话"]
+            },
+            {
+              title: "支付处理",
+              description: "订阅管理和支付流程",
+              href: "#",
+              tags: ["支付", "订阅", "计费"]
+            },
+            {
+              title: "数据库操作",
+              description: "数据存储和查询最佳实践",
+              href: "#",
+              tags: ["数据库", "查询", "存储"]
+            },
+            {
+              title: "AI 集成",
+              description: "AI 服务的集成和使用",
+              href: "#",
+              tags: ["AI", "机器学习", "API"]
+            }
+          ]
+        },
+        {
+          title: "部署和运维",
+          description: "生产环境部署和运维指南",
+          icon: "Globe",
+          articles: [
+            {
+              title: "Vercel 部署",
+              description: "使用 Vercel 部署您的应用",
+              href: "#",
+              tags: ["Vercel", "部署", "CDN"]
+            },
+            {
+              title: "Cloudflare Pages",
+              description: "Cloudflare Pages 部署指南",
+              href: "#",
+              tags: ["Cloudflare", "部署", "边缘计算"]
+            },
+            {
+              title: "环境管理",
+              description: "开发、测试和生产环境管理",
+              href: "#",
+              tags: ["环境", "配置", "管理"]
+            },
+            {
+              title: "监控和日志",
+              description: "应用监控和日志记录",
+              href: "#",
+              tags: ["监控", "日志", "分析"]
+            }
+          ]
+        },
+        {
+          title: "故障排除",
+          description: "常见问题和解决方案",
+          icon: "Zap",
+          articles: [
+            {
+              title: "常见错误",
+              description: "解决常见的部署和运行错误",
+              href: "#",
+              tags: ["错误", "调试", "解决"]
+            },
+            {
+              title: "性能优化",
+              description: "提升应用性能的技巧",
+              href: "#",
+              tags: ["性能", "优化", "速度"]
+            },
+            {
+              title: "安全最佳实践",
+              description: "保护您的应用和数据安全",
+              href: "#",
+              tags: ["安全", "最佳实践", "保护"]
+            }
+          ]
+        }
+      ],
+      faq: {
+        title: "常见问题",
+        subtitle: "快速找到您需要的答案",
+        faqs: [
+          {
+            question: "ShipBase 支持哪些 AI 服务？",
+            answer: "ShipBase 支持 OpenAI、Anthropic、Google AI 等主流 AI 服务，并提供了统一的接口来管理不同的 AI 提供商。"
+          },
+          {
+            question: "如何自定义 ShipBase 的界面？",
+            answer: "ShipBase 使用 Tailwind CSS 和 Shadcn/UI，您可以轻松自定义样式。所有组件都是可定制的，支持主题切换。"
+          },
+          {
+            question: "ShipBase 是否支持多语言？",
+            answer: "是的，ShipBase 内置了国际化支持，目前支持中文、英文和日文，您可以轻松添加更多语言。"
+          },
+          {
+            question: "如何升级 ShipBase 版本？",
+            answer: "您可以通过 Git 拉取最新代码来升级 ShipBase。我们建议在升级前备份您的自定义代码。"
+          },
+          {
+            question: "ShipBase 的性能如何？",
+            answer: "ShipBase 基于 Next.js 14+ 构建，支持 Server Components 和 Edge Runtime，具有出色的性能表现。"
+          },
+          {
+            question: "如何获得技术支持？",
+            answer: "您可以通过邮件联系我们，或者加入我们的 Discord 社区获得实时帮助。"
+          }
+        ]
+      },
+      contact: {
+        title: "需要更多帮助？",
+        subtitle: "联系我们的支持团队",
+        description: "如果您在文档中找不到答案，我们的支持团队随时为您提供帮助。",
+        emailButton: "发送邮件",
+        discordButton: "加入 Discord"
+      }
     },
     contact: {
       title: "联系我们",
       subtitle: "我们随时为您提供帮助",
       description: "联系我们的团队获取支持、合作或一般咨询。",
+      contactMethodsTitle: "联系我们",
+      contactMethodsSubtitle: "我们很乐意听到您的声音。选择最适合您的联系方式",
+      teamTitle: "直接联系团队",
+      teamSubtitle: "根据您的需求联系相应的团队",
+      responseTimeTitle: "响应时间",
+      responseTimeSubtitle: "我们承诺快速响应您的请求",
+      contactMethods: [
+        {
+          icon: "Users",
+          title: "Discord 社区",
+          description: "加入我们的 Discord 社区，与其他开发者交流",
+          action: "加入 Discord",
+          href: "#"
+        },
+        {
+          icon: "Zap",
+          title: "邮件支持",
+          description: "发送邮件到 support@shipbase.com",
+          action: "发送邮件",
+          href: "mailto:support@shipbase.com"
+        },
+        {
+          icon: "Shield",
+          title: "GitHub Issues",
+          description: "在 GitHub 上报告问题或提出建议",
+          action: "查看 Issues",
+          href: "#"
+        },
+        {
+          icon: "Rocket",
+          title: "企业合作",
+          description: "企业级支持和定制开发服务",
+          action: "联系销售",
+          href: "mailto:sales@shipbase.com"
+        }
+      ],
+      team: [
+        {
+          name: "技术支持",
+          email: "support@shipbase.com",
+          description: "技术问题和故障排除"
+        },
+        {
+          name: "销售团队",
+          email: "sales@shipbase.com", 
+          description: "商业合作和定制服务"
+        },
+        {
+          name: "产品反馈",
+          email: "feedback@shipbase.com",
+          description: "产品建议和功能请求"
+        }
+      ],
+      responseTimes: [
+        {
+          time: "< 1 小时",
+          title: "Discord 支持",
+          description: "社区支持，快速响应"
+        },
+        {
+          time: "< 24 小时",
+          title: "邮件支持",
+          description: "专业团队，详细回复"
+        },
+        {
+          time: "< 48 小时",
+          title: "企业支持",
+          description: "定制解决方案"
+        }
+      ]
     },
     status: {
       title: "服务状态",

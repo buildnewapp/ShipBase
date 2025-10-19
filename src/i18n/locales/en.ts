@@ -516,16 +516,431 @@ export const enDictionary: AppDictionary = {
       title: "Documentation",
       subtitle: "Everything you need to get started",
       description: "Comprehensive guides, API references, and tutorials to help you build amazing applications.",
+      quickStart: {
+        title: "Quick Start",
+        subtitle: "Get started with ShipBase in just a few simple steps to build your AI SaaS application",
+        steps: [
+          {
+            step: "1",
+            title: "Install ShipBase",
+            description: "Clone the repository and install dependencies",
+            code: "git clone https://github.com/your-repo/shipbase\ncd shipbase\npnpm install"
+          },
+          {
+            step: "2", 
+            title: "Configure Environment",
+            description: "Set up necessary API keys and configuration",
+            code: "cp .env.example .env.local\n# Edit .env.local file"
+          },
+          {
+            step: "3",
+            title: "Start Development Server",
+            description: "Run the project locally",
+            code: "pnpm dev\n# Visit http://localhost:3000"
+          },
+          {
+            step: "4",
+            title: "Deploy to Production",
+            description: "One-click deployment to Vercel",
+            code: "pnpm build\nvercel deploy"
+          }
+        ]
+      },
+      navigation: {
+        title: "Documentation Navigation",
+        subtitle: "Browse our complete documentation to find all the information you need",
+        sections: [
+          {
+            title: "Quick Start",
+            description: "Get up and running with ShipBase in 5 minutes",
+            icon: "Rocket",
+            links: [
+              { name: "Installation Guide", href: "#" },
+              { name: "Environment Setup", href: "#" },
+              { name: "First Application", href: "#" }
+            ]
+          },
+          {
+            title: "Core Features",
+            description: "Learn about ShipBase's core functionality",
+            icon: "Code",
+            links: [
+              { name: "Authentication", href: "#" },
+              { name: "Payment Integration", href: "#" },
+              { name: "Database Setup", href: "#" },
+              { name: "AI Integration", href: "#" }
+            ]
+          },
+          {
+            title: "API Reference",
+            description: "Complete API documentation and examples",
+            icon: "Database",
+            links: [
+              { name: "REST API", href: "#" },
+              { name: "GraphQL", href: "#" },
+              { name: "Webhooks", href: "#" },
+              { name: "SDK", href: "#" }
+            ]
+          },
+          {
+            title: "Deployment Guide",
+            description: "Deploy your application to production",
+            icon: "Globe",
+            links: [
+              { name: "Vercel Deployment", href: "#" },
+              { name: "Cloudflare Pages", href: "#" },
+              { name: "Docker Deployment", href: "#" },
+              { name: "Environment Config", href: "#" }
+            ]
+          },
+          {
+            title: "Best Practices",
+            description: "Best practices for development and production",
+            icon: "Shield",
+            links: [
+              { name: "Security Guide", href: "#" },
+              { name: "Performance Optimization", href: "#" },
+              { name: "Monitoring & Logging", href: "#" },
+              { name: "Error Handling", href: "#" }
+            ]
+          },
+          {
+            title: "Troubleshooting",
+            description: "Common issues and solutions",
+            icon: "Zap",
+            links: [
+              { name: "FAQ", href: "#" },
+              { name: "Error Codes", href: "#" },
+              { name: "Debugging Tips", href: "#" },
+              { name: "Community Support", href: "#" }
+            ]
+          }
+        ]
+      },
+      support: {
+        title: "Need Help?",
+        subtitle: "Our community and support team are here to help",
+        description: "Join our Discord community or check out the FAQ.",
+        discordButton: "Join Discord",
+        faqButton: "View FAQ"
+      }
     },
     about: {
       title: "About Us",
       subtitle: "Building the future of SaaS development",
       description: "Learn about our mission, team, and the technology that powers ShipBase.",
+      mission: {
+        title: "Our Mission",
+        description: "Empowering every developer with ideas to quickly build and launch their own AI SaaS products. We believe that by lowering technical barriers, we can unleash more innovation potential and turn great ideas into reality faster.",
+        subtitle: "From idea to product in just hours",
+        content: "Traditional SaaS development requires months to build infrastructure, while ShipBase reduces this process to just hours. We provide complete solutions including authentication, payment processing, databases, AI integration, and more, allowing developers to focus on core business logic development.",
+        stats: {
+          title: "Development Time Saved",
+          value: "90%",
+          description: "Development time saved"
+        },
+        achievements: [
+          "250+ Success Stories",
+          "Average 90% Development Time Saved",
+          "24/7 Technical Support"
+        ]
+      },
+      values: {
+        title: "Core Values",
+        subtitle: "These values guide every decision we make, ensuring we always provide the best service for developers",
+        items: [
+          {
+            icon: "Zap",
+            title: "Fast Delivery",
+            description: "We believe speed is everything. With ShipBase, developers can ship products in hours instead of months."
+          },
+          {
+            icon: "Shield",
+            title: "Quality First",
+            description: "We maintain the highest standards, ensuring every component is rigorously tested and meets production requirements."
+          },
+          {
+            icon: "Users",
+            title: "Developer-First",
+            description: "We always think from the developer's perspective, providing tools and experiences that best match development habits."
+          },
+          {
+            icon: "Rocket",
+            title: "Continuous Innovation",
+            description: "We continuously explore new technologies and integrate the latest best practices into ShipBase."
+          }
+        ]
+      },
+      team: {
+        title: "Our Team",
+        subtitle: "Composed of senior engineers and product experts from renowned companies like Google, OpenAI, Airbnb",
+        members: [
+          {
+            name: "John Smith",
+            role: "Founder & CEO",
+            description: "10+ years full-stack development experience, former Google engineer",
+            avatar: "/api/placeholder/150/150"
+          },
+          {
+            name: "Sarah Johnson",
+            role: "CTO",
+            description: "AI and machine learning expert, former OpenAI researcher",
+            avatar: "/api/placeholder/150/150"
+          },
+          {
+            name: "Mike Chen",
+            role: "Head of Product",
+            description: "User experience expert, former Airbnb product manager",
+            avatar: "/api/placeholder/150/150"
+          }
+        ]
+      },
+      cta: {
+        title: "Join Our Journey",
+        description: "If you're excited about our mission or want to learn more about ShipBase, we'd love to connect with you.",
+        primaryButton: "Contact Us",
+        secondaryButton: "View Jobs"
+      }
     },
     integrations: {
       title: "Integrations",
       subtitle: "Connect with your favorite tools",
       description: "Seamlessly integrate ShipBase with your existing workflow and third-party services.",
+      categories: [
+        {
+          name: "Authentication & Security",
+          description: "Secure and reliable user authentication solutions",
+          icon: "Shield",
+          integrations: [
+            {
+              name: "Google OAuth",
+              description: "Quick login with Google accounts",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["One-click login", "User info sync", "Secure & reliable"],
+              documentation: "/docs/auth/google"
+            },
+            {
+              name: "GitHub OAuth",
+              description: "Developer-friendly GitHub login",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["Developer auth", "Repository access", "Team collaboration"],
+              documentation: "/docs/auth/github"
+            },
+            {
+              name: "Magic Link",
+              description: "Passwordless login experience",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["Email verification", "Passwordless login", "Secure & convenient"],
+              documentation: "/docs/auth/magic-link"
+            }
+          ]
+        },
+        {
+          name: "Payments & Billing",
+          description: "Complete payment and subscription management solutions",
+          icon: "CreditCard",
+          integrations: [
+            {
+              name: "Stripe",
+              description: "Global leading payment processing platform",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["Subscription management", "One-time payments", "Invoice system", "Webhook support"],
+              documentation: "/docs/payments/stripe"
+            },
+            {
+              name: "PayPal",
+              description: "Trusted payment method by global users",
+              logo: "/api/placeholder/40/40",
+              status: "coming-soon",
+              features: ["PayPal payments", "Subscription management", "Refund processing"]
+            }
+          ]
+        },
+        {
+          name: "Database & Storage",
+          description: "Reliable data storage and management services",
+          icon: "Database",
+          integrations: [
+            {
+              name: "Supabase",
+              description: "Open-source Firebase alternative",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["PostgreSQL database", "Real-time subscriptions", "File storage", "Row Level Security"],
+              documentation: "/docs/database/supabase"
+            },
+            {
+              name: "PlanetScale",
+              description: "Serverless MySQL database",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["Serverless architecture", "Branch management", "Auto-scaling"]
+            }
+          ]
+        },
+        {
+          name: "AI & Machine Learning",
+          description: "Powerful AI service integrations",
+          icon: "Bot",
+          integrations: [
+            {
+              name: "OpenAI",
+              description: "Leading AI language model service",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["GPT models", "Embeddings", "Image generation", "API management"],
+              documentation: "/docs/ai/openai"
+            },
+            {
+              name: "Anthropic",
+              description: "Claude AI model service",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["Claude models", "Long text processing", "Safe conversations"],
+              documentation: "/docs/ai/anthropic"
+            },
+            {
+              name: "Hugging Face",
+              description: "Open-source AI model platform",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["Open-source models", "Model hosting", "Inference API"]
+            }
+          ]
+        },
+        {
+          name: "Analytics & Monitoring",
+          description: "Deep insights into user behavior and system performance",
+          icon: "BarChart3",
+          integrations: [
+            {
+              name: "Google Analytics",
+              description: "Comprehensive website analytics tool",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["User behavior analysis", "Conversion tracking", "Real-time reports", "Custom events"],
+              documentation: "/docs/analytics/google"
+            },
+            {
+              name: "Mixpanel",
+              description: "Product analytics platform",
+              logo: "/api/placeholder/40/40",
+              status: "coming-soon",
+              features: ["Event tracking", "User profiles", "Funnel analysis"]
+            },
+            {
+              name: "Sentry",
+              description: "Error monitoring and performance tracking",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["Error monitoring", "Performance tracking", "Release tracking"]
+            }
+          ]
+        },
+        {
+          name: "Communication & Notifications",
+          description: "Multi-channel user communication solutions",
+          icon: "Mail",
+          integrations: [
+            {
+              name: "SendGrid",
+              description: "Reliable email delivery service",
+              logo: "/api/placeholder/40/40",
+              status: "available",
+              features: ["Email sending", "Template management", "Delivery stats", "Webhook support"],
+              documentation: "/docs/email/sendgrid"
+            },
+            {
+              name: "Twilio",
+              description: "Global communication platform",
+              logo: "/api/placeholder/40/40",
+              status: "coming-soon",
+              features: ["SMS sending", "Voice calls", "Video calls"]
+            },
+            {
+              name: "Slack",
+              description: "Team collaboration and notifications",
+              logo: "/api/placeholder/40/40",
+              status: "beta",
+              features: ["Message sending", "Channel integration", "Workflow automation"]
+            }
+          ]
+        }
+      ],
+      popularIntegrations: {
+        title: "Popular Integrations",
+        subtitle: "Most loved integration services by developers",
+        items: [
+          {
+            name: "Stripe",
+            description: "Global leading payment processing platform",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["Subscription management", "One-time payments", "Invoice system"]
+          },
+          {
+            name: "OpenAI",
+            description: "Leading AI language model service",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["GPT models", "Embeddings", "Image generation"]
+          },
+          {
+            name: "Supabase",
+            description: "Open-source Firebase alternative",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["PostgreSQL", "Real-time subscriptions", "File storage"]
+          },
+          {
+            name: "Google Analytics",
+            description: "Comprehensive website analytics tool",
+            logo: "/api/placeholder/60/60",
+            status: "available",
+            features: ["User analytics", "Conversion tracking", "Real-time reports"]
+          }
+        ]
+      },
+      gettingStarted: {
+        title: "Getting Started",
+        subtitle: "Integrate the services you need in just a few steps",
+        steps: [
+          {
+            step: "1",
+            title: "Choose Integration Service",
+            description: "Browse our integration catalog and select the service you need",
+            code: "# View available integrations\nnpm run list-integrations"
+          },
+          {
+            step: "2",
+            title: "Configure Environment Variables",
+            description: "Add necessary API keys and configuration",
+            code: "# Configure environment variables\ncp .env.example .env.local\n# Edit .env.local file"
+          },
+          {
+            step: "3",
+            title: "Install Integration Package",
+            description: "Install the corresponding integration package and dependencies",
+            code: "# Install integration package\npnpm add @shipbase/integrations-stripe"
+          },
+          {
+            step: "4",
+            title: "Initialize Integration",
+            description: "Initialize the integration service in your application",
+            code: "# Initialize integration\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\nconst stripe = new StripeIntegration()"
+          }
+        ]
+      },
+      cta: {
+        title: "Ready to Start Integrating?",
+        subtitle: "Start using ShipBase's powerful integration features right away",
+        primaryButton: "View Documentation",
+        secondaryButton: "Contact Support"
+      }
     },
     api: {
       title: "API Documentation",
@@ -536,11 +951,275 @@ export const enDictionary: AppDictionary = {
       title: "Help Center",
       subtitle: "Get the support you need",
       description: "Find answers to common questions, troubleshooting guides, and best practices.",
+      searchPlaceholder: "Search help articles...",
+      popularArticles: {
+        title: "Popular Articles",
+        subtitle: "Most viewed help articles",
+        articles: [
+          {
+            title: "Getting Started with ShipBase",
+            description: "Learn how to quickly set up and deploy your first AI SaaS application",
+            href: "#",
+            tags: ["Quick Start", "Deployment", "Setup"]
+          },
+          {
+            title: "Authentication Configuration Guide",
+            description: "Detailed instructions for configuring Google OAuth, GitHub OAuth, and Magic Link",
+            href: "#",
+            tags: ["Authentication", "OAuth", "Configuration"]
+          },
+          {
+            title: "Stripe Payment Integration",
+            description: "How to set up subscriptions, one-time payments, and invoice management",
+            href: "#",
+            tags: ["Payments", "Stripe", "Subscriptions"]
+          },
+          {
+            title: "AI Features Integration",
+            description: "Complete guide to integrating OpenAI, Anthropic, and other AI services",
+            href: "#",
+            tags: ["AI", "OpenAI", "Integration"]
+          },
+          {
+            title: "Database Setup and Migration",
+            description: "Supabase database configuration and data migration best practices",
+            href: "#",
+            tags: ["Database", "Supabase", "Migration"]
+          },
+          {
+            title: "Deploy to Production",
+            description: "Detailed steps for Vercel and Cloudflare deployment",
+            href: "#",
+            tags: ["Deployment", "Vercel", "Production"]
+          }
+        ]
+      },
+      categories: [
+        {
+          title: "Quick Start",
+          description: "New user onboarding guides",
+          icon: "Rocket",
+          articles: [
+            {
+              title: "Installation and Setup",
+              description: "Set up a ShipBase project from scratch",
+              href: "#",
+              tags: ["Installation", "Setup", "Environment"]
+            },
+            {
+              title: "First Application",
+              description: "Create your first AI SaaS application",
+              href: "#",
+              tags: ["Tutorial", "Application", "Development"]
+            },
+            {
+              title: "Environment Variables Configuration",
+              description: "Properly configure all necessary environment variables",
+              href: "#",
+              tags: ["Configuration", "Environment Variables", "API Keys"]
+            }
+          ]
+        },
+        {
+          title: "Core Features",
+          description: "Usage guides for ShipBase main features",
+          icon: "Code",
+          articles: [
+            {
+              title: "Authentication System",
+              description: "User login, registration, and session management",
+              href: "#",
+              tags: ["Authentication", "User Management", "Sessions"]
+            },
+            {
+              title: "Payment Processing",
+              description: "Subscription management and payment flows",
+              href: "#",
+              tags: ["Payments", "Subscriptions", "Billing"]
+            },
+            {
+              title: "Database Operations",
+              description: "Data storage and query best practices",
+              href: "#",
+              tags: ["Database", "Queries", "Storage"]
+            },
+            {
+              title: "AI Integration",
+              description: "Integration and usage of AI services",
+              href: "#",
+              tags: ["AI", "Machine Learning", "API"]
+            }
+          ]
+        },
+        {
+          title: "Deployment & Operations",
+          description: "Production deployment and operations guides",
+          icon: "Globe",
+          articles: [
+            {
+              title: "Vercel Deployment",
+              description: "Deploy your application using Vercel",
+              href: "#",
+              tags: ["Vercel", "Deployment", "CDN"]
+            },
+            {
+              title: "Cloudflare Pages",
+              description: "Cloudflare Pages deployment guide",
+              href: "#",
+              tags: ["Cloudflare", "Deployment", "Edge Computing"]
+            },
+            {
+              title: "Environment Management",
+              description: "Development, testing, and production environment management",
+              href: "#",
+              tags: ["Environment", "Configuration", "Management"]
+            },
+            {
+              title: "Monitoring and Logging",
+              description: "Application monitoring and logging",
+              href: "#",
+              tags: ["Monitoring", "Logging", "Analytics"]
+            }
+          ]
+        },
+        {
+          title: "Troubleshooting",
+          description: "Common issues and solutions",
+          icon: "Zap",
+          articles: [
+            {
+              title: "Common Errors",
+              description: "Resolve common deployment and runtime errors",
+              href: "#",
+              tags: ["Errors", "Debugging", "Resolution"]
+            },
+            {
+              title: "Performance Optimization",
+              description: "Tips to improve application performance",
+              href: "#",
+              tags: ["Performance", "Optimization", "Speed"]
+            },
+            {
+              title: "Security Best Practices",
+              description: "Protect your application and data security",
+              href: "#",
+              tags: ["Security", "Best Practices", "Protection"]
+            }
+          ]
+        }
+      ],
+      faq: {
+        title: "Frequently Asked Questions",
+        subtitle: "Quickly find the answers you need",
+        faqs: [
+          {
+            question: "Which AI services does ShipBase support?",
+            answer: "ShipBase supports mainstream AI services like OpenAI, Anthropic, Google AI, and provides a unified interface to manage different AI providers."
+          },
+          {
+            question: "How can I customize ShipBase's interface?",
+            answer: "ShipBase uses Tailwind CSS and Shadcn/UI, making it easy to customize styles. All components are customizable and support theme switching."
+          },
+          {
+            question: "Does ShipBase support multiple languages?",
+            answer: "Yes, ShipBase has built-in internationalization support. Currently supports Chinese, English, and Japanese, and you can easily add more languages."
+          },
+          {
+            question: "How do I upgrade ShipBase versions?",
+            answer: "You can upgrade ShipBase by pulling the latest code via Git. We recommend backing up your custom code before upgrading."
+          },
+          {
+            question: "How is ShipBase's performance?",
+            answer: "ShipBase is built on Next.js 14+ with Server Components and Edge Runtime support, delivering excellent performance."
+          },
+          {
+            question: "How can I get technical support?",
+            answer: "You can contact us via email or join our Discord community for real-time assistance."
+          }
+        ]
+      },
+      contact: {
+        title: "Need More Help?",
+        subtitle: "Contact our support team",
+        description: "If you can't find the answer in our documentation, our support team is here to help.",
+        emailButton: "Send Email",
+        discordButton: "Join Discord"
+      }
     },
     contact: {
       title: "Contact Us",
       subtitle: "We're here to help",
       description: "Get in touch with our team for support, partnerships, or general inquiries.",
+      contactMethodsTitle: "Contact Us",
+      contactMethodsSubtitle: "We'd love to hear from you. Choose the contact method that works best for you",
+      teamTitle: "Direct Team Contact",
+      teamSubtitle: "Contact the appropriate team based on your needs",
+      responseTimeTitle: "Response Times",
+      responseTimeSubtitle: "We promise to respond quickly to your requests",
+      contactMethods: [
+        {
+          icon: "Users",
+          title: "Discord Community",
+          description: "Join our Discord community to connect with other developers",
+          action: "Join Discord",
+          href: "#"
+        },
+        {
+          icon: "Zap",
+          title: "Email Support",
+          description: "Send an email to support@shipbase.com",
+          action: "Send Email",
+          href: "mailto:support@shipbase.com"
+        },
+        {
+          icon: "Shield",
+          title: "GitHub Issues",
+          description: "Report issues or suggestions on GitHub",
+          action: "View Issues",
+          href: "#"
+        },
+        {
+          icon: "Rocket",
+          title: "Enterprise Partnership",
+          description: "Enterprise-level support and custom development services",
+          action: "Contact Sales",
+          href: "mailto:sales@shipbase.com"
+        }
+      ],
+      team: [
+        {
+          name: "Technical Support",
+          email: "support@shipbase.com",
+          description: "Technical issues and troubleshooting"
+        },
+        {
+          name: "Sales Team",
+          email: "sales@shipbase.com", 
+          description: "Business partnerships and custom services"
+        },
+        {
+          name: "Product Feedback",
+          email: "feedback@shipbase.com",
+          description: "Product suggestions and feature requests"
+        }
+      ],
+      responseTimes: [
+        {
+          time: "< 1 hour",
+          title: "Discord Support",
+          description: "Community support with quick response"
+        },
+        {
+          time: "< 24 hours",
+          title: "Email Support",
+          description: "Professional team with detailed responses"
+        },
+        {
+          time: "< 48 hours",
+          title: "Enterprise Support",
+          description: "Custom solutions and dedicated support"
+        }
+      ]
     },
     status: {
       title: "Service Status",

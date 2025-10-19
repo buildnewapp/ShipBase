@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleApiPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleApiPage({ params }: LocaleApiPageProps) {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LocaleApiPageProps) {
     return {
       title: "API Documentation - ShipBase",
       description: "Build with our powerful API",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -42,5 +42,5 @@ export async function generateMetadata({ params }: LocaleApiPageProps) {
   return {
     title: `${dictionary.pages.api.title} - ShipBase`,
     description: dictionary.pages.api.subtitle,
-  };
+  };;
 }

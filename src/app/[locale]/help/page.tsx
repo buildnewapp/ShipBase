@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleHelpPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleHelpPage({ params }: LocaleHelpPageProps) {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LocaleHelpPageProps) {
     return {
       title: "Help Center - ShipBase",
       description: "Get the support you need",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -42,5 +42,5 @@ export async function generateMetadata({ params }: LocaleHelpPageProps) {
   return {
     title: `${dictionary.pages.help.title} - ShipBase`,
     description: dictionary.pages.help.subtitle,
-  };
+  };;
 }

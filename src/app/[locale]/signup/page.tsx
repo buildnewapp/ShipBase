@@ -3,9 +3,9 @@ import { AuthPanel } from "@/components/auth/auth-panel";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleSignupPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleSignupPage({ params }: LocaleSignupPageProps) {
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: LocaleSignupPageProps) {
     return {
       title: "Get Started - ShipBase",
       description: "Join thousands of developers building amazing applications with ShipBase.",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -65,5 +65,5 @@ export async function generateMetadata({ params }: LocaleSignupPageProps) {
   return {
     title: `${dictionary.pages.signup.title} - ShipBase`,
     description: dictionary.pages.signup.description,
-  };
+  };;
 }

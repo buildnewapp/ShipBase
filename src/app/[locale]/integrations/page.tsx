@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleIntegrationsPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleIntegrationsPage({ params }: LocaleIntegrationsPageProps) {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LocaleIntegrationsPageProps) 
     return {
       title: "Integrations - ShipBase",
       description: "Connect with your favorite tools",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -42,5 +42,5 @@ export async function generateMetadata({ params }: LocaleIntegrationsPageProps) 
   return {
     title: `${dictionary.pages.integrations.title} - ShipBase`,
     description: dictionary.pages.integrations.subtitle,
-  };
+  };;
 }

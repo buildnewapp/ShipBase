@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocalePrivacyPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocalePrivacyPage({ params }: LocalePrivacyPageProps) {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LocalePrivacyPageProps) {
     return {
       title: "Privacy Policy - ShipBase",
       description: "Your privacy matters",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -42,5 +42,5 @@ export async function generateMetadata({ params }: LocalePrivacyPageProps) {
   return {
     title: `${dictionary.pages.privacy.title} - ShipBase`,
     description: dictionary.pages.privacy.subtitle,
-  };
+  };;
 }

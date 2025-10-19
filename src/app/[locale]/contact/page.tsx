@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleContactPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleContactPage({ params }: LocaleContactPageProps) {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LocaleContactPageProps) {
     return {
       title: "Contact Us - ShipBase",
       description: "We're here to help",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -42,5 +42,5 @@ export async function generateMetadata({ params }: LocaleContactPageProps) {
   return {
     title: `${dictionary.pages.contact.title} - ShipBase`,
     description: dictionary.pages.contact.subtitle,
-  };
+  };;
 }

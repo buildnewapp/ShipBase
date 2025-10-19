@@ -3,9 +3,9 @@ import { HomePage } from "@/components/home/home-page";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocalePageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleHome({ params }: LocalePageProps) {
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: LocalePageProps) {
     return {
       title: "ShipBase - 现代化SaaS平台",
       description: "现代化的SaaS平台，帮助您快速构建和部署应用程序。",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -46,5 +46,5 @@ export async function generateMetadata({ params }: LocalePageProps) {
   return {
     title: `ShipBase - ${dictionary.home.heroTitle}`,
     description: dictionary.home.heroDescription,
-  };
+  };;
 }

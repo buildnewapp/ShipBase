@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleCookiesPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleCookiesPage({ params }: LocaleCookiesPageProps) {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LocaleCookiesPageProps) {
     return {
       title: "Cookie Policy - ShipBase",
       description: "How we use cookies",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -42,5 +42,5 @@ export async function generateMetadata({ params }: LocaleCookiesPageProps) {
   return {
     title: `${dictionary.pages.cookies.title} - ShipBase`,
     description: dictionary.pages.cookies.subtitle,
-  };
+  };;
 }

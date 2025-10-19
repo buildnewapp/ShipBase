@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleFeaturesPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleFeaturesPage({ params }: LocaleFeaturesPageProps) {
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: LocaleFeaturesPageProps) {
     return {
       title: "Features - ShipBase",
       description: "Powerful features to accelerate your development",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -48,5 +48,5 @@ export async function generateMetadata({ params }: LocaleFeaturesPageProps) {
   return {
     title: `${dictionary.pages.features.title} - ShipBase`,
     description: dictionary.pages.features.subtitle,
-  };
+  };;
 }

@@ -3,9 +3,9 @@ import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
 
 interface LocaleTermsPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default async function LocaleTermsPage({ params }: LocaleTermsPageProps) {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LocaleTermsPageProps) {
     return {
       title: "Terms of Service - ShipBase",
       description: "Our terms and conditions",
-    };
+    };;
   }
 
   const dictionary = getDictionary(normalizedLocale);
@@ -42,5 +42,5 @@ export async function generateMetadata({ params }: LocaleTermsPageProps) {
   return {
     title: `${dictionary.pages.terms.title} - ShipBase`,
     description: dictionary.pages.terms.subtitle,
-  };
+  };;
 }
