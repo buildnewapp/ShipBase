@@ -1,5 +1,6 @@
 import { enDictionary } from "@/i18n/locales/en";
 import { zhDictionary } from "@/i18n/locales/zh";
+import { jaDictionary } from "@/i18n/locales/ja";
 import {
   defaultLocale,
   locales,
@@ -10,6 +11,7 @@ import {
 const dictionaries: Record<Locale, AppDictionary> = {
   en: enDictionary,
   zh: zhDictionary,
+  ja: jaDictionary,
 };
 
 export function getDictionary(locale: Locale = defaultLocale): AppDictionary {

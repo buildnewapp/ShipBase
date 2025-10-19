@@ -2,32 +2,15 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
-import { locales, type Locale } from "@/i18n";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeSwitcher } from "./theme-switcher";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLocale } from "@/hooks";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
-  
-  // 检测当前语言
-  const getCurrentLocale = (): Locale => {
-    try {
-      const pathSegments = pathname.split('/').filter(Boolean);
-      if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
-        return pathSegments[0] as Locale;
-      }
-      return 'zh'; // 默认中文
-    } catch (error) {
-      console.error('Error detecting locale:', error);
-      return 'zh';
-    }
-  };
-  
-  const currentLocale = getCurrentLocale();
+  const { locale, dictionary } = useLocale();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-md dark:border-neutral-800 dark:bg-neutral-950/80">
@@ -47,43 +30,43 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link
-            href={`/${currentLocale}/features`}
+            href={`/${locale}/features`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
-            {currentLocale === 'en' ? 'Features' : '功能特性'}
+            {dictionary.header.features}
           </Link>
           <Link
-            href={`/${currentLocale}/pricing`}
+            href={`/${locale}/pricing`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
-            {currentLocale === 'en' ? 'Pricing' : '价格方案'}
+            {dictionary.header.pricing}
           </Link>
           <Link
-            href={`/${currentLocale}/docs`}
+            href={`/${locale}/docs`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
-            {currentLocale === 'en' ? 'Docs' : '文档'}
+            {dictionary.header.docs}
           </Link>
           <Link
-            href={`/${currentLocale}/about`}
+            href={`/${locale}/about`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
-            {currentLocale === 'en' ? 'About' : '关于我们'}
+            {dictionary.header.about}
           </Link>
         </nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-2">
-          <LanguageSwitcher currentLocale={currentLocale} />
+          <LanguageSwitcher currentLocale={locale} />
           <ThemeSwitcher />
           <Button variant="ghost" asChild>
             <Link href="/login">
-              {currentLocale === 'en' ? 'Login' : '登录'}
+              {dictionary.header.login}
             </Link>
           </Button>
           <Button asChild>
             <Link href="/signup">
-              {currentLocale === 'en' ? 'Free Trial' : '免费试用'}
+              {dictionary.header.signup}
             </Link>
           </Button>
         </div>
@@ -105,38 +88,38 @@ export function Header() {
         <div className="md:hidden border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
           <div className="px-4 py-6 space-y-4">
             <Link
-              href={`/${currentLocale}/features`}
+              href={`/${locale}/features`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              {currentLocale === 'en' ? 'Features' : '功能特性'}
+              {dictionary.header.features}
             </Link>
             <Link
-              href={`/${currentLocale}/pricing`}
+              href={`/${locale}/pricing`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              {currentLocale === 'en' ? 'Pricing' : '价格方案'}
+              {dictionary.header.pricing}
             </Link>
             <Link
-              href={`/${currentLocale}/docs`}
+              href={`/${locale}/docs`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              {currentLocale === 'en' ? 'Docs' : '文档'}
+              {dictionary.header.docs}
             </Link>
             <Link
-              href={`/${currentLocale}/about`}
+              href={`/${locale}/about`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              {currentLocale === 'en' ? 'About' : '关于我们'}
+              {dictionary.header.about}
             </Link>
             
             {/* 移动端切换按钮 */}
             <div className="pt-4 border-t border-neutral-200 dark:border-neutral-800">
               <div className="flex items-center justify-between space-x-4">
-                <LanguageSwitcher currentLocale={currentLocale} />
+                <LanguageSwitcher currentLocale={locale} />
                 <ThemeSwitcher />
               </div>
             </div>
@@ -147,7 +130,7 @@ export function Header() {
                   href="/login"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {currentLocale === 'en' ? 'Login' : '登录'}
+                  {dictionary.header.login}
                 </Link>
               </Button>
               <Button asChild className="w-full">
@@ -155,7 +138,7 @@ export function Header() {
                   href="/signup"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {currentLocale === 'en' ? 'Free Trial' : '免费试用'}
+                  {dictionary.header.signup}
                 </Link>
               </Button>
             </div>

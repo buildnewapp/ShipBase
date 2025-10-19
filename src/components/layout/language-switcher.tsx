@@ -43,6 +43,8 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
         return 'English';
       case 'zh':
         return '中文';
+      case 'ja':
+        return '日本語';
       default:
         return locale;
     }
