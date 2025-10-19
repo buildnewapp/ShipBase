@@ -1,11 +1,11 @@
-import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary } from "@/i18n/types";
+import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary } from "@/i18n/types";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users, Lock } from "lucide-react";
 
 interface PageTemplateProps {
-  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary;
+  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary;
 }
 
 export function PageTemplate({ dictionary }: PageTemplateProps) {
@@ -20,8 +20,8 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
     if (dictionary.title === "文档" || dictionary.title === "Documentation" || dictionary.title === "ドキュメント") {
       return <DocsContent dictionary={dictionary as DocsPageDictionary} />;
     }
-    if (dictionary.title === "集成" || dictionary.title === "Integrations") {
-      return <IntegrationsContent />;
+    if (dictionary.title === "集成" || dictionary.title === "Integrations" || dictionary.title === "統合") {
+      return <IntegrationsContent dictionary={dictionary as IntegrationsPageDictionary} />;
     }
     if (dictionary.title === "API文档" || dictionary.title === "API Documentation") {
       return <ApiContent />;
@@ -461,69 +461,45 @@ function DocsContent({ dictionary }: { dictionary: DocsPageDictionary }) {
 }
 
 // 集成页面内容
-function IntegrationsContent() {
-  const integrations = [
-    {
-      category: "身份验证",
-      icon: <Shield className="h-8 w-8 text-blue-600" />,
-      services: [
-        { name: "Google OAuth", description: "使用 Google 账户快速登录", status: "已集成" },
-        { name: "GitHub OAuth", description: "开发者友好的 GitHub 登录", status: "已集成" },
-        { name: "Magic Link", description: "无密码邮件登录", status: "已集成" },
-        { name: "Discord OAuth", description: "Discord 社区登录", status: "计划中" }
-      ]
-    },
-    {
-      category: "支付处理",
-      icon: <CreditCard className="h-8 w-8 text-green-600" />,
-      services: [
-        { name: "Stripe", description: "全球支付处理平台", status: "已集成" },
-        { name: "PayPal", description: "PayPal 支付集成", status: "计划中" },
-        { name: "支付宝", description: "中国用户支付", status: "计划中" },
-        { name: "微信支付", description: "微信支付集成", status: "计划中" }
-      ]
-    },
-    {
-      category: "数据库",
-      icon: <Database className="h-8 w-8 text-purple-600" />,
-      services: [
-        { name: "Supabase", description: "PostgreSQL 数据库服务", status: "已集成" },
-        { name: "PlanetScale", description: "MySQL 数据库服务", status: "计划中" },
-        { name: "MongoDB", description: "NoSQL 文档数据库", status: "计划中" },
-        { name: "Redis", description: "缓存和会话存储", status: "已集成" }
-      ]
-    },
-    {
-      category: "AI 服务",
-      icon: <Bot className="h-8 w-8 text-pink-600" />,
-      services: [
-        { name: "OpenAI", description: "GPT 模型集成", status: "已集成" },
-        { name: "Anthropic", description: "Claude 模型集成", status: "已集成" },
-        { name: "Google AI", description: "Gemini 模型集成", status: "计划中" },
-        { name: "Hugging Face", description: "开源模型集成", status: "计划中" }
-      ]
-    },
-    {
-      category: "部署平台",
-      icon: <Rocket className="h-8 w-8 text-orange-600" />,
-      services: [
-        { name: "Vercel", description: "Next.js 优化部署", status: "已集成" },
-        { name: "Cloudflare Pages", description: "全球 CDN 部署", status: "已集成" },
-        { name: "Netlify", description: "静态站点部署", status: "计划中" },
-        { name: "Railway", description: "全栈应用部署", status: "计划中" }
-      ]
-    },
-    {
-      category: "分析工具",
-      icon: <BarChart3 className="h-8 w-8 text-indigo-600" />,
-      services: [
-        { name: "Google Analytics", description: "网站流量分析", status: "已集成" },
-        { name: "Mixpanel", description: "用户行为分析", status: "计划中" },
-        { name: "PostHog", description: "产品分析平台", status: "计划中" },
-        { name: "Sentry", description: "错误监控和性能", status: "已集成" }
-      ]
-    }
-  ];
+function IntegrationsContent({ dictionary }: { dictionary: IntegrationsPageDictionary }) {
+  // 图标映射函数
+  const getCategoryIcon = (iconName: string) => {
+    const iconMap = {
+      Shield: <Shield className="h-8 w-8 text-blue-600" />,
+      CreditCard: <CreditCard className="h-8 w-8 text-green-600" />,
+      Database: <Database className="h-8 w-8 text-purple-600" />,
+      Bot: <Bot className="h-8 w-8 text-pink-600" />,
+      BarChart3: <BarChart3 className="h-8 w-8 text-indigo-600" />,
+      Mail: <Users className="h-8 w-8 text-teal-600" />,
+    };
+    return iconMap[iconName as keyof typeof iconMap] || <Code className="h-8 w-8 text-gray-600" />;
+  };
+
+  // 状态映射函数
+  const getStatusBadge = (status: string) => {
+    // 根据当前语言环境确定状态文本
+    const isChinese = dictionary.title === "集成";
+    const isJapanese = dictionary.title === "統合";
+    
+    const statusMap = {
+      available: { 
+        text: isChinese ? "已集成" : isJapanese ? "利用可能" : "Available", 
+        variant: "default" as const, 
+        className: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200" 
+      },
+      "coming-soon": { 
+        text: isChinese ? "计划中" : isJapanese ? "近日公開" : "Coming Soon", 
+        variant: "secondary" as const, 
+        className: "" 
+      },
+      beta: { 
+        text: isChinese ? "测试版" : isJapanese ? "ベータ版" : "Beta", 
+        variant: "secondary" as const, 
+        className: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200" 
+      },
+    };
+    return statusMap[status as keyof typeof statusMap] || { text: status, variant: "secondary" as const, className: "" };
+  };
 
   return (
       <div className="space-y-16">
@@ -531,65 +507,119 @@ function IntegrationsContent() {
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              支持的集成服务
+              {dictionary.popularIntegrations.title}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              ShipBase 与您喜爱的工具无缝集成，让您的工作流程更加高效
+              {dictionary.popularIntegrations.subtitle}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {integrations.map((category, index) => (
+            {dictionary.categories.map((category, index) => (
                 <Card key={index} className="p-6">
                   <div className="flex items-center space-x-3 mb-6">
-                    {category.icon}
+                    {getCategoryIcon(category.icon)}
                     <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
-                      {category.category}
+                      {category.name}
                     </h3>
                   </div>
+                  <p className="text-sm text-neutral-600 dark:text-neutral-300 mb-4">
+                    {category.description}
+                  </p>
                   <div className="space-y-3">
-                    {category.services.map((service, idx) => (
-                        <div key={idx} className="flex items-center justify-between">
-                          <div>
-                            <h4 className="font-medium text-neutral-900 dark:text-neutral-100">
-                              {service.name}
-                            </h4>
-                            <p className="text-sm text-neutral-600 dark:text-neutral-300">
-                              {service.description}
-                            </p>
+                    {category.integrations.map((integration, idx) => {
+                      const statusInfo = getStatusBadge(integration.status);
+                      return (
+                          <div key={idx} className="flex items-center justify-between">
+                            <div className="flex-1">
+                              <h4 className="font-medium text-neutral-900 dark:text-neutral-100">
+                                {integration.name}
+                              </h4>
+                              <p className="text-sm text-neutral-600 dark:text-neutral-300">
+                                {integration.description}
+                              </p>
+                              <div className="flex flex-wrap gap-1 mt-2">
+                                {integration.features.slice(0, 2).map((feature, featureIdx) => (
+                                    <span key={featureIdx} className="text-xs bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 px-2 py-1 rounded">
+                                      {feature}
+                                    </span>
+                                ))}
+                              </div>
+                            </div>
+                            <Badge
+                                variant={statusInfo.variant}
+                                className={statusInfo.className}
+                            >
+                              {statusInfo.text}
+                            </Badge>
                           </div>
-                          <Badge
-                              variant={service.status === "已集成" ? "default" : "secondary"}
-                              className={service.status === "已集成" ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200" : ""}
-                          >
-                            {service.status}
-                          </Badge>
-                        </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </Card>
             ))}
           </div>
         </div>
 
-        {/* 集成指南 */}
+        {/* 热门集成 */}
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              如何集成第三方服务
+              {dictionary.popularIntegrations.title}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              简单的步骤让您快速集成所需的第三方服务
+              {dictionary.popularIntegrations.subtitle}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { step: "1", title: "选择服务", description: "从支持的服务列表中选择您需要的集成" },
-              { step: "2", title: "获取 API 密钥", description: "在服务提供商处创建账户并获取 API 密钥" },
-              { step: "3", title: "配置环境变量", description: "将 API 密钥添加到您的环境变量中" },
-              { step: "4", title: "开始使用", description: "重启应用，集成服务即可使用" }
-            ].map((step, index) => (
+            {dictionary.popularIntegrations.items.map((integration, index) => {
+              const statusInfo = getStatusBadge(integration.status);
+              return (
+                  <Card key={index} className="p-6 text-center">
+                    <div className="h-16 w-16 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-xl mx-auto mb-4 flex items-center justify-center font-bold text-2xl">
+                      {integration.name.charAt(0)}
+                    </div>
+                    <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                      {integration.name}
+                    </h3>
+                    <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-4">
+                      {integration.description}
+                    </p>
+                    <Badge
+                        variant={statusInfo.variant}
+                        className={statusInfo.className}
+                    >
+                      {statusInfo.text}
+                    </Badge>
+                    <div className="mt-4">
+                      <div className="flex flex-wrap gap-1 justify-center">
+                        {integration.features.slice(0, 2).map((feature, featureIdx) => (
+                            <span key={featureIdx} className="text-xs bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 px-2 py-1 rounded">
+                              {feature}
+                            </span>
+                        ))}
+                      </div>
+                    </div>
+                  </Card>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* 快速开始 */}
+        <div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+              {dictionary.gettingStarted.title}
+            </h2>
+            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
+              {dictionary.gettingStarted.subtitle}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {dictionary.gettingStarted.steps.map((step, index) => (
                 <Card key={index} className="p-6 text-center">
                   <div className="h-12 w-12 bg-blue-600 text-white rounded-full mx-auto mb-4 flex items-center justify-center font-bold text-xl">
                     {step.step}
@@ -597,9 +627,14 @@ function IntegrationsContent() {
                   <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-neutral-600 dark:text-neutral-300 text-sm">
+                  <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-4">
                     {step.description}
                   </p>
+                  <div className="bg-neutral-50 dark:bg-neutral-900 rounded-lg p-3 text-left">
+                    <pre className="text-xs text-neutral-600 dark:text-neutral-300 whitespace-pre-wrap">
+                      {step.code}
+                    </pre>
+                  </div>
                 </Card>
             ))}
           </div>
@@ -608,17 +643,17 @@ function IntegrationsContent() {
         {/* CTA */}
         <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-12">
           <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            需要其他集成？
+            {dictionary.cta.title}
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl mx-auto">
-            如果您需要集成其他服务，请联系我们的团队，我们很乐意为您提供帮助
+            {dictionary.cta.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="px-8">
-              联系我们
+              {dictionary.cta.primaryButton}
             </Button>
             <Button variant="outline" size="lg" className="px-8">
-              查看文档
+              {dictionary.cta.secondaryButton}
             </Button>
           </div>
         </div>
