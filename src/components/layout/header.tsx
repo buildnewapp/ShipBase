@@ -58,7 +58,7 @@ export function Header() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-2">
           <LanguageSwitcher currentLocale={locale} />
-          <ThemeSwitcher />
+          <ThemeSwitcher dictionary={dictionary.header} />
           <Button variant="ghost" asChild>
             <Link href="/login">
               {dictionary.header.login}
@@ -120,7 +120,7 @@ export function Header() {
             <div className="pt-4 border-t border-neutral-200 dark:border-neutral-800">
               <div className="flex items-center justify-between space-x-4">
                 <LanguageSwitcher currentLocale={locale} />
-                <ThemeSwitcher />
+                <ThemeSwitcher dictionary={dictionary.header} />
               </div>
             </div>
             

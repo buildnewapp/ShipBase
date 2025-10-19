@@ -9,10 +9,15 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
+import type { HeaderDictionary } from "@/i18n/types";
 
 type Theme = "light" | "dark" | "system";
 
-export function ThemeSwitcher() {
+interface ThemeSwitcherProps {
+  dictionary: HeaderDictionary;
+}
+
+export function ThemeSwitcher({ dictionary }: ThemeSwitcherProps) {
   const [theme, setTheme] = useState<Theme>("system");
 
   useEffect(() => {
@@ -67,11 +72,11 @@ export function ThemeSwitcher() {
   const getThemeLabel = (theme: Theme) => {
     switch (theme) {
       case "light":
-        return "浅色";
+        return dictionary.lightTheme;
       case "dark":
-        return "深色";
+        return dictionary.darkTheme;
       case "system":
-        return "跟随系统";
+        return dictionary.systemTheme;
       default:
         return theme;
     }
