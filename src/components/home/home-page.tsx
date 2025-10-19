@@ -312,7 +312,7 @@ export function HomePage({ dictionary }: HomePageProps) {
                     ))}
                   </div>
                   <blockquote className="text-neutral-600 dark:text-neutral-300 mb-4">
-                    "{testimonial.quote}"
+                    &ldquo;{testimonial.quote}&rdquo;
                   </blockquote>
                   <div>
                     <div className="font-semibold text-neutral-900 dark:text-neutral-50">

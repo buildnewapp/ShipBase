@@ -315,6 +315,105 @@ export const enDictionary: AppDictionary = {
       title: "Features",
       subtitle: "Powerful features to accelerate your development",
       description: "Discover the comprehensive set of tools and features that make ShipBase the perfect platform for modern SaaS applications.",
+      coreFeatures: {
+        title: "Core Features",
+        subtitle: "Complete solution tailored for modern SaaS applications, letting you focus on product innovation rather than infrastructure setup",
+        features: [
+          {
+            icon: "Code",
+            title: "Next.js Full-Stack Framework",
+            description: "Built on the latest Next.js 14+ with App Router, Server Components, and Edge Runtime support, providing optimal performance and development experience.",
+            highlights: ["App Router", "Server Components", "Edge Runtime", "TypeScript Support"]
+          },
+          {
+            icon: "Shield",
+            title: "Enterprise-Grade Authentication",
+            description: "Integrated Better Auth supporting multiple login methods including Google OAuth, GitHub OAuth, and Magic Link, ensuring security and reliability.",
+            highlights: ["Google OAuth", "GitHub OAuth", "Magic Link", "Session Management"]
+          },
+          {
+            icon: "CreditCard",
+            title: "Stripe Payment Integration",
+            description: "Complete payment solution supporting subscriptions, one-time payments, and invoice management, making commercialization easy.",
+            highlights: ["Subscription Management", "One-time Payments", "Invoice System", "Webhook Handling"]
+          },
+          {
+            icon: "Database",
+            title: "Supabase Database",
+            description: "Powerful PostgreSQL database with built-in real-time features, authentication, and storage, providing reliable data foundation for your application.",
+            highlights: ["PostgreSQL", "Real-time Subscriptions", "File Storage", "Row Level Security"]
+          },
+          {
+            icon: "Bot",
+            title: "AI-Ready Infrastructure",
+            description: "Pre-configured AI integration supporting mainstream AI services like OpenAI, Anthropic, with built-in credit system and API sales functionality.",
+            highlights: ["OpenAI Integration", "Credit System", "API Sales", "Multi-model Support"]
+          },
+          {
+            icon: "Rocket",
+            title: "One-Click Deployment",
+            description: "One-click deployment support for mainstream platforms like Vercel, Cloudflare, with automated CI/CD processes, making publishing simple.",
+            highlights: ["Vercel Deployment", "Cloudflare Pages", "CI/CD Automation", "Environment Management"]
+          },
+          {
+            icon: "BarChart3",
+            title: "Business Analytics",
+            description: "Integrated Google Analytics, Search Console, and other analytics tools to help you understand user behavior and business growth.",
+            highlights: ["Google Analytics", "Search Console", "User Behavior Analysis", "Conversion Tracking"]
+          },
+          {
+            icon: "Globe",
+            title: "Internationalization Support",
+            description: "Built-in multi-language support for Chinese, English, Japanese, and other languages, helping your product reach global users.",
+            highlights: ["Multi-language Support", "RTL Support", "Dynamic Language Switching", "SEO Optimization"]
+          }
+        ]
+      },
+      techStack: {
+        title: "Technology Stack",
+        subtitle: "Built on industry best practices and latest technologies, ensuring your application has optimal performance, security, and scalability",
+        technologies: [
+          { name: "Next.js 14+", description: "React Full-stack Framework" },
+          { name: "React 19", description: "User Interface Library" },
+          { name: "TypeScript", description: "Type-safe JavaScript" },
+          { name: "Tailwind CSS", description: "Utility-first CSS Framework" },
+          { name: "Shadcn/UI", description: "Modern Component Library" },
+          { name: "Better Auth", description: "Authentication Solution" },
+          { name: "Stripe", description: "Payment Processing Platform" },
+          { name: "Supabase", description: "Backend as a Service" },
+          { name: "Vercel", description: "Deployment Platform" }
+        ]
+      },
+      comparison: {
+        title: "Why Choose ShipBase",
+        subtitle: "Compared to traditional development methods, ShipBase saves you 90% of development time",
+        traditional: {
+          title: "Traditional Development",
+          items: [
+            { text: "Requires 3-6 months to build infrastructure" },
+            { text: "Need to learn multiple technology stacks" },
+            { text: "Need to handle complex deployment processes" },
+            { text: "Need to implement authentication and payments yourself" },
+            { text: "Need significant time for debugging and optimization" }
+          ]
+        },
+        shipbase: {
+          title: "Using ShipBase",
+          items: [
+            { text: "Complete basic setup in 5 minutes" },
+            { text: "Complete solution out of the box" },
+            { text: "One-click deployment to production" },
+            { text: "Pre-configured authentication and payments" },
+            { text: "Focus on product feature development" }
+          ]
+        }
+      },
+      cta: {
+        title: "Ready to Build Your AI SaaS?",
+        subtitle: "Get ShipBase now and launch your next project in minutes",
+        primaryButton: "Get ShipBase",
+        secondaryButton: "View Documentation"
+      }
     },
     pricing: {
       title: "Pricing",

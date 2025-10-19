@@ -315,6 +315,105 @@ export const jaDictionary: AppDictionary = {
       title: "機能",
       subtitle: "開発を加速する強力な機能",
       description: "ShipBaseを現代のSaaSアプリケーションに最適なプラットフォームにする包括的なツールと機能セットを発見してください。",
+      coreFeatures: {
+        title: "コア機能",
+        subtitle: "現代のSaaSアプリケーションに特化した完全ソリューション。インフラストラクチャの構築ではなく、製品イノベーションに集中できます",
+        features: [
+          {
+            icon: "Code",
+            title: "Next.js フルスタックフレームワーク",
+            description: "最新のNext.js 14+で構築、App Router、Server Components、Edge Runtimeサポートを提供し、最適なパフォーマンスと開発体験を実現。",
+            highlights: ["App Router", "Server Components", "Edge Runtime", "TypeScript サポート"]
+          },
+          {
+            icon: "Shield",
+            title: "エンタープライズグレード認証",
+            description: "Better Authを統合し、Google OAuth、GitHub OAuth、Magic Linkなど複数のログイン方法をサポートし、セキュリティと信頼性を確保。",
+            highlights: ["Google OAuth", "GitHub OAuth", "Magic Link", "セッション管理"]
+          },
+          {
+            icon: "CreditCard",
+            title: "Stripe 決済統合",
+            description: "サブスクリプション、一回払い、請求書管理をサポートする完全な決済ソリューションで、商業化を簡単に実現。",
+            highlights: ["サブスクリプション管理", "一回払い", "請求書システム", "Webhook処理"]
+          },
+          {
+            icon: "Database",
+            title: "Supabase データベース",
+            description: "リアルタイム機能、認証、ストレージを内蔵した強力なPostgreSQLデータベースで、アプリケーションに信頼性の高いデータ基盤を提供。",
+            highlights: ["PostgreSQL", "リアルタイム購読", "ファイルストレージ", "Row Level Security"]
+          },
+          {
+            icon: "Bot",
+            title: "AI対応インフラストラクチャ",
+            description: "OpenAI、Anthropicなどの主流AIサービスをサポートする事前設定されたAI統合、内蔵クレジットシステムとAPI販売機能。",
+            highlights: ["OpenAI統合", "クレジットシステム", "API販売", "マルチモデルサポート"]
+          },
+          {
+            icon: "Rocket",
+            title: "ワンクリックデプロイメント",
+            description: "Vercel、Cloudflareなどの主流プラットフォームへのワンクリックデプロイメントサポート、自動化されたCI/CDプロセスで公開を簡単に。",
+            highlights: ["Vercelデプロイメント", "Cloudflare Pages", "CI/CD自動化", "環境管理"]
+          },
+          {
+            icon: "BarChart3",
+            title: "ビジネス分析",
+            description: "Google Analytics、Search Consoleなどの分析ツールを統合し、ユーザー行動とビジネス成長の理解を支援。",
+            highlights: ["Google Analytics", "Search Console", "ユーザー行動分析", "コンバージョン追跡"]
+          },
+          {
+            icon: "Globe",
+            title: "国際化サポート",
+            description: "中国語、英語、日本語など複数言語の内蔵サポートで、製品をグローバルユーザーに届けます。",
+            highlights: ["マルチ言語サポート", "RTLサポート", "動的言語切り替え", "SEO最適化"]
+          }
+        ]
+      },
+      techStack: {
+        title: "技術スタック",
+        subtitle: "業界のベストプラクティスと最新技術に基づいて構築され、アプリケーションに最適なパフォーマンス、セキュリティ、スケーラビリティを保証",
+        technologies: [
+          { name: "Next.js 14+", description: "React フルスタックフレームワーク" },
+          { name: "React 19", description: "ユーザーインターフェースライブラリ" },
+          { name: "TypeScript", description: "型安全なJavaScript" },
+          { name: "Tailwind CSS", description: "ユーティリティファーストCSSフレームワーク" },
+          { name: "Shadcn/UI", description: "モダンコンポーネントライブラリ" },
+          { name: "Better Auth", description: "認証ソリューション" },
+          { name: "Stripe", description: "決済処理プラットフォーム" },
+          { name: "Supabase", description: "バックエンド即サービス" },
+          { name: "Vercel", description: "デプロイメントプラットフォーム" }
+        ]
+      },
+      comparison: {
+        title: "なぜShipBaseを選ぶのか",
+        subtitle: "従来の開発方法と比較して、ShipBaseは開発時間を90%節約",
+        traditional: {
+          title: "従来の開発",
+          items: [
+            { text: "インフラストラクチャ構築に3-6ヶ月必要" },
+            { text: "複数の技術スタックを学習する必要" },
+            { text: "複雑なデプロイメントプロセスを処理する必要" },
+            { text: "認証と決済を自分で実装する必要" },
+            { text: "デバッグと最適化に大量の時間が必要" }
+          ]
+        },
+        shipbase: {
+          title: "ShipBaseを使用",
+          items: [
+            { text: "5分で基本セットアップ完了" },
+            { text: "箱から出してすぐに使える完全ソリューション" },
+            { text: "本番環境へのワンクリックデプロイメント" },
+            { text: "事前設定された認証と決済" },
+            { text: "製品機能開発に集中" }
+          ]
+        }
+      },
+      cta: {
+        title: "AI SaaSの構築を始めますか？",
+        subtitle: "ShipBaseを今すぐ取得し、数分で次のプロジェクトを開始",
+        primaryButton: "ShipBaseを取得",
+        secondaryButton: "ドキュメントを表示"
+      }
     },
     pricing: {
       title: "料金",

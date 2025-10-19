@@ -315,6 +315,105 @@ export const zhDictionary: AppDictionary = {
       title: "功能特性",
       subtitle: "强大的功能加速您的开发",
       description: "发现全面的工具和功能集，让ShipBase成为现代SaaS应用程序的完美平台。",
+      coreFeatures: {
+        title: "核心特性",
+        subtitle: "为现代 SaaS 应用量身定制的完整解决方案，让您专注于产品创新而非基础设施搭建",
+        features: [
+          {
+            icon: "Code",
+            title: "Next.js 全栈框架",
+            description: "基于最新的 Next.js 14+ 构建，支持 App Router、Server Components 和 Edge Runtime，提供最佳的性能和开发体验。",
+            highlights: ["App Router", "Server Components", "Edge Runtime", "TypeScript 支持"]
+          },
+          {
+            icon: "Shield",
+            title: "企业级身份验证",
+            description: "集成 Better Auth，支持多种登录方式，包括 Google OAuth、GitHub OAuth 和 Magic Link，确保安全可靠。",
+            highlights: ["Google OAuth", "GitHub OAuth", "Magic Link", "会话管理"]
+          },
+          {
+            icon: "CreditCard",
+            title: "Stripe 支付集成",
+            description: "完整的支付解决方案，支持订阅、一次性支付和发票管理，让您轻松实现商业化。",
+            highlights: ["订阅管理", "一次性支付", "发票系统", "Webhook 处理"]
+          },
+          {
+            icon: "Database",
+            title: "Supabase 数据库",
+            description: "强大的 PostgreSQL 数据库，内置实时功能、身份验证和存储，为您的应用提供可靠的数据基础。",
+            highlights: ["PostgreSQL", "实时订阅", "文件存储", "Row Level Security"]
+          },
+          {
+            icon: "Bot",
+            title: "AI 就绪基础设施",
+            description: "预配置的 AI 集成，支持 OpenAI、Anthropic 等主流 AI 服务，内置积分系统和 API 销售功能。",
+            highlights: ["OpenAI 集成", "积分系统", "API 销售", "多模型支持"]
+          },
+          {
+            icon: "Rocket",
+            title: "一键部署",
+            description: "支持 Vercel、Cloudflare 等主流平台的一键部署，自动化 CI/CD 流程，让发布变得简单。",
+            highlights: ["Vercel 部署", "Cloudflare Pages", "CI/CD 自动化", "环境管理"]
+          },
+          {
+            icon: "BarChart3",
+            title: "业务分析",
+            description: "集成 Google Analytics、Search Console 等分析工具，帮助您了解用户行为和业务增长。",
+            highlights: ["Google Analytics", "Search Console", "用户行为分析", "转化跟踪"]
+          },
+          {
+            icon: "Globe",
+            title: "国际化支持",
+            description: "内置多语言支持，支持中文、英文、日文等多种语言，让您的产品触达全球用户。",
+            highlights: ["多语言支持", "RTL 支持", "动态语言切换", "SEO 优化"]
+          }
+        ]
+      },
+      techStack: {
+        title: "技术栈",
+        subtitle: "基于业界最佳实践和最新技术构建，确保您的应用具有最佳的性能、安全性和可扩展性",
+        technologies: [
+          { name: "Next.js 14+", description: "React 全栈框架" },
+          { name: "React 19", description: "用户界面库" },
+          { name: "TypeScript", description: "类型安全的 JavaScript" },
+          { name: "Tailwind CSS", description: "实用优先的 CSS 框架" },
+          { name: "Shadcn/UI", description: "现代组件库" },
+          { name: "Better Auth", description: "身份验证解决方案" },
+          { name: "Stripe", description: "支付处理平台" },
+          { name: "Supabase", description: "后端即服务" },
+          { name: "Vercel", description: "部署平台" }
+        ]
+      },
+      comparison: {
+        title: "为什么选择 ShipBase",
+        subtitle: "与传统开发方式相比，ShipBase 让您节省 90% 的开发时间",
+        traditional: {
+          title: "传统开发",
+          items: [
+            { text: "需要 3-6 个月搭建基础设施" },
+            { text: "需要学习多种技术栈" },
+            { text: "需要处理复杂的部署流程" },
+            { text: "需要自己实现身份验证和支付" },
+            { text: "需要大量时间调试和优化" }
+          ]
+        },
+        shipbase: {
+          title: "使用 ShipBase",
+          items: [
+            { text: "5 分钟内完成基础设置" },
+            { text: "开箱即用的完整解决方案" },
+            { text: "一键部署到生产环境" },
+            { text: "预配置的身份验证和支付" },
+            { text: "专注于产品功能开发" }
+          ]
+        }
+      },
+      cta: {
+        title: "准备开始构建您的 AI SaaS？",
+        subtitle: "立即获取 ShipBase，在几分钟内启动您的下一个项目",
+        primaryButton: "获取 ShipBase",
+        secondaryButton: "查看文档"
+      }
     },
     pricing: {
       title: "价格方案",

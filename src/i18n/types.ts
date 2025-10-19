@@ -175,8 +175,55 @@ export interface PageDictionary {
   description: string;
 }
 
+export interface FeatureDetail {
+  icon: string;
+  title: string;
+  description: string;
+  highlights: string[];
+}
+
+export interface TechStackDetail {
+  name: string;
+  description: string;
+}
+
+export interface ComparisonItem {
+  text: string;
+}
+
+export interface FeaturesPageDictionary extends PageDictionary {
+  coreFeatures: {
+    title: string;
+    subtitle: string;
+    features: FeatureDetail[];
+  };
+  techStack: {
+    title: string;
+    subtitle: string;
+    technologies: TechStackDetail[];
+  };
+  comparison: {
+    title: string;
+    subtitle: string;
+    traditional: {
+      title: string;
+      items: ComparisonItem[];
+    };
+    shipbase: {
+      title: string;
+      items: ComparisonItem[];
+    };
+  };
+  cta: {
+    title: string;
+    subtitle: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+}
+
 export interface PagesDictionary {
-  features: PageDictionary;
+  features: FeaturesPageDictionary;
   pricing: PageDictionary;
   docs: PageDictionary;
   about: PageDictionary;
