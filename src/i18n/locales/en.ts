@@ -419,6 +419,98 @@ export const enDictionary: AppDictionary = {
       title: "Pricing",
       subtitle: "Simple, transparent pricing",
       description: "Choose the plan that fits your needs. Start free and scale as you grow.",
+      plansTitle: "Choose Your Plan",
+      plansSubtitle: "Simple, transparent pricing with no hidden fees. Choose the plan that best fits your needs and upgrade anytime.",
+      plans: [
+        {
+          name: "Free",
+          price: "$0",
+          period: "Forever",
+          description: "Perfect for individual developers and small projects",
+          features: [
+            "Basic Next.js templates",
+            "GitHub integration",
+            "Community support",
+            "Basic documentation",
+            "Personal use license"
+          ],
+          limitations: [
+            "No commercial use",
+            "No technical support",
+            "Limited features"
+          ],
+          cta: "Get Started",
+          popular: false
+        },
+        {
+          name: "Professional",
+          price: "$299",
+          period: "One-time payment",
+          description: "Perfect for startups and small businesses",
+          features: [
+            "Complete feature templates",
+            "Authentication system",
+            "Payment integration",
+            "Database setup",
+            "AI integration",
+            "One-click deployment",
+            "Email support",
+            "Commercial use license",
+            "Source code access"
+          ],
+          limitations: [],
+          cta: "Buy Now",
+          popular: true
+        },
+        {
+          name: "Enterprise",
+          price: "$999",
+          period: "One-time payment",
+          description: "Perfect for large enterprises and teams",
+          features: [
+            "All Professional features",
+            "Advanced AI features",
+            "Multi-tenant support",
+            "Advanced analytics",
+            "Priority technical support",
+            "Custom development services",
+            "Team collaboration features",
+            "SLA guarantee",
+            "Training services"
+          ],
+          limitations: [],
+          cta: "Contact Sales",
+          popular: false
+        }
+      ],
+      faqTitle: "Frequently Asked Questions",
+      faqSubtitle: "Have more questions? We're happy to help",
+      faqs: [
+        {
+          question: "What's the difference between Free and Paid plans?",
+          answer: "The Free plan provides basic features suitable for learning and personal projects. Paid plans include complete commercial features like authentication, payment integration, AI features, etc., suitable for commercial projects."
+        },
+        {
+          question: "Is it a one-time payment or subscription?",
+          answer: "ShipBase uses a one-time payment model. After purchase, you can use it forever without monthly fees. This allows us to focus on the product itself rather than renewals."
+        },
+        {
+          question: "Do you offer refunds?",
+          answer: "We offer a 30-day unconditional refund guarantee. If you're not satisfied within 30 days of purchase, you can apply for a full refund."
+        },
+        {
+          question: "Can I use it for commercial projects?",
+          answer: "Professional and Enterprise plans support commercial use. The Free plan is limited to personal learning and non-commercial projects."
+        },
+        {
+          question: "Does it include technical support?",
+          answer: "Professional plan provides email support, Enterprise plan provides priority technical support. We respond to your questions within 24 hours."
+        },
+        {
+          question: "How do I upgrade to a higher plan?",
+          answer: "You can upgrade to a higher plan anytime by paying the price difference. After upgrade, you'll immediately enjoy all features of the new plan."
+        }
+      ]
     },
     docs: {
       title: "Documentation",

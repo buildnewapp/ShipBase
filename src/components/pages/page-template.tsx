@@ -1,11 +1,11 @@
-import type { PageDictionary, FeaturesPageDictionary } from "@/i18n/types";
+import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary } from "@/i18n/types";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users, Lock } from "lucide-react";
 
 interface PageTemplateProps {
-  dictionary: PageDictionary | FeaturesPageDictionary;
+  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary;
 }
 
 export function PageTemplate({ dictionary }: PageTemplateProps) {
@@ -14,8 +14,8 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
     if (dictionary.title === "功能特性" || dictionary.title === "Features" || dictionary.title === "機能") {
       return <FeaturesContent dictionary={dictionary as FeaturesPageDictionary} />;
     }
-    if (dictionary.title === "价格方案" || dictionary.title === "Pricing") {
-      return <PricingContent />;
+    if (dictionary.title === "价格方案" || dictionary.title === "Pricing" || dictionary.title === "料金") {
+      return <PricingContent dictionary={dictionary as PricingPageDictionary} />;
     }
     if (dictionary.title === "关于我们" || dictionary.title === "About Us") {
       return <AboutContent />;
@@ -257,117 +257,28 @@ function FeaturesContent({ dictionary }: { dictionary: FeaturesPageDictionary })
 }
 
 // 价格方案页面内容
-function PricingContent() {
-  const plans = [
-    {
-      name: "免费版",
-      price: "¥0",
-      period: "永久免费",
-      description: "适合个人开发者和小型项目",
-      features: [
-        "基础 Next.js 模板",
-        "GitHub 集成",
-        "社区支持",
-        "基础文档",
-        "个人使用许可"
-      ],
-      limitations: [
-        "不支持商业使用",
-        "无技术支持",
-        "功能有限"
-      ],
-      cta: "开始使用",
-      popular: false
-    },
-    {
-      name: "专业版",
-      price: "¥299",
-      period: "一次性付费",
-      description: "适合初创公司和中小企业",
-      features: [
-        "完整功能模板",
-        "身份验证系统",
-        "支付集成",
-        "数据库设置",
-        "AI 集成",
-        "一键部署",
-        "邮件支持",
-        "商业使用许可",
-        "源码访问"
-      ],
-      limitations: [],
-      cta: "立即购买",
-      popular: true
-    },
-    {
-      name: "企业版",
-      price: "¥999",
-      period: "一次性付费",
-      description: "适合大型企业和团队",
-      features: [
-        "专业版所有功能",
-        "高级 AI 功能",
-        "多租户支持",
-        "高级分析",
-        "优先技术支持",
-        "定制开发服务",
-        "团队协作功能",
-        "SLA 保障",
-        "培训服务"
-      ],
-      limitations: [],
-      cta: "联系销售",
-      popular: false
-    }
-  ];
-
-  const faqs = [
-    {
-      question: "免费版和付费版有什么区别？",
-      answer: "免费版提供基础功能，适合学习和个人项目。付费版包含完整的商业功能，如身份验证、支付集成、AI 功能等，适合商业项目。"
-    },
-    {
-      question: "是一次性付费还是订阅制？",
-      answer: "ShipBase 采用一次性付费模式，购买后永久使用，无需每月付费。这让我们能够专注于产品本身而非续费。"
-    },
-    {
-      question: "支持退款吗？",
-      answer: "我们提供 30 天无条件退款保证。如果您在购买后 30 天内不满意，可以申请全额退款。"
-    },
-    {
-      question: "可以用于商业项目吗？",
-      answer: "专业版和企业版支持商业使用。免费版仅限个人学习和非商业项目使用。"
-    },
-    {
-      question: "包含技术支持吗？",
-      answer: "专业版提供邮件支持，企业版提供优先技术支持。我们会在 24 小时内回复您的问题。"
-    },
-    {
-      question: "如何升级到更高版本？",
-      answer: "您可以随时升级到更高版本，只需支付差价即可。升级后立即享受新版本的所有功能。"
-    }
-  ];
-
+function PricingContent({ dictionary }: { dictionary: PricingPageDictionary }) {
   return (
     <div className="space-y-16">
       {/* 价格方案 */}
       <div>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            选择适合您的方案
+            {dictionary.plansTitle}
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-            简单透明的定价，没有隐藏费用。选择最适合您需求的方案，随时可以升级。
+            {dictionary.plansSubtitle}
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {plans.map((plan, index) => (
+          {dictionary.plans.map((plan, index) => (
             <Card key={index} className={`p-8 relative ${plan.popular ? 'border-blue-500 ring-2 ring-blue-200 dark:ring-blue-800' : ''}`}>
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <Badge className="bg-blue-600 text-white px-4 py-1">
-                    最受欢迎
+                    {dictionary.title === "价格方案" ? "最受欢迎" : 
+                     dictionary.title === "Pricing" ? "Most Popular" : "最も人気"}
                   </Badge>
                 </div>
               )}
@@ -419,15 +330,15 @@ function PricingContent() {
       <div>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            常见问题
+            {dictionary.faqTitle}
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-            还有其他问题？我们很乐意为您解答
+            {dictionary.faqSubtitle}
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {faqs.map((faq, index) => (
+          {dictionary.faqs.map((faq, index) => (
             <Card key={index} className="p-6">
               <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
                 {faq.question}

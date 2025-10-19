@@ -175,6 +175,26 @@ export interface PageDictionary {
   description: string;
 }
 
+export interface PricingPlan {
+  name: string;
+  price: string;
+  period: string;
+  description: string;
+  features: string[];
+  limitations: string[];
+  cta: string;
+  popular: boolean;
+}
+
+export interface PricingPageDictionary extends PageDictionary {
+  plansTitle: string;
+  plansSubtitle: string;
+  plans: PricingPlan[];
+  faqTitle: string;
+  faqSubtitle: string;
+  faqs: FAQItem[];
+}
+
 export interface FeatureDetail {
   icon: string;
   title: string;
@@ -224,7 +244,7 @@ export interface FeaturesPageDictionary extends PageDictionary {
 
 export interface PagesDictionary {
   features: FeaturesPageDictionary;
-  pricing: PageDictionary;
+  pricing: PricingPageDictionary;
   docs: PageDictionary;
   about: PageDictionary;
   integrations: PageDictionary;
