@@ -641,6 +641,75 @@ export interface CookiesPageDictionary extends PageDictionary {
   };
 }
 
+export interface ProfilePageDictionary extends PageDictionary {
+  basicInfo: {
+    title: string;
+    description: string;
+    emailLabel: string;
+    registrationDate: string;
+    unknown: string;
+  };
+  accountStatus: {
+    title: string;
+    description: string;
+    emailVerification: string;
+    accountStatus: string;
+    loginMethod: string;
+    verified: string;
+    unverified: string;
+    normal: string;
+    oauth: string;
+    emailLogin: string;
+  };
+  actions: {
+    editProfile: string;
+    changePassword: string;
+  };
+  noNameSet: string;
+}
+
+export interface MembershipPlan {
+  id: string;
+  name: string;
+  price: number;
+  period: string;
+  description: string;
+  features: string[];
+  current: boolean;
+}
+
+export interface MembershipPageDictionary extends PageDictionary {
+  currentPlan: {
+    title: string;
+    description: string;
+    freeVersion: string;
+    paidVersion: string;
+  };
+  usage: {
+    apiCalls: string;
+    projectCount: string;
+    supportLevel: string;
+    remainingThisMonth: string;
+    maxLimit: string;
+    responseTime: string;
+    priority: string;
+    standard: string;
+  };
+  upgradePlan: {
+    title: string;
+    currentPlan: string;
+    freeUse: string;
+    upgradePlan: string;
+  };
+  billingHistory: {
+    title: string;
+    description: string;
+    noRecords: string;
+    upgradeMessage: string;
+  };
+  plans: MembershipPlan[];
+}
+
 export interface PagesDictionary {
   features: FeaturesPageDictionary;
   pricing: PricingPageDictionary;
@@ -654,6 +723,8 @@ export interface PagesDictionary {
   cookies: CookiesPageDictionary;
   login: PageDictionary;
   signup: PageDictionary;
+  profile: ProfilePageDictionary;
+  membership: MembershipPageDictionary;
 }
 
 export interface AppDictionary {
