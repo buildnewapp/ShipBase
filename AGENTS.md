@@ -31,7 +31,12 @@
 ## Environment & Configuration Tips
 - Store secrets in `.env.local`; never commit environment files or production keys.
 - Mirror new environment variables in `next.config.ts` and note default values in the PR to keep deployments reproducible.
-
+- Better Auth expects the following variables during development and CI:
+  - `BETTER_AUTH_SECRET` — session signing secret (`openssl rand -base64 32`).
+  - `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` (optional, enables Google OAuth).
+  - `GITHUB_CLIENT_ID` / `GITHUB_CLIENT_SECRET` (optional, enables GitHub OAuth).
+  - `NEXT_PUBLIC_AUTH_BASE_URL` (optional override for client fetches when the API runs on a different origin).
+  - `MAGIC_LINK_WEBHOOK_URL` (optional POST endpoint to deliver magic links; otherwise links log to STDOUT).
 
 这是一个NEXTJS SAAS模板
 
