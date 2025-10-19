@@ -1,11 +1,11 @@
-import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary } from "@/i18n/types";
+import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary } from "@/i18n/types";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users, Lock } from "lucide-react";
 
 interface PageTemplateProps {
-  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary;
+  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary;
 }
 
 export function PageTemplate({ dictionary }: PageTemplateProps) {
@@ -17,11 +17,8 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
     if (dictionary.title === "价格方案" || dictionary.title === "Pricing" || dictionary.title === "料金") {
       return <PricingContent dictionary={dictionary as PricingPageDictionary} />;
     }
-    if (dictionary.title === "关于我们" || dictionary.title === "About Us") {
-      return <AboutContent />;
-    }
-    if (dictionary.title === "文档" || dictionary.title === "Documentation") {
-      return <DocsContent />;
+    if (dictionary.title === "文档" || dictionary.title === "Documentation" || dictionary.title === "ドキュメント") {
+      return <DocsContent dictionary={dictionary as DocsPageDictionary} />;
     }
     if (dictionary.title === "集成" || dictionary.title === "Integrations") {
       return <IntegrationsContent />;
@@ -354,283 +351,14 @@ function PricingContent({ dictionary }: { dictionary: PricingPageDictionary }) {
   );
 }
 
-// 关于我们页面内容
-function AboutContent() {
-  const team = [
-    {
-      name: "张三",
-      role: "创始人 & CEO",
-      description: "10+ 年全栈开发经验，前 Google 工程师",
-      avatar: "/api/placeholder/150/150"
-    },
-    {
-      name: "李四",
-      role: "CTO",
-      description: "AI 和机器学习专家，前 OpenAI 研究员",
-      avatar: "/api/placeholder/150/150"
-    },
-    {
-      name: "王五",
-      role: "产品总监",
-      description: "用户体验专家，前 Airbnb 产品经理",
-      avatar: "/api/placeholder/150/150"
-    }
-  ];
-
-  const values = [
-    {
-      icon: <Zap className="h-8 w-8 text-yellow-500" />,
-      title: "快速交付",
-      description: "我们相信速度就是一切。通过 ShipBase，开发者可以在几小时内而不是几个月内发布产品。"
-    },
-    {
-      icon: <Shield className="h-8 w-8 text-green-500" />,
-      title: "质量至上",
-      description: "我们坚持最高标准，确保每个组件都经过严格测试，符合生产环境要求。"
-    },
-    {
-      icon: <Users className="h-8 w-8 text-blue-500" />,
-      title: "开发者优先",
-      description: "我们始终站在开发者的角度思考问题，提供最符合开发习惯的工具和体验。"
-    },
-    {
-      icon: <Rocket className="h-8 w-8 text-purple-500" />,
-      title: "持续创新",
-      description: "我们不断探索新技术，将最新的最佳实践融入到 ShipBase 中。"
-    }
-  ];
-
-  return (
-      <div className="space-y-16">
-        {/* 公司使命 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              我们的使命
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-4xl mx-auto">
-              让每个有想法的开发者都能快速构建和发布自己的 AI SaaS 产品。我们相信，通过降低技术门槛，
-              可以释放更多创新潜力，让优秀的想法更快地变成现实。
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-                从想法到产品，只需几小时
-              </h3>
-              <p className="text-neutral-600 dark:text-neutral-300 mb-6">
-                传统的 SaaS 开发需要数月时间搭建基础设施，而 ShipBase 让这个过程缩短到几小时。
-                我们提供完整的解决方案，包括身份验证、支付处理、数据库、AI 集成等，
-                让开发者可以专注于核心业务逻辑的开发。
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span className="text-neutral-600 dark:text-neutral-300">250+ 成功案例</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span className="text-neutral-600 dark:text-neutral-300">平均节省 90% 开发时间</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span className="text-neutral-600 dark:text-neutral-300">24/7 技术支持</span>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-neutral-800 dark:to-neutral-700 rounded-2xl p-8">
-              <div className="text-center">
-                <div className="text-6xl font-bold text-blue-600 dark:text-blue-400 mb-2">90%</div>
-                <div className="text-lg text-neutral-600 dark:text-neutral-300">开发时间节省</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* 核心价值观 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              核心价值观
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              这些价值观指导着我们的每一个决策，确保我们始终为开发者提供最好的服务
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {values.map((value, index) => (
-                <Card key={index} className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      {value.icon}
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
-                        {value.title}
-                      </h3>
-                      <p className="text-neutral-600 dark:text-neutral-300">
-                        {value.description}
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* 团队介绍 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              我们的团队
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              由来自 Google、OpenAI、Airbnb 等知名公司的资深工程师和产品专家组成
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-                <Card key={index} className="p-6 text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-2xl">
-                  {member.name.charAt(0)}
-                </span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">
-                    {member.role}
-                  </p>
-                  <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                    {member.description}
-                  </p>
-                </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* 联系我们 */}
-        <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-12">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            加入我们的旅程
-          </h2>
-          <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl mx-auto">
-            如果您对我们的使命感到兴奋，或者想要了解更多关于 ShipBase 的信息，
-            我们很乐意与您交流。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8">
-              联系我们
-            </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              查看职位
-            </Button>
-          </div>
-        </div>
-      </div>
-  );
-}
-
 // 文档页面内容
-function DocsContent() {
-  const quickStart = [
-    {
-      step: "1",
-      title: "安装 ShipBase",
-      description: "克隆仓库并安装依赖",
-      code: "git clone https://github.com/your-repo/shipbase\ncd shipbase\nnpm install"
-    },
-    {
-      step: "2",
-      title: "配置环境变量",
-      description: "设置必要的 API 密钥和配置",
-      code: "cp .env.example .env.local\n# 编辑 .env.local 文件"
-    },
-    {
-      step: "3",
-      title: "启动开发服务器",
-      description: "在本地运行项目",
-      code: "npm run dev\n# 访问 http://localhost:3000"
-    },
-    {
-      step: "4",
-      title: "部署到生产环境",
-      description: "一键部署到 Vercel",
-      code: "npm run build\nvercel deploy"
-    }
-  ];
+function DocsContent({ dictionary }: { dictionary: DocsPageDictionary }) {
+  const quickStart = dictionary.quickStart.steps;
 
-  const docSections = [
-    {
-      title: "快速开始",
-      description: "5 分钟快速上手 ShipBase",
-      icon: <Rocket className="h-6 w-6" />,
-      links: [
-        { name: "安装指南", href: "#" },
-        { name: "环境配置", href: "#" },
-        { name: "第一个应用", href: "#" }
-      ]
-    },
-    {
-      title: "核心功能",
-      description: "了解 ShipBase 的核心功能",
-      icon: <Code className="h-6 w-6" />,
-      links: [
-        { name: "身份验证", href: "#" },
-        { name: "支付集成", href: "#" },
-        { name: "数据库设置", href: "#" },
-        { name: "AI 集成", href: "#" }
-      ]
-    },
-    {
-      title: "API 参考",
-      description: "完整的 API 文档和示例",
-      icon: <Database className="h-6 w-6" />,
-      links: [
-        { name: "REST API", href: "#" },
-        { name: "GraphQL", href: "#" },
-        { name: "Webhooks", href: "#" },
-        { name: "SDK", href: "#" }
-      ]
-    },
-    {
-      title: "部署指南",
-      description: "将您的应用部署到生产环境",
-      icon: <Globe className="h-6 w-6" />,
-      links: [
-        { name: "Vercel 部署", href: "#" },
-        { name: "Cloudflare Pages", href: "#" },
-        { name: "Docker 部署", href: "#" },
-        { name: "环境配置", href: "#" }
-      ]
-    },
-    {
-      title: "最佳实践",
-      description: "开发和生产环境的最佳实践",
-      icon: <Shield className="h-6 w-6" />,
-      links: [
-        { name: "安全指南", href: "#" },
-        { name: "性能优化", href: "#" },
-        { name: "监控和日志", href: "#" },
-        { name: "错误处理", href: "#" }
-      ]
-    },
-    {
-      title: "故障排除",
-      description: "常见问题和解决方案",
-      icon: <Zap className="h-6 w-6" />,
-      links: [
-        { name: "常见问题", href: "#" },
-        { name: "错误代码", href: "#" },
-        { name: "调试技巧", href: "#" },
-        { name: "社区支持", href: "#" }
-      ]
-    }
-  ];
+  const docSections = dictionary.navigation.sections.map(section => ({
+    ...section,
+    icon: getIcon(section.icon)
+  }));
 
   return (
       <div className="space-y-16">
@@ -638,10 +366,10 @@ function DocsContent() {
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              快速开始
+              {dictionary.quickStart.title}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              只需几个简单步骤，您就可以开始使用 ShipBase 构建您的 AI SaaS 应用
+              {dictionary.quickStart.subtitle}
             </p>
           </div>
 
@@ -673,10 +401,10 @@ function DocsContent() {
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              文档导航
+              {dictionary.navigation.title}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              浏览我们的完整文档，找到您需要的所有信息
+              {dictionary.navigation.subtitle}
             </p>
           </div>
 
@@ -714,17 +442,17 @@ function DocsContent() {
         {/* 社区和支持 */}
         <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-12">
           <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            需要帮助？
+            {dictionary.support.title}
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl mx-auto">
-            我们的社区和支持团队随时为您提供帮助。加入我们的 Discord 社区或查看常见问题。
+            {dictionary.support.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="px-8">
-              加入 Discord
+              {dictionary.support.discordButton}
             </Button>
             <Button variant="outline" size="lg" className="px-8">
-              查看 FAQ
+              {dictionary.support.faqButton}
             </Button>
           </div>
         </div>

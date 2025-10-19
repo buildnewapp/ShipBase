@@ -281,7 +281,6 @@ export const jaDictionary: AppDictionary = {
     features: "機能",
     pricing: "料金",
     docs: "ドキュメント",
-    about: "会社概要",
     login: "ログイン",
     signup: "無料トライアル",
     languageSwitch: "言語",
@@ -622,83 +621,6 @@ export const jaDictionary: AppDictionary = {
         description: "Discordコミュニティに参加するか、FAQをチェックしてください。",
         discordButton: "Discordに参加",
         faqButton: "FAQを表示"
-      }
-    },
-    about: {
-      title: "会社概要",
-      subtitle: "SaaS開発の未来を構築",
-      description: "私たちのミッション、チーム、ShipBaseを動かす技術について学んでください。",
-      mission: {
-        title: "私たちのミッション",
-        description: "アイデアを持つすべての開発者が自分のAI SaaS製品を素早く構築・リリースできるようにすることです。技術的障壁を下げることで、より多くの革新の可能性を解き放ち、素晴らしいアイデアをより早く現実に変えることができると信じています。",
-        subtitle: "アイデアから製品まで、わずか数時間で",
-        content: "従来のSaaS開発ではインフラストラクチャの構築に数ヶ月かかりますが、ShipBaseはこのプロセスを数時間に短縮します。認証、決済処理、データベース、AI統合など、完全なソリューションを提供し、開発者がコアビジネスロジックの開発に集中できるようにします。",
-        stats: {
-          title: "開発時間の節約",
-          value: "90%",
-          description: "開発時間の節約"
-        },
-        achievements: [
-          "250+ の成功事例",
-          "平均90%の開発時間節約",
-          "24/7 技術サポート"
-        ]
-      },
-      values: {
-        title: "コアバリュー",
-        subtitle: "これらの価値観が私たちのすべての決定を導き、開発者に最高のサービスを提供することを保証します",
-        items: [
-          {
-            icon: "Zap",
-            title: "高速配信",
-            description: "速度がすべてだと信じています。ShipBaseにより、開発者は数ヶ月ではなく数時間で製品をリリースできます。"
-          },
-          {
-            icon: "Shield",
-            title: "品質第一",
-            description: "最高基準を維持し、すべてのコンポーネントが厳密にテストされ、本番環境の要件を満たすことを保証します。"
-          },
-          {
-            icon: "Users",
-            title: "開発者優先",
-            description: "常に開発者の視点から考え、開発習慣に最も適したツールと体験を提供します。"
-          },
-          {
-            icon: "Rocket",
-            title: "継続的革新",
-            description: "新しい技術を継続的に探求し、最新のベストプラクティスをShipBaseに統合します。"
-          }
-        ]
-      },
-      team: {
-        title: "私たちのチーム",
-        subtitle: "Google、OpenAI、Airbnbなどの有名企業のシニアエンジニアとプロダクト専門家で構成",
-        members: [
-          {
-            name: "田中太郎",
-            role: "創設者 & CEO",
-            description: "10年以上のフルスタック開発経験、元Googleエンジニア",
-            avatar: "/api/placeholder/150/150"
-          },
-          {
-            name: "佐藤花子",
-            role: "CTO",
-            description: "AIと機械学習の専門家、元OpenAI研究者",
-            avatar: "/api/placeholder/150/150"
-          },
-          {
-            name: "鈴木一郎",
-            role: "プロダクト責任者",
-            description: "ユーザーエクスペリエンスの専門家、元Airbnbプロダクトマネージャー",
-            avatar: "/api/placeholder/150/150"
-          }
-        ]
-      },
-      cta: {
-        title: "私たちの旅に参加",
-        description: "私たちのミッションに興奮している、またはShipBaseについてもっと知りたい場合は、お気軽にお問い合わせください。",
-        primaryButton: "お問い合わせ",
-        secondaryButton: "求人を見る"
       }
     },
     integrations: {

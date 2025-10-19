@@ -281,7 +281,6 @@ export const zhDictionary: AppDictionary = {
     features: "功能特性",
     pricing: "价格方案",
     docs: "文档",
-    about: "关于我们",
     login: "登录",
     signup: "免费试用",
     languageSwitch: "语言",
@@ -622,83 +621,6 @@ export const zhDictionary: AppDictionary = {
         description: "加入我们的 Discord 社区或查看常见问题。",
         discordButton: "加入 Discord",
         faqButton: "查看 FAQ"
-      }
-    },
-    about: {
-      title: "关于我们",
-      subtitle: "构建SaaS开发的未来",
-      description: "了解我们的使命、团队和驱动ShipBase的技术。",
-      mission: {
-        title: "我们的使命",
-        description: "让每个有想法的开发者都能快速构建和发布自己的 AI SaaS 产品。我们相信，通过降低技术门槛，可以释放更多创新潜力，让优秀的想法更快地变成现实。",
-        subtitle: "从想法到产品，只需几小时",
-        content: "传统的 SaaS 开发需要数月时间搭建基础设施，而 ShipBase 让这个过程缩短到几小时。我们提供完整的解决方案，包括身份验证、支付处理、数据库、AI 集成等，让开发者可以专注于核心业务逻辑的开发。",
-        stats: {
-          title: "开发时间节省",
-          value: "90%",
-          description: "开发时间节省"
-        },
-        achievements: [
-          "250+ 成功案例",
-          "平均节省 90% 开发时间",
-          "24/7 技术支持"
-        ]
-      },
-      values: {
-        title: "核心价值观",
-        subtitle: "这些价值观指导着我们的每一个决策，确保我们始终为开发者提供最好的服务",
-        items: [
-          {
-            icon: "Zap",
-            title: "快速交付",
-            description: "我们相信速度就是一切。通过 ShipBase，开发者可以在几小时内而不是几个月内发布产品。"
-          },
-          {
-            icon: "Shield",
-            title: "质量至上",
-            description: "我们坚持最高标准，确保每个组件都经过严格测试，符合生产环境要求。"
-          },
-          {
-            icon: "Users",
-            title: "开发者优先",
-            description: "我们始终站在开发者的角度思考问题，提供最符合开发习惯的工具和体验。"
-          },
-          {
-            icon: "Rocket",
-            title: "持续创新",
-            description: "我们不断探索新技术，将最新的最佳实践融入到 ShipBase 中。"
-          }
-        ]
-      },
-      team: {
-        title: "我们的团队",
-        subtitle: "由来自 Google、OpenAI、Airbnb 等知名公司的资深工程师和产品专家组成",
-        members: [
-          {
-            name: "张三",
-            role: "创始人 & CEO",
-            description: "10+ 年全栈开发经验，前 Google 工程师",
-            avatar: "/api/placeholder/150/150"
-          },
-          {
-            name: "李四",
-            role: "CTO",
-            description: "AI 和机器学习专家，前 OpenAI 研究员",
-            avatar: "/api/placeholder/150/150"
-          },
-          {
-            name: "王五",
-            role: "产品总监",
-            description: "用户体验专家，前 Airbnb 产品经理",
-            avatar: "/api/placeholder/150/150"
-          }
-        ]
-      },
-      cta: {
-        title: "加入我们的旅程",
-        description: "如果您对我们的使命感到兴奋，或者想要了解更多关于 ShipBase 的信息，我们很乐意与您交流。",
-        primaryButton: "联系我们",
-        secondaryButton: "查看职位"
       }
     },
     integrations: {

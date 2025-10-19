@@ -281,7 +281,6 @@ export const enDictionary: AppDictionary = {
     features: "Features",
     pricing: "Pricing",
     docs: "Docs",
-    about: "About",
     login: "Login",
     signup: "Free Trial",
     languageSwitch: "Language",
@@ -622,83 +621,6 @@ export const enDictionary: AppDictionary = {
         description: "Join our Discord community or check out the FAQ.",
         discordButton: "Join Discord",
         faqButton: "View FAQ"
-      }
-    },
-    about: {
-      title: "About Us",
-      subtitle: "Building the future of SaaS development",
-      description: "Learn about our mission, team, and the technology that powers ShipBase.",
-      mission: {
-        title: "Our Mission",
-        description: "Empowering every developer with ideas to quickly build and launch their own AI SaaS products. We believe that by lowering technical barriers, we can unleash more innovation potential and turn great ideas into reality faster.",
-        subtitle: "From idea to product in just hours",
-        content: "Traditional SaaS development requires months to build infrastructure, while ShipBase reduces this process to just hours. We provide complete solutions including authentication, payment processing, databases, AI integration, and more, allowing developers to focus on core business logic development.",
-        stats: {
-          title: "Development Time Saved",
-          value: "90%",
-          description: "Development time saved"
-        },
-        achievements: [
-          "250+ Success Stories",
-          "Average 90% Development Time Saved",
-          "24/7 Technical Support"
-        ]
-      },
-      values: {
-        title: "Core Values",
-        subtitle: "These values guide every decision we make, ensuring we always provide the best service for developers",
-        items: [
-          {
-            icon: "Zap",
-            title: "Fast Delivery",
-            description: "We believe speed is everything. With ShipBase, developers can ship products in hours instead of months."
-          },
-          {
-            icon: "Shield",
-            title: "Quality First",
-            description: "We maintain the highest standards, ensuring every component is rigorously tested and meets production requirements."
-          },
-          {
-            icon: "Users",
-            title: "Developer-First",
-            description: "We always think from the developer's perspective, providing tools and experiences that best match development habits."
-          },
-          {
-            icon: "Rocket",
-            title: "Continuous Innovation",
-            description: "We continuously explore new technologies and integrate the latest best practices into ShipBase."
-          }
-        ]
-      },
-      team: {
-        title: "Our Team",
-        subtitle: "Composed of senior engineers and product experts from renowned companies like Google, OpenAI, Airbnb",
-        members: [
-          {
-            name: "John Smith",
-            role: "Founder & CEO",
-            description: "10+ years full-stack development experience, former Google engineer",
-            avatar: "/api/placeholder/150/150"
-          },
-          {
-            name: "Sarah Johnson",
-            role: "CTO",
-            description: "AI and machine learning expert, former OpenAI researcher",
-            avatar: "/api/placeholder/150/150"
-          },
-          {
-            name: "Mike Chen",
-            role: "Head of Product",
-            description: "User experience expert, former Airbnb product manager",
-            avatar: "/api/placeholder/150/150"
-          }
-        ]
-      },
-      cta: {
-        title: "Join Our Journey",
-        description: "If you're excited about our mission or want to learn more about ShipBase, we'd love to connect with you.",
-        primaryButton: "Contact Us",
-        secondaryButton: "View Jobs"
       }
     },
     integrations: {

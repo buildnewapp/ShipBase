@@ -144,7 +144,6 @@ export interface HeaderDictionary {
   features: string;
   pricing: string;
   docs: string;
-  about: string;
   login: string;
   signup: string;
   languageSwitch: string;
@@ -193,36 +192,6 @@ export interface CompanyValue {
   description: string;
 }
 
-export interface AboutPageDictionary extends PageDictionary {
-  mission: {
-    title: string;
-    description: string;
-    subtitle: string;
-    content: string;
-    stats: {
-      title: string;
-      value: string;
-      description: string;
-    };
-    achievements: string[];
-  };
-  values: {
-    title: string;
-    subtitle: string;
-    items: CompanyValue[];
-  };
-  team: {
-    title: string;
-    subtitle: string;
-    members: TeamMember[];
-  };
-  cta: {
-    title: string;
-    description: string;
-    primaryButton: string;
-    secondaryButton: string;
-  };
-}
 
 export interface QuickStartStep {
   step: string;
@@ -438,7 +407,6 @@ export interface PagesDictionary {
   features: FeaturesPageDictionary;
   pricing: PricingPageDictionary;
   docs: DocsPageDictionary;
-  about: AboutPageDictionary;
   integrations: IntegrationsPageDictionary;
   help: HelpPageDictionary;
   contact: ContactPageDictionary;

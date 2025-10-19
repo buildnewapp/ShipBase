@@ -47,12 +47,6 @@ export function Header() {
           >
             {dictionary.header.docs}
           </Link>
-          <Link
-            href={locale === 'en' ? '/about' : `/${locale}/about`}
-            className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
-          >
-            {dictionary.header.about}
-          </Link>
         </nav>
 
         {/* Desktop CTA */}
@@ -107,13 +101,6 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.header.docs}
-            </Link>
-            <Link
-              href={locale === 'en' ? '/about' : `/${locale}/about`}
-              className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {dictionary.header.about}
             </Link>
             
             {/* 移动端切换按钮 */}
