@@ -71,4 +71,17 @@ export const zhDictionary: AppDictionary = {
       },
     ],
   },
+  header: {
+    features: "功能特性",
+    pricing: "价格方案",
+    docs: "文档",
+    about: "关于我们",
+    login: "登录",
+    signup: "免费试用",
+    languageSwitch: "语言",
+    themeSwitch: "主题",
+    lightTheme: "浅色",
+    darkTheme: "深色",
+    systemTheme: "跟随系统",
+  },
 };

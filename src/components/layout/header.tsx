@@ -2,9 +2,30 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { locales, type Locale } from "@/i18n";
+import { LanguageSwitcher } from "./language-switcher";
+import { ThemeSwitcher } from "./theme-switcher";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+  
+  // 检测当前语言
+  const getCurrentLocale = (): Locale => {
+    try {
+      const pathSegments = pathname.split('/').filter(Boolean);
+      if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
+        return pathSegments[0] as Locale;
+      }
+      return 'zh'; // 默认中文
+    } catch (error) {
+      console.error('Error detecting locale:', error);
+      return 'zh';
+    }
+  };
+  
+  const currentLocale = getCurrentLocale();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-md dark:border-neutral-800 dark:bg-neutral-950/80">
@@ -24,44 +45,46 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link
-            href="/features"
+            href={`/${currentLocale}/features`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
-            功能特性
+            {currentLocale === 'en' ? 'Features' : '功能特性'}
           </Link>
           <Link
-            href="/pricing"
+            href={`/${currentLocale}/pricing`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
-            价格方案
+            {currentLocale === 'en' ? 'Pricing' : '价格方案'}
           </Link>
           <Link
-            href="/docs"
+            href={`/${currentLocale}/docs`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
-            文档
+            {currentLocale === 'en' ? 'Docs' : '文档'}
           </Link>
           <Link
-            href="/about"
+            href={`/${currentLocale}/about`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
-            关于我们
+            {currentLocale === 'en' ? 'About' : '关于我们'}
           </Link>
         </nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-4">
+          <LanguageSwitcher currentLocale={currentLocale} />
+          <ThemeSwitcher />
           <Link
             href="/login"
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
-            登录
+            {currentLocale === 'en' ? 'Login' : '登录'}
           </Link>
           <Link
             href="/signup"
             className="rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-medium text-white hover:from-blue-700 hover:to-purple-700 transition-all duration-200"
           >
-            免费试用
+            {currentLocale === 'en' ? 'Free Trial' : '免费试用'}
           </Link>
         </div>
 
@@ -101,47 +124,56 @@ export function Header() {
         <div className="md:hidden border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
           <div className="px-4 py-6 space-y-4">
             <Link
-              href="/features"
+              href={`/${currentLocale}/features`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              功能特性
+              {currentLocale === 'en' ? 'Features' : '功能特性'}
             </Link>
             <Link
-              href="/pricing"
+              href={`/${currentLocale}/pricing`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              价格方案
+              {currentLocale === 'en' ? 'Pricing' : '价格方案'}
             </Link>
             <Link
-              href="/docs"
+              href={`/${currentLocale}/docs`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              文档
+              {currentLocale === 'en' ? 'Docs' : '文档'}
             </Link>
             <Link
-              href="/about"
+              href={`/${currentLocale}/about`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              关于我们
+              {currentLocale === 'en' ? 'About' : '关于我们'}
             </Link>
+            
+            {/* 移动端切换按钮 */}
+            <div className="pt-4 border-t border-neutral-200 dark:border-neutral-800">
+              <div className="flex items-center justify-between space-x-4">
+                <LanguageSwitcher currentLocale={currentLocale} />
+                <ThemeSwitcher />
+              </div>
+            </div>
+            
             <div className="pt-4 space-y-3">
               <Link
                 href="/login"
                 className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                登录
+                {currentLocale === 'en' ? 'Login' : '登录'}
               </Link>
               <Link
                 href="/signup"
                 className="block rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-medium text-white hover:from-blue-700 hover:to-purple-700 transition-all duration-200 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                免费试用
+                {currentLocale === 'en' ? 'Free Trial' : '免费试用'}
               </Link>
             </div>
           </div>

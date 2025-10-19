@@ -73,4 +73,17 @@ export const enDictionary: AppDictionary = {
       },
     ],
   },
+  header: {
+    features: "Features",
+    pricing: "Pricing",
+    docs: "Docs",
+    about: "About",
+    login: "Login",
+    signup: "Free Trial",
+    languageSwitch: "Language",
+    themeSwitch: "Theme",
+    lightTheme: "Light",
+    darkTheme: "Dark",
+    systemTheme: "System",
+  },
 };

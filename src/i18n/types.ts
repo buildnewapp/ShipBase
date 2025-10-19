@@ -45,7 +45,22 @@ export interface AuthPanelDictionary {
   footer: RichText;
 }
 
+export interface HeaderDictionary {
+  features: string;
+  pricing: string;
+  docs: string;
+  about: string;
+  login: string;
+  signup: string;
+  languageSwitch: string;
+  themeSwitch: string;
+  lightTheme: string;
+  darkTheme: string;
+  systemTheme: string;
+}
+
 export interface AppDictionary {
   home: HomeDictionary;
   authPanel: AuthPanelDictionary;
+  header: HeaderDictionary;
 }
