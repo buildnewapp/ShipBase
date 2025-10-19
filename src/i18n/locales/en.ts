@@ -296,7 +296,6 @@ export const enDictionary: AppDictionary = {
     features: "Features",
     pricing: "Pricing",
     integrations: "Integrations",
-    apiDocs: "API Documentation",
     support: "Support",
     docs: "Documentation",
     helpCenter: "Help Center",
@@ -941,11 +940,6 @@ export const enDictionary: AppDictionary = {
         primaryButton: "View Documentation",
         secondaryButton: "Contact Support"
       }
-    },
-    api: {
-      title: "API Documentation",
-      subtitle: "Build with our powerful API",
-      description: "Complete API reference with examples, SDKs, and interactive documentation.",
     },
     help: {
       title: "Help Center",

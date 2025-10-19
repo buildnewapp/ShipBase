@@ -296,7 +296,6 @@ export const jaDictionary: AppDictionary = {
     features: "機能",
     pricing: "料金",
     integrations: "統合",
-    apiDocs: "API ドキュメント",
     support: "サポート",
     docs: "ドキュメント",
     helpCenter: "ヘルプセンター",
@@ -941,11 +940,6 @@ export const jaDictionary: AppDictionary = {
         primaryButton: "ドキュメントを表示",
         secondaryButton: "サポートに連絡"
       }
-    },
-    api: {
-      title: "API ドキュメント",
-      subtitle: "強力なAPIで構築",
-      description: "例、SDK、インタラクティブなドキュメントを含む完全なAPIリファレンス。",
     },
     help: {
       title: "ヘルプセンター",

@@ -296,7 +296,6 @@ export const zhDictionary: AppDictionary = {
     features: "功能特性",
     pricing: "价格方案",
     integrations: "集成",
-    apiDocs: "API文档",
     support: "支持",
     docs: "文档",
     helpCenter: "帮助中心",
@@ -941,11 +940,6 @@ export const zhDictionary: AppDictionary = {
         primaryButton: "查看文档",
         secondaryButton: "联系支持"
       }
-    },
-    api: {
-      title: "API文档",
-      subtitle: "使用我们强大的API构建",
-      description: "完整的API参考，包含示例、SDK和交互式文档。",
     },
     help: {
       title: "帮助中心",

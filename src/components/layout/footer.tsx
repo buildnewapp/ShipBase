@@ -85,14 +85,6 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
                   {dictionary.integrations}
                 </Link>
               </li>
-              <li>
-                <Link
-                  href={currentLocale === 'en' ? '/api' : `/${currentLocale}/api`}
-                  className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
-                >
-                  {dictionary.apiDocs}
-                </Link>
-              </li>
             </ul>
           </div>
 

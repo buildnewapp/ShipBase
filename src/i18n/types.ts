@@ -160,7 +160,6 @@ export interface FooterDictionary {
   features: string;
   pricing: string;
   integrations: string;
-  apiDocs: string;
   support: string;
   docs: string;
   helpCenter: string;
@@ -441,7 +440,6 @@ export interface PagesDictionary {
   docs: DocsPageDictionary;
   about: AboutPageDictionary;
   integrations: IntegrationsPageDictionary;
-  api: PageDictionary;
   help: HelpPageDictionary;
   contact: ContactPageDictionary;
   status: PageDictionary;
