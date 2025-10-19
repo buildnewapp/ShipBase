@@ -8,11 +8,71 @@ export type RichTextSegment =
 
 export type RichText = RichTextSegment[];
 
+export interface TechStackItem {
+  name: string;
+  description: string;
+}
+
+export interface FeatureItem {
+  title: string;
+  description: string;
+}
+
+export interface LaunchStep {
+  step: string;
+  title: string;
+  description: string;
+}
+
+export interface Testimonial {
+  quote: string;
+  author: string;
+  role: string;
+}
+
 export interface HomeDictionary {
   badgeLabel: string;
   heroTitle: string;
   heroDescription: string;
-  bullets: RichText[];
+  ctaPrimary: string;
+  ctaSecondary: string;
+  promotionText: string;
+  userCount: string;
+  
+  // Tech Stack Section
+  techStackTitle: string;
+  techStackItems: TechStackItem[];
+  
+  // Features Section
+  featuresTitle: string;
+  featuresSubtitle: string;
+  features: FeatureItem[];
+  
+  // Benefits Section
+  benefitsTitle: string;
+  benefitsSubtitle: string;
+  benefits: FeatureItem[];
+  
+  // Launch Steps
+  launchStepsTitle: string;
+  launchStepsSubtitle: string;
+  launchSteps: LaunchStep[];
+  
+  // Key Features
+  keyFeaturesTitle: string;
+  keyFeaturesSubtitle: string;
+  keyFeatures: FeatureItem[];
+  
+  // Testimonials
+  testimonialsTitle: string;
+  testimonialsSubtitle: string;
+  testimonials: Testimonial[];
+  
+  // Final CTA
+  finalCtaTitle: string;
+  finalCtaSubtitle: string;
+  finalCtaButton: string;
+  finalCtaSecondary: string;
 }
 
 export interface AuthPanelDictionary {

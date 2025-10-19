@@ -2,34 +2,143 @@ import type { AppDictionary } from "@/i18n/types";
 
 export const enDictionary: AppDictionary = {
   home: {
-    badgeLabel: "Better Auth Ready",
-    heroTitle: "Enable secure sign-in methods for Shipbase",
+    badgeLabel: "2025🚀 Ship Now",
+    heroTitle: "ShipBase, Ship More.",
     heroDescription:
-      "Integrate Google and GitHub OAuth plus Magic Link email sign-in through Better Auth. Sessions stay on the server and automatically sync via HTTP-only cookies.",
-    bullets: [
-      [
-        {
-          type: "text",
-          value:
-            "Configure multiple OAuth providers on the fly with environment variables.",
-        },
-      ],
-      [
-        {
-          type: "text",
-          value:
-            "Magic Link logs the URL on the server by default and can be delivered through a custom webhook.",
-        },
-      ],
-      [
-        { type: "text", value: "Use " },
-        { type: "code", value: "authClient.useSession()" },
-        {
-          type: "text",
-          value: " to read the current sign-in state in client components.",
-        },
-      ],
+      "ShipBase is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+    ctaPrimary: "Get Started",
+    ctaSecondary: "Read Document",
+    promotionText: "🎁 $100 off for the first 1000 customers",
+    userCount: "from 250+ happy users",
+    
+    // Tech Stack Section
+    techStackTitle: "ShipBase is built on the shoulders of giants",
+    techStackItems: [
+      { name: "Next.js", description: "React Full-stack Framework" },
+      { name: "React", description: "User Interface Library" },
+      { name: "TailwindCSS", description: "Utility-first CSS Framework" },
+      { name: "Shadcn/UI", description: "Modern Component Library" },
+      { name: "Vercel", description: "Deployment Platform" }
     ],
+    
+    // Features Section
+    featuresTitle: "What is ShipBase",
+    featuresSubtitle: "ShipBase is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    features: [
+      {
+        title: "Ready-to-use Templates",
+        description: "Choose from dozens of production-ready AI SaaS templates to quickly start your project."
+      },
+      {
+        title: "Infrastructure Setup",
+        description: "Get instant access to scalable infrastructure with best practices built-in."
+      },
+      {
+        title: "Quick Deployment",
+        description: "Deploy your AI SaaS application to production in hours, not days."
+      }
+    ],
+    
+    // Benefits Section
+    benefitsTitle: "Why Choose ShipBase",
+    benefitsSubtitle: "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    benefits: [
+      {
+        title: "Complete Framework",
+        description: "Built on Next.js with authentication, payments, and AI integration - everything works out of the box."
+      },
+      {
+        title: "Rich Templates Library",
+        description: "Choose from templates that fit your needs and start building quickly."
+      },
+      {
+        title: "Technical Guidance",
+        description: "Get professional technical support to help you get started quickly."
+      }
+    ],
+    
+    // Launch Steps
+    launchStepsTitle: "How to Launch with ShipBase",
+    launchStepsSubtitle: "Get your AI SaaS startup running in three simple steps:",
+    launchSteps: [
+      {
+        step: "1",
+        title: "Get ShipBase",
+        description: "Buy ShipBase with a one-time payment. Check your email for the code and documentation."
+      },
+      {
+        step: "2",
+        title: "Start Your Project",
+        description: "Read the documentation and clone the code of ShipBase. Start building your AI SaaS startup."
+      },
+      {
+        step: "3",
+        title: "Customize Your Project",
+        description: "Modify the template with your data and contents. Specific AI functionality needs."
+      },
+      {
+        step: "4",
+        title: "Deploy to Production",
+        description: "Deploy your project to production with a few steps and start serving customers immediately."
+      }
+    ],
+    
+    // Key Features
+    keyFeaturesTitle: "Key Features of ShipBase",
+    keyFeaturesSubtitle: "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    keyFeatures: [
+      {
+        title: "Next.js Boilerplate",
+        description: "Production-ready Next.js templates with SEO-friendly structure and i18n support."
+      },
+      {
+        title: "Authentication & Payments",
+        description: "Integrated Google OAuth, one-tap login, and Stripe payment processing."
+      },
+      {
+        title: "Data Infrastructure",
+        description: "Built-in Supabase integration for reliable and scalable data storage."
+      },
+      {
+        title: "One-Click Deployment",
+        description: "Seamless deployment to Vercel or Cloudflare with automated setup."
+      },
+      {
+        title: "Business Analytics",
+        description: "Integrated Google Analytics and Search Console for tracking growth."
+      },
+      {
+        title: "AI-Ready Infrastructure",
+        description: "Pre-configured AI integration with built-in credits system and API sales."
+      }
+    ],
+    
+    // Testimonials
+    testimonialsTitle: "What Users Say About ShipBase",
+    testimonialsSubtitle: "Hear from developers and founders who launched their AI startups with ShipBase.",
+    testimonials: [
+      {
+        quote: "ShipBase has made the journey from idea to product simpler than ever before. Its comprehensive templates, scripts, and foundational infrastructure mean I hardly need to spend time on basic development. I highly recommend it to founders looking to quickly launch their SaaS businesses.",
+        author: "Author of AITDK",
+        role: "Independent Developer"
+      },
+      {
+        quote: "ShipBase made it super easy to set up payments and handle all the nuts and bolts of commercialization, so we could stay laser-focused on building features that matter. If you're looking to ship and scale your AI SaaS fast, ShipBase is a no-brainer!",
+        author: "Scar",
+        role: "Front-end Engineer"
+      },
+      {
+        quote: "I used ShipBase and launched a new website in 8 minutes, including login/payment, so amazing!",
+        author: "Lafe",
+        role: "Tech Lead"
+      }
+    ],
+    
+    // Final CTA
+    finalCtaTitle: "Ship your first AI SaaS Startup",
+    finalCtaSubtitle: "Start from here, ship with ShipBase.",
+    finalCtaButton: "Get ShipBase",
+    finalCtaSecondary: "Read Document"
   },
   authPanel: {
     title: "Sign in to Shipbase",

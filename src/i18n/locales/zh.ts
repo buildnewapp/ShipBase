@@ -2,32 +2,143 @@ import type { AppDictionary } from "@/i18n/types";
 
 export const zhDictionary: AppDictionary = {
   home: {
-    badgeLabel: "Better Auth 集成",
-    heroTitle: "为 Shipbase 启用多种安全登录方式",
+    badgeLabel: "2025🚀 立即发布",
+    heroTitle: "ShipBase，发布更多。",
     heroDescription:
-      "通过 Better Auth 统一接入 Google、GitHub OAuth 以及 Magic Link 邮件登录。所有会话均由服务器维护，并自动同步 HTTP-only Cookies。",
-    bullets: [
-      [
-        {
-          type: "text",
-          value: "支持多个 OAuth Provider，使用环境变量完成动态配置。",
-        },
-      ],
-      [
-        {
-          type: "text",
-          value: "Magic Link 默认打印到服务器日志，也可通过 Webhook 发送邮件。",
-        },
-      ],
-      [
-        { type: "text", value: "在客户端组件中使用 " },
-        { type: "code", value: "authClient.useSession()" },
-        {
-          type: "text",
-          value: " 实时读取登录状态。",
-        },
-      ],
+      "ShipBase 是一个用于构建 AI SaaS 初创公司的 NextJS 模板。通过多种模板和组件快速发布。",
+    ctaPrimary: "立即开始",
+    ctaSecondary: "阅读文档",
+    promotionText: "🎁 前1000名客户享受$100优惠",
+    userCount: "来自250+满意用户",
+    
+    // 技术栈部分
+    techStackTitle: "ShipBase 建立在巨人的肩膀上",
+    techStackItems: [
+      { name: "Next.js", description: "React 全栈框架" },
+      { name: "React", description: "用户界面库" },
+      { name: "TailwindCSS", description: "实用优先的CSS框架" },
+      { name: "Shadcn/UI", description: "现代组件库" },
+      { name: "Vercel", description: "部署平台" }
     ],
+    
+    // 功能特性部分
+    featuresTitle: "什么是 ShipBase",
+    featuresSubtitle: "ShipBase 是一个用于构建 AI SaaS 初创公司的 NextJS 模板。内置多种模板和组件。",
+    features: [
+      {
+        title: "即用型模板",
+        description: "从数十个生产就绪的 AI SaaS 模板中选择，快速启动您的项目。"
+      },
+      {
+        title: "基础设施设置",
+        description: "通过内置的最佳实践，立即获得可扩展的基础设施访问权限。"
+      },
+      {
+        title: "快速部署",
+        description: "在几小时内而不是几天内将您的 AI SaaS 应用程序部署到生产环境。"
+      }
+    ],
+    
+    // 优势部分
+    benefitsTitle: "为什么选择 ShipBase",
+    benefitsSubtitle: "获得启动 AI 初创公司所需的一切 - 从即用型模板到技术支持。",
+    benefits: [
+      {
+        title: "完整框架",
+        description: "基于 Next.js 构建，包含身份验证、支付和 AI 集成 - 一切开箱即用。"
+      },
+      {
+        title: "丰富的模板库",
+        description: "选择适合您需求的模板，快速开始构建。"
+      },
+      {
+        title: "技术指导",
+        description: "获得专业技术支持，帮助您快速上手。"
+      }
+    ],
+    
+    // 发布步骤
+    launchStepsTitle: "如何使用 ShipBase 发布",
+    launchStepsSubtitle: "通过三个简单步骤让您的 AI SaaS 初创公司运行：",
+    launchSteps: [
+      {
+        step: "1",
+        title: "获取 ShipBase",
+        description: "一次性购买 ShipBase。检查您的电子邮件获取代码和文档。"
+      },
+      {
+        step: "2", 
+        title: "开始您的项目",
+        description: "阅读文档并克隆 ShipBase 代码。开始构建您的 AI SaaS 初创公司。"
+      },
+      {
+        step: "3",
+        title: "自定义您的项目", 
+        description: "使用您的数据和内容修改模板。满足特定的 AI 功能需求。"
+      },
+      {
+        step: "4",
+        title: "部署到生产环境",
+        description: "通过几个步骤将您的项目部署到生产环境，立即开始为客户服务。"
+      }
+    ],
+    
+    // 关键特性
+    keyFeaturesTitle: "ShipBase 的关键特性",
+    keyFeaturesSubtitle: "快速高效地启动 AI SaaS 初创公司所需的一切。",
+    keyFeatures: [
+      {
+        title: "Next.js 模板",
+        description: "生产就绪的 Next.js 模板，具有 SEO 友好的结构和 i18n 支持。"
+      },
+      {
+        title: "身份验证和支付",
+        description: "集成 Google OAuth、一键登录和 Stripe 支付处理。"
+      },
+      {
+        title: "数据基础设施",
+        description: "内置 Supabase 集成，提供可靠和可扩展的数据存储。"
+      },
+      {
+        title: "一键部署",
+        description: "无缝部署到 Vercel 或 Cloudflare，自动设置。"
+      },
+      {
+        title: "业务分析",
+        description: "集成 Google Analytics 和 Search Console 用于跟踪增长。"
+      },
+      {
+        title: "AI 就绪基础设施",
+        description: "预配置的 AI 集成，内置积分系统和 API 销售。"
+      }
+    ],
+    
+    // 用户评价
+    testimonialsTitle: "用户对 ShipBase 的评价",
+    testimonialsSubtitle: "听听使用 ShipBase 启动 AI 初创公司的开发者和创始人的声音。",
+    testimonials: [
+      {
+        quote: "ShipBase 让从想法到产品的旅程变得比以往任何时候都简单。其全面的模板、脚本和基础基础设施意味着我几乎不需要花时间在基础开发上。我强烈推荐给希望快速启动 SaaS 业务的创始人。",
+        author: "AITDK 作者",
+        role: "独立开发者"
+      },
+      {
+        quote: "ShipBase 让设置支付和处理商业化的所有细节变得超级简单，这样我们就可以专注于构建重要的功能。如果您想快速发布和扩展 AI SaaS，ShipBase 是不二之选！",
+        author: "Scar",
+        role: "前端工程师"
+      },
+      {
+        quote: "我使用 ShipBase 在8分钟内启动了一个新网站，包括登录/支付，太棒了！",
+        author: "Lafe",
+        role: "技术负责人"
+      }
+    ],
+    
+    // 最终 CTA
+    finalCtaTitle: "发布您的第一个 AI SaaS 初创公司",
+    finalCtaSubtitle: "从这里开始，使用 ShipBase 发布。",
+    finalCtaButton: "获取 ShipBase",
+    finalCtaSecondary: "阅读文档"
   },
   authPanel: {
     title: "登录 Shipbase",

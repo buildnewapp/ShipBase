@@ -2,32 +2,143 @@ import type { AppDictionary } from "@/i18n/types";
 
 export const jaDictionary: AppDictionary = {
   home: {
-    badgeLabel: "Better Auth 対応",
-    heroTitle: "Shipbase の安全なサインイン方法を有効化",
+    badgeLabel: "2025🚀 今すぐリリース",
+    heroTitle: "ShipBase、もっとリリース。",
     heroDescription:
-      "Better Auth を通じて Google と GitHub OAuth および Magic Link メールサインインを統合。セッションはサーバーで維持され、HTTP-only Cookies で自動同期されます。",
-    bullets: [
-      [
-        {
-          type: "text",
-          value: "環境変数を使用して複数の OAuth プロバイダーを動的に設定。",
-        },
-      ],
-      [
-        {
-          type: "text",
-          value: "Magic Link はデフォルトでサーバーログに出力され、カスタム Webhook を通じてメール配信も可能。",
-        },
-      ],
-      [
-        { type: "text", value: "クライアントコンポーネントで " },
-        { type: "code", value: "authClient.useSession()" },
-        {
-          type: "text",
-          value: " を使用して現在のサインイン状態を読み取り。",
-        },
-      ],
+      "ShipBaseはAI SaaSスタートアップを構築するためのNextJSボイラープレートです。様々なテンプレートとコンポーネントで素早くリリース。",
+    ctaPrimary: "今すぐ始める",
+    ctaSecondary: "ドキュメントを読む",
+    promotionText: "🎁 最初の1000名のお客様に$100オフ",
+    userCount: "250+の満足したユーザーから",
+    
+    // 技術スタック部分
+    techStackTitle: "ShipBaseは巨人の肩の上に構築されています",
+    techStackItems: [
+      { name: "Next.js", description: "React フルスタックフレームワーク" },
+      { name: "React", description: "ユーザーインターフェースライブラリ" },
+      { name: "TailwindCSS", description: "ユーティリティファーストCSSフレームワーク" },
+      { name: "Shadcn/UI", description: "モダンコンポーネントライブラリ" },
+      { name: "Vercel", description: "デプロイメントプラットフォーム" }
     ],
+    
+    // 機能特性部分
+    featuresTitle: "ShipBaseとは",
+    featuresSubtitle: "ShipBaseはAI SaaSスタートアップを構築するためのNextJSボイラープレートです。様々なテンプレートとコンポーネントで構築されています。",
+    features: [
+      {
+        title: "即座に使用可能なテンプレート",
+        description: "数十の本番準備完了AI SaaSテンプレートから選択し、プロジェクトを素早く開始。"
+      },
+      {
+        title: "インフラストラクチャセットアップ",
+        description: "ベストプラクティスが組み込まれたスケーラブルなインフラストラクチャに即座にアクセス。"
+      },
+      {
+        title: "クイックデプロイメント",
+        description: "数日ではなく数時間でAI SaaSアプリケーションを本番環境にデプロイ。"
+      }
+    ],
+    
+    // 利点部分
+    benefitsTitle: "なぜShipBaseを選ぶのか",
+    benefitsSubtitle: "AIスタートアップを立ち上げるために必要なすべてを取得 - 即座に使用可能なテンプレートから技術サポートまで。",
+    benefits: [
+      {
+        title: "完全なフレームワーク",
+        description: "認証、支払い、AI統合を含むNext.jsで構築 - すべてが箱から出してすぐに動作。"
+      },
+      {
+        title: "豊富なテンプレートライブラリ",
+        description: "ニーズに合ったテンプレートを選択し、素早く構築を開始。"
+      },
+      {
+        title: "技術ガイダンス",
+        description: "素早く始められるよう支援する専門技術サポートを取得。"
+      }
+    ],
+    
+    // リリースステップ
+    launchStepsTitle: "ShipBaseでリリースする方法",
+    launchStepsSubtitle: "3つの簡単なステップでAI SaaSスタートアップを稼働させる：",
+    launchSteps: [
+      {
+        step: "1",
+        title: "ShipBaseを取得",
+        description: "一回の支払いでShipBaseを購入。コードとドキュメントのメールを確認。"
+      },
+      {
+        step: "2",
+        title: "プロジェクトを開始",
+        description: "ドキュメントを読み、ShipBaseのコードをクローン。AI SaaSスタートアップの構築を開始。"
+      },
+      {
+        step: "3",
+        title: "プロジェクトをカスタマイズ",
+        description: "データとコンテンツでテンプレートを修正。特定のAI機能ニーズに対応。"
+      },
+      {
+        step: "4",
+        title: "本番環境にデプロイ",
+        description: "数ステップでプロジェクトを本番環境にデプロイし、すぐに顧客にサービスを提供。"
+      }
+    ],
+    
+    // 主要機能
+    keyFeaturesTitle: "ShipBaseの主要機能",
+    keyFeaturesSubtitle: "AI SaaSスタートアップを素早く効率的に立ち上げるために必要なすべて。",
+    keyFeatures: [
+      {
+        title: "Next.jsボイラープレート",
+        description: "SEOフレンドリーな構造とi18nサポートを持つ本番準備完了Next.jsテンプレート。"
+      },
+      {
+        title: "認証と支払い",
+        description: "Google OAuth、ワンタップログイン、Stripe支払い処理の統合。"
+      },
+      {
+        title: "データインフラストラクチャ",
+        description: "信頼性とスケーラビリティのあるデータストレージのためのSupabase統合。"
+      },
+      {
+        title: "ワンクリックデプロイメント",
+        description: "自動セットアップでVercelまたはCloudflareへのシームレスなデプロイメント。"
+      },
+      {
+        title: "ビジネス分析",
+        description: "成長追跡のためのGoogle AnalyticsとSearch Consoleの統合。"
+      },
+      {
+        title: "AI対応インフラストラクチャ",
+        description: "組み込みクレジットシステムとAPI販売を持つ事前設定されたAI統合。"
+      }
+    ],
+    
+    // ユーザー評価
+    testimonialsTitle: "ユーザーがShipBaseについて言うこと",
+    testimonialsSubtitle: "ShipBaseでAIスタートアップを立ち上げた開発者と創設者の声を聞いてください。",
+    testimonials: [
+      {
+        quote: "ShipBaseはアイデアから製品への旅をこれまで以上にシンプルにしました。包括的なテンプレート、スクリプト、基盤インフラストラクチャにより、基本的な開発に時間を費やす必要がほとんどありません。SaaSビジネスを素早く立ち上げたい創設者に強くお勧めします。",
+        author: "AITDKの作者",
+        role: "独立開発者"
+      },
+      {
+        quote: "ShipBaseは支払いの設定と商業化のすべての細部を処理することを非常に簡単にし、重要な機能の構築に集中できました。AI SaaSを素早くリリース・スケールしたい場合は、ShipBaseは迷いのない選択です！",
+        author: "Scar",
+        role: "フロントエンドエンジニア"
+      },
+      {
+        quote: "ShipBaseを使用して8分で新しいウェブサイトを立ち上げました。ログイン/支払いを含めて、素晴らしいです！",
+        author: "Lafe",
+        role: "テックリード"
+      }
+    ],
+    
+    // 最終CTA
+    finalCtaTitle: "最初のAI SaaSスタートアップをリリース",
+    finalCtaSubtitle: "ここから始めて、ShipBaseでリリース。",
+    finalCtaButton: "ShipBaseを取得",
+    finalCtaSecondary: "ドキュメントを読む"
   },
   authPanel: {
     title: "Shipbase にサインイン",
