@@ -104,4 +104,71 @@ export const zhDictionary: AppDictionary = {
     copyright: "© 2024 ShipBase. 保留所有权利。",
     madeWithLove: "由 ❤️ 在中国制造",
   },
+  pages: {
+    features: {
+      title: "功能特性",
+      subtitle: "强大的功能加速您的开发",
+      description: "发现全面的工具和功能集，让ShipBase成为现代SaaS应用程序的完美平台。",
+    },
+    pricing: {
+      title: "价格方案",
+      subtitle: "简单透明的定价",
+      description: "选择适合您需求的方案。免费开始，随需扩展。",
+    },
+    docs: {
+      title: "文档",
+      subtitle: "开始所需的一切",
+      description: "全面的指南、API参考和教程，帮助您构建出色的应用程序。",
+    },
+    about: {
+      title: "关于我们",
+      subtitle: "构建SaaS开发的未来",
+      description: "了解我们的使命、团队和驱动ShipBase的技术。",
+    },
+    integrations: {
+      title: "集成",
+      subtitle: "与您喜爱的工具连接",
+      description: "将ShipBase与您现有的工作流程和第三方服务无缝集成。",
+    },
+    api: {
+      title: "API文档",
+      subtitle: "使用我们强大的API构建",
+      description: "完整的API参考，包含示例、SDK和交互式文档。",
+    },
+    help: {
+      title: "帮助中心",
+      subtitle: "获得您需要的支持",
+      description: "查找常见问题的答案、故障排除指南和最佳实践。",
+    },
+    contact: {
+      title: "联系我们",
+      subtitle: "我们随时为您提供帮助",
+      description: "联系我们的团队获取支持、合作或一般咨询。",
+    },
+    status: {
+      title: "服务状态",
+      subtitle: "实时系统状态",
+      description: "监控所有ShipBase服务和基础设施的当前状态。",
+    },
+    privacy: {
+      title: "隐私政策",
+      subtitle: "您的隐私很重要",
+      description: "了解我们如何收集、使用和保护您的个人信息。",
+    },
+    terms: {
+      title: "服务条款",
+      subtitle: "我们的条款和条件",
+      description: "阅读我们的服务条款，了解您的权利和责任。",
+    },
+    security: {
+      title: "安全",
+      subtitle: "您的数据在我们这里很安全",
+      description: "了解我们的安全措施、合规性和数据保护实践。",
+    },
+    cookies: {
+      title: "Cookie政策",
+      subtitle: "我们如何使用Cookie",
+      description: "了解我们如何在平台上使用Cookie和类似技术。",
+    },
+  },
 };

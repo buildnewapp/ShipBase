@@ -106,4 +106,71 @@ export const enDictionary: AppDictionary = {
     copyright: "© 2024 ShipBase. All rights reserved.",
     madeWithLove: "Made with ❤️ in China",
   },
+  pages: {
+    features: {
+      title: "Features",
+      subtitle: "Powerful features to accelerate your development",
+      description: "Discover the comprehensive set of tools and features that make ShipBase the perfect platform for modern SaaS applications.",
+    },
+    pricing: {
+      title: "Pricing",
+      subtitle: "Simple, transparent pricing",
+      description: "Choose the plan that fits your needs. Start free and scale as you grow.",
+    },
+    docs: {
+      title: "Documentation",
+      subtitle: "Everything you need to get started",
+      description: "Comprehensive guides, API references, and tutorials to help you build amazing applications.",
+    },
+    about: {
+      title: "About Us",
+      subtitle: "Building the future of SaaS development",
+      description: "Learn about our mission, team, and the technology that powers ShipBase.",
+    },
+    integrations: {
+      title: "Integrations",
+      subtitle: "Connect with your favorite tools",
+      description: "Seamlessly integrate ShipBase with your existing workflow and third-party services.",
+    },
+    api: {
+      title: "API Documentation",
+      subtitle: "Build with our powerful API",
+      description: "Complete API reference with examples, SDKs, and interactive documentation.",
+    },
+    help: {
+      title: "Help Center",
+      subtitle: "Get the support you need",
+      description: "Find answers to common questions, troubleshooting guides, and best practices.",
+    },
+    contact: {
+      title: "Contact Us",
+      subtitle: "We're here to help",
+      description: "Get in touch with our team for support, partnerships, or general inquiries.",
+    },
+    status: {
+      title: "Service Status",
+      subtitle: "Real-time system status",
+      description: "Monitor the current status of all ShipBase services and infrastructure.",
+    },
+    privacy: {
+      title: "Privacy Policy",
+      subtitle: "Your privacy matters",
+      description: "Learn how we collect, use, and protect your personal information.",
+    },
+    terms: {
+      title: "Terms of Service",
+      subtitle: "Our terms and conditions",
+      description: "Read our terms of service and understand your rights and responsibilities.",
+    },
+    security: {
+      title: "Security",
+      subtitle: "Your data is safe with us",
+      description: "Learn about our security measures, compliance, and data protection practices.",
+    },
+    cookies: {
+      title: "Cookie Policy",
+      subtitle: "How we use cookies",
+      description: "Understand how we use cookies and similar technologies on our platform.",
+    },
+  },
 };

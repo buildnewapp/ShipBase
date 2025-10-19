@@ -80,9 +80,32 @@ export interface FooterDictionary {
   madeWithLove: string;
 }
 
+export interface PageDictionary {
+  title: string;
+  subtitle: string;
+  description: string;
+}
+
+export interface PagesDictionary {
+  features: PageDictionary;
+  pricing: PageDictionary;
+  docs: PageDictionary;
+  about: PageDictionary;
+  integrations: PageDictionary;
+  api: PageDictionary;
+  help: PageDictionary;
+  contact: PageDictionary;
+  status: PageDictionary;
+  privacy: PageDictionary;
+  terms: PageDictionary;
+  security: PageDictionary;
+  cookies: PageDictionary;
+}
+
 export interface AppDictionary {
   home: HomeDictionary;
   authPanel: AuthPanelDictionary;
   header: HeaderDictionary;
   footer: FooterDictionary;
+  pages: PagesDictionary;
 }
