@@ -63,7 +63,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href={`/${currentLocale}/features`}
+                  href={currentLocale === 'en' ? '/features' : `/${currentLocale}/features`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.features}
@@ -71,7 +71,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${currentLocale}/pricing`}
+                  href={currentLocale === 'en' ? '/pricing' : `/${currentLocale}/pricing`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.pricing}
@@ -79,7 +79,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${currentLocale}/integrations`}
+                  href={currentLocale === 'en' ? '/integrations' : `/${currentLocale}/integrations`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.integrations}
@@ -87,7 +87,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${currentLocale}/api`}
+                  href={currentLocale === 'en' ? '/api' : `/${currentLocale}/api`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.apiDocs}
@@ -104,7 +104,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href={`/${currentLocale}/docs`}
+                  href={currentLocale === 'en' ? '/docs' : `/${currentLocale}/docs`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.docs}
@@ -112,7 +112,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${currentLocale}/help`}
+                  href={currentLocale === 'en' ? '/help' : `/${currentLocale}/help`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.helpCenter}
@@ -120,7 +120,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${currentLocale}/contact`}
+                  href={currentLocale === 'en' ? '/contact' : `/${currentLocale}/contact`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.contactUs}
@@ -128,7 +128,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${currentLocale}/status`}
+                  href={currentLocale === 'en' ? '/status' : `/${currentLocale}/status`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.serviceStatus}
@@ -145,7 +145,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href={`/${currentLocale}/privacy`}
+                  href={currentLocale === 'en' ? '/privacy' : `/${currentLocale}/privacy`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.privacyPolicy}
@@ -153,7 +153,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${currentLocale}/terms`}
+                  href={currentLocale === 'en' ? '/terms' : `/${currentLocale}/terms`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.termsOfService}
@@ -161,7 +161,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${currentLocale}/security`}
+                  href={currentLocale === 'en' ? '/security' : `/${currentLocale}/security`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.security}
@@ -169,7 +169,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${currentLocale}/cookies`}
+                  href={currentLocale === 'en' ? '/cookies' : `/${currentLocale}/cookies`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
                   {dictionary.cookiePolicy}

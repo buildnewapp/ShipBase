@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { locales, type Locale } from "@/i18n";
+import { locales, defaultLocale, type Locale } from "@/i18n";
 import { getDictionary } from "@/i18n";
 
 export function useLocale() {
@@ -14,10 +14,10 @@ export function useLocale() {
       if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
         return pathSegments[0] as Locale;
       }
-      return 'zh'; // 默认中文
+      return defaultLocale; // 使用默认语言（英文）
     } catch (error) {
       console.error('Error detecting locale:', error);
-      return 'zh';
+      return defaultLocale;
     }
   };
   

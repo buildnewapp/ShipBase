@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter, usePathname } from "next/navigation";
-import { locales, type Locale } from "@/i18n";
+import { locales, defaultLocale, type Locale } from "@/i18n";
 import { Languages } from "lucide-react";
 import {
   DropdownMenu,
@@ -27,11 +27,27 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
     const pathSegments = pathname.split('/').filter(Boolean);
     if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
       // 替换第一个段（语言代码）
-      pathSegments[0] = locale;
-      newPath = '/' + pathSegments.join('/');
+      if (locale === defaultLocale) {
+        // 默认语言不需要前缀，移除语言代码
+        pathSegments.shift();
+        newPath = '/' + pathSegments.join('/');
+        if (newPath === '/') {
+          newPath = '/';
+        }
+      } else {
+        // 非默认语言需要前缀
+        pathSegments[0] = locale;
+        newPath = '/' + pathSegments.join('/');
+      }
     } else {
-      // 如果没有语言参数，添加语言前缀
-      newPath = `/${locale}${pathname === '/' ? '' : pathname}`;
+      // 如果没有语言参数（当前是默认语言）
+      if (locale === defaultLocale) {
+        // 保持当前路径不变
+        newPath = pathname;
+      } else {
+        // 添加语言前缀
+        newPath = `/${locale}${pathname === '/' ? '' : pathname}`;
+      }
     }
     
     router.push(newPath);

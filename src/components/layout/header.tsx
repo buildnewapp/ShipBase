@@ -30,25 +30,25 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link
-            href={`/${locale}/features`}
+            href={locale === 'en' ? '/features' : `/${locale}/features`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
             {dictionary.header.features}
           </Link>
           <Link
-            href={`/${locale}/pricing`}
+            href={locale === 'en' ? '/pricing' : `/${locale}/pricing`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
             {dictionary.header.pricing}
           </Link>
           <Link
-            href={`/${locale}/docs`}
+            href={locale === 'en' ? '/docs' : `/${locale}/docs`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
             {dictionary.header.docs}
           </Link>
           <Link
-            href={`/${locale}/about`}
+            href={locale === 'en' ? '/about' : `/${locale}/about`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
             {dictionary.header.about}
@@ -88,28 +88,28 @@ export function Header() {
         <div className="md:hidden border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
           <div className="px-4 py-6 space-y-4">
             <Link
-              href={`/${locale}/features`}
+              href={locale === 'en' ? '/features' : `/${locale}/features`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.header.features}
             </Link>
             <Link
-              href={`/${locale}/pricing`}
+              href={locale === 'en' ? '/pricing' : `/${locale}/pricing`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.header.pricing}
             </Link>
             <Link
-              href={`/${locale}/docs`}
+              href={locale === 'en' ? '/docs' : `/${locale}/docs`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.header.docs}
             </Link>
             <Link
-              href={`/${locale}/about`}
+              href={locale === 'en' ? '/about' : `/${locale}/about`}
               className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
