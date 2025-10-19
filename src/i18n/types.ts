@@ -24,10 +24,22 @@ export interface LaunchStep {
   description: string;
 }
 
-export interface Testimonial {
-  quote: string;
-  author: string;
-  role: string;
+export interface ShowcaseItem {
+  name: string;
+  description: string;
+  image: string;
+  category: string;
+}
+
+export interface StatItem {
+  number: string;
+  label: string;
+  description: string;
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
 }
 
 export interface HomeDictionary {
@@ -36,6 +48,8 @@ export interface HomeDictionary {
   heroDescription: string;
   ctaPrimary: string;
   ctaSecondary: string;
+  watchDemo: string;
+  viewDetails: string;
   promotionText: string;
   userCount: string;
   
@@ -67,6 +81,21 @@ export interface HomeDictionary {
   testimonialsTitle: string;
   testimonialsSubtitle: string;
   testimonials: Testimonial[];
+  
+  // Product Showcase
+  productShowcaseTitle: string;
+  productShowcaseSubtitle: string;
+  showcaseItems: ShowcaseItem[];
+  
+  // Stats Section
+  statsTitle: string;
+  statsSubtitle: string;
+  stats: StatItem[];
+  
+  // FAQ Section
+  faqTitle: string;
+  faqSubtitle: string;
+  faqs: FAQItem[];
   
   // Final CTA
   finalCtaTitle: string;

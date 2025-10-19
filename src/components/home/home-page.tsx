@@ -1,8 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, CheckCircle, Star, Users, Zap, Shield, Rocket } from "lucide-react";
+import { ArrowRight, CheckCircle, Star, Users, Zap, Shield, Rocket, Play, ChevronDown, ExternalLink } from "lucide-react";
 import type { AppDictionary } from "@/i18n";
+import { useState } from "react";
 
 interface HomePageProps {
   dictionary: AppDictionary;
@@ -10,11 +13,18 @@ interface HomePageProps {
 
 export function HomePage({ dictionary }: HomePageProps) {
   const { home } = dictionary;
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-blue-50 dark:from-neutral-950 dark:via-neutral-900 dark:to-blue-950">
-      {/* Hero Section */}
+      {/* Hero Section with Background */}
       <section className="relative overflow-hidden px-6 py-20 sm:px-10 lg:px-16">
+        {/* Background Gradient */}
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 dark:from-blue-600/30 dark:via-purple-600/30 dark:to-pink-600/30" />
+          <div className="absolute inset-0 bg-[url('/api/placeholder/1920/1080')] bg-cover bg-center opacity-10" />
+        </div>
+        
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <Badge variant="secondary" className="mb-6 text-sm font-semibold">
@@ -35,7 +45,8 @@ export function HomePage({ dictionary }: HomePageProps) {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                {home.ctaSecondary}
+                <Play className="mr-2 h-5 w-5" />
+                {home.watchDemo}
               </Button>
             </div>
             
@@ -46,6 +57,13 @@ export function HomePage({ dictionary }: HomePageProps) {
               <p className="text-sm text-neutral-500 dark:text-neutral-400">
                 {home.userCount}
               </p>
+            </div>
+            
+            {/* Scroll indicator */}
+            <div className="flex justify-center">
+              <div className="animate-bounce">
+                <ChevronDown className="h-6 w-6 text-neutral-400" />
+              </div>
             </div>
           </div>
         </div>
@@ -62,7 +80,7 @@ export function HomePage({ dictionary }: HomePageProps) {
           
           <div className="grid grid-cols-2 gap-6 md:grid-cols-5">
             {home.techStackItems.map((item, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
+              <Card key={index} className="text-center p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardContent className="p-0">
                   <div className="text-2xl font-bold text-primary mb-2">{item.name}</div>
                   <div className="text-sm text-neutral-600 dark:text-neutral-300">{item.description}</div>
@@ -73,8 +91,54 @@ export function HomePage({ dictionary }: HomePageProps) {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Product Showcase Section */}
       <section className="bg-neutral-100 dark:bg-neutral-800 px-6 py-16 sm:px-10 lg:px-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
+              {home.productShowcaseTitle}
+            </h2>
+            <p className="text-xl text-neutral-600 dark:text-neutral-300">
+              {home.productShowcaseSubtitle}
+            </p>
+          </div>
+          
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {home.showcaseItems.map((item, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 relative">
+                  <img 
+                    src={item.image} 
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <Badge variant="secondary" className="mb-2">
+                      {item.category}
+                    </Badge>
+                    <h3 className="text-white font-semibold text-lg">{item.name}</h3>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <p className="text-neutral-600 dark:text-neutral-300">
+                    {item.description}
+                  </p>
+                  <Button variant="ghost" size="sm" className="mt-4 p-0 h-auto">
+                    {home.viewDetails} <ExternalLink className="ml-1 h-4 w-4" />
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="px-6 py-16 sm:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
@@ -103,7 +167,7 @@ export function HomePage({ dictionary }: HomePageProps) {
       </section>
 
       {/* Benefits Section */}
-      <section className="px-6 py-16 sm:px-10 lg:px-16">
+      <section className="bg-neutral-100 dark:bg-neutral-800 px-6 py-16 sm:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
@@ -128,6 +192,34 @@ export function HomePage({ dictionary }: HomePageProps) {
                 <p className="text-neutral-600 dark:text-neutral-300">
                   {benefit.description}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="px-6 py-16 sm:px-10 lg:px-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
+              {home.statsTitle}
+            </h2>
+            <p className="text-xl text-neutral-600 dark:text-neutral-300">
+              {home.statsSubtitle}
+            </p>
+          </div>
+          
+          <div className="grid gap-8 md:grid-cols-3">
+            {home.stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-5xl font-bold text-primary mb-2">{stat.number}</div>
+                <div className="text-xl font-semibold text-neutral-900 dark:text-neutral-50 mb-1">
+                  {stat.label}
+                </div>
+                <div className="text-neutral-600 dark:text-neutral-300">
+                  {stat.description}
+                </div>
               </div>
             ))}
           </div>
@@ -237,21 +329,64 @@ export function HomePage({ dictionary }: HomePageProps) {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="px-6 py-16 sm:px-10 lg:px-16">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
+              {home.faqTitle}
+            </h2>
+            <p className="text-xl text-neutral-600 dark:text-neutral-300">
+              {home.faqSubtitle}
+            </p>
+          </div>
+          
+          <div className="space-y-4">
+            {home.faqs.map((faq, index) => (
+              <Card key={index} className="overflow-hidden">
+                <CardContent className="p-0">
+                  <button
+                    className="w-full p-6 text-left flex items-center justify-between hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors"
+                    onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
+                  >
+                    <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50">
+                      {faq.question}
+                    </h3>
+                    <ChevronDown 
+                      className={`h-5 w-5 text-neutral-500 transition-transform ${
+                        openFaqIndex === index ? 'rotate-180' : ''
+                      }`} 
+                    />
+                  </button>
+                  {openFaqIndex === index && (
+                    <div className="px-6 pb-6">
+                      <p className="text-neutral-600 dark:text-neutral-300">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
-      <section className="px-6 py-20 sm:px-10 lg:px-16">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-20 sm:px-10 lg:px-16">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-6 text-4xl font-bold text-neutral-900 dark:text-neutral-50 sm:text-5xl">
+          <h2 className="mb-6 text-4xl font-bold text-white sm:text-5xl">
             {home.finalCtaTitle}
           </h2>
-          <p className="mb-8 text-xl text-neutral-600 dark:text-neutral-300">
+          <p className="mb-8 text-xl text-blue-100">
             {home.finalCtaSubtitle}
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Button size="lg" className="text-lg px-8 py-6">
+            <Button size="lg" className="text-lg px-8 py-6 bg-white text-blue-600 hover:bg-blue-50">
               <Rocket className="mr-2 h-5 w-5" />
               {home.finalCtaButton}
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-blue-600 bg-white/10 backdrop-blur-sm">
               {home.finalCtaSecondary}
             </Button>
           </div>

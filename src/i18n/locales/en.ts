@@ -8,6 +8,8 @@ export const enDictionary: AppDictionary = {
       "ShipBase is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
     ctaPrimary: "Get Started",
     ctaSecondary: "Read Document",
+    watchDemo: "Watch Demo",
+    viewDetails: "View Details",
     promotionText: "🎁 $100 off for the first 1000 customers",
     userCount: "from 250+ happy users",
     
@@ -131,6 +133,99 @@ export const enDictionary: AppDictionary = {
         quote: "I used ShipBase and launched a new website in 8 minutes, including login/payment, so amazing!",
         author: "Lafe",
         role: "Tech Lead"
+      }
+    ],
+    
+    // Product Showcase
+    productShowcaseTitle: "AI SaaS Startups built with ShipBase",
+    productShowcaseSubtitle: "See amazing AI SaaS applications built with ShipBase",
+    showcaseItems: [
+      {
+        name: "Raphael AI",
+        description: "Create stunning AI-generated images in seconds",
+        image: "/api/placeholder/400/300",
+        category: "AI Image Generation"
+      },
+      {
+        name: "SiteSnapper",
+        description: "Capture Any Website in One Click",
+        image: "/api/placeholder/400/300",
+        category: "Website Tools"
+      },
+      {
+        name: "SEO Combine",
+        description: "All SEO Tools Combined in One Place",
+        image: "/api/placeholder/400/300",
+        category: "SEO Tools"
+      },
+      {
+        name: "TrendsBar",
+        description: "Google Trends Analysis Tool",
+        image: "/api/placeholder/400/300",
+        category: "Data Analytics"
+      },
+      {
+        name: "Deepseek Artifacts",
+        description: "Create React Apps Using the World's Leading Open-Source Model",
+        image: "/api/placeholder/400/300",
+        category: "AI Development"
+      },
+      {
+        name: "Rednote Club",
+        description: "Share Your Life's Beautiful Moments in Rednote",
+        image: "/api/placeholder/400/300",
+        category: "Social Platform"
+      }
+    ],
+    
+    // Stats Section
+    statsTitle: "People Love ShipBase",
+    statsSubtitle: "for it's easy to use and fast to ship",
+    stats: [
+      {
+        number: "250+",
+        label: "Customers",
+        description: "Trust us"
+      },
+      {
+        number: "30+",
+        label: "Components",
+        description: "Built in"
+      },
+      {
+        number: "5",
+        label: "Minutes",
+        description: "Ship Fast in"
+      }
+    ],
+    
+    // FAQ Section
+    faqTitle: "Frequently Asked Questions About ShipBase",
+    faqSubtitle: "Have another question? Contact us on Discord or by email.",
+    faqs: [
+      {
+        question: "What exactly is ShipBase and how does it work?",
+        answer: "ShipBase is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+      },
+      {
+        question: "Do I need advanced technical skills to use ShipBase?",
+        answer: "While basic programming knowledge is helpful, ShipBase is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+      },
+      {
+        question: "What types of AI SaaS can I build with ShipBase?",
+        answer: "ShipBase supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+      },
+      {
+        question: "How long does it typically take to launch with ShipBase?",
+        answer: "With ShipBase, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+      },
+      {
+        question: "What's included in the ShipBase infrastructure?",
+        answer: "ShipBase provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+      },
+      {
+        question: "Can I customize the templates to match my brand?",
+        answer: "Absolutely! All ShipBase templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
       }
     ],
     

@@ -8,6 +8,8 @@ export const jaDictionary: AppDictionary = {
       "ShipBaseはAI SaaSスタートアップを構築するためのNextJSボイラープレートです。様々なテンプレートとコンポーネントで素早くリリース。",
     ctaPrimary: "今すぐ始める",
     ctaSecondary: "ドキュメントを読む",
+    watchDemo: "デモを見る",
+    viewDetails: "詳細を見る",
     promotionText: "🎁 最初の1000名のお客様に$100オフ",
     userCount: "250+の満足したユーザーから",
     
@@ -131,6 +133,99 @@ export const jaDictionary: AppDictionary = {
         quote: "ShipBaseを使用して8分で新しいウェブサイトを立ち上げました。ログイン/支払いを含めて、素晴らしいです！",
         author: "Lafe",
         role: "テックリード"
+      }
+    ],
+    
+    // 製品展示
+    productShowcaseTitle: "ShipBaseで構築されたAI SaaSスタートアップ",
+    productShowcaseSubtitle: "ShipBaseで構築された素晴らしいAI SaaSアプリケーションをご覧ください",
+    showcaseItems: [
+      {
+        name: "Raphael AI",
+        description: "数秒で素晴らしいAI生成画像を作成",
+        image: "/api/placeholder/400/300",
+        category: "AI画像生成"
+      },
+      {
+        name: "SiteSnapper",
+        description: "ワンクリックで任意のウェブサイトをキャプチャ",
+        image: "/api/placeholder/400/300",
+        category: "ウェブサイトツール"
+      },
+      {
+        name: "SEO Combine",
+        description: "すべてのSEOツールを一箇所に統合",
+        image: "/api/placeholder/400/300",
+        category: "SEOツール"
+      },
+      {
+        name: "TrendsBar",
+        description: "Googleトレンド分析ツール",
+        image: "/api/placeholder/400/300",
+        category: "データ分析"
+      },
+      {
+        name: "Deepseek Artifacts",
+        description: "世界をリードするオープンソースモデルを使用してReactアプリを作成",
+        image: "/api/placeholder/400/300",
+        category: "AI開発"
+      },
+      {
+        name: "Rednote Club",
+        description: "Rednoteで人生の美しい瞬間を共有",
+        image: "/api/placeholder/400/300",
+        category: "ソーシャルプラットフォーム"
+      }
+    ],
+    
+    // 統計セクション
+    statsTitle: "人々はShipBaseを愛しています",
+    statsSubtitle: "使いやすく、素早くリリースできるからです",
+    stats: [
+      {
+        number: "250+",
+        label: "顧客",
+        description: "私たちを信頼"
+      },
+      {
+        number: "30+",
+        label: "コンポーネント",
+        description: "組み込み済み"
+      },
+      {
+        number: "5",
+        label: "分",
+        description: "素早くリリース"
+      }
+    ],
+    
+    // FAQセクション
+    faqTitle: "ShipBaseに関するよくある質問",
+    faqSubtitle: "他に質問がありますか？Discordでお問い合わせいただくか、メールでご連絡ください。",
+    faqs: [
+      {
+        question: "ShipBaseとは何で、どのように動作するのですか？",
+        answer: "ShipBaseは、AI SaaSスタートアップの構築に特化して設計された包括的なNextJSボイラープレートです。即座に使用できるテンプレート、インフラストラクチャセットアップ、デプロイメントツールを提供し、数日ではなく数時間でAIビジネスを立ち上げるのに役立ちます。"
+      },
+      {
+        question: "ShipBaseを使用するには高度な技術スキルが必要ですか？",
+        answer: "基本的なプログラミング知識は役立ちますが、ShipBaseは開発者フレンドリーに設計されています。AIやクラウドインフラストラクチャの専門家でなくても、テンプレートとドキュメントにより簡単に始められます。"
+      },
+      {
+        question: "ShipBaseでどのようなタイプのAI SaaSを構築できますか？",
+        answer: "ShipBaseは、コンテンツ生成からデータ分析ツールまで、幅広いAIアプリケーションをサポートしています。AIチャットボット、コンテンツジェネレーター、画像処理アプリなどの人気のあるユースケースをカバーしています。"
+      },
+      {
+        question: "ShipBaseでリリースするのに通常どのくらい時間がかかりますか？",
+        answer: "ShipBaseを使用すると、数時間で動作するプロトタイプを、数時間で本番準備完了のアプリケーションを持つことができます。ワンクリックデプロイメントと事前設定されたインフラストラクチャにより、従来の数ヶ月の開発サイクルを大幅に短縮します。"
+      },
+      {
+        question: "ShipBaseインフラストラクチャには何が含まれていますか？",
+        answer: "ShipBaseは、認証、データベースセットアップ、API統合、支払い処理、スケーラブルなクラウドデプロイメントを含む完全なインフラストラクチャスタックを提供します。すべてが業界のベストプラクティスに従って事前設定されています。"
+      },
+      {
+        question: "テンプレートをブランドに合わせてカスタマイズできますか？",
+        answer: "もちろんです！すべてのShipBaseテンプレートは完全にカスタマイズ可能です。強力な基盤インフラストラクチャを維持しながら、ブランドアイデンティティと特定のビジネス要件に合わせてデザイン、機能、機能を変更できます。"
       }
     ],
     

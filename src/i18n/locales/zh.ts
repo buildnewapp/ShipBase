@@ -8,6 +8,8 @@ export const zhDictionary: AppDictionary = {
       "ShipBase 是一个用于构建 AI SaaS 初创公司的 NextJS 模板。通过多种模板和组件快速发布。",
     ctaPrimary: "立即开始",
     ctaSecondary: "阅读文档",
+    watchDemo: "观看演示",
+    viewDetails: "查看详情",
     promotionText: "🎁 前1000名客户享受$100优惠",
     userCount: "来自250+满意用户",
     
@@ -131,6 +133,99 @@ export const zhDictionary: AppDictionary = {
         quote: "我使用 ShipBase 在8分钟内启动了一个新网站，包括登录/支付，太棒了！",
         author: "Lafe",
         role: "技术负责人"
+      }
+    ],
+    
+    // 产品展示
+    productShowcaseTitle: "AI SaaS 初创公司展示",
+    productShowcaseSubtitle: "看看使用 ShipBase 构建的令人惊叹的 AI SaaS 应用",
+    showcaseItems: [
+      {
+        name: "Raphael AI",
+        description: "几秒钟内创建令人惊叹的 AI 生成图像",
+        image: "/api/placeholder/400/300",
+        category: "AI 图像生成"
+      },
+      {
+        name: "SiteSnapper", 
+        description: "一键捕获任何网站",
+        image: "/api/placeholder/400/300",
+        category: "网站工具"
+      },
+      {
+        name: "SEO Combine",
+        description: "所有 SEO 工具合而为一",
+        image: "/api/placeholder/400/300", 
+        category: "SEO 工具"
+      },
+      {
+        name: "TrendsBar",
+        description: "Google 趋势分析工具",
+        image: "/api/placeholder/400/300",
+        category: "数据分析"
+      },
+      {
+        name: "Deepseek Artifacts",
+        description: "使用世界领先的开源模型创建 React 应用",
+        image: "/api/placeholder/400/300",
+        category: "AI 开发"
+      },
+      {
+        name: "Rednote Club",
+        description: "在 Rednote 中分享您生活的美好时刻",
+        image: "/api/placeholder/400/300",
+        category: "社交平台"
+      }
+    ],
+    
+    // 统计数据
+    statsTitle: "人们喜爱 ShipBase",
+    statsSubtitle: "因为它易于使用且发布快速",
+    stats: [
+      {
+        number: "250+",
+        label: "客户",
+        description: "信任我们"
+      },
+      {
+        number: "30+",
+        label: "组件",
+        description: "内置构建"
+      },
+      {
+        number: "5",
+        label: "分钟",
+        description: "快速发布"
+      }
+    ],
+    
+    // FAQ 部分
+    faqTitle: "关于 ShipBase 的常见问题",
+    faqSubtitle: "还有其他问题？在 Discord 上联系我们或发送邮件。",
+    faqs: [
+      {
+        question: "ShipBase 到底是什么，它是如何工作的？",
+        answer: "ShipBase 是专门为构建 AI SaaS 初创公司而设计的综合 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
+      },
+      {
+        question: "使用 ShipBase 需要高级技术技能吗？",
+        answer: "虽然基本的编程知识很有帮助，但 ShipBase 被设计为对开发者友好。我们的模板和文档让您即使不是 AI 或云基础设施专家也能轻松上手。"
+      },
+      {
+        question: "我可以使用 ShipBase 构建什么类型的 AI SaaS？",
+        answer: "ShipBase 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖了流行的用例，如 AI 聊天机器人、内容生成器、图像处理应用等。"
+      },
+      {
+        question: "使用 ShipBase 发布通常需要多长时间？",
+        answer: "使用 ShipBase，您可以在几小时内拥有一个工作原型，在几小时内拥有一个生产就绪的应用程序。我们的一键部署和预配置基础设施大大减少了传统的数月开发周期。"
+      },
+      {
+        question: "ShipBase 基础设施包含什么？",
+        answer: "ShipBase 提供完整的基础设施堆栈，包括身份验证、数据库设置、API 集成、支付处理和可扩展的云部署。一切都预配置遵循行业最佳实践。"
+      },
+      {
+        question: "我可以自定义模板以匹配我的品牌吗？",
+        answer: "当然可以！所有 ShipBase 模板都是完全可自定义的。您可以修改设计、功能和特性以匹配您的品牌标识和特定业务需求，同时保持强大的底层基础设施。"
       }
     ],
     
