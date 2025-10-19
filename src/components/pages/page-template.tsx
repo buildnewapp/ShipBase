@@ -1,11 +1,11 @@
-import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary, StatusPageDictionary } from "@/i18n/types";
+import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary, StatusPageDictionary, PrivacyPageDictionary } from "@/i18n/types";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users, Lock } from "lucide-react";
 
 interface PageTemplateProps {
-  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary;
+  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary | PrivacyPageDictionary;
 }
 
 export function PageTemplate({ dictionary }: PageTemplateProps) {
@@ -36,7 +36,7 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
       return <StatusContent dictionary={dictionary as StatusPageDictionary} />;
     }
     if (dictionary.title === "隐私政策" || dictionary.title === "Privacy Policy" || dictionary.title === "プライバシーポリシー") {
-      return <PrivacyContent dictionary={dictionary as PageDictionary} />;
+      return <PrivacyContent dictionary={dictionary as PrivacyPageDictionary} />;
     }
     if (dictionary.title === "服务条款" || dictionary.title === "Terms of Service" || dictionary.title === "利用規約") {
       return <TermsContent dictionary={dictionary as PageDictionary} />;
@@ -1228,59 +1228,154 @@ function StatusContent({ dictionary }: { dictionary: StatusPageDictionary }) {
 }
 
 // 隐私政策页面内容
-function PrivacyContent({ dictionary }: { dictionary: PageDictionary }) {
+function PrivacyContent({ dictionary }: { dictionary: PrivacyPageDictionary }) {
+  const informationItems = [
+    dictionary.informationCollection.accountInfo,
+    dictionary.informationCollection.usageDetails,
+    dictionary.informationCollection.deviceInfo,
+    dictionary.informationCollection.cookies,
+    dictionary.informationCollection.paymentInfo
+  ];
+
   return (
-      <div className="space-y-16">
-        <div className="prose prose-neutral dark:prose-invert max-w-none">
-          <h2>隐私政策</h2>
-          <p>最后更新：2024年1月1日</p>
+    <div className="space-y-16">
+      {/* 最后更新时间 */}
+      <div className="text-center">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+          {dictionary.lastUpdated}
+        </p>
+      </div>
 
-          <h3>1. 信息收集</h3>
-          <p>我们收集您主动提供的信息，包括但不限于：</p>
-          <ul>
-            <li>账户注册信息（姓名、邮箱地址）</li>
-            <li>使用服务时产生的数据</li>
-            <li>技术信息（IP地址、浏览器类型）</li>
-          </ul>
+      {/* 介绍 */}
+      <div className="prose prose-neutral dark:prose-invert max-w-none">
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.introduction.title}
+        </h2>
+        <p className="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
+          {dictionary.introduction.content}
+        </p>
+      </div>
 
-          <h3>2. 信息使用</h3>
-          <p>我们使用收集的信息用于：</p>
-          <ul>
-            <li>提供和改进我们的服务</li>
-            <li>与您沟通</li>
-            <li>确保服务安全</li>
-          </ul>
+      {/* 信息收集和使用 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.informationCollection.title}
+        </h2>
+        <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8">
+          {dictionary.informationCollection.subtitle}
+        </p>
 
-          <h3>3. 信息共享</h3>
-          <p>我们不会出售、交易或转让您的个人信息给第三方，除非：</p>
-          <ul>
-            <li>获得您的明确同意</li>
-            <li>法律要求</li>
-            <li>保护我们的权利和财产</li>
-          </ul>
-
-          <h3>4. 数据安全</h3>
-          <p>我们采用适当的安全措施保护您的个人信息，包括：</p>
-          <ul>
-            <li>加密传输</li>
-            <li>安全存储</li>
-            <li>访问控制</li>
-          </ul>
-
-          <h3>5. 您的权利</h3>
-          <p>您有权：</p>
-          <ul>
-            <li>访问您的个人信息</li>
-            <li>更正不准确的信息</li>
-            <li>删除您的账户</li>
-            <li>撤回同意</li>
-          </ul>
-
-          <h3>6. 联系我们</h3>
-          <p>如果您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
-          <p>邮箱：privacy@shipbase.com</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {informationItems.map((item, index) => (
+            <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-4">
+                {item.title}
+              </h3>
+              <div className="space-y-3">
+                <div>
+                  <h4 className="font-medium text-neutral-800 dark:text-neutral-200 mb-2">
+                    {dictionary.title === "隐私政策" ? "我们收集的内容：" : "What We Collect:"}
+                  </h4>
+                  <p className="text-neutral-600 dark:text-neutral-300 text-sm">
+                    {item.whatWeCollect}
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-medium text-neutral-800 dark:text-neutral-200 mb-2">
+                    {dictionary.title === "隐私政策" ? "目的：" : "Purpose:"}
+                  </h4>
+                  <p className="text-neutral-600 dark:text-neutral-300 text-sm">
+                    {item.purpose}
+                  </p>
+                </div>
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
+
+      {/* 数据存储和安全 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.dataStorage.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.dataStorage.content}
+          </p>
+        </Card>
+      </div>
+
+      {/* 信息共享和披露 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.informationSharing.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 mb-6 leading-relaxed">
+            {dictionary.informationSharing.content}
+          </p>
+          <ul className="space-y-3">
+            {dictionary.informationSharing.circumstances.map((circumstance, index) => (
+              <li key={index} className="flex items-start space-x-3">
+                <span className="text-blue-600 dark:text-blue-400 font-bold mt-1">•</span>
+                <span className="text-neutral-600 dark:text-neutral-300">{circumstance}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </div>
+
+      {/* 政策变更 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.policyChanges.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.policyChanges.content}
+          </p>
+        </Card>
+      </div>
+
+      {/* 联系我们 */}
+      <div>
+        <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+          {dictionary.contactUs.title}
+        </h2>
+        <Card className="p-8">
+          <p className="text-neutral-600 dark:text-neutral-300 mb-6 leading-relaxed">
+            {dictionary.contactUs.content}
+          </p>
+          <div className="space-y-3">
+            <div className="flex items-center space-x-3">
+              <Shield className="h-5 w-5 text-blue-600" />
+              <span className="text-neutral-600 dark:text-neutral-300">
+                <strong>{dictionary.contactUs.copyrightOwner}</strong>
+              </span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Users className="h-5 w-5 text-green-600" />
+              <span className="text-neutral-600 dark:text-neutral-300">
+                <strong>{dictionary.contactUs.email}</strong>
+              </span>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      {/* 同意声明 */}
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-8">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+            {dictionary.title === "隐私政策" ? "同意条款" : "Consent"}
+          </h2>
+          <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.consent.content}
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
 

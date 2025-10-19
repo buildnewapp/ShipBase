@@ -1195,6 +1195,66 @@ export const zhDictionary: AppDictionary = {
       title: "隐私政策",
       subtitle: "您的隐私很重要",
       description: "了解我们如何收集、使用和保护您的个人信息。",
+      lastUpdated: "最后更新：2024年1月1日",
+      introduction: {
+        title: "介绍",
+        content: "欢迎使用 ShipBase，这是一个专为帮助您快速高效构建 AI SaaS 初创公司而设计的 **NextJS 模板**。在 ShipBase，您的隐私对我们至关重要，本隐私政策概述了您在使用我们的服务时，我们如何收集、使用和保护您的个人信息。"
+      },
+      informationCollection: {
+        title: "信息收集和使用",
+        subtitle: "我们收集以下类型的数据，以便在使用 ShipBase 时为您提供更好的体验：",
+        accountInfo: {
+          title: "账户信息",
+          whatWeCollect: "我们收集的内容：这包括您的姓名、邮箱地址以及您在创建账户时提供的任何其他信息。",
+          purpose: "目的：管理您的账户并提供客户支持。"
+        },
+        usageDetails: {
+          title: "使用详情",
+          whatWeCollect: "我们收集的内容：关于您如何使用 ShipBase 的信息，包括您的交互、访问的功能和使用频率。",
+          purpose: "目的：分析用户参与度并改进我们的服务。"
+        },
+        deviceInfo: {
+          title: "设备信息",
+          whatWeCollect: "我们收集的内容：关于您用于访问 ShipBase 的设备的数据，如设备类型、操作系统和浏览器类型。",
+          purpose: "目的：为不同设备优化我们的服务并确保兼容性。"
+        },
+        cookies: {
+          title: "Cookie",
+          whatWeCollect: "我们收集的内容：放置在您设备上的小型数据文件，帮助我们跟踪用户偏好并改善用户体验。",
+          purpose: "目的：增强我们服务的功能并个性化您的体验。"
+        },
+        paymentInfo: {
+          title: "支付和账单信息",
+          whatWeCollect: "我们收集的内容：关于您支付方式的信息，如信用卡号、账单地址以及交易处理所需的任何详细信息。",
+          purpose: "目的：为我们的服务提供账单和支付处理便利。"
+        }
+      },
+      dataStorage: {
+        title: "数据存储和安全",
+        content: "我们认真对待您个人信息的安全。我们收集的数据安全地存储在我们的服务器上，我们实施各种安全措施，包括加密和访问控制，以保护您的个人信息免受未经授权的访问、更改、披露或销毁。但是，请注意，没有通过互联网传输或电子存储的方法是100%安全的，我们无法保证其绝对安全。"
+      },
+      informationSharing: {
+        title: "信息共享和披露",
+        content: "我们不会向外部方出售、交易或以其他方式转让您的个人信息，除非在以下情况下：",
+        circumstances: [
+          "遵守法律义务或响应公共当局的合法请求。",
+          "保护我们的权利、财产或安全，或保护我们的用户或他人的权利、财产或安全。",
+          "通过协助我们运营网站或开展业务的受信任第三方合作伙伴提供服务，但需遵守保密协议。"
+        ]
+      },
+      policyChanges: {
+        title: "政策变更",
+        content: "我们可能会不时更新此隐私政策。我们将通过在此页面上发布新政策并更新本政策顶部的\"生效日期\"来通知您任何变更。建议您定期查看此隐私政策以了解任何变更。此隐私政策的变更在发布到此页面时生效。"
+      },
+      contactUs: {
+        title: "联系我们",
+        content: "如果您对此隐私政策或我们的数据实践有任何疑问或担忧，请通过以下方式联系我们：",
+        copyrightOwner: "版权所有者：shipbase.ai",
+        email: "邮箱：support@shipbase.ai"
+      },
+      consent: {
+        content: "通过使用 ShipBase，您同意我们的隐私政策并同意其条款。感谢您信任我们处理您的信息！"
+      }
     },
     terms: {
       title: "服务条款",

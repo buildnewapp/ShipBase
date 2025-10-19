@@ -1195,6 +1195,66 @@ export const enDictionary: AppDictionary = {
       title: "Privacy Policy",
       subtitle: "Your privacy matters",
       description: "Learn how we collect, use, and protect your personal information.",
+      lastUpdated: "Last updated: January 1, 2024",
+      introduction: {
+        title: "Introduction",
+        content: "Welcome to ShipBase, the **NextJS Boilerplate** designed to help you build AI SaaS startups quickly and efficiently. At ShipBase, your privacy is of utmost importance to us, and this privacy policy outlines how we collect, use, and protect your personal information when you use our services."
+      },
+      informationCollection: {
+        title: "Information Collection and Use",
+        subtitle: "We collect the following types of data to provide you with a better experience while using ShipBase:",
+        accountInfo: {
+          title: "Account Information",
+          whatWeCollect: "What We Collect: This includes your name, email address, and any other information you provide when creating an account.",
+          purpose: "Purpose: To manage your account and provide customer support."
+        },
+        usageDetails: {
+          title: "Usage Details",
+          whatWeCollect: "What We Collect: Information about how you use ShipBase, including your interactions, features accessed, and usage frequency.",
+          purpose: "Purpose: To analyze user engagement and improve our services."
+        },
+        deviceInfo: {
+          title: "Device Information",
+          whatWeCollect: "What We Collect: Data regarding the devices you use to access ShipBase, such as device type, operating system, and browser type.",
+          purpose: "Purpose: To optimize our services for different devices and ensure compatibility."
+        },
+        cookies: {
+          title: "Cookies",
+          whatWeCollect: "What We Collect: Small data files placed on your device that help us track user preferences and improve user experience.",
+          purpose: "Purpose: To enhance the functionality of our services and personalize your experience."
+        },
+        paymentInfo: {
+          title: "Payment and Billing Information",
+          whatWeCollect: "What We Collect: Information regarding your payment methods, such as credit card number, billing address, and any details required for transaction processing.",
+          purpose: "Purpose: To facilitate billing and payment processing for our services."
+        }
+      },
+      dataStorage: {
+        title: "Data Storage and Security",
+        content: "We take the security of your personal information seriously. The data we collect is stored securely on our servers, and we implement a variety of security measures including encryption and access controls to protect against unauthorized access, alteration, disclosure, or destruction of your personal information. However, please be aware that no method of transmission over the Internet, or method of electronic storage, is 100% secure, and we cannot guarantee its absolute security."
+      },
+      informationSharing: {
+        title: "Information Sharing and Disclosure",
+        content: "We do not sell, trade, or otherwise transfer your personal information to outside parties, except in the following circumstances:",
+        circumstances: [
+          "To comply with legal obligations or respond to lawful requests from public authorities.",
+          "To protect our rights, property, or safety, or that of our users or others.",
+          "To provide services through trusted third-party partners who assist us in operating our website or conducting our business, subject to confidentiality agreements."
+        ]
+      },
+      policyChanges: {
+        title: "Changes to This Policy",
+        content: "We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the \"effective date\" at the top of this policy. You are advised to review this privacy policy periodically for any changes. Changes to this privacy policy are effective when they are posted on this page."
+      },
+      contactUs: {
+        title: "Contact Us",
+        content: "If you have any questions or concerns about this privacy policy or our data practices, please contact us at:",
+        copyrightOwner: "Copyright Owner: shipbase.ai",
+        email: "Email: support@shipbase.ai"
+      },
+      consent: {
+        content: "By using ShipBase, you consent to our privacy policy and agree to its terms. Thank you for trusting us with your information!"
+      }
     },
     terms: {
       title: "Terms of Service",

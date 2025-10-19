@@ -442,6 +442,51 @@ export interface StatusPageDictionary extends PageDictionary {
   };
 }
 
+export interface PrivacyInfoItem {
+  title: string;
+  whatWeCollect: string;
+  purpose: string;
+}
+
+export interface PrivacyPageDictionary extends PageDictionary {
+  lastUpdated: string;
+  introduction: {
+    title: string;
+    content: string;
+  };
+  informationCollection: {
+    title: string;
+    subtitle: string;
+    accountInfo: PrivacyInfoItem;
+    usageDetails: PrivacyInfoItem;
+    deviceInfo: PrivacyInfoItem;
+    cookies: PrivacyInfoItem;
+    paymentInfo: PrivacyInfoItem;
+  };
+  dataStorage: {
+    title: string;
+    content: string;
+  };
+  informationSharing: {
+    title: string;
+    content: string;
+    circumstances: string[];
+  };
+  policyChanges: {
+    title: string;
+    content: string;
+  };
+  contactUs: {
+    title: string;
+    content: string;
+    copyrightOwner: string;
+    email: string;
+  };
+  consent: {
+    content: string;
+  };
+}
+
 export interface PagesDictionary {
   features: FeaturesPageDictionary;
   pricing: PricingPageDictionary;
@@ -450,7 +495,7 @@ export interface PagesDictionary {
   help: HelpPageDictionary;
   contact: ContactPageDictionary;
   status: StatusPageDictionary;
-  privacy: PageDictionary;
+  privacy: PrivacyPageDictionary;
   terms: PageDictionary;
   security: PageDictionary;
   cookies: PageDictionary;
