@@ -1,6 +1,8 @@
 import { betterAuth } from "better-auth";
 import { nextCookies } from "better-auth/next-js";
 import { magicLink } from "better-auth/plugins/magic-link";
+import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import { db } from "@/lib/db/client";
 
 const appBaseURL =
   process.env.BETTER_AUTH_URL ??
@@ -45,6 +47,9 @@ export const auth = betterAuth({
   baseURL: appBaseURL,
   basePath: "/api/auth",
   secret: process.env.BETTER_AUTH_SECRET,
+  database: drizzleAdapter(db, {
+    provider: "pg",
+  }),
   socialProviders,
   plugins: [
     nextCookies(),
