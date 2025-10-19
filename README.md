@@ -11,6 +11,8 @@ Shipbase 是一个基于 Next.js 15 的 SaaS 起步模版，预置 Better Auth �
 2. 新建 `.env.local` 并填入以下变量：
    ```ini
    BETTER_AUTH_SECRET=openssl rand -base64 32 的结果
+   DATABASE_URL=postgresql://user:password@host:5432/dbname
+   DATABASE_SSL=可选，生产环境默认启用（值为 true 时强制使用 SSL）
    GOOGLE_CLIENT_ID=可选，启用 Google OAuth
    GOOGLE_CLIENT_SECRET=可选
    GITHUB_CLIENT_ID=可选，启用 GitHub OAuth
@@ -25,13 +27,20 @@ Shipbase 是一个基于 Next.js 15 的 SaaS 起步模版，预置 Better Auth �
 - `pnpm dev`：启动开发服务器（Turbopack）。
 - `pnpm lint`：运行 ESLint。
 - `pnpm build` / `pnpm start`：构建并以生产模式本地运行。
+- `pnpm db:generate`：基于当前 Schema 生成 Drizzle 迁移文件。
+- `pnpm db:push`：将最新 Schema 推送到数据库（适合开发环境）。
 
 ## 目录速览
 
 - `src/app/page.tsx`：首页，包含登录面板示例。
 - `src/components/auth/auth-panel.tsx`：Better Auth 客户端示例组件。
+- `src/components/home/home-page.tsx`：首页共享视图，接收多语言文案字典。
 - `src/lib/auth/server.ts`：Better Auth 服务端配置（OAuth + Magic Link）。
 - `src/lib/auth/client.ts`：Better Auth React Client 封装。
+- `src/lib/db/`：Drizzle ORM 配置与 Schema 定义。
+- `src/lib/i18n/dictionaries.ts`：多语言文案字典定义。
+- `src/components/i18n/rich-text.tsx`：渲染带代码片段的多语言文案工具组件。
+- `src/app/zh/page.tsx`：中文首页入口。
 - `src/app/api/auth/[...betterAuth]/route.ts`：对接 Better Auth Router 的 API Route。
 
 ## 认证流程摘要
@@ -41,3 +50,15 @@ Shipbase 是一个基于 Next.js 15 的 SaaS 起步模版，预置 Better Auth �
 - 会话读取：在任意客户端组件中使用 `authClient.useSession()` 获取当前用户与会话信息，退出使用 `authClient.signOut()`。
 
 更多能力（如数据库适配器、组织/多因子插件）请参考 [Better Auth 文档](https://better-auth.com/docs)。
+
+## 数据库
+
+- 借助 `drizzle-orm` + `pg` 封装的 `db` 实例位于 `src/lib/db/client.ts`，只需在服务器环境导入即可使用。
+- Schema 统一维护在 `src/lib/db/schema/`，修改后使用 `pnpm db:generate` 创建迁移，再 `pnpm db:push` 或手动执行 SQL。
+- `drizzle.config.ts` 会自动读取 `.env.local` 中的 `DATABASE_URL`，请在执行 CLI 前准备好连接字符串。
+
+## 国际化
+
+- Next.js `next.config.ts` 已启用 `i18n` 配置，默认语言为 `en`，另内置 `zh`。
+- 首页文案集中维护在 `src/lib/i18n/dictionaries.ts`，通过 `HomePage` 组件注入到 `/`（英文）与 `/zh`（中文）路由。
+- 增加新语言时，只需扩展字典并创建对应的页面入口文件，例如 `src/app/es/page.tsx`。
