@@ -1143,6 +1143,53 @@ export const jaDictionary: AppDictionary = {
       title: "サービス状況",
       subtitle: "リアルタイムシステム状況",
       description: "すべてのShipBaseサービスとインフラストラクチャの現在の状況を監視。",
+      overview: {
+        title: "サービス状況概要",
+        subtitle: "すべてのShipBaseサービスのリアルタイム監視",
+        allSystemsOperational: "すべてのシステムが正常動作中",
+        lastUpdated: "最終更新",
+      },
+      services: {
+        title: "サービス状況",
+        subtitle: "すべてのShipBaseサービスの現在の状況",
+        api: {
+          name: "APIサービス",
+          description: "コアAPIエンドポイントとサービス",
+        },
+        auth: {
+          name: "認証",
+          description: "ユーザー認証と認可",
+        },
+        payments: {
+          name: "決済処理",
+          description: "Stripe決済処理サービス",
+        },
+        database: {
+          name: "データベース",
+          description: "Supabaseデータベースサービス",
+        },
+        cdn: {
+          name: "CDN",
+          description: "コンテンツ配信ネットワーク",
+        },
+        monitoring: {
+          name: "監視システム",
+          description: "システム監視とアラート",
+        },
+        statusOperational: "正常動作",
+        statusDegraded: "パフォーマンス低下",
+        statusOutage: "サービス停止",
+        uptime: "稼働時間",
+        lastIncident: "最後のインシデント",
+        none: "なし",
+      },
+      subscribe: {
+        title: "ステータス更新の購読",
+        subtitle: "メールまたはRSSでサービス状況の変更通知を受け取る",
+        emailSubscribe: "メール購読",
+        rssSubscribe: "RSS購読",
+        description: "サービス状況の変更とメンテナンスウィンドウについて情報を得る",
+      },
     },
     privacy: {
       title: "プライバシーポリシー",

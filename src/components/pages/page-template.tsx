@@ -1,11 +1,11 @@
-import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary } from "@/i18n/types";
+import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary, StatusPageDictionary } from "@/i18n/types";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users, Lock } from "lucide-react";
 
 interface PageTemplateProps {
-  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary;
+  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary;
 }
 
 export function PageTemplate({ dictionary }: PageTemplateProps) {
@@ -33,7 +33,7 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
       return <ContactContent dictionary={dictionary as ContactPageDictionary} />;
     }
     if (dictionary.title === "服务状态" || dictionary.title === "Service Status" || dictionary.title === "サービス状況") {
-      return <StatusContent dictionary={dictionary as PageDictionary} />;
+      return <StatusContent dictionary={dictionary as StatusPageDictionary} />;
     }
     if (dictionary.title === "隐私政策" || dictionary.title === "Privacy Policy" || dictionary.title === "プライバシーポリシー") {
       return <PrivacyContent dictionary={dictionary as PageDictionary} />;
@@ -1109,58 +1109,49 @@ function ContactContent({ dictionary }: { dictionary: ContactPageDictionary }) {
 }
 
 // 服务状态页面内容
-function StatusContent({ dictionary }: { dictionary: PageDictionary }) {
+function StatusContent({ dictionary }: { dictionary: StatusPageDictionary }) {
   const services = [
     {
-      name: "API 服务",
+      name: dictionary.services.api.name,
+      description: dictionary.services.api.description,
       status: "operational",
       uptime: "99.9%",
-      lastIncident: "无"
+      lastIncident: dictionary.services.none
     },
     {
-      name: "身份验证",
+      name: dictionary.services.auth.name,
+      description: dictionary.services.auth.description,
       status: "operational",
       uptime: "99.8%",
-      lastIncident: "2 天前"
+      lastIncident: "2 days ago"
     },
     {
-      name: "支付处理",
+      name: dictionary.services.payments.name,
+      description: dictionary.services.payments.description,
       status: "operational",
       uptime: "99.9%",
-      lastIncident: "无"
+      lastIncident: dictionary.services.none
     },
     {
-      name: "数据库",
+      name: dictionary.services.database.name,
+      description: dictionary.services.database.description,
       status: "operational",
       uptime: "99.7%",
-      lastIncident: "1 周前"
+      lastIncident: "1 week ago"
     },
     {
-      name: "CDN",
+      name: dictionary.services.cdn.name,
+      description: dictionary.services.cdn.description,
       status: "operational",
       uptime: "99.9%",
-      lastIncident: "无"
+      lastIncident: dictionary.services.none
     },
     {
-      name: "监控系统",
+      name: dictionary.services.monitoring.name,
+      description: dictionary.services.monitoring.description,
       status: "operational",
       uptime: "99.9%",
-      lastIncident: "无"
-    }
-  ];
-
-  const incidents = [
-    {
-      date: "2024-01-15",
-      title: "数据库连接超时",
-      status: "resolved",
-      description: "部分用户遇到数据库连接超时问题，已修复"
-    },
-    {
-      date: "2024-01-10",
-      title: "API 响应延迟",
-      status: "resolved",
-      description: "API 响应时间增加，已优化性能"
+      lastIncident: dictionary.services.none
     }
   ];
 
@@ -1170,10 +1161,10 @@ function StatusContent({ dictionary }: { dictionary: PageDictionary }) {
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              服务状态
+              {dictionary.services.title}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              实时监控所有 ShipBase 服务的运行状态
+              {dictionary.services.subtitle}
             </p>
           </div>
 
@@ -1181,68 +1172,33 @@ function StatusContent({ dictionary }: { dictionary: PageDictionary }) {
             {services.map((service, index) => (
                 <Card key={index} className="p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-                      {service.name}
-                    </h3>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+                        {service.name}
+                      </h3>
+                      <p className="text-sm text-neutral-600 dark:text-neutral-300 mt-1">
+                        {service.description}
+                      </p>
+                    </div>
                     <div className="flex items-center space-x-2">
                       <div className="h-3 w-3 bg-green-500 rounded-full"></div>
                       <span className="text-sm text-green-600 dark:text-green-400">
-                    正常
-                  </span>
+                        {dictionary.services.statusOperational}
+                      </span>
                     </div>
                   </div>
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
-                      <span className="text-neutral-600 dark:text-neutral-300">正常运行时间</span>
+                      <span className="text-neutral-600 dark:text-neutral-300">{dictionary.services.uptime}</span>
                       <span className="font-medium text-neutral-900 dark:text-neutral-100">
-                    {service.uptime}
-                  </span>
+                        {service.uptime}
+                      </span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-neutral-600 dark:text-neutral-300">最后事件</span>
+                      <span className="text-neutral-600 dark:text-neutral-300">{dictionary.services.lastIncident}</span>
                       <span className="font-medium text-neutral-900 dark:text-neutral-100">
-                    {service.lastIncident}
-                  </span>
-                    </div>
-                  </div>
-                </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* 历史事件 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              历史事件
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              查看过去的事件和解决方案
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            {incidents.map((incident, index) => (
-                <Card key={index} className="p-6">
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-                          {incident.title}
-                        </h3>
-                        <Badge
-                            variant={incident.status === "resolved" ? "default" : "secondary"}
-                            className={incident.status === "resolved" ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200" : ""}
-                        >
-                          {incident.status === "resolved" ? "已解决" : "进行中"}
-                        </Badge>
-                      </div>
-                      <p className="text-neutral-600 dark:text-neutral-300 mb-2">
-                        {incident.description}
-                      </p>
-                      <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                        {incident.date}
-                      </p>
+                        {service.lastIncident}
+                      </span>
                     </div>
                   </div>
                 </Card>
@@ -1253,17 +1209,17 @@ function StatusContent({ dictionary }: { dictionary: PageDictionary }) {
         {/* 订阅更新 */}
         <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-12">
           <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            订阅状态更新
+            {dictionary.subscribe.title}
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl mx-auto">
-            通过邮件或 RSS 订阅获取服务状态更新
+            {dictionary.subscribe.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="px-8">
-              邮件订阅
+              {dictionary.subscribe.emailSubscribe}
             </Button>
             <Button variant="outline" size="lg" className="px-8">
-              RSS 订阅
+              {dictionary.subscribe.rssSubscribe}
             </Button>
           </div>
         </div>

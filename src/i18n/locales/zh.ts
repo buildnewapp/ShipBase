@@ -1143,6 +1143,53 @@ export const zhDictionary: AppDictionary = {
       title: "服务状态",
       subtitle: "实时系统状态",
       description: "监控所有ShipBase服务和基础设施的当前状态。",
+      overview: {
+        title: "服务状态概览",
+        subtitle: "实时监控所有ShipBase服务",
+        allSystemsOperational: "所有系统正常运行",
+        lastUpdated: "最后更新",
+      },
+      services: {
+        title: "服务状态",
+        subtitle: "所有ShipBase服务的当前状态",
+        api: {
+          name: "API服务",
+          description: "核心API端点和服务",
+        },
+        auth: {
+          name: "身份验证",
+          description: "用户身份验证和授权",
+        },
+        payments: {
+          name: "支付处理",
+          description: "Stripe支付处理服务",
+        },
+        database: {
+          name: "数据库",
+          description: "Supabase数据库服务",
+        },
+        cdn: {
+          name: "CDN",
+          description: "内容分发网络",
+        },
+        monitoring: {
+          name: "监控系统",
+          description: "系统监控和告警",
+        },
+        statusOperational: "正常运行",
+        statusDegraded: "性能降级",
+        statusOutage: "服务中断",
+        uptime: "正常运行时间",
+        lastIncident: "最后事件",
+        none: "无",
+      },
+      subscribe: {
+        title: "订阅状态更新",
+        subtitle: "通过邮件或RSS获取服务状态变更通知",
+        emailSubscribe: "邮件订阅",
+        rssSubscribe: "RSS订阅",
+        description: "及时了解服务状态变更和维护窗口",
+      },
     },
     privacy: {
       title: "隐私政策",

@@ -405,6 +405,43 @@ export interface ContactPageDictionary extends PageDictionary {
   responseTimeSubtitle: string;
 }
 
+export interface ServiceInfo {
+  name: string;
+  description: string;
+}
+
+export interface StatusPageDictionary extends PageDictionary {
+  overview: {
+    title: string;
+    subtitle: string;
+    allSystemsOperational: string;
+    lastUpdated: string;
+  };
+  services: {
+    title: string;
+    subtitle: string;
+    api: ServiceInfo;
+    auth: ServiceInfo;
+    payments: ServiceInfo;
+    database: ServiceInfo;
+    cdn: ServiceInfo;
+    monitoring: ServiceInfo;
+    statusOperational: string;
+    statusDegraded: string;
+    statusOutage: string;
+    uptime: string;
+    lastIncident: string;
+    none: string;
+  };
+  subscribe: {
+    title: string;
+    subtitle: string;
+    emailSubscribe: string;
+    rssSubscribe: string;
+    description: string;
+  };
+}
+
 export interface PagesDictionary {
   features: FeaturesPageDictionary;
   pricing: PricingPageDictionary;
@@ -412,7 +449,7 @@ export interface PagesDictionary {
   integrations: IntegrationsPageDictionary;
   help: HelpPageDictionary;
   contact: ContactPageDictionary;
-  status: PageDictionary;
+  status: StatusPageDictionary;
   privacy: PageDictionary;
   terms: PageDictionary;
   security: PageDictionary;

@@ -1143,6 +1143,53 @@ export const enDictionary: AppDictionary = {
       title: "Service Status",
       subtitle: "Real-time system status",
       description: "Monitor the current status of all ShipBase services and infrastructure.",
+      overview: {
+        title: "Service Status Overview",
+        subtitle: "Real-time monitoring of all ShipBase services",
+        allSystemsOperational: "All Systems Operational",
+        lastUpdated: "Last updated",
+      },
+      services: {
+        title: "Service Status",
+        subtitle: "Current status of all ShipBase services",
+        api: {
+          name: "API Services",
+          description: "Core API endpoints and services",
+        },
+        auth: {
+          name: "Authentication",
+          description: "User authentication and authorization",
+        },
+        payments: {
+          name: "Payment Processing",
+          description: "Stripe payment processing services",
+        },
+        database: {
+          name: "Database",
+          description: "Supabase database services",
+        },
+        cdn: {
+          name: "CDN",
+          description: "Content delivery network",
+        },
+        monitoring: {
+          name: "Monitoring System",
+          description: "System monitoring and alerting",
+        },
+        statusOperational: "Operational",
+        statusDegraded: "Degraded Performance",
+        statusOutage: "Service Outage",
+        uptime: "Uptime",
+        lastIncident: "Last Incident",
+        none: "None",
+      },
+      subscribe: {
+        title: "Subscribe to Status Updates",
+        subtitle: "Get notified about service status changes via email or RSS",
+        emailSubscribe: "Email Subscribe",
+        rssSubscribe: "RSS Subscribe",
+        description: "Stay informed about service status changes and maintenance windows",
+      },
     },
     privacy: {
       title: "Privacy Policy",
