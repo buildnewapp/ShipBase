@@ -1,11 +1,11 @@
-import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary, StatusPageDictionary, PrivacyPageDictionary, TermsPageDictionary } from "@/i18n/types";
+import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary, StatusPageDictionary, PrivacyPageDictionary, TermsPageDictionary, CookiesPageDictionary } from "@/i18n/types";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users } from "lucide-react";
 
 interface PageTemplateProps {
-  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary | PrivacyPageDictionary | TermsPageDictionary;
+  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary | PrivacyPageDictionary | TermsPageDictionary | CookiesPageDictionary;
 }
 
 export function PageTemplate({ dictionary }: PageTemplateProps) {
@@ -42,7 +42,7 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
       return <TermsContent dictionary={dictionary as TermsPageDictionary} />;
     }
     if (dictionary.title === "Cookie政策" || dictionary.title === "Cookie Policy" || dictionary.title === "Cookie ポリシー") {
-      return <CookiesContent dictionary={dictionary as PageDictionary} />;
+      return <CookiesContent dictionary={dictionary as CookiesPageDictionary} />;
     }
 
     // 默认内容
@@ -1602,56 +1602,258 @@ function TermsContent({ dictionary }: { dictionary: TermsPageDictionary }) {
 
 
 // Cookie政策页面内容
-function CookiesContent({ dictionary }: { dictionary: PageDictionary }) {
+function CookiesContent({ dictionary }: { dictionary: CookiesPageDictionary }) {
   return (
-      <div className="space-y-16">
-        <div className="prose prose-neutral dark:prose-invert max-w-none">
-          <h2>Cookie 政策</h2>
-          <p>最后更新：2024年1月1日</p>
-
-          <h3>什么是 Cookie？</h3>
-          <p>Cookie 是存储在您设备上的小型文本文件，用于改善您的浏览体验。</p>
-
-          <h3>我们使用的 Cookie 类型</h3>
-
-          <h4>必要 Cookie</h4>
-          <p>这些 Cookie 对于网站正常运行是必需的：</p>
-          <ul>
-            <li>会话管理</li>
-            <li>安全功能</li>
-            <li>基本功能</li>
-          </ul>
-
-          <h4>功能 Cookie</h4>
-          <p>这些 Cookie 增强网站功能：</p>
-          <ul>
-            <li>语言偏好</li>
-            <li>主题设置</li>
-            <li>用户偏好</li>
-          </ul>
-
-          <h4>分析 Cookie</h4>
-          <p>这些 Cookie 帮助我们了解网站使用情况：</p>
-          <ul>
-            <li>Google Analytics</li>
-            <li>用户行为分析</li>
-            <li>性能监控</li>
-          </ul>
-
-          <h3>Cookie 管理</h3>
-          <p>您可以通过以下方式管理 Cookie：</p>
-          <ul>
-            <li>浏览器设置</li>
-            <li>Cookie 同意工具</li>
-            <li>联系我们</li>
-          </ul>
-
-          <h3>第三方 Cookie</h3>
-          <p>我们可能使用第三方服务，它们有自己的 Cookie 政策。</p>
-
-          <h3>联系我们</h3>
-          <p>如有疑问，请联系：privacy@shipbase.com</p>
+    <div className="space-y-16">
+      <div className="prose prose-neutral dark:prose-invert max-w-none">
+        <div className="text-sm text-neutral-500 dark:text-neutral-400 mb-8">
+          {dictionary.lastUpdated}
         </div>
+
+        {/* Introduction */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+            {dictionary.introduction.title}
+          </h2>
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.introduction.content}
+          </p>
+        </section>
+
+        {/* How We Use Cookies */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+            {dictionary.howWeUseCookies.title}
+          </h2>
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8">
+            {dictionary.howWeUseCookies.subtitle}
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Essential Cookies */}
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <Shield className="h-6 w-6 text-green-600 mr-3" />
+                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                  {dictionary.howWeUseCookies.essential.title}
+                </h3>
+              </div>
+              <p className="text-neutral-600 dark:text-neutral-300 mb-4">
+                {dictionary.howWeUseCookies.essential.description}
+              </p>
+              <ul className="space-y-2">
+                {dictionary.howWeUseCookies.essential.examples.map((example, index) => (
+                  <li key={index} className="flex items-center text-sm text-neutral-500 dark:text-neutral-400">
+                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    {example}
+                  </li>
+                ))}
+              </ul>
+            </Card>
+
+            {/* Analytics Cookies */}
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <BarChart3 className="h-6 w-6 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                  {dictionary.howWeUseCookies.analytics.title}
+                </h3>
+              </div>
+              <p className="text-neutral-600 dark:text-neutral-300 mb-4">
+                {dictionary.howWeUseCookies.analytics.description}
+              </p>
+              <ul className="space-y-2">
+                {dictionary.howWeUseCookies.analytics.examples.map((example, index) => (
+                  <li key={index} className="flex items-center text-sm text-neutral-500 dark:text-neutral-400">
+                    <CheckCircle className="h-4 w-4 text-blue-500 mr-2" />
+                    {example}
+                  </li>
+                ))}
+              </ul>
+            </Card>
+
+            {/* Functional Cookies */}
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <Code className="h-6 w-6 text-purple-600 mr-3" />
+                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                  {dictionary.howWeUseCookies.functional.title}
+                </h3>
+              </div>
+              <p className="text-neutral-600 dark:text-neutral-300 mb-4">
+                {dictionary.howWeUseCookies.functional.description}
+              </p>
+              <ul className="space-y-2">
+                {dictionary.howWeUseCookies.functional.examples.map((example, index) => (
+                  <li key={index} className="flex items-center text-sm text-neutral-500 dark:text-neutral-400">
+                    <CheckCircle className="h-4 w-4 text-purple-500 mr-2" />
+                    {example}
+                  </li>
+                ))}
+              </ul>
+            </Card>
+
+            {/* Marketing Cookies */}
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <Rocket className="h-6 w-6 text-orange-600 mr-3" />
+                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                  {dictionary.howWeUseCookies.marketing.title}
+                </h3>
+              </div>
+              <p className="text-neutral-600 dark:text-neutral-300 mb-4">
+                {dictionary.howWeUseCookies.marketing.description}
+              </p>
+              <ul className="space-y-2">
+                {dictionary.howWeUseCookies.marketing.examples.map((example, index) => (
+                  <li key={index} className="flex items-center text-sm text-neutral-500 dark:text-neutral-400">
+                    <CheckCircle className="h-4 w-4 text-orange-500 mr-2" />
+                    {example}
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          </div>
+        </section>
+
+        {/* Cookie Types */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+            {dictionary.cookieTypes.title}
+          </h2>
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8">
+            {dictionary.cookieTypes.subtitle}
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <div>
+                <h4 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                  {dictionary.cookieTypes.sessionCookies.title}
+                </h4>
+                <p className="text-neutral-600 dark:text-neutral-300">
+                  {dictionary.cookieTypes.sessionCookies.description}
+                </p>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                  {dictionary.cookieTypes.persistentCookies.title}
+                </h4>
+                <p className="text-neutral-600 dark:text-neutral-300">
+                  {dictionary.cookieTypes.persistentCookies.description}
+                </p>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div>
+                <h4 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                  {dictionary.cookieTypes.firstPartyCookies.title}
+                </h4>
+                <p className="text-neutral-600 dark:text-neutral-300">
+                  {dictionary.cookieTypes.firstPartyCookies.description}
+                </p>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                  {dictionary.cookieTypes.thirdPartyCookies.title}
+                </h4>
+                <p className="text-neutral-600 dark:text-neutral-300">
+                  {dictionary.cookieTypes.thirdPartyCookies.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Manage Cookies */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+            {dictionary.manageCookies.title}
+          </h2>
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-4">
+            {dictionary.manageCookies.subtitle}
+          </p>
+          <p className="text-neutral-600 dark:text-neutral-300 mb-8">
+            {dictionary.manageCookies.description}
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-4">
+                {dictionary.manageCookies.browserSettings.title}
+              </h3>
+              <p className="text-neutral-600 dark:text-neutral-300 mb-4">
+                {dictionary.manageCookies.browserSettings.description}
+              </p>
+              <ul className="space-y-2">
+                {dictionary.manageCookies.browserSettings.instructions.map((instruction, index) => (
+                  <li key={index} className="text-sm text-neutral-500 dark:text-neutral-400">
+                    {instruction}
+                  </li>
+                ))}
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-4">
+                {dictionary.manageCookies.optOut.title}
+              </h3>
+              <p className="text-neutral-600 dark:text-neutral-300 mb-4">
+                {dictionary.manageCookies.optOut.description}
+              </p>
+              <ul className="space-y-2">
+                {dictionary.manageCookies.optOut.links.map((link, index) => (
+                  <li key={index} className="text-sm text-blue-600 dark:text-blue-400 hover:underline cursor-pointer">
+                    {link}
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          </div>
+        </section>
+
+        {/* Data Retention */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+            {dictionary.dataRetention.title}
+          </h2>
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.dataRetention.content}
+          </p>
+        </section>
+
+        {/* Updates */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+            {dictionary.updates.title}
+          </h2>
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            {dictionary.updates.content}
+          </p>
+        </section>
+
+        {/* Contact */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+            {dictionary.contact.title}
+          </h2>
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-4">
+            {dictionary.contact.content}
+          </p>
+          <p className="text-lg text-blue-600 dark:text-blue-400">
+            {dictionary.contact.email}
+          </p>
+        </section>
+
+        {/* Consent */}
+        <section className="mb-12">
+          <Card className="p-6 bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800">
+            <p className="text-lg text-neutral-700 dark:text-neutral-300 font-medium">
+              {dictionary.consent.content}
+            </p>
+          </Card>
+        </section>
       </div>
+    </div>
   );
 }

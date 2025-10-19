@@ -553,6 +553,89 @@ export interface TermsPageDictionary extends PageDictionary {
   };
 }
 
+export interface CookiesPageDictionary extends PageDictionary {
+  lastUpdated: string;
+  introduction: {
+    title: string;
+    content: string;
+  };
+  howWeUseCookies: {
+    title: string;
+    subtitle: string;
+    essential: {
+      title: string;
+      description: string;
+      examples: string[];
+    };
+    analytics: {
+      title: string;
+      description: string;
+      examples: string[];
+    };
+    functional: {
+      title: string;
+      description: string;
+      examples: string[];
+    };
+    marketing: {
+      title: string;
+      description: string;
+      examples: string[];
+    };
+  };
+  cookieTypes: {
+    title: string;
+    subtitle: string;
+    sessionCookies: {
+      title: string;
+      description: string;
+    };
+    persistentCookies: {
+      title: string;
+      description: string;
+    };
+    firstPartyCookies: {
+      title: string;
+      description: string;
+    };
+    thirdPartyCookies: {
+      title: string;
+      description: string;
+    };
+  };
+  manageCookies: {
+    title: string;
+    subtitle: string;
+    description: string;
+    browserSettings: {
+      title: string;
+      description: string;
+      instructions: string[];
+    };
+    optOut: {
+      title: string;
+      description: string;
+      links: string[];
+    };
+  };
+  dataRetention: {
+    title: string;
+    content: string;
+  };
+  updates: {
+    title: string;
+    content: string;
+  };
+  contact: {
+    title: string;
+    content: string;
+    email: string;
+  };
+  consent: {
+    content: string;
+  };
+}
+
 export interface PagesDictionary {
   features: FeaturesPageDictionary;
   pricing: PricingPageDictionary;
@@ -563,7 +646,7 @@ export interface PagesDictionary {
   status: StatusPageDictionary;
   privacy: PrivacyPageDictionary;
   terms: TermsPageDictionary;
-  cookies: PageDictionary;
+  cookies: CookiesPageDictionary;
   login: PageDictionary;
   signup: PageDictionary;
 }

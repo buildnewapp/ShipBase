@@ -1348,6 +1348,111 @@ export const enDictionary: AppDictionary = {
       title: "Cookie Policy",
       subtitle: "How we use cookies",
       description: "Understand how we use cookies and similar technologies on our platform.",
+      lastUpdated: "Last updated: January 1, 2024",
+      introduction: {
+        title: "What are Cookies",
+        content: "Cookies are small text files that are stored on your device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners."
+      },
+      howWeUseCookies: {
+        title: "How We Use Cookies",
+        subtitle: "We use cookies to improve your browsing experience, analyze website traffic, and personalize content and advertisements.",
+        essential: {
+          title: "Essential Cookies",
+          description: "These cookies are necessary for the website to function properly and cannot be switched off. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms.",
+          examples: [
+            "Keep you logged in",
+            "Remember your language preferences",
+            "Ensure website security"
+          ]
+        },
+        analytics: {
+          title: "Analytics Cookies",
+          description: "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+          examples: [
+            "Google Analytics - Website usage analysis",
+            "Page visit statistics",
+            "User behavior analysis"
+          ]
+        },
+        functional: {
+          title: "Functional Cookies",
+          description: "These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third parties.",
+          examples: [
+            "Remember your preference settings",
+            "Personalized content recommendations",
+            "Social media integration"
+          ]
+        },
+        marketing: {
+          title: "Marketing Cookies",
+          description: "These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging.",
+          examples: [
+            "Ad personalization",
+            "Conversion tracking",
+            "Remarketing campaigns"
+          ]
+        }
+      },
+      cookieTypes: {
+        title: "Types of Cookies We Use",
+        subtitle: "Learn more about the different types of cookies we use",
+        sessionCookies: {
+          title: "Session Cookies",
+          description: "These are temporary cookies that are deleted when you close your browser. They are used to maintain your session state while browsing the website."
+        },
+        persistentCookies: {
+          title: "Persistent Cookies",
+          description: "These cookies remain on your device for a longer period until they expire or are deleted. They remember your preferences to provide a better experience on your next visit."
+        },
+        firstPartyCookies: {
+          title: "First-Party Cookies",
+          description: "These cookies are set directly by us and are used to improve website functionality and user experience."
+        },
+        thirdPartyCookies: {
+          title: "Third-Party Cookies",
+          description: "These cookies are set by other websites, typically for advertising and analytics purposes."
+        }
+      },
+      manageCookies: {
+        title: "Manage Your Cookie Preferences",
+        subtitle: "You can control the types of cookies we use",
+        description: "You can manage cookies through your browser settings or our cookie preference center. Please note that disabling certain cookies may affect website functionality.",
+        browserSettings: {
+          title: "Browser Settings",
+          description: "Most browsers allow you to control cookies. You can find cookie options in your browser's settings or preferences.",
+          instructions: [
+            "Chrome: Settings > Privacy and security > Cookies and other site data",
+            "Firefox: Options > Privacy & Security > Cookies and Site Data",
+            "Safari: Preferences > Privacy > Cookies and website data",
+            "Edge: Settings > Cookies and site permissions"
+          ]
+        },
+        optOut: {
+          title: "Opt Out",
+          description: "You can opt out of certain third-party cookies, particularly those used for advertising purposes.",
+          links: [
+            "Google Analytics Opt-out",
+            "Facebook Ad Preferences",
+            "Other Ad Network Opt-outs"
+          ]
+        }
+      },
+      dataRetention: {
+        title: "Data Retention",
+        content: "We retain cookie data for different periods depending on the type and purpose of the cookie. Session cookies are deleted immediately when you close your browser, while persistent cookies may be retained for months to years depending on their purpose."
+      },
+      updates: {
+        title: "Policy Updates",
+        content: "We may update this Cookie Policy from time to time. Any changes will be posted on this page and, where appropriate, notified to you by other means. We recommend that you review this policy periodically to be aware of any updates."
+      },
+      contact: {
+        title: "Contact Us",
+        content: "If you have any questions about this Cookie Policy or need more information, please contact us at:",
+        email: "Email: support@shipbase.ai"
+      },
+      consent: {
+        content: "By continuing to use our website, you consent to our use of cookies in accordance with this Cookie Policy."
+      }
     },
     login: {
       title: "Sign In",

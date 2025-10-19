@@ -1348,6 +1348,111 @@ export const zhDictionary: AppDictionary = {
       title: "Cookie政策",
       subtitle: "我们如何使用Cookie",
       description: "了解我们如何在平台上使用Cookie和类似技术。",
+      lastUpdated: "最后更新：2024年1月1日",
+      introduction: {
+        title: "什么是Cookie",
+        content: "Cookie是当您访问网站时存储在您设备上的小型文本文件。它们被广泛用于使网站正常工作、提高效率，并为网站所有者提供信息。"
+      },
+      howWeUseCookies: {
+        title: "我们如何使用Cookie",
+        subtitle: "我们使用Cookie来改善您的浏览体验，分析网站流量，并个性化内容和广告。",
+        essential: {
+          title: "必要Cookie",
+          description: "这些Cookie对于网站的正常运行是必需的，无法关闭。它们通常仅响应您所做的操作而设置，相当于请求服务，例如设置隐私偏好、登录或填写表单。",
+          examples: [
+            "保持您的登录状态",
+            "记住您的语言偏好",
+            "确保网站安全"
+          ]
+        },
+        analytics: {
+          title: "分析Cookie",
+          description: "这些Cookie帮助我们了解访问者如何与网站互动，通过匿名收集和报告信息。",
+          examples: [
+            "Google Analytics - 分析网站使用情况",
+            "页面访问统计",
+            "用户行为分析"
+          ]
+        },
+        functional: {
+          title: "功能Cookie",
+          description: "这些Cookie使网站能够提供增强的功能和个性化。它们可能由我们或第三方设置。",
+          examples: [
+            "记住您的偏好设置",
+            "个性化内容推荐",
+            "社交媒体集成"
+          ]
+        },
+        marketing: {
+          title: "营销Cookie",
+          description: "这些Cookie用于跟踪访问者在网站上的活动。目的是显示相关和个性化的广告。",
+          examples: [
+            "广告个性化",
+            "转化跟踪",
+            "再营销活动"
+          ]
+        }
+      },
+      cookieTypes: {
+        title: "我们使用的Cookie类型",
+        subtitle: "详细了解我们使用的不同类型的Cookie",
+        sessionCookies: {
+          title: "会话Cookie",
+          description: "这些是临时Cookie，在您关闭浏览器时会被删除。它们用于在您浏览网站时保持您的会话状态。"
+        },
+        persistentCookies: {
+          title: "持久Cookie",
+          description: "这些Cookie在您的设备上保留更长时间，直到过期或被删除。它们记住您的偏好设置，以便在您下次访问时提供更好的体验。"
+        },
+        firstPartyCookies: {
+          title: "第一方Cookie",
+          description: "这些Cookie由我们直接设置，用于改善网站功能和用户体验。"
+        },
+        thirdPartyCookies: {
+          title: "第三方Cookie",
+          description: "这些Cookie由其他网站设置，通常用于广告和分析目的。"
+        }
+      },
+      manageCookies: {
+        title: "管理您的Cookie偏好",
+        subtitle: "您可以控制我们使用的Cookie类型",
+        description: "您可以通过浏览器设置或我们的Cookie偏好中心来管理Cookie。请注意，禁用某些Cookie可能会影响网站的功能。",
+        browserSettings: {
+          title: "浏览器设置",
+          description: "大多数浏览器允许您控制Cookie。您可以在浏览器的设置或首选项中找到Cookie选项。",
+          instructions: [
+            "Chrome: 设置 > 隐私和安全 > Cookie和其他网站数据",
+            "Firefox: 选项 > 隐私和安全 > Cookie和网站数据",
+            "Safari: 偏好设置 > 隐私 > Cookie和网站数据",
+            "Edge: 设置 > Cookie和网站权限"
+          ]
+        },
+        optOut: {
+          title: "选择退出",
+          description: "您可以选择退出某些第三方Cookie，特别是用于广告目的的Cookie。",
+          links: [
+            "Google Analytics 选择退出",
+            "Facebook 广告偏好",
+            "其他广告网络选择退出"
+          ]
+        }
+      },
+      dataRetention: {
+        title: "数据保留",
+        content: "我们保留Cookie数据的时间取决于Cookie的类型和目的。会话Cookie在您关闭浏览器时立即删除，而持久Cookie可能保留几个月到几年，具体取决于其用途。"
+      },
+      updates: {
+        title: "政策更新",
+        content: "我们可能会不时更新此Cookie政策。任何更改都将在此页面上发布，并在适当情况下通过其他方式通知您。我们建议您定期查看此政策以了解任何更新。"
+      },
+      contact: {
+        title: "联系我们",
+        content: "如果您对此Cookie政策有任何疑问或需要更多信息，请通过以下方式联系我们：",
+        email: "邮箱：support@shipbase.ai"
+      },
+      consent: {
+        content: "通过继续使用我们的网站，您同意我们按照此Cookie政策使用Cookie。"
+      }
     },
     login: {
       title: "登录",
