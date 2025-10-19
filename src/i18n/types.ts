@@ -100,6 +100,8 @@ export interface PagesDictionary {
   terms: PageDictionary;
   security: PageDictionary;
   cookies: PageDictionary;
+  login: PageDictionary;
+  signup: PageDictionary;
 }
 
 export interface AppDictionary {

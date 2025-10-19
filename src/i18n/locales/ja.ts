@@ -170,5 +170,15 @@ export const jaDictionary: AppDictionary = {
       subtitle: "Cookieの使用方法",
       description: "私たちがプラットフォームでCookieや類似技術をどのように使用するかを理解してください。",
     },
+    login: {
+      title: "サインイン",
+      subtitle: "おかえりなさい",
+      description: "ShipBaseでの旅を続けるためにアカウントにサインインしてください。",
+    },
+    signup: {
+      title: "始める",
+      subtitle: "アカウントを作成",
+      description: "ShipBaseで素晴らしいアプリケーションを構築している何千もの開発者に参加してください。",
+    },
   },
 };

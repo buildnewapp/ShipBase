@@ -170,5 +170,15 @@ export const zhDictionary: AppDictionary = {
       subtitle: "我们如何使用Cookie",
       description: "了解我们如何在平台上使用Cookie和类似技术。",
     },
+    login: {
+      title: "登录",
+      subtitle: "欢迎回来",
+      description: "登录您的账户，继续您的ShipBase之旅。",
+    },
+    signup: {
+      title: "开始使用",
+      subtitle: "创建您的账户",
+      description: "加入数千名开发者，使用ShipBase构建出色的应用程序。",
+    },
   },
 };

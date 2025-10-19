@@ -172,5 +172,15 @@ export const enDictionary: AppDictionary = {
       subtitle: "How we use cookies",
       description: "Understand how we use cookies and similar technologies on our platform.",
     },
+    login: {
+      title: "Sign In",
+      subtitle: "Welcome back",
+      description: "Sign in to your account to continue your journey with ShipBase.",
+    },
+    signup: {
+      title: "Get Started",
+      subtitle: "Create your account",
+      description: "Join thousands of developers building amazing applications with ShipBase.",
+    },
   },
 };
