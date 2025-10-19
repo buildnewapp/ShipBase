@@ -167,7 +167,6 @@ export interface FooterDictionary {
   legal: string;
   privacyPolicy: string;
   termsOfService: string;
-  security: string;
   cookiePolicy: string;
   copyright: string;
   madeWithLove: string;
@@ -564,7 +563,6 @@ export interface PagesDictionary {
   status: StatusPageDictionary;
   privacy: PrivacyPageDictionary;
   terms: TermsPageDictionary;
-  security: PageDictionary;
   cookies: PageDictionary;
   login: PageDictionary;
   signup: PageDictionary;

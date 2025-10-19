@@ -153,14 +153,6 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={currentLocale === 'en' ? '/security' : `/${currentLocale}/security`}
-                  className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
-                >
-                  {dictionary.security}
-                </Link>
-              </li>
-              <li>
-                <Link
                   href={currentLocale === 'en' ? '/cookies' : `/${currentLocale}/cookies`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >

@@ -303,7 +303,6 @@ export const zhDictionary: AppDictionary = {
     legal: "法律",
     privacyPolicy: "隐私政策",
     termsOfService: "服务条款",
-    security: "安全",
     cookiePolicy: "Cookie政策",
     copyright: "© 2024 ShipBase. 保留所有权利。",
     madeWithLove: "由 ❤️ 在中国制造",
@@ -1344,11 +1343,6 @@ export const zhDictionary: AppDictionary = {
       acknowledgment: {
         content: "通过使用 ShipBase，您承认您已阅读、理解并同意受这些服务条款的约束。感谢您选择 ShipBase！"
       }
-    },
-    security: {
-      title: "安全",
-      subtitle: "您的数据在我们这里很安全",
-      description: "了解我们的安全措施、合规性和数据保护实践。",
     },
     cookies: {
       title: "Cookie政策",

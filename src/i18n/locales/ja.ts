@@ -303,7 +303,6 @@ export const jaDictionary: AppDictionary = {
     legal: "法的情報",
     privacyPolicy: "プライバシーポリシー",
     termsOfService: "利用規約",
-    security: "セキュリティ",
     cookiePolicy: "Cookie ポリシー",
     copyright: "© 2024 ShipBase. 全著作権所有。",
     madeWithLove: "❤️ で日本で作られました",
@@ -1200,11 +1199,6 @@ export const jaDictionary: AppDictionary = {
       title: "利用規約",
       subtitle: "私たちの利用規約",
       description: "利用規約を読み、あなたの権利と責任を理解してください。",
-    },
-    security: {
-      title: "セキュリティ",
-      subtitle: "あなたのデータは私たちと安全",
-      description: "私たちのセキュリティ対策、コンプライアンス、データ保護の実践について学んでください。",
     },
     cookies: {
       title: "Cookie ポリシー",

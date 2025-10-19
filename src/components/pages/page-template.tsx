@@ -2,7 +2,7 @@ import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, Doc
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users, Lock } from "lucide-react";
+import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users } from "lucide-react";
 
 interface PageTemplateProps {
   dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary | PrivacyPageDictionary | TermsPageDictionary;
@@ -40,9 +40,6 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
     }
     if (dictionary.title === "服务条款" || dictionary.title === "Terms of Service" || dictionary.title === "利用規約") {
       return <TermsContent dictionary={dictionary as TermsPageDictionary} />;
-    }
-    if (dictionary.title === "安全" || dictionary.title === "Security" || dictionary.title === "セキュリティ") {
-      return <SecurityContent dictionary={dictionary as PageDictionary} />;
     }
     if (dictionary.title === "Cookie政策" || dictionary.title === "Cookie Policy" || dictionary.title === "Cookie ポリシー") {
       return <CookiesContent dictionary={dictionary as PageDictionary} />;
@@ -1603,131 +1600,6 @@ function TermsContent({ dictionary }: { dictionary: TermsPageDictionary }) {
   );
 }
 
-// 安全页面内容
-function SecurityContent({ dictionary }: { dictionary: PageDictionary }) {
-  const securityFeatures = [
-    {
-      icon: <Shield className="h-8 w-8 text-blue-600" />,
-      title: "数据加密",
-      description: "所有数据传输和存储都使用行业标准加密"
-    },
-    {
-      icon: <Lock className="h-8 w-8 text-green-600" />,
-      title: "访问控制",
-      description: "基于角色的访问控制和多因素身份验证"
-    },
-    {
-      icon: <Zap className="h-8 w-8 text-purple-600" />,
-      title: "安全监控",
-      description: "24/7 安全监控和威胁检测"
-    },
-    {
-      icon: <Users className="h-8 w-8 text-orange-600" />,
-      title: "合规认证",
-      description: "符合 SOC 2、GDPR 等安全标准"
-    }
-  ];
-
-  return (
-      <div className="space-y-16">
-        {/* 安全概览 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              安全措施
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              我们采用多层安全措施保护您的数据和隐私
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {securityFeatures.map((feature, index) => (
-                <Card key={index} className="p-6 text-center">
-                  <div className="flex justify-center mb-4">
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-neutral-600 dark:text-neutral-300">
-                    {feature.description}
-                  </p>
-                </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* 安全政策 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              安全政策
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              了解我们的安全实践和承诺
-            </p>
-          </div>
-
-          <div className="prose prose-neutral dark:prose-invert max-w-none">
-            <h3>数据保护</h3>
-            <p>我们采用以下措施保护您的数据：</p>
-            <ul>
-              <li>AES-256 加密存储</li>
-              <li>TLS 1.3 传输加密</li>
-              <li>定期安全审计</li>
-              <li>数据备份和恢复</li>
-            </ul>
-
-            <h3>访问控制</h3>
-            <p>严格的访问控制措施：</p>
-            <ul>
-              <li>多因素身份验证</li>
-              <li>基于角色的权限管理</li>
-              <li>定期权限审查</li>
-              <li>最小权限原则</li>
-            </ul>
-
-            <h3>监控和响应</h3>
-            <p>持续的安全监控：</p>
-            <ul>
-              <li>24/7 安全运营中心</li>
-              <li>实时威胁检测</li>
-              <li>自动安全响应</li>
-              <li>事件响应计划</li>
-            </ul>
-
-            <h3>合规性</h3>
-            <p>我们符合以下标准：</p>
-            <ul>
-              <li>SOC 2 Type II</li>
-              <li>ISO 27001</li>
-              <li>GDPR 合规</li>
-              <li>CCPA 合规</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* 安全报告 */}
-        <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-12">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            报告安全问题
-          </h2>
-          <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl mx-auto">
-            如果您发现安全漏洞，请通过安全邮箱联系我们
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8">
-              安全邮箱
-            </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              查看政策
-            </Button>
-          </div>
-        </div>
-      </div>
-  );
-}
 
 // Cookie政策页面内容
 function CookiesContent({ dictionary }: { dictionary: PageDictionary }) {

@@ -303,7 +303,6 @@ export const enDictionary: AppDictionary = {
     legal: "Legal",
     privacyPolicy: "Privacy Policy",
     termsOfService: "Terms of Service",
-    security: "Security",
     cookiePolicy: "Cookie Policy",
     copyright: "© 2024 ShipBase. All rights reserved.",
     madeWithLove: "Made with ❤️ in China",
@@ -1344,11 +1343,6 @@ export const enDictionary: AppDictionary = {
       acknowledgment: {
         content: "By using ShipBase, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. Thank you for choosing ShipBase!"
       }
-    },
-    security: {
-      title: "Security",
-      subtitle: "Your data is safe with us",
-      description: "Learn about our security measures, compliance, and data protection practices.",
     },
     cookies: {
       title: "Cookie Policy",
