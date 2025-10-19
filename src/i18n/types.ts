@@ -59,8 +59,30 @@ export interface HeaderDictionary {
   systemTheme: string;
 }
 
+export interface FooterDictionary {
+  description: string;
+  product: string;
+  features: string;
+  pricing: string;
+  integrations: string;
+  apiDocs: string;
+  support: string;
+  docs: string;
+  helpCenter: string;
+  contactUs: string;
+  serviceStatus: string;
+  legal: string;
+  privacyPolicy: string;
+  termsOfService: string;
+  security: string;
+  cookiePolicy: string;
+  copyright: string;
+  madeWithLove: string;
+}
+
 export interface AppDictionary {
   home: HomeDictionary;
   authPanel: AuthPanelDictionary;
   header: HeaderDictionary;
+  footer: FooterDictionary;
 }

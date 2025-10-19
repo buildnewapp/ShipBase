@@ -1,6 +1,12 @@
 import Link from "next/link";
+import type { FooterDictionary } from "@/i18n/types";
 
-export function Footer() {
+interface FooterProps {
+  dictionary: FooterDictionary;
+  currentLocale: string;
+}
+
+export function Footer({ dictionary, currentLocale }: FooterProps) {
   return (
     <footer className="bg-neutral-50 dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -16,7 +22,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs">
-              现代化的SaaS平台，帮助您快速构建和部署应用程序。
+              {dictionary.description}
             </p>
             <div className="flex space-x-4">
               <a
@@ -52,39 +58,39 @@ export function Footer() {
           {/* Product */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
-              产品
+              {dictionary.product}
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/features"
+                  href={`/${currentLocale}/features`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  功能特性
+                  {dictionary.features}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href={`/${currentLocale}/pricing`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  价格方案
+                  {dictionary.pricing}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/integrations"
+                  href={`/${currentLocale}/integrations`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  集成
+                  {dictionary.integrations}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/api"
+                  href={`/${currentLocale}/api`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  API文档
+                  {dictionary.apiDocs}
                 </Link>
               </li>
             </ul>
@@ -93,39 +99,39 @@ export function Footer() {
           {/* Support */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
-              支持
+              {dictionary.support}
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/docs"
+                  href={`/${currentLocale}/docs`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  文档
+                  {dictionary.docs}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/help"
+                  href={`/${currentLocale}/help`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  帮助中心
+                  {dictionary.helpCenter}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href={`/${currentLocale}/contact`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  联系我们
+                  {dictionary.contactUs}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/status"
+                  href={`/${currentLocale}/status`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  服务状态
+                  {dictionary.serviceStatus}
                 </Link>
               </li>
             </ul>
@@ -134,39 +140,39 @@ export function Footer() {
           {/* Legal */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
-              法律
+              {dictionary.legal}
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/privacy"
+                  href={`/${currentLocale}/privacy`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  隐私政策
+                  {dictionary.privacyPolicy}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href={`/${currentLocale}/terms`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  服务条款
+                  {dictionary.termsOfService}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/security"
+                  href={`/${currentLocale}/security`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  安全
+                  {dictionary.security}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/cookies"
+                  href={`/${currentLocale}/cookies`}
                   className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
                 >
-                  Cookie政策
+                  {dictionary.cookiePolicy}
                 </Link>
               </li>
             </ul>
@@ -177,11 +183,11 @@ export function Footer() {
         <div className="mt-12 border-t border-neutral-200 dark:border-neutral-800 pt-8">
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <p className="text-sm text-neutral-600 dark:text-neutral-300">
-              © 2024 ShipBase. 保留所有权利。
+              {dictionary.copyright}
             </p>
             <div className="flex items-center space-x-6">
               <span className="text-sm text-neutral-600 dark:text-neutral-300">
-                由 ❤️ 在中国制造
+                {dictionary.madeWithLove}
               </span>
             </div>
           </div>
