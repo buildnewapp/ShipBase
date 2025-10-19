@@ -910,6 +910,8 @@ export const zhDictionary: AppDictionary = {
           }
         ]
       },
+      categoriesTitle: "帮助分类",
+      categoriesSubtitle: "按类别浏览帮助文章",
       categories: [
         {
           title: "快速开始",

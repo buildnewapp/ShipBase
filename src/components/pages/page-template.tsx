@@ -1,11 +1,11 @@
-import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary } from "@/i18n/types";
+import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary } from "@/i18n/types";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users, Lock } from "lucide-react";
 
 interface PageTemplateProps {
-  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary;
+  dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary;
 }
 
 export function PageTemplate({ dictionary }: PageTemplateProps) {
@@ -26,26 +26,26 @@ export function PageTemplate({ dictionary }: PageTemplateProps) {
     if (dictionary.title === "API文档" || dictionary.title === "API Documentation") {
       return <ApiContent />;
     }
-    if (dictionary.title === "帮助中心" || dictionary.title === "Help Center") {
-      return <HelpContent />;
+    if (dictionary.title === "帮助中心" || dictionary.title === "Help Center" || dictionary.title === "ヘルプセンター") {
+      return <HelpContent dictionary={dictionary as HelpPageDictionary} />;
     }
-    if (dictionary.title === "联系我们" || dictionary.title === "Contact Us") {
-      return <ContactContent />;
+    if (dictionary.title === "联系我们" || dictionary.title === "Contact Us" || dictionary.title === "お問い合わせ") {
+      return <ContactContent dictionary={dictionary as ContactPageDictionary} />;
     }
-    if (dictionary.title === "服务状态" || dictionary.title === "Service Status") {
-      return <StatusContent />;
+    if (dictionary.title === "服务状态" || dictionary.title === "Service Status" || dictionary.title === "サービス状況") {
+      return <StatusContent dictionary={dictionary as PageDictionary} />;
     }
-    if (dictionary.title === "隐私政策" || dictionary.title === "Privacy Policy") {
-      return <PrivacyContent />;
+    if (dictionary.title === "隐私政策" || dictionary.title === "Privacy Policy" || dictionary.title === "プライバシーポリシー") {
+      return <PrivacyContent dictionary={dictionary as PageDictionary} />;
     }
-    if (dictionary.title === "服务条款" || dictionary.title === "Terms of Service") {
-      return <TermsContent />;
+    if (dictionary.title === "服务条款" || dictionary.title === "Terms of Service" || dictionary.title === "利用規約") {
+      return <TermsContent dictionary={dictionary as PageDictionary} />;
     }
-    if (dictionary.title === "安全" || dictionary.title === "Security") {
-      return <SecurityContent />;
+    if (dictionary.title === "安全" || dictionary.title === "Security" || dictionary.title === "セキュリティ") {
+      return <SecurityContent dictionary={dictionary as PageDictionary} />;
     }
-    if (dictionary.title === "Cookie政策" || dictionary.title === "Cookie Policy") {
-      return <CookiesContent />;
+    if (dictionary.title === "Cookie政策" || dictionary.title === "Cookie Policy" || dictionary.title === "Cookie ポリシー") {
+      return <CookiesContent dictionary={dictionary as PageDictionary} />;
     }
 
     // 默认内容
@@ -109,6 +109,22 @@ function getIcon(iconName: string) {
     Globe: <Globe className="h-8 w-8 text-teal-600" />,
   };
   return iconMap[iconName as keyof typeof iconMap] || <Code className="h-8 w-8 text-blue-600" />;
+}
+
+// 分类图标映射函数
+function getCategoryIcon(iconName: string) {
+  switch (iconName) {
+    case "Rocket":
+      return <Rocket className="h-8 w-8" />;
+    case "Code":
+      return <Code className="h-8 w-8" />;
+    case "Globe":
+      return <Globe className="h-8 w-8" />;
+    case "Zap":
+      return <Zap className="h-8 w-8" />;
+    default:
+      return <Code className="h-8 w-8" />;
+  }
 }
 
 // 功能特性页面内容
@@ -849,172 +865,134 @@ users = client.users.list()`}
 }
 
 // 帮助中心页面内容
-function HelpContent() {
-  const faqs = [
-    {
-      category: "快速开始",
-      questions: [
-        {
-          question: "如何开始使用 ShipBase？",
-          answer: "首先克隆我们的模板，然后按照文档中的快速开始指南进行配置。整个过程只需要几分钟。"
-        },
-        {
-          question: "需要什么技术背景？",
-          answer: "基本的 JavaScript 和 React 知识就足够了。我们的文档和示例会帮助您快速上手。"
-        },
-        {
-          question: "如何部署我的应用？",
-          answer: "ShipBase 支持一键部署到 Vercel、Cloudflare Pages 等平台。只需连接您的 Git 仓库即可。"
-        }
-      ]
-    },
-    {
-      category: "功能使用",
-      questions: [
-        {
-          question: "如何集成支付功能？",
-          answer: "我们已预配置 Stripe 集成。您只需要添加 Stripe API 密钥到环境变量中即可。"
-        },
-        {
-          question: "如何添加用户身份验证？",
-          answer: "ShipBase 内置了 Better Auth，支持 Google、GitHub 和 Magic Link 登录方式。"
-        },
-        {
-          question: "如何自定义 UI 组件？",
-          answer: "所有组件都基于 Shadcn/UI 构建，您可以根据需要自定义样式和功能。"
-        }
-      ]
-    },
-    {
-      category: "故障排除",
-      questions: [
-        {
-          question: "部署时出现错误怎么办？",
-          answer: "检查环境变量是否正确配置，确保所有必需的 API 密钥都已添加。查看部署日志获取详细错误信息。"
-        },
-        {
-          question: "数据库连接失败？",
-          answer: "确认 Supabase 项目配置正确，检查数据库 URL 和 API 密钥是否有效。"
-        },
-        {
-          question: "支付功能不工作？",
-          answer: "确认 Stripe API 密钥正确，检查 Webhook 配置，确保测试环境设置正确。"
-        }
-      ]
-    }
-  ];
-
-  const resources = [
-    {
-      title: "快速开始指南",
-      description: "5 分钟快速上手 ShipBase",
-      icon: <Rocket className="h-6 w-6" />,
-      href: "#"
-    },
-    {
-      title: "视频教程",
-      description: "观看详细的视频教程",
-      icon: <Zap className="h-6 w-6" />,
-      href: "#"
-    },
-    {
-      title: "社区论坛",
-      description: "与其他开发者交流",
-      icon: <Users className="h-6 w-6" />,
-      href: "#"
-    },
-    {
-      title: "Discord 支持",
-      description: "实时技术支持",
-      icon: <Shield className="h-6 w-6" />,
-      href: "#"
-    }
-  ];
+function HelpContent({ dictionary }: { dictionary: HelpPageDictionary }) {
 
   return (
       <div className="space-y-16">
-        {/* 帮助资源 */}
+        {/* 搜索框 */}
+        <div className="text-center">
+          <div className="max-w-md mx-auto">
+            <input
+                type="text"
+                placeholder={dictionary.searchPlaceholder}
+                className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+        </div>
+
+        {/* 热门文章 */}
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              帮助资源
+              {dictionary.popularArticles.title}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              找到您需要的帮助和支持
+              {dictionary.popularArticles.subtitle}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {resources.map((resource, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {dictionary.popularArticles.articles.map((article, index) => (
                 <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="text-blue-600 dark:text-blue-400">
-                      {resource.icon}
-                    </div>
-                    <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-                      {resource.title}
-                    </h3>
-                  </div>
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+                    {article.title}
+                  </h3>
                   <p className="text-neutral-600 dark:text-neutral-300 mb-4">
-                    {resource.description}
+                    {article.description}
                   </p>
-                  <Button variant="outline" className="w-full">
-                    查看详情
-                  </Button>
+                  <div className="flex flex-wrap gap-2">
+                    {article.tags.map((tag, tagIndex) => (
+                        <Badge key={tagIndex} variant="secondary" className="text-xs">
+                          {tag}
+                        </Badge>
+                    ))}
+                  </div>
                 </Card>
             ))}
           </div>
         </div>
 
-        {/* 常见问题 */}
+        {/* 帮助分类 */}
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              常见问题
+              {dictionary.categoriesTitle}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              找到您问题的答案
+              {dictionary.categoriesSubtitle}
             </p>
           </div>
 
-          <div className="space-y-8">
-            {faqs.map((category, index) => (
-                <div key={index}>
-                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-6">
-                    {category.category}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {dictionary.categories.map((category, index) => (
+                <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
+                  <div className="h-16 w-16 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-xl mx-auto mb-4 flex items-center justify-center font-bold text-2xl">
+                    {getCategoryIcon(category.icon)}
+                  </div>
+                  <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                    {category.title}
                   </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {category.questions.map((faq, idx) => (
-                        <Card key={idx} className="p-6">
-                          <h4 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
-                            {faq.question}
-                          </h4>
-                          <p className="text-neutral-600 dark:text-neutral-300">
-                            {faq.answer}
-                          </p>
-                        </Card>
+                  <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-4">
+                    {category.description}
+                  </p>
+                  <div className="space-y-2">
+                    {category.articles.slice(0, 3).map((article, articleIndex) => (
+                        <div key={articleIndex} className="text-left">
+                          <a href={article.href} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">
+                            {article.title}
+                          </a>
+                        </div>
                     ))}
                   </div>
-                </div>
+                </Card>
             ))}
           </div>
         </div>
 
+        {/* FAQ */}
+        <div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+              {dictionary.faq.title}
+            </h2>
+            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
+              {dictionary.faq.subtitle}
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              {dictionary.faq.faqs.map((faq, index) => (
+                  <Card key={index} className="p-6">
+                    <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+                      {faq.question}
+                    </h3>
+                    <p className="text-neutral-600 dark:text-neutral-300">
+                      {faq.answer}
+                    </p>
+                  </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* 联系支持 */}
-        <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-12">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            需要更多帮助？
-          </h2>
-          <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl mx-auto">
-            我们的支持团队随时为您提供帮助。通过多种方式联系我们
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8">
-              联系支持
-            </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              加入 Discord
-            </Button>
+        <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-lg p-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+              {dictionary.contact.title}
+            </h2>
+            <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-6 max-w-2xl mx-auto">
+              {dictionary.contact.description}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                {dictionary.contact.emailButton}
+              </Button>
+              <Button variant="outline">
+                {dictionary.contact.discordButton}
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -1022,55 +1000,21 @@ function HelpContent() {
 }
 
 // 联系我们页面内容
-function ContactContent() {
-  const contactMethods = [
-    {
-      icon: <Users className="h-8 w-8 text-blue-600" />,
-      title: "Discord 社区",
-      description: "加入我们的 Discord 社区，与其他开发者交流",
-      action: "加入 Discord",
-      href: "#"
-    },
-    {
-      icon: <Zap className="h-8 w-8 text-green-600" />,
-      title: "邮件支持",
-      description: "发送邮件到 support@shipbase.com",
-      action: "发送邮件",
-      href: "mailto:support@shipbase.com"
-    },
-    {
-      icon: <Shield className="h-8 w-8 text-purple-600" />,
-      title: "GitHub Issues",
-      description: "在 GitHub 上报告问题或提出建议",
-      action: "查看 Issues",
-      href: "#"
-    },
-    {
-      icon: <Rocket className="h-8 w-8 text-orange-600" />,
-      title: "企业合作",
-      description: "企业级支持和定制开发服务",
-      action: "联系销售",
-      href: "mailto:sales@shipbase.com"
+function ContactContent({ dictionary }: { dictionary: ContactPageDictionary }) {
+  const getContactIcon = (iconName: string) => {
+    switch (iconName) {
+      case "Users":
+        return <Users className="h-8 w-8 text-blue-600" />;
+      case "Zap":
+        return <Zap className="h-8 w-8 text-green-600" />;
+      case "Shield":
+        return <Shield className="h-8 w-8 text-purple-600" />;
+      case "Rocket":
+        return <Rocket className="h-8 w-8 text-orange-600" />;
+      default:
+        return <Users className="h-8 w-8 text-blue-600" />;
     }
-  ];
-
-  const team = [
-    {
-      name: "技术支持",
-      email: "support@shipbase.com",
-      description: "技术问题和故障排除"
-    },
-    {
-      name: "销售团队",
-      email: "sales@shipbase.com",
-      description: "商业合作和定制服务"
-    },
-    {
-      name: "产品反馈",
-      email: "feedback@shipbase.com",
-      description: "产品建议和功能请求"
-    }
-  ];
+  };
 
   return (
       <div className="space-y-16">
@@ -1078,18 +1022,18 @@ function ContactContent() {
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              联系我们
+              {dictionary.contactMethodsTitle}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              我们很乐意听到您的声音。选择最适合您的联系方式
+              {dictionary.contactMethodsSubtitle}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {contactMethods.map((method, index) => (
+            {dictionary.contactMethods.map((method, index) => (
                 <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
                   <div className="flex justify-center mb-4">
-                    {method.icon}
+                    {getContactIcon(method.icon)}
                   </div>
                   <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
                     {method.title}
@@ -1109,23 +1053,23 @@ function ContactContent() {
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              直接联系团队
+              {dictionary.teamTitle}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              根据您的需求联系相应的团队
+              {dictionary.teamSubtitle}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {team.map((member, index) => (
-                <Card key={index} className="p-6">
-                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+            {dictionary.team.map((member, index) => (
+                <Card key={index} className="p-6 text-center">
+                  <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">
+                  <p className="text-blue-600 dark:text-blue-400 mb-3">
                     {member.email}
                   </p>
-                  <p className="text-neutral-600 dark:text-neutral-300">
+                  <p className="text-neutral-600 dark:text-neutral-300 text-sm">
                     {member.description}
                   </p>
                 </Card>
@@ -1137,49 +1081,27 @@ function ContactContent() {
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              响应时间
+              {dictionary.responseTimeTitle}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              我们承诺快速响应您的请求
+              {dictionary.responseTimeSubtitle}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="p-6 text-center">
-              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">
-                &lt; 1 小时
-              </div>
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
-                Discord 支持
-              </h3>
-              <p className="text-neutral-600 dark:text-neutral-300">
-                社区支持，快速响应
-              </p>
-            </Card>
-
-            <Card className="p-6 text-center">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                &lt; 24 小时
-              </div>
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
-                邮件支持
-              </h3>
-              <p className="text-neutral-600 dark:text-neutral-300">
-                专业团队，详细回复
-              </p>
-            </Card>
-
-            <Card className="p-6 text-center">
-              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-                &lt; 48 小时
-              </div>
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
-                企业支持
-              </h3>
-              <p className="text-neutral-600 dark:text-neutral-300">
-                定制解决方案
-              </p>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {dictionary.responseTimes.map((response, index) => (
+                <Card key={index} className="p-6 text-center">
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                    {response.time}
+                  </div>
+                  <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                    {response.title}
+                  </h3>
+                  <p className="text-neutral-600 dark:text-neutral-300 text-sm">
+                    {response.description}
+                  </p>
+                </Card>
+            ))}
           </div>
         </div>
       </div>
@@ -1187,7 +1109,7 @@ function ContactContent() {
 }
 
 // 服务状态页面内容
-function StatusContent() {
+function StatusContent({ dictionary }: { dictionary: PageDictionary }) {
   const services = [
     {
       name: "API 服务",
@@ -1350,7 +1272,7 @@ function StatusContent() {
 }
 
 // 隐私政策页面内容
-function PrivacyContent() {
+function PrivacyContent({ dictionary }: { dictionary: PageDictionary }) {
   return (
       <div className="space-y-16">
         <div className="prose prose-neutral dark:prose-invert max-w-none">
@@ -1407,7 +1329,7 @@ function PrivacyContent() {
 }
 
 // 服务条款页面内容
-function TermsContent() {
+function TermsContent({ dictionary }: { dictionary: PageDictionary }) {
   return (
       <div className="space-y-16">
         <div className="prose prose-neutral dark:prose-invert max-w-none">
@@ -1460,7 +1382,7 @@ function TermsContent() {
 }
 
 // 安全页面内容
-function SecurityContent() {
+function SecurityContent({ dictionary }: { dictionary: PageDictionary }) {
   const securityFeatures = [
     {
       icon: <Shield className="h-8 w-8 text-blue-600" />,
@@ -1586,7 +1508,7 @@ function SecurityContent() {
 }
 
 // Cookie政策页面内容
-function CookiesContent() {
+function CookiesContent({ dictionary }: { dictionary: PageDictionary }) {
   return (
       <div className="space-y-16">
         <div className="prose prose-neutral dark:prose-invert max-w-none">

@@ -356,6 +356,8 @@ export interface HelpPageDictionary extends PageDictionary {
     subtitle: string;
     articles: HelpArticle[];
   };
+  categoriesTitle: string;
+  categoriesSubtitle: string;
   categories: HelpCategory[];
   faq: {
     title: string;

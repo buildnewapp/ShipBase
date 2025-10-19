@@ -910,6 +910,8 @@ export const enDictionary: AppDictionary = {
           }
         ]
       },
+      categoriesTitle: "Help Categories",
+      categoriesSubtitle: "Browse help articles by category",
       categories: [
         {
           title: "Quick Start",

@@ -910,6 +910,8 @@ export const jaDictionary: AppDictionary = {
           }
         ]
       },
+      categoriesTitle: "ヘルプカテゴリ",
+      categoriesSubtitle: "カテゴリ別にヘルプ記事を閲覧",
       categories: [
         {
           title: "クイックスタート",
