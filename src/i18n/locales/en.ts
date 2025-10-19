@@ -423,6 +423,20 @@ export const enDictionary: AppDictionary = {
       description: "Choose the plan that fits your needs. Start free and scale as you grow.",
       plansTitle: "Choose Your Plan",
       plansSubtitle: "Simple, transparent pricing with no hidden fees. Choose the plan that best fits your needs and upgrade anytime.",
+      billingCycles: {
+        "one-time": {
+          label: "One-time Payment",
+          description: "Pay once, use forever"
+        },
+        "monthly": {
+          label: "Monthly",
+          description: "Flexible billing, cancel anytime"
+        },
+        "yearly": {
+          label: "Yearly",
+          description: "Save 20% with annual billing"
+        }
+      },
       plans: [
         {
           name: "Free",
@@ -485,6 +499,26 @@ export const enDictionary: AppDictionary = {
           popular: false
         }
       ],
+      cta: {
+        getStarted: "Get Started",
+        buyNow: "Buy Now",
+        contactSales: "Contact Sales",
+        currentPlan: "Current Plan"
+      },
+      features: {
+        included: "Included Features",
+        limitations: "Limitations"
+      },
+      pricing: {
+        free: "Free",
+        popular: "Popular",
+        discount: "Discount",
+        save: "Save",
+        perMonth: "per month",
+        perYear: "per year",
+        oneTime: "one-time",
+        forever: "forever"
+      },
       faqTitle: "Frequently Asked Questions",
       faqSubtitle: "Have more questions? We're happy to help",
       faqs: [
@@ -493,8 +527,8 @@ export const enDictionary: AppDictionary = {
           answer: "The Free plan provides basic features suitable for learning and personal projects. Paid plans include complete commercial features like authentication, payment integration, AI features, etc., suitable for commercial projects."
         },
         {
-          question: "Is it a one-time payment or subscription?",
-          answer: "ShipBase uses a one-time payment model. After purchase, you can use it forever without monthly fees. This allows us to focus on the product itself rather than renewals."
+          question: "What payment options do you support?",
+          answer: "We support one-time payment, monthly billing, and yearly billing. Yearly billing offers 20% discount, and one-time payment gives you lifetime access."
         },
         {
           question: "Do you offer refunds?",
@@ -511,6 +545,10 @@ export const enDictionary: AppDictionary = {
         {
           question: "How do I upgrade to a higher plan?",
           answer: "You can upgrade to a higher plan anytime by paying the price difference. After upgrade, you'll immediately enjoy all features of the new plan."
+        },
+        {
+          question: "What are the benefits of yearly billing?",
+          answer: "Yearly billing offers 20% discount compared to monthly billing, saving you more money while reducing billing frequency for convenience."
         }
       ]
     },

@@ -423,6 +423,20 @@ export const jaDictionary: AppDictionary = {
       description: "ニーズに合ったプランを選択してください。無料で始めて、成長に合わせてスケールアップ。",
       plansTitle: "プランを選択",
       plansSubtitle: "隠れた料金のないシンプルで透明な料金。ニーズに最適なプランを選択し、いつでもアップグレードできます。",
+      billingCycles: {
+        "one-time": {
+          label: "一回払い",
+          description: "一度支払い、永久利用"
+        },
+        "monthly": {
+          label: "月額",
+          description: "柔軟な支払い、いつでもキャンセル"
+        },
+        "yearly": {
+          label: "年額",
+          description: "年額支払いで20%お得"
+        }
+      },
       plans: [
         {
           name: "無料版",
@@ -485,6 +499,26 @@ export const jaDictionary: AppDictionary = {
           popular: false
         }
       ],
+      cta: {
+        getStarted: "始める",
+        buyNow: "今すぐ購入",
+        contactSales: "営業に連絡",
+        currentPlan: "現在のプラン"
+      },
+      features: {
+        included: "含まれる機能",
+        limitations: "制限事項"
+      },
+      pricing: {
+        free: "無料",
+        popular: "人気",
+        discount: "割引",
+        save: "節約",
+        perMonth: "月額",
+        perYear: "年額",
+        oneTime: "一回払い",
+        forever: "永久"
+      },
       faqTitle: "よくある質問",
       faqSubtitle: "他に質問がありますか？お手伝いします",
       faqs: [
@@ -511,6 +545,10 @@ export const jaDictionary: AppDictionary = {
         {
           question: "より高いプランにアップグレードするにはどうすればよいですか？",
           answer: "価格差を支払うことで、いつでもより高いプランにアップグレードできます。アップグレード後は、新しいプランの全機能をすぐに利用できます。"
+        },
+        {
+          question: "年額支払いの利点は何ですか？",
+          answer: "年額支払いでは月額支払いと比較して20%の割引が適用され、より多くの費用を節約できます。また、支払い頻度が減るため、より便利です。"
         }
       ]
     },

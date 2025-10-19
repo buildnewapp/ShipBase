@@ -423,6 +423,20 @@ export const zhDictionary: AppDictionary = {
       description: "选择适合您需求的方案。免费开始，随需扩展。",
       plansTitle: "选择适合您的方案",
       plansSubtitle: "简单透明的定价，没有隐藏费用。选择最适合您需求的方案，随时可以升级。",
+      billingCycles: {
+        "one-time": {
+          label: "一次性付费",
+          description: "永久使用，无需续费"
+        },
+        "monthly": {
+          label: "按月付费",
+          description: "灵活付费，随时取消"
+        },
+        "yearly": {
+          label: "按年付费",
+          description: "年付优惠 20%"
+        }
+      },
       plans: [
         {
           name: "免费版",
@@ -485,6 +499,26 @@ export const zhDictionary: AppDictionary = {
           popular: false
         }
       ],
+      cta: {
+        getStarted: "开始使用",
+        buyNow: "立即购买",
+        contactSales: "联系销售",
+        currentPlan: "当前方案"
+      },
+      features: {
+        included: "包含功能",
+        limitations: "限制说明"
+      },
+      pricing: {
+        free: "免费",
+        popular: "推荐",
+        discount: "折扣",
+        save: "节省",
+        perMonth: "每月",
+        perYear: "每年",
+        oneTime: "一次性",
+        forever: "永久"
+      },
       faqTitle: "常见问题",
       faqSubtitle: "还有其他问题？我们很乐意为您解答",
       faqs: [
@@ -493,8 +527,8 @@ export const zhDictionary: AppDictionary = {
           answer: "免费版提供基础功能，适合学习和个人项目。付费版包含完整的商业功能，如身份验证、支付集成、AI 功能等，适合商业项目。"
         },
         {
-          question: "是一次性付费还是订阅制？",
-          answer: "ShipBase 采用一次性付费模式，购买后永久使用，无需每月付费。这让我们能够专注于产品本身而非续费。"
+          question: "支持哪些付费方式？",
+          answer: "我们支持一次性付费、按月付费和按年付费三种方式。年付享受 20% 的优惠折扣，一次性付费永久使用。"
         },
         {
           question: "支持退款吗？",
@@ -511,6 +545,10 @@ export const zhDictionary: AppDictionary = {
         {
           question: "如何升级到更高版本？",
           answer: "您可以随时升级到更高版本，只需支付差价即可。升级后立即享受新版本的所有功能。"
+        },
+        {
+          question: "年付有什么优势？",
+          answer: "年付享受 20% 的优惠折扣，相比月付可以节省更多费用，同时减少续费频率，更加便捷。"
         }
       ]
     },

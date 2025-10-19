@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users } from "lucide-react";
+import { PricingComponent } from "@/components/pricing";
 
 interface PageTemplateProps {
   dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary | PrivacyPageDictionary | TermsPageDictionary | CookiesPageDictionary;
@@ -269,98 +270,38 @@ function FeaturesContent({ dictionary }: { dictionary: FeaturesPageDictionary })
 // 价格方案页面内容
 function PricingContent({ dictionary }: { dictionary: PricingPageDictionary }) {
   return (
-      <div className="space-y-16">
-        {/* 价格方案 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              {dictionary.plansTitle}
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              {dictionary.plansSubtitle}
-            </p>
-          </div>
+    <div className="space-y-16">
+      {/* 使用新的价格组件 */}
+      <PricingComponent
+        locale={dictionary.title === "价格方案" ? "zh" : dictionary.title === "Pricing" ? "en" : "ja"}
+        showBillingToggle={true}
+      />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {dictionary.plans.map((plan, index) => (
-                <Card key={index} className={`p-8 relative ${plan.popular ? 'border-blue-500 ring-2 ring-blue-200 dark:ring-blue-800' : ''}`}>
-                  {plan.popular && (
-                      <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <Badge className="bg-blue-600 text-white px-4 py-1">
-                          {dictionary.title === "价格方案" ? "最受欢迎" :
-                              dictionary.title === "Pricing" ? "Most Popular" : "最も人気"}
-                        </Badge>
-                      </div>
-                  )}
-
-                  <div className="text-center mb-6">
-                    <h3 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">
-                      {plan.name}
-                    </h3>
-                    <div className="mb-2">
-                  <span className="text-4xl font-bold text-neutral-900 dark:text-neutral-100">
-                    {plan.price}
-                  </span>
-                      <span className="text-neutral-600 dark:text-neutral-300 ml-2">
-                    {plan.period}
-                  </span>
-                    </div>
-                    <p className="text-neutral-600 dark:text-neutral-300">
-                      {plan.description}
-                    </p>
-                  </div>
-
-                  <ul className="space-y-3 mb-8">
-                    {plan.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center space-x-2">
-                          <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                          <span className="text-neutral-600 dark:text-neutral-300">{feature}</span>
-                        </li>
-                    ))}
-                    {plan.limitations.map((limitation, idx) => (
-                        <li key={idx} className="flex items-center space-x-2">
-                          <span className="h-5 w-5 text-red-500 flex-shrink-0">×</span>
-                          <span className="text-neutral-400 dark:text-neutral-500">{limitation}</span>
-                        </li>
-                    ))}
-                  </ul>
-
-                  <Button
-                      className={`w-full ${plan.popular ? 'bg-blue-600 hover:bg-blue-700' : ''}`}
-                      variant={plan.popular ? 'default' : 'outline'}
-                  >
-                    {plan.cta}
-                  </Button>
-                </Card>
-            ))}
-          </div>
+      {/* FAQ */}
+      <div>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+            {dictionary.faqTitle}
+          </h2>
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
+            {dictionary.faqSubtitle}
+          </p>
         </div>
 
-        {/* FAQ */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              {dictionary.faqTitle}
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              {dictionary.faqSubtitle}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {dictionary.faqs.map((faq, index) => (
-                <Card key={index} className="p-6">
-                  <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
-                    {faq.question}
-                  </h3>
-                  <p className="text-neutral-600 dark:text-neutral-300">
-                    {faq.answer}
-                  </p>
-                </Card>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {dictionary.faqs.map((faq, index) => (
+            <Card key={index} className="p-6">
+              <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+                {faq.question}
+              </h3>
+              <p className="text-neutral-600 dark:text-neutral-300">
+                {faq.answer}
+              </p>
+            </Card>
+          ))}
         </div>
       </div>
+    </div>
   );
 }
 

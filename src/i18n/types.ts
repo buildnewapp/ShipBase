@@ -250,7 +250,41 @@ export interface PricingPlan {
 export interface PricingPageDictionary extends PageDictionary {
   plansTitle: string;
   plansSubtitle: string;
+  billingCycles: {
+    "one-time": {
+      label: string;
+      description: string;
+    };
+    "monthly": {
+      label: string;
+      description: string;
+    };
+    "yearly": {
+      label: string;
+      description: string;
+    };
+  };
   plans: PricingPlan[];
+  cta: {
+    getStarted: string;
+    buyNow: string;
+    contactSales: string;
+    currentPlan: string;
+  };
+  features: {
+    included: string;
+    limitations: string;
+  };
+  pricing: {
+    free: string;
+    popular: string;
+    discount: string;
+    save: string;
+    perMonth: string;
+    perYear: string;
+    oneTime: string;
+    forever: string;
+  };
   faqTitle: string;
   faqSubtitle: string;
   faqs: FAQItem[];
