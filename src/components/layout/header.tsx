@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { locales, type Locale } from "@/i18n";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeSwitcher } from "./theme-switcher";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -71,52 +73,31 @@ export function Header() {
         </nav>
 
         {/* Desktop CTA */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-2">
           <LanguageSwitcher currentLocale={currentLocale} />
           <ThemeSwitcher />
-          <Link
-            href="/login"
-            className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
-          >
-            {currentLocale === 'en' ? 'Login' : '登录'}
-          </Link>
-          <Link
-            href="/signup"
-            className="rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-medium text-white hover:from-blue-700 hover:to-purple-700 transition-all duration-200"
-          >
-            {currentLocale === 'en' ? 'Free Trial' : '免费试用'}
-          </Link>
+          <Button variant="ghost" asChild>
+            <Link href="/login">
+              {currentLocale === 'en' ? 'Login' : '登录'}
+            </Link>
+          </Button>
+          <Button asChild>
+            <Link href="/signup">
+              {currentLocale === 'en' ? 'Free Trial' : '免费试用'}
+            </Link>
+          </Button>
         </div>
 
         {/* Mobile menu button */}
-        <button
-          className="md:hidden p-2 rounded-lg text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:text-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+        <Button
+          variant="ghost"
+          size="sm"
+          className="md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          <svg
-            className="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            {isMenuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button>
+          {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </Button>
       </div>
 
       {/* Mobile Navigation */}
@@ -161,20 +142,22 @@ export function Header() {
             </div>
             
             <div className="pt-4 space-y-3">
-              <Link
-                href="/login"
-                className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {currentLocale === 'en' ? 'Login' : '登录'}
-              </Link>
-              <Link
-                href="/signup"
-                className="block rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-medium text-white hover:from-blue-700 hover:to-purple-700 transition-all duration-200 text-center"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {currentLocale === 'en' ? 'Free Trial' : '免费试用'}
-              </Link>
+              <Button variant="ghost" asChild className="w-full justify-start">
+                <Link
+                  href="/login"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {currentLocale === 'en' ? 'Login' : '登录'}
+                </Link>
+              </Button>
+              <Button asChild className="w-full">
+                <Link
+                  href="/signup"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {currentLocale === 'en' ? 'Free Trial' : '免费试用'}
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
