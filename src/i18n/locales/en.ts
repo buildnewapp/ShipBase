@@ -1651,6 +1651,7 @@ export const enDictionary: AppDictionary = {
         refunded: "Refunded",
       },
       filters: {
+        title: "Filter and Search",
         all: "All",
         pending: "Pending",
         paid: "Paid",
@@ -1661,6 +1662,7 @@ export const enDictionary: AppDictionary = {
       search: {
         placeholder: "Search order number or product name...",
       },
+      refresh: "Refresh",
       pagination: {
         previous: "Previous",
         next: "Next",

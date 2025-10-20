@@ -154,6 +154,7 @@ export interface HeaderDictionary {
   userMenu: {
     profile: string;
     membership: string;
+    orders: string;
     signOut: string;
   };
 }
@@ -712,36 +713,66 @@ export interface MembershipPlan {
   current: boolean;
 }
 
-export interface MembershipPageDictionary extends PageDictionary {
-  currentPlan: {
-    title: string;
-    description: string;
-    freeVersion: string;
-    paidVersion: string;
-  };
-  usage: {
-    apiCalls: string;
-    projectCount: string;
-    supportLevel: string;
-    remainingThisMonth: string;
-    maxLimit: string;
-    responseTime: string;
-    priority: string;
-    standard: string;
-  };
-  upgradePlan: {
-    title: string;
-    currentPlan: string;
-    freeUse: string;
-    upgradePlan: string;
-  };
-  billingHistory: {
-    title: string;
-    description: string;
-    noRecords: string;
-    upgradeMessage: string;
-  };
-  plans: MembershipPlan[];
+export interface OrderStatus {
+  pending: string;
+  paid: string;
+  failed: string;
+  cancelled: string;
+  refunded: string;
+}
+
+export interface OrderCardDictionary {
+  orderNumber: string;
+  status: string;
+  amount: string;
+  product: string;
+  createdAt: string;
+  paidAt: string;
+  actions: string;
+  viewDetails: string;
+  downloadInvoice: string;
+  refreshStatus: string;
+}
+
+export interface OrdersListDictionary {
+  title: string;
+  subtitle: string;
+  noOrders: string;
+  loading: string;
+  error: string;
+  retry: string;
+}
+
+export interface OrdersFiltersDictionary {
+  title: string;
+  all: string;
+  pending: string;
+  paid: string;
+  failed: string;
+  cancelled: string;
+  refunded: string;
+}
+
+export interface OrdersSearchDictionary {
+  placeholder: string;
+}
+
+export interface OrdersPaginationDictionary {
+  previous: string;
+  next: string;
+  showing: string;
+  of: string;
+  results: string;
+}
+
+export interface OrdersPageDictionary extends PageDictionary {
+  ordersList: OrdersListDictionary;
+  orderCard: OrderCardDictionary;
+  status: OrderStatus;
+  filters: OrdersFiltersDictionary;
+  search: OrdersSearchDictionary;
+  refresh: string;
+  pagination: OrdersPaginationDictionary;
 }
 
 export interface PagesDictionary {
@@ -759,6 +790,7 @@ export interface PagesDictionary {
   signup: PageDictionary;
   profile: ProfilePageDictionary;
   membership: MembershipPageDictionary;
+  orders: OrdersPageDictionary;
 }
 
 export interface AppDictionary {

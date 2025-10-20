@@ -60,6 +60,7 @@ interface OrdersPageProps {
       refunded: string;
     };
     filters: {
+      title: string;
       all: string;
       pending: string;
       paid: string;
@@ -70,6 +71,7 @@ interface OrdersPageProps {
     search: {
       placeholder: string;
     };
+    refresh: string;
     pagination: {
       previous: string;
       next: string;
@@ -319,7 +321,7 @@ export function OrdersPage({ dict }: OrdersPageProps) {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Filter className="h-5 w-5" />
-            筛选和搜索
+            {dict.filters.title || "筛选和搜索"}
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -374,7 +376,7 @@ export function OrdersPage({ dict }: OrdersPageProps) {
               className="shrink-0"
             >
               <RefreshCw className={`h-4 w-4 mr-2 ${refreshing ? "animate-spin" : ""}`} />
-              刷新
+              {dict.refresh || "刷新"}
             </Button>
           </div>
         </CardContent>

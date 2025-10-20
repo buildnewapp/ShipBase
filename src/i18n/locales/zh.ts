@@ -1651,6 +1651,7 @@ export const zhDictionary: AppDictionary = {
         refunded: "已退款",
       },
       filters: {
+        title: "筛选和搜索",
         all: "全部",
         pending: "待支付",
         paid: "已支付",
@@ -1661,6 +1662,7 @@ export const zhDictionary: AppDictionary = {
       search: {
         placeholder: "搜索订单号或产品名称...",
       },
+      refresh: "刷新",
       pagination: {
         previous: "上一页",
         next: "下一页",
