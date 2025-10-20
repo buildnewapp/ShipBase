@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/lib/auth/server";
 import { OrderService } from "@/lib/orders/service";
+import { eq, and, desc, like, or } from "drizzle-orm";
+import { db } from "@/lib/db/client";
+import { orders } from "@/lib/db/schema/orders";
 
 function respErr(message: string, status = 400) {
   return NextResponse.json({ ok: false, message }, { status });
@@ -23,20 +26,58 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const limit = parseInt(searchParams.get('limit') || '10');
     const offset = parseInt(searchParams.get('offset') || '0');
+    const status = searchParams.get('status');
+    const search = searchParams.get('search');
 
-    const orders = await OrderService.getUserOrders(userId, limit, offset);
+    // 构建查询条件
+    let whereConditions = eq(orders.userId, userId);
+    
+    // 添加状态筛选
+    if (status && status !== 'all') {
+      whereConditions = and(whereConditions, eq(orders.status, status));
+    }
+    
+    // 添加搜索条件
+    if (search) {
+      whereConditions = and(
+        whereConditions,
+        or(
+          like(orders.orderNumber, `%${search}%`),
+          like(orders.productName, `%${search}%`)
+        )
+      );
+    }
+
+    // 获取订单列表
+    const ordersList = await db
+      .select()
+      .from(orders)
+      .where(whereConditions)
+      .orderBy(desc(orders.createdAt))
+      .limit(limit)
+      .offset(offset);
+
+    // 获取总数
+    const totalResult = await db
+      .select({ count: orders.id })
+      .from(orders)
+      .where(whereConditions);
+    
+    const total = totalResult.length;
     
     return respData({
-      orders,
+      orders: ordersList,
       pagination: {
         limit,
         offset,
-        total: orders.length,
+        total,
+        hasMore: offset + limit < total,
       }
     });
-  } catch (e: any) {
+  } catch (e: unknown) {
     console.log("获取订单列表失败: ", e);
-    return respErr("获取订单列表失败: " + (e?.message || String(e)));
+    const errorMessage = e instanceof Error ? e.message : String(e);
+    return respErr("获取订单列表失败: " + errorMessage);
   }
 }
 
@@ -68,8 +109,9 @@ export async function POST(req: NextRequest) {
     }
     
     return respData(result);
-  } catch (e: any) {
+  } catch (e: unknown) {
     console.log("获取订单详情失败: ", e);
-    return respErr("获取订单详情失败: " + (e?.message || String(e)));
+    const errorMessage = e instanceof Error ? e.message : String(e);
+    return respErr("获取订单详情失败: " + errorMessage);
   }
 }

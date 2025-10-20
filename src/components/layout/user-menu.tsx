@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { User, Crown, LogOut } from "lucide-react";
+import { User, Crown, LogOut, ShoppingBag } from "lucide-react";
 import { authClient } from "@/lib/auth/client";
 import { Button } from "@/components/ui/button";
 import {
@@ -102,6 +102,12 @@ export function UserMenu({ dictionary, locale }: UserMenuProps) {
           <Link href={locale === 'en' ? '/membership' : `/${locale}/membership`} className="cursor-pointer">
             <Crown className="mr-2 h-4 w-4" />
             <span>{dictionary.userMenu.membership}</span>
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Link href={locale === 'en' ? '/orders' : `/${locale}/orders`} className="cursor-pointer">
+            <ShoppingBag className="mr-2 h-4 w-4" />
+            <span>{dictionary.userMenu.orders}</span>
           </Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />

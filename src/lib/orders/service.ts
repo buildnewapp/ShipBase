@@ -1,6 +1,6 @@
 import { db } from "@/lib/db/client";
 import { orders, orderItems, type Order, type NewOrder, type OrderItem, type NewOrderItem, type OrderStatus } from "@/lib/db/schema/orders";
-import { eq, and, desc } from "drizzle-orm";
+import { eq, desc } from "drizzle-orm";
 import { randomUUID } from "crypto";
 
 export class OrderService {
@@ -26,7 +26,7 @@ export class OrderService {
     currency?: string;
     paymentProvider: string;
     customerEmail: string;
-    metadata?: Record<string, any>;
+    metadata?: Record<string, unknown>;
   }): Promise<Order> {
     const orderId = randomUUID();
     const orderNumber = this.generateOrderNumber();
@@ -173,7 +173,7 @@ export class OrderService {
     productDescription?: string;
     unitPrice: string;
     quantity?: number;
-    metadata?: Record<string, any>;
+    metadata?: Record<string, unknown>;
   }): Promise<OrderItem> {
     const totalPrice = (parseFloat(unitPrice) * quantity).toFixed(2);
     
