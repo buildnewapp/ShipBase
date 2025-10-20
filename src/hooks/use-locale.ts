@@ -2,7 +2,6 @@
 
 import { usePathname } from "next/navigation";
 import { locales, defaultLocale, type Locale } from "@/i18n";
-import { getDictionary } from "@/i18n";
 
 export function useLocale() {
   const pathname = usePathname();
@@ -22,10 +21,8 @@ export function useLocale() {
   };
   
   const currentLocale = getCurrentLocale();
-  const dictionary = getDictionary(currentLocale);
 
   return {
     locale: currentLocale,
-    dictionary,
   };
 }

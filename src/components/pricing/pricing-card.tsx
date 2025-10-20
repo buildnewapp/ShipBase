@@ -1,12 +1,13 @@
 "use client";
 
-import { Check, X } from "lucide-react";
+import { Check, X, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { formatPrice, type PricingPlan, type PricingPeriod } from "@/lib/pricing/i18n-config";
 import { type Locale } from "@/i18n/types";
+import { usePayment } from "@/hooks/use-payment";
 
 interface PricingCardProps {
   plan: PricingPlan;
@@ -25,9 +26,23 @@ export function PricingCard({
 }: PricingCardProps) {
   const pricing = plan.pricing[period];
   const hasDiscount = pricing.discount && pricing.originalPrice;
+  const { isLoading, error, createCheckout } = usePayment();
 
-  const handleSelect = () => {
-    onSelect?.(plan.id, period);
+  const handleSelect = async () => {
+    // 如果是免费计划，直接调用原有的回调
+    if (plan.id === 'free') {
+      onSelect?.(plan.id, period);
+      return;
+    }
+
+    // 如果是企业版，也调用原有回调（可能需要联系销售）
+    if (plan.id === 'enterprise') {
+      onSelect?.(plan.id, period);
+      return;
+    }
+
+    // 其他付费计划，调用支付接口
+    await createCheckout(plan.id);
   };
 
   // 国际化文本
@@ -151,13 +166,29 @@ export function PricingCard({
       </CardContent>
 
       <CardFooter>
-        <Button
-          className="w-full"
-          variant={plan.popular ? "default" : "outline"}
-          onClick={handleSelect}
-        >
-          {getCtaText()}
-        </Button>
+        <div className="w-full space-y-2">
+          <Button
+            className="w-full"
+            variant={plan.popular ? "default" : "outline"}
+            onClick={handleSelect}
+            disabled={isLoading}
+          >
+            {isLoading ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                {locale === "zh" ? "处理中..." : locale === "ja" ? "処理中..." : "Processing..."}
+              </>
+            ) : (
+              getCtaText()
+            )}
+          </Button>
+          
+          {error && (
+            <div className="text-sm text-red-600 dark:text-red-400 text-center">
+              {error}
+            </div>
+          )}
+        </div>
       </CardFooter>
     </Card>
   );
