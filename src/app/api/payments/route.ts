@@ -56,7 +56,6 @@ export async function POST(req: NextRequest) {
     const param : any = {
       productKey: product_id,
       locale,
-      cancel_url,
       requestId,
       customerEmail: userEmail,
       metadata: {
@@ -79,14 +78,12 @@ export async function POST(req: NextRequest) {
 async function creemCheckout({
   productKey,
   locale,
-  cancel_url,
   requestId,
   customerEmail,
   metadata,
 }: {
   productKey: string;
   locale: string;
-  cancel_url: string;
   requestId: string;
   customerEmail: string;
   metadata?: Record<string, unknown>;
@@ -104,7 +101,8 @@ async function creemCheckout({
     throw new Error("invalid product_id mapping");
   }
 
-  const success_url = `${process.env.NEXT_PUBLIC_WEB_URL}/api/pay/callback/creem?locale=${locale}`;
+    const success_url = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/payment/success`;
+    const cancel_url = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/payment/failed`;
   const createCheckoutRequest = {
     productId: providerProductId,
     requestId,
@@ -112,7 +110,9 @@ async function creemCheckout({
       email: customerEmail,
     },
     successUrl: success_url,
+    cancelUrl: cancel_url,
     metadata: {
+      locale,
       ...(metadata || {}),
     },
   }
