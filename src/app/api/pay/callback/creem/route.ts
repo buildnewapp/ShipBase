@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createHmac } from "crypto";
+import { OrderService } from "@/lib/orders/service";
 
 // Creem 支付回调处理
 export async function POST(request: NextRequest) {
@@ -88,11 +89,26 @@ async function handleCheckoutCompleted(data: any) {
     metadata 
   } = data;
 
-  // TODO: 这里可以添加订单状态更新逻辑
-  // 例如：更新数据库中的订单状态、发送确认邮件等
+  // 更新订单状态为已支付
+  const order = await OrderService.handlePaymentSuccess(requestId);
   
+  if (!order) {
+    console.error('支付成功但订单未找到:', {
+      requestId,
+      customerEmail: customer?.email,
+    });
+    return {
+      status: 'error',
+      action: 'checkout_completed',
+      requestId,
+      message: '订单未找到',
+    };
+  }
+
   // 记录支付成功日志
   console.log('支付成功:', {
+    orderId: order.id,
+    orderNumber: order.orderNumber,
     requestId,
     customerEmail: customer?.email,
     productId: product?.id,
@@ -104,6 +120,8 @@ async function handleCheckoutCompleted(data: any) {
   return {
     status: 'success',
     action: 'checkout_completed',
+    orderId: order.id,
+    orderNumber: order.orderNumber,
     requestId,
     message: '支付成功处理完成',
     redirectUrl: metadata?.locale ? `/${metadata.locale}/payment/success` : '/payment/success'
@@ -121,10 +139,25 @@ async function handleCheckoutFailed(data: any) {
     reason 
   } = data;
 
-  // TODO: 这里可以添加失败处理逻辑
-  // 例如：发送失败通知、记录失败原因等
+  // 更新订单状态为失败
+  const order = await OrderService.handlePaymentFailed(requestId);
+  
+  if (!order) {
+    console.error('支付失败但订单未找到:', {
+      requestId,
+      customerEmail: customer?.email,
+    });
+    return {
+      status: 'error',
+      action: 'checkout_failed',
+      requestId,
+      message: '订单未找到',
+    };
+  }
   
   console.log('支付失败:', {
+    orderId: order.id,
+    orderNumber: order.orderNumber,
     requestId,
     customerEmail: customer?.email,
     productId: product?.id,
@@ -134,6 +167,8 @@ async function handleCheckoutFailed(data: any) {
   return {
     status: 'failed',
     action: 'checkout_failed',
+    orderId: order.id,
+    orderNumber: order.orderNumber,
     requestId,
     message: '支付失败处理完成',
     redirectUrl: '/payment/failed'
@@ -151,9 +186,8 @@ async function handleSubscriptionActive(data: any) {
     metadata 
   } = data;
 
-  // TODO: 这里可以添加订阅激活逻辑
-  // 例如：更新用户订阅状态、发送欢迎邮件等
-  
+  // 对于订阅激活，我们可能需要查找相关的订单
+  // 这里可以根据订阅ID或其他标识符来更新订单状态
   console.log('订阅激活:', {
     subscriptionId,
     customerEmail: customer?.email,

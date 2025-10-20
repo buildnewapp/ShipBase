@@ -4,6 +4,7 @@ import { auth } from "@/lib/auth/server";
 import { getPricingConfig } from "@/lib/pricing/i18n-config";
 import { type PricingPeriod } from "@/lib/pricing/types";
 import { newCreemClient } from "@/lib/payments/creem";
+import { OrderService } from "@/lib/orders/service";
 
 type Locale = Parameters<typeof getPricingConfig>[0];
 
@@ -31,8 +32,8 @@ export async function POST(req: NextRequest) {
     }
 
     // 使用当前系统的定价配置校验 plan 是否存在
-    const pricing = getPricingConfig(locale);
-    const plan = pricing.plans.find((p) => p.id === product_id);
+    const pricingConfig = getPricingConfig(locale);
+    const plan = pricingConfig.plans.find((p) => p.id === product_id);
     if (!plan) {
       return respErr("invalid product_id");
     }
@@ -40,7 +41,8 @@ export async function POST(req: NextRequest) {
     // 从会话中获取用户（better-auth）
     const session = await auth.api.getSession({ headers: req.headers });
     const userEmail = session?.user?.email;
-    if (!userEmail) {
+    const userId = session?.user?.id;
+    if (!userEmail || !userId) {
       return respErr("no auth, please sign-in", 401);
     }
 
@@ -53,6 +55,35 @@ export async function POST(req: NextRequest) {
       return respErr("unsupported provider");
     }
 
+    // 获取价格信息（这里需要根据period获取，暂时使用one-time）
+    const period: PricingPeriod = "one-time";
+    const pricing = plan.pricing[period];
+    
+    // 创建订单
+    const order = await OrderService.createOrder({
+      userId,
+      productId: product_id,
+      productName: plan.name,
+      productType: period === "one-time" ? "one_time" : "subscription",
+      amount: pricing.price.toString(),
+      currency: pricing.currency,
+      paymentProvider: provider,
+      customerEmail: userEmail,
+      metadata: {
+        locale,
+        project: process.env.NEXT_PUBLIC_PROJECT_NAME || "",
+        plan_id: plan.id,
+        plan_period: period,
+      },
+    });
+
+    console.log('订单创建成功:', {
+      orderId: order.id,
+      orderNumber: order.orderNumber,
+      productId: product_id,
+      amount: pricing.price,
+    });
+
     const param : any = {
       productKey: product_id,
       locale,
@@ -62,6 +93,8 @@ export async function POST(req: NextRequest) {
         project: process.env.NEXT_PUBLIC_PROJECT_NAME || "",
         product_name: plan.name,
         user_email: userEmail,
+        order_id: order.id,
+        order_number: order.orderNumber,
       },
     }
     console.log('creemCheckout', param)
@@ -122,9 +155,24 @@ async function creemCheckout({
     createCheckoutRequest: createCheckoutRequest
   });
 
+  // 更新订单的支付请求ID
+  const orderId = metadata?.order_id as string;
+  if (orderId) {
+    await OrderService.updateOrderStatus(orderId, "pending", {
+      paymentRequestId: requestId,
+      paymentSessionId: result.id,
+    });
+    console.log('订单支付信息更新:', {
+      orderId,
+      paymentRequestId: requestId,
+      paymentSessionId: result.id,
+    });
+  }
+
   return {
     request_id: requestId,
     session_id: result.id,
     checkout_url: result.checkoutUrl,
+    order_id: orderId,
   };
 }
