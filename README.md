@@ -49,6 +49,38 @@ Shipbase 是一个基于 Next.js 15 的 SaaS 起步模版，预置 Better Auth �
 - Magic Link：提交邮箱后触发 `/sign-in/magic-link`。若配置了 `MAGIC_LINK_WEBHOOK_URL` 会向该地址发送 `POST`，否则在终端打印链接供测试。
 - 会话读取：在任意客户端组件中使用 `authClient.useSession()` 获取当前用户与会话信息，退出使用 `authClient.signOut()`。
 
+### 配置谷歌登录
+- 登录 [Google Cloud Console](https://console.cloud.google.com/apis/credentials) 
+- 创建一个新项目，进入新项目的 Credentials 管理页面，创建 Oauth Client ID
+- 根据你项目的运行端口，线上域名，配置必要的回调信息
+```
+已获授权的 JavaScript 来源
+http://localhost:3000
+https://{your-domain}
+已获授权的重定向 URI
+http://localhost:3000/api/auth/callback/google
+https://{your-domain}/api/auth/callback/google
+```
+- 创建 Oauth Client ID 后，得到 Client ID 和 Client Secret
+- 修改配置文件中的 GOOGLE_CLIENT_ID 和 GOOGLE_CLIENT_SECRET
+### 配置Github登录
+
+- 进入 [Github Developer Settings](https://github.com/settings/applications/new)
+- 创建一个新的 OAuth app
+- 填写 OAuth app 配置信息 
+```
+ShipBase_local
+http://localhost:3000
+http://localhost:3000/api/auth/callback/github
+
+ShipBase
+https://{your-domain}
+https://{your-domain}/api/auth/callback/github
+```
+- 开发环境和生产环境，需要创建两个不同的 OAuth app，分别配置不同的回调地址。
+- 进入 OAuth app，复制 Client ID 和 Client Secret
+- 修改配置文件中的 GITHUB_CLIENT_ID 和 GITHUB_CLIENT_SECRET
+
 更多能力（如数据库适配器、组织/多因子插件）请参考 [Better Auth 文档](https://better-auth.com/docs)。
 
 ## 数据库
