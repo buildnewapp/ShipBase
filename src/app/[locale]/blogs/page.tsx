@@ -1,6 +1,9 @@
 import { notFound } from "next/navigation";
 import { BlogsPage } from "@/components/blogs";
 import { getDictionary, locales } from "@/i18n";
+import { db } from "@/lib/db/client";
+import { blogs } from "@/lib/db/schema/blogs";
+import { eq, and, desc } from "drizzle-orm";
 
 interface LocaleBlogsPageProps {
   params: Promise<{
@@ -22,7 +25,17 @@ export default async function LocaleBlogsPage({ params }: LocaleBlogsPageProps) 
 
   const dictionary = getDictionary(normalizedLocale);
   
-  return <BlogsPage dictionary={dictionary} />;
+  // 在服务器端获取博客数据
+  const blogPosts = await db
+    .select()
+    .from(blogs)
+    .where(and(
+      eq(blogs.status, "published"),
+      eq(blogs.visibility, "public")
+    ))
+    .orderBy(desc(blogs.featured), desc(blogs.publishedAt), desc(blogs.createdAt));
+  
+  return <BlogsPage dictionary={dictionary} initialBlogs={blogPosts} />;
 }
 
 export function generateStaticParams() {

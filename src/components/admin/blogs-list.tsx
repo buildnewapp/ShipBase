@@ -54,7 +54,7 @@ export function BlogsList({ dictionary }: BlogsListProps) {
   }
 
   async function handleDelete(id: string) {
-    if (!confirm("确定要删除这篇博客吗？")) {
+    if (!confirm("Are you sure you want to delete this blog?")) {
       return;
     }
 
@@ -67,11 +67,11 @@ export function BlogsList({ dictionary }: BlogsListProps) {
       if (data.success) {
         fetchBlogs();
       } else {
-        alert("删除失败：" + data.error);
+        alert("Failed to delete: " + data.error);
       }
     } catch (error) {
       console.error("Failed to delete blog:", error);
-      alert("删除失败");
+      alert("Failed to delete");
     } finally {
       setDeletingId(null);
     }
@@ -113,7 +113,7 @@ export function BlogsList({ dictionary }: BlogsListProps) {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <p className="text-neutral-600 dark:text-neutral-400">加载中...</p>
+        <p className="text-neutral-600 dark:text-neutral-400">Loading...</p>
       </div>
     );
   }

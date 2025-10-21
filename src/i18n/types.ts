@@ -156,6 +156,7 @@ export interface HeaderDictionary {
     profile: string;
     membership: string;
     orders: string;
+    adminMenu: string;
     signOut: string;
   };
 }

@@ -25,35 +25,39 @@ interface Blog {
 
 interface BlogsPageProps {
   dictionary: AppDictionary;
+  initialBlogs?: Blog[];
 }
 
-export function BlogsPage({ dictionary }: BlogsPageProps) {
+export function BlogsPage({ dictionary, initialBlogs = [] }: BlogsPageProps) {
   const { blogs: blogDict } = dictionary.pages;
   const router = useRouter();
   const [activeFilter, setActiveFilter] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
-  const [blogPosts, setBlogPosts] = useState<Blog[]>([]);
-  const [allBlogs, setAllBlogs] = useState<Blog[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [blogPosts, setBlogPosts] = useState<Blog[]>(initialBlogs);
+  const [allBlogs, setAllBlogs] = useState<Blog[]>(initialBlogs);
+  const [loading, setLoading] = useState(false);
 
+  // 如果 initialBlogs 为空，则在客户端获取数据
   useEffect(() => {
-    async function fetchBlogs() {
-      try {
-        const response = await fetch("/api/blogs?status=published&visibility=public");
-        const data = await response.json();
-        if (data.success) {
-          setAllBlogs(data.data);
-          setBlogPosts(data.data);
+    if (initialBlogs.length === 0) {
+      setLoading(true);
+      async function fetchBlogs() {
+        try {
+          const response = await fetch("/api/blogs?status=published&visibility=public");
+          const data = await response.json();
+          if (data.success) {
+            setAllBlogs(data.data);
+            setBlogPosts(data.data);
+          }
+        } catch (error) {
+          console.error("Failed to fetch blogs:", error);
+        } finally {
+          setLoading(false);
         }
-      } catch (error) {
-        console.error("Failed to fetch blogs:", error);
-      } finally {
-        setLoading(false);
       }
+      fetchBlogs();
     }
-
-    fetchBlogs();
-  }, []);
+  }, [initialBlogs]);
 
   // 搜索和过滤
   useEffect(() => {
@@ -156,11 +160,11 @@ export function BlogsPage({ dictionary }: BlogsPageProps) {
         <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
           {loading ? (
             <div className="text-center py-20">
-              <p className="text-neutral-600 dark:text-neutral-400">加载中...</p>
+              <p className="text-neutral-600 dark:text-neutral-400">Loading...</p>
             </div>
           ) : blogPosts.length === 0 ? (
             <div className="text-center py-20">
-              <p className="text-neutral-600 dark:text-neutral-400">暂无博客文章</p>
+              <p className="text-neutral-600 dark:text-neutral-400">No blog posts found</p>
             </div>
           ) : (
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -176,7 +180,7 @@ export function BlogsPage({ dictionary }: BlogsPageProps) {
                         variant="secondary"
                         className="absolute right-4 top-4 bg-purple-600 text-white"
                       >
-                        {post.visibility === "subscribers" ? "订阅者" : "公开"}
+                        {post.visibility === "subscribers" ? "Subscribers" : "Public"}
                       </Badge>
                     )}
                     
@@ -194,7 +198,7 @@ export function BlogsPage({ dictionary }: BlogsPageProps) {
                       {post.title}
                     </h3>
                     <p className="mb-4 line-clamp-3 text-neutral-600 dark:text-neutral-400">
-                      {post.description || "阅读完整文章以了解更多信息..."}
+                      {post.description || "Read more to learn more..."}
                     </p>
                     
                     {/* Tags */}

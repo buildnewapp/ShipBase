@@ -102,11 +102,11 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
       if (data.success) {
         router.push("/admin/blogs");
       } else {
-        alert("保存失败：" + data.error);
+        alert("Failed to save: " + data.error);
       }
     } catch (error) {
       console.error("Failed to save blog:", error);
-      alert("保存失败");
+      alert("Failed to save");
     } finally {
       setSaving(false);
     }
@@ -130,11 +130,11 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
             onClick={() => router.push("/admin/blogs")}
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            返回
+            Back
           </Button>
           <div>
             <h1 className="text-3xl font-bold">
-              {isNew ? adminBlogs.edit.form.title : "编辑博客"}
+              {isNew ? adminBlogs.edit.actions.create : adminBlogs.edit.title}
             </h1>
             <p className="text-neutral-600 dark:text-neutral-400 mt-1">
               {adminBlogs.edit.subtitle}
@@ -158,9 +158,9 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
                   onChange={(e) => handleInputChange("language", e.target.value)}
                   className="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
                 >
-                  <option value="zh">中文</option>
+                  <option value="zh">Chinese</option>
                   <option value="en">English</option>
-                  <option value="ja">日本語</option>
+                  <option value="ja">Japanese</option>
                 </select>
               </CardContent>
             </Card>
@@ -181,7 +181,7 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
                     }
                   }}
                   className="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
-                  placeholder="输入博客标题"
+                  placeholder="Enter blog title"
                   required
                 />
                 <p className="mt-2 text-sm text-neutral-500">
@@ -234,7 +234,7 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
                   }
                   rows={4}
                   className="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
-                  placeholder="输入博客描述"
+                  placeholder="Enter blog description"
                 />
                 <p className="mt-2 text-sm text-neutral-500">
                   {adminBlogs.edit.form.descriptionHelper}
@@ -253,7 +253,7 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
                   value={formData.tags?.join(", ") || ""}
                   onChange={(e) => handleTagsChange(e.target.value)}
                   className="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
-                  placeholder="标签1, 标签2, 标签3"
+                  placeholder="tag1, tag2, tag3"
                 />
                 {formData.tags && formData.tags.length > 0 && (
                   <div className="mt-3 flex flex-wrap gap-2">
@@ -365,7 +365,7 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
           <Button type="submit" disabled={saving}>
             <Save className="h-4 w-4 mr-2" />
             {saving
-              ? "保存中..."
+              ? "Saving..."
               : isNew
                 ? adminBlogs.edit.actions.create
                 : adminBlogs.edit.actions.update}

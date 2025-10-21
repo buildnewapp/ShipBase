@@ -50,7 +50,7 @@ export function BlogDetail({ dictionary, blog }: BlogDetailProps) {
             className="mb-8"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            返回博客列表
+            Back to Blog List
           </Button>
 
           <div className="mb-6">
@@ -96,7 +96,7 @@ export function BlogDetail({ dictionary, blog }: BlogDetailProps) {
                 </div>
               ) : (
                 <p className="text-neutral-600 dark:text-neutral-400">
-                  暂无内容
+                  No content available
                 </p>
               )}
             </CardContent>

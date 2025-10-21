@@ -293,6 +293,7 @@ export const zhDictionary: AppDictionary = {
       profile: "用户信息",
       membership: "会员中心",
       orders: "订单中心",
+      adminMenu: "管理后台",
       signOut: "退出登录",
     },
   },

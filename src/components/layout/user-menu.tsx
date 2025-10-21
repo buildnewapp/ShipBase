@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { User, Crown, LogOut, ShoppingBag, LayoutDashboard } from "lucide-react";
+import { User, Crown, LogOut, ShoppingBag, LayoutDashboard, Settings } from "lucide-react";
 import { authClient } from "@/lib/auth/client";
+import { checkAdminStatus } from "@/lib/auth/admin";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import {
@@ -24,11 +25,19 @@ interface UserMenuProps {
 
 export function UserMenu({ dictionary, locale }: UserMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [userIsAdmin, setUserIsAdmin] = useState(false);
   const router = useRouter();
   const session = authClient.useSession();
   
   const user = session.data?.user;
   const isAuthenticated = Boolean(user);
+
+  // 检查管理员状态
+  useEffect(() => {
+    if (user?.email) {
+      checkAdminStatus(user.email).then(setUserIsAdmin);
+    }
+  }, [user?.email]);
 
   if (!isAuthenticated) {
     return null;
@@ -119,6 +128,17 @@ export function UserMenu({ dictionary, locale }: UserMenuProps) {
             <span>{dictionary.userMenu.orders}</span>
           </Link>
         </DropdownMenuItem>
+        {userIsAdmin && (
+          <>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem asChild>
+              <Link href="/admin/blogs" className="cursor-pointer">
+                <Settings className="mr-2 h-4 w-4" />
+                <span>{dictionary.userMenu.adminMenu}</span>
+              </Link>
+            </DropdownMenuItem>
+          </>
+        )}
         <DropdownMenuSeparator />
         <DropdownMenuItem
           onClick={handleSignOut}

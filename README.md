@@ -87,6 +87,9 @@
    # Magic Link (Optional)
    MAGIC_LINK_WEBHOOK_URL=https://your-webhook-url  # Optional, for sending magic links
 
+   # Admin Configuration
+   ADMIN_EMAILS=admin@example.com,owner@example.com  # Admin emails (comma-separated)
+
    # Creem Payment
    CREEM_API_KEY=your-creem-api-key
    CREEM_ENV=test  # or production

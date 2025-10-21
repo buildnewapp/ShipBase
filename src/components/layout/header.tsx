@@ -46,6 +46,12 @@ export function Header() {
             {dictionary.header.pricing}
           </Link>
           <Link
+            href={locale === 'en' ? '/blogs' : `/${locale}/blogs`}
+            className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
+          >
+            Blog
+          </Link>
+          <Link
             href={locale === 'en' ? '/docs' : `/${locale}/docs`}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
           >
@@ -113,6 +119,13 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.header.pricing}
+            </Link>
+            <Link
+              href={locale === 'en' ? '/blogs' : `/${locale}/blogs`}
+              className="block text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
             </Link>
             <Link
               href={locale === 'en' ? '/docs' : `/${locale}/docs`}

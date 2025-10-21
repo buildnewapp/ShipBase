@@ -293,6 +293,7 @@ export const enDictionary: AppDictionary = {
       profile: "Profile",
       membership: "Membership",
       orders: "Orders",
+      adminMenu: "Admin Panel",
       signOut: "Sign Out",
     },
   },
