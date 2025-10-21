@@ -721,7 +721,6 @@ export interface OrderCardDictionary {
   paidAt: string;
   actions: string;
   viewDetails: string;
-  downloadInvoice: string;
   refreshStatus: string;
 }
 
@@ -796,6 +795,21 @@ export interface MembershipBillingHistory {
   description: string;
   noRecords: string;
   upgradeMessage: string;
+  table: {
+    date: string;
+    description: string;
+    amount: string;
+    status: string;
+    action: string;
+    view: string;
+  };
+  status: {
+    pending: string;
+    paid: string;
+    failed: string;
+    cancelled: string;
+    refunded: string;
+  };
 }
 
 export interface MembershipPageDictionary extends PageDictionary {

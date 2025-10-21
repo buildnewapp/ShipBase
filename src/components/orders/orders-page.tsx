@@ -17,7 +17,6 @@ import {
   Package, 
   MoreHorizontal, 
   Eye,
-  Download,
   RefreshCw,
   Filter,
   Search
@@ -28,6 +27,7 @@ import type { Order } from "@/lib/db/schema/orders";
 import { OrderDetails } from "./order-details";
 
 interface OrdersPageProps {
+  locale: string;
   dict: {
     title: string;
     subtitle: string;
@@ -49,7 +49,6 @@ interface OrdersPageProps {
       paidAt: string;
       actions: string;
       viewDetails: string;
-      downloadInvoice: string;
       refreshStatus: string;
     };
     status: {
@@ -79,10 +78,64 @@ interface OrdersPageProps {
       of: string;
       results: string;
     };
+    orderDetails: {
+      title: string;
+      subtitle: string;
+      orderInfo: {
+        orderNumber: string;
+        status: string;
+        createdAt: string;
+        paidAt: string;
+        cancelledAt: string;
+        amount: string;
+        currency: string;
+        paymentProvider: string;
+        customerEmail: string;
+      };
+      productInfo: {
+        title: string;
+        productName: string;
+        productType: string;
+        productId: string;
+      };
+      paymentInfo: {
+        title: string;
+        provider: string;
+        requestId: string;
+        sessionId: string;
+      };
+      customerInfo: {
+        title: string;
+        email: string;
+      };
+      orderItems: {
+        title: string;
+        productName: string;
+        description: string;
+        unitPrice: string;
+        quantity: string;
+        totalPrice: string;
+      };
+      actions: {
+        back: string;
+        refreshStatus: string;
+      };
+      status: {
+        pending: string;
+        paid: string;
+        failed: string;
+        cancelled: string;
+        refunded: string;
+      };
+      loading: string;
+      error: string;
+      retry: string;
+      notFound: string;
+    };
   };
 }
 
-export function OrdersPage({ dict }: OrdersPageProps) {
+export function OrdersPage({ dict, locale }: OrdersPageProps) {
   const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -252,57 +305,12 @@ export function OrdersPage({ dict }: OrdersPageProps) {
 
   // 如果选择了订单，显示详情页面
   if (selectedOrderId) {
+    // 需要通过 locale 获取完整的订单详情翻译
+    // 这里简化处理，直接传递一个对象
     return (
       <OrderDetails
         orderId={selectedOrderId}
-        dict={{
-          title: "订单详情",
-          subtitle: "查看订单的详细信息",
-          orderInfo: {
-            orderNumber: dict.orderCard.orderNumber,
-            status: dict.orderCard.status,
-            createdAt: dict.orderCard.createdAt,
-            paidAt: dict.orderCard.paidAt,
-            cancelledAt: "取消时间",
-            amount: dict.orderCard.amount,
-            currency: "货币",
-            paymentProvider: "支付提供商",
-            customerEmail: "客户邮箱",
-          },
-          productInfo: {
-            title: "产品信息",
-            productName: dict.orderCard.product,
-            productType: "产品类型",
-            productId: "产品ID",
-          },
-          paymentInfo: {
-            title: "支付信息",
-            provider: "支付提供商",
-            requestId: "支付请求ID",
-            sessionId: "支付会话ID",
-          },
-          customerInfo: {
-            title: "客户信息",
-            email: "邮箱地址",
-          },
-          orderItems: {
-            title: "订单项",
-            productName: "产品名称",
-            description: "描述",
-            unitPrice: "单价",
-            quantity: "数量",
-            totalPrice: "总价",
-          },
-          actions: {
-            back: "返回",
-            downloadInvoice: dict.orderCard.downloadInvoice,
-            refreshStatus: dict.orderCard.refreshStatus,
-          },
-          status: dict.status,
-          loading: dict.ordersList.loading,
-          error: dict.ordersList.error,
-          retry: dict.ordersList.retry,
-        }}
+        dict={dict.orderDetails}
         onBack={backToOrders}
       />
     );
@@ -451,12 +459,6 @@ export function OrdersPage({ dict }: OrdersPageProps) {
                             <Eye className="h-4 w-4 mr-2" />
                             {dict.orderCard.viewDetails}
                           </DropdownMenuItem>
-                          {order.status === "paid" && (
-                            <DropdownMenuItem>
-                              <Download className="h-4 w-4 mr-2" />
-                              {dict.orderCard.downloadInvoice}
-                            </DropdownMenuItem>
-                          )}
                           <DropdownMenuItem onClick={() => refreshOrderStatus(order.id)}>
                             <RefreshCw className="h-4 w-4 mr-2" />
                             {dict.orderCard.refreshStatus}

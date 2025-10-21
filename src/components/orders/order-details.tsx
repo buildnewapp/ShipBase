@@ -10,7 +10,6 @@ import {
   CreditCard, 
   Package, 
   Mail,
-  Download,
   ArrowLeft,
   RefreshCw,
   CheckCircle,
@@ -64,7 +63,6 @@ interface OrderDetailsProps {
     };
     actions: {
       back: string;
-      downloadInvoice: string;
       refreshStatus: string;
     };
     status: {
@@ -77,6 +75,7 @@ interface OrderDetailsProps {
     loading: string;
     error: string;
     retry: string;
+    notFound: string;
   };
   onBack: () => void;
 }
@@ -234,7 +233,7 @@ export function OrderDetails({ orderId, dict, onBack }: OrderDetailsProps) {
     return (
       <div className="container mx-auto px-4 py-8">
         <div className="text-center py-12">
-          <p className="text-muted-foreground">订单未找到</p>
+          <p className="text-muted-foreground">{dict.notFound}</p>
         </div>
       </div>
     );
@@ -253,12 +252,6 @@ export function OrderDetails({ orderId, dict, onBack }: OrderDetailsProps) {
             <ArrowLeft className="h-4 w-4 mr-2" />
             {dict.actions.back}
           </Button>
-          {order.status === "paid" && (
-            <Button variant="outline">
-              <Download className="h-4 w-4 mr-2" />
-              {dict.actions.downloadInvoice}
-            </Button>
-          )}
           <Button 
             variant="outline" 
             onClick={refreshOrderStatus}

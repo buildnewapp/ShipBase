@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Crown, Star, Zap, Shield, Check } from "lucide-react";
 import { getDictionary } from "@/i18n";
 import { type Locale } from "@/i18n/types";
+import { BillingHistory } from "@/components/membership";
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
   const dictionary = getDictionary(params.locale);
@@ -186,24 +187,10 @@ export default async function MembershipPage({ params }: { params: { locale: Loc
         </div>
 
         {/* 账单历史 */}
-        <Card>
-          <CardHeader>
-            <CardTitle>{dictionary.pages.membership.billingHistory.title}</CardTitle>
-            <CardDescription>
-              {dictionary.pages.membership.billingHistory.description}
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="text-center py-8">
-              <p className="text-neutral-600 dark:text-neutral-400">
-                {dictionary.pages.membership.billingHistory.noRecords}
-              </p>
-              <p className="text-sm text-neutral-500 dark:text-neutral-500 mt-1">
-                {dictionary.pages.membership.billingHistory.upgradeMessage}
-              </p>
-            </div>
-          </CardContent>
-        </Card>
+        <BillingHistory 
+          dict={dictionary.pages.membership.billingHistory} 
+          locale={params.locale}
+        />
       </div>
     </div>
   );
