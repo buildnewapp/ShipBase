@@ -3,8 +3,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight, Search } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import type { AppDictionary } from "@/i18n";
 import { format } from "date-fns";
 
@@ -28,8 +29,11 @@ interface BlogsPageProps {
 
 export function BlogsPage({ dictionary }: BlogsPageProps) {
   const { blogs: blogDict } = dictionary.pages;
+  const router = useRouter();
   const [activeFilter, setActiveFilter] = useState("all");
+  const [searchQuery, setSearchQuery] = useState("");
   const [blogPosts, setBlogPosts] = useState<Blog[]>([]);
+  const [allBlogs, setAllBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -38,6 +42,7 @@ export function BlogsPage({ dictionary }: BlogsPageProps) {
         const response = await fetch("/api/blogs?status=published&visibility=public");
         const data = await response.json();
         if (data.success) {
+          setAllBlogs(data.data);
           setBlogPosts(data.data);
         }
       } catch (error) {
@@ -49,6 +54,30 @@ export function BlogsPage({ dictionary }: BlogsPageProps) {
 
     fetchBlogs();
   }, []);
+
+  // 搜索和过滤
+  useEffect(() => {
+    let filtered = allBlogs;
+
+    // 搜索过滤
+    if (searchQuery) {
+      filtered = filtered.filter(
+        (blog) =>
+          blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          blog.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          blog.tags?.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+      );
+    }
+
+    // 标签过滤
+    if (activeFilter !== "all") {
+      filtered = filtered.filter((blog) =>
+        blog.tags?.some((tag) => tag.toLowerCase().includes(activeFilter.toLowerCase()))
+      );
+    }
+
+    setBlogPosts(filtered);
+  }, [searchQuery, activeFilter, allBlogs]);
 
   const filters = [
     { id: "all", label: blogDict.filters.all },
@@ -79,8 +108,8 @@ export function BlogsPage({ dictionary }: BlogsPageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-blue-50 dark:from-neutral-950 dark:via-neutral-900 dark:to-blue-950">
       {/* Header Section */}
-      <section className="relative overflow-hidden px-6 py-20 sm:px-10 lg:px-16">
-        <div className="mx-auto max-w-7xl">
+      <section className="relative overflow-hidden py-20">
+        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
           <div className="text-center">
             <h1 className="mb-4 text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 sm:text-6xl lg:text-7xl">
               {blogDict.title}
@@ -92,9 +121,21 @@ export function BlogsPage({ dictionary }: BlogsPageProps) {
         </div>
       </section>
 
-      {/* Filter Section */}
-      <section className="px-6 sm:px-10 lg:px-16 pb-8">
-        <div className="mx-auto max-w-7xl">
+      {/* Search Section */}
+      <section className="pb-8">
+        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+          <div className="mb-6">
+            <div className="relative max-w-md mx-auto">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search blogs..."
+                className="w-full pl-10 pr-4 py-2 rounded-full border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          </div>
           <div className="flex flex-wrap gap-3 justify-center">
             {filters.map((filter) => (
               <Button
@@ -111,8 +152,8 @@ export function BlogsPage({ dictionary }: BlogsPageProps) {
       </section>
 
       {/* Blog Posts Section */}
-      <section className="px-6 pb-20 sm:px-10 lg:px-16">
-        <div className="mx-auto max-w-7xl">
+      <section className="pb-20">
+        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
           {loading ? (
             <div className="text-center py-20">
               <p className="text-neutral-600 dark:text-neutral-400">加载中...</p>
@@ -170,6 +211,7 @@ export function BlogsPage({ dictionary }: BlogsPageProps) {
                     <Button
                       variant="ghost"
                       className="group/btn mt-4 w-full justify-between"
+                      onClick={() => router.push(`/blogs/${post.slug}`)}
                     >
                       <span>{blogDict.readMore}</span>
                       <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />

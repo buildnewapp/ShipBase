@@ -21,14 +21,18 @@ export async function GET(request: NextRequest) {
     
     // 前台访问时，只显示已发布且公开的文章
     if (status) {
-      conditions.push(eq(blogs.status, status));
+      if (status !== "all") {
+        conditions.push(eq(blogs.status, status));
+      }
     } else {
       // 如果没有指定状态，默认只显示已发布的
       conditions.push(eq(blogs.status, "published"));
     }
     
     if (visibility) {
-      conditions.push(eq(blogs.visibility, visibility));
+      if (visibility !== "all") {
+        conditions.push(eq(blogs.visibility, visibility));
+      }
     } else {
       // 默认只显示公开的
       conditions.push(eq(blogs.visibility, "public"));

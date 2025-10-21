@@ -49,7 +49,14 @@ psql $DATABASE_URL -f drizzle/20251021045002_optimal_miek.sql
 
 ### 2. 访问博客页面
 
-- 前台博客列表：`http://localhost:3000/zh/blogs` 或 `http://localhost:3000/en/blogs`
+**前台页面：**
+- 博客列表：`http://localhost:3000/zh/blogs` 或 `http://localhost:3000/en/blogs`
+- 博客详情：`http://localhost:3000/zh/blogs/[slug]`
+
+**管理后台：**
+- 博客列表：`http://localhost:3000/admin/blogs`
+- 创建博客：`http://localhost:3000/admin/blogs/new`
+- 编辑博客：`http://localhost:3000/admin/blogs/[id]/edit`
 
 ### 3. 使用 API
 
@@ -78,26 +85,53 @@ curl -X POST http://localhost:3000/api/blogs \
 curl http://localhost:3000/api/blogs?status=published&visibility=public
 ```
 
-## 待完成的功能
+## 已完成的管理后台功能 ✅
 
 ### 管理后台 CMS
 
-根据需求，还需要创建管理后台的博客编辑页面。建议创建以下页面：
-
-1. **博客列表页面** (`/admin/blogs`)
-   - 显示所有博客
+1. **博客列表页面** (`/admin/blogs`) ✅
+   - 显示所有博客（包括草稿和已发布）
    - 支持编辑、删除操作
-   - 显示状态、可见性等信息
+   - 显示状态、可见性、置顶等信息
+   - 美观的表格布局
 
-2. **博客编辑页面** (`/admin/blogs/[id]/edit`)
+2. **博客编辑页面** (`/admin/blogs/[id]/edit`) ✅
    - 编辑博客的完整表单
-   - 支持富文本编辑器
-   - 实时预览
+   - 自动生成 slug
+   - 支持多语言
+   - 标签管理
 
-3. **博客创建页面** (`/admin/blogs/new`)
+3. **博客创建页面** (`/admin/blogs/new`) ✅
    - 创建新博客的表单
+   - 与编辑页面使用相同的组件
 
-### 功能建议
+4. **博客详情页面** (`/[locale]/blogs/[slug]`) ✅
+   - 前台博客文章详情
+   - 显示发布时间、标签
+   - 支持返回博客列表
+
+### 已实现的功能特性
+
+1. **内容管理**
+   - 支持多语言（中文、英文、日文）
+   - 自动 slug 生成
+   - 标签系统
+   - 状态管理（草稿/已发布）
+   - 可见性控制（公开/私有/订阅者）
+   - 置顶功能
+
+2. **用户体验**
+   - 响应式设计
+   - 美观的 UI 界面
+   - 流畅的导航
+   - 实时状态反馈
+
+3. **API 增强**
+   - 支持查询所有状态的文章
+   - 权限验证
+   - 错误处理
+
+### 功能建议（可选扩展）
 
 1. **富文本编辑器**
    - 建议集成 Tiptap 或 Lexical

@@ -25,6 +25,6 @@ export const config = {
   // - _next/image (图片优化)
   // - favicon.ico
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    '/((?!api|admin|_next/static|_next/image|favicon.ico).*)',
   ],
 };
