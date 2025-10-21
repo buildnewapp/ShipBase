@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getDictionary, locales } from "@/i18n";
+import { locales } from "@/i18n";
 import { BlogDetail } from "@/components/blogs/blog-detail";
 import { db } from "@/lib/db/client";
 import { blogs } from "@/lib/db/schema/blogs";
@@ -39,9 +39,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
     notFound();
   }
 
-  const dictionary = getDictionary(normalizedLocale);
-  
-  return <BlogDetail dictionary={dictionary} blog={blogData[0]} />;
+  return <BlogDetail blog={blogData[0]} />;
 }
 
 export async function generateMetadata({ params }: BlogDetailPageProps) {

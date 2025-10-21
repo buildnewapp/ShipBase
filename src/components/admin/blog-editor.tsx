@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { RichTextEditor } from "@/components/ui/rich-text-editor";
 import { ArrowLeft, Save } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import type { AppDictionary } from "@/i18n";
 
@@ -14,7 +14,7 @@ interface Blog {
   title: string;
   slug: string;
   description: string;
-  content: any;
+  content: unknown;
   language: string;
   tags: string[] | null;
   status: string;
@@ -45,16 +45,10 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
     featured: false,
   });
 
-  const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
 
-  useEffect(() => {
-    if (blogId) {
-      fetchBlog();
-    }
-  }, [blogId]);
-
-  async function fetchBlog() {
+  const fetchBlog = useCallback(async () => {
+    if (!blogId) return;
     try {
       const response = await fetch(`/api/blogs/${blogId}`);
       const data = await response.json();
@@ -64,7 +58,11 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
     } catch (error) {
       console.error("Failed to fetch blog:", error);
     }
-  }
+  }, [blogId]);
+
+  useEffect(() => {
+    fetchBlog();
+  }, [fetchBlog]);
 
   function handleInputChange(
     field: keyof Blog,
@@ -276,7 +274,6 @@ export function BlogEditor({ dictionary, blogId }: BlogEditorProps) {
                 <RichTextEditor
                   content={typeof formData.content === "string" ? formData.content : ""}
                   onChange={(content) => handleInputChange("content", content)}
-                  placeholder="Write your blog content here..."
                 />
               </CardContent>
             </Card>

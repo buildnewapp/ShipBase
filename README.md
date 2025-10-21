@@ -13,6 +13,7 @@
 - Supports **Google OAuth**, **GitHub OAuth**, and **Magic Link** authentication
 - Session management with secure cookies
 - Role-based access control ready
+- Admin panel with email-based permissions
 
 ### 💳 Payment & Billing
 - **Creem** payment gateway integration
@@ -20,18 +21,44 @@
 - 20% discount for annual subscriptions
 - Complete order management system
 - Payment webhook handling
+- Billing history and subscription management
+
+### 📝 Blog & CMS
+- Full-featured blog system with multi-language support
+- Admin CMS for content management
+- Rich text editor support
+- Tag system and categories
+- Draft and published status management
+- Visibility controls (public, private, subscribers)
+- Featured posts support
+
+### 🎯 Admin Panel
+- Dedicated admin interface
+- Blog management (create, edit, delete)
+- User role management
+- Content moderation tools
+- Email-based admin authentication
 
 ### 🌍 Internationalization
 - Multi-language support (English, Chinese, Japanese)
 - Currency support (USD, CNY, JPY)
 - Localized pricing and content
 - Language switcher component
+- i18n routing with Next.js App Router
+
+### 🔍 SEO & Discovery
+- Dynamic sitemap generation
+- Robots.txt configuration
+- Multi-language hreflang support
+- Optimized meta tags and Open Graph
+- Blog post indexing
 
 ### 🎨 Modern UI
 - **Tailwind CSS 4** for styling
 - Responsive design
 - Dark mode support
 - Accessible components
+- Markdown editor integration
 
 ### 🗄️ Database
 - **Drizzle ORM** for type-safe database operations
@@ -100,6 +127,9 @@
    NEXT_PUBLIC_WEB_URL=http://localhost:3000
    NEXT_PUBLIC_PROJECT_NAME=ShipBase
    PAY_PROVIDER=creem
+
+   # Sitemap & SEO
+   NEXT_PUBLIC_BASE_URL=http://localhost:3000  # Required for sitemap
    ```
 
 4. **Setup database**
@@ -141,20 +171,40 @@ shipbase/
 │   ├── app/                    # Next.js App Router
 │   │   ├── [locale]/          # Internationalized routes
 │   │   │   ├── page.tsx       # Home page
+│   │   │   ├── blogs/         # Blog pages
 │   │   │   ├── pricing/       # Pricing page
-│   │   │   ├── login/         # Login page
-│   │   │   ├── signup/        # Signup page
 │   │   │   ├── dashboard/     # Dashboard
 │   │   │   ├── orders/        # Orders page
+│   │   │   ├── membership/    # Membership/Billing
+│   │   │   ├── contact/       # Contact page
+│   │   │   ├── docs/          # Documentation
+│   │   │   ├── features/      # Features page
+│   │   │   ├── help/          # Help center
+│   │   │   ├── integrations/  # Integrations
+│   │   │   ├── privacy/       # Privacy policy
+│   │   │   ├── terms/         # Terms of service
+│   │   │   ├── cookies/       # Cookie policy
+│   │   │   ├── status/        # Status page
+│   │   │   ├── login/         # Login page
+│   │   │   ├── signup/        # Signup page
 │   │   │   └── profile/       # Profile page
-│   │   └── api/               # API routes
-│   │       ├── auth/          # Authentication API
-│   │       ├── payments/      # Payment API
-│   │       └── orders/        # Orders API
+│   │   ├── admin/             # Admin panel
+│   │   │   └── blogs/         # Blog management
+│   │   ├── api/               # API routes
+│   │   │   ├── auth/          # Authentication API
+│   │   │   ├── blogs/         # Blog API
+│   │   │   ├── payments/      # Payment API
+│   │   │   ├── orders/        # Orders API
+│   │   │   └── admin/         # Admin API
+│   │   ├── sitemap.ts         # Dynamic sitemap
+│   │   └── robots.ts          # Robots.txt
 │   ├── components/            # React components
+│   │   ├── admin/             # Admin components
 │   │   ├── auth/              # Authentication components
+│   │   ├── blogs/             # Blog components
 │   │   ├── layout/            # Layout components
 │   │   ├── pricing/           # Pricing components
+│   │   ├── membership/        # Membership components
 │   │   └── ui/                # UI components
 │   ├── lib/                   # Utilities and services
 │   │   ├── auth/              # Auth configuration
@@ -249,6 +299,51 @@ Magic Links are sent via webhook (if configured) or logged to console in develop
 
 ---
 
+## 📝 Blog & CMS Usage
+
+### Blog System
+
+The blog system provides a complete content management solution with multi-language support.
+
+**Features:**
+- Create, edit, and delete blog posts
+- Draft and published status management
+- Visibility controls (public, private, subscribers)
+- Tag system and categories
+- Featured posts
+- Rich text editor
+- SEO-friendly URLs with slug support
+
+**Access Blog Pages:**
+- Blog list: `/[locale]/blogs`
+- Blog detail: `/[locale]/blogs/[slug]`
+
+### Admin Panel
+
+Access the admin panel with email-based permissions.
+
+**Setup:**
+1. Add admin emails to `.env.local`:
+   ```bash
+   ADMIN_EMAILS=admin@example.com,owner@example.com
+   ```
+
+2. Login with an admin email
+3. Navigate to the admin panel from the user menu
+
+**Admin Features:**
+- Blog management (create, edit, delete)
+- View all posts including drafts
+- Manage blog status and visibility
+- Tag management
+
+**Access Admin Pages:**
+- Blog list: `/admin/blogs`
+- Create blog: `/admin/blogs/new`
+- Edit blog: `/admin/blogs/[id]/edit`
+
+---
+
 ## 🌐 Internationalization
 
 ### Supported Languages
@@ -266,6 +361,7 @@ Magic Links are sent via webhook (if configured) or logged to console in develop
    export const esDictionary = {
      home: { /* ... */ },
      auth: { /* ... */ },
+     blogs: { /* ... */ },
      // ...
    };
    ```
@@ -273,6 +369,30 @@ Magic Links are sent via webhook (if configured) or logged to console in develop
 2. Update `src/i18n/index.ts` to include new language
 
 3. Create route directory: `src/app/[locale]/es/`
+
+---
+
+## 🔍 SEO Features
+
+### Sitemap
+
+The project includes dynamic sitemap generation:
+
+- **Location**: `http://localhost:3000/sitemap.xml`
+- Automatically includes all pages and published blog posts
+- Multi-language support with hreflang attributes
+- Priority and change frequency configuration
+
+### Robots.txt
+
+- **Location**: `http://localhost:3000/robots.txt`
+- Blocks crawlers from admin and private pages
+- References the sitemap URL
+
+**Required Environment Variable:**
+```bash
+NEXT_PUBLIC_BASE_URL=http://localhost:3000  # Required for sitemap
+```
 
 ---
 
@@ -290,6 +410,12 @@ Magic Links are sent via webhook (if configured) or logged to console in develop
 - id, order_id, product_id, quantity, price
 - Supports multiple items per order
 
+### Blogs Table
+- id, author_id, language, title, slug, description
+- content (JSON), tags (JSON), status, visibility
+- featured, metadata, timestamps
+- Supports multi-language blog posts
+
 ---
 
 ## 🧪 Testing
@@ -306,6 +432,9 @@ npx tsx src/lib/orders/test-flow.ts
 ## 📚 Documentation
 
 - [Implementation Summary](./docs/IMPLEMENTATION_SUMMARY.md)
+- [Blog Implementation](./docs/BLOG_IMPLEMENTATION.md)
+- [Admin Features](./docs/ADMIN_FEATURE.md)
+- [Sitemap Implementation](./docs/SITEMAP_IMPLEMENTATION.md)
 - [Order Flow](./docs/ORDER_FLOW.md)
 - [Payment Integration](./docs/PAYMENT_INTEGRATION.md)
 - [Pricing System](./docs/PRICING.md)

@@ -7,13 +7,14 @@ import { eq } from "drizzle-orm";
 // GET /api/blogs/[id] - 获取单个博客
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const result = await db
       .select()
       .from(blogs)
-      .where(eq(blogs.id, params.id))
+      .where(eq(blogs.id, id))
       .limit(1);
 
     if (result.length === 0) {
@@ -39,9 +40,10 @@ export async function GET(
 // PUT /api/blogs/[id] - 更新博客
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const session = await auth.api.getSession({
       headers: request.headers,
     });
@@ -70,7 +72,7 @@ export async function PUT(
     const existingBlog = await db
       .select()
       .from(blogs)
-      .where(eq(blogs.id, params.id))
+      .where(eq(blogs.id, id))
       .limit(1);
 
     if (existingBlog.length === 0) {
@@ -105,7 +107,19 @@ export async function PUT(
     }
 
     // 构建更新数据
-    const updateData: any = {
+    const updateData: Partial<{
+      language: string;
+      title: string;
+      slug: string;
+      description: string | null;
+      content: unknown;
+      tags: unknown;
+      status: string;
+      visibility: string;
+      featured: boolean;
+      publishedAt: Date;
+      updatedAt: Date;
+    }> = {
       updatedAt: new Date(),
     };
 
@@ -129,7 +143,7 @@ export async function PUT(
     const updatedBlog = await db
       .update(blogs)
       .set(updateData)
-      .where(eq(blogs.id, params.id))
+      .where(eq(blogs.id, id))
       .returning();
 
     return NextResponse.json({
@@ -148,9 +162,10 @@ export async function PUT(
 // DELETE /api/blogs/[id] - 删除博客
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const session = await auth.api.getSession({
       headers: request.headers,
     });
@@ -166,7 +181,7 @@ export async function DELETE(
     const existingBlog = await db
       .select()
       .from(blogs)
-      .where(eq(blogs.id, params.id))
+      .where(eq(blogs.id, id))
       .limit(1);
 
     if (existingBlog.length === 0) {
@@ -185,7 +200,7 @@ export async function DELETE(
     }
 
     // 删除博客
-    await db.delete(blogs).where(eq(blogs.id, params.id));
+    await db.delete(blogs).where(eq(blogs.id, id));
 
     return NextResponse.json({
       success: true,

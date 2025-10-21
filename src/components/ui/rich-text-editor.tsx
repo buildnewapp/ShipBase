@@ -11,10 +11,9 @@ const MDEditor = dynamic(
 interface RichTextEditorProps {
   content: string;
   onChange: (content: string) => void;
-  placeholder?: string;
 }
 
-export function RichTextEditor({ content, onChange, placeholder = "开始输入..." }: RichTextEditorProps) {
+export function RichTextEditor({ content, onChange }: RichTextEditorProps) {
   return (
     <div className="min-h-[400px]">
       <MDEditor
@@ -22,7 +21,7 @@ export function RichTextEditor({ content, onChange, placeholder = "开始输入.
         onChange={(value) => onChange(value || "")}
         preview="edit"
         hideToolbar={false}
-        visibleDragBar={false}
+        visibleDragbar={false}
         data-color-mode="light"
       />
     </div>

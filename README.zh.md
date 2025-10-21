@@ -13,6 +13,7 @@
 - 支持 **Google OAuth**、**GitHub OAuth** 和 **Magic Link** 登录
 - 安全 Cookie 会话管理
 - 基于角色的访问控制
+- 基于邮箱的管理后台权限
 
 ### 💳 支付与计费
 - **Creem** 支付网关集成
@@ -20,18 +21,44 @@
 - 年付享受 20% 折扣
 - 完整的订单管理系统
 - 支付回调处理
+- 账单历史和订阅管理
+
+### 📝 博客系统
+- 功能完整的博客系统，支持多语言
+- 管理后台 CMS 内容管理
+- 富文本编辑器支持
+- 标签系统和分类
+- 草稿和发布状态管理
+- 可见性控制（公开、私有、订阅者）
+- 置顶文章支持
+
+### 🎯 管理后台
+- 独立的管理界面
+- 博客管理（创建、编辑、删除）
+- 用户角色管理
+- 内容审核工具
+- 基于邮箱的管理员认证
 
 ### 🌍 国际化
 - 多语言支持（英文、中文、日文）
 - 多货币支持（美元、人民币、日元）
 - 本地化价格和内容
 - 语言切换组件
+- Next.js App Router 国际化路由
+
+### 🔍 SEO 与发现
+- 动态 sitemap 生成
+- Robots.txt 配置
+- 多语言 hreflang 支持
+- 优化的 meta 标签和 Open Graph
+- 博客文章索引
 
 ### 🎨 现代化界面
 - **Tailwind CSS 4** 样式系统
 - 响应式设计
 - 暗色模式支持
 - 无障碍组件
+- Markdown 编辑器集成
 
 ### 🗄️ 数据库
 - **Drizzle ORM** 类型安全的数据库操作
@@ -97,6 +124,9 @@
    NEXT_PUBLIC_WEB_URL=http://localhost:3000
    NEXT_PUBLIC_PROJECT_NAME=ShipBase
    PAY_PROVIDER=creem
+
+   # Sitemap 和 SEO
+   NEXT_PUBLIC_BASE_URL=http://localhost:3000  # sitemap 必需
    ```
 
 4. **设置数据库**
@@ -138,20 +168,40 @@ shipbase/
 │   ├── app/                    # Next.js 应用路由
 │   │   ├── [locale]/          # 国际化路由
 │   │   │   ├── page.tsx       # 首页
+│   │   │   ├── blogs/         # 博客页面
 │   │   │   ├── pricing/       # 定价页面
-│   │   │   ├── login/         # 登录页面
-│   │   │   ├── signup/        # 注册页面
 │   │   │   ├── dashboard/     # 仪表板
 │   │   │   ├── orders/        # 订单页面
+│   │   │   ├── membership/    # 会员/账单
+│   │   │   ├── contact/       # 联系页面
+│   │   │   ├── docs/          # 文档
+│   │   │   ├── features/      # 功能页面
+│   │   │   ├── help/          # 帮助中心
+│   │   │   ├── integrations/  # 集成
+│   │   │   ├── privacy/       # 隐私政策
+│   │   │   ├── terms/         # 服务条款
+│   │   │   ├── cookies/       # Cookie 政策
+│   │   │   ├── status/        # 状态页面
+│   │   │   ├── login/         # 登录页面
+│   │   │   ├── signup/        # 注册页面
 │   │   │   └── profile/       # 个人资料页面
-│   │   └── api/               # API 路由
-│   │       ├── auth/          # 认证 API
-│   │       ├── payments/      # 支付 API
-│   │       └── orders/        # 订单 API
+│   │   ├── admin/             # 管理后台
+│   │   │   └── blogs/          # 博客管理
+│   │   ├── api/               # API 路由
+│   │   │   ├── auth/          # 认证 API
+│   │   │   ├── blogs/         # 博客 API
+│   │   │   ├── payments/      # 支付 API
+│   │   │   ├── orders/        # 订单 API
+│   │   │   └── admin/         # 管理 API
+│   │   ├── sitemap.ts         # 动态 sitemap
+│   │   └── robots.ts          # Robots.txt
 │   ├── components/            # React 组件
+│   │   ├── admin/             # 管理组件
 │   │   ├── auth/              # 认证组件
+│   │   ├── blogs/             # 博客组件
 │   │   ├── layout/            # 布局组件
 │   │   ├── pricing/           # 定价组件
+│   │   ├── membership/        # 会员组件
 │   │   └── ui/                # UI 组件
 │   ├── lib/                   # 工具和服务
 │   │   ├── auth/              # 认证配置
@@ -246,6 +296,51 @@ shipbase/
 
 ---
 
+## 📝 博客与 CMS 使用
+
+### 博客系统
+
+博客系统提供完整的内容管理解决方案，支持多语言。
+
+**功能特性：**
+- 创建、编辑和删除博客文章
+- 草稿和发布状态管理
+- 可见性控制（公开、私有、订阅者）
+- 标签系统和分类
+- 置顶文章
+- 富文本编辑器
+- SEO 友好的 URL（支持 slug）
+
+**访问博客页面：**
+- 博客列表：`/[locale]/blogs`
+- 博客详情：`/[locale]/blogs/[slug]`
+
+### 管理后台
+
+通过基于邮箱的权限访问管理后台。
+
+**设置步骤：**
+1. 在 `.env.local` 中添加管理员邮箱：
+   ```bash
+   ADMIN_EMAILS=admin@example.com,owner@example.com
+   ```
+
+2. 使用管理员邮箱登录
+3. 从用户菜单进入管理后台
+
+**管理功能：**
+- 博客管理（创建、编辑、删除）
+- 查看所有文章（包括草稿）
+- 管理博客状态和可见性
+- 标签管理
+
+**访问管理页面：**
+- 博客列表：`/admin/blogs`
+- 创建博客：`/admin/blogs/new`
+- 编辑博客：`/admin/blogs/[id]/edit`
+
+---
+
 ## 🌐 国际化
 
 ### 支持的语言
@@ -263,6 +358,7 @@ shipbase/
    export const esDictionary = {
      home: { /* ... */ },
      auth: { /* ... */ },
+     blogs: { /* ... */ },
      // ...
    };
    ```
@@ -270,6 +366,30 @@ shipbase/
 2. 更新 `src/i18n/index.ts` 以包含新语言
 
 3. 创建路由目录: `src/app/[locale]/es/`
+
+---
+
+## 🔍 SEO 功能
+
+### Sitemap
+
+项目包含动态 sitemap 监督管理：
+
+- **位置**: `http://localhost:3000/sitemap.xml`
+- 自动包含所有页面和已发布的博客文章
+- 多语言支持，包含 hreflang 属性
+- 优先级和更新频率配置
+
+### Robots.txt
+
+- **位置**: `http://localhost:3000/robots.txt`
+- 阻止爬虫访问管理后台和私有页面
+- 引用 sitemap URL
+
+**必需的环境变量：**
+```bash
+NEXT_PUBLIC_BASE_URL=http://localhost:3000  # sitemap 必需
+```
 
 ---
 
@@ -287,6 +407,12 @@ shipbase/
 - id, order_id, product_id, quantity, price
 - 支持一个订单包含多个商品
 
+### 博客表
+- id, author_id, language, title, slug, description
+- content (JSON), tags (JSON), status, visibility
+- featured, metadata, timestamps
+- 支持多语言博客文章
+
 ---
 
 ## 🧪 测试
@@ -303,6 +429,9 @@ npx tsx src/lib/orders/test-flow.ts
 ## 📚 文档
 
 - [实现总结](./docs/IMPLEMENTATION_SUMMARY.md)
+- [博客实现](./docs/BLOG_IMPLEMENTATION.md)
+- [管理功能](./docs/ADMIN_FEATURE.md)
+- [Sitemap 实现](./docs/SITEMAP_IMPLEMENTATION.md)
 - [订单流程](./docs/ORDER_FLOW.md)
 - [支付集成](./docs/PAYMENT_INTEGRATION.md)
 - [定价系统](./docs/PRICING.md)

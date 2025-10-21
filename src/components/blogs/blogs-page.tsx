@@ -9,17 +9,26 @@ import { useRouter } from "next/navigation";
 import type { AppDictionary } from "@/i18n";
 import { format } from "date-fns";
 
+// 安全地将 tags 转换为字符串数组
+function getTags(tags: unknown): string[] {
+  if (!tags) return [];
+  if (Array.isArray(tags)) {
+    return tags.filter((tag): tag is string => typeof tag === "string");
+  }
+  return [];
+}
+
 interface Blog {
   id: string;
   title: string;
   slug: string;
   description: string;
-  content: any;
-  tags: string[];
+  content: unknown;
+  tags: unknown;
   featured: boolean;
   visibility: string;
-  createdAt: string;
-  publishedAt: string | null;
+  createdAt: Date;
+  publishedAt: Date | null;
   language: string;
 }
 
@@ -66,18 +75,21 @@ export function BlogsPage({ dictionary, initialBlogs = [] }: BlogsPageProps) {
     // 搜索过滤
     if (searchQuery) {
       filtered = filtered.filter(
-        (blog) =>
-          blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          blog.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          blog.tags?.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+        (blog) => {
+          const tags = getTags(blog.tags);
+          return blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            blog.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+        }
       );
     }
 
     // 标签过滤
     if (activeFilter !== "all") {
-      filtered = filtered.filter((blog) =>
-        blog.tags?.some((tag) => tag.toLowerCase().includes(activeFilter.toLowerCase()))
-      );
+      filtered = filtered.filter((blog) => {
+        const tags = getTags(blog.tags);
+        return tags.some((tag) => tag.toLowerCase().includes(activeFilter.toLowerCase()));
+      });
     }
 
     setBlogPosts(filtered);
@@ -100,10 +112,10 @@ export function BlogsPage({ dictionary, initialBlogs = [] }: BlogsPageProps) {
     return gradients[index % gradients.length];
   };
 
-  const formatDate = (date: string | null) => {
+  const formatDate = (date: Date | null) => {
     if (!date) return "";
     try {
-      return format(new Date(date), "MMM dd, yyyy");
+      return format(date, "MMM dd, yyyy");
     } catch {
       return "";
     }
@@ -202,9 +214,9 @@ export function BlogsPage({ dictionary, initialBlogs = [] }: BlogsPageProps) {
                     </p>
                     
                     {/* Tags */}
-                    {post.tags && post.tags.length > 0 && (
+                    {getTags(post.tags).length > 0 && (
                       <div className="mb-4 flex flex-wrap gap-2">
-                        {post.tags.slice(0, 3).map((tag) => (
+                        {getTags(post.tags).slice(0, 3).map((tag) => (
                           <Badge key={tag} variant="outline" className="text-xs">
                             {tag}
                           </Badge>

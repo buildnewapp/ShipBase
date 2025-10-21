@@ -6,34 +6,40 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Tag } from "lucide-react";
 import { useRouter } from "next/navigation";
 import ReactMarkdown from "react-markdown";
-import type { AppDictionary } from "@/i18n";
 import { format } from "date-fns";
+
+// 安全地将 tags 转换为字符串数组
+function getTags(tags: unknown): string[] {
+  if (!tags) return [];
+  if (Array.isArray(tags)) {
+    return tags.filter((tag): tag is string => typeof tag === "string");
+  }
+  return [];
+}
 
 interface Blog {
   id: string;
   title: string;
   slug: string;
   description: string;
-  content: any;
-  tags: string[] | null;
+  content: unknown;
+  tags: unknown;
   language: string;
-  createdAt: string;
-  publishedAt: string | null;
+  createdAt: Date;
+  publishedAt: Date | null;
 }
 
 interface BlogDetailProps {
-  dictionary: AppDictionary;
   blog: Blog;
 }
 
-export function BlogDetail({ dictionary, blog }: BlogDetailProps) {
+export function BlogDetail({ blog }: BlogDetailProps) {
   const router = useRouter();
-  const { blogs: blogDict } = dictionary.pages;
 
-  const formatDate = (date: string | null) => {
+  const formatDate = (date: Date | null) => {
     if (!date) return "";
     try {
-      return format(new Date(date), "MMMM dd, yyyy");
+      return format(date, "MMMM dd, yyyy");
     } catch {
       return "";
     }
@@ -67,11 +73,11 @@ export function BlogDetail({ dictionary, blog }: BlogDetailProps) {
               <Calendar className="h-4 w-4" />
               <span>{formatDate(blog.publishedAt || blog.createdAt)}</span>
             </div>
-            {blog.tags && blog.tags.length > 0 && (
+            {getTags(blog.tags).length > 0 && (
               <div className="flex items-center gap-2">
                 <Tag className="h-4 w-4" />
                 <div className="flex flex-wrap gap-2">
-                  {blog.tags.map((tag, index) => (
+                  {getTags(blog.tags).map((tag, index) => (
                     <Badge key={index} variant="secondary">
                       {tag}
                     </Badge>

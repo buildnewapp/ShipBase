@@ -76,7 +76,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
   
   // 获取所有已发布的博客文章
-  let blogEntries: MetadataRoute.Sitemap = [];
+  const blogEntries: MetadataRoute.Sitemap = [];
   
   try {
     const publishedBlogs = await db
