@@ -312,7 +312,7 @@ export const zhDictionary: AppDictionary = {
     termsOfService: "服务条款",
     cookiePolicy: "Cookie政策",
     copyright: "© 2024 ShipBase. 保留所有权利。",
-    madeWithLove: "由 ❤️ 在中国制造",
+    madeWithLove: "由 ❤️ 制造",
   },
   pages: {
     features: {

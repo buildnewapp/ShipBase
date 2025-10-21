@@ -69,9 +69,9 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="h-8 px-2">
+        <Button variant="ghost" size="sm" className="h-8 px-2 md:w-8 md:p-0">
           <Languages className="h-4 w-4" />
-          <span className="ml-1">{getLanguageLabel(currentLocale)}</span>
+          <span className="ml-1 md:hidden">{getLanguageLabel(currentLocale)}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-32">

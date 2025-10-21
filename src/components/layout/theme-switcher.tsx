@@ -85,9 +85,9 @@ export function ThemeSwitcher({ dictionary }: ThemeSwitcherProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="h-8 px-2">
+        <Button variant="ghost" size="sm" className="h-8 px-2 md:w-8 md:p-0">
           {getThemeIcon(theme)}
-          <span className="ml-1">{getThemeLabel(theme)}</span>
+          <span className="ml-1 md:hidden">{getThemeLabel(theme)}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-32">

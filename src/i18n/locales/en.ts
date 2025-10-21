@@ -312,7 +312,7 @@ export const enDictionary: AppDictionary = {
     termsOfService: "Terms of Service",
     cookiePolicy: "Cookie Policy",
     copyright: "© 2024 ShipBase. All rights reserved.",
-    madeWithLove: "Made with ❤️ in China",
+    madeWithLove: "Made with ❤️",
   },
   pages: {
     features: {

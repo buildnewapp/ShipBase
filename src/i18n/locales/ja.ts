@@ -312,7 +312,7 @@ export const jaDictionary: AppDictionary = {
     termsOfService: "利用規約",
     cookiePolicy: "Cookie ポリシー",
     copyright: "© 2024 ShipBase. 全著作権所有。",
-    madeWithLove: "❤️ で日本で作られました",
+    madeWithLove: "❤️ で作られました",
   },
   pages: {
     features: {

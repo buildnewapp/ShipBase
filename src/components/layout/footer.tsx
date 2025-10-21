@@ -7,6 +7,8 @@ interface FooterProps {
 }
 
 export function Footer({ dictionary, currentLocale }: FooterProps) {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="bg-neutral-50 dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -167,7 +169,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
         <div className="mt-12 border-t border-neutral-200 dark:border-neutral-800 pt-8">
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <p className="text-sm text-neutral-600 dark:text-neutral-300">
-              {dictionary.copyright}
+              {dictionary.copyright.replace('2024', currentYear.toString())}
             </p>
             <div className="flex items-center space-x-6">
               <span className="text-sm text-neutral-600 dark:text-neutral-300">
