@@ -920,6 +920,73 @@ export interface DashboardPageDictionary extends PageDictionary {
   welcomeMessage: string;
 }
 
+export interface BlogsPageDictionary extends PageDictionary {
+  filters: {
+    all: string;
+    growthHacking: string;
+    marketing: string;
+    nextjsTechniques: string;
+  };
+  endOfPosts: string;
+  readMore: string;
+  postedOn: string;
+}
+
+export interface AdminBlogEditDictionary {
+  title: string;
+  subtitle: string;
+  form: {
+    language: string;
+    title: string;
+    slug: string;
+    description: string;
+    tags: string;
+    status: string;
+    visibility: string;
+    featured: string;
+    featuredDescription: string;
+    generateSlug: string;
+    slugHelper: string;
+    titleHelper: string;
+    descriptionHelper: string;
+  };
+  actions: {
+    cancel: string;
+    update: string;
+    create: string;
+  };
+  status: {
+    draft: string;
+    published: string;
+  };
+  visibility: {
+    public: string;
+    private: string;
+    subscribers: string;
+  };
+}
+
+export interface AdminBlogsDictionary extends PageDictionary {
+  list: {
+    title: string;
+    subtitle: string;
+    noBlogs: string;
+    createNew: string;
+  };
+  table: {
+    title: string;
+    author: string;
+    status: string;
+    visibility: string;
+    featured: string;
+    createdAt: string;
+    actions: string;
+    edit: string;
+    delete: string;
+  };
+  edit: AdminBlogEditDictionary;
+}
+
 export interface PagesDictionary {
   features: FeaturesPageDictionary;
   pricing: PricingPageDictionary;
@@ -937,6 +1004,8 @@ export interface PagesDictionary {
   membership: MembershipPageDictionary;
   orders: OrdersPageDictionary;
   dashboard: DashboardPageDictionary;
+  blogs: BlogsPageDictionary;
+  adminBlogs: AdminBlogsDictionary;
 }
 
 export interface AppDictionary {
