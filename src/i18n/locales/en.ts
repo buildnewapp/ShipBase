@@ -289,6 +289,7 @@ export const enDictionary: AppDictionary = {
     darkTheme: "Dark",
     systemTheme: "System",
     userMenu: {
+      dashboard: "Dashboard",
       profile: "Profile",
       membership: "Membership",
       orders: "Orders",
@@ -1669,6 +1670,84 @@ export const enDictionary: AppDictionary = {
         showing: "Showing",
         of: "of",
         results: "results",
+      },
+    },
+    dashboard: {
+      title: "Dashboard",
+      subtitle: "Overview",
+      description: "Quick access to your account information and actions",
+      welcomeMessage: "Welcome back!",
+      stats: {
+        title: "Statistics Overview",
+        subtitle: "Your account data",
+        cards: [
+          {
+            title: "Total Orders",
+            value: "0",
+            change: "0% from last month",
+            trend: "neutral",
+          },
+          {
+            title: "Total Revenue",
+            value: "$0",
+            change: "0% from last month",
+            trend: "neutral",
+          },
+          {
+            title: "Pending Orders",
+            value: "0",
+            change: "View details",
+            trend: "neutral",
+          },
+          {
+            title: "Account Status",
+            value: "Active",
+            change: "Normal operation",
+            trend: "up",
+          },
+        ],
+      },
+      recentActivity: {
+        title: "Recent Activity",
+        subtitle: "Your account activity",
+        noActivity: "No activity records",
+        activities: [
+          {
+            action: "Account created",
+            time: "Just now",
+            icon: "UserPlus",
+          },
+        ],
+      },
+      quickActions: {
+        title: "Quick Actions",
+        subtitle: "Common features",
+        actions: [
+          {
+            title: "Create Order",
+            description: "Create a new order now",
+            icon: "ShoppingCart",
+            href: "/pricing",
+          },
+          {
+            title: "View Orders",
+            description: "Manage your orders",
+            icon: "Package",
+            href: "/orders",
+          },
+          {
+            title: "Account Settings",
+            description: "Edit your profile",
+            icon: "Settings",
+            href: "/profile",
+          },
+          {
+            title: "View Membership",
+            description: "Upgrade your plan",
+            icon: "Crown",
+            href: "/membership",
+          },
+        ],
       },
     },
   },

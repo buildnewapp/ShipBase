@@ -289,6 +289,7 @@ export const jaDictionary: AppDictionary = {
     darkTheme: "ダーク",
     systemTheme: "システム",
     userMenu: {
+      dashboard: "ダッシュボード",
       profile: "プロフィール",
       membership: "メンバーシップ",
       orders: "注文センター",
@@ -1669,6 +1670,84 @@ export const jaDictionary: AppDictionary = {
         showing: "表示中",
         of: "の",
         results: "件の結果",
+      },
+    },
+    dashboard: {
+      title: "ダッシュボード",
+      subtitle: "概要",
+      description: "アカウント情報と操作へのクイックアクセス",
+      welcomeMessage: "おかえりなさい！",
+      stats: {
+        title: "統計概要",
+        subtitle: "アカウントデータ",
+        cards: [
+          {
+            title: "総注文数",
+            value: "0",
+            change: "先月から0%",
+            trend: "neutral",
+          },
+          {
+            title: "総収益",
+            value: "¥0",
+            change: "先月から0%",
+            trend: "neutral",
+          },
+          {
+            title: "保留中の注文",
+            value: "0",
+            change: "詳細を見る",
+            trend: "neutral",
+          },
+          {
+            title: "アカウントステータス",
+            value: "アクティブ",
+            change: "正常動作",
+            trend: "up",
+          },
+        ],
+      },
+      recentActivity: {
+        title: "最近のアクティビティ",
+        subtitle: "アカウントのアクティビティ",
+        noActivity: "アクティビティ記録なし",
+        activities: [
+          {
+            action: "アカウント作成済み",
+            time: "たった今",
+            icon: "UserPlus",
+          },
+        ],
+      },
+      quickActions: {
+        title: "クイックアクション",
+        subtitle: "よく使う機能",
+        actions: [
+          {
+            title: "注文を作成",
+            description: "新しい注文を今すぐ作成",
+            icon: "ShoppingCart",
+            href: "/pricing",
+          },
+          {
+            title: "注文を表示",
+            description: "注文を管理",
+            icon: "Package",
+            href: "/orders",
+          },
+          {
+            title: "アカウント設定",
+            description: "プロフィールを編集",
+            icon: "Settings",
+            href: "/profile",
+          },
+          {
+            title: "メンバーシップを表示",
+            description: "プランをアップグレード",
+            icon: "Crown",
+            href: "/membership",
+          },
+        ],
       },
     },
   },

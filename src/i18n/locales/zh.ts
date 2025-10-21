@@ -289,6 +289,7 @@ export const zhDictionary: AppDictionary = {
     darkTheme: "深色",
     systemTheme: "跟随系统",
     userMenu: {
+      dashboard: "仪表板",
       profile: "用户信息",
       membership: "会员中心",
       orders: "订单中心",
@@ -1669,6 +1670,84 @@ export const zhDictionary: AppDictionary = {
         showing: "显示",
         of: "共",
         results: "条结果",
+      },
+    },
+    dashboard: {
+      title: "仪表板",
+      subtitle: "概览",
+      description: "快速访问您的账户信息和操作",
+      welcomeMessage: "欢迎回来！",
+      stats: {
+        title: "统计概览",
+        subtitle: "您的账户数据",
+        cards: [
+          {
+            title: "总订单",
+            value: "0",
+            change: "0% 与上月相比",
+            trend: "neutral",
+          },
+          {
+            title: "总收入",
+            value: "¥0",
+            change: "0% 与上月相比",
+            trend: "neutral",
+          },
+          {
+            title: "待处理订单",
+            value: "0",
+            change: "查看详情",
+            trend: "neutral",
+          },
+          {
+            title: "账户状态",
+            value: "活跃",
+            change: "正常使用",
+            trend: "up",
+          },
+        ],
+      },
+      recentActivity: {
+        title: "最近活动",
+        subtitle: "您的账户动态",
+        noActivity: "暂无活动记录",
+        activities: [
+          {
+            action: "账户已创建",
+            time: "刚刚",
+            icon: "UserPlus",
+          },
+        ],
+      },
+      quickActions: {
+        title: "快速操作",
+        subtitle: "常用功能入口",
+        actions: [
+          {
+            title: "创建订单",
+            description: "立即创建新订单",
+            icon: "ShoppingCart",
+            href: "/pricing",
+          },
+          {
+            title: "查看订单",
+            description: "管理您的订单",
+            icon: "Package",
+            href: "/orders",
+          },
+          {
+            title: "账户设置",
+            description: "编辑个人信息",
+            icon: "Settings",
+            href: "/profile",
+          },
+          {
+            title: "查看会员",
+            description: "升级您的计划",
+            icon: "Crown",
+            href: "/membership",
+          },
+        ],
       },
     },
   },

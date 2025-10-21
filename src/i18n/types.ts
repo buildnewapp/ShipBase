@@ -152,6 +152,7 @@ export interface HeaderDictionary {
   darkTheme: string;
   systemTheme: string;
   userMenu: {
+    dashboard: string;
     profile: string;
     membership: string;
     orders: string;
@@ -815,6 +816,46 @@ export interface OrdersPageDictionary extends PageDictionary {
   pagination: OrdersPaginationDictionary;
 }
 
+export interface DashboardStatCard {
+  title: string;
+  value: string;
+  change: string;
+  trend: "up" | "down" | "neutral";
+}
+
+export interface DashboardRecentActivity {
+  action: string;
+  time: string;
+  icon: string;
+}
+
+export interface DashboardQuickAction {
+  title: string;
+  description: string;
+  icon: string;
+  href: string;
+}
+
+export interface DashboardPageDictionary extends PageDictionary {
+  stats: {
+    title: string;
+    subtitle: string;
+    cards: DashboardStatCard[];
+  };
+  recentActivity: {
+    title: string;
+    subtitle: string;
+    noActivity: string;
+    activities: DashboardRecentActivity[];
+  };
+  quickActions: {
+    title: string;
+    subtitle: string;
+    actions: DashboardQuickAction[];
+  };
+  welcomeMessage: string;
+}
+
 export interface PagesDictionary {
   features: FeaturesPageDictionary;
   pricing: PricingPageDictionary;
@@ -831,6 +872,7 @@ export interface PagesDictionary {
   profile: ProfilePageDictionary;
   membership: MembershipPageDictionary;
   orders: OrdersPageDictionary;
+  dashboard: DashboardPageDictionary;
 }
 
 export interface AppDictionary {
