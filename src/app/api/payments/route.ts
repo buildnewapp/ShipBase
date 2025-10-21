@@ -146,8 +146,14 @@ async function creemCheckout({
     throw new Error("invalid product_id mapping");
   }
 
-    const success_url = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/payment/success`;
-    const cancel_url = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/payment/failed`;
+  const baseUrl = process.env.NEXT_PUBLIC_WEB_URL || "http://localhost:3000";
+  const success_url = `${baseUrl}/${locale}/payment/success`;
+  
+  // 确保所有必填字段都有值
+  if (!providerProductId || !requestId || !customerEmail || !success_url) {
+    throw new Error("Missing required fields for checkout");
+  }
+  
   const createCheckoutRequest = {
     productId: providerProductId,
     requestId,
@@ -155,13 +161,12 @@ async function creemCheckout({
       email: customerEmail,
     },
     successUrl: success_url,
-    cancelUrl: cancel_url,
     metadata: {
       locale,
       ...(metadata || {}),
     },
   }
-  console.log('createCheckoutRequest', createCheckoutRequest)
+  console.log('createCheckoutRequest', JSON.stringify(createCheckoutRequest, null, 2))
   const result = await client.creem().createCheckout({
     xApiKey: client.apiKey(),
     createCheckoutRequest: createCheckoutRequest
