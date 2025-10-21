@@ -703,16 +703,6 @@ export interface ProfilePageDictionary extends PageDictionary {
   noNameSet: string;
 }
 
-export interface MembershipPlan {
-  id: string;
-  name: string;
-  price: number;
-  period: string;
-  description: string;
-  features: string[];
-  current: boolean;
-}
-
 export interface OrderStatus {
   pending: string;
   paid: string;
@@ -763,6 +753,56 @@ export interface OrdersPaginationDictionary {
   showing: string;
   of: string;
   results: string;
+}
+
+export interface MembershipPlan {
+  id: string;
+  name: string;
+  price: number;
+  period: string;
+  description: string;
+  features: string[];
+  current?: boolean;
+}
+
+export interface MembershipCurrentPlan {
+  title: string;
+  description: string;
+  freeVersion: string;
+  paidVersion: string;
+}
+
+export interface MembershipUsage {
+  apiCalls: string;
+  projectCount: string;
+  supportLevel: string;
+  remainingThisMonth: string;
+  maxLimit: string;
+  responseTime: string;
+  priority: string;
+  standard: string;
+}
+
+export interface MembershipUpgradePlan {
+  title: string;
+  currentPlan: string;
+  freeUse: string;
+  upgradePlan: string;
+}
+
+export interface MembershipBillingHistory {
+  title: string;
+  description: string;
+  noRecords: string;
+  upgradeMessage: string;
+}
+
+export interface MembershipPageDictionary extends PageDictionary {
+  currentPlan: MembershipCurrentPlan;
+  usage: MembershipUsage;
+  upgradePlan: MembershipUpgradePlan;
+  billingHistory: MembershipBillingHistory;
+  plans: MembershipPlan[];
 }
 
 export interface OrdersPageDictionary extends PageDictionary {

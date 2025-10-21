@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Star, Users, Zap, Shield, Rocket, Play, ChevronDown, ExternalLink } from "lucide-react";
 import type { AppDictionary } from "@/i18n";
 import { useState } from "react";
+import Image from "next/image";
 
 interface HomePageProps {
   dictionary: AppDictionary;
@@ -107,10 +108,12 @@ export function HomePage({ dictionary }: HomePageProps) {
             {home.showcaseItems.map((item, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 relative">
-                  <img 
+                  <Image 
                     src={item.image} 
                     alt={item.name}
-                    className="w-full h-full object-cover"
+                    fill
+                    loader={({ src }) => src}
+                    className="object-cover"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                     }}

@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { PageTemplate } from "@/components/pages/page-template";
-import { getDictionary, locales } from "@/i18n";
+import { locales } from "@/i18n";
+import Link from "next/link";
 
 interface PaymentFailedPageProps {
   params: Promise<{
@@ -10,15 +10,12 @@ interface PaymentFailedPageProps {
 
 export default async function PaymentFailedPage({ params }: PaymentFailedPageProps) {
   const resolvedParams = await params;
-  const localeParam = resolvedParams.locale?.[0];
   const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   
   if (!normalizedLocale) {
     notFound();
   }
-
-  const dictionary = getDictionary(normalizedLocale);
   
   // 创建支付失败页面的字典
   const paymentFailedDictionary = {
@@ -58,7 +55,22 @@ export default async function PaymentFailedPage({ params }: PaymentFailedPagePro
   return <PaymentFailedContent dictionary={paymentFailedDictionary} />;
 }
 
-function PaymentFailedContent({ dictionary }: { dictionary: any }) {
+interface PaymentFailedDictionary {
+  title: string;
+  subtitle: string;
+  description: string;
+  actions: {
+    tryAgain: string;
+    contactSupport: string;
+    goBack: string;
+  };
+  troubleshooting: {
+    title: string;
+    items: string[];
+  };
+}
+
+function PaymentFailedContent({ dictionary }: { dictionary: PaymentFailedDictionary }) {
   // 从字典中推断语言
   const locale = dictionary.title === "支付失败" ? "zh" : dictionary.title === "支払い失敗" ? "ja" : "en";
   
@@ -112,24 +124,24 @@ function PaymentFailedContent({ dictionary }: { dictionary: any }) {
               {locale === "zh" ? "下一步操作" : locale === "ja" ? "次のステップ" : "Next Steps"}
             </h2>
             <div className="space-y-4">
-              <a
+              <Link
                 href="/pricing"
                 className="block w-full rounded-lg bg-blue-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 {dictionary.actions.tryAgain}
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="block w-full rounded-lg border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3 text-center text-sm font-semibold text-neutral-900 dark:text-neutral-100 shadow-sm hover:bg-neutral-50 dark:hover:bg-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 {dictionary.actions.contactSupport}
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/pricing"
                 className="block w-full rounded-lg border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3 text-center text-sm font-semibold text-neutral-900 dark:text-neutral-100 shadow-sm hover:bg-neutral-50 dark:hover:bg-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 {dictionary.actions.goBack}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -144,7 +156,6 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PaymentFailedPageProps) {
   const resolvedParams = await params;
-  const localeParam = resolvedParams.locale?.[0];
   const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   

@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { User, Crown, LogOut, ShoppingBag } from "lucide-react";
 import { authClient } from "@/lib/auth/client";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -46,9 +47,11 @@ export function UserMenu({ dictionary, locale }: UserMenuProps) {
   const getUserAvatar = () => {
     if (user?.image) {
       return (
-        <img
+        <Image
           src={user.image}
           alt={user.name || user.email || "User"}
+          width={32}
+          height={32}
           className="h-8 w-8 rounded-full object-cover"
         />
       );

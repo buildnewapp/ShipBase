@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { User, Mail, Calendar, Shield } from "lucide-react";
 import { getDictionary } from "@/i18n";
 import { type Locale } from "@/i18n/types";
+import Image from "next/image";
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
   const dictionary = getDictionary(params.locale);
@@ -56,9 +57,11 @@ export default async function ProfilePage({ params }: { params: { locale: Locale
               <div className="flex items-center gap-3">
                 <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
                   {user.image ? (
-                    <img
+                    <Image
                       src={user.image}
                       alt={user.name || user.email || "User"}
+                      width={48}
+                      height={48}
                       className="h-12 w-12 rounded-full object-cover"
                     />
                   ) : (

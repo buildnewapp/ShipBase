@@ -2,6 +2,38 @@ import { NextRequest, NextResponse } from "next/server";
 import { createHmac } from "crypto";
 import { OrderService } from "@/lib/orders/service";
 
+// Creem 事件类型定义
+interface CreemEvent {
+  eventType: string;
+  data: unknown;
+}
+
+interface CreemCustomer {
+  email?: string;
+}
+
+interface CreemProduct {
+  id?: string;
+}
+
+interface CreemCheckoutData {
+  requestId: string;
+  customer?: CreemCustomer;
+  product?: CreemProduct;
+  amount?: number;
+  currency?: string;
+  metadata?: Record<string, unknown>;
+  reason?: string;
+}
+
+interface CreemSubscriptionData {
+  subscriptionId: string;
+  customer?: CreemCustomer;
+  product?: CreemProduct;
+  metadata?: Record<string, unknown>;
+  reason?: string;
+}
+
 // Creem 支付回调处理
 export async function POST(request: NextRequest) {
   try {
@@ -49,26 +81,26 @@ export async function POST(request: NextRequest) {
 }
 
 // 处理 Creem 事件
-async function handleCreemEvent(event: any) {
+async function handleCreemEvent(event: CreemEvent) {
   const { eventType, data } = event;
   
   console.log(`处理 Creem 事件: ${eventType}`, data);
 
   switch (eventType) {
     case 'checkout.completed':
-      return await handleCheckoutCompleted(data);
+      return await handleCheckoutCompleted(data as CreemCheckoutData);
     
     case 'checkout.failed':
-      return await handleCheckoutFailed(data);
+      return await handleCheckoutFailed(data as CreemCheckoutData);
     
     case 'subscription.active':
-      return await handleSubscriptionActive(data);
+      return await handleSubscriptionActive(data as CreemSubscriptionData);
     
     case 'subscription.cancelled':
-      return await handleSubscriptionCancelled(data);
+      return await handleSubscriptionCancelled(data as CreemSubscriptionData);
     
     case 'subscription.expired':
-      return await handleSubscriptionExpired(data);
+      return await handleSubscriptionExpired(data as CreemSubscriptionData);
     
     default:
       console.log(`未处理的事件类型：${eventType}`);
@@ -77,7 +109,7 @@ async function handleCreemEvent(event: any) {
 }
 
 // 处理一次性支付完成
-async function handleCheckoutCompleted(data: any) {
+async function handleCheckoutCompleted(data: CreemCheckoutData) {
   console.log('处理一次性支付完成事件:', data);
   
   const { 
@@ -129,7 +161,7 @@ async function handleCheckoutCompleted(data: any) {
 }
 
 // 处理支付失败
-async function handleCheckoutFailed(data: any) {
+async function handleCheckoutFailed(data: CreemCheckoutData) {
   console.log('处理支付失败事件:', data);
   
   const { 
@@ -176,7 +208,7 @@ async function handleCheckoutFailed(data: any) {
 }
 
 // 处理订阅激活
-async function handleSubscriptionActive(data: any) {
+async function handleSubscriptionActive(data: CreemSubscriptionData) {
   console.log('处理订阅激活事件:', data);
   
   const { 
@@ -204,7 +236,7 @@ async function handleSubscriptionActive(data: any) {
 }
 
 // 处理订阅取消
-async function handleSubscriptionCancelled(data: any) {
+async function handleSubscriptionCancelled(data: CreemSubscriptionData) {
   console.log('处理订阅取消事件:', data);
   
   const { 
@@ -231,7 +263,7 @@ async function handleSubscriptionCancelled(data: any) {
 }
 
 // 处理订阅过期
-async function handleSubscriptionExpired(data: any) {
+async function handleSubscriptionExpired(data: CreemSubscriptionData) {
   console.log('处理订阅过期事件:', data);
   
   const { 

@@ -84,7 +84,13 @@ export async function POST(req: NextRequest) {
       amount: pricing.price,
     });
 
-    const param : any = {
+    const param: {
+      productKey: string;
+      locale: string;
+      requestId: string;
+      customerEmail: string;
+      metadata: Record<string, string>;
+    } = {
       productKey: product_id,
       locale,
       requestId,
@@ -101,9 +107,10 @@ export async function POST(req: NextRequest) {
     const result = await creemCheckout(param);
 
     return respData(result);
-  } catch (e:any) {
+  } catch (e: unknown) {
     console.log("checkout failed: ", e);
-    return respErr("checkout failed: " + (e?.message || String(e)));
+    const errorMessage = e instanceof Error ? e.message : String(e);
+    return respErr("checkout failed: " + errorMessage);
   }
 }
 
@@ -123,9 +130,14 @@ async function creemCheckout({
 }) {
   const client = newCreemClient();
 
-  let products = (process.env.CREEM_PRODUCTS as any) || {};
-  if (typeof products === "string") {
-    products = JSON.parse(products);
+  let products: Record<string, string> = {};
+  const envProducts = process.env.CREEM_PRODUCTS;
+  if (envProducts) {
+    if (typeof envProducts === "string") {
+      products = JSON.parse(envProducts) as Record<string, string>;
+    } else {
+      products = envProducts;
+    }
   }
   console.log("creem products: ", products);
 

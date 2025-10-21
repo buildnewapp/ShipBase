@@ -1,13 +1,25 @@
 import { Metadata } from "next";
-import { getDictionary } from "@/i18n";
+import { getDictionary, locales } from "@/i18n";
 import { OrdersPage } from "@/components/orders/orders-page";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const dict = await getDictionary(params.locale);
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
+  const normalizedLocale = locales.find((l) => l === locale);
+  
+  if (!normalizedLocale) {
+    return {
+      title: "Orders - ShipBase",
+      description: "View your orders",
+    };
+  }
+  
+  const dict = await getDictionary(normalizedLocale);
   
   return {
     title: dict.pages.orders.title,
@@ -18,9 +30,17 @@ export async function generateMetadata({
 export default async function OrdersPageRoute({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const dict = await getDictionary(params.locale);
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
+  const normalizedLocale = locales.find((l) => l === locale);
+  
+  if (!normalizedLocale) {
+    notFound();
+  }
+  
+  const dict = await getDictionary(normalizedLocale);
   
   return <OrdersPage dict={dict.pages.orders} />;
 }

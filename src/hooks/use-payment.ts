@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useLocale } from "./use-locale";
 
 interface PaymentRequest {
   product_id: string;
@@ -30,8 +29,6 @@ export function usePayment() {
     error: null,
     checkoutUrl: null,
   });
-
-  const locale = useLocale();
 
   const createCheckout = async (productId: string): Promise<boolean> => {
     setState({

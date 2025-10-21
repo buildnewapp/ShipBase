@@ -1,4 +1,4 @@
-import { pgTable, text, timestamp, boolean, integer, decimal, json } from "drizzle-orm/pg-core";
+import { pgTable, text, timestamp, integer, decimal, json } from "drizzle-orm/pg-core";
 import { users } from "./users";
 
 export const orders = pgTable("orders", {

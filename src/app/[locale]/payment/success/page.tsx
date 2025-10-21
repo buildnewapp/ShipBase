@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { PageTemplate } from "@/components/pages/page-template";
-import { getDictionary, locales } from "@/i18n";
+import { locales } from "@/i18n";
+import Link from "next/link";
 
 interface PaymentSuccessPageProps {
   params: Promise<{
@@ -19,15 +19,12 @@ interface PaymentSuccessPageProps {
 export default async function PaymentSuccessPage({ params, searchParams }: PaymentSuccessPageProps) {
   const resolvedParams = await params;
   const resolvedSearchParams = await searchParams;
-  const localeParam = resolvedParams.locale?.[0];
   const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   
   if (!normalizedLocale) {
     notFound();
   }
-
-  const dictionary = getDictionary(normalizedLocale);
   
   // 创建支付成功页面的字典
   const paymentSuccessDictionary = {
@@ -75,7 +72,39 @@ export default async function PaymentSuccessPage({ params, searchParams }: Payme
   return <PaymentSuccessContent dictionary={paymentSuccessDictionary} searchParams={resolvedSearchParams} />;
 }
 
-function PaymentSuccessContent({ dictionary, searchParams }: { dictionary: any; searchParams: any }) {
+interface PaymentSuccessDictionary {
+  title: string;
+  subtitle: string;
+  description: string;
+  paymentDetails: {
+    title: string;
+    requestId: string;
+    checkoutId: string;
+    orderId: string;
+    customerId: string;
+    productId: string;
+  };
+  actions: {
+    goToDashboard: string;
+    viewOrders: string;
+    contactSupport: string;
+  };
+  features: {
+    title: string;
+    items: string[];
+  };
+}
+
+interface PaymentSuccessSearchParams {
+  request_id?: string;
+  checkout_id?: string;
+  order_id?: string;
+  customer_id?: string;
+  product_id?: string;
+  signature?: string;
+}
+
+function PaymentSuccessContent({ dictionary, searchParams }: { dictionary: PaymentSuccessDictionary; searchParams: PaymentSuccessSearchParams }) {
   // 从字典中推断语言
   const locale = dictionary.title === "支付成功" ? "zh" : dictionary.title === "支払い成功" ? "ja" : "en";
   
@@ -171,24 +200,24 @@ function PaymentSuccessContent({ dictionary, searchParams }: { dictionary: any; 
             {locale === "zh" ? "快速操作" : locale === "ja" ? "クイックアクション" : "Quick Actions"}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
-            <a
+            <Link
               href="/dashboard"
               className="block w-full rounded-lg bg-blue-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
               {dictionary.actions.goToDashboard}
-            </a>
-            <a
+            </Link>
+            <Link
               href="/orders"
               className="block w-full rounded-lg border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3 text-center text-sm font-semibold text-neutral-900 dark:text-neutral-100 shadow-sm hover:bg-neutral-50 dark:hover:bg-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
               {dictionary.actions.viewOrders}
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className="block w-full rounded-lg border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3 text-center text-sm font-semibold text-neutral-900 dark:text-neutral-100 shadow-sm hover:bg-neutral-50 dark:hover:bg-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
               {dictionary.actions.contactSupport}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -202,7 +231,6 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PaymentSuccessPageProps) {
   const resolvedParams = await params;
-  const localeParam = resolvedParams.locale?.[0];
   const locale = resolvedParams.locale;
   const normalizedLocale = locales.find((l) => l === locale);
   
