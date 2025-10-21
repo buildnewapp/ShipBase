@@ -27,7 +27,6 @@ import type { Order } from "@/lib/db/schema/orders";
 import { OrderDetails } from "./order-details";
 
 interface OrdersPageProps {
-  locale: string;
   dict: {
     title: string;
     subtitle: string;
@@ -135,7 +134,7 @@ interface OrdersPageProps {
   };
 }
 
-export function OrdersPage({ dict, locale }: OrdersPageProps) {
+export function OrdersPage({ dict }: OrdersPageProps) {
   const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -284,10 +283,10 @@ export function OrdersPage({ dict, locale }: OrdersPageProps) {
     if (!date) return "-";
     
     const dateObj = typeof date === "string" ? new Date(date) : date;
-    const locale = navigator.language.startsWith("zh") ? zhCN : 
+    const dateLocale = navigator.language.startsWith("zh") ? zhCN : 
                   navigator.language.startsWith("ja") ? ja : enUS;
     
-    return format(dateObj, "yyyy-MM-dd HH:mm", { locale });
+    return format(dateObj, "yyyy-MM-dd HH:mm", { locale: dateLocale });
   };
 
   // 格式化金额

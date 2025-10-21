@@ -42,5 +42,5 @@ export default async function OrdersPageRoute({
   
   const dict = await getDictionary(normalizedLocale);
   
-  return <OrdersPage dict={dict.pages.orders} locale={normalizedLocale} />;
+  return <OrdersPage dict={dict.pages.orders} />;
 }

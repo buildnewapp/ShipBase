@@ -820,6 +820,55 @@ export interface MembershipPageDictionary extends PageDictionary {
   plans: MembershipPlan[];
 }
 
+export interface OrderDetailsDictionary {
+  title: string;
+  subtitle: string;
+  orderInfo: {
+    orderNumber: string;
+    status: string;
+    createdAt: string;
+    paidAt: string;
+    cancelledAt: string;
+    amount: string;
+    currency: string;
+    paymentProvider: string;
+    customerEmail: string;
+  };
+  productInfo: {
+    title: string;
+    productName: string;
+    productType: string;
+    productId: string;
+  };
+  paymentInfo: {
+    title: string;
+    provider: string;
+    requestId: string;
+    sessionId: string;
+  };
+  customerInfo: {
+    title: string;
+    email: string;
+  };
+  orderItems: {
+    title: string;
+    productName: string;
+    description: string;
+    unitPrice: string;
+    quantity: string;
+    totalPrice: string;
+  };
+  actions: {
+    back: string;
+    refreshStatus: string;
+  };
+  status: OrderStatus;
+  loading: string;
+  error: string;
+  retry: string;
+  notFound: string;
+}
+
 export interface OrdersPageDictionary extends PageDictionary {
   ordersList: OrdersListDictionary;
   orderCard: OrderCardDictionary;
@@ -828,6 +877,7 @@ export interface OrdersPageDictionary extends PageDictionary {
   search: OrdersSearchDictionary;
   refresh: string;
   pagination: OrdersPaginationDictionary;
+  orderDetails: OrderDetailsDictionary;
 }
 
 export interface DashboardStatCard {

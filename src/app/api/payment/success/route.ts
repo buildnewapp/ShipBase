@@ -12,9 +12,6 @@ export async function POST(request: NextRequest) {
     const {
       request_id,
       checkout_id,
-      order_id,
-      customer_id,
-      product_id,
       signature,
     } = body;
 

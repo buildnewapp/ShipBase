@@ -134,7 +134,7 @@ export function BillingHistory({ dict, locale }: BillingHistoryProps) {
     if (!date) return "-";
     
     const dateObj = typeof date === "string" ? new Date(date) : date;
-    const localeMap: Record<string, any> = {
+    const localeMap: Record<string, typeof zhCN | typeof ja | typeof enUS> = {
       zh: zhCN,
       ja: ja,
       en: enUS,
