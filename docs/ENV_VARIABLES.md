@@ -21,6 +21,31 @@ ADMIN_EMAILS=admin@example.com,owner@example.com,superuser@example.com
 - 定期审查管理员列表
 - 确保邮箱地址正确无误
 
+## Sitemap 配置
+
+### NEXT_PUBLIC_BASE_URL
+
+**描述：** 网站的完整基础 URL，用于生成 sitemap.xml 和其他需要绝对 URL 的场景。
+
+**示例：**
+```bash
+# 生产环境
+NEXT_PUBLIC_BASE_URL=https://shipbase.com
+
+# 开发环境（可选，默认使用 http://localhost:3000）
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+```
+
+**用途：**
+- 生成 sitemap.xml 中的完整 URL
+- 社交分享的 Open Graph 图片 URL
+- 其他需要绝对 URL 的场景
+
+**注意事项：**
+- 生产环境必须设置此变量
+- 必须以 `http://` 或 `https://` 开头
+- 不要包含末尾的斜杠
+
 ## 完整环境变量列表
 
 除了现有的环境变量（DATABASE_URL, BETTER_AUTH_SECRET 等），新增：
@@ -28,6 +53,9 @@ ADMIN_EMAILS=admin@example.com,owner@example.com,superuser@example.com
 ```bash
 # 管理员邮箱（多个用逗号分隔）
 ADMIN_EMAILS=admin@example.com,owner@example.com
+
+# 网站基础 URL（用于 sitemap）
+NEXT_PUBLIC_BASE_URL=https://shipbase.com
 ```
 
 ## 在 .env.local 中配置
@@ -37,12 +65,16 @@ ADMIN_EMAILS=admin@example.com,owner@example.com
 ```bash
 # Admin Configuration
 ADMIN_EMAILS=your-admin-email@example.com
+
+# Website Base URL (for sitemap and social sharing)
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
 ```
 
 多个管理员：
 
 ```bash
 ADMIN_EMAILS=admin1@example.com,admin2@example.com,admin3@example.com
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
 ```
 
 ## 使用示例

@@ -21,10 +21,12 @@ export function middleware(request: NextRequest) {
 export const config = {
   // 匹配所有路径，除了：
   // - api 路由
+  // - admin 路由
   // - _next/static (静态文件)
   // - _next/image (图片优化)
   // - favicon.ico
+  // - sitemap.xml, robots.txt (SEO 文件)
   matcher: [
-    '/((?!api|admin|_next/static|_next/image|favicon.ico).*)',
+    '/((?!api|admin|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',
   ],
 };

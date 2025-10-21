@@ -37,6 +37,8 @@
   - `GITHUB_CLIENT_ID` / `GITHUB_CLIENT_SECRET` (optional, enables GitHub OAuth).
   - `NEXT_PUBLIC_AUTH_BASE_URL` (optional override for client fetches when the API runs on a different origin).
   - `MAGIC_LINK_WEBHOOK_URL` (optional POST endpoint to deliver magic links; otherwise links log to STDOUT).
+- Sitemap generation requires:
+  - `NEXT_PUBLIC_BASE_URL` — full base URL for sitemap generation (required in production).
 
 这是一个NEXTJS SAAS模板
 
