@@ -5,6 +5,8 @@
 
 import { type Locale } from "@/i18n/types";
 
+const FALLBACK_LOCALE: Locale = "en";
+
 export type PricingPeriod = 'one-time' | 'monthly' | 'yearly';
 
 export interface PricingPlan {
@@ -38,7 +40,7 @@ export interface PricingConfig {
 }
 
 // 国际化价格配置
-export const pricingConfigs: Record<Locale, PricingConfig> = {
+export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
   zh: {
     currency: 'CNY',
     billingCycles: {
@@ -425,9 +427,11 @@ export const pricingConfigs: Record<Locale, PricingConfig> = {
   }
 };
 
+const fallbackPricingConfig = pricingConfigs[FALLBACK_LOCALE]!;
+
 // 获取指定语言的价格配置
 export function getPricingConfig(locale: Locale): PricingConfig {
-  return pricingConfigs[locale] || pricingConfigs.en;
+  return pricingConfigs[locale] ?? fallbackPricingConfig;
 }
 
 // 获取指定周期的价格

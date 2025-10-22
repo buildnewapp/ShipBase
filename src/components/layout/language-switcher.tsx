@@ -59,8 +59,22 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
         return 'English';
       case 'zh':
         return '中文';
+      case 'es':
+        return 'Español';
+      case 'ar':
+        return 'العربية';
+      case 'id':
+        return 'Bahasa Indonesia';
+      case 'pt':
+        return 'Português';
+      case 'fr':
+        return 'Français';
       case 'ja':
         return '日本語';
+      case 'ru':
+        return 'Русский';
+      case 'de':
+        return 'Deutsch';
       default:
         return locale;
     }
