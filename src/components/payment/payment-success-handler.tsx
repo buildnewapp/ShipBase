@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import type { Locale } from "@/i18n/types";
+import type { PaymentSuccessDictionary } from "@/i18n/pages/payment";
+import { resolveIntlLocale } from "@/i18n/locale-config";
 
 interface PaymentSuccessHandlerProps {
   searchParams: {
@@ -12,28 +15,8 @@ interface PaymentSuccessHandlerProps {
     product_id?: string;
     signature?: string;
   };
-  dictionary: {
-    title: string;
-    subtitle: string;
-    description: string;
-    paymentDetails: {
-      title: string;
-      requestId: string;
-      checkoutId: string;
-      orderId: string;
-      customerId: string;
-      productId: string;
-    };
-    actions: {
-      goToDashboard: string;
-      viewOrders: string;
-      contactSupport: string;
-    };
-    features: {
-      title: string;
-      items: string[];
-    };
-  };
+  dictionary: PaymentSuccessDictionary;
+  locale: Locale;
 }
 
 interface Order {
@@ -50,10 +33,12 @@ interface Order {
 export function PaymentSuccessHandler({
   searchParams,
   dictionary,
+  locale,
 }: PaymentSuccessHandlerProps) {
   const [order, setOrder] = useState<Order | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { errors } = dictionary;
 
   useEffect(() => {
     async function handlePaymentSuccess() {
@@ -76,25 +61,18 @@ export function PaymentSuccessHandler({
         if (data.success && data.order) {
           setOrder(data.order);
         } else {
-          setError(data.error || "处理支付信息时发生错误");
+          setError(data.error || errors.generic);
         }
       } catch (err) {
         console.error("处理支付成功时发生错误:", err);
-        setError("网络错误，请稍后重试");
+        setError(errors.network);
       } finally {
         setLoading(false);
       }
     }
 
     handlePaymentSuccess();
-  }, [searchParams]);
-
-  const locale =
-    dictionary.title === "支付成功"
-      ? "zh"
-      : dictionary.title === "支払い成功"
-      ? "ja"
-      : "en";
+  }, [searchParams, errors.generic, errors.network]);
 
   return (
     <div className="min-h-screen bg-white dark:bg-neutral-950">
@@ -136,11 +114,7 @@ export function PaymentSuccessHandler({
           <div className="text-center py-12">
             <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-neutral-900 dark:border-neutral-100"></div>
             <p className="mt-4 text-neutral-600 dark:text-neutral-400">
-              {locale === "zh"
-                ? "正在处理支付信息..."
-                : locale === "ja"
-                ? "支払い情報を処理中..."
-                : "Processing payment information..."}
+              {dictionary.loading.processing}
             </p>
           </div>
         )}
@@ -176,20 +150,12 @@ export function PaymentSuccessHandler({
             {order && (
               <div>
                 <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
-                  {locale === "zh"
-                    ? "订单详情"
-                    : locale === "ja"
-                    ? "注文詳細"
-                    : "Order Details"}
+                  {dictionary.order.title}
                 </h2>
                 <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-6 space-y-4">
                   <div className="flex justify-between">
                     <span className="text-neutral-600 dark:text-neutral-300">
-                      {locale === "zh"
-                        ? "订单号"
-                        : locale === "ja"
-                        ? "注文番号"
-                        : "Order Number"}
+                      {dictionary.order.number}
                       :
                     </span>
                     <span className="font-mono text-sm text-neutral-900 dark:text-neutral-100">
@@ -198,11 +164,7 @@ export function PaymentSuccessHandler({
                   </div>
                   <div className="flex justify-between">
                     <span className="text-neutral-600 dark:text-neutral-300">
-                      {locale === "zh"
-                        ? "产品"
-                        : locale === "ja"
-                        ? "商品"
-                        : "Product"}
+                      {dictionary.order.product}
                       :
                     </span>
                     <span className="text-neutral-900 dark:text-neutral-100">
@@ -211,11 +173,7 @@ export function PaymentSuccessHandler({
                   </div>
                   <div className="flex justify-between">
                     <span className="text-neutral-600 dark:text-neutral-300">
-                      {locale === "zh"
-                        ? "金额"
-                        : locale === "ja"
-                        ? "金額"
-                        : "Amount"}
+                      {dictionary.order.amount}
                       :
                     </span>
                     <span className="text-neutral-900 dark:text-neutral-100 font-semibold">
@@ -224,34 +182,22 @@ export function PaymentSuccessHandler({
                   </div>
                   <div className="flex justify-between">
                     <span className="text-neutral-600 dark:text-neutral-300">
-                      {locale === "zh"
-                        ? "支付时间"
-                        : locale === "ja"
-                        ? "支払い時間"
-                        : "Paid At"}
+                      {dictionary.order.paidAt}
                       :
                     </span>
                     <span className="text-neutral-900 dark:text-neutral-100">
                       {order.paidAt
-                        ? new Date(order.paidAt).toLocaleString()
+                        ? new Date(order.paidAt).toLocaleString(resolveIntlLocale(locale))
                         : "-"}
                     </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-neutral-600 dark:text-neutral-300">
-                      {locale === "zh"
-                        ? "状态"
-                        : locale === "ja"
-                        ? "状態"
-                        : "Status"}
+                      {dictionary.order.status}
                       :
                     </span>
                     <span className="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:text-green-200">
-                      {locale === "zh"
-                        ? "已支付"
-                        : locale === "ja"
-                        ? "支払済み"
-                        : "Paid"}
+                      {dictionary.order.paidLabel}
                     </span>
                   </div>
                 </div>
@@ -356,11 +302,7 @@ export function PaymentSuccessHandler({
         {/* Actions */}
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-6 text-center">
-            {locale === "zh"
-              ? "快速操作"
-              : locale === "ja"
-              ? "クイックアクション"
-              : "Quick Actions"}
+            {dictionary.quickActionsTitle}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
             <Link
@@ -387,4 +329,3 @@ export function PaymentSuccessHandler({
     </div>
   );
 }
-

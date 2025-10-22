@@ -6,6 +6,7 @@ import { getPricingConfig, getRecommendedPeriod, type PricingPeriod } from "@/li
 import { BillingToggle } from "./billing-toggle";
 import { PricingCard } from "./pricing-card";
 import { type Locale } from "@/i18n/types";
+import { getPricingCopy } from "@/i18n/components/pricing";
 
 interface PricingComponentProps {
   locale?: Locale;
@@ -35,37 +36,17 @@ export function PricingComponent({
   };
 
   const pricingConfig = getPricingConfig(locale);
-
-  // 国际化文本
-  const texts = {
-    zh: {
-      title: "价格方案",
-      subtitle: "简单透明的定价，没有隐藏费用。选择最适合您需求的方案，随时可以升级。",
-      yearlyDiscount: "年付享受 20% 优惠，相比月付节省更多费用"
-    },
-    en: {
-      title: "Pricing Plans",
-      subtitle: "Simple and transparent pricing with no hidden fees. Choose the plan that best fits your needs, upgrade anytime.",
-      yearlyDiscount: "Save 20% with yearly billing compared to monthly billing"
-    },
-    ja: {
-      title: "料金プラン",
-      subtitle: "シンプルで透明な料金設定、隠れた費用はありません。ニーズに最適なプランを選択し、いつでもアップグレードできます。",
-      yearlyDiscount: "年払いで月払いと比較して20%お得"
-    }
-  };
-
-  const currentTexts = texts[locale] || texts.en;
+  const pricingCopy = getPricingCopy(locale);
 
   return (
     <div className={cn("w-full", className)}>
       {/* 标题部分 */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold tracking-tight mb-4">
-          {currentTexts.title}
+          {pricingCopy.header.title}
         </h2>
         <p className="text-lg text-muted-foreground mb-6">
-          {currentTexts.subtitle}
+          {pricingCopy.header.subtitle}
         </p>
         
         {/* 计费周期切换 */}
@@ -74,6 +55,7 @@ export function PricingComponent({
             period={selectedPeriod}
             onPeriodChange={handlePeriodChange}
             locale={locale}
+            discountLabel={pricingCopy.billingToggle.discount}
             className="mb-8"
           />
         )}
@@ -86,7 +68,7 @@ export function PricingComponent({
             key={plan.id}
             plan={plan}
             period={selectedPeriod}
-            locale={locale}
+            copy={pricingCopy.card}
             onSelect={handlePlanSelect}
             className={cn(
               plan.popular && "md:scale-105"
@@ -99,7 +81,7 @@ export function PricingComponent({
       {selectedPeriod === 'yearly' && (
         <div className="mt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            {currentTexts.yearlyDiscount}
+            {pricingCopy.header.yearlyDiscount}
           </p>
         </div>
       )}

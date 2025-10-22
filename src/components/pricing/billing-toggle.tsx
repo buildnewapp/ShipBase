@@ -8,6 +8,7 @@ interface BillingToggleProps {
   period: PricingPeriod;
   onPeriodChange: (period: PricingPeriod) => void;
   locale?: Locale;
+  discountLabel: string;
   className?: string;
 }
 
@@ -15,25 +16,11 @@ export function BillingToggle({
   period,
   onPeriodChange,
   locale = "en",
+  discountLabel,
   className
 }: BillingToggleProps) {
   const periods: PricingPeriod[] = ['one-time', 'monthly', 'yearly'];
   const pricingConfig = getPricingConfig(locale);
-
-  // 国际化文本
-  const texts = {
-    zh: {
-      discount: "20% 折扣"
-    },
-    en: {
-      discount: "20% OFF"
-    },
-    ja: {
-      discount: "20% 割引"
-    }
-  };
-
-  const currentTexts = texts[locale] || texts.en;
 
   return (
     <div className={cn("flex items-center justify-center", className)}>
@@ -55,7 +42,7 @@ export function BillingToggle({
               {cycle.label}
               {p === 'yearly' && (
                 <span className="ml-1 rounded-full bg-primary px-2 py-0.5 text-xs text-primary-foreground">
-                  {currentTexts.discount}
+                  {discountLabel}
                 </span>
               )}
             </button>

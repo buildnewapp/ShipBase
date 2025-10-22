@@ -19,6 +19,7 @@ import {
   RefreshCw
 } from "lucide-react";
 import type { Order } from "@/lib/db/schema/orders";
+import { resolveIntlLocale } from "@/i18n/locale-config";
 
 interface BillingHistoryProps {
   dict: {
@@ -147,7 +148,8 @@ export function BillingHistory({ dict, locale }: BillingHistoryProps) {
   // 格式化金额
   const formatAmount = (amount: string, currency: string) => {
     const numAmount = parseFloat(amount);
-    return new Intl.NumberFormat(locale === "zh" ? "zh-CN" : locale === "ja" ? "ja-JP" : "en-US", {
+    const resolvedLocale = resolveIntlLocale(locale);
+    return new Intl.NumberFormat(resolvedLocale, {
       style: "currency",
       currency: currency || "USD",
     }).format(numAmount);
@@ -264,4 +266,3 @@ export function BillingHistory({ dict, locale }: BillingHistoryProps) {
     </Card>
   );
 }
-

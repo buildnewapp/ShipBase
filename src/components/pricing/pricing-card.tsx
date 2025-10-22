@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { formatPrice, type PricingPlan, type PricingPeriod } from "@/lib/pricing/i18n-config";
-import { type Locale } from "@/i18n/types";
 import { usePayment } from "@/hooks/use-payment";
+import type { PricingCopy } from "@/i18n/components/pricing";
 
 interface PricingCardProps {
   plan: PricingPlan;
   period: PricingPeriod;
-  locale?: Locale;
+  copy: PricingCopy["card"];
   onSelect?: (planId: string, period: PricingPeriod) => void;
   className?: string;
 }
@@ -20,7 +20,7 @@ interface PricingCardProps {
 export function PricingCard({
   plan,
   period,
-  locale = "en",
+  copy,
   onSelect,
   className
 }: PricingCardProps) {
@@ -45,43 +45,10 @@ export function PricingCard({
     await createCheckout(plan.id);
   };
 
-  // 国际化文本
-  const texts = {
-    zh: {
-      popular: "推荐",
-      getStarted: "开始使用",
-      buyNow: "立即购买",
-      contactSales: "联系销售",
-      included: "包含功能",
-      limitations: "限制说明",
-      save: "节省"
-    },
-    en: {
-      popular: "Popular",
-      getStarted: "Get Started",
-      buyNow: "Buy Now",
-      contactSales: "Contact Sales",
-      included: "Included Features",
-      limitations: "Limitations",
-      save: "Save"
-    },
-    ja: {
-      popular: "人気",
-      getStarted: "始める",
-      buyNow: "今すぐ購入",
-      contactSales: "営業に連絡",
-      included: "含まれる機能",
-      limitations: "制限事項",
-      save: "節約"
-    }
-  };
-
-  const currentTexts = texts[locale] || texts.en;
-
   const getCtaText = () => {
-    if (plan.id === 'free') return currentTexts.getStarted;
-    if (plan.id === 'enterprise') return currentTexts.contactSales;
-    return currentTexts.buyNow;
+    if (plan.id === 'free') return copy.getStarted;
+    if (plan.id === 'enterprise') return copy.contactSales;
+    return copy.buyNow;
   };
 
   return (
@@ -95,7 +62,7 @@ export function PricingCard({
       {plan.popular && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2">
           <Badge variant="default" className="px-3 py-1">
-            {currentTexts.popular}
+            {copy.popular}
           </Badge>
         </div>
       )}
@@ -124,7 +91,7 @@ export function PricingCard({
           {hasDiscount && (
             <div className="mt-2">
               <Badge variant="secondary" className="text-xs">
-                {currentTexts.save} {pricing.discount}%
+                {copy.save} {pricing.discount}%
               </Badge>
             </div>
           )}
@@ -135,7 +102,7 @@ export function PricingCard({
         <div className="space-y-4">
           <div>
             <h4 className="font-medium text-sm text-muted-foreground mb-2">
-              {currentTexts.included}
+              {copy.included}
             </h4>
             <ul className="space-y-2">
               {plan.features.map((feature, index) => (
@@ -150,7 +117,7 @@ export function PricingCard({
           {plan.limitations && plan.limitations.length > 0 && (
             <div>
               <h4 className="font-medium text-sm text-muted-foreground mb-2">
-                {currentTexts.limitations}
+                {copy.limitations}
               </h4>
               <ul className="space-y-2">
                 {plan.limitations.map((limitation, index) => (
@@ -176,7 +143,7 @@ export function PricingCard({
             {isLoading ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                {locale === "zh" ? "处理中..." : locale === "ja" ? "処理中..." : "Processing..."}
+                {copy.processing}
               </>
             ) : (
               getCtaText()

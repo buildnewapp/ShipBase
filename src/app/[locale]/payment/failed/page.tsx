@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
 import Link from "next/link";
+import { getPaymentFailedDictionary, type PaymentFailedDictionary } from "@/i18n/pages/payment";
+import type { Locale } from "@/i18n/types";
 
 interface PaymentFailedPageProps {
   params: Promise<{
@@ -17,63 +19,12 @@ export default async function PaymentFailedPage({ params }: PaymentFailedPagePro
     notFound();
   }
   
-  // 创建支付失败页面的字典
-  const paymentFailedDictionary = {
-    title: locale === "zh" ? "支付失败" : locale === "ja" ? "支払い失敗" : "Payment Failed",
-    subtitle: locale === "zh" ? "很抱歉，支付处理出现问题" : locale === "ja" ? "申し訳ございませんが、支払い処理に問題が発生しました" : "Sorry, there was an issue processing your payment",
-    description: locale === "zh" 
-      ? "您的支付未能成功完成。请检查您的支付信息或尝试其他支付方式。" 
-      : locale === "ja" 
-      ? "お支払いが正常に完了しませんでした。支払い情報をご確認いただくか、他の支払い方法をお試しください。"
-      : "Your payment could not be completed successfully. Please check your payment information or try a different payment method.",
-    actions: {
-      tryAgain: locale === "zh" ? "重试支付" : locale === "ja" ? "支払いを再試行" : "Try Again",
-      contactSupport: locale === "zh" ? "联系支持" : locale === "ja" ? "サポートに連絡" : "Contact Support",
-      goBack: locale === "zh" ? "返回定价" : locale === "ja" ? "料金に戻る" : "Back to Pricing"
-    },
-    troubleshooting: {
-      title: locale === "zh" ? "常见问题解决：" : locale === "ja" ? "よくある問題の解決：" : "Common troubleshooting:",
-      items: locale === "zh" ? [
-        "检查银行卡余额是否充足",
-        "确认支付信息输入正确",
-        "尝试使用不同的支付方式",
-        "联系银行确认交易限制"
-      ] : locale === "ja" ? [
-        "カードの残高が十分かご確認ください",
-        "支払い情報の入力が正しいかご確認ください",
-        "別の支払い方法をお試しください",
-        "銀行に連絡して取引制限を確認してください"
-      ] : [
-        "Check if your card has sufficient balance",
-        "Verify your payment information is correct",
-        "Try using a different payment method",
-        "Contact your bank to confirm transaction limits"
-      ]
-    }
-  };
+  const paymentFailedDictionary = getPaymentFailedDictionary(normalizedLocale as Locale);
 
   return <PaymentFailedContent dictionary={paymentFailedDictionary} />;
 }
 
-interface PaymentFailedDictionary {
-  title: string;
-  subtitle: string;
-  description: string;
-  actions: {
-    tryAgain: string;
-    contactSupport: string;
-    goBack: string;
-  };
-  troubleshooting: {
-    title: string;
-    items: string[];
-  };
-}
-
 function PaymentFailedContent({ dictionary }: { dictionary: PaymentFailedDictionary }) {
-  // 从字典中推断语言
-  const locale = dictionary.title === "支付失败" ? "zh" : dictionary.title === "支払い失敗" ? "ja" : "en";
-  
   return (
     <div className="min-h-screen bg-white dark:bg-neutral-950">
       {/* Hero Section */}
@@ -121,7 +72,7 @@ function PaymentFailedContent({ dictionary }: { dictionary: PaymentFailedDiction
           {/* Actions */}
           <div>
             <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
-              {locale === "zh" ? "下一步操作" : locale === "ja" ? "次のステップ" : "Next Steps"}
+              {dictionary.nextStepsTitle}
             </h2>
             <div className="space-y-4">
               <Link
@@ -166,12 +117,8 @@ export async function generateMetadata({ params }: PaymentFailedPageProps) {
     };
   }
 
-  const title = locale === "zh" ? "支付失败" : locale === "ja" ? "支払い失敗" : "Payment Failed";
-  const description = locale === "zh" 
-    ? "您的支付未能成功完成。请检查您的支付信息或尝试其他支付方式。" 
-    : locale === "ja" 
-    ? "お支払いが正常に完了しませんでした。支払い情報をご確認いただくか、他の支払い方法をお試しください。"
-    : "Your payment could not be completed successfully. Please check your payment information or try a different payment method.";
+  const paymentFailedDictionary = getPaymentFailedDictionary(normalizedLocale as Locale);
+  const { title, description } = paymentFailedDictionary;
   
   return {
     title: `${title} - ShipBase`,
