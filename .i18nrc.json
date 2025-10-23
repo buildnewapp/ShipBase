@@ -1,0 +1,6 @@
+{
+  "entry": "src/i18n/locales/en.ts",
+  "entryLocale": "en_US",
+  "output": "src/i18n/locales",
+  "outputLocales": ["de", "es"]
+}
