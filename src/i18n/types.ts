@@ -13,6 +13,14 @@ export const locales = [
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
+export type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends Array<infer U>
+    ? Array<DeepPartial<U>>
+    : T[K] extends object
+      ? DeepPartial<T[K]>
+      : T[K];
+};
+
 export type RichTextSegment =
   | { type: "text"; value: string }
   | { type: "code"; value: string };
@@ -1027,3 +1035,5 @@ export interface AppDictionary {
   footer: FooterDictionary;
   pages: PagesDictionary;
 }
+
+export type PartialAppDictionary = DeepPartial<AppDictionary>;
