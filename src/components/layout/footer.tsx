@@ -1,5 +1,8 @@
 import Link from "next/link";
-import type { FooterDictionary } from "@/i18n/types";
+import {FooterDictionary, type Locale, locales} from "@/i18n/types";
+import {Languages} from "lucide-react";
+import {Button} from "@/components/ui/button";
+import {DropdownMenuItem} from "@/components/ui/dropdown-menu";
 
 interface FooterProps {
   dictionary: FooterDictionary;
@@ -8,7 +11,34 @@ interface FooterProps {
 
 export function Footer({ dictionary, currentLocale }: FooterProps) {
   const currentYear = new Date().getFullYear();
-  
+
+  const getLanguageLabel = (locale: Locale) => {
+    switch (locale) {
+      case 'en':
+        return 'English';
+      case 'zh':
+        return '中文';
+      case 'es':
+        return 'Español';
+      case 'ar':
+        return 'العربية';
+      case 'id':
+        return 'Bahasa Indonesia';
+      case 'pt':
+        return 'Português';
+      case 'fr':
+        return 'Français';
+      case 'ja':
+        return '日本語';
+      case 'ru':
+        return 'Русский';
+      case 'de':
+        return 'Deutsch';
+      default:
+        return locale;
+    }
+  };
+
   return (
     <footer className="bg-neutral-50 dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -178,7 +208,24 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
             </div>
           </div>
         </div>
+        <div className="mt-8 border-t border-neutral-200 dark:border-neutral-800 pt-8">
+          <div className="flex flex-col items-center justify-center gap-2 space-y-4 md:flex-row md:space-y-0">
+            {locales.map((locale) => (
+              <Link
+                  key={locale}
+                  href={locale === 'en' ? '/' : `/${locale}/`}
+                  className="cursor-pointer"
+              >
+                <Button variant="outline" className="cursor-pointer">
+                  {getLanguageLabel(locale)}
+                </Button>
+              </Link>
+            ))}
+          </div>
+
+        </div>
       </div>
+
     </footer>
   );
 }
