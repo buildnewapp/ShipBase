@@ -191,6 +191,321 @@ const paymentSuccessCopy: Record<Locale, PaymentSuccessDictionary> = {
     },
     quickActionsTitle: "クイックアクション",
   },
+  es: {
+    title: "Pago completado",
+    subtitle: "¡Gracias por tu compra!",
+    description:
+      "Tu pago se ha procesado correctamente. Ya puedes empezar a usar nuestros servicios.",
+    loading: {
+      processing: "Procesando la información de pago...",
+    },
+    errors: {
+      generic: "Ocurrió un problema al procesar tu información de pago.",
+      network: "Error de red, inténtalo de nuevo más tarde.",
+    },
+    order: {
+      title: "Detalles del pedido",
+      number: "Número de pedido",
+      product: "Producto",
+      amount: "Importe",
+      paidAt: "Pagado el",
+      status: "Estado",
+      paidLabel: "Pagado",
+    },
+    paymentDetails: {
+      title: "Detalles del pago",
+      requestId: "ID de solicitud",
+      checkoutId: "ID de checkout",
+      orderId: "ID de pedido",
+      customerId: "ID de cliente",
+      productId: "ID de producto",
+    },
+    actions: {
+      goToDashboard: "Ir al panel",
+      viewOrders: "Ver pedidos",
+      contactSupport: "Contactar soporte",
+    },
+    features: {
+      title: "¿Qué puedes hacer ahora?",
+      items: [
+        "Acceder a todas las funciones premium",
+        "Disfrutar de soporte técnico prioritario",
+        "Obtener licencia para uso comercial",
+        "Acceder a documentación y tutoriales completos",
+      ],
+    },
+    quickActionsTitle: "Acciones rápidas",
+  },
+  ar: {
+    title: "تم الدفع بنجاح",
+    subtitle: "شكرًا لشرائك!",
+    description:
+      "تمت معالجة دفعتك بنجاح. يمكنك الآن البدء في استخدام خدماتنا.",
+    loading: {
+      processing: "جارٍ معالجة معلومات الدفع...",
+    },
+    errors: {
+      generic: "واجهنا مشكلة أثناء معالجة معلومات الدفع الخاصة بك.",
+      network: "خطأ في الشبكة، يرجى المحاولة لاحقًا.",
+    },
+    order: {
+      title: "تفاصيل الطلب",
+      number: "رقم الطلب",
+      product: "المنتج",
+      amount: "المبلغ",
+      paidAt: "تاريخ الدفع",
+      status: "الحالة",
+      paidLabel: "مدفوع",
+    },
+    paymentDetails: {
+      title: "تفاصيل الدفع",
+      requestId: "معرّف الطلب",
+      checkoutId: "معرّف الدفع",
+      orderId: "معرّف الطلبية",
+      customerId: "معرّف العميل",
+      productId: "معرّف المنتج",
+    },
+    actions: {
+      goToDashboard: "الذهاب إلى لوحة التحكم",
+      viewOrders: "عرض الطلبات",
+      contactSupport: "الاتصال بالدعم",
+    },
+    features: {
+      title: "ما يمكنك القيام به بعد ذلك:",
+      items: [
+        "الوصول إلى جميع الميزات المتقدمة",
+        "الاستفادة من دعم فني ذو أولوية",
+        "الحصول على ترخيص للاستخدام التجاري",
+        "الوصول إلى الوثائق والدروس الكاملة",
+      ],
+    },
+    quickActionsTitle: "إجراءات سريعة",
+  },
+  id: {
+    title: "Pembayaran berhasil",
+    subtitle: "Terima kasih atas pembelian Anda!",
+    description:
+      "Pembayaran Anda telah berhasil diproses. Anda dapat langsung mulai menggunakan layanan kami.",
+    loading: {
+      processing: "Memproses informasi pembayaran...",
+    },
+    errors: {
+      generic: "Terjadi masalah saat memproses informasi pembayaran Anda.",
+      network: "Kesalahan jaringan, coba lagi nanti.",
+    },
+    order: {
+      title: "Detail pesanan",
+      number: "Nomor pesanan",
+      product: "Produk",
+      amount: "Jumlah",
+      paidAt: "Dibayar pada",
+      status: "Status",
+      paidLabel: "Lunas",
+    },
+    paymentDetails: {
+      title: "Detail pembayaran",
+      requestId: "ID permintaan",
+      checkoutId: "ID checkout",
+      orderId: "ID pesanan",
+      customerId: "ID pelanggan",
+      productId: "ID produk",
+    },
+    actions: {
+      goToDashboard: "Ke dashboard",
+      viewOrders: "Lihat pesanan",
+      contactSupport: "Hubungi dukungan",
+    },
+    features: {
+      title: "Langkah berikutnya:",
+      items: [
+        "Akses semua fitur premium",
+        "Nikmati dukungan teknis prioritas",
+        "Dapatkan lisensi penggunaan komersial",
+        "Akses dokumentasi dan tutorial lengkap",
+      ],
+    },
+    quickActionsTitle: "Aksi cepat",
+  },
+  pt: {
+    title: "Pagamento concluído",
+    subtitle: "Obrigado pela sua compra!",
+    description:
+      "Seu pagamento foi processado com sucesso. Você já pode começar a usar nossos serviços.",
+    loading: {
+      processing: "Processando as informações de pagamento...",
+    },
+    errors: {
+      generic: "Ocorreu um problema ao processar suas informações de pagamento.",
+      network: "Erro de rede, tente novamente mais tarde.",
+    },
+    order: {
+      title: "Detalhes do pedido",
+      number: "Número do pedido",
+      product: "Produto",
+      amount: "Valor",
+      paidAt: "Pago em",
+      status: "Status",
+      paidLabel: "Pago",
+    },
+    paymentDetails: {
+      title: "Detalhes do pagamento",
+      requestId: "ID da solicitação",
+      checkoutId: "ID do checkout",
+      orderId: "ID do pedido",
+      customerId: "ID do cliente",
+      productId: "ID do produto",
+    },
+    actions: {
+      goToDashboard: "Ir para o painel",
+      viewOrders: "Ver pedidos",
+      contactSupport: "Contatar suporte",
+    },
+    features: {
+      title: "O que você pode fazer agora:",
+      items: [
+        "Acessar todos os recursos premium",
+        "Aproveitar suporte técnico prioritário",
+        "Obter licença para uso comercial",
+        "Acessar documentação e tutoriais completos",
+      ],
+    },
+    quickActionsTitle: "Ações rápidas",
+  },
+  fr: {
+    title: "Paiement réussi",
+    subtitle: "Merci pour votre achat !",
+    description:
+      "Votre paiement a été traité avec succès. Vous pouvez commencer à utiliser nos services dès maintenant.",
+    loading: {
+      processing: "Traitement des informations de paiement...",
+    },
+    errors: {
+      generic: "Un problème est survenu lors du traitement de votre paiement.",
+      network: "Erreur réseau, veuillez réessayer plus tard.",
+    },
+    order: {
+      title: "Détails de la commande",
+      number: "Numéro de commande",
+      product: "Produit",
+      amount: "Montant",
+      paidAt: "Payé le",
+      status: "Statut",
+      paidLabel: "Payé",
+    },
+    paymentDetails: {
+      title: "Détails du paiement",
+      requestId: "ID de requête",
+      checkoutId: "ID de paiement",
+      orderId: "ID de commande",
+      customerId: "ID client",
+      productId: "ID produit",
+    },
+    actions: {
+      goToDashboard: "Aller au tableau de bord",
+      viewOrders: "Voir les commandes",
+      contactSupport: "Contacter le support",
+    },
+    features: {
+      title: "Que faire ensuite :",
+      items: [
+        "Accéder à toutes les fonctionnalités premium",
+        "Profiter d'un support technique prioritaire",
+        "Obtenir une licence d'utilisation commerciale",
+        "Accéder à la documentation et aux tutoriels complets",
+      ],
+    },
+    quickActionsTitle: "Actions rapides",
+  },
+  ru: {
+    title: "Платеж прошел успешно",
+    subtitle: "Спасибо за покупку!",
+    description:
+      "Ваш платеж успешно обработан. Вы можете сразу начать пользоваться нашими сервисами.",
+    loading: {
+      processing: "Обработка платежной информации...",
+    },
+    errors: {
+      generic: "Возникла проблема при обработке платежной информации.",
+      network: "Ошибка сети, попробуйте позже.",
+    },
+    order: {
+      title: "Детали заказа",
+      number: "Номер заказа",
+      product: "Продукт",
+      amount: "Сумма",
+      paidAt: "Дата оплаты",
+      status: "Статус",
+      paidLabel: "Оплачено",
+    },
+    paymentDetails: {
+      title: "Детали платежа",
+      requestId: "ID запроса",
+      checkoutId: "ID платежа",
+      orderId: "ID заказа",
+      customerId: "ID клиента",
+      productId: "ID продукта",
+    },
+    actions: {
+      goToDashboard: "Перейти в панель",
+      viewOrders: "Просмотреть заказы",
+      contactSupport: "Связаться с поддержкой",
+    },
+    features: {
+      title: "Что делать дальше:",
+      items: [
+        "Получить доступ ко всем премиум-функциям",
+        "Воспользоваться приоритетной техподдержкой",
+        "Получить лицензию для коммерческого использования",
+        "Получить доступ к полной документации и руководствам",
+      ],
+    },
+    quickActionsTitle: "Быстрые действия",
+  },
+  de: {
+    title: "Zahlung erfolgreich",
+    subtitle: "Vielen Dank für deinen Kauf!",
+    description:
+      "Deine Zahlung wurde erfolgreich verarbeitet. Du kannst unseren Service jetzt sofort nutzen.",
+    loading: {
+      processing: "Zahlungsinformationen werden verarbeitet...",
+    },
+    errors: {
+      generic: "Beim Verarbeiten deiner Zahlungsinformationen ist ein Fehler aufgetreten.",
+      network: "Netzwerkfehler, bitte versuche es später erneut.",
+    },
+    order: {
+      title: "Bestelldetails",
+      number: "Bestellnummer",
+      product: "Produkt",
+      amount: "Betrag",
+      paidAt: "Bezahlt am",
+      status: "Status",
+      paidLabel: "Bezahlt",
+    },
+    paymentDetails: {
+      title: "Zahlungsdetails",
+      requestId: "Anfrage-ID",
+      checkoutId: "Checkout-ID",
+      orderId: "Bestell-ID",
+      customerId: "Kunden-ID",
+      productId: "Produkt-ID",
+    },
+    actions: {
+      goToDashboard: "Zum Dashboard",
+      viewOrders: "Bestellungen ansehen",
+      contactSupport: "Support kontaktieren",
+    },
+    features: {
+      title: "Nächste Schritte:",
+      items: [
+        "Zugriff auf alle Premium-Funktionen",
+        "Priorisierten technischen Support nutzen",
+        "Lizenz für kommerzielle Nutzung erhalten",
+        "Zugriff auf vollständige Dokumentation und Tutorials",
+      ],
+    },
+    quickActionsTitle: "Schnellaktionen",
+  },
 };
 
 const paymentFailedCopy: Record<Locale, PaymentFailedDictionary> = {
@@ -256,6 +571,153 @@ const paymentFailedCopy: Record<Locale, PaymentFailedDictionary> = {
       ],
     },
     nextStepsTitle: "次のステップ",
+  },
+  es: {
+    title: "Pago fallido",
+    subtitle: "Lo sentimos, hubo un problema con tu pago",
+    description:
+      "Tu pago no pudo completarse correctamente. Verifica la información de pago o prueba con otro método.",
+    actions: {
+      tryAgain: "Intentar de nuevo",
+      contactSupport: "Contactar soporte",
+      goBack: "Volver a precios",
+    },
+    troubleshooting: {
+      title: "Soluciones habituales:",
+      items: [
+        "Comprueba si tu tarjeta tiene saldo suficiente",
+        "Verifica que la información de pago sea correcta",
+        "Prueba con otro método de pago",
+        "Contacta a tu banco para confirmar límites de transacción",
+      ],
+    },
+    nextStepsTitle: "Próximos pasos",
+  },
+  ar: {
+    title: "فشل الدفع",
+    subtitle: "عذرًا، حدثت مشكلة أثناء معالجة الدفع",
+    description:
+      "لم نتمكن من إكمال الدفع بنجاح. يرجى التحقق من معلومات الدفع أو تجربة طريقة أخرى.",
+    actions: {
+      tryAgain: "إعادة المحاولة",
+      contactSupport: "الاتصال بالدعم",
+      goBack: "العودة إلى الأسعار",
+    },
+    troubleshooting: {
+      title: "خطوات المساعدة الشائعة:",
+      items: [
+        "تحقق من توفر رصيد كافٍ في بطاقتك",
+        "تأكد من صحة معلومات الدفع",
+        "جرب استخدام طريقة دفع مختلفة",
+        "تواصل مع البنك للتأكد من حدود المعاملات",
+      ],
+    },
+    nextStepsTitle: "الخطوات التالية",
+  },
+  id: {
+    title: "Pembayaran gagal",
+    subtitle: "Maaf, terjadi masalah saat memproses pembayaran",
+    description:
+      "Pembayaran Anda tidak dapat diselesaikan. Harap periksa informasi pembayaran atau coba metode lain.",
+    actions: {
+      tryAgain: "Coba lagi",
+      contactSupport: "Hubungi dukungan",
+      goBack: "Kembali ke harga",
+    },
+    troubleshooting: {
+      title: "Solusi umum:",
+      items: [
+        "Periksa apakah saldo kartu Anda mencukupi",
+        "Pastikan informasi pembayaran sudah benar",
+        "Coba gunakan metode pembayaran lain",
+        "Hubungi bank Anda untuk memastikan batas transaksi",
+      ],
+    },
+    nextStepsTitle: "Langkah selanjutnya",
+  },
+  pt: {
+    title: "Pagamento falhou",
+    subtitle: "Desculpe, houve um problema ao processar o pagamento",
+    description:
+      "Não foi possível concluir o pagamento. Verifique as informações ou tente outro método.",
+    actions: {
+      tryAgain: "Tentar novamente",
+      contactSupport: "Contatar suporte",
+      goBack: "Voltar aos preços",
+    },
+    troubleshooting: {
+      title: "Soluções comuns:",
+      items: [
+        "Verifique se seu cartão tem saldo suficiente",
+        "Confirme se as informações de pagamento estão corretas",
+        "Tente usar outro método de pagamento",
+        "Entre em contato com o banco para confirmar limites de transação",
+      ],
+    },
+    nextStepsTitle: "Próximos passos",
+  },
+  fr: {
+    title: "Paiement échoué",
+    subtitle: "Désolé, un problème est survenu lors du paiement",
+    description:
+      "Votre paiement n'a pas pu être effectué. Vérifiez vos informations ou essayez une autre méthode.",
+    actions: {
+      tryAgain: "Réessayer",
+      contactSupport: "Contacter le support",
+      goBack: "Retour aux tarifs",
+    },
+    troubleshooting: {
+      title: "Dépannage courant :",
+      items: [
+        "Vérifiez que votre carte dispose de fonds suffisants",
+        "Assurez-vous que vos informations de paiement sont correctes",
+        "Essayez une autre méthode de paiement",
+        "Contactez votre banque pour confirmer les limites de transaction",
+      ],
+    },
+    nextStepsTitle: "Étapes suivantes",
+  },
+  ru: {
+    title: "Платеж не прошел",
+    subtitle: "К сожалению, при обработке платежа возникла проблема",
+    description:
+      "Не удалось успешно завершить платеж. Проверьте данные или попробуйте другой способ оплаты.",
+    actions: {
+      tryAgain: "Повторить попытку",
+      contactSupport: "Связаться с поддержкой",
+      goBack: "Вернуться к тарифам",
+    },
+    troubleshooting: {
+      title: "Частые решения:",
+      items: [
+        "Проверьте, достаточно ли средств на карте",
+        "Убедитесь, что платежные данные введены верно",
+        "Попробуйте другой способ оплаты",
+        "Свяжитесь с банком, чтобы подтвердить лимиты операций",
+      ],
+    },
+    nextStepsTitle: "Дальнейшие шаги",
+  },
+  de: {
+    title: "Zahlung fehlgeschlagen",
+    subtitle: "Leider gab es ein Problem bei der Verarbeitung der Zahlung",
+    description:
+      "Deine Zahlung konnte nicht abgeschlossen werden. Prüfe deine Angaben oder nutze eine andere Methode.",
+    actions: {
+      tryAgain: "Erneut versuchen",
+      contactSupport: "Support kontaktieren",
+      goBack: "Zurück zu den Preisen",
+    },
+    troubleshooting: {
+      title: "Häufige Lösungen:",
+      items: [
+        "Prüfe, ob deine Karte genügend Guthaben hat",
+        "Stelle sicher, dass deine Zahlungsdaten korrekt sind",
+        "Versuche eine andere Zahlungsmethode",
+        "Kontaktiere deine Bank, um Transaktionslimits zu prüfen",
+      ],
+    },
+    nextStepsTitle: "Nächste Schritte",
   },
 };
 
