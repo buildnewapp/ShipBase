@@ -1,13 +1,13 @@
-import { enDictionary } from "@/i18n/locales/en";
-import { zhDictionary } from "@/i18n/locales/zh";
-import { jaDictionary } from "@/i18n/locales/ja";
-import { esDictionary } from "@/i18n/locales/es";
-import { arDictionary } from "@/i18n/locales/ar";
-import { idDictionary } from "@/i18n/locales/id";
-import { ptDictionary } from "@/i18n/locales/pt";
-import { frDictionary } from "@/i18n/locales/fr";
-import { ruDictionary } from "@/i18n/locales/ru";
-import { deDictionary } from "@/i18n/locales/de";
+import enDictionary from "@/i18n/locales/en.json";
+import zhDictionary from "@/i18n/locales/zh.json";
+import jaDictionary from "@/i18n/locales/ja.json";
+import esDictionary from "@/i18n/locales/es.json";
+import arDictionary from "@/i18n/locales/ar.json";
+import idDictionary from "@/i18n/locales/id.json";
+import ptDictionary from "@/i18n/locales/pt.json";
+import frDictionary from "@/i18n/locales/fr.json";
+import ruDictionary from "@/i18n/locales/ru.json";
+import deDictionary from "@/i18n/locales/de.json";
 import {
   defaultLocale,
   locales,
@@ -16,19 +16,19 @@ import {
   type PartialAppDictionary,
 } from "@/i18n/types";
 
-const fallbackDictionary = enDictionary;
+const fallbackDictionary = enDictionary as AppDictionary;
 
 const dictionaries: Partial<Record<Locale, PartialAppDictionary>> = {
-  en: enDictionary,
-  zh: zhDictionary,
-  ja: jaDictionary,
-  es: esDictionary,
-  ar: arDictionary,
-  id: idDictionary,
-  pt: ptDictionary,
-  fr: frDictionary,
-  ru: ruDictionary,
-  de: deDictionary,
+  en: enDictionary as AppDictionary,
+  zh: zhDictionary as AppDictionary,
+  ja: jaDictionary as AppDictionary,
+  es: esDictionary as AppDictionary,
+  ar: arDictionary as AppDictionary,
+  id: idDictionary as AppDictionary,
+  pt: ptDictionary as AppDictionary,
+  fr: frDictionary as AppDictionary,
+  ru: ruDictionary as AppDictionary,
+  de: deDictionary as AppDictionary,
 };
 
 function isPlainObject(value: unknown): value is Record<string, unknown> {

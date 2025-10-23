@@ -1,6 +1,7 @@
 {
   "entry": "src/i18n/locales/en.json",
-  "entryLocale": "en_US",
+  "entryLocale": "en",
   "output": "src/i18n/locales",
-  "outputLocales": ["de", "es"]
+  "outputLocales": ["ar", "de", "es", "fr", "id", "pt", "ru", "zh"],
+  "saveImmediately": true
 }

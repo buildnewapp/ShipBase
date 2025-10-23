@@ -1,0 +1,2205 @@
+{
+  "home": {
+    "badgeLabel": "2025🚀 Kirim Sekarang",
+    "heroTitle": "ShipBase, Kirim Lebih Banyak.",
+    "heroDescription": "ShipBase adalah boilerplate NextJS untuk membangun startup AI SaaS. Kirim cepat dengan beragam template dan komponen.",
+    "ctaPrimary": "Mulai",
+    "ctaSecondary": "Baca Dokumen",
+    "watchDemo": "Tonton Demo",
+    "viewDetails": "Lihat Detail",
+    "promotionText": "🎁 Diskon $100 untuk 1000 pelanggan pertama",
+    "userCount": "dari 250+ pengguna puas",
+    "techStackTitle": "ShipBase dibangun di atas pundak para raksasa",
+    "techStackItems": [
+      {
+        "name": "Next.js",
+        "description": "Framework React Full-stack"
+      },
+      {
+        "name": "React",
+        "description": "Library Antarmuka Pengguna"
+      },
+      {
+        "name": "TailwindCSS",
+        "description": "Framework CSS Utility-first"
+      },
+      {
+        "name": "Shadcn/UI",
+        "description": "Library Komponen Modern"
+      },
+      {
+        "name": "Vercel",
+        "description": "Platform Deploy"
+      }
+    ],
+    "featuresTitle": "Apa itu ShipBase",
+    "featuresSubtitle": "ShipBase adalah boilerplate NextJS untuk membangun startup AI SaaS. Dilengkapi berbagai template dan komponen.",
+    "features": [
+      {
+        "title": "Template Siap Pakai",
+        "description": "Pilih dari puluhan template AI SaaS siap produksi untuk segera memulai proyek Anda."
+      },
+      {
+        "title": "Penyiapan Infrastruktur",
+        "description": "Akses instan ke infrastruktur yang dapat diskalakan dengan praktik terbaik bawaan."
+      },
+      {
+        "title": "Deploy Cepat",
+        "description": "Deploy aplikasi AI SaaS Anda ke produksi dalam hitungan jam, bukan hari."
+      }
+    ],
+    "benefitsTitle": "Mengapa Memilih ShipBase",
+    "benefitsSubtitle": "Dapatkan semua yang Anda butuhkan untuk meluncurkan startup AI Anda—dari template siap pakai hingga dukungan teknis.",
+    "benefits": [
+      {
+        "title": "Kerangka Kerja Lengkap",
+        "description": "Dibangun di atas Next.js dengan autentikasi, pembayaran, dan integrasi AI—semua bekerja langsung."
+      },
+      {
+        "title": "Pustaka Template Kaya",
+        "description": "Pilih template yang sesuai kebutuhan dan mulai membangun dengan cepat."
+      },
+      {
+        "title": "Panduan Teknis",
+        "description": "Dapatkan dukungan teknis profesional untuk membantu Anda mulai dengan cepat."
+      }
+    ],
+    "launchStepsTitle": "Cara Meluncur dengan ShipBase",
+    "launchStepsSubtitle": "Jalankan startup AI SaaS Anda dalam tiga langkah sederhana:",
+    "launchSteps": [
+      {
+        "step": "1",
+        "title": "Dapatkan ShipBase",
+        "description": "Beli ShipBase dengan pembayaran sekali. Periksa email Anda untuk kode dan dokumentasi."
+      },
+      {
+        "step": "2",
+        "title": "Mulai Proyek Anda",
+        "description": "Baca dokumentasi dan klon kode ShipBase. Mulai bangun startup AI SaaS Anda."
+      },
+      {
+        "step": "3",
+        "title": "Kustomisasi Proyek Anda",
+        "description": "Ubah template dengan data dan konten Anda. Sesuaikan kebutuhan fungsionalitas AI."
+      },
+      {
+        "step": "4",
+        "title": "Deploy ke Produksi",
+        "description": "Deploy proyek Anda ke produksi dalam beberapa langkah dan mulai melayani pelanggan segera."
+      }
+    ],
+    "keyFeaturesTitle": "Fitur Utama ShipBase",
+    "keyFeaturesSubtitle": "Semua yang Anda butuhkan untuk meluncurkan startup AI SaaS dengan cepat dan efisien.",
+    "keyFeatures": [
+      {
+        "title": "Boilerplate Next.js",
+        "description": "Template Next.js siap produksi dengan struktur ramah SEO dan dukungan i18n."
+      },
+      {
+        "title": "Autentikasi & Pembayaran",
+        "description": "Terintegrasi Google OAuth, login satu ketuk, dan pemrosesan pembayaran Stripe."
+      },
+      {
+        "title": "Infrastruktur Data",
+        "description": "Integrasi Supabase bawaan untuk penyimpanan data yang andal dan dapat diskalakan."
+      },
+      {
+        "title": "Deploy Satu Klik",
+        "description": "Deploy mulus ke Vercel atau Cloudflare dengan penyiapan otomatis."
+      },
+      {
+        "title": "Analitik Bisnis",
+        "description": "Integrasi Google Analytics dan Search Console untuk melacak pertumbuhan."
+      },
+      {
+        "title": "Infrastruktur Siap AI",
+        "description": "Integrasi AI pra-konfigurasi dengan sistem kredit bawaan dan penjualan API."
+      }
+    ],
+    "testimonialsTitle": "Apa Kata Pengguna tentang ShipBase",
+    "testimonialsSubtitle": "Dengarkan dari developer dan founder yang meluncurkan startup AI mereka dengan ShipBase.",
+    "testimonials": [
+      {
+        "quote": "ShipBase membuat perjalanan dari ide ke produk jadi lebih sederhana dari sebelumnya. Template, skrip, dan infrastruktur fondasinya yang lengkap membuat saya hampir tak perlu menghabiskan waktu pada pengembangan dasar. Saya sangat merekomendasikannya bagi founder yang ingin cepat meluncurkan bisnis SaaS.",
+        "author": "Penulis AITDK",
+        "role": "Pengembang Independen"
+      },
+      {
+        "quote": "ShipBase sangat memudahkan penyiapan pembayaran dan semua detail komersialisasi, sehingga kami bisa fokus membangun fitur yang penting. Jika Anda ingin mengirim dan menskalakan AI SaaS dengan cepat, ShipBase adalah pilihan jelas!",
+        "author": "Scar",
+        "role": "Engineer Front-end"
+      },
+      {
+        "quote": "Saya menggunakan ShipBase dan meluncurkan situs baru dalam 8 menit, termasuk login/pembayaran—luar biasa!",
+        "author": "Lafe",
+        "role": "Tech Lead"
+      }
+    ],
+    "productShowcaseTitle": "Startup AI SaaS yang Dibangun dengan ShipBase",
+    "productShowcaseSubtitle": "Lihat aplikasi AI SaaS luar biasa yang dibuat dengan ShipBase",
+    "showcaseItems": [
+      {
+        "name": "Raphael AI",
+        "description": "Buat gambar menakjubkan berbasis AI dalam hitungan detik",
+        "image": "/api/placeholder/400/300",
+        "category": "Pembuatan Gambar AI"
+      },
+      {
+        "name": "SiteSnapper",
+        "description": "Tangkap Situs Apa Pun dalam Satu Klik",
+        "image": "/api/placeholder/400/300",
+        "category": "Alat Website"
+      },
+      {
+        "name": "SEO Combine",
+        "description": "Semua Alat SEO dalam Satu Tempat",
+        "image": "/api/placeholder/400/300",
+        "category": "Alat SEO"
+      },
+      {
+        "name": "TrendsBar",
+        "description": "Alat Analisis Google Trends",
+        "image": "/api/placeholder/400/300",
+        "category": "Analitik Data"
+      },
+      {
+        "name": "Deepseek Artifacts",
+        "description": "Buat Aplikasi React Menggunakan Model Open-Source Terdepan Dunia",
+        "image": "/api/placeholder/400/300",
+        "category": "Pengembangan AI"
+      },
+      {
+        "name": "Rednote Club",
+        "description": "Bagikan Momen Indah Hidup Anda di Rednote",
+        "image": "/api/placeholder/400/300",
+        "category": "Platform Sosial"
+      }
+    ],
+    "statsTitle": "Banyak yang Mencintai ShipBase",
+    "statsSubtitle": "karena mudah digunakan dan cepat dikirim",
+    "stats": [
+      {
+        "number": "250+",
+        "label": "Pelanggan",
+        "description": "Percayai kami"
+      },
+      {
+        "number": "30+",
+        "label": "Komponen",
+        "description": "Bawaan"
+      },
+      {
+        "number": "5",
+        "label": "Menit",
+        "description": "Kirim Cepat dalam"
+      }
+    ],
+    "faqTitle": "Pertanyaan yang Sering Diajukan tentang ShipBase",
+    "faqSubtitle": "Punya pertanyaan lain? Hubungi kami di Discord atau email.",
+    "faqs": [
+      {
+        "question": "Apa sebenarnya ShipBase dan bagaimana cara kerjanya?",
+        "answer": "ShipBase adalah boilerplate NextJS komprehensif yang dirancang khusus untuk membangun startup AI SaaS. Menyediakan template siap pakai, penyiapan infrastruktur, dan alat deploy yang membantu Anda meluncurkan bisnis AI dalam hitungan jam, bukan hari."
+      },
+      {
+        "question": "Apakah saya perlu skill teknis tingkat lanjut untuk menggunakan ShipBase?",
+        "answer": "Walau pengetahuan pemrograman dasar membantu, ShipBase dirancang ramah developer. Template dan dokumentasi kami memudahkan Anda memulai, bahkan jika Anda bukan ahli AI atau infrastruktur cloud."
+      },
+      {
+        "question": "Jenis AI SaaS apa yang bisa saya bangun dengan ShipBase?",
+        "answer": "ShipBase mendukung berbagai aplikasi AI, dari pembuatan konten hingga alat analisis data. Template kami mencakup use case populer seperti chatbot AI, generator konten, aplikasi pemrosesan gambar, dan lainnya."
+      },
+      {
+        "question": "Berapa lama biasanya untuk meluncur dengan ShipBase?",
+        "answer": "Dengan ShipBase, Anda bisa memiliki prototipe kerja dalam hitungan jam dan aplikasi siap produksi juga dalam hitungan jam. Deploy satu klik dan infrastruktur pra-konfigurasi secara signifikan memangkas siklus pengembangan berbulan-bulan."
+      },
+      {
+        "question": "Apa saja yang termasuk dalam infrastruktur ShipBase?",
+        "answer": "ShipBase menyediakan tumpukan infrastruktur lengkap termasuk autentikasi, penyiapan basis data, integrasi API, pemrosesan pembayaran, dan deploy cloud berskala. Semuanya pra-konfigurasi mengikuti praktik terbaik industri."
+      },
+      {
+        "question": "Bisakah saya menyesuaikan template agar sesuai merek?",
+        "answer": "Tentu! Semua template ShipBase sepenuhnya dapat dikustomisasi. Anda dapat memodifikasi desain, fitur, dan fungsi agar sesuai identitas merek serta kebutuhan bisnis Anda, sambil mempertahankan infrastruktur yang kokoh."
+      }
+    ],
+    "finalCtaTitle": "Kirim AI SaaS Pertama Anda",
+    "finalCtaSubtitle": "Mulai dari sini, kirim dengan ShipBase.",
+    "finalCtaButton": "Dapatkan ShipBase",
+    "finalCtaSecondary": "Baca Dokumen"
+  },
+  "authPanel": {
+    "title": "Masuk ke ShipBase",
+    "description": "Autentikasi dengan Google, GitHub, atau Magic Link dari Better Auth.",
+    "signedInAs": "Masuk sebagai {name}",
+    "sessionLabel": "ID Sesi: {id}",
+    "signOut": "Keluar",
+    "googleButton": {
+      "default": "Masuk dengan Google",
+      "loading": "Mengalihkan ke Google…"
+    },
+    "githubButton": {
+      "default": "Masuk dengan GitHub",
+      "loading": "Mengalihkan ke GitHub…"
+    },
+    "magicLinkHeading": "Atau kirim magic link",
+    "emailLabel": "Alamat email",
+    "emailPlaceholder": "[anda@contoh.com](mailto:anda@contoh.com)",
+    "magicLinkButton": {
+      "default": "Kirim tautan login",
+      "loading": "Mengirim…"
+    },
+    "messages": {
+      "emptyEmail": "Silakan masukkan alamat email.",
+      "responseError": "Gagal mengirim email. Coba lagi.",
+      "requestError": "Terjadi kesalahan. Coba lagi nanti.",
+      "success": "Magic link telah dikirim. Jika layanan email belum dikonfigurasi, periksa log server untuk tautannya."
+    },
+    "footer": [
+      {
+        "type": "text",
+        "value": "Setelah masuk, Better Auth menerbitkan sesi di server dan menyimpan cookie HTTP-only. Gabungkan "
+      },
+      {
+        "type": "code",
+        "value": "authClient.useSession()"
+      },
+      {
+        "type": "text",
+        "value": " untuk mengakses pengguna saat ini di komponen klien mana pun."
+      }
+    ]
+  },
+  "header": {
+    "features": "Fitur",
+    "pricing": "Harga",
+    "docs": "Dokumentasi",
+    "login": "Masuk",
+    "signup": "Coba Gratis",
+    "languageSwitch": "Bahasa",
+    "themeSwitch": "Tema",
+    "lightTheme": "Terang",
+    "darkTheme": "Gelap",
+    "systemTheme": "Sistem",
+    "userMenu": {
+      "dashboard": "Dasbor",
+      "profile": "Profil",
+      "membership": "Keanggotaan",
+      "orders": "Pesanan",
+      "adminMenu": "Panel Admin",
+      "signOut": "Keluar"
+    }
+  },
+  "footer": {
+    "description": "Platform SaaS modern yang membantu Anda membangun dan mendepoy aplikasi dengan cepat.",
+    "product": "Produk",
+    "features": "Fitur",
+    "pricing": "Harga",
+    "integrations": "Integrasi",
+    "support": "Dukungan",
+    "docs": "Dokumentasi",
+    "helpCenter": "Pusat Bantuan",
+    "contactUs": "Hubungi Kami",
+    "serviceStatus": "Status Layanan",
+    "legal": "Legal",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfService": "Ketentuan Layanan",
+    "cookiePolicy": "Kebijakan Cookie",
+    "copyright": "© 2024 ShipBase. Hak cipta dilindungi.",
+    "madeWithLove": "Dibuat dengan ❤️"
+  },
+  "pages": {
+    "features": {
+      "title": "Fitur",
+      "subtitle": "Fitur kuat untuk mempercepat pengembangan Anda",
+      "description": "Jelajahi rangkaian alat dan fitur komprehensif yang menjadikan ShipBase platform sempurna untuk aplikasi SaaS modern.",
+      "coreFeatures": {
+        "title": "Fitur Inti",
+        "subtitle": "Solusi lengkap yang disesuaikan untuk aplikasi SaaS modern, sehingga Anda fokus pada inovasi produk alih-alih penyiapan infrastruktur",
+        "features": [
+          {
+            "icon": "Code",
+            "title": "Framework Next.js Full-Stack",
+            "description": "Dibangun di atas Next.js 14+ terbaru dengan App Router, Server Components, dan dukungan Edge Runtime untuk kinerja dan pengalaman pengembangan optimal.",
+            "highlights": [
+              "App Router",
+              "Server Components",
+              "Edge Runtime",
+              "Dukungan TypeScript"
+            ]
+          },
+          {
+            "icon": "Shield",
+            "title": "Autentikasi Kelas Enterprise",
+            "description": "Integrasi Better Auth yang mendukung banyak metode login termasuk Google OAuth, GitHub OAuth, dan Magic Link untuk keamanan dan keandalan.",
+            "highlights": [
+              "Google OAuth",
+              "GitHub OAuth",
+              "Magic Link",
+              "Manajemen Sesi"
+            ]
+          },
+          {
+            "icon": "CreditCard",
+            "title": "Integrasi Pembayaran Stripe",
+            "description": "Solusi pembayaran lengkap yang mendukung langganan, pembayaran satu kali, dan manajemen invoice sehingga komersialisasi menjadi mudah.",
+            "highlights": [
+              "Manajemen Langganan",
+              "Pembayaran Sekali",
+              "Sistem Invoice",
+              "Penanganan Webhook"
+            ]
+          },
+          {
+            "icon": "Database",
+            "title": "Basis Data Supabase",
+            "description": "Basis data PostgreSQL yang kuat dengan fitur real-time, autentikasi, dan penyimpanan bawaan yang menjadi fondasi data andal untuk aplikasi Anda.",
+            "highlights": [
+              "PostgreSQL",
+              "Langganan Real-time",
+              "Penyimpanan Berkas",
+              "Row Level Security"
+            ]
+          },
+          {
+            "icon": "Bot",
+            "title": "Infrastruktur Siap AI",
+            "description": "Integrasi AI pra-konfigurasi yang mendukung layanan AI arus utama seperti OpenAI, Anthropic, dengan sistem kredit bawaan dan fungsi penjualan API.",
+            "highlights": [
+              "Integrasi OpenAI",
+              "Sistem Kredit",
+              "Penjualan API",
+              "Dukungan Multi-model"
+            ]
+          },
+          {
+            "icon": "Rocket",
+            "title": "Deploy Satu Klik",
+            "description": "Dukungan deploy satu klik ke platform populer seperti Vercel, Cloudflare dengan proses CI/CD otomatis sehingga publikasi menjadi sederhana.",
+            "highlights": [
+              "Deploy ke Vercel",
+              "Cloudflare Pages",
+              "Otomasi CI/CD",
+              "Manajemen Environment"
+            ]
+          },
+          {
+            "icon": "BarChart3",
+            "title": "Analitik Bisnis",
+            "description": "Integrasi Google Analytics, Search Console, dan alat analitik lainnya untuk membantu Anda memahami perilaku pengguna dan pertumbuhan bisnis.",
+            "highlights": [
+              "Google Analytics",
+              "Search Console",
+              "Analisis Perilaku Pengguna",
+              "Pelacakan Konversi"
+            ]
+          },
+          {
+            "icon": "Globe",
+            "title": "Dukungan Internasionalisasi",
+            "description": "Dukungan multi-bahasa bawaan untuk Tionghoa, Inggris, Jepang, dan bahasa lain sehingga produk Anda menjangkau pengguna global.",
+            "highlights": [
+              "Dukungan Multi-bahasa",
+              "Dukungan RTL",
+              "Pergantian Bahasa Dinamis",
+              "Optimisasi SEO"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "title": "Tumpukan Teknologi",
+        "subtitle": "Dibangun di atas praktik terbaik industri dan teknologi terbaru untuk memastikan kinerja, keamanan, dan skalabilitas optimal",
+        "technologies": [
+          {
+            "name": "Next.js 14+",
+            "description": "Framework React Full-stack"
+          },
+          {
+            "name": "React 19",
+            "description": "Library Antarmuka Pengguna"
+          },
+          {
+            "name": "TypeScript",
+            "description": "JavaScript Berbasis Tipe"
+          },
+          {
+            "name": "Tailwind CSS",
+            "description": "Framework CSS Utility-first"
+          },
+          {
+            "name": "Shadcn/UI",
+            "description": "Library Komponen Modern"
+          },
+          {
+            "name": "Better Auth",
+            "description": "Solusi Autentikasi"
+          },
+          {
+            "name": "Stripe",
+            "description": "Platform Pemrosesan Pembayaran"
+          },
+          {
+            "name": "Supabase",
+            "description": "Backend sebagai Layanan"
+          },
+          {
+            "name": "Vercel",
+            "description": "Platform Deploy"
+          }
+        ]
+      },
+      "comparison": {
+        "title": "Mengapa Memilih ShipBase",
+        "subtitle": "Dibanding metode pengembangan tradisional, ShipBase menghemat 90% waktu pengembangan Anda",
+        "traditional": {
+          "title": "Pengembangan Tradisional",
+          "items": [
+            {
+              "text": "Butuh 3–6 bulan membangun infrastruktur"
+            },
+            {
+              "text": "Harus mempelajari banyak tumpukan teknologi"
+            },
+            {
+              "text": "Harus menangani proses deploy yang kompleks"
+            },
+            {
+              "text": "Harus membuat autentikasi dan pembayaran sendiri"
+            },
+            {
+              "text": "Butuh waktu signifikan untuk debugging dan optimasi"
+            }
+          ]
+        },
+        "shipbase": {
+          "title": "Menggunakan ShipBase",
+          "items": [
+            {
+              "text": "Selesai penyiapan dasar dalam 5 menit"
+            },
+            {
+              "text": "Solusi lengkap siap pakai"
+            },
+            {
+              "text": "Deploy satu klik ke produksi"
+            },
+            {
+              "text": "Autentikasi dan pembayaran pra-konfigurasi"
+            },
+            {
+              "text": "Fokus pada pengembangan fitur produk"
+            }
+          ]
+        }
+      },
+      "cta": {
+        "title": "Siap Membangun AI SaaS Anda?",
+        "subtitle": "Dapatkan ShipBase sekarang dan luncurkan proyek berikutnya dalam hitungan menit",
+        "primaryButton": "Dapatkan ShipBase",
+        "secondaryButton": "Lihat Dokumentasi"
+      }
+    },
+    "pricing": {
+      "title": "Harga",
+      "subtitle": "Harga sederhana dan transparan",
+      "description": "Pilih paket yang sesuai kebutuhan Anda. Mulai gratis dan skala seiring pertumbuhan.",
+      "plansTitle": "Pilih Paket Anda",
+      "plansSubtitle": "Harga sederhana dan transparan tanpa biaya tersembunyi. Pilih paket yang paling sesuai dan tingkatkan kapan saja.",
+      "billingCycles": {
+        "one-time": {
+          "label": "Pembayaran Sekali",
+          "description": "Bayar sekali, gunakan selamanya"
+        },
+        "monthly": {
+          "label": "Bulanan",
+          "description": "Penagihan fleksibel, bisa batal kapan saja"
+        },
+        "yearly": {
+          "label": "Tahunan",
+          "description": "Hemat 20% dengan penagihan tahunan"
+        }
+      },
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "$0",
+          "period": "Selamanya",
+          "description": "Sempurna untuk developer individu dan proyek kecil",
+          "features": [
+            "Template Next.js dasar",
+            "Integrasi GitHub",
+            "Dukungan komunitas",
+            "Dokumentasi dasar",
+            "Lisensi penggunaan personal"
+          ],
+          "limitations": [
+            "Tidak untuk komersial",
+            "Tanpa dukungan teknis",
+            "Fitur terbatas"
+          ],
+          "cta": "Mulai",
+          "popular": false
+        },
+        {
+          "name": "Profesional",
+          "price": "$299",
+          "period": "Pembayaran sekali",
+          "description": "Sempurna untuk startup dan bisnis kecil",
+          "features": [
+            "Template fitur lengkap",
+            "Sistem autentikasi",
+            "Integrasi pembayaran",
+            "Penyiapan basis data",
+            "Integrasi AI",
+            "Deploy satu klik",
+            "Dukungan email",
+            "Lisensi penggunaan komersial",
+            "Akses kode sumber"
+          ],
+          "limitations": [],
+          "cta": "Beli Sekarang",
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "$999",
+          "period": "Pembayaran sekali",
+          "description": "Sempurna untuk perusahaan besar dan tim",
+          "features": [
+            "Semua fitur Profesional",
+            "Fitur AI lanjutan",
+            "Dukungan multi-tenant",
+            "Analitik lanjutan",
+            "Dukungan teknis prioritas",
+            "Layanan pengembangan kustom",
+            "Fitur kolaborasi tim",
+            "Jaminan SLA",
+            "Layanan pelatihan"
+          ],
+          "limitations": [],
+          "cta": "Hubungi Sales",
+          "popular": false
+        }
+      ],
+      "cta": {
+        "getStarted": "Mulai",
+        "buyNow": "Beli Sekarang",
+        "contactSales": "Hubungi Sales",
+        "currentPlan": "Paket Saat Ini"
+      },
+      "features": {
+        "included": "Fitur yang Disertakan",
+        "limitations": "Batasan"
+      },
+      "pricing": {
+        "free": "Gratis",
+        "popular": "Populer",
+        "discount": "Diskon",
+        "save": "Hemat",
+        "perMonth": "per bulan",
+        "perYear": "per tahun",
+        "oneTime": "sekali",
+        "forever": "selamanya"
+      },
+      "faqTitle": "Pertanyaan yang Sering Diajukan",
+      "faqSubtitle": "Masih ada pertanyaan? Kami siap membantu",
+      "faqs": [
+        {
+          "question": "Apa perbedaan paket Gratis dan Berbayar?",
+          "answer": "Paket Gratis menyediakan fitur dasar yang cocok untuk belajar dan proyek personal. Paket berbayar mencakup fitur komersial lengkap seperti autentikasi, integrasi pembayaran, fitur AI, dan lainnya, cocok untuk proyek komersial."
+        },
+        {
+          "question": "Opsi pembayaran apa yang didukung?",
+          "answer": "Kami mendukung pembayaran sekali, penagihan bulanan, dan penagihan tahunan. Penagihan tahunan menawarkan diskon 20%, dan pembayaran sekali memberi akses seumur hidup."
+        },
+        {
+          "question": "Apakah ada pengembalian dana?",
+          "answer": "Kami menawarkan jaminan pengembalian dana tanpa syarat 30 hari. Jika Anda tidak puas dalam 30 hari sejak pembelian, Anda dapat mengajukan pengembalian penuh."
+        },
+        {
+          "question": "Bisakah digunakan untuk proyek komersial?",
+          "answer": "Paket Profesional dan Enterprise mendukung penggunaan komersial. Paket Gratis terbatas untuk belajar pribadi dan proyek non-komersial."
+        },
+        {
+          "question": "Apakah termasuk dukungan teknis?",
+          "answer": "Paket Profesional menyediakan dukungan email, paket Enterprise menyediakan dukungan teknis prioritas. Kami menanggapi pertanyaan Anda dalam 24 jam."
+        },
+        {
+          "question": "Bagaimana cara upgrade ke paket lebih tinggi?",
+          "answer": "Anda dapat upgrade kapan saja dengan membayar selisih harga. Setelah upgrade, Anda langsung menikmati semua fitur paket baru."
+        },
+        {
+          "question": "Apa manfaat penagihan tahunan?",
+          "answer": "Penagihan tahunan memberikan diskon 20% dibanding bulanan, sehingga lebih hemat dan mengurangi frekuensi penagihan."
+        }
+      ]
+    },
+    "docs": {
+      "title": "Dokumentasi",
+      "subtitle": "Semua yang Anda butuhkan untuk mulai",
+      "description": "Panduan komprehensif, referensi API, dan tutorial untuk membantu Anda membangun aplikasi hebat.",
+      "quickStart": {
+        "title": "Mulai Cepat",
+        "subtitle": "Mulai dengan ShipBase dalam beberapa langkah sederhana untuk membangun aplikasi AI SaaS Anda",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Instal ShipBase",
+            "description": "Klon repositori dan instal dependensi",
+            "code": "git clone [https://github.com/your-repo/shipbase\ncd](https://github.com/your-repo/shipbase\ncd) shipbase\npnpm install"
+          },
+          {
+            "step": "2",
+            "title": "Konfigurasi Environment",
+            "description": "Siapkan kunci API dan konfigurasi yang diperlukan",
+            "code": "cp .env.example .env.local\n# Edit file .env.local"
+          },
+          {
+            "step": "3",
+            "title": "Jalankan Server Development",
+            "description": "Jalankan proyek secara lokal",
+            "code": "pnpm dev\n# Kunjungi http://localhost:3000"
+          },
+          {
+            "step": "4",
+            "title": "Deploy ke Produksi",
+            "description": "Deploy satu klik ke Vercel",
+            "code": "pnpm build\nvercel deploy"
+          }
+        ]
+      },
+      "navigation": {
+        "title": "Navigasi Dokumentasi",
+        "subtitle": "Jelajahi dokumentasi lengkap kami untuk menemukan semua informasi yang Anda butuhkan",
+        "sections": [
+          {
+            "title": "Mulai Cepat",
+            "description": "Siap jalan dengan ShipBase dalam 5 menit",
+            "icon": "Rocket",
+            "links": [
+              {
+                "name": "Panduan Instalasi",
+                "href": "#"
+              },
+              {
+                "name": "Penyiapan Environment",
+                "href": "#"
+              },
+              {
+                "name": "Aplikasi Pertama",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Fitur Inti",
+            "description": "Pelajari fungsi inti ShipBase",
+            "icon": "Code",
+            "links": [
+              {
+                "name": "Autentikasi",
+                "href": "#"
+              },
+              {
+                "name": "Integrasi Pembayaran",
+                "href": "#"
+              },
+              {
+                "name": "Penyiapan Basis Data",
+                "href": "#"
+              },
+              {
+                "name": "Integrasi AI",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Referensi API",
+            "description": "Dokumentasi API lengkap dan contoh",
+            "icon": "Database",
+            "links": [
+              {
+                "name": "REST API",
+                "href": "#"
+              },
+              {
+                "name": "GraphQL",
+                "href": "#"
+              },
+              {
+                "name": "Webhooks",
+                "href": "#"
+              },
+              {
+                "name": "SDK",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Panduan Deploy",
+            "description": "Deploy aplikasi Anda ke produksi",
+            "icon": "Globe",
+            "links": [
+              {
+                "name": "Deploy Vercel",
+                "href": "#"
+              },
+              {
+                "name": "Cloudflare Pages",
+                "href": "#"
+              },
+              {
+                "name": "Deploy Docker",
+                "href": "#"
+              },
+              {
+                "name": "Konfigurasi Environment",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Praktik Terbaik",
+            "description": "Praktik terbaik untuk development dan produksi",
+            "icon": "Shield",
+            "links": [
+              {
+                "name": "Panduan Keamanan",
+                "href": "#"
+              },
+              {
+                "name": "Optimasi Kinerja",
+                "href": "#"
+              },
+              {
+                "name": "Monitoring & Logging",
+                "href": "#"
+              },
+              {
+                "name": "Penanganan Error",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Pemecahan Masalah",
+            "description": "Masalah umum dan solusinya",
+            "icon": "Zap",
+            "links": [
+              {
+                "name": "FAQ",
+                "href": "#"
+              },
+              {
+                "name": "Kode Error",
+                "href": "#"
+              },
+              {
+                "name": "Tips Debugging",
+                "href": "#"
+              },
+              {
+                "name": "Dukungan Komunitas",
+                "href": "#"
+              }
+            ]
+          }
+        ]
+      },
+      "support": {
+        "title": "Butuh Bantuan?",
+        "subtitle": "Komunitas dan tim dukungan kami siap membantu",
+        "description": "Bergabunglah dengan komunitas Discord kami atau lihat FAQ.",
+        "discordButton": "Gabung Discord",
+        "faqButton": "Lihat FAQ"
+      }
+    },
+    "integrations": {
+      "title": "Integrasi",
+      "subtitle": "Terhubung dengan alat favorit Anda",
+      "description": "Integrasikan ShipBase dengan alur kerja dan layanan pihak ketiga yang sudah Anda gunakan.",
+      "categories": [
+        {
+          "name": "Autentikasi & Keamanan",
+          "description": "Solusi autentikasi pengguna yang aman dan andal",
+          "icon": "Shield",
+          "integrations": [
+            {
+              "name": "Google OAuth",
+              "description": "Login cepat dengan akun Google",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Login satu klik",
+                "Sinkronisasi info pengguna",
+                "Aman & andal"
+              ],
+              "documentation": "/docs/auth/google"
+            },
+            {
+              "name": "GitHub OAuth",
+              "description": "Login GitHub ramah developer",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Autentikasi developer",
+                "Akses repositori",
+                "Kolaborasi tim"
+              ],
+              "documentation": "/docs/auth/github"
+            },
+            {
+              "name": "Magic Link",
+              "description": "Pengalaman login tanpa kata sandi",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Verifikasi email",
+                "Login tanpa sandi",
+                "Aman & nyaman"
+              ],
+              "documentation": "/docs/auth/magic-link"
+            }
+          ]
+        },
+        {
+          "name": "Pembayaran & Penagihan",
+          "description": "Solusi lengkap pembayaran dan manajemen langganan",
+          "icon": "CreditCard",
+          "integrations": [
+            {
+              "name": "Stripe",
+              "description": "Platform pemrosesan pembayaran terkemuka global",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Manajemen langganan",
+                "Pembayaran sekali",
+                "Sistem invoice",
+                "Dukungan webhook"
+              ],
+              "documentation": "/docs/payments/stripe"
+            },
+            {
+              "name": "PayPal",
+              "description": "Metode pembayaran tepercaya oleh pengguna global",
+              "logo": "/api/placeholder/40/40",
+              "status": "coming-soon",
+              "features": [
+                "Pembayaran PayPal",
+                "Manajemen langganan",
+                "Pemrosesan refund"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Basis Data & Penyimpanan",
+          "description": "Layanan penyimpanan dan manajemen data yang andal",
+          "icon": "Database",
+          "integrations": [
+            {
+              "name": "Supabase",
+              "description": "Alternatif Firebase open-source",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Basis data PostgreSQL",
+                "Langganan real-time",
+                "Penyimpanan berkas",
+                "Row Level Security"
+              ],
+              "documentation": "/docs/database/supabase"
+            },
+            {
+              "name": "PlanetScale",
+              "description": "Basis data MySQL tanpa server",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "Arsitektur serverless",
+                "Manajemen branch",
+                "Auto-scaling"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AI & Machine Learning",
+          "description": "Integrasi layanan AI yang kuat",
+          "icon": "Bot",
+          "integrations": [
+            {
+              "name": "OpenAI",
+              "description": "Layanan model bahasa AI terdepan",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Model GPT",
+                "Embeddings",
+                "Pembuatan gambar",
+                "Manajemen API"
+              ],
+              "documentation": "/docs/ai/openai"
+            },
+            {
+              "name": "Anthropic",
+              "description": "Layanan model Claude AI",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Model Claude",
+                "Pemrosesan teks panjang",
+                "Percakapan aman"
+              ],
+              "documentation": "/docs/ai/anthropic"
+            },
+            {
+              "name": "Hugging Face",
+              "description": "Platform model AI open-source",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "Model open-source",
+                "Hosting model",
+                "Inference API"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Analitik & Monitoring",
+          "description": "Wawasan mendalam tentang perilaku pengguna dan kinerja sistem",
+          "icon": "BarChart3",
+          "integrations": [
+            {
+              "name": "Google Analytics",
+              "description": "Alat analitik situs web komprehensif",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Analisis perilaku pengguna",
+                "Pelacakan konversi",
+                "Laporan real-time",
+                "Event kustom"
+              ],
+              "documentation": "/docs/analytics/google"
+            },
+            {
+              "name": "Mixpanel",
+              "description": "Platform analitik produk",
+              "logo": "/api/placeholder/40/40",
+              "status": "coming-soon",
+              "features": [
+                "Pelacakan event",
+                "Profil pengguna",
+                "Analisis funnel"
+              ]
+            },
+            {
+              "name": "Sentry",
+              "description": "Monitoring error dan pelacakan kinerja",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "Pemantauan error",
+                "Pelacakan kinerja",
+                "Pelacakan rilis"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Komunikasi & Notifikasi",
+          "description": "Solusi komunikasi multi-kanal dengan pengguna",
+          "icon": "Mail",
+          "integrations": [
+            {
+              "name": "SendGrid",
+              "description": "Layanan pengiriman email yang andal",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Pengiriman email",
+                "Manajemen template",
+                "Statistik deliverability",
+                "Dukungan webhook"
+              ],
+              "documentation": "/docs/email/sendgrid"
+            },
+            {
+              "name": "Twilio",
+              "description": "Platform komunikasi global",
+              "logo": "/api/placeholder/40/40",
+              "status": "coming-soon",
+              "features": [
+                "Pengiriman SMS",
+                "Panggilan suara",
+                "Panggilan video"
+              ]
+            },
+            {
+              "name": "Slack",
+              "description": "Kolaborasi tim dan notifikasi",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "Pengiriman pesan",
+                "Integrasi kanal",
+                "Otomasi alur kerja"
+              ]
+            }
+          ]
+        }
+      ],
+      "popularIntegrations": {
+        "title": "Integrasi Populer",
+        "subtitle": "Layanan integrasi yang paling disukai developer",
+        "items": [
+          {
+            "name": "Stripe",
+            "description": "Platform pemrosesan pembayaran terkemuka global",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "Manajemen langganan",
+              "Pembayaran sekali",
+              "Sistem invoice"
+            ]
+          },
+          {
+            "name": "OpenAI",
+            "description": "Layanan model bahasa AI terdepan",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "Model GPT",
+              "Embeddings",
+              "Pembuatan gambar"
+            ]
+          },
+          {
+            "name": "Supabase",
+            "description": "Alternatif Firebase open-source",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "PostgreSQL",
+              "Langganan real-time",
+              "Penyimpanan berkas"
+            ]
+          },
+          {
+            "name": "Google Analytics",
+            "description": "Alat analitik situs web komprehensif",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "Analitik pengguna",
+              "Pelacakan konversi",
+              "Laporan real-time"
+            ]
+          }
+        ]
+      },
+      "gettingStarted": {
+        "title": "Mulai Integrasi",
+        "subtitle": "Integrasikan layanan yang Anda perlukan dalam beberapa langkah",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Pilih Layanan Integrasi",
+            "description": "Jelajahi katalog integrasi kami dan pilih layanan yang Anda butuhkan",
+            "code": "# Lihat integrasi yang tersedia\nnpm run list-integrations"
+          },
+          {
+            "step": "2",
+            "title": "Konfigurasi Variabel Environment",
+            "description": "Tambahkan kunci API dan konfigurasi yang diperlukan",
+            "code": "# Konfigurasi variabel environment\ncp .env.example .env.local\n# Edit file .env.local"
+          },
+          {
+            "step": "3",
+            "title": "Instal Paket Integrasi",
+            "description": "Instal paket integrasi dan dependensinya",
+            "code": "# Instal paket integrasi\npnpm add @shipbase/integrations-stripe"
+          },
+          {
+            "step": "4",
+            "title": "Inisialisasi Integrasi",
+            "description": "Inisialisasi layanan integrasi di aplikasi Anda",
+            "code": "# Inisialisasi integrasi\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\nconst stripe = new StripeIntegration()"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Siap Memulai Integrasi?",
+        "subtitle": "Langsung gunakan fitur integrasi kuat dari ShipBase",
+        "primaryButton": "Lihat Dokumentasi",
+        "secondaryButton": "Hubungi Dukungan"
+      }
+    },
+    "help": {
+      "title": "Pusat Bantuan",
+      "subtitle": "Dapatkan dukungan yang Anda butuhkan",
+      "description": "Temukan jawaban atas pertanyaan umum, panduan pemecahan masalah, dan praktik terbaik.",
+      "searchPlaceholder": "Cari artikel bantuan...",
+      "popularArticles": {
+        "title": "Artikel Populer",
+        "subtitle": "Artikel bantuan paling banyak dibaca",
+        "articles": [
+          {
+            "title": "Memulai dengan ShipBase",
+            "description": "Pelajari cara menyiapkan dan mendeploy aplikasi AI SaaS pertama Anda dengan cepat",
+            "href": "#",
+            "tags": [
+              "Mulai Cepat",
+              "Deploy",
+              "Penyiapan"
+            ]
+          },
+          {
+            "title": "Panduan Konfigurasi Autentikasi",
+            "description": "Instruksi detail untuk mengonfigurasi Google OAuth, GitHub OAuth, dan Magic Link",
+            "href": "#",
+            "tags": [
+              "Autentikasi",
+              "OAuth",
+              "Konfigurasi"
+            ]
+          },
+          {
+            "title": "Integrasi Pembayaran Stripe",
+            "description": "Cara menyiapkan langganan, pembayaran satu kali, dan manajemen invoice",
+            "href": "#",
+            "tags": [
+              "Pembayaran",
+              "Stripe",
+              "Langganan"
+            ]
+          },
+          {
+            "title": "Integrasi Fitur AI",
+            "description": "Panduan lengkap mengintegrasikan OpenAI, Anthropic, dan layanan AI lainnya",
+            "href": "#",
+            "tags": [
+              "AI",
+              "OpenAI",
+              "Integrasi"
+            ]
+          },
+          {
+            "title": "Penyiapan Basis Data dan Migrasi",
+            "description": "Konfigurasi Supabase dan praktik terbaik migrasi data",
+            "href": "#",
+            "tags": [
+              "Basis Data",
+              "Supabase",
+              "Migrasi"
+            ]
+          },
+          {
+            "title": "Deploy ke Produksi",
+            "description": "Langkah detail untuk deploy di Vercel dan Cloudflare",
+            "href": "#",
+            "tags": [
+              "Deploy",
+              "Vercel",
+              "Produksi"
+            ]
+          }
+        ]
+      },
+      "categoriesTitle": "Kategori Bantuan",
+      "categoriesSubtitle": "Jelajahi artikel bantuan berdasarkan kategori",
+      "categories": [
+        {
+          "title": "Mulai Cepat",
+          "description": "Panduan onboarding pengguna baru",
+          "icon": "Rocket",
+          "articles": [
+            {
+              "title": "Instalasi dan Penyiapan",
+              "description": "Menyiapkan proyek ShipBase dari nol",
+              "href": "#",
+              "tags": [
+                "Instalasi",
+                "Penyiapan",
+                "Environment"
+              ]
+            },
+            {
+              "title": "Aplikasi Pertama",
+              "description": "Buat aplikasi AI SaaS pertama Anda",
+              "href": "#",
+              "tags": [
+                "Tutorial",
+                "Aplikasi",
+                "Pengembangan"
+              ]
+            },
+            {
+              "title": "Konfigurasi Variabel Environment",
+              "description": "Mengonfigurasi semua variabel environment yang diperlukan dengan benar",
+              "href": "#",
+              "tags": [
+                "Konfigurasi",
+                "Variabel Environment",
+                "Kunci API"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fitur Inti",
+          "description": "Panduan penggunaan fitur utama ShipBase",
+          "icon": "Code",
+          "articles": [
+            {
+              "title": "Sistem Autentikasi",
+              "description": "Login pengguna, pendaftaran, dan manajemen sesi",
+              "href": "#",
+              "tags": [
+                "Autentikasi",
+                "Manajemen Pengguna",
+                "Sesi"
+              ]
+            },
+            {
+              "title": "Pemrosesan Pembayaran",
+              "description": "Manajemen langganan dan alur pembayaran",
+              "href": "#",
+              "tags": [
+                "Pembayaran",
+                "Langganan",
+                "Penagihan"
+              ]
+            },
+            {
+              "title": "Operasi Basis Data",
+              "description": "Penyimpanan data dan praktik terbaik query",
+              "href": "#",
+              "tags": [
+                "Basis Data",
+                "Query",
+                "Penyimpanan"
+              ]
+            },
+            {
+              "title": "Integrasi AI",
+              "description": "Integrasi dan penggunaan layanan AI",
+              "href": "#",
+              "tags": [
+                "AI",
+                "Machine Learning",
+                "API"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Deploy & Operasional",
+          "description": "Panduan deploy ke produksi dan operasional",
+          "icon": "Globe",
+          "articles": [
+            {
+              "title": "Deploy Vercel",
+              "description": "Deploy aplikasi Anda menggunakan Vercel",
+              "href": "#",
+              "tags": [
+                "Vercel",
+                "Deploy",
+                "CDN"
+              ]
+            },
+            {
+              "title": "Cloudflare Pages",
+              "description": "Panduan deploy Cloudflare Pages",
+              "href": "#",
+              "tags": [
+                "Cloudflare",
+                "Deploy",
+                "Edge Computing"
+              ]
+            },
+            {
+              "title": "Manajemen Environment",
+              "description": "Manajemen environment development, testing, dan produksi",
+              "href": "#",
+              "tags": [
+                "Environment",
+                "Konfigurasi",
+                "Manajemen"
+              ]
+            },
+            {
+              "title": "Monitoring dan Logging",
+              "description": "Pemantauan aplikasi dan pencatatan log",
+              "href": "#",
+              "tags": [
+                "Monitoring",
+                "Logging",
+                "Analitik"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pemecahan Masalah",
+          "description": "Masalah umum dan solusinya",
+          "icon": "Zap",
+          "articles": [
+            {
+              "title": "Error Umum",
+              "description": "Menyelesaikan error deploy dan runtime yang umum",
+              "href": "#",
+              "tags": [
+                "Error",
+                "Debugging",
+                "Solusi"
+              ]
+            },
+            {
+              "title": "Optimasi Kinerja",
+              "description": "Tips meningkatkan kinerja aplikasi",
+              "href": "#",
+              "tags": [
+                "Kinerja",
+                "Optimasi",
+                "Kecepatan"
+              ]
+            },
+            {
+              "title": "Praktik Keamanan",
+              "description": "Melindungi aplikasi dan keamanan data",
+              "href": "#",
+              "tags": [
+                "Keamanan",
+                "Praktik Terbaik",
+                "Proteksi"
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": {
+        "title": "Pertanyaan yang Sering Diajukan",
+        "subtitle": "Temukan jawaban yang Anda butuhkan dengan cepat",
+        "faqs": [
+          {
+            "question": "Layanan AI apa yang didukung ShipBase?",
+            "answer": "ShipBase mendukung layanan AI arus utama seperti OpenAI, Anthropic, Google AI, dan menyediakan antarmuka terpadu untuk mengelola berbagai penyedia AI."
+          },
+          {
+            "question": "Bagaimana cara menyesuaikan antarmuka ShipBase?",
+            "answer": "ShipBase menggunakan Tailwind CSS dan Shadcn/UI sehingga mudah menyesuaikan gaya. Semua komponen dapat dikustomisasi dan mendukung penggantian tema."
+          },
+          {
+            "question": "Apakah ShipBase mendukung banyak bahasa?",
+            "answer": "Ya, ShipBase memiliki dukungan internasionalisasi bawaan. Saat ini mendukung Tionghoa, Inggris, dan Jepang, dan Anda dapat menambahkan bahasa lain dengan mudah."
+          },
+          {
+            "question": "Bagaimana cara upgrade versi ShipBase?",
+            "answer": "Anda dapat upgrade ShipBase dengan menarik kode terbaru melalui Git. Kami menyarankan untuk mencadangkan kode kustom Anda sebelum upgrade."
+          },
+          {
+            "question": "Bagaimana performa ShipBase?",
+            "answer": "ShipBase dibangun di atas Next.js 14+ dengan Server Components dan dukungan Edge Runtime sehingga memberikan performa yang sangat baik."
+          },
+          {
+            "question": "Bagaimana cara mendapatkan dukungan teknis?",
+            "answer": "Anda dapat menghubungi kami melalui email atau bergabung dengan komunitas Discord untuk bantuan real-time."
+          }
+        ]
+      },
+      "contact": {
+        "title": "Butuh Bantuan Lebih Lanjut?",
+        "subtitle": "Hubungi tim dukungan kami",
+        "description": "Jika jawaban tidak ditemukan di dokumentasi, tim dukungan kami siap membantu.",
+        "emailButton": "Kirim Email",
+        "discordButton": "Gabung Discord"
+      }
+    },
+    "contact": {
+      "title": "Hubungi Kami",
+      "subtitle": "Kami siap membantu",
+      "description": "Hubungi tim kami untuk dukungan, kemitraan, atau pertanyaan umum.",
+      "contactMethodsTitle": "Hubungi Kami",
+      "contactMethodsSubtitle": "Kami senang mendengar dari Anda. Pilih metode kontak yang paling nyaman",
+      "teamTitle": "Kontak Langsung Tim",
+      "teamSubtitle": "Hubungi tim yang tepat sesuai kebutuhan Anda",
+      "responseTimeTitle": "Waktu Respon",
+      "responseTimeSubtitle": "Kami berjanji merespons permintaan Anda dengan cepat",
+      "contactMethods": [
+        {
+          "icon": "Users",
+          "title": "Komunitas Discord",
+          "description": "Bergabunglah dengan komunitas Discord kami untuk terhubung dengan developer lain",
+          "action": "Gabung Discord",
+          "href": "#"
+        },
+        {
+          "icon": "Zap",
+          "title": "Dukungan Email",
+          "description": "Kirim email ke [support@shipbase.com](mailto:support@shipbase.com)",
+          "action": "Kirim Email",
+          "href": "mailto:support@shipbase.com"
+        },
+        {
+          "icon": "Shield",
+          "title": "GitHub Issues",
+          "description": "Laporkan masalah atau saran di GitHub",
+          "action": "Lihat Issues",
+          "href": "#"
+        },
+        {
+          "icon": "Rocket",
+          "title": "Kemitraan Enterprise",
+          "description": "Dukungan tingkat enterprise dan layanan pengembangan kustom",
+          "action": "Hubungi Sales",
+          "href": "mailto:sales@shipbase.com"
+        }
+      ],
+      "team": [
+        {
+          "name": "Dukungan Teknis",
+          "email": "[support@shipbase.com](mailto:support@shipbase.com)",
+          "description": "Masalah teknis dan pemecahan masalah"
+        },
+        {
+          "name": "Tim Penjualan",
+          "email": "[sales@shipbase.com](mailto:sales@shipbase.com)",
+          "description": "Kemitraan bisnis dan layanan kustom"
+        },
+        {
+          "name": "Umpan Balik Produk",
+          "email": "[feedback@shipbase.com](mailto:feedback@shipbase.com)",
+          "description": "Saran produk dan permintaan fitur"
+        }
+      ],
+      "responseTimes": [
+        {
+          "time": "< 1 jam",
+          "title": "Dukungan Discord",
+          "description": "Dukungan komunitas dengan respon cepat"
+        },
+        {
+          "time": "< 24 jam",
+          "title": "Dukungan Email",
+          "description": "Tim profesional dengan respon detail"
+        },
+        {
+          "time": "< 48 jam",
+          "title": "Dukungan Enterprise",
+          "description": "Solusi kustom dan dukungan dedikasi"
+        }
+      ]
+    },
+    "status": {
+      "title": "Status Layanan",
+      "subtitle": "Status sistem real-time",
+      "description": "Pantau status terkini semua layanan dan infrastruktur ShipBase.",
+      "overview": {
+        "title": "Ringkasan Status Layanan",
+        "subtitle": "Pemantauan real-time semua layanan ShipBase",
+        "allSystemsOperational": "Semua Sistem Beroperasi Normal",
+        "lastUpdated": "Terakhir diperbarui"
+      },
+      "services": {
+        "title": "Status Layanan",
+        "subtitle": "Status saat ini semua layanan ShipBase",
+        "api": {
+          "name": "Layanan API",
+          "description": "Endpoint dan layanan API inti"
+        },
+        "auth": {
+          "name": "Autentikasi",
+          "description": "Autentikasi dan otorisasi pengguna"
+        },
+        "payments": {
+          "name": "Pemrosesan Pembayaran",
+          "description": "Layanan pembayaran Stripe"
+        },
+        "database": {
+          "name": "Basis Data",
+          "description": "Layanan basis data Supabase"
+        },
+        "cdn": {
+          "name": "CDN",
+          "description": "Jaringan pengantaran konten"
+        },
+        "monitoring": {
+          "name": "Sistem Monitoring",
+          "description": "Pemantauan sistem dan peringatan"
+        },
+        "statusOperational": "Operasional",
+        "statusDegraded": "Kinerja Menurun",
+        "statusOutage": "Gangguan Layanan",
+        "uptime": "Waktu Aktif",
+        "lastIncident": "Insiden Terakhir",
+        "none": "Tidak ada"
+      },
+      "subscribe": {
+        "title": "Berlangganan Pembaruan Status",
+        "subtitle": "Dapatkan notifikasi perubahan status layanan via email atau RSS",
+        "emailSubscribe": "Langganan Email",
+        "rssSubscribe": "Langganan RSS",
+        "description": "Tetap terinformasi tentang perubahan status layanan dan jadwal pemeliharaan"
+      }
+    },
+    "privacy": {
+      "title": "Kebijakan Privasi",
+      "subtitle": "Privasi Anda penting",
+      "description": "Pelajari cara kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda.",
+      "lastUpdated": "Terakhir diperbarui: 1 Januari 2024",
+      "introduction": {
+        "title": "Pendahuluan",
+        "content": "Selamat datang di ShipBase, **NextJS Boilerplate** yang dirancang untuk membantu Anda membangun startup AI SaaS dengan cepat dan efisien. Di ShipBase, privasi Anda sangat penting bagi kami, dan kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda saat menggunakan layanan kami."
+      },
+      "informationCollection": {
+        "title": "Pengumpulan dan Penggunaan Informasi",
+        "subtitle": "Kami mengumpulkan jenis data berikut untuk memberikan pengalaman lebih baik saat menggunakan ShipBase:",
+        "accountInfo": {
+          "title": "Informasi Akun",
+          "whatWeCollect": "Yang Kami Kumpulkan: Nama, alamat email, dan informasi lain yang Anda berikan saat membuat akun.",
+          "purpose": "Tujuan: Mengelola akun Anda dan menyediakan dukungan pelanggan."
+        },
+        "usageDetails": {
+          "title": "Detail Penggunaan",
+          "whatWeCollect": "Yang Kami Kumpulkan: Informasi tentang cara Anda menggunakan ShipBase, termasuk interaksi, fitur yang diakses, dan frekuensi penggunaan.",
+          "purpose": "Tujuan: Menganalisis keterlibatan pengguna dan meningkatkan layanan kami."
+        },
+        "deviceInfo": {
+          "title": "Informasi Perangkat",
+          "whatWeCollect": "Yang Kami Kumpulkan: Data mengenai perangkat yang Anda gunakan untuk mengakses ShipBase, seperti tipe perangkat, sistem operasi, dan jenis peramban.",
+          "purpose": "Tujuan: Mengoptimalkan layanan kami untuk berbagai perangkat dan memastikan kompatibilitas."
+        },
+        "cookies": {
+          "title": "Cookie",
+          "whatWeCollect": "Yang Kami Kumpulkan: File data kecil yang ditempatkan pada perangkat Anda untuk membantu kami melacak preferensi pengguna dan meningkatkan pengalaman.",
+          "purpose": "Tujuan: Meningkatkan fungsionalitas layanan dan mempersonalisasi pengalaman Anda."
+        },
+        "paymentInfo": {
+          "title": "Informasi Pembayaran dan Penagihan",
+          "whatWeCollect": "Yang Kami Kumpulkan: Informasi terkait metode pembayaran Anda, seperti nomor kartu kredit, alamat penagihan, dan detail yang diperlukan untuk pemrosesan transaksi.",
+          "purpose": "Tujuan: Memfasilitasi penagihan dan pemrosesan pembayaran untuk layanan kami."
+        }
+      },
+      "dataStorage": {
+        "title": "Penyimpanan dan Keamanan Data",
+        "content": "Kami menjaga keamanan informasi pribadi Anda dengan serius. Data yang kami kumpulkan disimpan dengan aman di server kami, dan kami menerapkan berbagai langkah keamanan termasuk enkripsi dan kontrol akses untuk melindungi dari akses, perubahan, pengungkapan, atau perusakan yang tidak sah. Namun, harap diketahui bahwa tidak ada metode transmisi melalui Internet atau penyimpanan elektronik yang 100% aman, dan kami tidak dapat menjamin keamanannya secara absolut."
+      },
+      "informationSharing": {
+        "title": "Berbagi dan Pengungkapan Informasi",
+        "content": "Kami tidak menjual, memperdagangkan, atau mentransfer informasi pribadi Anda kepada pihak luar, kecuali dalam keadaan berikut:",
+        "circumstances": [
+          "Untuk mematuhi kewajiban hukum atau menanggapi permintaan sah dari otoritas publik.",
+          "Untuk melindungi hak, properti, atau keselamatan kami, pengguna kami, atau pihak lain.",
+          "Untuk menyediakan layanan melalui mitra pihak ketiga tepercaya yang membantu kami mengoperasikan situs web atau menjalankan bisnis, tunduk pada perjanjian kerahasiaan."
+        ]
+      },
+      "policyChanges": {
+        "title": "Perubahan Kebijakan Ini",
+        "content": "Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan dengan memposting kebijakan baru di halaman ini dan memperbarui tanggal berlaku di bagian atas. Kami menyarankan Anda meninjau kebijakan ini secara berkala. Perubahan berlaku saat diposting."
+      },
+      "contactUs": {
+        "title": "Hubungi Kami",
+        "content": "Jika Anda memiliki pertanyaan atau kekhawatiran tentang kebijakan privasi ini atau praktik data kami, hubungi kami di:",
+        "copyrightOwner": "Pemilik Hak Cipta: shipbase.ai",
+        "email": "Email: [support@shipbase.ai](mailto:support@shipbase.ai)"
+      },
+      "consent": {
+        "content": "Dengan menggunakan ShipBase, Anda menyetujui kebijakan privasi kami dan menyetujui ketentuannya. Terima kasih telah mempercayakan informasi Anda kepada kami!"
+      }
+    },
+    "terms": {
+      "title": "Ketentuan Layanan",
+      "subtitle": "Syarat dan ketentuan kami",
+      "description": "Baca ketentuan layanan kami dan pahami hak serta tanggung jawab Anda.",
+      "lastUpdated": "Terakhir diperbarui: 1 Januari 2024",
+      "introduction": {
+        "title": "Pendahuluan dan Penerimaan Ketentuan",
+        "content": "Selamat datang di **ShipBase**, boilerplate NextJS yang dirancang untuk membangun startup AI SaaS dengan cepat dan efisien. Dengan mengakses atau menggunakan layanan kami, Anda setuju untuk terikat oleh Ketentuan Layanan ini. Jika Anda tidak setuju dengan ketentuan apa pun, mohon jangan gunakan layanan kami."
+      },
+      "serviceUse": {
+        "title": "Penggunaan Layanan",
+        "content": "ShipBase menyediakan platform komprehensif bagi pengguna untuk membangun dan meluncurkan startup AI SaaS menggunakan template dan infrastruktur kami. Anda setuju menggunakan layanan sesuai hukum dan regulasi yang berlaku di tingkat lokal, negara bagian, nasional, dan internasional."
+      },
+      "userAccounts": {
+        "title": "Akun Pengguna dan Pendaftaran",
+        "content": "Untuk mengakses fitur tertentu, Anda perlu membuat akun. Anda harus memberikan informasi yang akurat dan lengkap saat pendaftaran. Anda bertanggung jawab menjaga kerahasiaan kredensial akun dan semua aktivitas di bawah akun Anda. Beri tahu kami segera jika ada penggunaan tidak sah atau pelanggaran keamanan."
+      },
+      "intellectualProperty": {
+        "title": "Konten dan Hak Kekayaan Intelektual",
+        "content": "Seluruh konten yang disediakan melalui ShipBase—termasuk namun tidak terbatas pada template, kode, penyiapan infrastruktur, dan dokumentasi—dilindungi oleh hukum hak cipta. Pemilik hak cipta ShipBase adalah **shipbase.ai**.",
+        "points": [
+          "Anda mengakui tidak memiliki teknologi dasar atau kekayaan intelektual yang membentuk layanan ShipBase, dan setuju menghormati hak kekayaan intelektual shipbase.ai dan pihak ketiga mana pun.",
+          "Meski Anda tetap memiliki kepemilikan atas implementasi dan modifikasi kustom Anda, platform inti dan template ShipBase tetap menjadi milik shipbase.ai."
+        ]
+      },
+      "prohibitedActivities": {
+        "title": "Aktivitas Terlarang",
+        "content": "Anda setuju untuk tidak melakukan aktivitas terlarang berikut saat menggunakan ShipBase:",
+        "activities": [
+          "Akses tidak sah atau distribusi kode dan template proprietary kami",
+          "Menjual kembali atau mendistribusikan template ShipBase tanpa izin",
+          "Mengganggu atau merusak keamanan atau kinerja layanan",
+          "Menggunakan layanan untuk tujuan ilegal atau tidak sah",
+          "Mencoba melewati fitur keamanan layanan"
+        ]
+      },
+      "privacyData": {
+        "title": "Privasi dan Pengumpulan Data",
+        "content": "ShipBase mengumpulkan jenis data berikut:",
+        "dataTypes": [
+          "Informasi Akun: Informasi yang Anda berikan saat membuat akun",
+          "Detail Penggunaan: Data terkait aktivitas Anda di layanan kami",
+          "Informasi Perangkat: Informasi tentang perangkat yang Anda gunakan untuk mengakses layanan",
+          "Cookie: Data yang membantu kami meningkatkan pengalaman Anda",
+          "Informasi Pembayaran dan Penagihan: Data yang diperlukan untuk memproses pembayaran"
+        ],
+        "privacyPolicy": "Untuk detail lebih lanjut, silakan lihat Kebijakan Privasi kami."
+      },
+      "pricingPayments": {
+        "title": "Harga dan Pembayaran",
+        "points": [
+          "Semua pembelian bersifat final dan tidak dapat dikembalikan kecuali diwajibkan oleh hukum",
+          "Harga dapat berubah dengan pemberitahuan kepada pengguna",
+          "Anda setuju membayar semua biaya sesuai paket yang dipilih",
+          "Syarat pembayaran mengikuti metode dan paket yang Anda pilih"
+        ]
+      },
+      "termination": {
+        "title": "Penghentian",
+        "content": "Kami berhak menghentikan atau menangguhkan akses Anda ke layanan atas kebijakan kami sendiri, tanpa pemberitahuan, untuk tindakan yang kami anggap melanggar Ketentuan ini atau merugikan pengguna lain, kami, atau pihak ketiga."
+      },
+      "warranties": {
+        "title": "Penafian Jaminan",
+        "content": "Layanan disediakan apa adanya dan sesuai ketersediaan. Kami tidak membuat jaminan atau pernyataan mengenai akurasi, keandalan, atau ketersediaan layanan dan menafikan semua jaminan sejauh diizinkan oleh hukum."
+      },
+      "liability": {
+        "title": "Batasan Tanggung Jawab",
+        "content": "Sejauh diizinkan oleh hukum, shipbase.ai tidak bertanggung jawab atas kerusakan langsung, tidak langsung, insidental, khusus, konsekuensial, atau hukuman yang timbul dari penggunaan atau ketidakmampuan menggunakan layanan."
+      },
+      "indemnification": {
+        "title": "Ganti Rugi",
+        "content": "Anda setuju untuk mengganti rugi dan membebaskan shipbase.ai, afiliasinya, serta pejabat, direktur, karyawan, dan agennya dari klaim, kerusakan, kerugian, tanggung jawab, dan biaya (termasuk biaya pengacara) yang timbul dari penggunaan layanan atau pelanggaran Ketentuan ini."
+      },
+      "governingLaw": {
+        "title": "Hukum yang Berlaku dan Penyelesaian Sengketa",
+        "content": "Ketentuan ini diatur dan ditafsirkan sesuai hukum yurisdiksi tempat shipbase.ai beroperasi, tanpa memperhatikan pertentangan aturan hukum. Sengketa yang timbul dari Ketentuan ini atau layanan akan diselesaikan melalui arbitrase yang mengikat sesuai hukum yang berlaku."
+      },
+      "changes": {
+        "title": "Perubahan Ketentuan Ini",
+        "content": "Kami berhak memperbarui atau memodifikasi Ketentuan kapan saja. Perubahan berlaku segera setelah diposting di situs kami. Penggunaan berkelanjutan setelah perubahan menandakan penerimaan Anda atas ketentuan baru."
+      },
+      "contact": {
+        "title": "Informasi Kontak",
+        "content": "Jika Anda memiliki pertanyaan tentang Ketentuan ini, hubungi kami di [support@shipbase.ai](mailto:support@shipbase.ai)."
+      },
+      "acknowledgment": {
+        "content": "Dengan menggunakan ShipBase, Anda mengakui telah membaca, memahami, dan setuju untuk terikat oleh Ketentuan Layanan ini. Terima kasih telah memilih ShipBase!"
+      }
+    },
+    "cookies": {
+      "title": "Kebijakan Cookie",
+      "subtitle": "Cara kami menggunakan cookie",
+      "description": "Pahami bagaimana kami menggunakan cookie dan teknologi serupa di platform kami.",
+      "lastUpdated": "Terakhir diperbarui: 1 Januari 2024",
+      "introduction": {
+        "title": "Apa itu Cookie",
+        "content": "Cookie adalah file teks kecil yang disimpan pada perangkat Anda saat Anda mengunjungi situs web. Cookie banyak digunakan untuk membuat situs berfungsi lebih efisien dan memberikan informasi kepada pemilik situs."
+      },
+      "howWeUseCookies": {
+        "title": "Cara Kami Menggunakan Cookie",
+        "subtitle": "Kami menggunakan cookie untuk meningkatkan pengalaman menjelajah Anda, menganalisis trafik situs, dan mempersonalisasi konten serta iklan.",
+        "essential": {
+          "title": "Cookie Esensial",
+          "description": "Cookie ini diperlukan agar situs berfungsi dengan baik dan tidak dapat dimatikan. Biasanya hanya diatur sebagai respons atas tindakan Anda, seperti menyetel preferensi privasi, login, atau mengisi formulir.",
+          "examples": [
+            "Menjaga Anda tetap login",
+            "Mengingat preferensi bahasa",
+            "Memastikan keamanan situs"
+          ]
+        },
+        "analytics": {
+          "title": "Cookie Analitik",
+          "description": "Cookie ini membantu kami memahami bagaimana pengunjung berinteraksi dengan situs dengan mengumpulkan dan melaporkan informasi secara anonim.",
+          "examples": [
+            "Google Analytics - Analisis penggunaan situs",
+            "Statistik kunjungan halaman",
+            "Analisis perilaku pengguna"
+          ]
+        },
+        "functional": {
+          "title": "Cookie Fungsional",
+          "description": "Cookie ini memungkinkan situs menyediakan fungsionalitas dan personalisasi yang ditingkatkan. Dapat diatur oleh kami atau pihak ketiga.",
+          "examples": [
+            "Mengingat pengaturan preferensi Anda",
+            "Rekomendasi konten yang dipersonalisasi",
+            "Integrasi media sosial"
+          ]
+        },
+        "marketing": {
+          "title": "Cookie Pemasaran",
+          "description": "Cookie ini digunakan untuk melacak pengunjung di seluruh situs. Tujuannya menampilkan iklan yang relevan dan menarik.",
+          "examples": [
+            "Personalisasi iklan",
+            "Pelacakan konversi",
+            "Kampanye remarketing"
+          ]
+        }
+      },
+      "cookieTypes": {
+        "title": "Jenis Cookie yang Kami Gunakan",
+        "subtitle": "Pelajari lebih lanjut tentang berbagai jenis cookie yang kami gunakan",
+        "sessionCookies": {
+          "title": "Cookie Sesi",
+          "description": "Cookie sementara yang dihapus saat Anda menutup peramban. Digunakan untuk mempertahankan status sesi saat menjelajah situs."
+        },
+        "persistentCookies": {
+          "title": "Cookie Persisten",
+          "description": "Cookie yang tetap di perangkat Anda untuk jangka waktu lebih lama hingga kedaluwarsa atau dihapus. Mengingat preferensi Anda untuk pengalaman lebih baik pada kunjungan berikutnya."
+        },
+        "firstPartyCookies": {
+          "title": "Cookie Pihak Pertama",
+          "description": "Cookie yang diatur langsung oleh kami untuk meningkatkan fungsionalitas dan pengalaman pengguna."
+        },
+        "thirdPartyCookies": {
+          "title": "Cookie Pihak Ketiga",
+          "description": "Cookie yang diatur oleh situs lain, biasanya untuk tujuan iklan dan analitik."
+        }
+      },
+      "manageCookies": {
+        "title": "Kelola Preferensi Cookie Anda",
+        "subtitle": "Anda dapat mengontrol tipe cookie yang kami gunakan",
+        "description": "Anda dapat mengelola cookie melalui pengaturan peramban atau pusat preferensi cookie kami. Menonaktifkan cookie tertentu dapat memengaruhi fungsionalitas situs.",
+        "browserSettings": {
+          "title": "Pengaturan Peramban",
+          "description": "Kebanyakan peramban memungkinkan Anda mengontrol cookie. Anda dapat menemukan opsi cookie di pengaturan atau preferensi peramban.",
+          "instructions": [
+            "Chrome: Settings > Privacy and security > Cookies and other site data",
+            "Firefox: Options > Privacy & Security > Cookies and Site Data",
+            "Safari: Preferences > Privacy > Cookies and website data",
+            "Edge: Settings > Cookies and site permissions"
+          ]
+        },
+        "optOut": {
+          "title": "Opt-out",
+          "description": "Anda dapat menolak cookie pihak ketiga tertentu, khususnya yang digunakan untuk iklan.",
+          "links": [
+            "Google Analytics Opt-out",
+            "Preferensi Iklan Facebook",
+            "Opt-out Jaringan Iklan Lainnya"
+          ]
+        }
+      },
+      "dataRetention": {
+        "title": "Retensi Data",
+        "content": "Kami menyimpan data cookie untuk periode berbeda tergantung tipe dan tujuannya. Cookie sesi dihapus saat Anda menutup peramban, sementara cookie persisten dapat disimpan berbulan-bulan hingga bertahun-tahun tergantung tujuannya."
+      },
+      "updates": {
+        "title": "Pembaruan Kebijakan",
+        "content": "Kami dapat memperbarui Kebijakan Cookie ini dari waktu ke waktu. Perubahan akan diposting di halaman ini dan, jika perlu, diberitahukan melalui cara lain. Kami merekomendasikan meninjau kebijakan ini secara berkala."
+      },
+      "contact": {
+        "title": "Hubungi Kami",
+        "content": "Jika Anda memiliki pertanyaan tentang Kebijakan Cookie ini atau membutuhkan informasi lebih lanjut, hubungi kami di:",
+        "email": "Email: [support@shipbase.ai](mailto:support@shipbase.ai)"
+      },
+      "consent": {
+        "content": "Dengan terus menggunakan situs kami, Anda menyetujui penggunaan cookie sesuai Kebijakan Cookie ini."
+      }
+    },
+    "login": {
+      "title": "Masuk",
+      "subtitle": "Selamat datang kembali",
+      "description": "Masuk ke akun Anda untuk melanjutkan perjalanan dengan ShipBase."
+    },
+    "signup": {
+      "title": "Mulai",
+      "subtitle": "Buat akun Anda",
+      "description": "Bergabung dengan ribuan developer yang membangun aplikasi hebat dengan ShipBase."
+    },
+    "profile": {
+      "title": "Profil Pengguna - ShipBase",
+      "subtitle": "Lihat dan kelola informasi pengguna Anda",
+      "description": "Lihat dan kelola informasi akun Anda",
+      "basicInfo": {
+        "title": "Informasi Dasar",
+        "description": "Informasi akun personal Anda",
+        "emailLabel": "Alamat Email",
+        "registrationDate": "Tanggal Pendaftaran",
+        "unknown": "Tidak diketahui"
+      },
+      "accountStatus": {
+        "title": "Status Akun",
+        "description": "Status keamanan akun Anda",
+        "emailVerification": "Verifikasi Email",
+        "accountStatus": "Status Akun",
+        "loginMethod": "Metode Login",
+        "verified": "Terverifikasi",
+        "unverified": "Belum Terverifikasi",
+        "normal": "Normal",
+        "oauth": "OAuth",
+        "emailLogin": "Login Email"
+      },
+      "actions": {
+        "editProfile": "Edit Profil",
+        "changePassword": "Ubah Kata Sandi"
+      },
+      "noNameSet": "Nama belum diatur"
+    },
+    "membership": {
+      "title": "Pusat Keanggotaan - ShipBase",
+      "subtitle": "Kelola langganan dan manfaat keanggotaan Anda",
+      "description": "Kelola paket langganan dan manfaat keanggotaan Anda",
+      "currentPlan": {
+        "title": "Paket Saat Ini",
+        "description": "Status langganan dan penggunaan Anda",
+        "freeVersion": "Versi Gratis",
+        "paidVersion": "Versi Berbayar"
+      },
+      "usage": {
+        "apiCalls": "Panggilan API",
+        "projectCount": "Jumlah Proyek",
+        "supportLevel": "Tingkat Dukungan",
+        "remainingThisMonth": "Tersisa bulan ini",
+        "maxLimit": "Batas maksimum",
+        "responseTime": "Waktu respons",
+        "priority": "Prioritas",
+        "standard": "Standar"
+      },
+      "upgradePlan": {
+        "title": "Tingkatkan Paket Anda",
+        "currentPlan": "Paket Saat Ini",
+        "freeUse": "Penggunaan Gratis",
+        "upgradePlan": "Upgrade Paket"
+      },
+      "billingHistory": {
+        "title": "Riwayat Penagihan",
+        "description": "Lihat catatan langganan dan pembayaran Anda",
+        "noRecords": "Tidak ada catatan penagihan",
+        "upgradeMessage": "Setelah upgrade ke paket berbayar, Anda akan melihat detail informasi penagihan",
+        "table": {
+          "date": "Tanggal",
+          "description": "Deskripsi",
+          "amount": "Jumlah",
+          "status": "Status",
+          "action": "Aksi",
+          "view": "Lihat"
+        },
+        "status": {
+          "pending": "Tertunda",
+          "paid": "Dibayar",
+          "failed": "Gagal",
+          "cancelled": "Dibatalkan",
+          "refunded": "Dikembalikan"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Gratis",
+          "price": 0,
+          "period": "selamanya",
+          "description": "Sempurna untuk pengguna individu dan proyek kecil",
+          "features": [
+            "1.000 panggilan API per bulan",
+            "Hingga 3 proyek",
+            "Dukungan dasar",
+            "Pustaka template standar"
+          ],
+          "current": false
+        },
+        {
+          "id": "pro",
+          "name": "Profesional",
+          "price": 29,
+          "period": "per bulan",
+          "description": "Sempurna untuk tim kecil dan menengah",
+          "features": [
+            "50.000 panggilan API per bulan",
+            "Proyek tanpa batas",
+            "Dukungan prioritas",
+            "Pustaka template lanjutan",
+            "Analitik lanjutan",
+            "Kolaborasi tim"
+          ],
+          "current": false
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "price": 99,
+          "period": "per bulan",
+          "description": "Sempurna untuk perusahaan besar",
+          "features": [
+            "Panggilan API tanpa batas",
+            "Proyek tanpa batas",
+            "Dukungan khusus 24/7",
+            "Semua pustaka template",
+            "Analitik tingkat enterprise",
+            "Integrasi kustom",
+            "Jaminan SLA"
+          ],
+          "current": false
+        }
+      ]
+    },
+    "orders": {
+      "title": "Pusat Pesanan",
+      "subtitle": "Kelola semua pesanan Anda",
+      "description": "Lihat dan kelola riwayat pesanan Anda",
+      "ordersList": {
+        "title": "Daftar Pesanan",
+        "subtitle": "Semua pesanan Anda",
+        "noOrders": "Tidak ada pesanan",
+        "loading": "Memuat...",
+        "error": "Gagal memuat pesanan",
+        "retry": "Coba Lagi"
+      },
+      "orderCard": {
+        "orderNumber": "Nomor Pesanan",
+        "status": "Status",
+        "amount": "Jumlah",
+        "product": "Produk",
+        "createdAt": "Dibuat Pada",
+        "paidAt": "Dibayar Pada",
+        "actions": "Aksi",
+        "viewDetails": "Lihat Detail",
+        "refreshStatus": "Segarkan Status"
+      },
+      "status": {
+        "pending": "Tertunda",
+        "paid": "Dibayar",
+        "failed": "Gagal",
+        "cancelled": "Dibatalkan",
+        "refunded": "Dikembalikan"
+      },
+      "filters": {
+        "title": "Filter dan Cari",
+        "all": "Semua",
+        "pending": "Tertunda",
+        "paid": "Dibayar",
+        "failed": "Gagal",
+        "cancelled": "Dibatalkan",
+        "refunded": "Dikembalikan"
+      },
+      "search": {
+        "placeholder": "Cari nomor pesanan atau nama produk..."
+      },
+      "refresh": "Segarkan",
+      "pagination": {
+        "previous": "Sebelumnya",
+        "next": "Berikutnya",
+        "showing": "Menampilkan",
+        "of": "dari",
+        "results": "hasil"
+      },
+      "orderDetails": {
+        "title": "Detail Pesanan",
+        "subtitle": "Lihat informasi detail tentang pesanan Anda",
+        "orderInfo": {
+          "orderNumber": "Nomor Pesanan",
+          "status": "Status",
+          "createdAt": "Dibuat Pada",
+          "paidAt": "Dibayar Pada",
+          "cancelledAt": "Dibatalkan Pada",
+          "amount": "Jumlah",
+          "currency": "Mata Uang",
+          "paymentProvider": "Penyedia Pembayaran",
+          "customerEmail": "Email Pelanggan"
+        },
+        "productInfo": {
+          "title": "Informasi Produk",
+          "productName": "Nama Produk",
+          "productType": "Jenis Produk",
+          "productId": "ID Produk"
+        },
+        "paymentInfo": {
+          "title": "Informasi Pembayaran",
+          "provider": "Penyedia",
+          "requestId": "ID Permintaan Pembayaran",
+          "sessionId": "ID Sesi Pembayaran"
+        },
+        "customerInfo": {
+          "title": "Informasi Pelanggan",
+          "email": "Alamat Email"
+        },
+        "orderItems": {
+          "title": "Item Pesanan",
+          "productName": "Nama Produk",
+          "description": "Deskripsi",
+          "unitPrice": "Harga Satuan",
+          "quantity": "Kuantitas",
+          "totalPrice": "Total Harga"
+        },
+        "actions": {
+          "back": "Kembali",
+          "refreshStatus": "Segarkan Status"
+        },
+        "status": {
+          "pending": "Tertunda",
+          "paid": "Dibayar",
+          "failed": "Gagal",
+          "cancelled": "Dibatalkan",
+          "refunded": "Dikembalikan"
+        },
+        "loading": "Memuat...",
+        "error": "Gagal memuat detail pesanan",
+        "retry": "Coba Lagi",
+        "notFound": "Pesanan tidak ditemukan"
+      }
+    },
+    "dashboard": {
+      "title": "Dasbor",
+      "subtitle": "Gambaran",
+      "description": "Akses cepat ke informasi dan tindakan akun Anda",
+      "welcomeMessage": "Selamat datang kembali!",
+      "stats": {
+        "title": "Ringkasan Statistik",
+        "subtitle": "Data akun Anda",
+        "cards": [
+          {
+            "title": "Total Pesanan",
+            "value": "0",
+            "change": "0% dari bulan lalu",
+            "trend": "neutral"
+          },
+          {
+            "title": "Total Pendapatan",
+            "value": "$0",
+            "change": "0% dari bulan lalu",
+            "trend": "neutral"
+          },
+          {
+            "title": "Pesanan Tertunda",
+            "value": "0",
+            "change": "Lihat detail",
+            "trend": "neutral"
+          },
+          {
+            "title": "Status Akun",
+            "value": "Aktif",
+            "change": "Operasi normal",
+            "trend": "up"
+          }
+        ]
+      },
+      "recentActivity": {
+        "title": "Aktivitas Terbaru",
+        "subtitle": "Aktivitas akun Anda",
+        "noActivity": "Tidak ada catatan aktivitas",
+        "activities": [
+          {
+            "action": "Akun dibuat",
+            "time": "Baru saja",
+            "icon": "UserPlus"
+          }
+        ]
+      },
+      "quickActions": {
+        "title": "Tindakan Cepat",
+        "subtitle": "Fitur umum",
+        "actions": [
+          {
+            "title": "Buat Pesanan",
+            "description": "Buat pesanan baru sekarang",
+            "icon": "ShoppingCart",
+            "href": "/pricing"
+          },
+          {
+            "title": "Lihat Pesanan",
+            "description": "Kelola pesanan Anda",
+            "icon": "Package",
+            "href": "/orders"
+          },
+          {
+            "title": "Pengaturan Akun",
+            "description": "Edit profil Anda",
+            "icon": "Settings",
+            "href": "/profile"
+          },
+          {
+            "title": "Lihat Keanggotaan",
+            "description": "Upgrade paket Anda",
+            "icon": "Crown",
+            "href": "/membership"
+          }
+        ]
+      }
+    },
+    "blogs": {
+      "title": "Blog",
+      "subtitle": "Jelajahi artikel terbaru kami",
+      "description": "Baca blog teknologi dan pembaruan terbaru kami",
+      "filters": {
+        "all": "Semua",
+        "growthHacking": "Growth Hacking",
+        "marketing": "Pemasaran",
+        "nextjsTechniques": "Teknik Next.js"
+      },
+      "endOfPosts": "Anda telah mencapai akhir semua posting",
+      "readMore": "Baca Selengkapnya",
+      "postedOn": "Diposting pada"
+    },
+    "adminBlogs": {
+      "title": "Manajemen Blog",
+      "subtitle": "Kelola posting blog (Admin saja)",
+      "description": "Buat, edit, dan kelola posting blog",
+      "list": {
+        "title": "Daftar Blog",
+        "subtitle": "Semua posting blog",
+        "noBlogs": "Tidak ada posting blog",
+        "createNew": "Buat Posting Baru"
+      },
+      "table": {
+        "title": "Judul",
+        "author": "Penulis",
+        "status": "Status",
+        "visibility": "Visibilitas",
+        "featured": "Sorotan",
+        "createdAt": "Dibuat Pada",
+        "actions": "Aksi",
+        "edit": "Edit",
+        "delete": "Hapus"
+      },
+      "edit": {
+        "title": "Edit Blog",
+        "subtitle": "Edit posting blog (Admin saja)",
+        "form": {
+          "language": "Bahasa Blog",
+          "title": "Judul",
+          "slug": "Slug",
+          "description": "Deskripsi",
+          "tags": "Tag",
+          "status": "Status",
+          "visibility": "Visibilitas",
+          "featured": "Sorotan",
+          "featuredDescription": "Sematkan posting ini di bagian atas",
+          "generateSlug": "Hasilkan slug",
+          "slugHelper": "Hanya menghasilkan slug otomatis dari judul berbahasa Inggris. Untuk bahasa lain, masukkan secara manual.",
+          "titleHelper": "Panjang yang disarankan 60 karakter",
+          "descriptionHelper": "Panjang yang disarankan 160 karakter"
+        },
+        "actions": {
+          "cancel": "Batal",
+          "update": "Perbarui Blog",
+          "create": "Buat Blog"
+        },
+        "status": {
+          "draft": "Draf",
+          "published": "Dipublikasikan"
+        },
+        "visibility": {
+          "public": "Publik",
+          "private": "Privat",
+          "subscribers": "Pelanggan"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2205 @@
+{
+  "home": {
+    "badgeLabel": "2025🚀 立即发布",
+    "heroTitle": "ShipBase，发布更多。",
+    "heroDescription": "ShipBase 是一个用于构建 AI SaaS 初创公司的 NextJS 模板。通过多种模板和组件快速发布。",
+    "ctaPrimary": "立即开始",
+    "ctaSecondary": "阅读文档",
+    "watchDemo": "观看演示",
+    "viewDetails": "查看详情",
+    "promotionText": "🎁 前1000名客户享受$100优惠",
+    "userCount": "来自250+满意用户",
+    "techStackTitle": "ShipBase 建立在巨人的肩膀上",
+    "techStackItems": [
+      {
+        "name": "Next.js",
+        "description": "React 全栈框架"
+      },
+      {
+        "name": "React",
+        "description": "用户界面库"
+      },
+      {
+        "name": "TailwindCSS",
+        "description": "实用优先的CSS框架"
+      },
+      {
+        "name": "Shadcn/UI",
+        "description": "现代组件库"
+      },
+      {
+        "name": "Vercel",
+        "description": "部署平台"
+      }
+    ],
+    "featuresTitle": "什么是 ShipBase",
+    "featuresSubtitle": "ShipBase 是一个用于构建 AI SaaS 初创公司的 NextJS 模板。内置多种模板和组件。",
+    "features": [
+      {
+        "title": "即用型模板",
+        "description": "从数十个生产就绪的 AI SaaS 模板中选择，快速启动您的项目。"
+      },
+      {
+        "title": "基础设施设置",
+        "description": "通过内置的最佳实践，立即获得可扩展的基础设施访问权限。"
+      },
+      {
+        "title": "快速部署",
+        "description": "在几小时内而不是几天内将您的 AI SaaS 应用程序部署到生产环境。"
+      }
+    ],
+    "benefitsTitle": "为什么选择 ShipBase",
+    "benefitsSubtitle": "获得启动 AI 初创公司所需的一切 - 从即用型模板到技术支持。",
+    "benefits": [
+      {
+        "title": "完整框架",
+        "description": "基于 Next.js 构建，包含身份验证、支付和 AI 集成 - 一切开箱即用。"
+      },
+      {
+        "title": "丰富的模板库",
+        "description": "选择适合您需求的模板，快速开始构建。"
+      },
+      {
+        "title": "技术指导",
+        "description": "获得专业技术支持，帮助您快速上手。"
+      }
+    ],
+    "launchStepsTitle": "如何使用 ShipBase 发布",
+    "launchStepsSubtitle": "通过三个简单步骤让您的 AI SaaS 初创公司运行：",
+    "launchSteps": [
+      {
+        "step": "1",
+        "title": "获取 ShipBase",
+        "description": "一次性购买 ShipBase。检查您的电子邮件获取代码和文档。"
+      },
+      {
+        "step": "2",
+        "title": "开始您的项目",
+        "description": "阅读文档并克隆 ShipBase 代码。开始构建您的 AI SaaS 初创公司。"
+      },
+      {
+        "step": "3",
+        "title": "自定义您的项目",
+        "description": "使用您的数据和内容修改模板。满足特定的 AI 功能需求。"
+      },
+      {
+        "step": "4",
+        "title": "部署到生产环境",
+        "description": "通过几个步骤将您的项目部署到生产环境，立即开始为客户服务。"
+      }
+    ],
+    "keyFeaturesTitle": "ShipBase 的关键特性",
+    "keyFeaturesSubtitle": "快速高效地启动 AI SaaS 初创公司所需的一切。",
+    "keyFeatures": [
+      {
+        "title": "Next.js 模板",
+        "description": "生产就绪的 Next.js 模板，具有 SEO 友好的结构和 i18n 支持。"
+      },
+      {
+        "title": "身份验证和支付",
+        "description": "集成 Google OAuth、一键登录和 Stripe 支付处理。"
+      },
+      {
+        "title": "数据基础设施",
+        "description": "内置 Supabase 集成，提供可靠和可扩展的数据存储。"
+      },
+      {
+        "title": "一键部署",
+        "description": "无缝部署到 Vercel 或 Cloudflare，自动设置。"
+      },
+      {
+        "title": "业务分析",
+        "description": "集成 Google Analytics 和 Search Console 用于跟踪增长。"
+      },
+      {
+        "title": "AI 就绪基础设施",
+        "description": "预配置的 AI 集成，内置积分系统和 API 销售。"
+      }
+    ],
+    "testimonialsTitle": "用户对 ShipBase 的评价",
+    "testimonialsSubtitle": "听听使用 ShipBase 启动 AI 初创公司的开发者和创始人的声音。",
+    "testimonials": [
+      {
+        "quote": "ShipBase 让从想法到产品的旅程变得比以往任何时候都简单。其全面的模板、脚本和基础基础设施意味着我几乎不需要花时间在基础开发上。我强烈推荐给希望快速启动 SaaS 业务的创始人。",
+        "author": "AITDK 作者",
+        "role": "独立开发者"
+      },
+      {
+        "quote": "ShipBase 让设置支付和处理商业化的所有细节变得超级简单，这样我们就可以专注于构建重要的功能。如果您想快速发布和扩展 AI SaaS，ShipBase 是不二之选！",
+        "author": "Scar",
+        "role": "前端工程师"
+      },
+      {
+        "quote": "我使用 ShipBase 在8分钟内启动了一个新网站，包括登录/支付，太棒了！",
+        "author": "Lafe",
+        "role": "技术负责人"
+      }
+    ],
+    "productShowcaseTitle": "AI SaaS 初创公司展示",
+    "productShowcaseSubtitle": "看看使用 ShipBase 构建的令人惊叹的 AI SaaS 应用",
+    "showcaseItems": [
+      {
+        "name": "Raphael AI",
+        "description": "几秒钟内创建令人惊叹的 AI 生成图像",
+        "image": "/api/placeholder/400/300",
+        "category": "AI 图像生成"
+      },
+      {
+        "name": "SiteSnapper",
+        "description": "一键捕获任何网站",
+        "image": "/api/placeholder/400/300",
+        "category": "网站工具"
+      },
+      {
+        "name": "SEO Combine",
+        "description": "所有 SEO 工具合而为一",
+        "image": "/api/placeholder/400/300",
+        "category": "SEO 工具"
+      },
+      {
+        "name": "TrendsBar",
+        "description": "Google 趋势分析工具",
+        "image": "/api/placeholder/400/300",
+        "category": "数据分析"
+      },
+      {
+        "name": "Deepseek Artifacts",
+        "description": "使用世界领先的开源模型创建 React 应用",
+        "image": "/api/placeholder/400/300",
+        "category": "AI 开发"
+      },
+      {
+        "name": "Rednote Club",
+        "description": "在 Rednote 中分享您生活的美好时刻",
+        "image": "/api/placeholder/400/300",
+        "category": "社交平台"
+      }
+    ],
+    "statsTitle": "人们喜爱 ShipBase",
+    "statsSubtitle": "因为它易于使用且发布快速",
+    "stats": [
+      {
+        "number": "250+",
+        "label": "客户",
+        "description": "信任我们"
+      },
+      {
+        "number": "30+",
+        "label": "组件",
+        "description": "内置构建"
+      },
+      {
+        "number": "5",
+        "label": "分钟",
+        "description": "快速发布"
+      }
+    ],
+    "faqTitle": "关于 ShipBase 的常见问题",
+    "faqSubtitle": "还有其他问题？在 Discord 上联系我们或发送邮件。",
+    "faqs": [
+      {
+        "question": "ShipBase 到底是什么，它是如何工作的？",
+        "answer": "ShipBase 是专门为构建 AI SaaS 初创公司而设计的综合 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
+      },
+      {
+        "question": "使用 ShipBase 需要高级技术技能吗？",
+        "answer": "虽然基本的编程知识很有帮助，但 ShipBase 被设计为对开发者友好。我们的模板和文档让您即使不是 AI 或云基础设施专家也能轻松上手。"
+      },
+      {
+        "question": "我可以使用 ShipBase 构建什么类型的 AI SaaS？",
+        "answer": "ShipBase 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖了流行的用例，如 AI 聊天机器人、内容生成器、图像处理应用等。"
+      },
+      {
+        "question": "使用 ShipBase 发布通常需要多长时间？",
+        "answer": "使用 ShipBase，您可以在几小时内拥有一个工作原型，在几小时内拥有一个生产就绪的应用程序。我们的一键部署和预配置基础设施大大减少了传统的数月开发周期。"
+      },
+      {
+        "question": "ShipBase 基础设施包含什么？",
+        "answer": "ShipBase 提供完整的基础设施堆栈，包括身份验证、数据库设置、API 集成、支付处理和可扩展的云部署。一切都预配置遵循行业最佳实践。"
+      },
+      {
+        "question": "我可以自定义模板以匹配我的品牌吗？",
+        "answer": "当然可以！所有 ShipBase 模板都是完全可自定义的。您可以修改设计、功能和特性以匹配您的品牌标识和特定业务需求，同时保持强大的底层基础设施。"
+      }
+    ],
+    "finalCtaTitle": "发布您的第一个 AI SaaS 初创公司",
+    "finalCtaSubtitle": "从这里开始，使用 ShipBase 发布。",
+    "finalCtaButton": "获取 ShipBase",
+    "finalCtaSecondary": "阅读文档"
+  },
+  "authPanel": {
+    "title": "登录 Shipbase",
+    "description": "使用 Better Auth 提供的 Google、GitHub 或 Magic Link 完成身份认证。",
+    "signedInAs": "已登录为 {name}",
+    "sessionLabel": "会话 ID: {id}",
+    "signOut": "退出登录",
+    "googleButton": {
+      "default": "使用 Google 登录",
+      "loading": "跳转 Google…"
+    },
+    "githubButton": {
+      "default": "使用 GitHub 登录",
+      "loading": "跳转 GitHub…"
+    },
+    "magicLinkHeading": "或发送 Magic Link",
+    "emailLabel": "邮箱地址",
+    "emailPlaceholder": "you@example.com",
+    "magicLinkButton": {
+      "default": "发送登录链接",
+      "loading": "发送中…"
+    },
+    "messages": {
+      "emptyEmail": "请输入邮箱地址。",
+      "responseError": "发送邮件失败，请重试。",
+      "requestError": "发送过程中出现问题，请稍后再试。",
+      "success": "魔法链接已发送。如果未集成邮件服务，请查看服务器日志获取登录链接。"
+    },
+    "footer": [
+      {
+        "type": "text",
+        "value": "登录后 Better Auth 会在服务器端生成会话并写入 HTTP-only Cookies。结合 "
+      },
+      {
+        "type": "code",
+        "value": "authClient.useSession()"
+      },
+      {
+        "type": "text",
+        "value": " 可在任意客户端组件中读取当前用户。"
+      }
+    ]
+  },
+  "header": {
+    "features": "功能特性",
+    "pricing": "价格方案",
+    "docs": "文档",
+    "login": "登录",
+    "signup": "免费试用",
+    "languageSwitch": "语言",
+    "themeSwitch": "主题",
+    "lightTheme": "浅色",
+    "darkTheme": "深色",
+    "systemTheme": "跟随系统",
+    "userMenu": {
+      "dashboard": "仪表板",
+      "profile": "用户信息",
+      "membership": "会员中心",
+      "orders": "订单中心",
+      "adminMenu": "管理后台",
+      "signOut": "退出登录"
+    }
+  },
+  "footer": {
+    "description": "现代化的SaaS平台，帮助您快速构建和部署应用程序。",
+    "product": "产品",
+    "features": "功能特性",
+    "pricing": "价格方案",
+    "integrations": "集成",
+    "support": "支持",
+    "docs": "文档",
+    "helpCenter": "帮助中心",
+    "contactUs": "联系我们",
+    "serviceStatus": "服务状态",
+    "legal": "法律",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "cookiePolicy": "Cookie政策",
+    "copyright": "© 2024 ShipBase. 保留所有权利。",
+    "madeWithLove": "由 ❤️ 制造"
+  },
+  "pages": {
+    "features": {
+      "title": "功能特性",
+      "subtitle": "强大的功能加速您的开发",
+      "description": "发现全面的工具和功能集，让ShipBase成为现代SaaS应用程序的完美平台。",
+      "coreFeatures": {
+        "title": "核心特性",
+        "subtitle": "为现代 SaaS 应用量身定制的完整解决方案，让您专注于产品创新而非基础设施搭建",
+        "features": [
+          {
+            "icon": "Code",
+            "title": "Next.js 全栈框架",
+            "description": "基于最新的 Next.js 14+ 构建，支持 App Router、Server Components 和 Edge Runtime，提供最佳的性能和开发体验。",
+            "highlights": [
+              "App Router",
+              "Server Components",
+              "Edge Runtime",
+              "TypeScript 支持"
+            ]
+          },
+          {
+            "icon": "Shield",
+            "title": "企业级身份验证",
+            "description": "集成 Better Auth，支持多种登录方式，包括 Google OAuth、GitHub OAuth 和 Magic Link，确保安全可靠。",
+            "highlights": [
+              "Google OAuth",
+              "GitHub OAuth",
+              "Magic Link",
+              "会话管理"
+            ]
+          },
+          {
+            "icon": "CreditCard",
+            "title": "Stripe 支付集成",
+            "description": "完整的支付解决方案，支持订阅、一次性支付和发票管理，让您轻松实现商业化。",
+            "highlights": [
+              "订阅管理",
+              "一次性支付",
+              "发票系统",
+              "Webhook 处理"
+            ]
+          },
+          {
+            "icon": "Database",
+            "title": "Supabase 数据库",
+            "description": "强大的 PostgreSQL 数据库，内置实时功能、身份验证和存储，为您的应用提供可靠的数据基础。",
+            "highlights": [
+              "PostgreSQL",
+              "实时订阅",
+              "文件存储",
+              "Row Level Security"
+            ]
+          },
+          {
+            "icon": "Bot",
+            "title": "AI 就绪基础设施",
+            "description": "预配置的 AI 集成，支持 OpenAI、Anthropic 等主流 AI 服务，内置积分系统和 API 销售功能。",
+            "highlights": [
+              "OpenAI 集成",
+              "积分系统",
+              "API 销售",
+              "多模型支持"
+            ]
+          },
+          {
+            "icon": "Rocket",
+            "title": "一键部署",
+            "description": "支持 Vercel、Cloudflare 等主流平台的一键部署，自动化 CI/CD 流程，让发布变得简单。",
+            "highlights": [
+              "Vercel 部署",
+              "Cloudflare Pages",
+              "CI/CD 自动化",
+              "环境管理"
+            ]
+          },
+          {
+            "icon": "BarChart3",
+            "title": "业务分析",
+            "description": "集成 Google Analytics、Search Console 等分析工具，帮助您了解用户行为和业务增长。",
+            "highlights": [
+              "Google Analytics",
+              "Search Console",
+              "用户行为分析",
+              "转化跟踪"
+            ]
+          },
+          {
+            "icon": "Globe",
+            "title": "国际化支持",
+            "description": "内置多语言支持，支持中文、英文、日文等多种语言，让您的产品触达全球用户。",
+            "highlights": [
+              "多语言支持",
+              "RTL 支持",
+              "动态语言切换",
+              "SEO 优化"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "title": "技术栈",
+        "subtitle": "基于业界最佳实践和最新技术构建，确保您的应用具有最佳的性能、安全性和可扩展性",
+        "technologies": [
+          {
+            "name": "Next.js 14+",
+            "description": "React 全栈框架"
+          },
+          {
+            "name": "React 19",
+            "description": "用户界面库"
+          },
+          {
+            "name": "TypeScript",
+            "description": "类型安全的 JavaScript"
+          },
+          {
+            "name": "Tailwind CSS",
+            "description": "实用优先的 CSS 框架"
+          },
+          {
+            "name": "Shadcn/UI",
+            "description": "现代组件库"
+          },
+          {
+            "name": "Better Auth",
+            "description": "身份验证解决方案"
+          },
+          {
+            "name": "Stripe",
+            "description": "支付处理平台"
+          },
+          {
+            "name": "Supabase",
+            "description": "后端即服务"
+          },
+          {
+            "name": "Vercel",
+            "description": "部署平台"
+          }
+        ]
+      },
+      "comparison": {
+        "title": "为什么选择 ShipBase",
+        "subtitle": "与传统开发方式相比，ShipBase 让您节省 90% 的开发时间",
+        "traditional": {
+          "title": "传统开发",
+          "items": [
+            {
+              "text": "需要 3-6 个月搭建基础设施"
+            },
+            {
+              "text": "需要学习多种技术栈"
+            },
+            {
+              "text": "需要处理复杂的部署流程"
+            },
+            {
+              "text": "需要自己实现身份验证和支付"
+            },
+            {
+              "text": "需要大量时间调试和优化"
+            }
+          ]
+        },
+        "shipbase": {
+          "title": "使用 ShipBase",
+          "items": [
+            {
+              "text": "5 分钟内完成基础设置"
+            },
+            {
+              "text": "开箱即用的完整解决方案"
+            },
+            {
+              "text": "一键部署到生产环境"
+            },
+            {
+              "text": "预配置的身份验证和支付"
+            },
+            {
+              "text": "专注于产品功能开发"
+            }
+          ]
+        }
+      },
+      "cta": {
+        "title": "准备开始构建您的 AI SaaS？",
+        "subtitle": "立即获取 ShipBase，在几分钟内启动您的下一个项目",
+        "primaryButton": "获取 ShipBase",
+        "secondaryButton": "查看文档"
+      }
+    },
+    "pricing": {
+      "title": "价格方案",
+      "subtitle": "简单透明的定价",
+      "description": "选择适合您需求的方案。免费开始，随需扩展。",
+      "plansTitle": "选择适合您的方案",
+      "plansSubtitle": "简单透明的定价，没有隐藏费用。选择最适合您需求的方案，随时可以升级。",
+      "billingCycles": {
+        "one-time": {
+          "label": "一次性付费",
+          "description": "永久使用，无需续费"
+        },
+        "monthly": {
+          "label": "按月付费",
+          "description": "灵活付费，随时取消"
+        },
+        "yearly": {
+          "label": "按年付费",
+          "description": "年付优惠 20%"
+        }
+      },
+      "plans": [
+        {
+          "name": "免费版",
+          "price": "¥0",
+          "period": "永久免费",
+          "description": "适合个人开发者和小型项目",
+          "features": [
+            "基础 Next.js 模板",
+            "GitHub 集成",
+            "社区支持",
+            "基础文档",
+            "个人使用许可"
+          ],
+          "limitations": [
+            "不支持商业使用",
+            "无技术支持",
+            "功能有限"
+          ],
+          "cta": "开始使用",
+          "popular": false
+        },
+        {
+          "name": "专业版",
+          "price": "¥299",
+          "period": "一次性付费",
+          "description": "适合初创公司和中小企业",
+          "features": [
+            "完整功能模板",
+            "身份验证系统",
+            "支付集成",
+            "数据库设置",
+            "AI 集成",
+            "一键部署",
+            "邮件支持",
+            "商业使用许可",
+            "源码访问"
+          ],
+          "limitations": [],
+          "cta": "立即购买",
+          "popular": true
+        },
+        {
+          "name": "企业版",
+          "price": "¥999",
+          "period": "一次性付费",
+          "description": "适合大型企业和团队",
+          "features": [
+            "专业版所有功能",
+            "高级 AI 功能",
+            "多租户支持",
+            "高级分析",
+            "优先技术支持",
+            "定制开发服务",
+            "团队协作功能",
+            "SLA 保障",
+            "培训服务"
+          ],
+          "limitations": [],
+          "cta": "联系销售",
+          "popular": false
+        }
+      ],
+      "cta": {
+        "getStarted": "开始使用",
+        "buyNow": "立即购买",
+        "contactSales": "联系销售",
+        "currentPlan": "当前方案"
+      },
+      "features": {
+        "included": "包含功能",
+        "limitations": "限制说明"
+      },
+      "pricing": {
+        "free": "免费",
+        "popular": "推荐",
+        "discount": "折扣",
+        "save": "节省",
+        "perMonth": "每月",
+        "perYear": "每年",
+        "oneTime": "一次性",
+        "forever": "永久"
+      },
+      "faqTitle": "常见问题",
+      "faqSubtitle": "还有其他问题？我们很乐意为您解答",
+      "faqs": [
+        {
+          "question": "免费版和付费版有什么区别？",
+          "answer": "免费版提供基础功能，适合学习和个人项目。付费版包含完整的商业功能，如身份验证、支付集成、AI 功能等，适合商业项目。"
+        },
+        {
+          "question": "支持哪些付费方式？",
+          "answer": "我们支持一次性付费、按月付费和按年付费三种方式。年付享受 20% 的优惠折扣，一次性付费永久使用。"
+        },
+        {
+          "question": "支持退款吗？",
+          "answer": "我们提供 30 天无条件退款保证。如果您在购买后 30 天内不满意，可以申请全额退款。"
+        },
+        {
+          "question": "可以用于商业项目吗？",
+          "answer": "专业版和企业版支持商业使用。免费版仅限个人学习和非商业项目使用。"
+        },
+        {
+          "question": "包含技术支持吗？",
+          "answer": "专业版提供邮件支持，企业版提供优先技术支持。我们会在 24 小时内回复您的问题。"
+        },
+        {
+          "question": "如何升级到更高版本？",
+          "answer": "您可以随时升级到更高版本，只需支付差价即可。升级后立即享受新版本的所有功能。"
+        },
+        {
+          "question": "年付有什么优势？",
+          "answer": "年付享受 20% 的优惠折扣，相比月付可以节省更多费用，同时减少续费频率，更加便捷。"
+        }
+      ]
+    },
+    "docs": {
+      "title": "文档",
+      "subtitle": "开始所需的一切",
+      "description": "全面的指南、API参考和教程，帮助您构建出色的应用程序。",
+      "quickStart": {
+        "title": "快速开始",
+        "subtitle": "只需几个简单步骤，您就可以开始使用 ShipBase 构建您的 AI SaaS 应用",
+        "steps": [
+          {
+            "step": "1",
+            "title": "安装 ShipBase",
+            "description": "克隆仓库并安装依赖",
+            "code": "git clone https://github.com/your-repo/shipbase\\ncd shipbase\\npnpm install"
+          },
+          {
+            "step": "2",
+            "title": "配置环境变量",
+            "description": "设置必要的 API 密钥和配置",
+            "code": "cp .env.example .env.local\\n# 编辑 .env.local 文件"
+          },
+          {
+            "step": "3",
+            "title": "启动开发服务器",
+            "description": "在本地运行项目",
+            "code": "pnpm dev\\n# 访问 http://localhost:3000"
+          },
+          {
+            "step": "4",
+            "title": "部署到生产环境",
+            "description": "一键部署到 Vercel",
+            "code": "pnpm build\\nvercel deploy"
+          }
+        ]
+      },
+      "navigation": {
+        "title": "文档导航",
+        "subtitle": "浏览我们的完整文档，找到您需要的所有信息",
+        "sections": [
+          {
+            "title": "快速开始",
+            "description": "5 分钟快速上手 ShipBase",
+            "icon": "Rocket",
+            "links": [
+              {
+                "name": "安装指南",
+                "href": "#"
+              },
+              {
+                "name": "环境配置",
+                "href": "#"
+              },
+              {
+                "name": "第一个应用",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "核心功能",
+            "description": "了解 ShipBase 的核心功能",
+            "icon": "Code",
+            "links": [
+              {
+                "name": "身份验证",
+                "href": "#"
+              },
+              {
+                "name": "支付集成",
+                "href": "#"
+              },
+              {
+                "name": "数据库设置",
+                "href": "#"
+              },
+              {
+                "name": "AI 集成",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "API 参考",
+            "description": "完整的 API 文档和示例",
+            "icon": "Database",
+            "links": [
+              {
+                "name": "REST API",
+                "href": "#"
+              },
+              {
+                "name": "GraphQL",
+                "href": "#"
+              },
+              {
+                "name": "Webhooks",
+                "href": "#"
+              },
+              {
+                "name": "SDK",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "部署指南",
+            "description": "将您的应用部署到生产环境",
+            "icon": "Globe",
+            "links": [
+              {
+                "name": "Vercel 部署",
+                "href": "#"
+              },
+              {
+                "name": "Cloudflare Pages",
+                "href": "#"
+              },
+              {
+                "name": "Docker 部署",
+                "href": "#"
+              },
+              {
+                "name": "环境配置",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "最佳实践",
+            "description": "开发和生产环境的最佳实践",
+            "icon": "Shield",
+            "links": [
+              {
+                "name": "安全指南",
+                "href": "#"
+              },
+              {
+                "name": "性能优化",
+                "href": "#"
+              },
+              {
+                "name": "监控和日志",
+                "href": "#"
+              },
+              {
+                "name": "错误处理",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "故障排除",
+            "description": "常见问题和解决方案",
+            "icon": "Zap",
+            "links": [
+              {
+                "name": "常见问题",
+                "href": "#"
+              },
+              {
+                "name": "错误代码",
+                "href": "#"
+              },
+              {
+                "name": "调试技巧",
+                "href": "#"
+              },
+              {
+                "name": "社区支持",
+                "href": "#"
+              }
+            ]
+          }
+        ]
+      },
+      "support": {
+        "title": "需要帮助？",
+        "subtitle": "我们的社区和支持团队随时为您提供帮助",
+        "description": "加入我们的 Discord 社区或查看常见问题。",
+        "discordButton": "加入 Discord",
+        "faqButton": "查看 FAQ"
+      }
+    },
+    "integrations": {
+      "title": "集成",
+      "subtitle": "与您喜爱的工具连接",
+      "description": "将ShipBase与您现有的工作流程和第三方服务无缝集成。",
+      "categories": [
+        {
+          "name": "身份验证与安全",
+          "description": "安全可靠的用户身份验证解决方案",
+          "icon": "Shield",
+          "integrations": [
+            {
+              "name": "Google OAuth",
+              "description": "使用Google账户快速登录",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "一键登录",
+                "用户信息同步",
+                "安全可靠"
+              ],
+              "documentation": "/docs/auth/google"
+            },
+            {
+              "name": "GitHub OAuth",
+              "description": "开发者友好的GitHub登录",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "开发者认证",
+                "仓库信息访问",
+                "团队协作"
+              ],
+              "documentation": "/docs/auth/github"
+            },
+            {
+              "name": "Magic Link",
+              "description": "无密码登录体验",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "邮件验证",
+                "无密码登录",
+                "安全便捷"
+              ],
+              "documentation": "/docs/auth/magic-link"
+            }
+          ]
+        },
+        {
+          "name": "支付与计费",
+          "description": "完整的支付和订阅管理解决方案",
+          "icon": "CreditCard",
+          "integrations": [
+            {
+              "name": "Stripe",
+              "description": "全球领先的支付处理平台",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "订阅管理",
+                "一次性支付",
+                "发票系统",
+                "Webhook支持"
+              ],
+              "documentation": "/docs/payments/stripe"
+            },
+            {
+              "name": "PayPal",
+              "description": "全球用户信赖的支付方式",
+              "logo": "/api/placeholder/40/40",
+              "status": "coming-soon",
+              "features": [
+                "PayPal支付",
+                "订阅管理",
+                "退款处理"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "数据库与存储",
+          "description": "可靠的数据存储和管理服务",
+          "icon": "Database",
+          "integrations": [
+            {
+              "name": "Supabase",
+              "description": "开源的Firebase替代方案",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "PostgreSQL数据库",
+                "实时订阅",
+                "文件存储",
+                "Row Level Security"
+              ],
+              "documentation": "/docs/database/supabase"
+            },
+            {
+              "name": "PlanetScale",
+              "description": "无服务器MySQL数据库",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "无服务器架构",
+                "分支管理",
+                "自动扩缩容"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AI与机器学习",
+          "description": "强大的AI服务集成",
+          "icon": "Bot",
+          "integrations": [
+            {
+              "name": "OpenAI",
+              "description": "领先的AI语言模型服务",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "GPT模型",
+                "嵌入向量",
+                "图像生成",
+                "API管理"
+              ],
+              "documentation": "/docs/ai/openai"
+            },
+            {
+              "name": "Anthropic",
+              "description": "Claude AI模型服务",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Claude模型",
+                "长文本处理",
+                "安全对话"
+              ],
+              "documentation": "/docs/ai/anthropic"
+            },
+            {
+              "name": "Hugging Face",
+              "description": "开源AI模型平台",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "开源模型",
+                "模型托管",
+                "推理API"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "分析与监控",
+          "description": "深入了解用户行为和系统性能",
+          "icon": "BarChart3",
+          "integrations": [
+            {
+              "name": "Google Analytics",
+              "description": "全面的网站分析工具",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "用户行为分析",
+                "转化跟踪",
+                "实时报告",
+                "自定义事件"
+              ],
+              "documentation": "/docs/analytics/google"
+            },
+            {
+              "name": "Mixpanel",
+              "description": "产品分析平台",
+              "logo": "/api/placeholder/40/40",
+              "status": "coming-soon",
+              "features": [
+                "事件跟踪",
+                "用户画像",
+                "漏斗分析"
+              ]
+            },
+            {
+              "name": "Sentry",
+              "description": "错误监控和性能追踪",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "错误监控",
+                "性能追踪",
+                "发布跟踪"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "通信与通知",
+          "description": "多渠道用户沟通解决方案",
+          "icon": "Mail",
+          "integrations": [
+            {
+              "name": "SendGrid",
+              "description": "可靠的邮件发送服务",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "邮件发送",
+                "模板管理",
+                "投递统计",
+                "Webhook支持"
+              ],
+              "documentation": "/docs/email/sendgrid"
+            },
+            {
+              "name": "Twilio",
+              "description": "全球通信平台",
+              "logo": "/api/placeholder/40/40",
+              "status": "coming-soon",
+              "features": [
+                "短信发送",
+                "语音通话",
+                "视频通话"
+              ]
+            },
+            {
+              "name": "Slack",
+              "description": "团队协作和通知",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "消息发送",
+                "频道集成",
+                "工作流自动化"
+              ]
+            }
+          ]
+        }
+      ],
+      "popularIntegrations": {
+        "title": "热门集成",
+        "subtitle": "最受开发者欢迎的集成服务",
+        "items": [
+          {
+            "name": "Stripe",
+            "description": "全球领先的支付处理平台",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "订阅管理",
+              "一次性支付",
+              "发票系统"
+            ]
+          },
+          {
+            "name": "OpenAI",
+            "description": "领先的AI语言模型服务",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "GPT模型",
+              "嵌入向量",
+              "图像生成"
+            ]
+          },
+          {
+            "name": "Supabase",
+            "description": "开源的Firebase替代方案",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "PostgreSQL",
+              "实时订阅",
+              "文件存储"
+            ]
+          },
+          {
+            "name": "Google Analytics",
+            "description": "全面的网站分析工具",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "用户分析",
+              "转化跟踪",
+              "实时报告"
+            ]
+          }
+        ]
+      },
+      "gettingStarted": {
+        "title": "快速开始",
+        "subtitle": "只需几个步骤即可集成您需要的服务",
+        "steps": [
+          {
+            "step": "1",
+            "title": "选择集成服务",
+            "description": "浏览我们的集成目录，选择您需要的服务",
+            "code": "# 查看可用集成\\nnpm run list-integrations"
+          },
+          {
+            "step": "2",
+            "title": "配置环境变量",
+            "description": "添加必要的API密钥和配置",
+            "code": "# 配置环境变量\\ncp .env.example .env.local\\n# 编辑 .env.local 文件"
+          },
+          {
+            "step": "3",
+            "title": "安装集成包",
+            "description": "安装对应的集成包和依赖",
+            "code": "# 安装集成包\\npnpm add @shipbase/integrations-stripe"
+          },
+          {
+            "step": "4",
+            "title": "初始化集成",
+            "description": "在您的应用中初始化集成服务",
+            "code": "# 初始化集成\\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\\nconst stripe = new StripeIntegration()"
+          }
+        ]
+      },
+      "cta": {
+        "title": "准备开始集成？",
+        "subtitle": "立即开始使用ShipBase的强大集成功能",
+        "primaryButton": "查看文档",
+        "secondaryButton": "联系支持"
+      }
+    },
+    "help": {
+      "title": "帮助中心",
+      "subtitle": "获得您需要的支持",
+      "description": "查找常见问题的答案、故障排除指南和最佳实践。",
+      "searchPlaceholder": "搜索帮助文章...",
+      "popularArticles": {
+        "title": "热门文章",
+        "subtitle": "最常被查看的帮助文章",
+        "articles": [
+          {
+            "title": "如何开始使用 ShipBase",
+            "description": "了解如何快速设置和部署您的第一个 AI SaaS 应用",
+            "href": "#",
+            "tags": [
+              "快速开始",
+              "部署",
+              "设置"
+            ]
+          },
+          {
+            "title": "身份验证配置指南",
+            "description": "详细说明如何配置 Google OAuth、GitHub OAuth 和 Magic Link",
+            "href": "#",
+            "tags": [
+              "身份验证",
+              "OAuth",
+              "配置"
+            ]
+          },
+          {
+            "title": "Stripe 支付集成",
+            "description": "如何设置订阅、一次性支付和发票管理",
+            "href": "#",
+            "tags": [
+              "支付",
+              "Stripe",
+              "订阅"
+            ]
+          },
+          {
+            "title": "AI 功能集成",
+            "description": "集成 OpenAI、Anthropic 等 AI 服务的完整指南",
+            "href": "#",
+            "tags": [
+              "AI",
+              "OpenAI",
+              "集成"
+            ]
+          },
+          {
+            "title": "数据库设置和迁移",
+            "description": "Supabase 数据库配置和数据迁移最佳实践",
+            "href": "#",
+            "tags": [
+              "数据库",
+              "Supabase",
+              "迁移"
+            ]
+          },
+          {
+            "title": "部署到生产环境",
+            "description": "Vercel 和 Cloudflare 部署的详细步骤",
+            "href": "#",
+            "tags": [
+              "部署",
+              "Vercel",
+              "生产环境"
+            ]
+          }
+        ]
+      },
+      "categoriesTitle": "帮助分类",
+      "categoriesSubtitle": "按类别浏览帮助文章",
+      "categories": [
+        {
+          "title": "快速开始",
+          "description": "新用户入门指南",
+          "icon": "Rocket",
+          "articles": [
+            {
+              "title": "安装和设置",
+              "description": "从零开始设置 ShipBase 项目",
+              "href": "#",
+              "tags": [
+                "安装",
+                "设置",
+                "环境"
+              ]
+            },
+            {
+              "title": "第一个应用",
+              "description": "创建您的第一个 AI SaaS 应用",
+              "href": "#",
+              "tags": [
+                "教程",
+                "应用",
+                "开发"
+              ]
+            },
+            {
+              "title": "环境变量配置",
+              "description": "正确配置所有必要的环境变量",
+              "href": "#",
+              "tags": [
+                "配置",
+                "环境变量",
+                "API 密钥"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "核心功能",
+          "description": "ShipBase 主要功能的使用指南",
+          "icon": "Code",
+          "articles": [
+            {
+              "title": "身份验证系统",
+              "description": "用户登录、注册和会话管理",
+              "href": "#",
+              "tags": [
+                "身份验证",
+                "用户管理",
+                "会话"
+              ]
+            },
+            {
+              "title": "支付处理",
+              "description": "订阅管理和支付流程",
+              "href": "#",
+              "tags": [
+                "支付",
+                "订阅",
+                "计费"
+              ]
+            },
+            {
+              "title": "数据库操作",
+              "description": "数据存储和查询最佳实践",
+              "href": "#",
+              "tags": [
+                "数据库",
+                "查询",
+                "存储"
+              ]
+            },
+            {
+              "title": "AI 集成",
+              "description": "AI 服务的集成和使用",
+              "href": "#",
+              "tags": [
+                "AI",
+                "机器学习",
+                "API"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "部署和运维",
+          "description": "生产环境部署和运维指南",
+          "icon": "Globe",
+          "articles": [
+            {
+              "title": "Vercel 部署",
+              "description": "使用 Vercel 部署您的应用",
+              "href": "#",
+              "tags": [
+                "Vercel",
+                "部署",
+                "CDN"
+              ]
+            },
+            {
+              "title": "Cloudflare Pages",
+              "description": "Cloudflare Pages 部署指南",
+              "href": "#",
+              "tags": [
+                "Cloudflare",
+                "部署",
+                "边缘计算"
+              ]
+            },
+            {
+              "title": "环境管理",
+              "description": "开发、测试和生产环境管理",
+              "href": "#",
+              "tags": [
+                "环境",
+                "配置",
+                "管理"
+              ]
+            },
+            {
+              "title": "监控和日志",
+              "description": "应用监控和日志记录",
+              "href": "#",
+              "tags": [
+                "监控",
+                "日志",
+                "分析"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "故障排除",
+          "description": "常见问题和解决方案",
+          "icon": "Zap",
+          "articles": [
+            {
+              "title": "常见错误",
+              "description": "解决常见的部署和运行错误",
+              "href": "#",
+              "tags": [
+                "错误",
+                "调试",
+                "解决"
+              ]
+            },
+            {
+              "title": "性能优化",
+              "description": "提升应用性能的技巧",
+              "href": "#",
+              "tags": [
+                "性能",
+                "优化",
+                "速度"
+              ]
+            },
+            {
+              "title": "安全最佳实践",
+              "description": "保护您的应用和数据安全",
+              "href": "#",
+              "tags": [
+                "安全",
+                "最佳实践",
+                "保护"
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": {
+        "title": "常见问题",
+        "subtitle": "快速找到您需要的答案",
+        "faqs": [
+          {
+            "question": "ShipBase 支持哪些 AI 服务？",
+            "answer": "ShipBase 支持 OpenAI、Anthropic、Google AI 等主流 AI 服务，并提供了统一的接口来管理不同的 AI 提供商。"
+          },
+          {
+            "question": "如何自定义 ShipBase 的界面？",
+            "answer": "ShipBase 使用 Tailwind CSS 和 Shadcn/UI，您可以轻松自定义样式。所有组件都是可定制的，支持主题切换。"
+          },
+          {
+            "question": "ShipBase 是否支持多语言？",
+            "answer": "是的，ShipBase 内置了国际化支持，目前支持中文、英文和日文，您可以轻松添加更多语言。"
+          },
+          {
+            "question": "如何升级 ShipBase 版本？",
+            "answer": "您可以通过 Git 拉取最新代码来升级 ShipBase。我们建议在升级前备份您的自定义代码。"
+          },
+          {
+            "question": "ShipBase 的性能如何？",
+            "answer": "ShipBase 基于 Next.js 14+ 构建，支持 Server Components 和 Edge Runtime，具有出色的性能表现。"
+          },
+          {
+            "question": "如何获得技术支持？",
+            "answer": "您可以通过邮件联系我们，或者加入我们的 Discord 社区获得实时帮助。"
+          }
+        ]
+      },
+      "contact": {
+        "title": "需要更多帮助？",
+        "subtitle": "联系我们的支持团队",
+        "description": "如果您在文档中找不到答案，我们的支持团队随时为您提供帮助。",
+        "emailButton": "发送邮件",
+        "discordButton": "加入 Discord"
+      }
+    },
+    "contact": {
+      "title": "联系我们",
+      "subtitle": "我们随时为您提供帮助",
+      "description": "联系我们的团队获取支持、合作或一般咨询。",
+      "contactMethodsTitle": "联系我们",
+      "contactMethodsSubtitle": "我们很乐意听到您的声音。选择最适合您的联系方式",
+      "teamTitle": "直接联系团队",
+      "teamSubtitle": "根据您的需求联系相应的团队",
+      "responseTimeTitle": "响应时间",
+      "responseTimeSubtitle": "我们承诺快速响应您的请求",
+      "contactMethods": [
+        {
+          "icon": "Users",
+          "title": "Discord 社区",
+          "description": "加入我们的 Discord 社区，与其他开发者交流",
+          "action": "加入 Discord",
+          "href": "#"
+        },
+        {
+          "icon": "Zap",
+          "title": "邮件支持",
+          "description": "发送邮件到 support@shipbase.com",
+          "action": "发送邮件",
+          "href": "mailto:support@shipbase.com"
+        },
+        {
+          "icon": "Shield",
+          "title": "GitHub Issues",
+          "description": "在 GitHub 上报告问题或提出建议",
+          "action": "查看 Issues",
+          "href": "#"
+        },
+        {
+          "icon": "Rocket",
+          "title": "企业合作",
+          "description": "企业级支持和定制开发服务",
+          "action": "联系销售",
+          "href": "mailto:sales@shipbase.com"
+        }
+      ],
+      "team": [
+        {
+          "name": "技术支持",
+          "email": "support@shipbase.com",
+          "description": "技术问题和故障排除"
+        },
+        {
+          "name": "销售团队",
+          "email": "sales@shipbase.com",
+          "description": "商业合作和定制服务"
+        },
+        {
+          "name": "产品反馈",
+          "email": "feedback@shipbase.com",
+          "description": "产品建议和功能请求"
+        }
+      ],
+      "responseTimes": [
+        {
+          "time": "< 1 小时",
+          "title": "Discord 支持",
+          "description": "社区支持，快速响应"
+        },
+        {
+          "time": "< 24 小时",
+          "title": "邮件支持",
+          "description": "专业团队，详细回复"
+        },
+        {
+          "time": "< 48 小时",
+          "title": "企业支持",
+          "description": "定制解决方案"
+        }
+      ]
+    },
+    "status": {
+      "title": "服务状态",
+      "subtitle": "实时系统状态",
+      "description": "监控所有ShipBase服务和基础设施的当前状态。",
+      "overview": {
+        "title": "服务状态概览",
+        "subtitle": "实时监控所有ShipBase服务",
+        "allSystemsOperational": "所有系统正常运行",
+        "lastUpdated": "最后更新"
+      },
+      "services": {
+        "title": "服务状态",
+        "subtitle": "所有ShipBase服务的当前状态",
+        "api": {
+          "name": "API服务",
+          "description": "核心API端点和服务"
+        },
+        "auth": {
+          "name": "身份验证",
+          "description": "用户身份验证和授权"
+        },
+        "payments": {
+          "name": "支付处理",
+          "description": "Stripe支付处理服务"
+        },
+        "database": {
+          "name": "数据库",
+          "description": "Supabase数据库服务"
+        },
+        "cdn": {
+          "name": "CDN",
+          "description": "内容分发网络"
+        },
+        "monitoring": {
+          "name": "监控系统",
+          "description": "系统监控和告警"
+        },
+        "statusOperational": "正常运行",
+        "statusDegraded": "性能降级",
+        "statusOutage": "服务中断",
+        "uptime": "正常运行时间",
+        "lastIncident": "最后事件",
+        "none": "无"
+      },
+      "subscribe": {
+        "title": "订阅状态更新",
+        "subtitle": "通过邮件或RSS获取服务状态变更通知",
+        "emailSubscribe": "邮件订阅",
+        "rssSubscribe": "RSS订阅",
+        "description": "及时了解服务状态变更和维护窗口"
+      }
+    },
+    "privacy": {
+      "title": "隐私政策",
+      "subtitle": "您的隐私很重要",
+      "description": "了解我们如何收集、使用和保护您的个人信息。",
+      "lastUpdated": "最后更新：2024年1月1日",
+      "introduction": {
+        "title": "介绍",
+        "content": "欢迎使用 ShipBase，这是一个专为帮助您快速高效构建 AI SaaS 初创公司而设计的 **NextJS 模板**。在 ShipBase，您的隐私对我们至关重要，本隐私政策概述了您在使用我们的服务时，我们如何收集、使用和保护您的个人信息。"
+      },
+      "informationCollection": {
+        "title": "信息收集和使用",
+        "subtitle": "我们收集以下类型的数据，以便在使用 ShipBase 时为您提供更好的体验：",
+        "accountInfo": {
+          "title": "账户信息",
+          "whatWeCollect": "我们收集的内容：这包括您的姓名、邮箱地址以及您在创建账户时提供的任何其他信息。",
+          "purpose": "目的：管理您的账户并提供客户支持。"
+        },
+        "usageDetails": {
+          "title": "使用详情",
+          "whatWeCollect": "我们收集的内容：关于您如何使用 ShipBase 的信息，包括您的交互、访问的功能和使用频率。",
+          "purpose": "目的：分析用户参与度并改进我们的服务。"
+        },
+        "deviceInfo": {
+          "title": "设备信息",
+          "whatWeCollect": "我们收集的内容：关于您用于访问 ShipBase 的设备的数据，如设备类型、操作系统和浏览器类型。",
+          "purpose": "目的：为不同设备优化我们的服务并确保兼容性。"
+        },
+        "cookies": {
+          "title": "Cookie",
+          "whatWeCollect": "我们收集的内容：放置在您设备上的小型数据文件，帮助我们跟踪用户偏好并改善用户体验。",
+          "purpose": "目的：增强我们服务的功能并个性化您的体验。"
+        },
+        "paymentInfo": {
+          "title": "支付和账单信息",
+          "whatWeCollect": "我们收集的内容：关于您支付方式的信息，如信用卡号、账单地址以及交易处理所需的任何详细信息。",
+          "purpose": "目的：为我们的服务提供账单和支付处理便利。"
+        }
+      },
+      "dataStorage": {
+        "title": "数据存储和安全",
+        "content": "我们认真对待您个人信息的安全。我们收集的数据安全地存储在我们的服务器上，我们实施各种安全措施，包括加密和访问控制，以保护您的个人信息免受未经授权的访问、更改、披露或销毁。但是，请注意，没有通过互联网传输或电子存储的方法是100%安全的，我们无法保证其绝对安全。"
+      },
+      "informationSharing": {
+        "title": "信息共享和披露",
+        "content": "我们不会向外部方出售、交易或以其他方式转让您的个人信息，除非在以下情况下：",
+        "circumstances": [
+          "遵守法律义务或响应公共当局的合法请求。",
+          "保护我们的权利、财产或安全，或保护我们的用户或他人的权利、财产或安全。",
+          "通过协助我们运营网站或开展业务的受信任第三方合作伙伴提供服务，但需遵守保密协议。"
+        ]
+      },
+      "policyChanges": {
+        "title": "政策变更",
+        "content": "我们可能会不时更新此隐私政策。我们将通过在此页面上发布新政策并更新本政策顶部的 生效日期 来通知您任何变更。建议您定期查看此隐私政策以了解任何变更。此隐私政策的变更在发布到此页面时生效。"
+      },
+      "contactUs": {
+        "title": "联系我们",
+        "content": "如果您对此隐私政策或我们的数据实践有任何疑问或担忧，请通过以下方式联系我们：",
+        "copyrightOwner": "版权所有者：shipbase.ai",
+        "email": "邮箱：support@shipbase.ai"
+      },
+      "consent": {
+        "content": "通过使用 ShipBase，您同意我们的隐私政策并同意其条款。感谢您信任我们处理您的信息！"
+      }
+    },
+    "terms": {
+      "title": "服务条款",
+      "subtitle": "我们的条款和条件",
+      "description": "阅读我们的服务条款，了解您的权利和责任。",
+      "lastUpdated": "最后更新：2024年1月1日",
+      "introduction": {
+        "title": "条款介绍和接受",
+        "content": "欢迎使用 **ShipBase**，这是一个专为帮助您快速高效构建 AI SaaS 初创公司而设计的 NextJS 模板。通过访问或使用我们的服务，您同意受本服务条款的约束。如果您不同意这些条款中的任何内容，请不要使用我们的服务。"
+      },
+      "serviceUse": {
+        "title": "服务使用",
+        "content": "ShipBase 为用户提供全面的平台，使用我们预构建的模板和基础设施来构建和启动 AI SaaS 初创公司。您同意按照所有适用的地方、州、国家和国际法律法规使用服务。"
+      },
+      "userAccounts": {
+        "title": "用户账户和注册",
+        "content": "要访问服务的某些功能，您需要创建一个账户。您必须在注册过程中提供准确和完整的信息。您有责任维护账户凭据的机密性，并对您账户下发生的所有活动负责。您同意立即通知我们任何未经授权使用您账户或任何其他安全违规行为。"
+      },
+      "intellectualProperty": {
+        "title": "内容和知识产权",
+        "content": "通过 ShipBase 提供的所有内容，包括但不限于模板、代码、基础设施设置和文档，均受版权法保护。ShipBase 的版权所有者是 **shipbase.ai**。",
+        "points": [
+          "您承认您不拥有构成 ShipBase 服务的基础技术或知识产权，您同意尊重 shipbase.ai 和任何第三方的知识产权。",
+          "虽然您保留对自定义实现和修改的所有权，但 ShipBase 核心平台和模板仍然是 shipbase.ai 的财产。"
+        ]
+      },
+      "prohibitedActivities": {
+        "title": "禁止活动",
+        "content": "您同意在使用 ShipBase 时不从事以下任何禁止活动：",
+        "activities": [
+          "未经授权访问或分发我们的专有代码和模板",
+          "未经授权转售或重新分发 ShipBase 模板",
+          "干扰或破坏服务的安全性或性能",
+          "将服务用于任何非法或未经授权的目的",
+          "试图绕过服务的任何安全功能"
+        ]
+      },
+      "privacyData": {
+        "title": "隐私和数据收集",
+        "content": "ShipBase 收集以下类型的数据：",
+        "dataTypes": [
+          "账户信息：您在创建账户时提供的信息",
+          "使用详情：与您在我们服务上的活动相关的数据",
+          "设备信息：关于您用于访问我们服务的设备的信息",
+          "Cookie：帮助我们增强您服务体验的数据",
+          "支付和账单信息：处理支付所需的数据"
+        ],
+        "privacyPolicy": "有关数据收集实践的更多详细信息，请参阅我们单独的隐私政策。"
+      },
+      "pricingPayments": {
+        "title": "定价和支付",
+        "points": [
+          "除非法律另有要求，否则所有购买都是最终且不可退款的",
+          "价格可能会在通知用户后发生变化",
+          "您同意支付与您选择的计划相关的所有费用",
+          "支付条款基于您选择的支付方式和计划"
+        ]
+      },
+      "termination": {
+        "title": "终止",
+        "content": "我们保留自行决定终止或暂停您访问服务的权利，无需通知，对于我们认为违反这些条款或对其他服务用户、我们或第三方有害的行为。"
+      },
+      "warranties": {
+        "title": "免责声明",
+        "content": "服务按 现状 和 可用 基础提供。我们对服务的准确性、可靠性或可用性不作任何保证或陈述，并在法律允许的最大范围内免除所有保证。"
+      },
+      "liability": {
+        "title": "责任限制",
+        "content": "在法律允许的最大范围内，shipbase.ai 不对因使用或无法使用服务而产生的任何直接、间接、偶然、特殊、后果性或惩罚性损害承担责任。"
+      },
+      "indemnification": {
+        "title": "赔偿",
+        "content": "您同意赔偿并使 shipbase.ai、其关联公司及其各自的官员、董事、员工和代理免受因您使用服务或违反这些条款而产生的任何索赔、损害、损失、负债和费用（包括律师费）。"
+      },
+      "governingLaw": {
+        "title": "适用法律和争议解决",
+        "content": "这些条款应受 shipbase.ai 运营所在司法管辖区的法律管辖和解释，不考虑其法律冲突条款。因这些条款或服务产生的任何争议将通过具有约束力的仲裁根据适用法律解决。"
+      },
+      "changes": {
+        "title": "条款变更",
+        "content": "我们保留随时更新或修改这些条款的权利。变更将在我们网站上发布后立即生效。您在变更后继续使用服务即表示您接受新条款。"
+      },
+      "contact": {
+        "title": "联系信息",
+        "content": "如果您对这些条款有任何疑问，请通过 support@shipbase.ai 联系我们。"
+      },
+      "acknowledgment": {
+        "content": "通过使用 ShipBase，您承认您已阅读、理解并同意受这些服务条款的约束。感谢您选择 ShipBase！"
+      }
+    },
+    "cookies": {
+      "title": "Cookie政策",
+      "subtitle": "我们如何使用Cookie",
+      "description": "了解我们如何在平台上使用Cookie和类似技术。",
+      "lastUpdated": "最后更新：2024年1月1日",
+      "introduction": {
+        "title": "什么是Cookie",
+        "content": "Cookie是当您访问网站时存储在您设备上的小型文本文件。它们被广泛用于使网站正常工作、提高效率，并为网站所有者提供信息。"
+      },
+      "howWeUseCookies": {
+        "title": "我们如何使用Cookie",
+        "subtitle": "我们使用Cookie来改善您的浏览体验，分析网站流量，并个性化内容和广告。",
+        "essential": {
+          "title": "必要Cookie",
+          "description": "这些Cookie对于网站的正常运行是必需的，无法关闭。它们通常仅响应您所做的操作而设置，相当于请求服务，例如设置隐私偏好、登录或填写表单。",
+          "examples": [
+            "保持您的登录状态",
+            "记住您的语言偏好",
+            "确保网站安全"
+          ]
+        },
+        "analytics": {
+          "title": "分析Cookie",
+          "description": "这些Cookie帮助我们了解访问者如何与网站互动，通过匿名收集和报告信息。",
+          "examples": [
+            "Google Analytics - 分析网站使用情况",
+            "页面访问统计",
+            "用户行为分析"
+          ]
+        },
+        "functional": {
+          "title": "功能Cookie",
+          "description": "这些Cookie使网站能够提供增强的功能和个性化。它们可能由我们或第三方设置。",
+          "examples": [
+            "记住您的偏好设置",
+            "个性化内容推荐",
+            "社交媒体集成"
+          ]
+        },
+        "marketing": {
+          "title": "营销Cookie",
+          "description": "这些Cookie用于跟踪访问者在网站上的活动。目的是显示相关和个性化的广告。",
+          "examples": [
+            "广告个性化",
+            "转化跟踪",
+            "再营销活动"
+          ]
+        }
+      },
+      "cookieTypes": {
+        "title": "我们使用的Cookie类型",
+        "subtitle": "详细了解我们使用的不同类型的Cookie",
+        "sessionCookies": {
+          "title": "会话Cookie",
+          "description": "这些是临时Cookie，在您关闭浏览器时会被删除。它们用于在您浏览网站时保持您的会话状态。"
+        },
+        "persistentCookies": {
+          "title": "持久Cookie",
+          "description": "这些Cookie在您的设备上保留更长时间，直到过期或被删除。它们记住您的偏好设置，以便在您下次访问时提供更好的体验。"
+        },
+        "firstPartyCookies": {
+          "title": "第一方Cookie",
+          "description": "这些Cookie由我们直接设置，用于改善网站功能和用户体验。"
+        },
+        "thirdPartyCookies": {
+          "title": "第三方Cookie",
+          "description": "这些Cookie由其他网站设置，通常用于广告和分析目的。"
+        }
+      },
+      "manageCookies": {
+        "title": "管理您的Cookie偏好",
+        "subtitle": "您可以控制我们使用的Cookie类型",
+        "description": "您可以通过浏览器设置或我们的Cookie偏好中心来管理Cookie。请注意，禁用某些Cookie可能会影响网站的功能。",
+        "browserSettings": {
+          "title": "浏览器设置",
+          "description": "大多数浏览器允许您控制Cookie。您可以在浏览器的设置或首选项中找到Cookie选项。",
+          "instructions": [
+            "Chrome: 设置 > 隐私和安全 > Cookie和其他网站数据",
+            "Firefox: 选项 > 隐私和安全 > Cookie和网站数据",
+            "Safari: 偏好设置 > 隐私 > Cookie和网站数据",
+            "Edge: 设置 > Cookie和网站权限"
+          ]
+        },
+        "optOut": {
+          "title": "选择退出",
+          "description": "您可以选择退出某些第三方Cookie，特别是用于广告目的的Cookie。",
+          "links": [
+            "Google Analytics 选择退出",
+            "Facebook 广告偏好",
+            "其他广告网络选择退出"
+          ]
+        }
+      },
+      "dataRetention": {
+        "title": "数据保留",
+        "content": "我们保留Cookie数据的时间取决于Cookie的类型和目的。会话Cookie在您关闭浏览器时立即删除，而持久Cookie可能保留几个月到几年，具体取决于其用途。"
+      },
+      "updates": {
+        "title": "政策更新",
+        "content": "我们可能会不时更新此Cookie政策。任何更改都将在此页面上发布，并在适当情况下通过其他方式通知您。我们建议您定期查看此政策以了解任何更新。"
+      },
+      "contact": {
+        "title": "联系我们",
+        "content": "如果您对此Cookie政策有任何疑问或需要更多信息，请通过以下方式联系我们：",
+        "email": "邮箱：support@shipbase.ai"
+      },
+      "consent": {
+        "content": "通过继续使用我们的网站，您同意我们按照此Cookie政策使用Cookie。"
+      }
+    },
+    "login": {
+      "title": "登录",
+      "subtitle": "欢迎回来",
+      "description": "登录您的账户，继续您的ShipBase之旅。"
+    },
+    "signup": {
+      "title": "开始使用",
+      "subtitle": "创建您的账户",
+      "description": "加入数千名开发者，使用ShipBase构建出色的应用程序。"
+    },
+    "profile": {
+      "title": "用户信息 - ShipBase",
+      "subtitle": "查看和管理您的用户信息",
+      "description": "查看和管理您的账户信息",
+      "basicInfo": {
+        "title": "基本信息",
+        "description": "您的个人账户信息",
+        "emailLabel": "邮箱地址",
+        "registrationDate": "注册时间",
+        "unknown": "未知"
+      },
+      "accountStatus": {
+        "title": "账户状态",
+        "description": "您的账户安全状态",
+        "emailVerification": "邮箱验证",
+        "accountStatus": "账户状态",
+        "loginMethod": "登录方式",
+        "verified": "已验证",
+        "unverified": "未验证",
+        "normal": "正常",
+        "oauth": "OAuth",
+        "emailLogin": "邮箱登录"
+      },
+      "actions": {
+        "editProfile": "编辑资料",
+        "changePassword": "修改密码"
+      },
+      "noNameSet": "未设置姓名"
+    },
+    "membership": {
+      "title": "会员中心 - ShipBase",
+      "subtitle": "管理您的会员订阅和权益",
+      "description": "管理您的订阅计划和会员权益",
+      "currentPlan": {
+        "title": "当前计划",
+        "description": "您当前的订阅状态和使用情况",
+        "freeVersion": "免费版",
+        "paidVersion": "付费版"
+      },
+      "usage": {
+        "apiCalls": "API 调用",
+        "projectCount": "项目数量",
+        "supportLevel": "支持级别",
+        "remainingThisMonth": "本月剩余",
+        "maxLimit": "最大限制",
+        "responseTime": "响应时间",
+        "priority": "优先",
+        "standard": "标准"
+      },
+      "upgradePlan": {
+        "title": "升级您的计划",
+        "currentPlan": "当前计划",
+        "freeUse": "免费使用",
+        "upgradePlan": "升级计划"
+      },
+      "billingHistory": {
+        "title": "账单历史",
+        "description": "查看您的订阅和付款记录",
+        "noRecords": "暂无账单记录",
+        "upgradeMessage": "升级到付费计划后，您将看到详细的账单信息",
+        "table": {
+          "date": "日期",
+          "description": "描述",
+          "amount": "金额",
+          "status": "状态",
+          "action": "操作",
+          "view": "查看"
+        },
+        "status": {
+          "pending": "待支付",
+          "paid": "已支付",
+          "failed": "支付失败",
+          "cancelled": "已取消",
+          "refunded": "已退款"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "免费版",
+          "price": 0,
+          "period": "永久",
+          "description": "适合个人用户和小型项目",
+          "features": [
+            "每月 1,000 次 API 调用",
+            "最多 3 个项目",
+            "基础支持",
+            "标准模板库"
+          ],
+          "current": false
+        },
+        {
+          "id": "pro",
+          "name": "专业版",
+          "price": 29,
+          "period": "每月",
+          "description": "适合中小型团队",
+          "features": [
+            "每月 50,000 次 API 调用",
+            "无限项目",
+            "优先支持",
+            "高级模板库",
+            "高级分析",
+            "团队协作"
+          ],
+          "current": false
+        },
+        {
+          "id": "enterprise",
+          "name": "企业版",
+          "price": 99,
+          "period": "每月",
+          "description": "适合大型企业",
+          "features": [
+            "无限 API 调用",
+            "无限项目",
+            "24/7 专属支持",
+            "所有模板库",
+            "企业级分析",
+            "自定义集成",
+            "SLA 保证"
+          ],
+          "current": false
+        }
+      ]
+    },
+    "orders": {
+      "title": "订单中心",
+      "subtitle": "管理您的所有订单",
+      "description": "查看和管理您的订单历史记录",
+      "ordersList": {
+        "title": "订单列表",
+        "subtitle": "您的所有订单",
+        "noOrders": "暂无订单",
+        "loading": "加载中...",
+        "error": "加载订单失败",
+        "retry": "重试"
+      },
+      "orderCard": {
+        "orderNumber": "订单号",
+        "status": "状态",
+        "amount": "金额",
+        "product": "产品",
+        "createdAt": "创建时间",
+        "paidAt": "支付时间",
+        "actions": "操作",
+        "viewDetails": "查看详情",
+        "refreshStatus": "刷新状态"
+      },
+      "status": {
+        "pending": "待支付",
+        "paid": "已支付",
+        "failed": "支付失败",
+        "cancelled": "已取消",
+        "refunded": "已退款"
+      },
+      "filters": {
+        "title": "筛选和搜索",
+        "all": "全部",
+        "pending": "待支付",
+        "paid": "已支付",
+        "failed": "支付失败",
+        "cancelled": "已取消",
+        "refunded": "已退款"
+      },
+      "search": {
+        "placeholder": "搜索订单号或产品名称..."
+      },
+      "refresh": "刷新",
+      "pagination": {
+        "previous": "上一页",
+        "next": "下一页",
+        "showing": "显示",
+        "of": "共",
+        "results": "条结果"
+      },
+      "orderDetails": {
+        "title": "订单详情",
+        "subtitle": "查看订单的详细信息",
+        "orderInfo": {
+          "orderNumber": "订单号",
+          "status": "状态",
+          "createdAt": "创建时间",
+          "paidAt": "支付时间",
+          "cancelledAt": "取消时间",
+          "amount": "金额",
+          "currency": "货币",
+          "paymentProvider": "支付提供商",
+          "customerEmail": "客户邮箱"
+        },
+        "productInfo": {
+          "title": "产品信息",
+          "productName": "产品名称",
+          "productType": "产品类型",
+          "productId": "产品ID"
+        },
+        "paymentInfo": {
+          "title": "支付信息",
+          "provider": "支付提供商",
+          "requestId": "支付请求ID",
+          "sessionId": "支付会话ID"
+        },
+        "customerInfo": {
+          "title": "客户信息",
+          "email": "邮箱地址"
+        },
+        "orderItems": {
+          "title": "订单项",
+          "productName": "产品名称",
+          "description": "描述",
+          "unitPrice": "单价",
+          "quantity": "数量",
+          "totalPrice": "总价"
+        },
+        "actions": {
+          "back": "返回",
+          "refreshStatus": "刷新状态"
+        },
+        "status": {
+          "pending": "待支付",
+          "paid": "已支付",
+          "failed": "支付失败",
+          "cancelled": "已取消",
+          "refunded": "已退款"
+        },
+        "loading": "加载中...",
+        "error": "加载订单详情失败",
+        "retry": "重试",
+        "notFound": "订单未找到"
+      }
+    },
+    "dashboard": {
+      "title": "仪表板",
+      "subtitle": "概览",
+      "description": "快速访问您的账户信息和操作",
+      "welcomeMessage": "欢迎回来！",
+      "stats": {
+        "title": "统计概览",
+        "subtitle": "您的账户数据",
+        "cards": [
+          {
+            "title": "总订单",
+            "value": "0",
+            "change": "0% 与上月相比",
+            "trend": "neutral"
+          },
+          {
+            "title": "总收入",
+            "value": "¥0",
+            "change": "0% 与上月相比",
+            "trend": "neutral"
+          },
+          {
+            "title": "待处理订单",
+            "value": "0",
+            "change": "查看详情",
+            "trend": "neutral"
+          },
+          {
+            "title": "账户状态",
+            "value": "活跃",
+            "change": "正常使用",
+            "trend": "up"
+          }
+        ]
+      },
+      "recentActivity": {
+        "title": "最近活动",
+        "subtitle": "您的账户动态",
+        "noActivity": "暂无活动记录",
+        "activities": [
+          {
+            "action": "账户已创建",
+            "time": "刚刚",
+            "icon": "UserPlus"
+          }
+        ]
+      },
+      "quickActions": {
+        "title": "快速操作",
+        "subtitle": "常用功能入口",
+        "actions": [
+          {
+            "title": "创建订单",
+            "description": "立即创建新订单",
+            "icon": "ShoppingCart",
+            "href": "/pricing"
+          },
+          {
+            "title": "查看订单",
+            "description": "管理您的订单",
+            "icon": "Package",
+            "href": "/orders"
+          },
+          {
+            "title": "账户设置",
+            "description": "编辑个人信息",
+            "icon": "Settings",
+            "href": "/profile"
+          },
+          {
+            "title": "查看会员",
+            "description": "升级您的计划",
+            "icon": "Crown",
+            "href": "/membership"
+          }
+        ]
+      }
+    },
+    "blogs": {
+      "title": "博客",
+      "subtitle": "探索我们的最新文章",
+      "description": "阅读我们的技术博客和最新资讯",
+      "filters": {
+        "all": "全部",
+        "growthHacking": "增长黑客",
+        "marketing": "营销",
+        "nextjsTechniques": "Next.js 技巧"
+      },
+      "endOfPosts": "您已查看所有文章",
+      "readMore": "阅读更多",
+      "postedOn": "发布于"
+    },
+    "adminBlogs": {
+      "title": "博客管理",
+      "subtitle": "管理博客文章（仅管理员）",
+      "description": "创建、编辑和管理博客文章",
+      "list": {
+        "title": "博客列表",
+        "subtitle": "所有博客文章",
+        "noBlogs": "暂无博客文章",
+        "createNew": "创建新文章"
+      },
+      "table": {
+        "title": "标题",
+        "author": "作者",
+        "status": "状态",
+        "visibility": "可见性",
+        "featured": "置顶",
+        "createdAt": "创建时间",
+        "actions": "操作",
+        "edit": "编辑",
+        "delete": "删除"
+      },
+      "edit": {
+        "title": "编辑博客",
+        "subtitle": "编辑博客文章（仅管理员）",
+        "form": {
+          "language": "博客语言",
+          "title": "标题",
+          "slug": "Slug",
+          "description": "描述",
+          "tags": "标签",
+          "status": "状态",
+          "visibility": "可见性",
+          "featured": "置顶",
+          "featuredDescription": "将此文章置顶",
+          "generateSlug": "生成 slug",
+          "slugHelper": "自动从英文标题生成 slug。对于其他语言，请手动输入。",
+          "titleHelper": "推荐长度 60 个字符",
+          "descriptionHelper": "推荐长度 160 个字符"
+        },
+        "actions": {
+          "cancel": "取消",
+          "update": "更新博客",
+          "create": "创建博客"
+        },
+        "status": {
+          "draft": "草稿",
+          "published": "已发布"
+        },
+        "visibility": {
+          "public": "公开",
+          "private": "私有",
+          "subscribers": "订阅者"
+        }
+      }
+    }
+  }
+}

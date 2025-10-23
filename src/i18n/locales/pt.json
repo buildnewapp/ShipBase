@@ -1,0 +1,2205 @@
+{
+  "home": {
+    "badgeLabel": "2025🚀 Lance agora",
+    "heroTitle": "ShipBase, lance mais.",
+    "heroDescription": "ShipBase é um boilerplate de NextJS para construir startups de IA (SaaS). Lance rápido com uma variedade de templates e componentes.",
+    "ctaPrimary": "Começar",
+    "ctaSecondary": "Ler Documentação",
+    "watchDemo": "Assistir à Demo",
+    "viewDetails": "Ver Detalhes",
+    "promotionText": "🎁 US$100 de desconto para os primeiros 1000 clientes",
+    "userCount": "de 250+ usuários satisfeitos",
+    "techStackTitle": "ShipBase é construído sobre os ombros de gigantes",
+    "techStackItems": [
+      {
+        "name": "Next.js",
+        "description": "Framework Full-stack para React"
+      },
+      {
+        "name": "React",
+        "description": "Biblioteca de Interface do Usuário"
+      },
+      {
+        "name": "TailwindCSS",
+        "description": "Framework CSS utilitário"
+      },
+      {
+        "name": "Shadcn/UI",
+        "description": "Biblioteca de Componentes Moderna"
+      },
+      {
+        "name": "Vercel",
+        "description": "Plataforma de Deploy"
+      }
+    ],
+    "featuresTitle": "O que é o ShipBase",
+    "featuresSubtitle": "ShipBase é um boilerplate de NextJS para criar startups de IA em SaaS. Vem com diversos templates e componentes.",
+    "features": [
+      {
+        "title": "Templates prontos para uso",
+        "description": "Escolha entre dezenas de templates de IA em produção para iniciar seu projeto rapidamente."
+      },
+      {
+        "title": "Configuração de Infraestrutura",
+        "description": "Acesso instantâneo a uma infraestrutura escalável com boas práticas incorporadas."
+      },
+      {
+        "title": "Deploy Rápido",
+        "description": "Publique sua aplicação de IA em produção em horas, não dias."
+      }
+    ],
+    "benefitsTitle": "Por que escolher o ShipBase",
+    "benefitsSubtitle": "Tudo o que você precisa para lançar sua startup de IA — de templates prontos a suporte técnico.",
+    "benefits": [
+      {
+        "title": "Framework Completo",
+        "description": "Construído em Next.js com autenticação, pagamentos e integração de IA — tudo funcionando desde o primeiro dia."
+      },
+      {
+        "title": "Biblioteca Rica de Templates",
+        "description": "Escolha templates que atendam às suas necessidades e comece a construir rapidamente."
+      },
+      {
+        "title": "Orientação Técnica",
+        "description": "Obtenha suporte técnico profissional para começar com rapidez."
+      }
+    ],
+    "launchStepsTitle": "Como lançar com o ShipBase",
+    "launchStepsSubtitle": "Coloque sua startup de IA no ar em três passos simples:",
+    "launchSteps": [
+      {
+        "step": "1",
+        "title": "Obtenha o ShipBase",
+        "description": "Compre o ShipBase com um pagamento único. Verifique seu e-mail para o código e a documentação."
+      },
+      {
+        "step": "2",
+        "title": "Inicie seu Projeto",
+        "description": "Leia a documentação e clone o código do ShipBase. Comece a construir sua startup de IA."
+      },
+      {
+        "step": "3",
+        "title": "Personalize seu Projeto",
+        "description": "Modifique o template com seus dados e conteúdos. Adicione as funcionalidades de IA necessárias."
+      },
+      {
+        "step": "4",
+        "title": "Faça Deploy em Produção",
+        "description": "Publique seu projeto em produção em poucos passos e comece a atender clientes imediatamente."
+      }
+    ],
+    "keyFeaturesTitle": "Recursos Principais do ShipBase",
+    "keyFeaturesSubtitle": "Tudo o que você precisa para lançar sua startup de IA com rapidez e eficiência.",
+    "keyFeatures": [
+      {
+        "title": "Boilerplate Next.js",
+        "description": "Templates de Next.js prontos para produção com estrutura amigável a SEO e suporte a i18n."
+      },
+      {
+        "title": "Autenticação & Pagamentos",
+        "description": "Google OAuth integrado, login com um toque e processamento de pagamentos com Stripe."
+      },
+      {
+        "title": "Infraestrutura de Dados",
+        "description": "Integração nativa com Supabase para armazenamento de dados confiável e escalável."
+      },
+      {
+        "title": "Deploy com Um Clique",
+        "description": "Publicação sem atritos na Vercel ou Cloudflare com configuração automatizada."
+      },
+      {
+        "title": "Analytics de Negócio",
+        "description": "Google Analytics e Search Console integrados para acompanhar o crescimento."
+      },
+      {
+        "title": "Infraestrutura Pronta para IA",
+        "description": "Integração de IA pré-configurada com sistema de créditos embutido e venda de APIs."
+      }
+    ],
+    "testimonialsTitle": "O que dizem sobre o ShipBase",
+    "testimonialsSubtitle": "Depoimentos de developers e founders que lançaram suas startups de IA com o ShipBase.",
+    "testimonials": [
+      {
+        "quote": "O ShipBase tornou a jornada da ideia ao produto mais simples do que nunca. Seus templates, scripts e infraestrutura base fazem com que eu mal precise gastar tempo no básico. Recomendo a founders que queiram lançar seus SaaS rapidamente.",
+        "author": "Autor de AITDK",
+        "role": "Desenvolvedor Independente"
+      },
+      {
+        "quote": "O ShipBase facilitou muito configurar pagamentos e toda a parte chata da comercialização, para podermos focar nas features que importam. Se você quer lançar e escalar seu AI SaaS rápido, o ShipBase é escolha certa!",
+        "author": "Scar",
+        "role": "Engenheiro Front-end"
+      },
+      {
+        "quote": "Usei o ShipBase e lancei um novo site em 8 minutos, incluindo login/pagamento — incrível!",
+        "author": "Lafe",
+        "role": "Tech Lead"
+      }
+    ],
+    "productShowcaseTitle": "Startups de IA criadas com ShipBase",
+    "productShowcaseSubtitle": "Veja aplicações de IA incríveis feitas com ShipBase",
+    "showcaseItems": [
+      {
+        "name": "Raphael AI",
+        "description": "Crie imagens geradas por IA em segundos",
+        "image": "/api/placeholder/400/300",
+        "category": "Geração de Imagens com IA"
+      },
+      {
+        "name": "SiteSnapper",
+        "description": "Capture qualquer site com um clique",
+        "image": "/api/placeholder/400/300",
+        "category": "Ferramentas para Websites"
+      },
+      {
+        "name": "SEO Combine",
+        "description": "Todas as ferramentas de SEO em um só lugar",
+        "image": "/api/placeholder/400/300",
+        "category": "Ferramentas de SEO"
+      },
+      {
+        "name": "TrendsBar",
+        "description": "Ferramenta de análise do Google Trends",
+        "image": "/api/placeholder/400/300",
+        "category": "Análise de Dados"
+      },
+      {
+        "name": "Deepseek Artifacts",
+        "description": "Crie apps React usando o principal modelo open source do mundo",
+        "image": "/api/placeholder/400/300",
+        "category": "Desenvolvimento em IA"
+      },
+      {
+        "name": "Rednote Club",
+        "description": "Compartilhe os belos momentos da sua vida no Rednote",
+        "image": "/api/placeholder/400/300",
+        "category": "Plataforma Social"
+      }
+    ],
+    "statsTitle": "As pessoas amam o ShipBase",
+    "statsSubtitle": "porque é fácil de usar e rápido para lançar",
+    "stats": [
+      {
+        "number": "250+",
+        "label": "Clientes",
+        "description": "Confiam em nós"
+      },
+      {
+        "number": "30+",
+        "label": "Componentes",
+        "description": "Embutidos"
+      },
+      {
+        "number": "5",
+        "label": "Minutos",
+        "description": "Para lançar"
+      }
+    ],
+    "faqTitle": "Perguntas Frequentes sobre o ShipBase",
+    "faqSubtitle": "Tem outra pergunta? Fale conosco no Discord ou por e-mail.",
+    "faqs": [
+      {
+        "question": "O que exatamente é o ShipBase e como ele funciona?",
+        "answer": "ShipBase é um boilerplate NextJS completo, feito especialmente para criar startups de IA em SaaS. Ele oferece templates prontos, configuração de infraestrutura e ferramentas de deploy que ajudam você a lançar seu negócio de IA em horas, não dias."
+      },
+      {
+        "question": "Preciso de conhecimentos técnicos avançados para usar o ShipBase?",
+        "answer": "Embora conhecimento básico de programação ajude, o ShipBase é pensado para developers. Nossos templates e documentação tornam simples começar, mesmo sem ser especialista em IA ou infraestrutura em nuvem."
+      },
+      {
+        "question": "Que tipos de SaaS de IA posso criar com o ShipBase?",
+        "answer": "O ShipBase suporta uma ampla gama de apps de IA, desde geração de conteúdo até ferramentas de análise de dados. Nossos templates cobrem casos populares como chatbots, geradores de conteúdo, apps de processamento de imagens e mais."
+      },
+      {
+        "question": "Quanto tempo normalmente leva para lançar com o ShipBase?",
+        "answer": "Com o ShipBase, você pode ter um protótipo funcional em horas e uma aplicação pronta para produção também em poucas horas. Nosso deploy com um clique e a infraestrutura pré-configurada reduzem drasticamente o ciclo tradicional de meses."
+      },
+      {
+        "question": "O que está incluído na infraestrutura do ShipBase?",
+        "answer": "O ShipBase fornece um stack completo: autenticação, banco de dados, integração com APIs, processamento de pagamentos e deploy em nuvem escalável. Tudo pré-configurado seguindo as melhores práticas do mercado."
+      },
+      {
+        "question": "Posso personalizar os templates para o meu branding?",
+        "answer": "Com certeza! Todos os templates do ShipBase são totalmente personalizáveis. Você pode ajustar o design, recursos e funcionalidades para corresponder à sua marca e às necessidades do seu negócio mantendo a infraestrutura robusta."
+      }
+    ],
+    "finalCtaTitle": "Lance seu primeiro SaaS de IA",
+    "finalCtaSubtitle": "Comece por aqui, lance com ShipBase.",
+    "finalCtaButton": "Obter o ShipBase",
+    "finalCtaSecondary": "Ler Documentação"
+  },
+  "authPanel": {
+    "title": "Entrar no ShipBase",
+    "description": "Autentique-se com Google, GitHub ou um Magic Link oferecido pelo Better Auth.",
+    "signedInAs": "Conectado como {name}",
+    "sessionLabel": "ID da sessão: {id}",
+    "signOut": "Sair",
+    "googleButton": {
+      "default": "Entrar com Google",
+      "loading": "Redirecionando para o Google…"
+    },
+    "githubButton": {
+      "default": "Entrar com GitHub",
+      "loading": "Redirecionando para o GitHub…"
+    },
+    "magicLinkHeading": "Ou envie um magic link",
+    "emailLabel": "Endereço de e-mail",
+    "emailPlaceholder": "[voce@exemplo.com](mailto:voce@exemplo.com)",
+    "magicLinkButton": {
+      "default": "Enviar link de login",
+      "loading": "Enviando…"
+    },
+    "messages": {
+      "emptyEmail": "Por favor, insira um endereço de e-mail.",
+      "responseError": "Falha ao enviar o e-mail. Tente novamente.",
+      "requestError": "Algo deu errado. Tente novamente mais tarde.",
+      "success": "Magic link enviado. Se um serviço de e-mail não estiver configurado, verifique os logs do servidor para o link."
+    },
+    "footer": [
+      {
+        "type": "text",
+        "value": "Após o login, o Better Auth emite uma sessão no servidor e armazena um cookie HTTP-only. Combine "
+      },
+      {
+        "type": "code",
+        "value": "authClient.useSession()"
+      },
+      {
+        "type": "text",
+        "value": " para acessar o usuário atual em qualquer componente cliente."
+      }
+    ]
+  },
+  "header": {
+    "features": "Recursos",
+    "pricing": "Preços",
+    "docs": "Docs",
+    "login": "Entrar",
+    "signup": "Teste Grátis",
+    "languageSwitch": "Idioma",
+    "themeSwitch": "Tema",
+    "lightTheme": "Claro",
+    "darkTheme": "Escuro",
+    "systemTheme": "Sistema",
+    "userMenu": {
+      "dashboard": "Dashboard",
+      "profile": "Perfil",
+      "membership": "Assinatura",
+      "orders": "Pedidos",
+      "adminMenu": "Painel Admin",
+      "signOut": "Sair"
+    }
+  },
+  "footer": {
+    "description": "Uma plataforma SaaS moderna que ajuda você a criar e publicar aplicações rapidamente.",
+    "product": "Produto",
+    "features": "Recursos",
+    "pricing": "Preços",
+    "integrations": "Integrações",
+    "support": "Suporte",
+    "docs": "Documentação",
+    "helpCenter": "Central de Ajuda",
+    "contactUs": "Fale Conosco",
+    "serviceStatus": "Status do Serviço",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço",
+    "cookiePolicy": "Política de Cookies",
+    "copyright": "© 2024 ShipBase. Todos os direitos reservados.",
+    "madeWithLove": "Feito com ❤️"
+  },
+  "pages": {
+    "features": {
+      "title": "Recursos",
+      "subtitle": "Funcionalidades poderosas para acelerar seu desenvolvimento",
+      "description": "Descubra o conjunto completo de ferramentas e recursos que tornam o ShipBase a plataforma perfeita para aplicações SaaS modernas.",
+      "coreFeatures": {
+        "title": "Recursos Centrais",
+        "subtitle": "Solução completa para aplicações SaaS modernas, permitindo focar na inovação do produto em vez da infraestrutura",
+        "features": [
+          {
+            "icon": "Code",
+            "title": "Framework Full-stack Next.js",
+            "description": "Construído no mais recente Next.js 14+ com App Router, Server Components e suporte a Edge Runtime, oferecendo desempenho e experiência de desenvolvimento ideais.",
+            "highlights": [
+              "App Router",
+              "Server Components",
+              "Edge Runtime",
+              "Suporte a TypeScript"
+            ]
+          },
+          {
+            "icon": "Shield",
+            "title": "Autenticação de Nível Enterprise",
+            "description": "Better Auth integrado com múltiplos métodos de login, incluindo Google OAuth, GitHub OAuth e Magic Link, garantindo segurança e confiabilidade.",
+            "highlights": [
+              "Google OAuth",
+              "GitHub OAuth",
+              "Magic Link",
+              "Gestão de Sessões"
+            ]
+          },
+          {
+            "icon": "CreditCard",
+            "title": "Integração de Pagamentos Stripe",
+            "description": "Solução completa de pagamentos com suporte a assinaturas, pagamentos únicos e gestão de faturas, facilitando a comercialização.",
+            "highlights": [
+              "Gestão de Assinaturas",
+              "Pagamentos únicos",
+              "Sistema de Faturas",
+              "Tratamento de Webhooks"
+            ]
+          },
+          {
+            "icon": "Database",
+            "title": "Banco de Dados Supabase",
+            "description": "Poderoso PostgreSQL com recursos em tempo real, autenticação e storage integrados, fornecendo base de dados confiável.",
+            "highlights": [
+              "PostgreSQL",
+              "Assinaturas em Tempo Real",
+              "Armazenamento de Arquivos",
+              "Row Level Security"
+            ]
+          },
+          {
+            "icon": "Bot",
+            "title": "Infraestrutura Pronta para IA",
+            "description": "Integração de IA pré-configurada com serviços líderes como OpenAI e Anthropic, com sistema de créditos e venda de APIs.",
+            "highlights": [
+              "Integração com OpenAI",
+              "Sistema de Créditos",
+              "Venda de API",
+              "Suporte multi-modelo"
+            ]
+          },
+          {
+            "icon": "Rocket",
+            "title": "Deploy com Um Clique",
+            "description": "Suporte a deploy em plataformas como Vercel e Cloudflare, com CI/CD automatizado, simplificando a publicação.",
+            "highlights": [
+              "Deploy na Vercel",
+              "Cloudflare Pages",
+              "Automação de CI/CD",
+              "Gestão de Ambiente"
+            ]
+          },
+          {
+            "icon": "BarChart3",
+            "title": "Analytics de Negócio",
+            "description": "Google Analytics, Search Console e outras ferramentas integradas para entender comportamento do usuário e crescimento.",
+            "highlights": [
+              "Google Analytics",
+              "Search Console",
+              "Análise de Comportamento",
+              "Acompanhamento de Conversões"
+            ]
+          },
+          {
+            "icon": "Globe",
+            "title": "Suporte a Internacionalização",
+            "description": "Suporte multi-idioma embutido para Chinês, Inglês, Japonês e outros, ajudando seu produto a alcançar usuários globais.",
+            "highlights": [
+              "Suporte multi-idioma",
+              "Suporte a RTL",
+              "Troca dinâmica de idioma",
+              "Otimização de SEO"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "title": "Stack de Tecnologia",
+        "subtitle": "Baseado nas melhores práticas e tecnologias mais recentes, garantindo desempenho, segurança e escalabilidade",
+        "technologies": [
+          {
+            "name": "Next.js 14+",
+            "description": "Framework Full-stack para React"
+          },
+          {
+            "name": "React 19",
+            "description": "Biblioteca de Interface do Usuário"
+          },
+          {
+            "name": "TypeScript",
+            "description": "JavaScript com tipagem"
+          },
+          {
+            "name": "Tailwind CSS",
+            "description": "Framework CSS utilitário"
+          },
+          {
+            "name": "Shadcn/UI",
+            "description": "Biblioteca de Componentes Moderna"
+          },
+          {
+            "name": "Better Auth",
+            "description": "Solução de Autenticação"
+          },
+          {
+            "name": "Stripe",
+            "description": "Plataforma de Pagamentos"
+          },
+          {
+            "name": "Supabase",
+            "description": "Backend como Serviço"
+          },
+          {
+            "name": "Vercel",
+            "description": "Plataforma de Deploy"
+          }
+        ]
+      },
+      "comparison": {
+        "title": "Por que escolher o ShipBase",
+        "subtitle": "Comparado aos métodos tradicionais, o ShipBase economiza 90% do tempo de desenvolvimento",
+        "traditional": {
+          "title": "Desenvolvimento Tradicional",
+          "items": [
+            {
+              "text": "Leva 3–6 meses para montar a infraestrutura"
+            },
+            {
+              "text": "É preciso aprender múltiplos stacks"
+            },
+            {
+              "text": "É necessário lidar com processos de deploy complexos"
+            },
+            {
+              "text": "Implementar autenticação e pagamentos por conta própria"
+            },
+            {
+              "text": "Exige muito tempo de depuração e otimização"
+            }
+          ]
+        },
+        "shipbase": {
+          "title": "Usando ShipBase",
+          "items": [
+            {
+              "text": "Conclua a configuração básica em 5 minutos"
+            },
+            {
+              "text": "Solução completa pronta para uso"
+            },
+            {
+              "text": "Deploy em produção com um clique"
+            },
+            {
+              "text": "Autenticação e pagamentos pré-configurados"
+            },
+            {
+              "text": "Foque no desenvolvimento de features do produto"
+            }
+          ]
+        }
+      },
+      "cta": {
+        "title": "Pronto para construir seu SaaS de IA?",
+        "subtitle": "Obtenha o ShipBase agora e lance seu próximo projeto em minutos",
+        "primaryButton": "Obter ShipBase",
+        "secondaryButton": "Ver Documentação"
+      }
+    },
+    "pricing": {
+      "title": "Preços",
+      "subtitle": "Preços simples e transparentes",
+      "description": "Escolha o plano que melhor atende às suas necessidades. Comece grátis e escale conforme cresce.",
+      "plansTitle": "Escolha seu Plano",
+      "plansSubtitle": "Preços simples e transparentes, sem taxas ocultas. Escolha o plano ideal e faça upgrade quando quiser.",
+      "billingCycles": {
+        "one-time": {
+          "label": "Pagamento Único",
+          "description": "Pague uma vez, use para sempre"
+        },
+        "monthly": {
+          "label": "Mensal",
+          "description": "Cobrança flexível, cancele quando quiser"
+        },
+        "yearly": {
+          "label": "Anual",
+          "description": "Economize 20% no faturamento anual"
+        }
+      },
+      "plans": [
+        {
+          "name": "Gratuito",
+          "price": "$0",
+          "period": "Para sempre",
+          "description": "Perfeito para desenvolvedores individuais e projetos pequenos",
+          "features": [
+            "Templates básicos de Next.js",
+            "Integração com GitHub",
+            "Suporte da comunidade",
+            "Documentação básica",
+            "Licença para uso pessoal"
+          ],
+          "limitations": [
+            "Sem uso comercial",
+            "Sem suporte técnico",
+            "Recursos limitados"
+          ],
+          "cta": "Começar",
+          "popular": false
+        },
+        {
+          "name": "Professional",
+          "price": "$299",
+          "period": "Pagamento único",
+          "description": "Perfeito para startups e pequenos negócios",
+          "features": [
+            "Templates com recursos completos",
+            "Sistema de autenticação",
+            "Integração de pagamentos",
+            "Configuração de banco de dados",
+            "Integração de IA",
+            "Deploy com um clique",
+            "Suporte por e-mail",
+            "Licença para uso comercial",
+            "Acesso ao código-fonte"
+          ],
+          "limitations": [],
+          "cta": "Comprar agora",
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "$999",
+          "period": "Pagamento único",
+          "description": "Perfeito para grandes empresas e times",
+          "features": [
+            "Todos os recursos do Professional",
+            "Recursos avançados de IA",
+            "Suporte a multi-tenant",
+            "Analytics avançado",
+            "Suporte técnico prioritário",
+            "Serviços de desenvolvimento sob medida",
+            "Recursos de colaboração em equipe",
+            "Garantia de SLA",
+            "Serviços de treinamento"
+          ],
+          "limitations": [],
+          "cta": "Falar com Vendas",
+          "popular": false
+        }
+      ],
+      "cta": {
+        "getStarted": "Começar",
+        "buyNow": "Comprar agora",
+        "contactSales": "Falar com Vendas",
+        "currentPlan": "Plano Atual"
+      },
+      "features": {
+        "included": "Recursos Incluídos",
+        "limitations": "Limitações"
+      },
+      "pricing": {
+        "free": "Grátis",
+        "popular": "Popular",
+        "discount": "Desconto",
+        "save": "Economize",
+        "perMonth": "por mês",
+        "perYear": "por ano",
+        "oneTime": "único",
+        "forever": "para sempre"
+      },
+      "faqTitle": "Perguntas Frequentes",
+      "faqSubtitle": "Tem mais dúvidas? Ficaremos felizes em ajudar",
+      "faqs": [
+        {
+          "question": "Qual a diferença entre os planos Gratuito e Pago?",
+          "answer": "O plano Gratuito oferece recursos básicos para aprendizado e projetos pessoais. Os planos pagos incluem recursos comerciais completos como autenticação, pagamentos, recursos de IA etc., adequados a projetos comerciais."
+        },
+        {
+          "question": "Quais formas de pagamento vocês suportam?",
+          "answer": "Suportamos pagamento único, cobrança mensal e anual. A cobrança anual oferece 20% de desconto, e o pagamento único garante acesso vitalício."
+        },
+        {
+          "question": "Vocês oferecem reembolso?",
+          "answer": "Oferecemos garantia incondicional de reembolso em 30 dias. Se você não estiver satisfeito dentro de 30 dias da compra, pode solicitar reembolso total."
+        },
+        {
+          "question": "Posso usar em projetos comerciais?",
+          "answer": "Os planos Professional e Enterprise suportam uso comercial. O plano Gratuito é limitado a aprendizado pessoal e projetos não comerciais."
+        },
+        {
+          "question": "Inclui suporte técnico?",
+          "answer": "O plano Professional oferece suporte por e-mail; o Enterprise oferece suporte técnico prioritário. Respondemos às suas perguntas em até 24 horas."
+        },
+        {
+          "question": "Como faço upgrade para um plano superior?",
+          "answer": "Você pode fazer upgrade a qualquer momento pagando a diferença. Após o upgrade, você passa a usufruir imediatamente de todos os recursos do novo plano."
+        },
+        {
+          "question": "Quais os benefícios do faturamento anual?",
+          "answer": "O faturamento anual oferece 20% de desconto em relação ao mensal, economizando mais e reduzindo a frequência de cobrança."
+        }
+      ]
+    },
+    "docs": {
+      "title": "Documentação",
+      "subtitle": "Tudo o que você precisa para começar",
+      "description": "Guias completos, referências de API e tutoriais para ajudar você a construir aplicações incríveis.",
+      "quickStart": {
+        "title": "Início Rápido",
+        "subtitle": "Comece com o ShipBase em poucos passos para construir seu SaaS de IA",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Instalar o ShipBase",
+            "description": "Clone o repositório e instale as dependências",
+            "code": "git clone [https://github.com/your-repo/shipbase\ncd](https://github.com/your-repo/shipbase\ncd) shipbase\npnpm install"
+          },
+          {
+            "step": "2",
+            "title": "Configurar Ambiente",
+            "description": "Defina as chaves de API e configurações necessárias",
+            "code": "cp .env.example .env.local\n# Edite o arquivo .env.local"
+          },
+          {
+            "step": "3",
+            "title": "Iniciar o Servidor de Desenvolvimento",
+            "description": "Execute o projeto localmente",
+            "code": "pnpm dev\n# Acesse http://localhost:3000"
+          },
+          {
+            "step": "4",
+            "title": "Deploy em Produção",
+            "description": "Deploy com um clique na Vercel",
+            "code": "pnpm build\nvercel deploy"
+          }
+        ]
+      },
+      "navigation": {
+        "title": "Navegação da Documentação",
+        "subtitle": "Navegue por toda a nossa documentação para encontrar o que precisa",
+        "sections": [
+          {
+            "title": "Início Rápido",
+            "description": "Prepare o ShipBase em 5 minutos",
+            "icon": "Rocket",
+            "links": [
+              {
+                "name": "Guia de Instalação",
+                "href": "#"
+              },
+              {
+                "name": "Configuração de Ambiente",
+                "href": "#"
+              },
+              {
+                "name": "Primeira Aplicação",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Recursos Centrais",
+            "description": "Conheça as funcionalidades principais do ShipBase",
+            "icon": "Code",
+            "links": [
+              {
+                "name": "Autenticação",
+                "href": "#"
+              },
+              {
+                "name": "Integração de Pagamentos",
+                "href": "#"
+              },
+              {
+                "name": "Configuração de Banco de Dados",
+                "href": "#"
+              },
+              {
+                "name": "Integração de IA",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Referência de API",
+            "description": "Documentação completa de API e exemplos",
+            "icon": "Database",
+            "links": [
+              {
+                "name": "REST API",
+                "href": "#"
+              },
+              {
+                "name": "GraphQL",
+                "href": "#"
+              },
+              {
+                "name": "Webhooks",
+                "href": "#"
+              },
+              {
+                "name": "SDK",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Guia de Deploy",
+            "description": "Publique sua aplicação em produção",
+            "icon": "Globe",
+            "links": [
+              {
+                "name": "Deploy na Vercel",
+                "href": "#"
+              },
+              {
+                "name": "Cloudflare Pages",
+                "href": "#"
+              },
+              {
+                "name": "Deploy com Docker",
+                "href": "#"
+              },
+              {
+                "name": "Configuração de Ambiente",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Boas Práticas",
+            "description": "Boas práticas para desenvolvimento e produção",
+            "icon": "Shield",
+            "links": [
+              {
+                "name": "Guia de Segurança",
+                "href": "#"
+              },
+              {
+                "name": "Otimização de Performance",
+                "href": "#"
+              },
+              {
+                "name": "Monitoramento & Log",
+                "href": "#"
+              },
+              {
+                "name": "Tratamento de Erros",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Solução de Problemas",
+            "description": "Problemas comuns e soluções",
+            "icon": "Zap",
+            "links": [
+              {
+                "name": "FAQ",
+                "href": "#"
+              },
+              {
+                "name": "Códigos de Erro",
+                "href": "#"
+              },
+              {
+                "name": "Dicas de Depuração",
+                "href": "#"
+              },
+              {
+                "name": "Suporte da Comunidade",
+                "href": "#"
+              }
+            ]
+          }
+        ]
+      },
+      "support": {
+        "title": "Precisa de Ajuda?",
+        "subtitle": "Nossa comunidade e equipe de suporte estão aqui",
+        "description": "Entre no nosso Discord ou consulte a FAQ.",
+        "discordButton": "Entrar no Discord",
+        "faqButton": "Ver FAQ"
+      }
+    },
+    "integrations": {
+      "title": "Integrações",
+      "subtitle": "Conecte suas ferramentas favoritas",
+      "description": "Integre o ShipBase ao seu fluxo de trabalho e serviços de terceiros sem esforço.",
+      "categories": [
+        {
+          "name": "Autenticação & Segurança",
+          "description": "Soluções de autenticação de usuário seguras e confiáveis",
+          "icon": "Shield",
+          "integrations": [
+            {
+              "name": "Google OAuth",
+              "description": "Login rápido com contas Google",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Login com um clique",
+                "Sincronização de dados do usuário",
+                "Seguro e confiável"
+              ],
+              "documentation": "/docs/auth/google"
+            },
+            {
+              "name": "GitHub OAuth",
+              "description": "Login GitHub para developers",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Autenticação para devs",
+                "Acesso a repositórios",
+                "Colaboração em equipe"
+              ],
+              "documentation": "/docs/auth/github"
+            },
+            {
+              "name": "Magic Link",
+              "description": "Experiência de login sem senha",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Verificação por e-mail",
+                "Login sem senha",
+                "Seguro e conveniente"
+              ],
+              "documentation": "/docs/auth/magic-link"
+            }
+          ]
+        },
+        {
+          "name": "Pagamentos & Faturamento",
+          "description": "Soluções completas de pagamento e gestão de assinaturas",
+          "icon": "CreditCard",
+          "integrations": [
+            {
+              "name": "Stripe",
+              "description": "Plataforma líder global de pagamentos",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Gestão de assinaturas",
+                "Pagamentos únicos",
+                "Sistema de faturas",
+                "Suporte a webhooks"
+              ],
+              "documentation": "/docs/payments/stripe"
+            },
+            {
+              "name": "PayPal",
+              "description": "Meio de pagamento confiável no mundo todo",
+              "logo": "/api/placeholder/40/40",
+              "status": "coming-soon",
+              "features": [
+                "Pagamentos via PayPal",
+                "Gestão de assinaturas",
+                "Processamento de reembolsos"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Banco de Dados & Storage",
+          "description": "Serviços confiáveis de armazenamento e gestão de dados",
+          "icon": "Database",
+          "integrations": [
+            {
+              "name": "Supabase",
+              "description": "Alternativa open source ao Firebase",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Banco PostgreSQL",
+                "Assinaturas em tempo real",
+                "Armazenamento de arquivos",
+                "Row Level Security"
+              ],
+              "documentation": "/docs/database/supabase"
+            },
+            {
+              "name": "PlanetScale",
+              "description": "Banco de dados MySQL serverless",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "Arquitetura serverless",
+                "Gestão de branches",
+                "Autoescalonamento"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "IA & Machine Learning",
+          "description": "Integrações com serviços poderosos de IA",
+          "icon": "Bot",
+          "integrations": [
+            {
+              "name": "OpenAI",
+              "description": "Serviço líder de modelos de linguagem",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Modelos GPT",
+                "Embeddings",
+                "Geração de imagens",
+                "Gestão de API"
+              ],
+              "documentation": "/docs/ai/openai"
+            },
+            {
+              "name": "Anthropic",
+              "description": "Serviço de modelos Claude",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Modelos Claude",
+                "Processamento de textos longos",
+                "Conversas seguras"
+              ],
+              "documentation": "/docs/ai/anthropic"
+            },
+            {
+              "name": "Hugging Face",
+              "description": "Plataforma de modelos open source",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "Modelos open source",
+                "Hospedagem de modelos",
+                "Inference API"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Analytics & Monitoramento",
+          "description": "Insights profundos sobre usuários e desempenho do sistema",
+          "icon": "BarChart3",
+          "integrations": [
+            {
+              "name": "Google Analytics",
+              "description": "Ferramenta abrangente de análise de sites",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Análise de comportamento",
+                "Acompanhamento de conversões",
+                "Relatórios em tempo real",
+                "Eventos customizados"
+              ],
+              "documentation": "/docs/analytics/google"
+            },
+            {
+              "name": "Mixpanel",
+              "description": "Plataforma de analytics de produto",
+              "logo": "/api/placeholder/40/40",
+              "status": "coming-soon",
+              "features": [
+                "Rastreamento de eventos",
+                "Perfis de usuários",
+                "Análise de funil"
+              ]
+            },
+            {
+              "name": "Sentry",
+              "description": "Monitoramento de erros e performance",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "Monitoramento de erros",
+                "Acompanhamento de performance",
+                "Rastreamento de releases"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Comunicação & Notificações",
+          "description": "Soluções multicanal de comunicação com usuários",
+          "icon": "Mail",
+          "integrations": [
+            {
+              "name": "SendGrid",
+              "description": "Serviço confiável de envio de e-mails",
+              "logo": "/api/placeholder/40/40",
+              "status": "available",
+              "features": [
+                "Envio de e-mails",
+                "Gestão de templates",
+                "Estatísticas de entrega",
+                "Suporte a webhooks"
+              ],
+              "documentation": "/docs/email/sendgrid"
+            },
+            {
+              "name": "Twilio",
+              "description": "Plataforma global de comunicação",
+              "logo": "/api/placeholder/40/40",
+              "status": "coming-soon",
+              "features": [
+                "Envio de SMS",
+                "Chamadas de voz",
+                "Chamadas de vídeo"
+              ]
+            },
+            {
+              "name": "Slack",
+              "description": "Colaboração em equipe e notificações",
+              "logo": "/api/placeholder/40/40",
+              "status": "beta",
+              "features": [
+                "Envio de mensagens",
+                "Integração com canais",
+                "Automação de workflows"
+              ]
+            }
+          ]
+        }
+      ],
+      "popularIntegrations": {
+        "title": "Integrações Populares",
+        "subtitle": "Serviços mais queridos pelos developers",
+        "items": [
+          {
+            "name": "Stripe",
+            "description": "Plataforma líder global de pagamentos",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "Gestão de assinaturas",
+              "Pagamentos únicos",
+              "Sistema de faturas"
+            ]
+          },
+          {
+            "name": "OpenAI",
+            "description": "Serviço líder de modelos de linguagem",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "Modelos GPT",
+              "Embeddings",
+              "Geração de imagens"
+            ]
+          },
+          {
+            "name": "Supabase",
+            "description": "Alternativa open source ao Firebase",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "PostgreSQL",
+              "Assinaturas em tempo real",
+              "Armazenamento de arquivos"
+            ]
+          },
+          {
+            "name": "Google Analytics",
+            "description": "Ferramenta abrangente de análise de sites",
+            "logo": "/api/placeholder/60/60",
+            "status": "available",
+            "features": [
+              "Analytics de usuários",
+              "Acompanhamento de conversões",
+              "Relatórios em tempo real"
+            ]
+          }
+        ]
+      },
+      "gettingStarted": {
+        "title": "Primeiros Passos",
+        "subtitle": "Integre os serviços necessários em poucos passos",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Escolher o Serviço",
+            "description": "Navegue pelo catálogo e selecione o serviço desejado",
+            "code": "# Ver integrações disponíveis\nnpm run list-integrations"
+          },
+          {
+            "step": "2",
+            "title": "Configurar Variáveis de Ambiente",
+            "description": "Adicione as chaves de API e configurações necessárias",
+            "code": "# Configurar variáveis de ambiente\ncp .env.example .env.local\n# Edite o arquivo .env.local"
+          },
+          {
+            "step": "3",
+            "title": "Instalar o Pacote de Integração",
+            "description": "Instale o pacote correspondente e dependências",
+            "code": "# Instalar pacote de integração\npnpm add @shipbase/integrations-stripe"
+          },
+          {
+            "step": "4",
+            "title": "Inicializar a Integração",
+            "description": "Inicialize o serviço de integração na sua aplicação",
+            "code": "# Inicializar integração\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\nconst stripe = new StripeIntegration()"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Pronto para integrar?",
+        "subtitle": "Aproveite agora os poderosos recursos de integração do ShipBase",
+        "primaryButton": "Ver Documentação",
+        "secondaryButton": "Contatar Suporte"
+      }
+    },
+    "help": {
+      "title": "Central de Ajuda",
+      "subtitle": "Obtenha o suporte de que precisa",
+      "description": "Encontre respostas para perguntas comuns, guias de solução de problemas e boas práticas.",
+      "searchPlaceholder": "Buscar artigos de ajuda...",
+      "popularArticles": {
+        "title": "Artigos Populares",
+        "subtitle": "Artigos mais visualizados",
+        "articles": [
+          {
+            "title": "Começando com o ShipBase",
+            "description": "Aprenda a configurar e publicar seu primeiro SaaS de IA rapidamente",
+            "href": "#",
+            "tags": [
+              "Início Rápido",
+              "Deploy",
+              "Configuração"
+            ]
+          },
+          {
+            "title": "Guia de Configuração de Autenticação",
+            "description": "Instruções detalhadas para configurar Google OAuth, GitHub OAuth e Magic Link",
+            "href": "#",
+            "tags": [
+              "Autenticação",
+              "OAuth",
+              "Configuração"
+            ]
+          },
+          {
+            "title": "Integração de Pagamentos com Stripe",
+            "description": "Como configurar assinaturas, pagamentos únicos e gestão de faturas",
+            "href": "#",
+            "tags": [
+              "Pagamentos",
+              "Stripe",
+              "Assinaturas"
+            ]
+          },
+          {
+            "title": "Integração de Recursos de IA",
+            "description": "Guia completo para integrar OpenAI, Anthropic e outros serviços",
+            "href": "#",
+            "tags": [
+              "IA",
+              "OpenAI",
+              "Integração"
+            ]
+          },
+          {
+            "title": "Configuração e Migração de Banco de Dados",
+            "description": "Configuração do Supabase e boas práticas de migração de dados",
+            "href": "#",
+            "tags": [
+              "Banco de Dados",
+              "Supabase",
+              "Migração"
+            ]
+          },
+          {
+            "title": "Deploy em Produção",
+            "description": "Passos detalhados para Vercel e Cloudflare",
+            "href": "#",
+            "tags": [
+              "Deploy",
+              "Vercel",
+              "Produção"
+            ]
+          }
+        ]
+      },
+      "categoriesTitle": "Categorias de Ajuda",
+      "categoriesSubtitle": "Navegue por categoria",
+      "categories": [
+        {
+          "title": "Início Rápido",
+          "description": "Guias de onboarding para novos usuários",
+          "icon": "Rocket",
+          "articles": [
+            {
+              "title": "Instalação e Configuração",
+              "description": "Configure um projeto ShipBase do zero",
+              "href": "#",
+              "tags": [
+                "Instalação",
+                "Configuração",
+                "Ambiente"
+              ]
+            },
+            {
+              "title": "Primeira Aplicação",
+              "description": "Crie sua primeira aplicação SaaS de IA",
+              "href": "#",
+              "tags": [
+                "Tutorial",
+                "Aplicação",
+                "Desenvolvimento"
+              ]
+            },
+            {
+              "title": "Configuração de Variáveis de Ambiente",
+              "description": "Configure corretamente todas as variáveis necessárias",
+              "href": "#",
+              "tags": [
+                "Configuração",
+                "Variáveis de Ambiente",
+                "Chaves de API"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Recursos Centrais",
+          "description": "Guias de uso das principais funcionalidades",
+          "icon": "Code",
+          "articles": [
+            {
+              "title": "Sistema de Autenticação",
+              "description": "Login de usuários, registro e gestão de sessões",
+              "href": "#",
+              "tags": [
+                "Autenticação",
+                "Gestão de Usuários",
+                "Sessões"
+              ]
+            },
+            {
+              "title": "Processamento de Pagamentos",
+              "description": "Gestão de assinaturas e fluxos de pagamento",
+              "href": "#",
+              "tags": [
+                "Pagamentos",
+                "Assinaturas",
+                "Faturamento"
+              ]
+            },
+            {
+              "title": "Operações de Banco de Dados",
+              "description": "Armazenamento de dados e melhores práticas de consulta",
+              "href": "#",
+              "tags": [
+                "Banco de Dados",
+                "Consultas",
+                "Armazenamento"
+              ]
+            },
+            {
+              "title": "Integração de IA",
+              "description": "Integração e uso de serviços de IA",
+              "href": "#",
+              "tags": [
+                "IA",
+                "Machine Learning",
+                "API"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Deploy & Operações",
+          "description": "Guias de deploy em produção e operações",
+          "icon": "Globe",
+          "articles": [
+            {
+              "title": "Deploy na Vercel",
+              "description": "Publique sua aplicação usando a Vercel",
+              "href": "#",
+              "tags": [
+                "Vercel",
+                "Deploy",
+                "CDN"
+              ]
+            },
+            {
+              "title": "Cloudflare Pages",
+              "description": "Guia de deploy no Cloudflare Pages",
+              "href": "#",
+              "tags": [
+                "Cloudflare",
+                "Deploy",
+                "Computação de Borda"
+              ]
+            },
+            {
+              "title": "Gestão de Ambientes",
+              "description": "Ambientes de dev, teste e produção",
+              "href": "#",
+              "tags": [
+                "Ambiente",
+                "Configuração",
+                "Gestão"
+              ]
+            },
+            {
+              "title": "Monitoramento e Log",
+              "description": "Monitoramento e registro da aplicação",
+              "href": "#",
+              "tags": [
+                "Monitoramento",
+                "Logs",
+                "Analytics"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Solução de Problemas",
+          "description": "Problemas comuns e soluções",
+          "icon": "Zap",
+          "articles": [
+            {
+              "title": "Erros Comuns",
+              "description": "Resolver erros comuns de deploy e runtime",
+              "href": "#",
+              "tags": [
+                "Erros",
+                "Depuração",
+                "Resolução"
+              ]
+            },
+            {
+              "title": "Otimização de Performance",
+              "description": "Dicas para melhorar o desempenho",
+              "href": "#",
+              "tags": [
+                "Performance",
+                "Otimização",
+                "Velocidade"
+              ]
+            },
+            {
+              "title": "Boas Práticas de Segurança",
+              "description": "Proteja sua aplicação e dados",
+              "href": "#",
+              "tags": [
+                "Segurança",
+                "Boas Práticas",
+                "Proteção"
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": {
+        "title": "Perguntas Frequentes",
+        "subtitle": "Encontre rapidamente as respostas",
+        "faqs": [
+          {
+            "question": "Quais serviços de IA o ShipBase suporta?",
+            "answer": "ShipBase suporta serviços líderes como OpenAI, Anthropic, Google AI e fornece uma interface unificada para gerenciar diferentes provedores."
+          },
+          {
+            "question": "Como personalizar a interface do ShipBase?",
+            "answer": "ShipBase usa Tailwind CSS e Shadcn/UI, facilitando a personalização. Todos os componentes são customizáveis e suportam troca de tema."
+          },
+          {
+            "question": "O ShipBase suporta múltiplos idiomas?",
+            "answer": "Sim, o ShipBase tem suporte a internacionalização. Atualmente suporta Chinês, Inglês e Japonês, e você pode adicionar outros idiomas facilmente."
+          },
+          {
+            "question": "Como faço upgrade das versões do ShipBase?",
+            "answer": "Você pode atualizar puxando o código mais recente via Git. Recomendamos fazer backup do seu código customizado antes de atualizar."
+          },
+          {
+            "question": "Como é o desempenho do ShipBase?",
+            "answer": "ShipBase é construído em Next.js 14+ com Server Components e suporte a Edge Runtime, entregando excelente performance."
+          },
+          {
+            "question": "Como obtenho suporte técnico?",
+            "answer": "Você pode nos contatar por e-mail ou entrar na nossa comunidade no Discord para suporte em tempo real."
+          }
+        ]
+      },
+      "contact": {
+        "title": "Precisa de mais ajuda?",
+        "subtitle": "Fale com nosso time de suporte",
+        "description": "Se você não encontrar a resposta na documentação, nossa equipe está aqui para ajudar.",
+        "emailButton": "Enviar E-mail",
+        "discordButton": "Entrar no Discord"
+      }
+    },
+    "contact": {
+      "title": "Fale Conosco",
+      "subtitle": "Estamos aqui para ajudar",
+      "description": "Entre em contato com nossa equipe para suporte, parcerias ou dúvidas gerais.",
+      "contactMethodsTitle": "Fale Conosco",
+      "contactMethodsSubtitle": "Adoraríamos ouvir você. Escolha o canal que preferir",
+      "teamTitle": "Contato Direto com o Time",
+      "teamSubtitle": "Fale com a equipe apropriada conforme sua necessidade",
+      "responseTimeTitle": "Tempos de Resposta",
+      "responseTimeSubtitle": "Prometemos responder rapidamente às suas solicitações",
+      "contactMethods": [
+        {
+          "icon": "Users",
+          "title": "Comunidade no Discord",
+          "description": "Junte-se ao nosso Discord para conectar-se com outros developers",
+          "action": "Entrar no Discord",
+          "href": "#"
+        },
+        {
+          "icon": "Zap",
+          "title": "Suporte por E-mail",
+          "description": "Envie um e-mail para [support@shipbase.com](mailto:support@shipbase.com)",
+          "action": "Enviar E-mail",
+          "href": "mailto:support@shipbase.com"
+        },
+        {
+          "icon": "Shield",
+          "title": "Issues no GitHub",
+          "description": "Reporte problemas ou sugestões no GitHub",
+          "action": "Ver Issues",
+          "href": "#"
+        },
+        {
+          "icon": "Rocket",
+          "title": "Parceria Enterprise",
+          "description": "Suporte em nível enterprise e desenvolvimento sob medida",
+          "action": "Falar com Vendas",
+          "href": "mailto:sales@shipbase.com"
+        }
+      ],
+      "team": [
+        {
+          "name": "Suporte Técnico",
+          "email": "[support@shipbase.com](mailto:support@shipbase.com)",
+          "description": "Problemas técnicos e solução de falhas"
+        },
+        {
+          "name": "Time de Vendas",
+          "email": "[sales@shipbase.com](mailto:sales@shipbase.com)",
+          "description": "Parcerias de negócios e serviços customizados"
+        },
+        {
+          "name": "Feedback de Produto",
+          "email": "[feedback@shipbase.com](mailto:feedback@shipbase.com)",
+          "description": "Sugestões e solicitações de recursos"
+        }
+      ],
+      "responseTimes": [
+        {
+          "time": "< 1 hora",
+          "title": "Suporte no Discord",
+          "description": "Suporte da comunidade com resposta rápida"
+        },
+        {
+          "time": "< 24 horas",
+          "title": "Suporte por E-mail",
+          "description": "Equipe profissional com respostas detalhadas"
+        },
+        {
+          "time": "< 48 horas",
+          "title": "Suporte Enterprise",
+          "description": "Soluções personalizadas e suporte dedicado"
+        }
+      ]
+    },
+    "status": {
+      "title": "Status do Serviço",
+      "subtitle": "Status do sistema em tempo real",
+      "description": "Monitore o status atual de todos os serviços e infraestrutura do ShipBase.",
+      "overview": {
+        "title": "Visão Geral do Status",
+        "subtitle": "Monitoramento em tempo real de todos os serviços do ShipBase",
+        "allSystemsOperational": "Todos os sistemas operando",
+        "lastUpdated": "Última atualização"
+      },
+      "services": {
+        "title": "Status dos Serviços",
+        "subtitle": "Status atual de todos os serviços do ShipBase",
+        "api": {
+          "name": "Serviços de API",
+          "description": "Endpoints e serviços centrais de API"
+        },
+        "auth": {
+          "name": "Autenticação",
+          "description": "Autenticação e autorização de usuários"
+        },
+        "payments": {
+          "name": "Processamento de Pagamentos",
+          "description": "Serviços de pagamento com Stripe"
+        },
+        "database": {
+          "name": "Banco de Dados",
+          "description": "Serviços de banco de dados Supabase"
+        },
+        "cdn": {
+          "name": "CDN",
+          "description": "Rede de entrega de conteúdo"
+        },
+        "monitoring": {
+          "name": "Sistema de Monitoramento",
+          "description": "Monitoramento e alertas do sistema"
+        },
+        "statusOperational": "Operacional",
+        "statusDegraded": "Desempenho Degradado",
+        "statusOutage": "Indisponibilidade",
+        "uptime": "Uptime",
+        "lastIncident": "Último Incidente",
+        "none": "Nenhum"
+      },
+      "subscribe": {
+        "title": "Assine as Atualizações de Status",
+        "subtitle": "Receba notificações por e-mail ou RSS sobre mudanças de status",
+        "emailSubscribe": "Assinar por E-mail",
+        "rssSubscribe": "Assinar RSS",
+        "description": "Fique por dentro de mudanças de status e manutenções programadas"
+      }
+    },
+    "privacy": {
+      "title": "Política de Privacidade",
+      "subtitle": "Sua privacidade importa",
+      "description": "Saiba como coletamos, usamos e protegemos suas informações pessoais.",
+      "lastUpdated": "Última atualização: 1º de janeiro de 2024",
+      "introduction": {
+        "title": "Introdução",
+        "content": "Bem-vindo ao ShipBase, o **NextJS Boilerplate** feito para ajudar você a construir startups de IA com rapidez e eficiência. No ShipBase, sua privacidade é extremamente importante para nós, e esta política descreve como coletamos, usamos e protegemos suas informações pessoais ao utilizar nossos serviços."
+      },
+      "informationCollection": {
+        "title": "Coleta e Uso de Informações",
+        "subtitle": "Coletamos os seguintes tipos de dados para oferecer uma melhor experiência ao usar o ShipBase:",
+        "accountInfo": {
+          "title": "Informações da Conta",
+          "whatWeCollect": "O que coletamos: Inclui seu nome, endereço de e-mail e quaisquer outras informações que você fornecer ao criar uma conta.",
+          "purpose": "Finalidade: Gerenciar sua conta e fornecer suporte ao cliente."
+        },
+        "usageDetails": {
+          "title": "Detalhes de Uso",
+          "whatWeCollect": "O que coletamos: Informações sobre como você usa o ShipBase, incluindo suas interações, recursos acessados e frequência de uso.",
+          "purpose": "Finalidade: Analisar o engajamento e melhorar nossos serviços."
+        },
+        "deviceInfo": {
+          "title": "Informações do Dispositivo",
+          "whatWeCollect": "O que coletamos: Dados sobre os dispositivos usados para acessar o ShipBase, como tipo de dispositivo, sistema operacional e navegador.",
+          "purpose": "Finalidade: Otimizar nossos serviços para diferentes dispositivos e garantir compatibilidade."
+        },
+        "cookies": {
+          "title": "Cookies",
+          "whatWeCollect": "O que coletamos: Pequenos arquivos de dados colocados em seu dispositivo que nos ajudam a registrar preferências e melhorar a experiência.",
+          "purpose": "Finalidade: Aprimorar funcionalidades e personalizar sua experiência."
+        },
+        "paymentInfo": {
+          "title": "Informações de Pagamento e Faturamento",
+          "whatWeCollect": "O que coletamos: Informações sobre seus métodos de pagamento, como número do cartão, endereço de cobrança e outros dados necessários para processar transações.",
+          "purpose": "Finalidade: Facilitar a cobrança e o processamento de pagamentos."
+        }
+      },
+      "dataStorage": {
+        "title": "Armazenamento e Segurança de Dados",
+        "content": "Levamos a segurança das suas informações a sério. Os dados coletados são armazenados com segurança em nossos servidores e aplicamos diversas medidas, como criptografia e controles de acesso, para protegê-los contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de transmissão pela Internet ou armazenamento eletrônico é 100% seguro, e não podemos garantir segurança absoluta."
+      },
+      "informationSharing": {
+        "title": "Compartilhamento e Divulgação de Informações",
+        "content": "Não vendemos, trocamos ou transferimos suas informações pessoais a terceiros, exceto nas seguintes circunstâncias:",
+        "circumstances": [
+          "Para cumprir obrigações legais ou responder a solicitações de autoridades públicas.",
+          "Para proteger nossos direitos, propriedade ou segurança, ou de nossos usuários ou terceiros.",
+          "Para fornecer serviços por meio de parceiros confiáveis que nos auxiliam a operar o site ou conduzir negócios, sob acordos de confidencialidade."
+        ]
+      },
+      "policyChanges": {
+        "title": "Alterações nesta Política",
+        "content": "Podemos atualizar esta política periodicamente. Notificaremos você publicando a nova versão nesta página e atualizando a data de vigência no topo. Recomendamos revisar esta política regularmente. As alterações entram em vigor quando publicadas."
+      },
+      "contactUs": {
+        "title": "Fale Conosco",
+        "content": "Se tiver dúvidas ou preocupações sobre esta política ou nossas práticas de dados, entre em contato:",
+        "copyrightOwner": "Detentor dos Direitos Autorais: shipbase.ai",
+        "email": "E-mail: [support@shipbase.ai](mailto:support@shipbase.ai)"
+      },
+      "consent": {
+        "content": "Ao usar o ShipBase, você concorda com nossa política de privacidade e seus termos. Obrigado por confiar suas informações a nós!"
+      }
+    },
+    "terms": {
+      "title": "Termos de Serviço",
+      "subtitle": "Nossos termos e condições",
+      "description": "Leia nossos termos de serviço e entenda seus direitos e responsabilidades.",
+      "lastUpdated": "Última atualização: 1º de janeiro de 2024",
+      "introduction": {
+        "title": "Introdução e Aceitação dos Termos",
+        "content": "Bem-vindo ao **ShipBase**, um boilerplate NextJS desenvolvido para criar startups de IA com rapidez e eficiência. Ao acessar ou usar nosso serviço, você concorda em se vincular a estes Termos de Serviço. Se não concordar com algum termo, não utilize o serviço."
+      },
+      "serviceUse": {
+        "title": "Uso do Serviço",
+        "content": "O ShipBase fornece uma plataforma abrangente para construir e lançar startups de IA usando nossos templates e infraestrutura. Você concorda em usar o serviço conforme as leis e regulamentos aplicáveis."
+      },
+      "userAccounts": {
+        "title": "Contas de Usuário e Registro",
+        "content": "Para acessar certos recursos, é necessário criar uma conta. Você deve fornecer informações precisas e completas no registro. É responsável por manter a confidencialidade das credenciais e por todas as atividades sob sua conta. Notifique-nos imediatamente sobre uso não autorizado ou violações de segurança."
+      },
+      "intellectualProperty": {
+        "title": "Conteúdo e Direitos de Propriedade Intelectual",
+        "content": "Todo o conteúdo fornecido pelo ShipBase — incluindo templates, código, configuração de infraestrutura e documentação — é protegido por direitos autorais. O detentor dos direitos do ShipBase é **shipbase.ai**.",
+        "points": [
+          "Você reconhece que não possui a tecnologia subjacente ou a propriedade intelectual que compõe o serviço ShipBase e concorda em respeitar os direitos do shipbase.ai e de terceiros.",
+          "Embora você mantenha a propriedade de suas implementações e modificações, a plataforma e os templates centrais do ShipBase permanecem propriedade do shipbase.ai."
+        ]
+      },
+      "prohibitedActivities": {
+        "title": "Atividades Proibidas",
+        "content": "Você concorda em não realizar as seguintes atividades ao usar o ShipBase:",
+        "activities": [
+          "Acesso ou distribuição não autorizada de nosso código e templates proprietários",
+          "Revenda ou redistribuição de templates do ShipBase sem autorização",
+          "Interferir ou prejudicar a segurança ou o desempenho do serviço",
+          "Usar o serviço para finalidade ilegal ou não autorizada",
+          "Tentar burlar recursos de segurança do serviço"
+        ]
+      },
+      "privacyData": {
+        "title": "Privacidade e Coleta de Dados",
+        "content": "O ShipBase coleta os seguintes tipos de dados:",
+        "dataTypes": [
+          "Informações da Conta: Dados fornecidos ao criar uma conta",
+          "Detalhes de Uso: Dados relacionados à sua atividade",
+          "Informações do Dispositivo: Dados sobre o dispositivo usado para acesso",
+          "Cookies: Dados que aprimoram sua experiência",
+          "Informações de Pagamento e Faturamento: Dados necessários ao processamento de pagamentos"
+        ],
+        "privacyPolicy": "Para mais detalhes, consulte nossa Política de Privacidade."
+      },
+      "pricingPayments": {
+        "title": "Preços e Pagamentos",
+        "points": [
+          "Todas as compras são finais e não reembolsáveis, salvo exigência legal",
+          "Preços podem mudar mediante aviso aos usuários",
+          "Você concorda em pagar todos os encargos do plano escolhido",
+          "Os termos de pagamento seguem o método e o plano selecionados"
+        ]
+      },
+      "termination": {
+        "title": "Rescisão",
+        "content": "Reservamo-nos o direito de encerrar ou suspender seu acesso ao serviço, a nosso critério e sem aviso, por condutas que violem estes Termos ou sejam prejudiciais a outros usuários, a nós ou a terceiros."
+      },
+      "warranties": {
+        "title": "Isenção de Garantias",
+        "content": "O serviço é fornecido no estado em que se encontra e conforme disponibilidade. Não garantimos precisão, confiabilidade ou disponibilidade e negamos quaisquer garantias na máxima medida permitida por lei."
+      },
+      "liability": {
+        "title": "Limitação de Responsabilidade",
+        "content": "Na máxima extensão permitida por lei, o shipbase.ai não será responsável por danos diretos, indiretos, incidentais, especiais, consequentes ou punitivos decorrentes do uso ou impossibilidade de uso do serviço."
+      },
+      "indemnification": {
+        "title": "Indenização",
+        "content": "Você concorda em indenizar e isentar o shipbase.ai, suas afiliadas e respectivos diretores, colaboradores e agentes de quaisquer reivindicações, danos, perdas, responsabilidades e despesas (incluindo honorários advocatícios) decorrentes do uso do serviço ou violação destes Termos."
+      },
+      "governingLaw": {
+        "title": "Lei Aplicável e Resolução de Disputas",
+        "content": "Estes Termos são regidos pelas leis da jurisdição em que o shipbase.ai opera, sem considerar conflitos de leis. Qualquer disputa será resolvida por arbitragem vinculante conforme a legislação aplicável."
+      },
+      "changes": {
+        "title": "Alterações nestes Termos",
+        "content": "Podemos atualizar ou modificar estes Termos a qualquer momento. As mudanças entram em vigor imediatamente após a publicação no site. O uso contínuo do serviço após mudanças implica aceitação dos novos termos."
+      },
+      "contact": {
+        "title": "Informações de Contato",
+        "content": "Se você tiver dúvidas sobre estes Termos, entre em contato em [support@shipbase.ai](mailto:support@shipbase.ai)."
+      },
+      "acknowledgment": {
+        "content": "Ao usar o ShipBase, você reconhece que leu, entendeu e concorda com estes Termos de Serviço. Obrigado por escolher o ShipBase!"
+      }
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "subtitle": "Como usamos cookies",
+      "description": "Entenda como usamos cookies e tecnologias semelhantes em nossa plataforma.",
+      "lastUpdated": "Última atualização: 1º de janeiro de 2024",
+      "introduction": {
+        "title": "O que são Cookies",
+        "content": "Cookies são pequenos arquivos de texto armazenados no seu dispositivo ao visitar um site. Eles são amplamente usados para fazer sites funcionarem de forma eficiente e para fornecer informações aos proprietários."
+      },
+      "howWeUseCookies": {
+        "title": "Como Usamos Cookies",
+        "subtitle": "Usamos cookies para melhorar sua navegação, analisar tráfego e personalizar conteúdo e anúncios.",
+        "essential": {
+          "title": "Cookies Essenciais",
+          "description": "Necessários para o site funcionar corretamente e não podem ser desativados. Geralmente são definidos em resposta a ações suas, como definir preferências de privacidade, fazer login ou preencher formulários.",
+          "examples": [
+            "Mantê-lo conectado",
+            "Lembrar suas preferências de idioma",
+            "Garantir a segurança do site"
+          ]
+        },
+        "analytics": {
+          "title": "Cookies de Analytics",
+          "description": "Ajudam a entender como os visitantes interagem com o site coletando e reportando informações de forma anônima.",
+          "examples": [
+            "Google Analytics — análise de uso do site",
+            "Estatísticas de visitas",
+            "Análise de comportamento do usuário"
+          ]
+        },
+        "functional": {
+          "title": "Cookies Funcionais",
+          "description": "Permitem funcionalidades avançadas e personalização. Podem ser definidos por nós ou por terceiros.",
+          "examples": [
+            "Lembrar suas preferências",
+            "Recomendações de conteúdo",
+            "Integração com redes sociais"
+          ]
+        },
+        "marketing": {
+          "title": "Cookies de Marketing",
+          "description": "Usados para rastrear visitantes em sites. A intenção é exibir anúncios relevantes e envolventes.",
+          "examples": [
+            "Personalização de anúncios",
+            "Acompanhamento de conversões",
+            "Campanhas de remarketing"
+          ]
+        }
+      },
+      "cookieTypes": {
+        "title": "Tipos de Cookies que Usamos",
+        "subtitle": "Saiba mais sobre os diferentes tipos de cookies",
+        "sessionCookies": {
+          "title": "Cookies de Sessão",
+          "description": "Temporários e excluídos ao fechar o navegador. Mantêm o estado da sua sessão durante a navegação."
+        },
+        "persistentCookies": {
+          "title": "Cookies Persistentes",
+          "description": "Permanecem no dispositivo por mais tempo até expirarem ou serem excluídos. Lembram preferências para melhorar visitas futuras."
+        },
+        "firstPartyCookies": {
+          "title": "Cookies de Primeira Parte",
+          "description": "Definidos diretamente por nós para melhorar a funcionalidade e a experiência do site."
+        },
+        "thirdPartyCookies": {
+          "title": "Cookies de Terceiros",
+          "description": "Definidos por outros sites, geralmente para publicidade e analytics."
+        }
+      },
+      "manageCookies": {
+        "title": "Gerencie suas Preferências de Cookies",
+        "subtitle": "Você pode controlar os tipos de cookies que usamos",
+        "description": "Gerencie cookies nas configurações do navegador ou no nosso centro de preferências. Desativar certos cookies pode afetar a funcionalidade do site.",
+        "browserSettings": {
+          "title": "Configurações do Navegador",
+          "description": "A maioria dos navegadores permite controlar cookies nas configurações ou preferências.",
+          "instructions": [
+            "Chrome: Configurações > Privacidade e segurança > Cookies e outros dados",
+            "Firefox: Opções > Privacidade e Segurança > Cookies e Dados",
+            "Safari: Preferências > Privacidade > Cookies e dados de sites",
+            "Edge: Configurações > Cookies e permissões de site"
+          ]
+        },
+        "optOut": {
+          "title": "Opt-out",
+          "description": "Você pode desativar certos cookies de terceiros, especialmente para publicidade.",
+          "links": [
+            "Opt-out do Google Analytics",
+            "Preferências de Anúncios do Facebook",
+            "Outros Opt-outs de Redes de Anúncios"
+          ]
+        }
+      },
+      "dataRetention": {
+        "title": "Retenção de Dados",
+        "content": "Retemos dados de cookies por períodos diferentes conforme o tipo e a finalidade. Cookies de sessão são excluídos ao fechar o navegador, enquanto cookies persistentes podem durar de meses a anos."
+      },
+      "updates": {
+        "title": "Atualizações da Política",
+        "content": "Podemos atualizar esta Política periodicamente. Qualquer alteração será publicada nesta página e, quando apropriado, comunicada por outros meios. Recomendamos revisar esta política regularmente."
+      },
+      "contact": {
+        "title": "Contato",
+        "content": "Se tiver dúvidas sobre esta Política de Cookies ou precisar de mais informações, fale conosco:",
+        "email": "E-mail: [support@shipbase.ai](mailto:support@shipbase.ai)"
+      },
+      "consent": {
+        "content": "Ao continuar usando nosso site, você concorda com o uso de cookies conforme esta Política."
+      }
+    },
+    "login": {
+      "title": "Entrar",
+      "subtitle": "Bem-vindo de volta",
+      "description": "Faça login na sua conta para continuar sua jornada com o ShipBase."
+    },
+    "signup": {
+      "title": "Começar",
+      "subtitle": "Crie sua conta",
+      "description": "Junte-se a milhares de developers construindo aplicações incríveis com o ShipBase."
+    },
+    "profile": {
+      "title": "Perfil do Usuário - ShipBase",
+      "subtitle": "Veja e gerencie suas informações",
+      "description": "Visualize e gerencie os dados da sua conta",
+      "basicInfo": {
+        "title": "Informações Básicas",
+        "description": "Seus dados de conta",
+        "emailLabel": "Endereço de E-mail",
+        "registrationDate": "Data de Registro",
+        "unknown": "Desconhecido"
+      },
+      "accountStatus": {
+        "title": "Status da Conta",
+        "description": "Segurança da sua conta",
+        "emailVerification": "Verificação de E-mail",
+        "accountStatus": "Status da Conta",
+        "loginMethod": "Método de Login",
+        "verified": "Verificado",
+        "unverified": "Não verificado",
+        "normal": "Normal",
+        "oauth": "OAuth",
+        "emailLogin": "Login por E-mail"
+      },
+      "actions": {
+        "editProfile": "Editar Perfil",
+        "changePassword": "Alterar Senha"
+      },
+      "noNameSet": "Nenhum nome definido"
+    },
+    "membership": {
+      "title": "Centro de Assinatura - ShipBase",
+      "subtitle": "Gerencie sua assinatura e benefícios",
+      "description": "Gerencie seu plano e benefícios de assinatura",
+      "currentPlan": {
+        "title": "Plano Atual",
+        "description": "Seu status de assinatura e uso",
+        "freeVersion": "Versão Gratuita",
+        "paidVersion": "Versão Paga"
+      },
+      "usage": {
+        "apiCalls": "Chamadas de API",
+        "projectCount": "Número de Projetos",
+        "supportLevel": "Nível de Suporte",
+        "remainingThisMonth": "Restantes neste mês",
+        "maxLimit": "Limite máximo",
+        "responseTime": "Tempo de resposta",
+        "priority": "Prioritário",
+        "standard": "Padrão"
+      },
+      "upgradePlan": {
+        "title": "Faça Upgrade do Plano",
+        "currentPlan": "Plano Atual",
+        "freeUse": "Uso Gratuito",
+        "upgradePlan": "Fazer Upgrade"
+      },
+      "billingHistory": {
+        "title": "Histórico de Cobrança",
+        "description": "Veja suas assinaturas e pagamentos",
+        "noRecords": "Sem registros de cobrança",
+        "upgradeMessage": "Após fazer upgrade para um plano pago, você verá detalhes de faturamento",
+        "table": {
+          "date": "Data",
+          "description": "Descrição",
+          "amount": "Valor",
+          "status": "Status",
+          "action": "Ação",
+          "view": "Ver"
+        },
+        "status": {
+          "pending": "Pendente",
+          "paid": "Pago",
+          "failed": "Falhou",
+          "cancelled": "Cancelado",
+          "refunded": "Reembolsado"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Gratuito",
+          "price": 0,
+          "period": "Para sempre",
+          "description": "Perfeito para usuários individuais e projetos pequenos",
+          "features": [
+            "1.000 chamadas de API por mês",
+            "Até 3 projetos",
+            "Suporte básico",
+            "Biblioteca de templates padrão"
+          ],
+          "current": false
+        },
+        {
+          "id": "pro",
+          "name": "Professional",
+          "price": 29,
+          "period": "por mês",
+          "description": "Perfeito para times pequenos e médios",
+          "features": [
+            "50.000 chamadas de API por mês",
+            "Projetos ilimitados",
+            "Suporte prioritário",
+            "Biblioteca avançada de templates",
+            "Analytics avançado",
+            "Colaboração em equipe"
+          ],
+          "current": false
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "price": 99,
+          "period": "por mês",
+          "description": "Perfeito para grandes empresas",
+          "features": [
+            "Chamadas de API ilimitadas",
+            "Projetos ilimitados",
+            "Suporte dedicado 24/7",
+            "Todas as bibliotecas de templates",
+            "Analytics em nível enterprise",
+            "Integrações personalizadas",
+            "Garantia de SLA"
+          ],
+          "current": false
+        }
+      ]
+    },
+    "orders": {
+      "title": "Centro de Pedidos",
+      "subtitle": "Gerencie todos os seus pedidos",
+      "description": "Veja e gerencie seu histórico de pedidos",
+      "ordersList": {
+        "title": "Lista de Pedidos",
+        "subtitle": "Todos os seus pedidos",
+        "noOrders": "Nenhum pedido encontrado",
+        "loading": "Carregando...",
+        "error": "Falha ao carregar pedidos",
+        "retry": "Tentar novamente"
+      },
+      "orderCard": {
+        "orderNumber": "Número do Pedido",
+        "status": "Status",
+        "amount": "Valor",
+        "product": "Produto",
+        "createdAt": "Criado em",
+        "paidAt": "Pago em",
+        "actions": "Ações",
+        "viewDetails": "Ver Detalhes",
+        "refreshStatus": "Atualizar Status"
+      },
+      "status": {
+        "pending": "Pendente",
+        "paid": "Pago",
+        "failed": "Falhou",
+        "cancelled": "Cancelado",
+        "refunded": "Reembolsado"
+      },
+      "filters": {
+        "title": "Filtrar e Buscar",
+        "all": "Todos",
+        "pending": "Pendentes",
+        "paid": "Pagos",
+        "failed": "Falhos",
+        "cancelled": "Cancelados",
+        "refunded": "Reembolsados"
+      },
+      "search": {
+        "placeholder": "Buscar número do pedido ou nome do produto..."
+      },
+      "refresh": "Atualizar",
+      "pagination": {
+        "previous": "Anterior",
+        "next": "Próximo",
+        "showing": "Exibindo",
+        "of": "de",
+        "results": "resultados"
+      },
+      "orderDetails": {
+        "title": "Detalhes do Pedido",
+        "subtitle": "Veja informações detalhadas do seu pedido",
+        "orderInfo": {
+          "orderNumber": "Número do Pedido",
+          "status": "Status",
+          "createdAt": "Criado em",
+          "paidAt": "Pago em",
+          "cancelledAt": "Cancelado em",
+          "amount": "Valor",
+          "currency": "Moeda",
+          "paymentProvider": "Gateway de Pagamento",
+          "customerEmail": "E-mail do Cliente"
+        },
+        "productInfo": {
+          "title": "Informações do Produto",
+          "productName": "Nome do Produto",
+          "productType": "Tipo de Produto",
+          "productId": "ID do Produto"
+        },
+        "paymentInfo": {
+          "title": "Informações de Pagamento",
+          "provider": "Provedor",
+          "requestId": "ID da Solicitação de Pagamento",
+          "sessionId": "ID da Sessão de Pagamento"
+        },
+        "customerInfo": {
+          "title": "Informações do Cliente",
+          "email": "Endereço de E-mail"
+        },
+        "orderItems": {
+          "title": "Itens do Pedido",
+          "productName": "Produto",
+          "description": "Descrição",
+          "unitPrice": "Preço Unitário",
+          "quantity": "Quantidade",
+          "totalPrice": "Preço Total"
+        },
+        "actions": {
+          "back": "Voltar",
+          "refreshStatus": "Atualizar Status"
+        },
+        "status": {
+          "pending": "Pendente",
+          "paid": "Pago",
+          "failed": "Falhou",
+          "cancelled": "Cancelado",
+          "refunded": "Reembolsado"
+        },
+        "loading": "Carregando...",
+        "error": "Falha ao carregar detalhes do pedido",
+        "retry": "Tentar novamente",
+        "notFound": "Pedido não encontrado"
+      }
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "Visão Geral",
+      "description": "Acesso rápido às informações e ações da sua conta",
+      "welcomeMessage": "Bem-vindo de volta!",
+      "stats": {
+        "title": "Resumo de Estatísticas",
+        "subtitle": "Dados da sua conta",
+        "cards": [
+          {
+            "title": "Pedidos Totais",
+            "value": "0",
+            "change": "0% em relação ao mês passado",
+            "trend": "neutral"
+          },
+          {
+            "title": "Receita Total",
+            "value": "$0",
+            "change": "0% em relação ao mês passado",
+            "trend": "neutral"
+          },
+          {
+            "title": "Pedidos Pendentes",
+            "value": "0",
+            "change": "Ver detalhes",
+            "trend": "neutral"
+          },
+          {
+            "title": "Status da Conta",
+            "value": "Ativa",
+            "change": "Operação normal",
+            "trend": "up"
+          }
+        ]
+      },
+      "recentActivity": {
+        "title": "Atividade Recente",
+        "subtitle": "Movimentações da sua conta",
+        "noActivity": "Sem registros de atividade",
+        "activities": [
+          {
+            "action": "Conta criada",
+            "time": "Agora mesmo",
+            "icon": "UserPlus"
+          }
+        ]
+      },
+      "quickActions": {
+        "title": "Ações Rápidas",
+        "subtitle": "Funcionalidades comuns",
+        "actions": [
+          {
+            "title": "Criar Pedido",
+            "description": "Crie um novo pedido agora",
+            "icon": "ShoppingCart",
+            "href": "/pricing"
+          },
+          {
+            "title": "Ver Pedidos",
+            "description": "Gerencie seus pedidos",
+            "icon": "Package",
+            "href": "/orders"
+          },
+          {
+            "title": "Configurações da Conta",
+            "description": "Edite seu perfil",
+            "icon": "Settings",
+            "href": "/profile"
+          },
+          {
+            "title": "Ver Assinatura",
+            "description": "Faça upgrade do seu plano",
+            "icon": "Crown",
+            "href": "/membership"
+          }
+        ]
+      }
+    },
+    "blogs": {
+      "title": "Blog",
+      "subtitle": "Explore nossos artigos mais recentes",
+      "description": "Leia nosso blog técnico e as últimas novidades",
+      "filters": {
+        "all": "Todos",
+        "growthHacking": "Growth Hacking",
+        "marketing": "Marketing",
+        "nextjsTechniques": "Técnicas de Next.js"
+      },
+      "endOfPosts": "Você chegou ao fim de todos os posts",
+      "readMore": "Ler Mais",
+      "postedOn": "Publicado em"
+    },
+    "adminBlogs": {
+      "title": "Gerenciamento de Blog",
+      "subtitle": "Gerencie posts do blog (somente Admin)",
+      "description": "Crie, edite e gerencie posts",
+      "list": {
+        "title": "Lista de Posts",
+        "subtitle": "Todos os posts",
+        "noBlogs": "Nenhum post encontrado",
+        "createNew": "Criar Novo Post"
+      },
+      "table": {
+        "title": "Título",
+        "author": "Autor",
+        "status": "Status",
+        "visibility": "Visibilidade",
+        "featured": "Em destaque",
+        "createdAt": "Criado em",
+        "actions": "Ações",
+        "edit": "Editar",
+        "delete": "Excluir"
+      },
+      "edit": {
+        "title": "Editar Post",
+        "subtitle": "Editar post (somente Admin)",
+        "form": {
+          "language": "Idioma do Post",
+          "title": "Título",
+          "slug": "Slug",
+          "description": "Descrição",
+          "tags": "Tags",
+          "status": "Status",
+          "visibility": "Visibilidade",
+          "featured": "Em destaque",
+          "featuredDescription": "Fixar este post no topo",
+          "generateSlug": "Gerar slug",
+          "slugHelper": "Gera o slug automaticamente apenas a partir de títulos em inglês. Para outros idiomas, insira manualmente.",
+          "titleHelper": "Comprimento recomendado: 60 caracteres",
+          "descriptionHelper": "Comprimento recomendado: 160 caracteres"
+        },
+        "actions": {
+          "cancel": "Cancelar",
+          "update": "Atualizar Post",
+          "create": "Criar Post"
+        },
+        "status": {
+          "draft": "Rascunho",
+          "published": "Publicado"
+        },
+        "visibility": {
+          "public": "Público",
+          "private": "Privado",
+          "subscribers": "Assinantes"
+        }
+      }
+    }
+  }
+}
