@@ -22,7 +22,7 @@ export default async function LocaleFeaturesPage({ params }: LocaleFeaturesPageP
 
   const dictionary = getDictionary(normalizedLocale);
   
-  return <PageTemplate dictionary={dictionary.pages.features} />;
+  return <PageTemplate dictionary={dictionary.pages.features} locale={normalizedLocale} />;
 }
 
 export function generateStaticParams() {

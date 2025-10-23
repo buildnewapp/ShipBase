@@ -18,7 +18,7 @@ export default async function LocaleContactPage({ params }: LocaleContactPagePro
   }
 
   const dictionary = getDictionary(normalizedLocale);
-  return <PageTemplate dictionary={dictionary.pages.contact} />;
+  return <PageTemplate dictionary={dictionary.pages.contact} locale={normalizedLocale} />;
 }
 
 export function generateStaticParams() {

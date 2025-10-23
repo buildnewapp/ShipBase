@@ -1,4 +1,4 @@
-import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary, StatusPageDictionary, PrivacyPageDictionary, TermsPageDictionary, CookiesPageDictionary } from "@/i18n/types";
+import type { PageDictionary, FeaturesPageDictionary, PricingPageDictionary, DocsPageDictionary, IntegrationsPageDictionary, HelpPageDictionary, ContactPageDictionary, StatusPageDictionary, PrivacyPageDictionary, TermsPageDictionary, CookiesPageDictionary, Locale } from "@/i18n/types";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -7,42 +7,41 @@ import { PricingComponent } from "@/components/pricing";
 
 interface PageTemplateProps {
   dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary | PrivacyPageDictionary | TermsPageDictionary | CookiesPageDictionary;
+  locale: Locale;
 }
 
-export function PageTemplate({ dictionary }: PageTemplateProps) {
+export function PageTemplate({ dictionary, locale }: PageTemplateProps) {
   // 根据页面类型渲染不同的内容
   const renderPageContent = () => {
-    if (dictionary.title === "功能特性" || dictionary.title === "Features" || dictionary.title === "機能") {
+    // 使用类型判断而不是title字符串
+    if ('coreFeatures' in dictionary) {
       return <FeaturesContent dictionary={dictionary as FeaturesPageDictionary} />;
     }
-    if (dictionary.title === "价格方案" || dictionary.title === "Pricing" || dictionary.title === "料金") {
-      return <PricingContent dictionary={dictionary as PricingPageDictionary} />;
+    if ('plans' in dictionary) {
+      return <PricingContent dictionary={dictionary as PricingPageDictionary} locale={locale} />;
     }
-    if (dictionary.title === "文档" || dictionary.title === "Documentation" || dictionary.title === "ドキュメント") {
+    if ('quickStart' in dictionary) {
       return <DocsContent dictionary={dictionary as DocsPageDictionary} />;
     }
-    if (dictionary.title === "集成" || dictionary.title === "Integrations" || dictionary.title === "統合") {
-      return <IntegrationsContent dictionary={dictionary as IntegrationsPageDictionary} />;
+    if ('categories' in dictionary && 'popularIntegrations' in dictionary) {
+      return <IntegrationsContent dictionary={dictionary as IntegrationsPageDictionary} locale={locale} />;
     }
-    if (dictionary.title === "API文档" || dictionary.title === "API Documentation") {
-      return <ApiContent />;
-    }
-    if (dictionary.title === "帮助中心" || dictionary.title === "Help Center" || dictionary.title === "ヘルプセンター") {
+    if ('searchPlaceholder' in dictionary) {
       return <HelpContent dictionary={dictionary as HelpPageDictionary} />;
     }
-    if (dictionary.title === "联系我们" || dictionary.title === "Contact Us" || dictionary.title === "お問い合わせ") {
+    if ('contactMethods' in dictionary) {
       return <ContactContent dictionary={dictionary as ContactPageDictionary} />;
     }
-    if (dictionary.title === "服务状态" || dictionary.title === "Service Status" || dictionary.title === "サービス状況") {
+    if ('overview' in dictionary || 'services' in dictionary) {
       return <StatusContent dictionary={dictionary as StatusPageDictionary} />;
     }
-    if (dictionary.title === "隐私政策" || dictionary.title === "Privacy Policy" || dictionary.title === "プライバシーポリシー") {
-      return <PrivacyContent dictionary={dictionary as PrivacyPageDictionary} />;
+    if ('informationCollection' in dictionary) {
+      return <PrivacyContent dictionary={dictionary as PrivacyPageDictionary} locale={locale} />;
     }
-    if (dictionary.title === "服务条款" || dictionary.title === "Terms of Service" || dictionary.title === "利用規約") {
-      return <TermsContent dictionary={dictionary as TermsPageDictionary} />;
+    if ('serviceUse' in dictionary) {
+      return <TermsContent dictionary={dictionary as TermsPageDictionary} locale={locale} />;
     }
-    if (dictionary.title === "Cookie政策" || dictionary.title === "Cookie Policy" || dictionary.title === "Cookie ポリシー") {
+    if ('howWeUseCookies' in dictionary) {
       return <CookiesContent dictionary={dictionary as CookiesPageDictionary} />;
     }
 
@@ -268,12 +267,12 @@ function FeaturesContent({ dictionary }: { dictionary: FeaturesPageDictionary })
 }
 
 // 价格方案页面内容
-function PricingContent({ dictionary }: { dictionary: PricingPageDictionary }) {
+function PricingContent({ dictionary, locale }: { dictionary: PricingPageDictionary; locale: Locale }) {
   return (
     <div className="space-y-16">
       {/* 使用新的价格组件 */}
       <PricingComponent
-        locale={dictionary.title === "价格方案" ? "zh" : dictionary.title === "Pricing" ? "en" : "ja"}
+        locale={locale}
         showBillingToggle={true}
       />
 
@@ -415,7 +414,7 @@ function DocsContent({ dictionary }: { dictionary: DocsPageDictionary }) {
 }
 
 // 集成页面内容
-function IntegrationsContent({ dictionary }: { dictionary: IntegrationsPageDictionary }) {
+function IntegrationsContent({ dictionary, locale }: { dictionary: IntegrationsPageDictionary; locale: Locale }) {
   // 图标映射函数
   const getCategoryIcon = (iconName: string) => {
     const iconMap = {
@@ -431,23 +430,59 @@ function IntegrationsContent({ dictionary }: { dictionary: IntegrationsPageDicti
 
   // 状态映射函数
   const getStatusBadge = (status: string) => {
-    // 根据当前语言环境确定状态文本
-    const isChinese = dictionary.title === "集成";
-    const isJapanese = dictionary.title === "統合";
+    // 根据locale映射状态文本
+    const statusTextMap: Record<string, Record<string, string>> = {
+      available: {
+        zh: "已集成",
+        ja: "利用可能",
+        en: "Available",
+        es: "Disponible",
+        fr: "Disponible",
+        de: "Verfügbar",
+        pt: "Disponível",
+        ru: "Доступно",
+        id: "Tersedia",
+        ar: "متاح"
+      },
+      "coming-soon": {
+        zh: "计划中",
+        ja: "近日公開",
+        en: "Coming Soon",
+        es: "Próximamente",
+        fr: "Bientôt disponible",
+        de: "Bald verfügbar",
+        pt: "Em breve",
+        ru: "Скоро",
+        id: "Segera hadir",
+        ar: "قريباً"
+      },
+      beta: {
+        zh: "测试版",
+        ja: "ベータ版",
+        en: "Beta",
+        es: "Beta",
+        fr: "Bêta",
+        de: "Beta",
+        pt: "Beta",
+        ru: "Бета",
+        id: "Beta",
+        ar: "تجريبي"
+      }
+    };
     
     const statusMap = {
       available: { 
-        text: isChinese ? "已集成" : isJapanese ? "利用可能" : "Available", 
+        text: statusTextMap.available[locale] || statusTextMap.available.en, 
         variant: "default" as const, 
         className: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200" 
       },
       "coming-soon": { 
-        text: isChinese ? "计划中" : isJapanese ? "近日公開" : "Coming Soon", 
+        text: statusTextMap["coming-soon"][locale] || statusTextMap["coming-soon"].en, 
         variant: "secondary" as const, 
         className: "" 
       },
       beta: { 
-        text: isChinese ? "测试版" : isJapanese ? "ベータ版" : "Beta", 
+        text: statusTextMap.beta[locale] || statusTextMap.beta.en, 
         variant: "secondary" as const, 
         className: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200" 
       },
@@ -609,193 +644,6 @@ function IntegrationsContent({ dictionary }: { dictionary: IntegrationsPageDicti
             <Button variant="outline" size="lg" className="px-8">
               {dictionary.cta.secondaryButton}
             </Button>
-          </div>
-        </div>
-      </div>
-  );
-}
-
-// API文档页面内容
-function ApiContent() {
-  const endpoints = [
-    {
-      method: "GET",
-      path: "/api/users",
-      description: "获取用户列表",
-      parameters: [
-        { name: "page", type: "number", required: false, description: "页码" },
-        { name: "limit", type: "number", required: false, description: "每页数量" }
-      ]
-    },
-    {
-      method: "POST",
-      path: "/api/users",
-      description: "创建新用户",
-      parameters: [
-        { name: "name", type: "string", required: true, description: "用户姓名" },
-        { name: "email", type: "string", required: true, description: "用户邮箱" }
-      ]
-    },
-    {
-      method: "GET",
-      path: "/api/users/{id}",
-      description: "获取特定用户信息",
-      parameters: [
-        { name: "id", type: "string", required: true, description: "用户ID" }
-      ]
-    },
-    {
-      method: "PUT",
-      path: "/api/users/{id}",
-      description: "更新用户信息",
-      parameters: [
-        { name: "id", type: "string", required: true, description: "用户ID" },
-        { name: "name", type: "string", required: false, description: "用户姓名" },
-        { name: "email", type: "string", required: false, description: "用户邮箱" }
-      ]
-    }
-  ];
-
-  return (
-      <div className="space-y-16">
-        {/* API 概览 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              ShipBase API 参考
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              完整的 REST API 文档，帮助您快速集成 ShipBase 的功能
-            </p>
-          </div>
-
-          <div className="bg-neutral-50 dark:bg-neutral-900 rounded-lg p-8">
-            <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-4">
-              基础 URL
-            </h3>
-            <div className="bg-neutral-900 dark:bg-neutral-800 rounded-lg p-4 mb-4">
-              <code className="text-green-400">https://api.shipbase.com/v1</code>
-            </div>
-            <p className="text-neutral-600 dark:text-neutral-300">
-              所有 API 请求都需要在请求头中包含您的 API 密钥
-            </p>
-          </div>
-        </div>
-
-        {/* API 端点 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              API 端点
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              探索可用的 API 端点及其参数
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            {endpoints.map((endpoint, index) => (
-                <Card key={index} className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <Badge
-                        variant={endpoint.method === "GET" ? "default" : endpoint.method === "POST" ? "secondary" : "outline"}
-                        className="flex-shrink-0"
-                    >
-                      {endpoint.method}
-                    </Badge>
-                    <div className="flex-1">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <code className="text-lg font-mono text-neutral-900 dark:text-neutral-100">
-                          {endpoint.path}
-                        </code>
-                      </div>
-                      <p className="text-neutral-600 dark:text-neutral-300 mb-4">
-                        {endpoint.description}
-                      </p>
-                      {endpoint.parameters.length > 0 && (
-                          <div>
-                            <h4 className="font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
-                              参数
-                            </h4>
-                            <div className="space-y-2">
-                              {endpoint.parameters.map((param, idx) => (
-                                  <div key={idx} className="flex items-center space-x-4 text-sm">
-                                    <code className="text-blue-600 dark:text-blue-400 font-mono">
-                                      {param.name}
-                                    </code>
-                                    <Badge variant="outline" className="text-xs">
-                                      {param.type}
-                                    </Badge>
-                                    <span className={param.required ? "text-red-600 dark:text-red-400" : "text-neutral-500"}>
-                              {param.required ? "必需" : "可选"}
-                            </span>
-                                    <span className="text-neutral-600 dark:text-neutral-300">
-                              {param.description}
-                            </span>
-                                  </div>
-                              ))}
-                            </div>
-                          </div>
-                      )}
-                    </div>
-                  </div>
-                </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* SDK 和示例 */}
-        <div>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-              SDK 和示例
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              使用我们的 SDK 或查看代码示例快速开始
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-4">
-                JavaScript SDK
-              </h3>
-              <div className="bg-neutral-900 dark:bg-neutral-800 rounded-lg p-4 mb-4">
-                <code className="text-green-400 text-sm whitespace-pre-wrap">
-                  {`npm install @shipbase/sdk
-
-import { ShipBase } from '@shipbase/sdk';
-
-const client = new ShipBase({
-  apiKey: 'your-api-key'
-});
-
-const users = await client.users.list();`}
-                </code>
-              </div>
-              <Button variant="outline" className="w-full">
-                查看文档
-              </Button>
-            </Card>
-
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-4">
-                Python SDK
-              </h3>
-              <div className="bg-neutral-900 dark:bg-neutral-800 rounded-lg p-4 mb-4">
-                <code className="text-green-400 text-sm whitespace-pre-wrap">
-                  {`pip install shipbase-sdk
-
-from shipbase import ShipBase
-
-client = ShipBase(api_key='your-api-key')
-users = client.users.list()`}
-                </code>
-              </div>
-              <Button variant="outline" className="w-full">
-                查看文档
-              </Button>
-            </Card>
           </div>
         </div>
       </div>
@@ -1166,7 +1014,7 @@ function StatusContent({ dictionary }: { dictionary: StatusPageDictionary }) {
 }
 
 // 隐私政策页面内容
-function PrivacyContent({ dictionary }: { dictionary: PrivacyPageDictionary }) {
+function PrivacyContent({ dictionary, locale }: { dictionary: PrivacyPageDictionary; locale: Locale }) {
   const informationItems = [
     dictionary.informationCollection.accountInfo,
     dictionary.informationCollection.usageDetails,
@@ -1174,6 +1022,56 @@ function PrivacyContent({ dictionary }: { dictionary: PrivacyPageDictionary }) {
     dictionary.informationCollection.cookies,
     dictionary.informationCollection.paymentInfo
   ];
+
+  // 根据locale获取标签文本
+  const getLabels = () => {
+    const labelsMap: Record<string, Record<string, string>> = {
+      "whatWeCollect": {
+        zh: "我们收集的内容：",
+        ja: "収集する内容：",
+        en: "What We Collect:",
+        es: "Lo que recopilamos:",
+        fr: "Ce que nous collectons :",
+        de: "Was wir sammeln:",
+        pt: "O que coletamos:",
+        ru: "Что мы собираем:",
+        id: "Yang kami kumpulkan:",
+        ar: "ما نجمع:"
+      },
+      "purpose": {
+        zh: "目的：",
+        ja: "目的：",
+        en: "Purpose:",
+        es: "Propósito:",
+        fr: "Objectif :",
+        de: "Zweck:",
+        pt: "Propósito:",
+        ru: "Цель:",
+        id: "Tujuan:",
+        ar: "الغرض:"
+      },
+      "consent": {
+        zh: "同意条款",
+        ja: "同意条項",
+        en: "Consent",
+        es: "Consentimiento",
+        fr: "Consentement",
+        de: "Einverständnis",
+        pt: "Consentimento",
+        ru: "Согласие",
+        id: "Persetujuan",
+        ar: "موافقة"
+      }
+    };
+    
+    return {
+      whatWeCollect: labelsMap.whatWeCollect[locale] || labelsMap.whatWeCollect.en,
+      purpose: labelsMap.purpose[locale] || labelsMap.purpose.en,
+      consent: labelsMap.consent[locale] || labelsMap.consent.en
+    };
+  };
+
+  const labels = getLabels();
 
   return (
     <div className="space-y-16">
@@ -1212,7 +1110,7 @@ function PrivacyContent({ dictionary }: { dictionary: PrivacyPageDictionary }) {
               <div className="space-y-3">
                 <div>
                   <h4 className="font-medium text-neutral-800 dark:text-neutral-200 mb-2">
-                    {dictionary.title === "隐私政策" ? "我们收集的内容：" : "What We Collect:"}
+                    {labels.whatWeCollect}
                   </h4>
                   <p className="text-neutral-600 dark:text-neutral-300 text-sm">
                     {item.whatWeCollect}
@@ -1220,7 +1118,7 @@ function PrivacyContent({ dictionary }: { dictionary: PrivacyPageDictionary }) {
                 </div>
                 <div>
                   <h4 className="font-medium text-neutral-800 dark:text-neutral-200 mb-2">
-                    {dictionary.title === "隐私政策" ? "目的：" : "Purpose:"}
+                    {labels.purpose}
                   </h4>
                   <p className="text-neutral-600 dark:text-neutral-300 text-sm">
                     {item.purpose}
@@ -1306,7 +1204,7 @@ function PrivacyContent({ dictionary }: { dictionary: PrivacyPageDictionary }) {
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-8">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            {dictionary.title === "隐私政策" ? "同意条款" : "Consent"}
+            {labels.consent}
           </h2>
           <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
             {dictionary.consent.content}
@@ -1318,7 +1216,31 @@ function PrivacyContent({ dictionary }: { dictionary: PrivacyPageDictionary }) {
 }
 
 // 服务条款页面内容
-function TermsContent({ dictionary }: { dictionary: TermsPageDictionary }) {
+function TermsContent({ dictionary, locale }: { dictionary: TermsPageDictionary; locale: Locale }) {
+  // 根据locale获取标签文本
+  const getLabels = () => {
+    const labelsMap: Record<string, Record<string, string>> = {
+      "acknowledgment": {
+        zh: "确认条款",
+        ja: "確認条項",
+        en: "Acknowledgment",
+        es: "Reconocimiento",
+        fr: "Reconnaissance",
+        de: "Bestätigung",
+        pt: "Confirmação",
+        ru: "Подтверждение",
+        id: "Pengakuan",
+        ar: "الاعتراف"
+      }
+    };
+    
+    return {
+      acknowledgment: labelsMap.acknowledgment[locale] || labelsMap.acknowledgment.en
+    };
+  };
+
+  const labels = getLabels();
+
   return (
     <div className="space-y-16">
       {/* 最后更新时间 */}
@@ -1530,7 +1452,7 @@ function TermsContent({ dictionary }: { dictionary: TermsPageDictionary }) {
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-8">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            {dictionary.title === "服务条款" ? "确认条款" : "Acknowledgment"}
+            {labels.acknowledgment}
           </h2>
           <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
             {dictionary.acknowledgment.content}

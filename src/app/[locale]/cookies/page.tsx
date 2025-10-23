@@ -18,7 +18,7 @@ export default async function LocaleCookiesPage({ params }: LocaleCookiesPagePro
   }
 
   const dictionary = getDictionary(normalizedLocale);
-  return <PageTemplate dictionary={dictionary.pages.cookies} />;
+  return <PageTemplate dictionary={dictionary.pages.cookies} locale={normalizedLocale} />;
 }
 
 export function generateStaticParams() {

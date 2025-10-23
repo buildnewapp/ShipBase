@@ -18,7 +18,7 @@ export default async function LocaleIntegrationsPage({ params }: LocaleIntegrati
   }
 
   const dictionary = getDictionary(normalizedLocale);
-  return <PageTemplate dictionary={dictionary.pages.integrations} />;
+  return <PageTemplate dictionary={dictionary.pages.integrations} locale={normalizedLocale} />;
 }
 
 export function generateStaticParams() {

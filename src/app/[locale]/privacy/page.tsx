@@ -18,7 +18,7 @@ export default async function LocalePrivacyPage({ params }: LocalePrivacyPagePro
   }
 
   const dictionary = getDictionary(normalizedLocale);
-  return <PageTemplate dictionary={dictionary.pages.privacy} />;
+  return <PageTemplate dictionary={dictionary.pages.privacy} locale={normalizedLocale} />;
 }
 
 export function generateStaticParams() {

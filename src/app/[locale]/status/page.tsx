@@ -18,7 +18,7 @@ export default async function LocaleStatusPage({ params }: LocaleStatusPageProps
   }
 
   const dictionary = getDictionary(normalizedLocale);
-  return <PageTemplate dictionary={dictionary.pages.status} />;
+  return <PageTemplate dictionary={dictionary.pages.status} locale={normalizedLocale} />;
 }
 
 export function generateStaticParams() {

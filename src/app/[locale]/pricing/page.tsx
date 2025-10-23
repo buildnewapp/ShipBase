@@ -18,7 +18,7 @@ export default async function LocalePricingPage({ params }: LocalePricingPagePro
   }
 
   const dictionary = getDictionary(normalizedLocale);
-  return <PageTemplate dictionary={dictionary.pages.pricing} />;
+  return <PageTemplate dictionary={dictionary.pages.pricing} locale={normalizedLocale} />;
 }
 
 export function generateStaticParams() {

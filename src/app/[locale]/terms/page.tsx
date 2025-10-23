@@ -18,7 +18,7 @@ export default async function LocaleTermsPage({ params }: LocaleTermsPageProps) 
   }
 
   const dictionary = getDictionary(normalizedLocale);
-  return <PageTemplate dictionary={dictionary.pages.terms} />;
+  return <PageTemplate dictionary={dictionary.pages.terms} locale={normalizedLocale} />;
 }
 
 export function generateStaticParams() {

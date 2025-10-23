@@ -2,621 +2,621 @@ import type { AppDictionary } from "@/i18n/types";
 
 export const arDictionary: AppDictionary = {
   home: {
-    badgeLabel: "2025🚀 Ship Now",
-    heroTitle: "ShipBase, Ship More.",
+    badgeLabel: "2025🚀 شحن الآن",
+    heroTitle: "ShipBase، شحن أكثر.",
     heroDescription:
-        "ShipBase is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
-    ctaPrimary: "Get Started",
-    ctaSecondary: "Read Document",
-    watchDemo: "Watch Demo",
-    viewDetails: "View Details",
-    promotionText: "🎁 $100 off for the first 1000 customers",
-    userCount: "from 250+ happy users",
+        "ShipBase هو قالب NextJS لبناء شركات SaaS للذكاء الاصطناعي. شحن سريع مع مجموعة متنوعة من القوالب والمكونات.",
+    ctaPrimary: "ابدأ الآن",
+    ctaSecondary: "قراءة الوثائق",
+    watchDemo: "شاهد العرض التوضيحي",
+    viewDetails: "عرض التفاصيل",
+    promotionText: "🎁 خصم 100 دولار لأول 1000 عميل",
+    userCount: "من أكثر من 250 مستخدم سعيد",
 
     // Tech Stack Section
-    techStackTitle: "ShipBase is built on the shoulders of giants",
+    techStackTitle: "ShipBase مبني على أكتاف العمالقة",
     techStackItems: [
-      { name: "Next.js", description: "React Full-stack Framework" },
-      { name: "React", description: "User Interface Library" },
-      { name: "TailwindCSS", description: "Utility-first CSS Framework" },
-      { name: "Shadcn/UI", description: "Modern Component Library" },
-      { name: "Vercel", description: "Deployment Platform" }
+      { name: "Next.js", description: "إطار عمل React الكامل" },
+      { name: "React", description: "مكتبة واجهة المستخدم" },
+      { name: "TailwindCSS", description: "إطار عمل CSS للمتأداة" },
+      { name: "Shadcn/UI", description: "مكتبة المكونات الحديثة" },
+      { name: "Vercel", description: "منصة النشر" }
     ],
 
     // Features Section
-    featuresTitle: "What is ShipBase",
-    featuresSubtitle: "ShipBase is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    featuresTitle: "ما هو ShipBase",
+    featuresSubtitle: "ShipBase هو قالب NextJS لبناء شركات SaaS للذكاء الاصطناعي. مبني بمجموعة متنوعة من القوالب والمكونات.",
     features: [
       {
-        title: "Ready-to-use Templates",
-        description: "Choose from dozens of production-ready AI SaaS templates to quickly start your project."
+        title: "قوالب جاهزة للاستخدام",
+        description: "اختر من بين عشرات قوالب SaaS للذكاء الاصطناعي الجاهزة للإنتاج لبدء مشروعك بسرعة."
       },
       {
-        title: "Infrastructure Setup",
-        description: "Get instant access to scalable infrastructure with best practices built-in."
+        title: "إعداد البنية التحتية",
+        description: "احصل على وصول فوري للبنية التحتية القابلة للتوسع مع أفضل الممارسات المدمجة."
       },
       {
-        title: "Quick Deployment",
-        description: "Deploy your AI SaaS application to production in hours, not days."
+        title: "النشر السريع",
+        description: "انشر تطبيق SaaS للذكاء الاصطناعي الخاص بك إلى الإنتاج في ساعات، وليس أيام."
       }
     ],
 
     // Benefits Section
-    benefitsTitle: "Why Choose ShipBase",
-    benefitsSubtitle: "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    benefitsTitle: "لماذا تختار ShipBase",
+    benefitsSubtitle: "احصل على كل ما تحتاجه لإطلاق شركة الذكاء الاصطناعي - من القوالب الجاهزة إلى الدعم الفني.",
     benefits: [
       {
-        title: "Complete Framework",
-        description: "Built on Next.js with authentication, payments, and AI integration - everything works out of the box."
+        title: "إطار عمل كامل",
+        description: "مبني على Next.js مع المصادقة والمدفوعات ودمج الذكاء الاصطناعي - كل شيء يعمل بشكل جاهز."
       },
       {
-        title: "Rich Templates Library",
-        description: "Choose from templates that fit your needs and start building quickly."
+        title: "مكتبة قوالب غنية",
+        description: "اختر من القوالب التي تناسب احتياجاتك وابدأ البناء بسرعة."
       },
       {
-        title: "Technical Guidance",
-        description: "Get professional technical support to help you get started quickly."
+        title: "الإرشاد الفني",
+        description: "احصل على الدعم الفني الاحترافي لمساعدتك على البدء بسرعة."
       }
     ],
 
     // Launch Steps
-    launchStepsTitle: "How to Launch with ShipBase",
-    launchStepsSubtitle: "Get your AI SaaS startup running in three simple steps:",
+    launchStepsTitle: "كيفية الإطلاق مع ShipBase",
+    launchStepsSubtitle: "اجعل شركة SaaS للذكاء الاصطناعي تعمل في ثلاث خطوات بسيطة:",
     launchSteps: [
       {
         step: "1",
-        title: "Get ShipBase",
-        description: "Buy ShipBase with a one-time payment. Check your email for the code and documentation."
+        title: "احصل على ShipBase",
+        description: "اشتري ShipBase بدفع لمرة واحدة. تحقق من بريدك الإلكتروني للرمز والوثائق."
       },
       {
         step: "2",
-        title: "Start Your Project",
-        description: "Read the documentation and clone the code of ShipBase. Start building your AI SaaS startup."
+        title: "ابدأ مشروعك",
+        description: "اقرأ الوثائق واستنسخ كود ShipBase. ابدأ في بناء شركة SaaS للذكاء الاصطناعي الخاصة بك."
       },
       {
         step: "3",
-        title: "Customize Your Project",
-        description: "Modify the template with your data and contents. Specific AI functionality needs."
+        title: "قم بتخصيص مشروعك",
+        description: "قم بتعديل القالب ببياناتك ومحتواك. احتياجات وظائف الذكاء الاصطناعي المحددة."
       },
       {
         step: "4",
-        title: "Deploy to Production",
-        description: "Deploy your project to production with a few steps and start serving customers immediately."
+        title: "انشر إلى الإنتاج",
+        description: "انشر مشروعك إلى الإنتاج بخطوات قليلة وابدأ في خدمة العملاء على الفور."
       }
     ],
 
     // Key Features
-    keyFeaturesTitle: "Key Features of ShipBase",
-    keyFeaturesSubtitle: "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    keyFeaturesTitle: "الميزات الرئيسية لـ ShipBase",
+    keyFeaturesSubtitle: "كل ما تحتاجه لإطلاق شركة SaaS للذكاء الاصطناعي بسرعة وكفاءة.",
     keyFeatures: [
       {
-        title: "Next.js Boilerplate",
-        description: "Production-ready Next.js templates with SEO-friendly structure and i18n support."
+        title: "قالب Next.js",
+        description: "قوالب Next.js جاهزة للإنتاج مع بنية محسّنة لمحركات البحث ودعم الترجمة."
       },
       {
-        title: "Authentication & Payments",
-        description: "Integrated Google OAuth, one-tap login, and Stripe payment processing."
+        title: "المصادقة والمدفوعات",
+        description: "دمج Google OAuth وتسجيل الدخول بنقرة واحدة ومعالجة المدفوعات عبر Stripe."
       },
       {
-        title: "Data Infrastructure",
-        description: "Built-in Supabase integration for reliable and scalable data storage."
+        title: "البنية التحتية للبيانات",
+        description: "دمج Supabase المدمج لتخزين البيانات الموثوق والقابل للتوسع."
       },
       {
-        title: "One-Click Deployment",
-        description: "Seamless deployment to Vercel or Cloudflare with automated setup."
+        title: "النشر بنقرة واحدة",
+        description: "نشر سلس إلى Vercel أو Cloudflare مع الإعداد الآلي."
       },
       {
-        title: "Business Analytics",
-        description: "Integrated Google Analytics and Search Console for tracking growth."
+        title: "تحليلات الأعمال",
+        description: "دمج Google Analytics و Search Console لتتبع النمو."
       },
       {
-        title: "AI-Ready Infrastructure",
-        description: "Pre-configured AI integration with built-in credits system and API sales."
+        title: "البنية التحتية الجاهزة للذكاء الاصطناعي",
+        description: "دمج الذكاء الاصطناعي المُعد مسبقًا مع نظام الاعتمادات المدمج وبيع API."
       }
     ],
 
     // Testimonials
-    testimonialsTitle: "What Users Say About ShipBase",
-    testimonialsSubtitle: "Hear from developers and founders who launched their AI startups with ShipBase.",
+    testimonialsTitle: "ماذا يقول المستخدمون عن ShipBase",
+    testimonialsSubtitle: "استمع من المطورين والمؤسسين الذين أطلقوا شركات الذكاء الاصطناعي الخاصة بهم مع ShipBase.",
     testimonials: [
       {
-        quote: "ShipBase has made the journey from idea to product simpler than ever before. Its comprehensive templates, scripts, and foundational infrastructure mean I hardly need to spend time on basic development. I highly recommend it to founders looking to quickly launch their SaaS businesses.",
-        author: "Author of AITDK",
-        role: "Independent Developer"
+        quote: "جعل ShipBase الرحلة من الفكرة إلى المنتج أبسط من أي وقت مضى. قوالبها الشاملة والسكريبتات والبنية التحتية الأساسية تعني أنني بالكاد أحتاج إلى قضاء الوقت في التطوير الأساسي. أوصي به بشدة للمؤسسين الذين يتطلعون لإطلاق أعمال SaaS الخاصة بهم بسرعة.",
+        author: "مؤلف AITDK",
+        role: "مطور مستقل"
       },
       {
-        quote: "ShipBase made it super easy to set up payments and handle all the nuts and bolts of commercialization, so we could stay laser-focused on building features that matter. If you're looking to ship and scale your AI SaaS fast, ShipBase is a no-brainer!",
+        quote: "جعل ShipBase من السهل جدًا إعداد المدفوعات والتعامل مع جميع تفاصيل التجارة، حتى نتمكن من البقاء مركزين بالكامل على بناء الميزات المهمة. إذا كنت تبحث عن شحن وتوسيع SaaS للذكاء الاصطناعي بسرعة، فإن ShipBase هو الخيار الواضح!",
         author: "Scar",
-        role: "Front-end Engineer"
+        role: "مهندس الواجهة الأمامية"
       },
       {
-        quote: "I used ShipBase and launched a new website in 8 minutes, including login/payment, so amazing!",
+        quote: "استخدمت ShipBase وأطلقت موقعًا جديدًا في 8 دقائق، بما في ذلك تسجيل الدخول/الدفع، رائع جدًا!",
         author: "Lafe",
-        role: "Tech Lead"
+        role: "قائد تقني"
       }
     ],
 
     // Product Showcase
-    productShowcaseTitle: "AI SaaS Startups built with ShipBase",
-    productShowcaseSubtitle: "See amazing AI SaaS applications built with ShipBase",
+    productShowcaseTitle: "شركات SaaS للذكاء الاصطناعي المبنية مع ShipBase",
+    productShowcaseSubtitle: "شاهد تطبيقات SaaS للذكاء الاصطناعي الرائعة المبنية مع ShipBase",
     showcaseItems: [
       {
         name: "Raphael AI",
-        description: "Create stunning AI-generated images in seconds",
+        description: "إنشاء صور مذهلة بتقنية الذكاء الاصطناعي في ثوانٍ",
         image: "/api/placeholder/400/300",
-        category: "AI Image Generation"
+        category: "توليد صور بالذكاء الاصطناعي"
       },
       {
         name: "SiteSnapper",
-        description: "Capture Any Website in One Click",
+        description: "التقاط أي موقع ويب بنقرة واحدة",
         image: "/api/placeholder/400/300",
-        category: "Website Tools"
+        category: "أدوات المواقع"
       },
       {
         name: "SEO Combine",
-        description: "All SEO Tools Combined in One Place",
+        description: "جميع أدوات SEO مجمعة في مكان واحد",
         image: "/api/placeholder/400/300",
-        category: "SEO Tools"
+        category: "أدوات SEO"
       },
       {
         name: "TrendsBar",
-        description: "Google Trends Analysis Tool",
+        description: "أداة تحليل Google Trends",
         image: "/api/placeholder/400/300",
-        category: "Data Analytics"
+        category: "تحليلات البيانات"
       },
       {
         name: "Deepseek Artifacts",
-        description: "Create React Apps Using the World's Leading Open-Source Model",
+        description: "إنشاء تطبيقات React باستخدام النموذج مفتوح المصدر الرائد في العالم",
         image: "/api/placeholder/400/300",
-        category: "AI Development"
+        category: "تطوير الذكاء الاصطناعي"
       },
       {
         name: "Rednote Club",
-        description: "Share Your Life's Beautiful Moments in Rednote",
+        description: "شارك لحظات حياتك الجميلة في Rednote",
         image: "/api/placeholder/400/300",
-        category: "Social Platform"
+        category: "منصة اجتماعية"
       }
     ],
 
     // Stats Section
-    statsTitle: "People Love ShipBase",
-    statsSubtitle: "for it's easy to use and fast to ship",
+    statsTitle: "الناس يحبون ShipBase",
+    statsSubtitle: "لسهولة استخدامه وسرعة شحنه",
     stats: [
       {
         number: "250+",
-        label: "Customers",
-        description: "Trust us"
+        label: "عميل",
+        description: "يثقون بنا"
       },
       {
         number: "30+",
-        label: "Components",
-        description: "Built in"
+        label: "مكون",
+        description: "مدمج"
       },
       {
         number: "5",
-        label: "Minutes",
-        description: "Ship Fast in"
+        label: "دقائق",
+        description: "شحن سريع في"
       }
     ],
 
     // FAQ Section
-    faqTitle: "Frequently Asked Questions About ShipBase",
-    faqSubtitle: "Have another question? Contact us on Discord or by email.",
+    faqTitle: "الأسئلة الشائعة حول ShipBase",
+    faqSubtitle: "هل لديك سؤال آخر؟ تواصل معنا على Discord أو عبر البريد الإلكتروني.",
     faqs: [
       {
-        question: "What exactly is ShipBase and how does it work?",
-        answer: "ShipBase is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        question: "ما هو ShipBase بالضبط وكيف يعمل؟",
+        answer: "ShipBase هو قالب NextJS شامل مصمم خصيصًا لبناء شركات SaaS للذكاء الاصطناعي. يوفر قوالب جاهزة للاستخدام وإعداد البنية التحتية وأدوات النشر التي تساعدك على إطلاق أعمال الذكاء الاصطناعي في ساعات بدلاً من أيام."
       },
       {
-        question: "Do I need advanced technical skills to use ShipBase?",
-        answer: "While basic programming knowledge is helpful, ShipBase is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        question: "هل أحتاج إلى مهارات تقنية متقدمة لاستخدام ShipBase؟",
+        answer: "بينما معرفة البرمجة الأساسية مفيدة، تم تصميم ShipBase ليكون سهل الاستخدام للمطورين. قوالبنا والوثائق تجعل من السهل البدء، حتى لو لم تكن خبيرًا في الذكاء الاصطناعي أو البنية التحتية السحابية."
       },
       {
-        question: "What types of AI SaaS can I build with ShipBase?",
-        answer: "ShipBase supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        question: "ما أنواع SaaS للذكاء الاصطناعي التي يمكنني بناؤها باستخدام ShipBase؟",
+        answer: "يدعم ShipBase مجموعة واسعة من تطبيقات الذكاء الاصطناعي، من توليد المحتوى إلى أدوات تحليل البيانات. تغطي قوالبنا حالات الاستخدام الشائعة مثل روبوتات الدردشة بالذكاء الاصطناعي ومولدات المحتوى وتطبيقات معالجة الصور والمزيد."
       },
       {
-        question: "How long does it typically take to launch with ShipBase?",
-        answer: "With ShipBase, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        question: "كم يستغرق عادةً الإطلاق مع ShipBase؟",
+        answer: "مع ShipBase، يمكنك الحصول على نموذج أولي يعمل في ساعات وتطبيق جاهز للإنتاج في ساعات. يقلل النشر بنقرة واحدة والبنية التحتية المُعدة مسبقًا بشكل كبير من دورة التطوير التقليدية التي تستغرق أشهر."
       },
       {
-        question: "What's included in the ShipBase infrastructure?",
-        answer: "ShipBase provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+        question: "ماذا يشمل بنية ShipBase التحتية؟",
+        answer: "يوفر ShipBase مجموعة بنية تحتية كاملة بما في ذلك المصادقة وإعداد قاعدة البيانات والتكامل مع API ومعالجة المدفوعات والنشر السحابي القابل للتوسع. كل شيء مُعد مسبقًا وفقًا لأفضل الممارسات في الصناعة."
       },
       {
-        question: "Can I customize the templates to match my brand?",
-        answer: "Absolutely! All ShipBase templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        question: "هل يمكنني تخصيص القوالب لتتناسب مع علامتي التجارية؟",
+        answer: "بالتأكيد! جميع قوالب ShipBase قابلة للتخصيص بالكامل. يمكنك تعديل التصميم والميزات والوظائف لتتناسب مع هوية علامتك التجارية ومتطلبات عملك المحددة مع الحفاظ على البنية التحتية الأساسية القوية."
       }
     ],
 
     // Final CTA
-    finalCtaTitle: "Ship your first AI SaaS Startup",
-    finalCtaSubtitle: "Start from here, ship with ShipBase.",
-    finalCtaButton: "Get ShipBase",
-    finalCtaSecondary: "Read Document"
+    finalCtaTitle: "شحن شركة SaaS للذكاء الاصطناعي الأولى",
+    finalCtaSubtitle: "ابدأ من هنا، شحن مع ShipBase.",
+    finalCtaButton: "احصل على ShipBase",
+    finalCtaSecondary: "قراءة الوثائق"
   },
   authPanel: {
-    title: "Sign in to Shipbase",
+    title: "تسجيل الدخول إلى Shipbase",
     description:
-        "Authenticate with Google, GitHub, or a Magic Link powered by Better Auth.",
-    signedInAs: "Signed in as {name}",
-    sessionLabel: "Session ID: {id}",
-    signOut: "Sign out",
+        "المصادقة باستخدام Google أو GitHub أو رابط سحري مدعوم من Better Auth.",
+    signedInAs: "تم تسجيل الدخول كـ {name}",
+    sessionLabel: "معرف الجلسة: {id}",
+    signOut: "تسجيل الخروج",
     googleButton: {
-      default: "Sign in with Google",
-      loading: "Redirecting to Google…",
+      default: "تسجيل الدخول مع Google",
+      loading: "إعادة التوجيه إلى Google…",
     },
     githubButton: {
-      default: "Sign in with GitHub",
-      loading: "Redirecting to GitHub…",
+      default: "تسجيل الدخول مع GitHub",
+      loading: "إعادة التوجيه إلى GitHub…",
     },
-    magicLinkHeading: "Or send a magic link",
-    emailLabel: "Email address",
+    magicLinkHeading: "أو أرسل رابط سحري",
+    emailLabel: "عنوان البريد الإلكتروني",
     emailPlaceholder: "you@example.com",
     magicLinkButton: {
-      default: "Send login link",
-      loading: "Sending…",
+      default: "إرسال رابط تسجيل الدخول",
+      loading: "جاري الإرسال…",
     },
     messages: {
-      emptyEmail: "Please enter an email address.",
-      responseError: "Failed to send the email. Please try again.",
-      requestError: "Something went wrong. Please try again later.",
+      emptyEmail: "يرجى إدخال عنوان بريد إلكتروني.",
+      responseError: "فشل في إرسال البريد الإلكتروني. يرجى المحاولة مرة أخرى.",
+      requestError: "حدث خطأ ما. يرجى المحاولة مرة أخرى لاحقًا.",
       success:
-          "Magic link sent. If an email service is not configured, check the server logs for the link.",
+          "تم إرسال الرابط السحري. إذا لم يتم تكوين خدمة بريد إلكتروني، تحقق من سجلات الخادم للحصول على الرابط.",
     },
     footer: [
       {
         type: "text",
         value:
-            "After sign-in Better Auth issues a session on the server and stores an HTTP-only cookie. Combine ",
+            "بعد تسجيل الدخول، يصدر Better Auth جلسة على الخادم ويخزن ملف تعريف ارتباط HTTP فقط. ادمج ",
       },
       { type: "code", value: "authClient.useSession()" },
       {
         type: "text",
-        value: " to access the current user in any client component.",
+        value: " للوصول إلى المستخدم الحالي في أي مكون عميل.",
       },
     ],
   },
   header: {
-    features: "Features",
-    pricing: "Pricing",
-    docs: "Docs",
-    login: "Login",
-    signup: "Free Trial",
-    languageSwitch: "Language",
-    themeSwitch: "Theme",
-    lightTheme: "Light",
-    darkTheme: "Dark",
-    systemTheme: "System",
+    features: "الميزات",
+    pricing: "الأسعار",
+    docs: "الوثائق",
+    login: "تسجيل الدخول",
+    signup: "تجربة مجانية",
+    languageSwitch: "اللغة",
+    themeSwitch: "المظهر",
+    lightTheme: "فاتح",
+    darkTheme: "داكن",
+    systemTheme: "النظام",
     userMenu: {
-      dashboard: "Dashboard",
-      profile: "Profile",
-      membership: "Membership",
-      orders: "Orders",
-      adminMenu: "Admin Panel",
-      signOut: "Sign Out",
+      dashboard: "لوحة التحكم",
+      profile: "الملف الشخصي",
+      membership: "العضوية",
+      orders: "الطلبات",
+      adminMenu: "لوحة الإدارة",
+      signOut: "تسجيل الخروج",
     },
   },
   footer: {
-    description: "A modern SaaS platform that helps you quickly build and deploy applications.",
-    product: "Product",
-    features: "Features",
-    pricing: "Pricing",
-    integrations: "Integrations",
-    support: "Support",
-    docs: "Documentation",
-    helpCenter: "Help Center",
-    contactUs: "Contact Us",
-    serviceStatus: "Service Status",
-    legal: "Legal",
-    privacyPolicy: "Privacy Policy",
-    termsOfService: "Terms of Service",
-    cookiePolicy: "Cookie Policy",
-    copyright: "© 2024 ShipBase. All rights reserved.",
-    madeWithLove: "Made with ❤️",
+    description: "منصة SaaS حديثة تساعدك على بناء وتنفيذ التطبيقات بسرعة.",
+    product: "المنتج",
+    features: "الميزات",
+    pricing: "الأسعار",
+    integrations: "التكاملات",
+    support: "الدعم",
+    docs: "الوثائق",
+    helpCenter: "مركز المساعدة",
+    contactUs: "اتصل بنا",
+    serviceStatus: "حالة الخدمة",
+    legal: "قانوني",
+    privacyPolicy: "سياسة الخصوصية",
+    termsOfService: "شروط الخدمة",
+    cookiePolicy: "سياسة ملفات تعريف الارتباط",
+    copyright: "© 2024 ShipBase. جميع الحقوق محفوظة.",
+    madeWithLove: "صنع بـ ❤️",
   },
   pages: {
     features: {
-      title: "Features",
-      subtitle: "Powerful features to accelerate your development",
-      description: "Discover the comprehensive set of tools and features that make ShipBase the perfect platform for modern SaaS applications.",
+      title: "الميزات",
+      subtitle: "ميزات قوية لتسريع تطويرك",
+      description: "اكتشف مجموعة الأدوات والميزات الشاملة التي تجعل ShipBase المنصة المثالية لتطبيقات SaaS الحديثة.",
       coreFeatures: {
-        title: "Core Features",
-        subtitle: "Complete solution tailored for modern SaaS applications, letting you focus on product innovation rather than infrastructure setup",
+        title: "الميزات الأساسية",
+        subtitle: "حل كامل مصمم خصيصًا لتطبيقات SaaS الحديثة، مما يتيح لك التركيز على ابتكار المنتج بدلاً من إعداد البنية التحتية",
         features: [
           {
             icon: "Code",
-            title: "Next.js Full-Stack Framework",
-            description: "Built on the latest Next.js 14+ with App Router, Server Components, and Edge Runtime support, providing optimal performance and development experience.",
-            highlights: ["App Router", "Server Components", "Edge Runtime", "TypeScript Support"]
+            title: "إطار عمل Next.js الكامل",
+            description: "مبني على أحدث Next.js 14+ مع App Router و Server Components ودعم Edge Runtime، مما يوفر أداءً وتجربة تطوير مثالية.",
+            highlights: ["App Router", "Server Components", "Edge Runtime", "دعم TypeScript"]
           },
           {
             icon: "Shield",
-            title: "Enterprise-Grade Authentication",
-            description: "Integrated Better Auth supporting multiple login methods including Google OAuth, GitHub OAuth, and Magic Link, ensuring security and reliability.",
-            highlights: ["Google OAuth", "GitHub OAuth", "Magic Link", "Session Management"]
+            title: "مصادقة على مستوى المؤسسة",
+            description: "دمج Better Auth الداعم لطرق تسجيل دخول متعددة بما في ذلك Google OAuth و GitHub OAuth و Magic Link، مما يضمن الأمان والموثوقية.",
+            highlights: ["Google OAuth", "GitHub OAuth", "Magic Link", "إدارة الجلسات"]
           },
           {
             icon: "CreditCard",
-            title: "Stripe Payment Integration",
-            description: "Complete payment solution supporting subscriptions, one-time payments, and invoice management, making commercialization easy.",
-            highlights: ["Subscription Management", "One-time Payments", "Invoice System", "Webhook Handling"]
+            title: "تكامل مدفوعات Stripe",
+            description: "حل دفع كامل يدعم الاشتراكات والمدفوعات لمرة واحدة وإدارة الفواتير، مما يجعل التجارة سهلة.",
+            highlights: ["إدارة الاشتراكات", "المدفوعات لمرة واحدة", "نظام الفواتير", "معالجة Webhook"]
           },
           {
             icon: "Database",
-            title: "Supabase Database",
-            description: "Powerful PostgreSQL database with built-in real-time features, authentication, and storage, providing reliable data foundation for your application.",
-            highlights: ["PostgreSQL", "Real-time Subscriptions", "File Storage", "Row Level Security"]
+            title: "قاعدة بيانات Supabase",
+            description: "قاعدة بيانات PostgreSQL قوية مع ميزات الوقت الفعلي المدمجة والمصادقة والتخزين، مما يوفر أساس بيانات موثوق لتطبيقك.",
+            highlights: ["PostgreSQL", "اشتراكات الوقت الفعلي", "تخزين الملفات", "أمان مستوى الصف"]
           },
           {
             icon: "Bot",
-            title: "AI-Ready Infrastructure",
-            description: "Pre-configured AI integration supporting mainstream AI services like OpenAI, Anthropic, with built-in credit system and API sales functionality.",
-            highlights: ["OpenAI Integration", "Credit System", "API Sales", "Multi-model Support"]
+            title: "البنية التحتية الجاهزة للذكاء الاصطناعي",
+            description: "دمج الذكاء الاصطناعي المُعد مسبقًا يدعم خدمات الذكاء الاصطناعي الرئيسية مثل OpenAI و Anthropic، مع نظام الاعتمادات المدمج ووظيفة بيع API.",
+            highlights: ["تكامل OpenAI", "نظام الاعتمادات", "بيع API", "دعم متعدد النماذج"]
           },
           {
             icon: "Rocket",
-            title: "One-Click Deployment",
-            description: "One-click deployment support for mainstream platforms like Vercel, Cloudflare, with automated CI/CD processes, making publishing simple.",
-            highlights: ["Vercel Deployment", "Cloudflare Pages", "CI/CD Automation", "Environment Management"]
+            title: "النشر بنقرة واحدة",
+            description: "دعم النشر بنقرة واحدة للمنصات الرئيسية مثل Vercel و Cloudflare، مع عمليات CI/CD الآلية، مما يجعل النشر بسيطًا.",
+            highlights: ["نشر Vercel", "Cloudflare Pages", "أتمتة CI/CD", "إدارة البيئة"]
           },
           {
             icon: "BarChart3",
-            title: "Business Analytics",
-            description: "Integrated Google Analytics, Search Console, and other analytics tools to help you understand user behavior and business growth.",
-            highlights: ["Google Analytics", "Search Console", "User Behavior Analysis", "Conversion Tracking"]
+            title: "تحليلات الأعمال",
+            description: "دمج Google Analytics و Search Console وأدوات التحليلات الأخرى لمساعدتك في فهم سلوك المستخدم ونمو الأعمال.",
+            highlights: ["Google Analytics", "Search Console", "تحليل سلوك المستخدم", "تتبع التحويلات"]
           },
           {
             icon: "Globe",
-            title: "Internationalization Support",
-            description: "Built-in multi-language support for Chinese, English, Japanese, and other languages, helping your product reach global users.",
-            highlights: ["Multi-language Support", "RTL Support", "Dynamic Language Switching", "SEO Optimization"]
+            title: "دعم الترجمة",
+            description: "دعم متعدد اللغات المدمج للصينية والإنجليزية واليابانية وغيرها من اللغات، مما يساعد منتجك على الوصول إلى المستخدمين العالميين.",
+            highlights: ["دعم متعدد اللغات", "دعم RTL", "تبديل اللغة الديناميكي", "تحسين محركات البحث"]
           }
         ]
       },
       techStack: {
-        title: "Technology Stack",
-        subtitle: "Built on industry best practices and latest technologies, ensuring your application has optimal performance, security, and scalability",
+        title: "المكدس التقني",
+        subtitle: "مبني على أفضل الممارسات الصناعية وأحدث التقنيات، مما يضمن أن تطبيقك يتمتع بأداء وأمان وقابلية للتوسع مثالية",
         technologies: [
-          { name: "Next.js 14+", description: "React Full-stack Framework" },
-          { name: "React 19", description: "User Interface Library" },
-          { name: "TypeScript", description: "Type-safe JavaScript" },
-          { name: "Tailwind CSS", description: "Utility-first CSS Framework" },
-          { name: "Shadcn/UI", description: "Modern Component Library" },
-          { name: "Better Auth", description: "Authentication Solution" },
-          { name: "Stripe", description: "Payment Processing Platform" },
-          { name: "Supabase", description: "Backend as a Service" },
-          { name: "Vercel", description: "Deployment Platform" }
+          { name: "Next.js 14+", description: "إطار عمل React الكامل" },
+          { name: "React 19", description: "مكتبة واجهة المستخدم" },
+          { name: "TypeScript", description: "JavaScript آمن من حيث النوع" },
+          { name: "Tailwind CSS", description: "إطار عمل CSS للمتأداة" },
+          { name: "Shadcn/UI", description: "مكتبة المكونات الحديثة" },
+          { name: "Better Auth", description: "حل المصادقة" },
+          { name: "Stripe", description: "منصة معالجة المدفوعات" },
+          { name: "Supabase", description: "Backend كخدمة" },
+          { name: "Vercel", description: "منصة النشر" }
         ]
       },
       comparison: {
-        title: "Why Choose ShipBase",
-        subtitle: "Compared to traditional development methods, ShipBase saves you 90% of development time",
+        title: "لماذا تختار ShipBase",
+        subtitle: "مقارنة بطرق التطوير التقليدية، يوفر لك ShipBase 90% من وقت التطوير",
         traditional: {
-          title: "Traditional Development",
+          title: "التطوير التقليدي",
           items: [
-            { text: "Requires 3-6 months to build infrastructure" },
-            { text: "Need to learn multiple technology stacks" },
-            { text: "Need to handle complex deployment processes" },
-            { text: "Need to implement authentication and payments yourself" },
-            { text: "Need significant time for debugging and optimization" }
+            { text: "يتطلب 3-6 أشهر لبناء البنية التحتية" },
+            { text: "تحتاج إلى تعلم تقنيات متعددة" },
+            { text: "تحتاج إلى التعامل مع عمليات النشر المعقدة" },
+            { text: "تحتاج إلى تنفيذ المصادقة والمدفوعات بنفسك" },
+            { text: "تحتاج إلى وقت كبير للتصحيح والتحسين" }
           ]
         },
         shipbase: {
-          title: "Using ShipBase",
+          title: "استخدام ShipBase",
           items: [
-            { text: "Complete basic setup in 5 minutes" },
-            { text: "Complete solution out of the box" },
-            { text: "One-click deployment to production" },
-            { text: "Pre-configured authentication and payments" },
-            { text: "Focus on product feature development" }
+            { text: "إكمال الإعداد الأساسي في 5 دقائق" },
+            { text: "حل كامل جاهز للاستخدام" },
+            { text: "نشر بنقرة واحدة إلى الإنتاج" },
+            { text: "المصادقة والمدفوعات المُعدة مسبقًا" },
+            { text: "التركيز على تطوير ميزات المنتج" }
           ]
         }
       },
       cta: {
-        title: "Ready to Build Your AI SaaS?",
-        subtitle: "Get ShipBase now and launch your next project in minutes",
-        primaryButton: "Get ShipBase",
-        secondaryButton: "View Documentation"
+        title: "هل أنت مستعد لبناء SaaS للذكاء الاصطناعي الخاص بك؟",
+        subtitle: "احصل على ShipBase الآن وأطلق مشروعك التالي في دقائق",
+        primaryButton: "احصل على ShipBase",
+        secondaryButton: "عرض الوثائق"
       }
     },
     pricing: {
-      title: "Pricing",
-      subtitle: "Simple, transparent pricing",
-      description: "Choose the plan that fits your needs. Start free and scale as you grow.",
-      plansTitle: "Choose Your Plan",
-      plansSubtitle: "Simple, transparent pricing with no hidden fees. Choose the plan that best fits your needs and upgrade anytime.",
+      title: "الأسعار",
+      subtitle: "أسعار بسيطة وشفافة",
+      description: "اختر الخطة التي تناسب احتياجاتك. ابدأ مجانًا وتوسع مع نموك.",
+      plansTitle: "اختر خطتك",
+      plansSubtitle: "أسعار بسيطة وشفافة بدون رسوم مخفية. اختر الخطة التي تناسب احتياجاتك بشكل أفضل وقم بالترقية في أي وقت.",
       billingCycles: {
         "one-time": {
-          label: "One-time Payment",
-          description: "Pay once, use forever"
+          label: "دفع لمرة واحدة",
+          description: "ادفع مرة واحدة، استخدم للأبد"
         },
         "monthly": {
-          label: "Monthly",
-          description: "Flexible billing, cancel anytime"
+          label: "شهريًا",
+          description: "فوترة مرنة، ألغِ في أي وقت"
         },
         "yearly": {
-          label: "Yearly",
-          description: "Save 20% with annual billing"
+          label: "سنويًا",
+          description: "وفر 20% مع الفوترة السنوية"
         }
       },
       plans: [
         {
-          name: "Free",
+          name: "مجاني",
           price: "$0",
-          period: "Forever",
-          description: "Perfect for individual developers and small projects",
+          period: "للأبد",
+          description: "مثالي للمطورين الأفراد والمشاريع الصغيرة",
           features: [
-            "Basic Next.js templates",
-            "GitHub integration",
-            "Community support",
-            "Basic documentation",
-            "Personal use license"
+            "قوالب Next.js الأساسية",
+            "تكامل GitHub",
+            "دعم المجتمع",
+            "الوثائق الأساسية",
+            "ترخيص للاستخدام الشخصي"
           ],
           limitations: [
-            "No commercial use",
-            "No technical support",
-            "Limited features"
+            "لا الاستخدام التجاري",
+            "لا دعم فني",
+            "ميزات محدودة"
           ],
-          cta: "Get Started",
+          cta: "ابدأ الآن",
           popular: false
         },
         {
-          name: "Professional",
+          name: "احترافي",
           price: "$299",
-          period: "One-time payment",
-          description: "Perfect for startups and small businesses",
+          period: "دفع لمرة واحدة",
+          description: "مثالي للشركات الناشئة والمؤسسات الصغيرة",
           features: [
-            "Complete feature templates",
-            "Authentication system",
-            "Payment integration",
-            "Database setup",
-            "AI integration",
-            "One-click deployment",
-            "Email support",
-            "Commercial use license",
-            "Source code access"
+            "قوالب الميزات الكاملة",
+            "نظام المصادقة",
+            "تكامل المدفوعات",
+            "إعداد قاعدة البيانات",
+            "تكامل الذكاء الاصطناعي",
+            "نشر بنقرة واحدة",
+            "دعم البريد الإلكتروني",
+            "ترخيص الاستخدام التجاري",
+            "الوصول إلى الكود المصدري"
           ],
           limitations: [],
-          cta: "Buy Now",
+          cta: "اشتري الآن",
           popular: true
         },
         {
-          name: "Enterprise",
+          name: "المؤسسة",
           price: "$999",
-          period: "One-time payment",
-          description: "Perfect for large enterprises and teams",
+          period: "دفع لمرة واحدة",
+          description: "مثالي للمؤسسات الكبيرة والفرق",
           features: [
-            "All Professional features",
-            "Advanced AI features",
-            "Multi-tenant support",
-            "Advanced analytics",
-            "Priority technical support",
-            "Custom development services",
-            "Team collaboration features",
-            "SLA guarantee",
-            "Training services"
+            "جميع ميزات الاحترافي",
+            "ميزات الذكاء الاصطناعي المتقدمة",
+            "دعم متعدد المستأجرين",
+            "التحليلات المتقدمة",
+            "دعم فني ذو أولوية",
+            "خدمات التطوير المخصصة",
+            "ميزات تعاون الفريق",
+            "ضمان SLA",
+            "خدمات التدريب"
           ],
           limitations: [],
-          cta: "Contact Sales",
+          cta: "اتصل بالمبيعات",
           popular: false
         }
       ],
       cta: {
-        getStarted: "Get Started",
-        buyNow: "Buy Now",
-        contactSales: "Contact Sales",
-        currentPlan: "Current Plan"
+        getStarted: "ابدأ الآن",
+        buyNow: "اشتري الآن",
+        contactSales: "اتصل بالمبيعات",
+        currentPlan: "الخطة الحالية"
       },
       features: {
-        included: "Included Features",
-        limitations: "Limitations"
+        included: "الميزات المضمنة",
+        limitations: "القيود"
       },
       pricing: {
-        free: "Free",
-        popular: "Popular",
-        discount: "Discount",
-        save: "Save",
-        perMonth: "per month",
-        perYear: "per year",
-        oneTime: "one-time",
-        forever: "forever"
+        free: "مجاني",
+        popular: "شائع",
+        discount: "خصم",
+        save: "وفر",
+        perMonth: "شهريًا",
+        perYear: "سنويًا",
+        oneTime: "لمرة واحدة",
+        forever: "للأبد"
       },
-      faqTitle: "Frequently Asked Questions",
-      faqSubtitle: "Have more questions? We're happy to help",
+      faqTitle: "الأسئلة الشائعة",
+      faqSubtitle: "هل لديك المزيد من الأسئلة؟ نحن سعداء للمساعدة",
       faqs: [
         {
-          question: "What's the difference between Free and Paid plans?",
-          answer: "The Free plan provides basic features suitable for learning and personal projects. Paid plans include complete commercial features like authentication, payment integration, AI features, etc., suitable for commercial projects."
+          question: "ما الفرق بين خطط المجاني والمدفوع؟",
+          answer: "تقدم الخطة المجانية ميزات أساسية مناسبة للتعلم والمشاريع الشخصية. تشمل الخطط المدفوعة ميزات تجارية كاملة مثل المصادقة وتكامل المدفوعات وميزات الذكاء الاصطناعي وما إلى ذلك، مناسبة للمشاريع التجارية."
         },
         {
-          question: "What payment options do you support?",
-          answer: "We support one-time payment, monthly billing, and yearly billing. Yearly billing offers 20% discount, and one-time payment gives you lifetime access."
+          question: "ما خيارات الدفع التي تدعمونها؟",
+          answer: "ندعم الدفع لمرة واحدة والفوترة الشهرية والفوترة السنوية. تقدم الفوترة السنوية خصم 20%، والدفع لمرة واحدة يعطيك وصولًا مدى الحياة."
         },
         {
-          question: "Do you offer refunds?",
-          answer: "We offer a 30-day unconditional refund guarantee. If you're not satisfied within 30 days of purchase, you can apply for a full refund."
+          question: "هل تقدمون استرداد الأموال؟",
+          answer: "نقدم ضمان استرداد الأموال غير المشروط لمدة 30 يومًا. إذا لم تكن راضيًا خلال 30 يومًا من الشراء، يمكنك التقدم بطلب للحصول على استرداد كامل."
         },
         {
-          question: "Can I use it for commercial projects?",
-          answer: "Professional and Enterprise plans support commercial use. The Free plan is limited to personal learning and non-commercial projects."
+          question: "هل يمكنني استخدامه للمشاريع التجارية؟",
+          answer: "تخططات الاحترافي والمؤسسة تدعم الاستخدام التجاري. الخطة المجانية محدودة للتعلم الشخصي والمشاريع غير التجارية."
         },
         {
-          question: "Does it include technical support?",
-          answer: "Professional plan provides email support, Enterprise plan provides priority technical support. We respond to your questions within 24 hours."
+          question: "هل يتضمن الدعم الفني؟",
+          answer: "تخطيط الاحترافي يوفر دعم البريد الإلكتروني، تخطيط المؤسسة يوفر دعم فني ذو أولوية. نرد على أسئلتك في غضون 24 ساعة."
         },
         {
-          question: "How do I upgrade to a higher plan?",
-          answer: "You can upgrade to a higher plan anytime by paying the price difference. After upgrade, you'll immediately enjoy all features of the new plan."
+          question: "كيف أقوم بالترقية إلى خطة أعلى؟",
+          answer: "يمكنك الترقية إلى خطة أعلى في أي وقت عن طريق دفع فرق السعر. بعد الترقية، ستحصل فورًا على جميع ميزات الخطة الجديدة."
         },
         {
-          question: "What are the benefits of yearly billing?",
-          answer: "Yearly billing offers 20% discount compared to monthly billing, saving you more money while reducing billing frequency for convenience."
+          question: "ما فوائد الفوترة السنوية؟",
+          answer: "تقدم الفوترة السنوية خصم 20% مقارنة بالفوترة الشهرية، مما يوفر لك المزيد من المال مع تقليل تكرار الفوترة للراحة."
         }
       ]
     },
     docs: {
-      title: "Documentation",
-      subtitle: "Everything you need to get started",
-      description: "Comprehensive guides, API references, and tutorials to help you build amazing applications.",
+      title: "الوثائق",
+      subtitle: "كل ما تحتاجه للبدء",
+      description: "أدلة شاملة ومراجع API ودروس لمساعدتك في بناء تطبيقات مذهلة.",
       quickStart: {
-        title: "Quick Start",
-        subtitle: "Get started with ShipBase in just a few simple steps to build your AI SaaS application",
+        title: "البدء السريع",
+        subtitle: "ابدأ مع ShipBase في خطوات بسيطة فقط لبناء تطبيق SaaS للذكاء الاصطناعي",
         steps: [
           {
             step: "1",
-            title: "Install ShipBase",
-            description: "Clone the repository and install dependencies",
+            title: "تثبيت ShipBase",
+            description: "استنسخ المستودع وثبت التبعيات",
             code: "git clone https://github.com/your-repo/shipbase\ncd shipbase\npnpm install"
           },
           {
             step: "2",
-            title: "Configure Environment",
-            description: "Set up necessary API keys and configuration",
+            title: "تكوين البيئة",
+            description: "قم بإعداد مفاتيح API والإعدادات اللازمة",
             code: "cp .env.example .env.local\n# Edit .env.local file"
           },
           {
             step: "3",
-            title: "Start Development Server",
-            description: "Run the project locally",
+            title: "بدء خادم التطوير",
+            description: "قم بتشغيل المشروع محليًا",
             code: "pnpm dev\n# Visit http://localhost:3000"
           },
           {
             step: "4",
-            title: "Deploy to Production",
-            description: "One-click deployment to Vercel",
+            title: "النشر إلى الإنتاج",
+            description: "نشر بنقرة واحدة إلى Vercel",
             code: "pnpm build\nvercel deploy"
           }
         ]
       },
       navigation: {
-        title: "Documentation Navigation",
-        subtitle: "Browse our complete documentation to find all the information you need",
+        title: "تنقل الوثائق",
+        subtitle: "تصفح وثائقنا الكاملة للعثور على جميع المعلومات التي تحتاجها",
         sections: [
           {
-            title: "Quick Start",
-            description: "Get up and running with ShipBase in 5 minutes",
+            title: "البدء السريع",
+            description: "ابدأ واستمر مع ShipBase في 5 دقائق",
             icon: "Rocket",
             links: [
-              { name: "Installation Guide", href: "#" },
-              { name: "Environment Setup", href: "#" },
-              { name: "First Application", href: "#" }
+              { name: "دليل التثبيت", href: "#" },
+              { name: "إعداد البيئة", href: "#" },
+              { name: "أول تطبيق", href: "#" }
             ]
           },
           {
-            title: "Core Features",
-            description: "Learn about ShipBase's core functionality",
+            title: "الميزات الأساسية",
+            description: "تعرف على الوظائف الأساسية لـ ShipBase",
             icon: "Code",
             links: [
-              { name: "Authentication", href: "#" },
-              { name: "Payment Integration", href: "#" },
-              { name: "Database Setup", href: "#" },
-              { name: "AI Integration", href: "#" }
+              { name: "المصادقة", href: "#" },
+              { name: "تكامل المدفوعات", href: "#" },
+              { name: "إعداد قاعدة البيانات", href: "#" },
+              { name: "تكامل الذكاء الاصطناعي", href: "#" }
             ]
           },
           {
-            title: "API Reference",
-            description: "Complete API documentation and examples",
+            title: "مرجع API",
+            description: "وثائق API كاملة وأمثلة",
             icon: "Database",
             links: [
               { name: "REST API", href: "#" },
@@ -626,1193 +626,1193 @@ export const arDictionary: AppDictionary = {
             ]
           },
           {
-            title: "Deployment Guide",
-            description: "Deploy your application to production",
+            title: "دليل النشر",
+            description: "انشر تطبيقك إلى الإنتاج",
             icon: "Globe",
             links: [
-              { name: "Vercel Deployment", href: "#" },
+              { name: "نشر Vercel", href: "#" },
               { name: "Cloudflare Pages", href: "#" },
-              { name: "Docker Deployment", href: "#" },
-              { name: "Environment Config", href: "#" }
+              { name: "نشر Docker", href: "#" },
+              { name: "إعداد البيئة", href: "#" }
             ]
           },
           {
-            title: "Best Practices",
-            description: "Best practices for development and production",
+            title: "أفضل الممارسات",
+            description: "أفضل الممارسات للتطوير والإنتاج",
             icon: "Shield",
             links: [
-              { name: "Security Guide", href: "#" },
-              { name: "Performance Optimization", href: "#" },
-              { name: "Monitoring & Logging", href: "#" },
-              { name: "Error Handling", href: "#" }
+              { name: "دليل الأمان", href: "#" },
+              { name: "تحسين الأداء", href: "#" },
+              { name: "المراقبة والتسجيل", href: "#" },
+              { name: "معالجة الأخطاء", href: "#" }
             ]
           },
           {
-            title: "Troubleshooting",
-            description: "Common issues and solutions",
+            title: "استكشاف الأخطاء",
+            description: "المشاكل الشائعة والحلول",
             icon: "Zap",
             links: [
-              { name: "FAQ", href: "#" },
-              { name: "Error Codes", href: "#" },
-              { name: "Debugging Tips", href: "#" },
-              { name: "Community Support", href: "#" }
+              { name: "الأسئلة الشائعة", href: "#" },
+              { name: "أكواد الخطأ", href: "#" },
+              { name: "نصائح التصحيح", href: "#" },
+              { name: "دعم المجتمع", href: "#" }
             ]
           }
         ]
       },
       support: {
-        title: "Need Help?",
-        subtitle: "Our community and support team are here to help",
-        description: "Join our Discord community or check out the FAQ.",
-        discordButton: "Join Discord",
-        faqButton: "View FAQ"
+        title: "تحتاج مساعدة؟",
+        subtitle: "مجتمعنا وفريق الدعم هنا للمساعدة",
+        description: "انضم إلى مجتمع Discord الخاص بنا أو تحقق من الأسئلة الشائعة.",
+        discordButton: "انضم إلى Discord",
+        faqButton: "عرض الأسئلة الشائعة"
       }
     },
     integrations: {
-      title: "Integrations",
-      subtitle: "Connect with your favorite tools",
-      description: "Seamlessly integrate ShipBase with your existing workflow and third-party services.",
+      title: "التكاملات",
+      subtitle: "تواصل مع أدواتك المفضلة",
+      description: "دمج ShipBase بسلاسة مع سير العمل الحالي الخاص بك وخدمات الطرف الثالث.",
       categories: [
         {
-          name: "Authentication & Security",
-          description: "Secure and reliable user authentication solutions",
+          name: "المصادقة والأمان",
+          description: "حلول مصادقة المستخدم الآمنة والموثوقة",
           icon: "Shield",
           integrations: [
             {
               name: "Google OAuth",
-              description: "Quick login with Google accounts",
+              description: "تسجيل دخول سريع باستخدام حسابات Google",
               logo: "/api/placeholder/40/40",
               status: "available",
-              features: ["One-click login", "User info sync", "Secure & reliable"],
+              features: ["تسجيل دخول بنقرة واحدة", "مزامنة معلومات المستخدم", "آمن وموثوق"],
               documentation: "/docs/auth/google"
             },
             {
               name: "GitHub OAuth",
-              description: "Developer-friendly GitHub login",
+              description: "تسجيل دخول صديق للمطورين باستخدام GitHub",
               logo: "/api/placeholder/40/40",
               status: "available",
-              features: ["Developer auth", "Repository access", "Team collaboration"],
+              features: ["مصادقة المطورين", "الوصول إلى المستودع", "تعاون الفريق"],
               documentation: "/docs/auth/github"
             },
             {
               name: "Magic Link",
-              description: "Passwordless login experience",
+              description: "تجربة تسجيل دخول بدون كلمة مرور",
               logo: "/api/placeholder/40/40",
               status: "available",
-              features: ["Email verification", "Passwordless login", "Secure & convenient"],
+              features: ["التحقق من البريد الإلكتروني", "تسجيل دخول بدون كلمة مرور", "آمن ومريح"],
               documentation: "/docs/auth/magic-link"
             }
           ]
         },
         {
-          name: "Payments & Billing",
-          description: "Complete payment and subscription management solutions",
+          name: "المدفوعات والفوترة",
+          description: "حلول كاملة لإدارة المدفوعات والاشتراكات",
           icon: "CreditCard",
           integrations: [
             {
               name: "Stripe",
-              description: "Global leading payment processing platform",
+              description: "منصة معالجة المدفوعات الرائدة عالميًا",
               logo: "/api/placeholder/40/40",
               status: "available",
-              features: ["Subscription management", "One-time payments", "Invoice system", "Webhook support"],
+              features: ["إدارة الاشتراكات", "المدفوعات لمرة واحدة", "نظام الفواتير", "دعم Webhook"],
               documentation: "/docs/payments/stripe"
             },
             {
               name: "PayPal",
-              description: "Trusted payment method by global users",
+              description: "طريقة دفع موثوقة من قبل المستخدمين العالميين",
               logo: "/api/placeholder/40/40",
               status: "coming-soon",
-              features: ["PayPal payments", "Subscription management", "Refund processing"]
+              features: ["مدفوعات PayPal", "إدارة الاشتراكات", "معالجة الاسترداد"]
             }
           ]
         },
         {
-          name: "Database & Storage",
-          description: "Reliable data storage and management services",
+          name: "قاعدة البيانات والتخزين",
+          description: "خدمات تخزين وإدارة البيانات الموثوقة",
           icon: "Database",
           integrations: [
             {
               name: "Supabase",
-              description: "Open-source Firebase alternative",
+              description: "بديل Firebase مفتوح المصدر",
               logo: "/api/placeholder/40/40",
               status: "available",
-              features: ["PostgreSQL database", "Real-time subscriptions", "File storage", "Row Level Security"],
+              features: ["قاعدة بيانات PostgreSQL", "اشتراكات الوقت الفعلي", "تخزين الملفات", "أمان مستوى الصف"],
               documentation: "/docs/database/supabase"
             },
             {
               name: "PlanetScale",
-              description: "Serverless MySQL database",
+              description: "قاعدة بيانات MySQL بدون خادم",
               logo: "/api/placeholder/40/40",
               status: "beta",
-              features: ["Serverless architecture", "Branch management", "Auto-scaling"]
+              features: ["بنية بدون خادم", "إدارة الفروع", "التوسع التلقائي"]
             }
           ]
         },
         {
-          name: "AI & Machine Learning",
-          description: "Powerful AI service integrations",
+          name: "الذكاء الاصطناعي والتعلم الآلي",
+          description: "تكاملات قوية لخدمات الذكاء الاصطناعي",
           icon: "Bot",
           integrations: [
             {
               name: "OpenAI",
-              description: "Leading AI language model service",
+              description: "خدمة نموذج اللغة الذكاء الاصطناعي الرائدة",
               logo: "/api/placeholder/40/40",
               status: "available",
-              features: ["GPT models", "Embeddings", "Image generation", "API management"],
+              features: ["نماذج GPT", "التضمينات", "توليد الصور", "إدارة API"],
               documentation: "/docs/ai/openai"
             },
             {
               name: "Anthropic",
-              description: "Claude AI model service",
+              description: "خدمة نموذج Claude AI",
               logo: "/api/placeholder/40/40",
               status: "available",
-              features: ["Claude models", "Long text processing", "Safe conversations"],
+              features: ["نماذج Claude", "معالجة النصوص الطويلة", "محادثات آمنة"],
               documentation: "/docs/ai/anthropic"
             },
             {
               name: "Hugging Face",
-              description: "Open-source AI model platform",
+              description: "منصة نماذج الذكاء الاصطناعي مفتوحة المصدر",
               logo: "/api/placeholder/40/40",
               status: "beta",
-              features: ["Open-source models", "Model hosting", "Inference API"]
+              features: ["نماذج مفتوحة المصدر", "استضافة النماذج", "API الاستدلال"]
             }
           ]
         },
         {
-          name: "Analytics & Monitoring",
-          description: "Deep insights into user behavior and system performance",
+          name: "التحليلات والمراقبة",
+          description: "رؤى عميقة حول سلوك المستخدم وأداء النظام",
           icon: "BarChart3",
           integrations: [
             {
               name: "Google Analytics",
-              description: "Comprehensive website analytics tool",
+              description: "أداة تحليلات المواقع الشاملة",
               logo: "/api/placeholder/40/40",
               status: "available",
-              features: ["User behavior analysis", "Conversion tracking", "Real-time reports", "Custom events"],
+              features: ["تحليل سلوك المستخدم", "تتبع التحويلات", "تقارير الوقت الفعلي", "أحداث مخصصة"],
               documentation: "/docs/analytics/google"
             },
             {
               name: "Mixpanel",
-              description: "Product analytics platform",
+              description: "منصة تحليلات المنتج",
               logo: "/api/placeholder/40/40",
               status: "coming-soon",
-              features: ["Event tracking", "User profiles", "Funnel analysis"]
+              features: ["تتبع الأحداث", "ملفات المستخدمين", "تحليل القمع"]
             },
             {
               name: "Sentry",
-              description: "Error monitoring and performance tracking",
+              description: "مراقبة الأخطاء وتتبع الأداء",
               logo: "/api/placeholder/40/40",
               status: "beta",
-              features: ["Error monitoring", "Performance tracking", "Release tracking"]
+              features: ["مراقبة الأخطاء", "تتبع الأداء", "تتبع الإصدارات"]
             }
           ]
         },
         {
-          name: "Communication & Notifications",
-          description: "Multi-channel user communication solutions",
+          name: "الاتصالات والإشعارات",
+          description: "حلول اتصال المستخدم متعددة القنوات",
           icon: "Mail",
           integrations: [
             {
               name: "SendGrid",
-              description: "Reliable email delivery service",
+              description: "خدمة إرسال بريد إلكتروني موثوقة",
               logo: "/api/placeholder/40/40",
               status: "available",
-              features: ["Email sending", "Template management", "Delivery stats", "Webhook support"],
+              features: ["إرسال البريد الإلكتروني", "إدارة القوالب", "إحصائيات التسليم", "دعم Webhook"],
               documentation: "/docs/email/sendgrid"
             },
             {
               name: "Twilio",
-              description: "Global communication platform",
+              description: "منصة الاتصالات العالمية",
               logo: "/api/placeholder/40/40",
               status: "coming-soon",
-              features: ["SMS sending", "Voice calls", "Video calls"]
+              features: ["إرسال SMS", "المكالمات الصوتية", "مكالمات الفيديو"]
             },
             {
               name: "Slack",
-              description: "Team collaboration and notifications",
+              description: "تعاون الفريق والإشعارات",
               logo: "/api/placeholder/40/40",
               status: "beta",
-              features: ["Message sending", "Channel integration", "Workflow automation"]
+              features: ["إرسال الرسائل", "تكامل القناة", "أتمتة سير العمل"]
             }
           ]
         }
       ],
       popularIntegrations: {
-        title: "Popular Integrations",
-        subtitle: "Most loved integration services by developers",
+        title: "التكاملات الشائعة",
+        subtitle: "خدمات التكامل الأكثر شعبية بين المطورين",
         items: [
           {
             name: "Stripe",
-            description: "Global leading payment processing platform",
+            description: "منصة معالجة المدفوعات الرائدة عالميًا",
             logo: "/api/placeholder/60/60",
             status: "available",
-            features: ["Subscription management", "One-time payments", "Invoice system"]
+            features: ["إدارة الاشتراكات", "المدفوعات لمرة واحدة", "نظام الفواتير"]
           },
           {
             name: "OpenAI",
-            description: "Leading AI language model service",
+            description: "خدمة نموذج اللغة الذكاء الاصطناعي الرائدة",
             logo: "/api/placeholder/60/60",
             status: "available",
-            features: ["GPT models", "Embeddings", "Image generation"]
+            features: ["نماذج GPT", "التضمينات", "توليد الصور"]
           },
           {
             name: "Supabase",
-            description: "Open-source Firebase alternative",
+            description: "بديل Firebase مفتوح المصدر",
             logo: "/api/placeholder/60/60",
             status: "available",
-            features: ["PostgreSQL", "Real-time subscriptions", "File storage"]
+            features: ["PostgreSQL", "اشتراكات الوقت الفعلي", "تخزين الملفات"]
           },
           {
             name: "Google Analytics",
-            description: "Comprehensive website analytics tool",
+            description: "أداة تحليلات المواقع الشاملة",
             logo: "/api/placeholder/60/60",
             status: "available",
-            features: ["User analytics", "Conversion tracking", "Real-time reports"]
+            features: ["تحليلات المستخدم", "تتبع التحويلات", "تقارير الوقت الفعلي"]
           }
         ]
       },
       gettingStarted: {
-        title: "Getting Started",
-        subtitle: "Integrate the services you need in just a few steps",
+        title: "البدء",
+        subtitle: "دمج الخدمات التي تحتاجها في خطوات قليلة فقط",
         steps: [
           {
             step: "1",
-            title: "Choose Integration Service",
-            description: "Browse our integration catalog and select the service you need",
+            title: "اختر خدمة التكامل",
+            description: "تصفح فهرس التكاملات واختر الخدمة التي تحتاجها",
             code: "# View available integrations\nnpm run list-integrations"
           },
           {
             step: "2",
-            title: "Configure Environment Variables",
-            description: "Add necessary API keys and configuration",
+            title: "تكوين متغيرات البيئة",
+            description: "أضف مفاتيح API والإعدادات اللازمة",
             code: "# Configure environment variables\ncp .env.example .env.local\n# Edit .env.local file"
           },
           {
             step: "3",
-            title: "Install Integration Package",
-            description: "Install the corresponding integration package and dependencies",
+            title: "تثبيت حزمة التكامل",
+            description: "ثبت حزمة التكامل المقابلة والتبعيات",
             code: "# Install integration package\npnpm add @shipbase/integrations-stripe"
           },
           {
             step: "4",
-            title: "Initialize Integration",
-            description: "Initialize the integration service in your application",
+            title: "تهيئة التكامل",
+            description: "قم بتهيئة خدمة التكامل في تطبيقك",
             code: "# Initialize integration\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\nconst stripe = new StripeIntegration()"
           }
         ]
       },
       cta: {
-        title: "Ready to Start Integrating?",
-        subtitle: "Start using ShipBase's powerful integration features right away",
-        primaryButton: "View Documentation",
-        secondaryButton: "Contact Support"
+        title: "هل أنت مستعد لبدء التكامل؟",
+        subtitle: "ابدأ في استخدام ميزات التكامل القوية لـ ShipBase على الفور",
+        primaryButton: "عرض الوثائق",
+        secondaryButton: "اتصل بالدعم"
       }
     },
     help: {
-      title: "Help Center",
-      subtitle: "Get the support you need",
-      description: "Find answers to common questions, troubleshooting guides, and best practices.",
-      searchPlaceholder: "Search help articles...",
+      title: "مركز المساعدة",
+      subtitle: "احصل على الدعم الذي تحتاجه",
+      description: "ابحث عن إجابات للأسئلة الشائعة وأدلة استكشاف الأخطاء وأفضل الممارسات.",
+      searchPlaceholder: "بحث المقالات المساعدة...",
       popularArticles: {
-        title: "Popular Articles",
-        subtitle: "Most viewed help articles",
+        title: "المقالات الشائعة",
+        subtitle: "أكثر مقالات المساعدة مشاهدة",
         articles: [
           {
-            title: "Getting Started with ShipBase",
-            description: "Learn how to quickly set up and deploy your first AI SaaS application",
+            title: "البدء مع ShipBase",
+            description: "تعلم كيفية إعداد ونشر تطبيق SaaS للذكاء الاصطناعي الأول بسرعة",
             href: "#",
-            tags: ["Quick Start", "Deployment", "Setup"]
+            tags: ["البدء السريع", "النشر", "الإعداد"]
           },
           {
-            title: "Authentication Configuration Guide",
-            description: "Detailed instructions for configuring Google OAuth, GitHub OAuth, and Magic Link",
+            title: "دليل تكوين المصادقة",
+            description: "تعليمات مفصلة لتكوين Google OAuth و GitHub OAuth و Magic Link",
             href: "#",
-            tags: ["Authentication", "OAuth", "Configuration"]
+            tags: ["المصادقة", "OAuth", "التكوين"]
           },
           {
-            title: "Stripe Payment Integration",
-            description: "How to set up subscriptions, one-time payments, and invoice management",
+            title: "تكامل مدفوعات Stripe",
+            description: "كيفية إعداد الاشتراكات والمدفوعات لمرة واحدة وإدارة الفواتير",
             href: "#",
-            tags: ["Payments", "Stripe", "Subscriptions"]
+            tags: ["المدفوعات", "Stripe", "الاشتراكات"]
           },
           {
-            title: "AI Features Integration",
-            description: "Complete guide to integrating OpenAI, Anthropic, and other AI services",
+            title: "تكامل ميزات الذكاء الاصطناعي",
+            description: "دليل كامل لدمج OpenAI و Anthropic وخدمات الذكاء الاصطناعي الأخرى",
             href: "#",
-            tags: ["AI", "OpenAI", "Integration"]
+            tags: ["الذكاء الاصطناعي", "OpenAI", "التكامل"]
           },
           {
-            title: "Database Setup and Migration",
-            description: "Supabase database configuration and data migration best practices",
+            title: "إعداد قاعدة البيانات والهجرة",
+            description: "أفضل الممارسات لتكوين قاعدة بيانات Supabase وهجرة البيانات",
             href: "#",
-            tags: ["Database", "Supabase", "Migration"]
+            tags: ["قاعدة البيانات", "Supabase", "الهجرة"]
           },
           {
-            title: "Deploy to Production",
-            description: "Detailed steps for Vercel and Cloudflare deployment",
+            title: "النشر إلى الإنتاج",
+            description: "خطوات مفصلة للنشر على Vercel و Cloudflare",
             href: "#",
-            tags: ["Deployment", "Vercel", "Production"]
+            tags: ["النشر", "Vercel", "الإنتاج"]
           }
         ]
       },
-      categoriesTitle: "Help Categories",
-      categoriesSubtitle: "Browse help articles by category",
+      categoriesTitle: "فئات المساعدة",
+      categoriesSubtitle: "تصفح مقالات المساعدة حسب الفئة",
       categories: [
         {
-          title: "Quick Start",
-          description: "New user onboarding guides",
+          title: "البدء السريع",
+          description: "أدلة إعداد المستخدمين الجدد",
           icon: "Rocket",
           articles: [
             {
-              title: "Installation and Setup",
-              description: "Set up a ShipBase project from scratch",
+              title: "التثبيت والإعداد",
+              description: "إعداد مشروع ShipBase من الصفر",
               href: "#",
-              tags: ["Installation", "Setup", "Environment"]
+              tags: ["التثبيت", "الإعداد", "البيئة"]
             },
             {
-              title: "First Application",
-              description: "Create your first AI SaaS application",
+              title: "أول تطبيق",
+              description: "إنشاء أول تطبيق SaaS للذكاء الاصطناعي الخاص بك",
               href: "#",
-              tags: ["Tutorial", "Application", "Development"]
+              tags: ["الدليل", "التطبيق", "التطوير"]
             },
             {
-              title: "Environment Variables Configuration",
-              description: "Properly configure all necessary environment variables",
+              title: "تكوين متغيرات البيئة",
+              description: "قم بتكوين جميع متغيرات البيئة اللازمة بشكل صحيح",
               href: "#",
-              tags: ["Configuration", "Environment Variables", "API Keys"]
+              tags: ["التكوين", "متغيرات البيئة", "مفاتيح API"]
             }
           ]
         },
         {
-          title: "Core Features",
-          description: "Usage guides for ShipBase main features",
+          title: "الميزات الأساسية",
+          description: "أدلة الاستخدام للميزات الرئيسية لـ ShipBase",
           icon: "Code",
           articles: [
             {
-              title: "Authentication System",
-              description: "User login, registration, and session management",
+              title: "نظام المصادقة",
+              description: "تسجيل الدخول والتسجيل وإدارة الجلسات",
               href: "#",
-              tags: ["Authentication", "User Management", "Sessions"]
+              tags: ["المصادقة", "إدارة المستخدمين", "الجلسات"]
             },
             {
-              title: "Payment Processing",
-              description: "Subscription management and payment flows",
+              title: "معالجة المدفوعات",
+              description: "إدارة الاشتراكات وتدفقات المدفوعات",
               href: "#",
-              tags: ["Payments", "Subscriptions", "Billing"]
+              tags: ["المدفوعات", "الاشتراكات", "الفوترة"]
             },
             {
-              title: "Database Operations",
-              description: "Data storage and query best practices",
+              title: "عمليات قاعدة البيانات",
+              description: "أفضل الممارسات لتخزين البيانات والاستعلامات",
               href: "#",
-              tags: ["Database", "Queries", "Storage"]
+              tags: ["قاعدة البيانات", "الاستعلامات", "التخزين"]
             },
             {
-              title: "AI Integration",
-              description: "Integration and usage of AI services",
+              title: "تكامل الذكاء الاصطناعي",
+              description: "تكامل واستخدام خدمات الذكاء الاصطناعي",
               href: "#",
-              tags: ["AI", "Machine Learning", "API"]
+              tags: ["الذكاء الاصطناعي", "تعلم الآلة", "API"]
             }
           ]
         },
         {
-          title: "Deployment & Operations",
-          description: "Production deployment and operations guides",
+          title: "النشر والعمليات",
+          description: "أدلة النشر إلى الإنتاج والعمليات",
           icon: "Globe",
           articles: [
             {
-              title: "Vercel Deployment",
-              description: "Deploy your application using Vercel",
+              title: "نشر Vercel",
+              description: "انشر تطبيقك باستخدام Vercel",
               href: "#",
-              tags: ["Vercel", "Deployment", "CDN"]
+              tags: ["Vercel", "النشر", "CDN"]
             },
             {
               title: "Cloudflare Pages",
-              description: "Cloudflare Pages deployment guide",
+              description: "دليل النشر على Cloudflare Pages",
               href: "#",
-              tags: ["Cloudflare", "Deployment", "Edge Computing"]
+              tags: ["Cloudflare", "النشر", "الحوسبة الحدية"]
             },
             {
-              title: "Environment Management",
-              description: "Development, testing, and production environment management",
+              title: "إدارة البيئة",
+              description: "إدارة بيئات التطوير والاختبار والإنتاج",
               href: "#",
-              tags: ["Environment", "Configuration", "Management"]
+              tags: ["البيئة", "التكوين", "الإدارة"]
             },
             {
-              title: "Monitoring and Logging",
-              description: "Application monitoring and logging",
+              title: "المراقبة والتسجيل",
+              description: "مراقبة وتسجيل التطبيق",
               href: "#",
-              tags: ["Monitoring", "Logging", "Analytics"]
+              tags: ["المراقبة", "التسجيل", "التحليلات"]
             }
           ]
         },
         {
-          title: "Troubleshooting",
-          description: "Common issues and solutions",
+          title: "استكشاف الأخطاء",
+          description: "المشاكل الشائعة والحلول",
           icon: "Zap",
           articles: [
             {
-              title: "Common Errors",
-              description: "Resolve common deployment and runtime errors",
+              title: "الأخطاء الشائعة",
+              description: "حل أخطاء النشر والوقت الفعلي الشائعة",
               href: "#",
-              tags: ["Errors", "Debugging", "Resolution"]
+              tags: ["الأخطاء", "التصحيح", "الحل"]
             },
             {
-              title: "Performance Optimization",
-              description: "Tips to improve application performance",
+              title: "تحسين الأداء",
+              description: "نصائح لتحسين أداء التطبيق",
               href: "#",
-              tags: ["Performance", "Optimization", "Speed"]
+              tags: ["الأداء", "التحسين", "السرعة"]
             },
             {
-              title: "Security Best Practices",
-              description: "Protect your application and data security",
+              title: "أفضل ممارسات الأمان",
+              description: "حماية أمان تطبيقك وبياناتك",
               href: "#",
-              tags: ["Security", "Best Practices", "Protection"]
+              tags: ["الأمان", "أفضل الممارسات", "الحماية"]
             }
           ]
         }
       ],
       faq: {
-        title: "Frequently Asked Questions",
-        subtitle: "Quickly find the answers you need",
+        title: "الأسئلة الشائعة",
+        subtitle: "ابحث بسرعة عن الإجابات التي تحتاجها",
         faqs: [
           {
-            question: "Which AI services does ShipBase support?",
-            answer: "ShipBase supports mainstream AI services like OpenAI, Anthropic, Google AI, and provides a unified interface to manage different AI providers."
+            question: "ما خدمات الذكاء الاصطناعي التي يدعمها ShipBase؟",
+            answer: "يدعم ShipBase خدمات الذكاء الاصطناعي الرئيسية مثل OpenAI و Anthropic و Google AI، ويوفر واجهة موحدة لإدارة مزودي الذكاء الاصطناعي المختلفين."
           },
           {
-            question: "How can I customize ShipBase's interface?",
-            answer: "ShipBase uses Tailwind CSS and Shadcn/UI, making it easy to customize styles. All components are customizable and support theme switching."
+            question: "كيف يمكنني تخصيص واجهة ShipBase؟",
+            answer: "يستخدم ShipBase Tailwind CSS و Shadcn/UI، مما يجعل تخصيص الأنماط سهلاً. جميع المكونات قابلة للتخصيص وتدعم تبديل المظهر."
           },
           {
-            question: "Does ShipBase support multiple languages?",
-            answer: "Yes, ShipBase has built-in internationalization support. Currently supports Chinese, English, and Japanese, and you can easily add more languages."
+            question: "هل يدعم ShipBase لغات متعددة؟",
+            answer: "نعم، لدى ShipBase دعم متعدد اللغات مدمج. يدعم حاليًا الصينية والإنجليزية واليابانية، ويمكنك بسهولة إضافة المزيد من اللغات."
           },
           {
-            question: "How do I upgrade ShipBase versions?",
-            answer: "You can upgrade ShipBase by pulling the latest code via Git. We recommend backing up your custom code before upgrading."
+            question: "كيف أقوم بترقية إصدارات ShipBase؟",
+            answer: "يمكنك ترقية ShipBase من خلال سحب أحدث الكود عبر Git. نوصي بعمل نسخة احتياطية من الكود المخصص الخاص بك قبل الترقية."
           },
           {
-            question: "How is ShipBase's performance?",
-            answer: "ShipBase is built on Next.js 14+ with Server Components and Edge Runtime support, delivering excellent performance."
+            question: "كيف يكون أداء ShipBase؟",
+            answer: "ShipBase مبني على Next.js 14+ مع دعم Server Components و Edge Runtime، مما يوفر أداءً ممتازًا."
           },
           {
-            question: "How can I get technical support?",
-            answer: "You can contact us via email or join our Discord community for real-time assistance."
+            question: "كيف يمكنني الحصول على الدعم الفني؟",
+            answer: "يمكنك الاتصال بنا عبر البريد الإلكتروني أو الانضمام إلى مجتمع Discord الخاص بنا للحصول على المساعدة الفورية."
           }
         ]
       },
       contact: {
-        title: "Need More Help?",
-        subtitle: "Contact our support team",
-        description: "If you can't find the answer in our documentation, our support team is here to help.",
-        emailButton: "Send Email",
-        discordButton: "Join Discord"
+        title: "تحتاج المزيد من المساعدة؟",
+        subtitle: "اتصل بفريق الدعم الخاص بنا",
+        description: "إذا لم تجد الإجابة في وثائقنا، فريق الدعم الخاص بنا هنا للمساعدة.",
+        emailButton: "إرسال بريد إلكتروني",
+        discordButton: "انضم إلى Discord"
       }
     },
     contact: {
-      title: "Contact Us",
-      subtitle: "We're here to help",
-      description: "Get in touch with our team for support, partnerships, or general inquiries.",
-      contactMethodsTitle: "Contact Us",
-      contactMethodsSubtitle: "We'd love to hear from you. Choose the contact method that works best for you",
-      teamTitle: "Direct Team Contact",
-      teamSubtitle: "Contact the appropriate team based on your needs",
-      responseTimeTitle: "Response Times",
-      responseTimeSubtitle: "We promise to respond quickly to your requests",
+      title: "اتصل بنا",
+      subtitle: "نحن هنا للمساعدة",
+      description: "تواصل مع فريقنا للحصول على الدعم أو الشراكات أو الاستفسارات العامة.",
+      contactMethodsTitle: "اتصل بنا",
+      contactMethodsSubtitle: "نود أن نسمع منك. اختر طريقة الاتصال التي تناسبك",
+      teamTitle: "اتصال الفريق المباشر",
+      teamSubtitle: "اتصل بالفريق المناسب بناءً على احتياجاتك",
+      responseTimeTitle: "أوقات الاستجابة",
+      responseTimeSubtitle: "نعد بالرد بسرعة على طلباتك",
       contactMethods: [
         {
           icon: "Users",
-          title: "Discord Community",
-          description: "Join our Discord community to connect with other developers",
-          action: "Join Discord",
+          title: "مجتمع Discord",
+          description: "انضم إلى مجتمع Discord الخاص بنا للتواصل مع المطورين الآخرين",
+          action: "انضم إلى Discord",
           href: "#"
         },
         {
           icon: "Zap",
-          title: "Email Support",
-          description: "Send an email to support@shipbase.com",
-          action: "Send Email",
+          title: "دعم البريد الإلكتروني",
+          description: "أرسل بريدًا إلكترونيًا إلى support@shipbase.com",
+          action: "إرسال بريد إلكتروني",
           href: "mailto:support@shipbase.com"
         },
         {
           icon: "Shield",
           title: "GitHub Issues",
-          description: "Report issues or suggestions on GitHub",
-          action: "View Issues",
+          description: "الإبلاغ عن المشاكل أو الاقتراحات على GitHub",
+          action: "عرض المشاكل",
           href: "#"
         },
         {
           icon: "Rocket",
-          title: "Enterprise Partnership",
-          description: "Enterprise-level support and custom development services",
-          action: "Contact Sales",
+          title: "شراكة المؤسسة",
+          description: "دعم على مستوى المؤسسة وخدمات التطوير المخصصة",
+          action: "اتصل بالمبيعات",
           href: "mailto:sales@shipbase.com"
         }
       ],
       team: [
         {
-          name: "Technical Support",
+          name: "الدعم الفني",
           email: "support@shipbase.com",
-          description: "Technical issues and troubleshooting"
+          description: "المشاكل الفنية واستكشاف الأخطاء"
         },
         {
-          name: "Sales Team",
+          name: "فريق المبيعات",
           email: "sales@shipbase.com",
-          description: "Business partnerships and custom services"
+          description: "الشراكات التجارية والخدمات المخصصة"
         },
         {
-          name: "Product Feedback",
+          name: "ملاحظات المنتج",
           email: "feedback@shipbase.com",
-          description: "Product suggestions and feature requests"
+          description: "اقتراحات المنتج وطلبات الميزات"
         }
       ],
       responseTimes: [
         {
-          time: "< 1 hour",
-          title: "Discord Support",
-          description: "Community support with quick response"
+          time: "< 1 ساعة",
+          title: "دعم Discord",
+          description: "دعم المجتمع مع استجابة سريعة"
         },
         {
-          time: "< 24 hours",
-          title: "Email Support",
-          description: "Professional team with detailed responses"
+          time: "< 24 ساعة",
+          title: "دعم البريد الإلكتروني",
+          description: "فريق احترافي مع ردود مفصلة"
         },
         {
-          time: "< 48 hours",
-          title: "Enterprise Support",
-          description: "Custom solutions and dedicated support"
+          time: "< 48 ساعة",
+          title: "دعم المؤسسة",
+          description: "حلول مخصصة ودعم مخصص"
         }
       ]
     },
     status: {
-      title: "Service Status",
-      subtitle: "Real-time system status",
-      description: "Monitor the current status of all ShipBase services and infrastructure.",
+      title: "حالة الخدمة",
+      subtitle: "حالة النظام في الوقت الفعلي",
+      description: "راقب الحالة الحالية لجميع خدمات وبنية ShipBase التحتية.",
       overview: {
-        title: "Service Status Overview",
-        subtitle: "Real-time monitoring of all ShipBase services",
-        allSystemsOperational: "All Systems Operational",
-        lastUpdated: "Last updated",
+        title: "نظرة عامة على حالة الخدمة",
+        subtitle: "مراقبة الوقت الفعلي لجميع خدمات ShipBase",
+        allSystemsOperational: "جميع الأنظمة تعمل",
+        lastUpdated: "آخر تحديث",
       },
       services: {
-        title: "Service Status",
-        subtitle: "Current status of all ShipBase services",
+        title: "حالة الخدمة",
+        subtitle: "الحالة الحالية لجميع خدمات ShipBase",
         api: {
-          name: "API Services",
-          description: "Core API endpoints and services",
+          name: "خدمات API",
+          description: "نقاط نهاية API الأساسية والخدمات",
         },
         auth: {
-          name: "Authentication",
-          description: "User authentication and authorization",
+          name: "المصادقة",
+          description: "مصادقة المستخدم والتفويض",
         },
         payments: {
-          name: "Payment Processing",
-          description: "Stripe payment processing services",
+          name: "معالجة المدفوعات",
+          description: "خدمات معالجة المدفوعات Stripe",
         },
         database: {
-          name: "Database",
-          description: "Supabase database services",
+          name: "قاعدة البيانات",
+          description: "خدمات قاعدة بيانات Supabase",
         },
         cdn: {
           name: "CDN",
-          description: "Content delivery network",
+          description: "شبكة توصيل المحتوى",
         },
         monitoring: {
-          name: "Monitoring System",
-          description: "System monitoring and alerting",
+          name: "نظام المراقبة",
+          description: "مراقبة وإنذار النظام",
         },
-        statusOperational: "Operational",
-        statusDegraded: "Degraded Performance",
-        statusOutage: "Service Outage",
-        uptime: "Uptime",
-        lastIncident: "Last Incident",
-        none: "None",
+        statusOperational: "يعمل",
+        statusDegraded: "تدهور الأداء",
+        statusOutage: "انقطاع الخدمة",
+        uptime: "وقت التشغيل",
+        lastIncident: "آخر حادث",
+        none: "لا شيء",
       },
       subscribe: {
-        title: "Subscribe to Status Updates",
-        subtitle: "Get notified about service status changes via email or RSS",
-        emailSubscribe: "Email Subscribe",
-        rssSubscribe: "RSS Subscribe",
-        description: "Stay informed about service status changes and maintenance windows",
+        title: "الاشتراك في تحديثات الحالة",
+        subtitle: "احصل على إشعارات حول تغييرات حالة الخدمة عبر البريد الإلكتروني أو RSS",
+        emailSubscribe: "اشتراك البريد الإلكتروني",
+        rssSubscribe: "اشتراك RSS",
+        description: "ابق على اطلاع حول تغييرات حالة الخدمة ونوافذ الصيانة",
       },
     },
     privacy: {
-      title: "Privacy Policy",
-      subtitle: "Your privacy matters",
-      description: "Learn how we collect, use, and protect your personal information.",
-      lastUpdated: "Last updated: January 1, 2024",
+      title: "سياسة الخصوصية",
+      subtitle: "خصوصيتك مهمة",
+      description: "تعرف على كيفية جمع واستخدام وحماية معلوماتك الشخصية.",
+      lastUpdated: "آخر تحديث: 1 يناير 2024",
       introduction: {
-        title: "Introduction",
-        content: "Welcome to ShipBase, the **NextJS Boilerplate** designed to help you build AI SaaS startups quickly and efficiently. At ShipBase, your privacy is of utmost importance to us, and this privacy policy outlines how we collect, use, and protect your personal information when you use our services."
+        title: "المقدمة",
+        content: "مرحبًا بك في ShipBase، **القالب NextJS** المصمم لمساعدتك على بناء شركات SaaS للذكاء الاصطناعي بسرعة وكفاءة. في ShipBase، خصوصيتك ذات أهمية قصوى بالنسبة لنا، وهذه السياسة توضح كيف نجمع ونستخدم ونحمي معلوماتك الشخصية عند استخدام خدماتنا."
       },
       informationCollection: {
-        title: "Information Collection and Use",
-        subtitle: "We collect the following types of data to provide you with a better experience while using ShipBase:",
+        title: "جمع المعلومات واستخدامها",
+        subtitle: "نجمع الأنواع التالية من البيانات لتزويدك بتجربة أفضل أثناء استخدام ShipBase:",
         accountInfo: {
-          title: "Account Information",
-          whatWeCollect: "What We Collect: This includes your name, email address, and any other information you provide when creating an account.",
-          purpose: "Purpose: To manage your account and provide customer support."
+          title: "معلومات الحساب",
+          whatWeCollect: "ما نجمع: يتضمن اسمك وعنوان بريدك الإلكتروني وأي معلومات أخرى تقدمها عند إنشاء حساب.",
+          purpose: "الغرض: لإدارة حسابك وتقديم الدعم للعملاء."
         },
         usageDetails: {
-          title: "Usage Details",
-          whatWeCollect: "What We Collect: Information about how you use ShipBase, including your interactions, features accessed, and usage frequency.",
-          purpose: "Purpose: To analyze user engagement and improve our services."
+          title: "تفاصيل الاستخدام",
+          whatWeCollect: "ما نجمع: معلومات حول كيفية استخدامك لـ ShipBase، بما في ذلك تفاعلاتك والميزات التي تم الوصول إليها وتكرار الاستخدام.",
+          purpose: "الغرض: لتحليل مشاركة المستخدم وتحسين خدماتنا."
         },
         deviceInfo: {
-          title: "Device Information",
-          whatWeCollect: "What We Collect: Data regarding the devices you use to access ShipBase, such as device type, operating system, and browser type.",
-          purpose: "Purpose: To optimize our services for different devices and ensure compatibility."
+          title: "معلومات الجهاز",
+          whatWeCollect: "ما نجمع: البيانات المتعلقة بالأجهزة التي تستخدمها للوصول إلى ShipBase، مثل نوع الجهاز ونظام التشغيل ونوع المتصفح.",
+          purpose: "الغرض: لتحسين خدماتنا للأجهزة المختلفة وضمان التوافق."
         },
         cookies: {
-          title: "Cookies",
-          whatWeCollect: "What We Collect: Small data files placed on your device that help us track user preferences and improve user experience.",
-          purpose: "Purpose: To enhance the functionality of our services and personalize your experience."
+          title: "ملفات تعريف الارتباط",
+          whatWeCollect: "ما نجمع: ملفات بيانات صغيرة يتم وضعها على جهازك وتساعدنا في تتبع تفضيلات المستخدم وتحسين تجربة المستخدم.",
+          purpose: "الغرض: لتعزيز وظائف خدماتنا وتخصيص تجربتك."
         },
         paymentInfo: {
-          title: "Payment and Billing Information",
-          whatWeCollect: "What We Collect: Information regarding your payment methods, such as credit card number, billing address, and any details required for transaction processing.",
-          purpose: "Purpose: To facilitate billing and payment processing for our services."
+          title: "معلومات الدفع والفوترة",
+          whatWeCollect: "ما نجمع: معلومات حول طرق الدفع الخاصة بك، مثل رقم بطاقة الائتمان وعنوان الفوترة وأي تفاصيل مطلوبة لمعالجة المعاملات.",
+          purpose: "الغرض: لتسهيل الفوترة ومعالجة المدفوعات لخدماتنا."
         }
       },
       dataStorage: {
-        title: "Data Storage and Security",
-        content: "We take the security of your personal information seriously. The data we collect is stored securely on our servers, and we implement a variety of security measures including encryption and access controls to protect against unauthorized access, alteration, disclosure, or destruction of your personal information. However, please be aware that no method of transmission over the Internet, or method of electronic storage, is 100% secure, and we cannot guarantee its absolute security."
+        title: "تخزين البيانات والأمان",
+        content: "نأخذ أمان معلوماتك الشخصية على محمل الجد. يتم تخزين البيانات التي نجمعها بشكل آمن على خوادمنا، وننفذ مجموعة متنوعة من تدابير الأمان بما في ذلك التشفير وضوابط الوصول لحماية ضد الوصول غير المصرح به أو التعديل أو الإفصاح أو التدمير لمعلوماتك الشخصية. ومع ذلك، يرجى العلم أنه لا توجد طريقة نقل عبر الإنترنت أو طريقة تخزين إلكتروني آمنة بنسبة 100%، ولا يمكننا ضمان أمانها المطلق."
       },
       informationSharing: {
-        title: "Information Sharing and Disclosure",
-        content: "We do not sell, trade, or otherwise transfer your personal information to outside parties, except in the following circumstances:",
+        title: "مشاركة المعلومات والإفصاح",
+        content: "لا نقوم ببيع أو التجارة أو نقل معلوماتك الشخصية إلى أطراف خارجية، باستثناء الظروف التالية:",
         circumstances: [
-          "To comply with legal obligations or respond to lawful requests from public authorities.",
-          "To protect our rights, property, or safety, or that of our users or others.",
-          "To provide services through trusted third-party partners who assist us in operating our website or conducting our business, subject to confidentiality agreements."
+          "للامتثال للالتزامات القانونية أو الاستجابة للطلبات القانونية من السلطات العامة.",
+          "لحماية حقوقنا أو ممتلكاتنا أو سلامة، أو سلامة مستخدمينا أو الآخرين.",
+          "لتقديم الخدمات من خلال شركاء الطرف الثالث الموثوق بهم الذين يساعدوننا في تشغيل موقعنا أو إدارة أعمالنا، مع مراعاة اتفاقيات السرية."
         ]
       },
       policyChanges: {
-        title: "Changes to This Policy",
-        content: "We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the \"effective date\" at the top of this policy. You are advised to review this privacy policy periodically for any changes. Changes to this privacy policy are effective when they are posted on this page."
+        title: "التغييرات على هذه السياسة",
+        content: "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سنخطرك بأي تغييرات عن طريق نشر السياسة الجديدة على هذه الصفحة وتحديث \"تاريخ النفاذ\" في أعلى هذه السياسة. يُنصح بمراجعة سياسة الخصوصية هذه دوريًا لأي تغييرات. تكون التغييرات على سياسة الخصوصية هذه سارية عند نشرها على هذه الصفحة."
       },
       contactUs: {
-        title: "Contact Us",
-        content: "If you have any questions or concerns about this privacy policy or our data practices, please contact us at:",
-        copyrightOwner: "Copyright Owner: shipbase.ai",
-        email: "Email: support@shipbase.ai"
+        title: "اتصل بنا",
+        content: "إذا كان لديك أي أسئلة أو مخاوف حول سياسة الخصوصية هذه أو ممارسات البيانات الخاصة بنا، يرجى الاتصال بنا على:",
+        copyrightOwner: "مالك حقوق النشر: shipbase.ai",
+        email: "البريد الإلكتروني: support@shipbase.ai"
       },
       consent: {
-        content: "By using ShipBase, you consent to our privacy policy and agree to its terms. Thank you for trusting us with your information!"
+        content: "باستخدام ShipBase، فإنك توافق على سياسة الخصوصية الخاصة بنا وتوافق على شروطها. شكرًا لك على ثقتك بمعلوماتنا!"
       }
     },
     terms: {
-      title: "Terms of Service",
-      subtitle: "Our terms and conditions",
-      description: "Read our terms of service and understand your rights and responsibilities.",
-      lastUpdated: "Last updated: January 1, 2024",
+      title: "شروط الخدمة",
+      subtitle: "الشروط والأحكام الخاصة بنا",
+      description: "اقرأ شروط الخدمة الخاصة بنا وافهم حقوقك ومسؤولياتك.",
+      lastUpdated: "آخر تحديث: 1 يناير 2024",
       introduction: {
-        title: "Introduction and Acceptance of Terms",
-        content: "Welcome to **ShipBase**, a NextJS boilerplate designed for building AI SaaS startups quickly and efficiently. By accessing or using our service, you agree to be bound by these Terms of Service. If you do not agree with any of these terms, please do not use our service."
+        title: "المقدمة والموافقة على الشروط",
+        content: "مرحبًا بك في **ShipBase**، قالب NextJS مصمم لبناء شركات SaaS للذكاء الاصطناعي بسرعة وكفاءة. من خلال الوصول إلى خدمتنا أو استخدامها، فإنك توافق على الالتزام بشروط الخدمة هذه. إذا كنت لا توافق على أي من هذه الشروط، يرجى عدم استخدام خدمتنا."
       },
       serviceUse: {
-        title: "Use of the Service",
-        content: "ShipBase provides users with a comprehensive platform to build and launch AI SaaS startups using our pre-built templates and infrastructure. You agree to use the service in accordance with all applicable local, state, national, and international laws and regulations."
+        title: "استخدام الخدمة",
+        content: "يوفر ShipBase للمستخدمين منصة شاملة لبناء وإطلاق شركات SaaS للذكاء الاصطناعي باستخدام قوالبنا والبنية التحتية التي تم إنشاؤها مسبقًا. توافق على استخدام الخدمة وفقًا لجميع القوانين واللوائح المحلية والدولية المعمول بها."
       },
       userAccounts: {
-        title: "User Accounts and Registration",
-        content: "To access certain features of the service, you need to create an account. You must provide accurate and complete information during the registration process. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account or any other breach of security."
+        title: "حسابات المستخدمين والتسجيل",
+        content: "للوصول إلى ميزات معينة من الخدمة، تحتاج إلى إنشاء حساب. يجب عليك تقديم معلومات دقيقة وكاملة أثناء عملية التسجيل. أنت مسؤول عن الحفاظ على سرية بيانات اعتماد حسابك ولجميع الأنشطة التي تحدث تحت حسابك. توافق على إخطارنا فورًا بأي استخدام غير مصرح به لحسابك أو أي خرق آخر للأمان."
       },
       intellectualProperty: {
-        title: "Content and Intellectual Property Rights",
-        content: "All content provided through ShipBase, including but not limited to templates, code, infrastructure setup, and documentation, is protected under copyright law. The copyright owner of ShipBase is **shipbase.ai**.",
+        title: "المحتوى وحقوق الملكية الفكرية",
+        content: "جميع المحتوى المقدم من خلال ShipBase، بما في ذلك على سبيل المثال لا الحصر القوالب والكود وإعداد البنية التحتية والوثائق، محمي بموجب قانون حقوق النشر. مالك حقوق النشر لـ ShipBase هو **shipbase.ai**.",
         points: [
-          "You acknowledge that you do not own the underlying technology or intellectual property that makes up the ShipBase service, and you agree to respect the intellectual property rights of shipbase.ai and any third parties.",
-          "While you retain ownership of your custom implementations and modifications, the core ShipBase platform and templates remain the property of shipbase.ai."
+          "تعترف بأنك لا تملك التقنية الأساسية أو الملكية الفكرية التي تشكل خدمة ShipBase، وتوافق على احترام حقوق الملكية الفكرية لـ shipbase.ai وأي أطراف ثالثة.",
+          "بينما تحتفظ بملكية التنفيذات والتعديلات المخصصة الخاصة بك، تبقى منصة ShipBase الأساسية والقوالب ملكية لـ shipbase.ai."
         ]
       },
       prohibitedActivities: {
-        title: "Prohibited Activities",
-        content: "You agree not to engage in any of the following prohibited activities while using ShipBase:",
+        title: "الأنشطة المحظورة",
+        content: "توافق على عدم الانخراط في أي من الأنشطة المحظورة التالية أثناء استخدام ShipBase:",
         activities: [
-          "Unauthorized access to or distribution of our proprietary code and templates",
-          "Reselling or redistributing ShipBase templates without authorization",
-          "Interfering with or disrupting the security or performance of the service",
-          "Using the service for any illegal or unauthorized purpose",
-          "Attempting to bypass any security features of the service"
+          "الوصول غير المصرح به إلى أو توزيع الكود المملوك لنا والقوالب",
+          "إعادة بيع أو إعادة توزيع قوالب ShipBase دون إذن",
+          "التدخل في أو تعطيل أمان أو أداء الخدمة",
+          "استخدام الخدمة لأي غرض غير قانوني أو غير مصرح به",
+          "محاولة تجاوز أي ميزات أمان الخدمة"
         ]
       },
       privacyData: {
-        title: "Privacy and Data Collection",
-        content: "ShipBase collects the following types of data:",
+        title: "الخصوصية وجمع البيانات",
+        content: "يجمع ShipBase الأنواع التالية من البيانات:",
         dataTypes: [
-          "Account Information: Information you provide when creating an account",
-          "Usage Details: Data related to your activity on our service",
-          "Device Information: Information about the device you use to access our service",
-          "Cookies: Data that helps us enhance your experience with our service",
-          "Payment and Billing Information: Data necessary to process payments"
+          "معلومات الحساب: المعلومات التي تقدمها عند إنشاء حساب",
+          "تفاصيل الاستخدام: البيانات المتعلقة بنشاطك على خدمتنا",
+          "معلومات الجهاز: معلومات حول الجهاز الذي تستخدمه للوصول إلى خدمتنا",
+          "ملفات تعريف الارتباط: البيانات التي تساعدنا في تحسين تجربتك مع خدمتنا",
+          "معلومات الدفع والفوترة: البيانات اللازمة لمعالجة المدفوعات"
         ],
-        privacyPolicy: "For more details on data collection practices, please refer to our separate Privacy Policy."
+        privacyPolicy: "لمزيد من التفاصيل حول ممارسات جمع البيانات، يرجى الرجوع إلى سياسة الخصوصية المنفصلة الخاصة بنا."
       },
       pricingPayments: {
-        title: "Pricing and Payments",
+        title: "الأسعار والمدفوعات",
         points: [
-          "All purchases are final and non-refundable unless otherwise required by law",
-          "Prices are subject to change with notice to users",
-          "You agree to pay all charges associated with your selected plan",
-          "Payment terms are based on your selected payment method and plan"
+          "جميع المشتريات نهائية وغير قابلة للاسترداد ما لم يتطلب القانون خلاف ذلك",
+          "تخضع الأسعار للتغيير مع إشعار المستخدمين",
+          "توافق على دفع جميع الرسوم المرتبطة بالخطة التي اخترتها",
+          "شروط الدفع تعتمد على طريقة الدفع والخطة التي اخترتها"
         ]
       },
       termination: {
-        title: "Termination",
-        content: "We reserve the right to terminate or suspend your access to the service at our sole discretion, without notice, for conduct that we believe violates these Terms or is harmful to other users of the service, us, or third parties."
+        title: "إنهاء الخدمة",
+        content: "نحتفظ بالحق في إنهاء أو تعليق وصولك إلى الخدمة وفقًا لتقديرنا الخاص، دون إشعار مسبق، بسبب السلوك الذي نعتقد أنه ينتهك هذه الشروط أو ضار بالمستخدمين الآخرين للخدمة أو بنا أو بأطراف ثالثة."
       },
       warranties: {
-        title: "Disclaimer of Warranties",
-        content: "The service is provided on an \"as is\" and \"as available\" basis. We make no warranties or representations about the accuracy, reliability, or availability of the service and disclaim all warranties to the fullest extent permitted by law."
+        title: "إخلاء المسؤولية عن الضمانات",
+        content: "يتم تقديم الخدمة \"كما هي\" و\"حسب التوفر\". لا نقدم أي ضمانات أو تمثيلات حول دقة أو موثوقية أو توفر الخدمة وننفي جميع الضمانات إلى أقصى حد يسمح به القانون."
       },
       liability: {
-        title: "Limitation of Liability",
-        content: "To the fullest extent permitted by law, shipbase.ai shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from the use of or inability to use the service."
+        title: "تقييد المسؤولية",
+        content: "إلى أقصى حد يسمح به القانون، لن تكون shipbase.ai مسؤولة عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو خاصة أو تبعية أو عقابية ناتجة عن استخدام أو عدم القدرة على استخدام الخدمة."
       },
       indemnification: {
-        title: "Indemnification",
-        content: "You agree to indemnify and hold harmless shipbase.ai, its affiliates, and their respective officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including attorneys' fees) arising from your use of the service or violation of these Terms."
+        title: "التعويض",
+        content: "أنت توافق على تعويض shipbase.ai وشركاتها التابعة ومسؤوليها ومديريها وموظفيها ووكلائها من أي مطالبات أو أضرار أو خسائر أو التزامات أو نفقات (بما في ذلك أتعاب المحامين) الناشئة عن استخدامك للخدمة أو انتهاك هذه الشروط."
       },
       governingLaw: {
-        title: "Governing Law and Dispute Resolution",
-        content: "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which shipbase.ai operates, without regard to its conflict of law provisions. Any disputes arising from these Terms or the service will be resolved through binding arbitration in accordance with applicable laws."
+        title: "القانون الحاكم وتسوية المنازعات",
+        content: "تخضع هذه الشروط وتحكم وفقًا لقوانين الاختصاص الذي تعمل فيه shipbase.ai، دون اعتبار لأحكام تضارب القوانين. سيتم حل أي نزاعات تنشأ عن هذه الشروط أو الخدمة من خلال التحكيم الملزم وفقًا للقوانين المعمول بها."
       },
       changes: {
-        title: "Changes to These Terms",
-        content: "We reserve the right to update or modify these Terms at any time. Changes will be effective immediately upon posting on our website. Your continued use of the service after any changes signifies your acceptance of the new terms."
+        title: "التغييرات على هذه الشروط",
+        content: "نحتفظ بالحق في تحديث أو تعديل هذه الشروط في أي وقت. ستصبح التغييرات سارية فورًا عند نشرها على موقعنا. استمرارك في استخدام الخدمة بعد أي تغييرات يعني موافقتك على الشروط الجديدة."
       },
       contact: {
-        title: "Contact Information",
-        content: "If you have any questions about these Terms, please contact us at support@shipbase.ai."
+        title: "معلومات الاتصال",
+        content: "إذا كان لديك أي أسئلة حول هذه الشروط، يرجى الاتصال بنا على support@shipbase.ai."
       },
       acknowledgment: {
-        content: "By using ShipBase, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. Thank you for choosing ShipBase!"
+        content: "باستخدام ShipBase، فإنك تعترف بأنك قد قرأت وفهمت وتوافق على الالتزام بشروط الخدمة هذه. شكرًا لك على اختيار ShipBase!"
       }
     },
     cookies: {
-      title: "Cookie Policy",
-      subtitle: "How we use cookies",
-      description: "Understand how we use cookies and similar technologies on our platform.",
-      lastUpdated: "Last updated: January 1, 2024",
+      title: "سياسة ملفات تعريف الارتباط",
+      subtitle: "كيف نستخدم ملفات تعريف الارتباط",
+      description: "افهم كيف نستخدم ملفات تعريف الارتباط والتقنيات المشابهة على منصتنا.",
+      lastUpdated: "آخر تحديث: 1 يناير 2024",
       introduction: {
-        title: "What are Cookies",
-        content: "Cookies are small text files that are stored on your device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners."
+        title: "ما هي ملفات تعريف الارتباط",
+        content: "ملفات تعريف الارتباط هي ملفات نصية صغيرة يتم تخزينها على جهازك عند زيارة موقع ويب. تُستخدم على نطاق واسع لجعل المواقع تعمل بكفاءة أكبر وتوفير معلومات لأصحاب المواقع."
       },
       howWeUseCookies: {
-        title: "How We Use Cookies",
-        subtitle: "We use cookies to improve your browsing experience, analyze website traffic, and personalize content and advertisements.",
+        title: "كيف نستخدم ملفات تعريف الارتباط",
+        subtitle: "نستخدم ملفات تعريف الارتباط لتحسين تجربة التصفح الخاصة بك وتحليل حركة المرور على الموقع وتخصيص المحتوى والإعلانات.",
         essential: {
-          title: "Essential Cookies",
-          description: "These cookies are necessary for the website to function properly and cannot be switched off. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms.",
+          title: "ملفات تعريف الارتباط الأساسية",
+          description: "هذه الملفات ضرورية ليعمل الموقع بشكل صحيح ولا يمكن إيقاف تشغيلها. عادة ما يتم تعيينها فقط استجابة لإجراءات قامت بها أنت والتي تعادل طلبًا للخدمات، مثل تعيين تفضيلات الخصوصية الخاصة بك أو تسجيل الدخول أو ملء النماذج.",
           examples: [
-            "Keep you logged in",
-            "Remember your language preferences",
-            "Ensure website security"
+            "إبقاؤك متصلًا",
+            "تذكر تفضيلات لغتك",
+            "ضمان أمان الموقع"
           ]
         },
         analytics: {
-          title: "Analytics Cookies",
-          description: "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+          title: "ملفات تعريف الارتباط التحليلية",
+          description: "تساعدنا هذه الملفات في فهم كيفية تفاعل الزوار مع موقعنا من خلال جمع المعلومات والإبلاغ عنها بشكل مجهول.",
           examples: [
-            "Google Analytics - Website usage analysis",
-            "Page visit statistics",
-            "User behavior analysis"
+            "Google Analytics - تحليل استخدام الموقع",
+            "إحصائيات زيارات الصفحة",
+            "تحليل سلوك المستخدم"
           ]
         },
         functional: {
-          title: "Functional Cookies",
-          description: "These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third parties.",
+          title: "ملفات تعريف الارتباط الوظيفية",
+          description: "تمكن هذه الملفات الموقع من توفير وظائف محسّنة والتخصيص. قد يتم تعيينها من قبلنا أو من قبل أطراف ثالثة.",
           examples: [
-            "Remember your preference settings",
-            "Personalized content recommendations",
-            "Social media integration"
+            "تذكر إعدادات التفضيل الخاصة بك",
+            "توصيات المحتوى المخصص",
+            "تكامل وسائل التواصل الاجتماعي"
           ]
         },
         marketing: {
-          title: "Marketing Cookies",
-          description: "These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging.",
+          title: "ملفات تعريف الارتباط التسويقية",
+          description: "تُستخدم هذه الملفات لتتبع الزوار عبر المواقع. الهدف هو عرض إعلانات ذات صلة وجذابة.",
           examples: [
-            "Ad personalization",
-            "Conversion tracking",
-            "Remarketing campaigns"
+            "تخصيص الإعلان",
+            "تتبع التحويلات",
+            "حملات إعادة التسويق"
           ]
         }
       },
       cookieTypes: {
-        title: "Types of Cookies We Use",
-        subtitle: "Learn more about the different types of cookies we use",
+        title: "أنواع ملفات تعريف الارتباط التي نستخدمها",
+        subtitle: "تعرف على المزيد حول الأنواع المختلفة لملفات تعريف الارتباط التي نستخدمها",
         sessionCookies: {
-          title: "Session Cookies",
-          description: "These are temporary cookies that are deleted when you close your browser. They are used to maintain your session state while browsing the website."
+          title: "ملفات تعريف الارتباط للجلسة",
+          description: "هذه ملفات تعريف ارتباط مؤقتة يتم حذفها عند إغلاق متصفحك. تُستخدم للحفاظ على حالة جلستك أثناء تصفح الموقع."
         },
         persistentCookies: {
-          title: "Persistent Cookies",
-          description: "These cookies remain on your device for a longer period until they expire or are deleted. They remember your preferences to provide a better experience on your next visit."
+          title: "ملفات تعريف الارتباط المستمرة",
+          description: "تبقى هذه الملفات على جهازك لفترة أطول حتى تنتهي صلاحيتها أو يتم حذفها. تتذكر تفضيلاتك لتوفير تجربة أفضل في زيارتك التالية."
         },
         firstPartyCookies: {
-          title: "First-Party Cookies",
-          description: "These cookies are set directly by us and are used to improve website functionality and user experience."
+          title: "ملفات تعريف الارتباط من الطرف الأول",
+          description: "يتم تعيين هذه الملفات مباشرة من قبلنا وتُستخدم لتحسين وظائف الموقع وتجربة المستخدم."
         },
         thirdPartyCookies: {
-          title: "Third-Party Cookies",
-          description: "These cookies are set by other websites, typically for advertising and analytics purposes."
+          title: "ملفات تعريف الارتباط من الطرف الثالث",
+          description: "يتم تعيين هذه الملفات من قبل مواقع أخرى، عادةً لأغراض الإعلان والتحليلات."
         }
       },
       manageCookies: {
-        title: "Manage Your Cookie Preferences",
-        subtitle: "You can control the types of cookies we use",
-        description: "You can manage cookies through your browser settings or our cookie preference center. Please note that disabling certain cookies may affect website functionality.",
+        title: "إدارة تفضيلات ملفات تعريف الارتباط الخاصة بك",
+        subtitle: "يمكنك التحكم في أنواع ملفات تعريف الارتباط التي نستخدمها",
+        description: "يمكنك إدارة ملفات تعريف الارتباط من خلال إعدادات المتصفح أو مركز تفضيلات ملفات تعريف الارتباط. يرجى ملاحظة أن تعطيل بعض ملفات تعريف الارتباط قد يؤثر على وظائف الموقع.",
         browserSettings: {
-          title: "Browser Settings",
-          description: "Most browsers allow you to control cookies. You can find cookie options in your browser's settings or preferences.",
+          title: "إعدادات المتصفح",
+          description: "تسمح معظم المتصفحات ب التحكم في ملفات تعريف الارتباط. يمكنك العثور على خيارات ملفات تعريف الارتباط في إعدادات المتصفح أو التفضيلات.",
           instructions: [
-            "Chrome: Settings > Privacy and security > Cookies and other site data",
-            "Firefox: Options > Privacy & Security > Cookies and Site Data",
-            "Safari: Preferences > Privacy > Cookies and website data",
-            "Edge: Settings > Cookies and site permissions"
+            "Chrome: الإعدادات > الخصوصية والأمان > ملفات تعريف الارتباط وبيانات المواقع الأخرى",
+            "Firefox: الخيارات > الخصوصية والأمان > ملفات تعريف الارتباط وبيانات الموقع",
+            "Safari: التفضيلات > الخصوصية > ملفات تعريف الارتباط وبيانات الموقع",
+            "Edge: الإعدادات > ملفات تعريف الارتباط وأذونات الموقع"
           ]
         },
         optOut: {
-          title: "Opt Out",
-          description: "You can opt out of certain third-party cookies, particularly those used for advertising purposes.",
+          title: "إلغاء الاشتراك",
+          description: "يمكنك إلغاء الاشتراك في بعض ملفات تعريف الارتباط من الطرف الثالث، خاصة تلك المستخدمة لأغراض الإعلان.",
           links: [
-            "Google Analytics Opt-out",
-            "Facebook Ad Preferences",
-            "Other Ad Network Opt-outs"
+            "إلغاء اشتراك Google Analytics",
+            "تفضيلات إعلانات Facebook",
+            "إلغاء اشتراك شبكات إعلانية أخرى"
           ]
         }
       },
       dataRetention: {
-        title: "Data Retention",
-        content: "We retain cookie data for different periods depending on the type and purpose of the cookie. Session cookies are deleted immediately when you close your browser, while persistent cookies may be retained for months to years depending on their purpose."
+        title: "الاحتفاظ بالبيانات",
+        content: "نحتفظ ببيانات ملفات تعريف الارتباط لفترات مختلفة حسب نوع وهدف ملف تعريف الارتباط. يتم حذف ملفات تعريف الارتباط للجلسة فورًا عند إغلاق المتصفح، بينما قد يتم الاحتفاظ بملفات تعريف الارتباط المستمرة لأشهر إلى سنوات حسب الغرض منها."
       },
       updates: {
-        title: "Policy Updates",
-        content: "We may update this Cookie Policy from time to time. Any changes will be posted on this page and, where appropriate, notified to you by other means. We recommend that you review this policy periodically to be aware of any updates."
+        title: "تحديثات السياسة",
+        content: "قد نقوم بتحديث سياسة ملفات تعريف الارتباط هذه من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة، وستتم إشعارك بها بطرق أخرى حسب الاقتضاء. نوصي بمراجعة هذه السياسة دوريًا لمعرفة أي تحديثات."
       },
       contact: {
-        title: "Contact Us",
-        content: "If you have any questions about this Cookie Policy or need more information, please contact us at:",
-        email: "Email: support@shipbase.ai"
+        title: "اتصل بنا",
+        content: "إذا كان لديك أي أسئلة حول سياسة ملفات تعريف الارتباط هذه أو تحتاج إلى مزيد من المعلومات، يرجى الاتصال بنا على:",
+        email: "البريد الإلكتروني: support@shipbase.ai"
       },
       consent: {
-        content: "By continuing to use our website, you consent to our use of cookies in accordance with this Cookie Policy."
+        content: "من خلال الاستمرار في استخدام موقعنا، فإنك توافق على استخدامنا لملفات تعريف الارتباط وفقًا لسياسة ملفات تعريف الارتباط هذه."
       }
     },
     login: {
-      title: "Sign In",
-      subtitle: "Welcome back",
-      description: "Sign in to your account to continue your journey with ShipBase.",
+      title: "تسجيل الدخول",
+      subtitle: "مرحبًا بعودتك",
+      description: "سجل الدخول إلى حسابك للمتابعة في رحلتك مع ShipBase.",
     },
     signup: {
-      title: "Get Started",
-      subtitle: "Create your account",
-      description: "Join thousands of developers building amazing applications with ShipBase.",
+      title: "ابدأ الآن",
+      subtitle: "إنشاء حسابك",
+      description: "انضم إلى آلاف المطورين الذين يبنون تطبيقات مذهلة مع ShipBase.",
     },
     profile: {
-      title: "User Profile - ShipBase",
-      subtitle: "View and manage your user information",
-      description: "View and manage your account information",
+      title: "الملف الشخصي للمستخدم - ShipBase",
+      subtitle: "عرض وإدارة معلومات المستخدم الخاصة بك",
+      description: "عرض وإدارة معلومات حسابك",
       basicInfo: {
-        title: "Basic Information",
-        description: "Your personal account information",
-        emailLabel: "Email Address",
-        registrationDate: "Registration Date",
-        unknown: "Unknown",
+        title: "المعلومات الأساسية",
+        description: "معلومات حسابك الشخصية",
+        emailLabel: "عنوان البريد الإلكتروني",
+        registrationDate: "تاريخ التسجيل",
+        unknown: "غير معروف",
       },
       accountStatus: {
-        title: "Account Status",
-        description: "Your account security status",
-        emailVerification: "Email Verification",
-        accountStatus: "Account Status",
-        loginMethod: "Login Method",
-        verified: "Verified",
-        unverified: "Unverified",
-        normal: "Normal",
+        title: "حالة الحساب",
+        description: "حالة أمان حسابك",
+        emailVerification: "التحقق من البريد الإلكتروني",
+        accountStatus: "حالة الحساب",
+        loginMethod: "طريقة تسجيل الدخول",
+        verified: "تم التحقق",
+        unverified: "لم يتم التحقق",
+        normal: "عادي",
         oauth: "OAuth",
-        emailLogin: "Email Login",
+        emailLogin: "تسجيل الدخول بالبريد الإلكتروني",
       },
       actions: {
-        editProfile: "Edit Profile",
-        changePassword: "Change Password",
+        editProfile: "تعديل الملف الشخصي",
+        changePassword: "تغيير كلمة المرور",
       },
-      noNameSet: "No name set",
+      noNameSet: "لم يتم تعيين الاسم",
     },
     membership: {
-      title: "Membership Center - ShipBase",
-      subtitle: "Manage your membership subscription and benefits",
-      description: "Manage your subscription plan and membership benefits",
+      title: "مركز العضوية - ShipBase",
+      subtitle: "إدارة اشتراك عضويتك والفوائد",
+      description: "إدارة خطة اشتراكك وفوائد عضويتك",
       currentPlan: {
-        title: "Current Plan",
-        description: "Your current subscription status and usage",
-        freeVersion: "Free Version",
-        paidVersion: "Paid Version",
+        title: "الخطة الحالية",
+        description: "حالة اشتراكك الحالية والاستخدام",
+        freeVersion: "الإصدار المجاني",
+        paidVersion: "الإصدار المدفوع",
       },
       usage: {
-        apiCalls: "API Calls",
-        projectCount: "Project Count",
-        supportLevel: "Support Level",
-        remainingThisMonth: "Remaining this month",
-        maxLimit: "Maximum limit",
-        responseTime: "Response time",
-        priority: "Priority",
-        standard: "Standard",
+        apiCalls: "استدعاءات API",
+        projectCount: "عدد المشاريع",
+        supportLevel: "مستوى الدعم",
+        remainingThisMonth: "المتبقي هذا الشهر",
+        maxLimit: "الحد الأقصى",
+        responseTime: "وقت الاستجابة",
+        priority: "أولوية",
+        standard: "عادي",
       },
       upgradePlan: {
-        title: "Upgrade Your Plan",
-        currentPlan: "Current Plan",
-        freeUse: "Free Use",
-        upgradePlan: "Upgrade Plan",
+        title: "ترقية خطتك",
+        currentPlan: "الخطة الحالية",
+        freeUse: "استخدام مجاني",
+        upgradePlan: "ترقية الخطة",
       },
       billingHistory: {
-        title: "Billing History",
-        description: "View your subscription and payment records",
-        noRecords: "No billing records",
-        upgradeMessage: "After upgrading to a paid plan, you will see detailed billing information",
+        title: "سجل الفوترة",
+        description: "عرض سجلات الاشتراك والدفع الخاصة بك",
+        noRecords: "لا توجد سجلات فوترة",
+        upgradeMessage: "بعد الترقية إلى خطة مدفوعة، سترى معلومات فوترة مفصلة",
         table: {
-          date: "Date",
-          description: "Description",
-          amount: "Amount",
-          status: "Status",
-          action: "Action",
-          view: "View",
+          date: "التاريخ",
+          description: "الوصف",
+          amount: "المبلغ",
+          status: "الحالة",
+          action: "الإجراء",
+          view: "عرض",
         },
         status: {
-          pending: "Pending",
-          paid: "Paid",
-          failed: "Failed",
-          cancelled: "Cancelled",
-          refunded: "Refunded",
+          pending: "قيد الانتظار",
+          paid: "مدفوع",
+          failed: "فشل",
+          cancelled: "ملغي",
+          refunded: "مسترد",
         },
       },
       plans: [
         {
           id: "free",
-          name: "Free",
+          name: "مجاني",
           price: 0,
-          period: "Forever",
-          description: "Perfect for individual users and small projects",
+          period: "للأبد",
+          description: "مثالي للمستخدمين الأفراد والمشاريع الصغيرة",
           features: [
-            "1,000 API calls per month",
-            "Up to 3 projects",
-            "Basic support",
-            "Standard template library",
+            "1,000 استدعاء API شهريًا",
+            "حتى 3 مشاريع",
+            "دعم أساسي",
+            "مكتبة قوالب قياسية",
           ],
           current: false,
         },
         {
           id: "pro",
-          name: "Professional",
+          name: "احترافي",
           price: 29,
-          period: "per month",
-          description: "Perfect for small and medium teams",
+          period: "شهريًا",
+          description: "مثالي للفرق الصغيرة والمتوسطة",
           features: [
-            "50,000 API calls per month",
-            "Unlimited projects",
-            "Priority support",
-            "Advanced template library",
-            "Advanced analytics",
-            "Team collaboration",
+            "50,000 استدعاء API شهريًا",
+            "مشاريع غير محدودة",
+            "دعم ذو أولوية",
+            "مكتبة قوالب متقدمة",
+            "تحليلات متقدمة",
+            "تعاون الفريق",
           ],
           current: false,
         },
         {
           id: "enterprise",
-          name: "Enterprise",
+          name: "المؤسسة",
           price: 99,
-          period: "per month",
-          description: "Perfect for large enterprises",
+          period: "شهريًا",
+          description: "مثالي للمؤسسات الكبيرة",
           features: [
-            "Unlimited API calls",
-            "Unlimited projects",
-            "24/7 dedicated support",
-            "All template libraries",
-            "Enterprise-level analytics",
-            "Custom integrations",
-            "SLA guarantee",
+            "استدعاءات API غير محدودة",
+            "مشاريع غير محدودة",
+            "دعم مخصص على مدار 24/7",
+            "جميع مكتبات القوالب",
+            "تحليلات على مستوى المؤسسة",
+            "تكاملات مخصصة",
+            "ضمان SLA",
           ],
           current: false,
         },
       ],
     },
     orders: {
-      title: "Order Center",
-      subtitle: "Manage all your orders",
-      description: "View and manage your order history",
+      title: "مركز الطلبات",
+      subtitle: "إدارة جميع طلباتك",
+      description: "عرض وإدارة تاريخ طلباتك",
       ordersList: {
-        title: "Order List",
-        subtitle: "All your orders",
-        noOrders: "No orders found",
-        loading: "Loading...",
-        error: "Failed to load orders",
-        retry: "Retry",
+        title: "قائمة الطلبات",
+        subtitle: "جميع طلباتك",
+        noOrders: "لم يتم العثور على طلبات",
+        loading: "جاري التحميل...",
+        error: "فشل في تحميل الطلبات",
+        retry: "إعادة المحاولة",
       },
       orderCard: {
-        orderNumber: "Order Number",
-        status: "Status",
-        amount: "Amount",
-        product: "Product",
-        createdAt: "Created At",
-        paidAt: "Paid At",
-        actions: "Actions",
-        viewDetails: "View Details",
-        refreshStatus: "Refresh Status",
+        orderNumber: "رقم الطلب",
+        status: "الحالة",
+        amount: "المبلغ",
+        product: "المنتج",
+        createdAt: "تم الإنشاء في",
+        paidAt: "تم الدفع في",
+        actions: "الإجراءات",
+        viewDetails: "عرض التفاصيل",
+        refreshStatus: "تحديث الحالة",
       },
       status: {
-        pending: "Pending",
-        paid: "Paid",
-        failed: "Failed",
-        cancelled: "Cancelled",
-        refunded: "Refunded",
+        pending: "قيد الانتظار",
+        paid: "مدفوع",
+        failed: "فشل",
+        cancelled: "ملغي",
+        refunded: "مسترد",
       },
       filters: {
-        title: "Filter and Search",
-        all: "All",
-        pending: "Pending",
-        paid: "Paid",
-        failed: "Failed",
-        cancelled: "Cancelled",
-        refunded: "Refunded",
+        title: "التصفية والبحث",
+        all: "الكل",
+        pending: "قيد الانتظار",
+        paid: "مدفوع",
+        failed: "فشل",
+        cancelled: "ملغي",
+        refunded: "مسترد",
       },
       search: {
-        placeholder: "Search order number or product name...",
+        placeholder: "بحث رقم الطلب أو اسم المنتج...",
       },
-      refresh: "Refresh",
+      refresh: "تحديث",
       pagination: {
-        previous: "Previous",
-        next: "Next",
-        showing: "Showing",
-        of: "of",
-        results: "results",
+        previous: "السابق",
+        next: "التالي",
+        showing: "عرض",
+        of: "من",
+        results: "نتيجة",
       },
       orderDetails: {
-        title: "Order Details",
-        subtitle: "View detailed information about your order",
+        title: "تفاصيل الطلب",
+        subtitle: "عرض معلومات مفصلة حول طلبك",
         orderInfo: {
-          orderNumber: "Order Number",
-          status: "Status",
-          createdAt: "Created At",
-          paidAt: "Paid At",
-          cancelledAt: "Cancelled At",
-          amount: "Amount",
-          currency: "Currency",
-          paymentProvider: "Payment Provider",
-          customerEmail: "Customer Email",
+          orderNumber: "رقم الطلب",
+          status: "الحالة",
+          createdAt: "تم الإنشاء في",
+          paidAt: "تم الدفع في",
+          cancelledAt: "تم الإلغاء في",
+          amount: "المبلغ",
+          currency: "العملة",
+          paymentProvider: "مزود الدفع",
+          customerEmail: "بريد العميل الإلكتروني",
         },
         productInfo: {
-          title: "Product Information",
-          productName: "Product Name",
-          productType: "Product Type",
-          productId: "Product ID",
+          title: "معلومات المنتج",
+          productName: "اسم المنتج",
+          productType: "نوع المنتج",
+          productId: "معرف المنتج",
         },
         paymentInfo: {
-          title: "Payment Information",
-          provider: "Provider",
-          requestId: "Payment Request ID",
-          sessionId: "Payment Session ID",
+          title: "معلومات الدفع",
+          provider: "المزود",
+          requestId: "معرف طلب الدفع",
+          sessionId: "معرف جلسة الدفع",
         },
         customerInfo: {
-          title: "Customer Information",
-          email: "Email Address",
+          title: "معلومات العميل",
+          email: "عنوان البريد الإلكتروني",
         },
         orderItems: {
-          title: "Order Items",
-          productName: "Product Name",
-          description: "Description",
-          unitPrice: "Unit Price",
-          quantity: "Quantity",
-          totalPrice: "Total Price",
+          title: "عناصر الطلب",
+          productName: "اسم المنتج",
+          description: "الوصف",
+          unitPrice: "السعر الوحدة",
+          quantity: "الكمية",
+          totalPrice: "السعر الإجمالي",
         },
         actions: {
-          back: "Back",
-          refreshStatus: "Refresh Status",
+          back: "رجوع",
+          refreshStatus: "تحديث الحالة",
         },
         status: {
-          pending: "Pending",
-          paid: "Paid",
-          failed: "Failed",
-          cancelled: "Cancelled",
-          refunded: "Refunded",
+          pending: "قيد الانتظار",
+          paid: "مدفوع",
+          failed: "فشل",
+          cancelled: "ملغي",
+          refunded: "مسترد",
         },
-        loading: "Loading...",
-        error: "Failed to load order details",
-        retry: "Retry",
-        notFound: "Order not found",
+        loading: "جاري التحميل...",
+        error: "فشل في تحميل تفاصيل الطلب",
+        retry: "إعادة المحاولة",
+        notFound: "الطلب غير موجود",
       },
     },
     dashboard: {
-      title: "Dashboard",
-      subtitle: "Overview",
-      description: "Quick access to your account information and actions",
-      welcomeMessage: "Welcome back!",
+      title: "لوحة التحكم",
+      subtitle: "نظرة عامة",
+      description: "وصول سريع إلى معلومات حسابك والإجراءات",
+      welcomeMessage: "مرحبًا بعودتك!",
       stats: {
-        title: "Statistics Overview",
-        subtitle: "Your account data",
+        title: "نظرة عامة على الإحصائيات",
+        subtitle: "بيانات حسابك",
         cards: [
           {
-            title: "Total Orders",
+            title: "إجمالي الطلبات",
             value: "0",
-            change: "0% from last month",
+            change: "0% من الشهر الماضي",
             trend: "neutral",
           },
           {
-            title: "Total Revenue",
+            title: "إجمالي الإيرادات",
             value: "$0",
-            change: "0% from last month",
+            change: "0% من الشهر الماضي",
             trend: "neutral",
           },
           {
-            title: "Pending Orders",
+            title: "الطلبات المعلقة",
             value: "0",
-            change: "View details",
+            change: "عرض التفاصيل",
             trend: "neutral",
           },
           {
-            title: "Account Status",
-            value: "Active",
-            change: "Normal operation",
+            title: "حالة الحساب",
+            value: "نشط",
+            change: "عمل طبيعي",
             trend: "up",
           },
         ],
       },
       recentActivity: {
-        title: "Recent Activity",
-        subtitle: "Your account activity",
-        noActivity: "No activity records",
+        title: "النشاط الأخير",
+        subtitle: "نشاط حسابك",
+        noActivity: "لا توجد سجلات نشاط",
         activities: [
           {
-            action: "Account created",
-            time: "Just now",
+            action: "تم إنشاء الحساب",
+            time: "الآن",
             icon: "UserPlus",
           },
         ],
       },
       quickActions: {
-        title: "Quick Actions",
-        subtitle: "Common features",
+        title: "إجراءات سريعة",
+        subtitle: "الميزات الشائعة",
         actions: [
           {
-            title: "Create Order",
-            description: "Create a new order now",
+            title: "إنشاء طلب",
+            description: "إنشاء طلب جديد الآن",
             icon: "ShoppingCart",
             href: "/pricing",
           },
           {
-            title: "View Orders",
-            description: "Manage your orders",
+            title: "عرض الطلبات",
+            description: "إدارة طلباتك",
             icon: "Package",
             href: "/orders",
           },
           {
-            title: "Account Settings",
-            description: "Edit your profile",
+            title: "إعدادات الحساب",
+            description: "تعديل ملفك الشخصي",
             icon: "Settings",
             href: "/profile",
           },
           {
-            title: "View Membership",
-            description: "Upgrade your plan",
+            title: "عرض العضوية",
+            description: "ترقية خطتك",
             icon: "Crown",
             href: "/membership",
           },
@@ -1820,71 +1820,71 @@ export const arDictionary: AppDictionary = {
       },
     },
     blogs: {
-      title: "Blog",
-      subtitle: "Explore our latest articles",
-      description: "Read our tech blog and latest updates",
+      title: "المدونة",
+      subtitle: "استكشف أحدث مقالاتنا",
+      description: "اقرأ مدونة التقنية والتحديثات الأخيرة",
       filters: {
-        all: "All",
-        growthHacking: "Growth Hacking",
-        marketing: "Marketing",
-        nextjsTechniques: "Next.js Techniques",
+        all: "الكل",
+        growthHacking: "تسريع النمو",
+        marketing: "التسويق",
+        nextjsTechniques: "تقنيات Next.js",
       },
-      endOfPosts: "You've reached the end of all posts",
-      readMore: "Read More",
-      postedOn: "Posted on",
+      endOfPosts: "لقد وصلت إلى نهاية جميع المنشورات",
+      readMore: "اقرأ المزيد",
+      postedOn: "نُشر في",
     },
     adminBlogs: {
-      title: "Blog Management",
-      subtitle: "Manage blog posts (Admin only)",
-      description: "Create, edit and manage blog posts",
+      title: "إدارة المدونة",
+      subtitle: "إدارة منشورات المدونة (المدير فقط)",
+      description: "إنشاء وتعديل وإدارة منشورات المدونة",
       list: {
-        title: "Blog List",
-        subtitle: "All blog posts",
-        noBlogs: "No blog posts found",
-        createNew: "Create New Post",
+        title: "قائمة المدونة",
+        subtitle: "جميع منشورات المدونة",
+        noBlogs: "لم يتم العثور على منشورات مدونة",
+        createNew: "إنشاء منشور جديد",
       },
       table: {
-        title: "Title",
-        author: "Author",
-        status: "Status",
-        visibility: "Visibility",
-        featured: "Featured",
-        createdAt: "Created At",
-        actions: "Actions",
-        edit: "Edit",
-        delete: "Delete",
+        title: "العنوان",
+        author: "المؤلف",
+        status: "الحالة",
+        visibility: "الرؤية",
+        featured: "مميز",
+        createdAt: "تم الإنشاء في",
+        actions: "الإجراءات",
+        edit: "تعديل",
+        delete: "حذف",
       },
       edit: {
-        title: "Edit Blog",
-        subtitle: "Edit blog post (Admin only)",
+        title: "تعديل المدونة",
+        subtitle: "تعديل منشور المدونة (المدير فقط)",
         form: {
-          language: "Blog Language",
-          title: "Title",
-          slug: "Slug",
-          description: "Description",
-          tags: "Tags",
-          status: "Status",
-          visibility: "Visibility",
-          featured: "Featured",
-          featuredDescription: "Pin this post to the top",
-          generateSlug: "Generate slug",
-          slugHelper: "Auto-generates slug from English titles only. For other languages, please enter manually.",
-          titleHelper: "Recommended length 60 characters",
-          descriptionHelper: "Recommended length 160 characters",
+          language: "لغة المدونة",
+          title: "العنوان",
+          slug: "المعرف",
+          description: "الوصف",
+          tags: "العلامات",
+          status: "الحالة",
+          visibility: "الرؤية",
+          featured: "مميز",
+          featuredDescription: "تثبيت هذا المنشور في الأعلى",
+          generateSlug: "إنشاء معرف",
+          slugHelper: "إنشاء معرف تلقائيًا من العناوين الإنجليزية فقط. للغات الأخرى، يرجى إدخاله يدويًا.",
+          titleHelper: "طول موصى به 60 حرفًا",
+          descriptionHelper: "طول موصى به 160 حرفًا",
         },
         actions: {
-          cancel: "Cancel",
-          update: "Update Blog",
-          create: "Create Blog",
+          cancel: "إلغاء",
+          update: "تحديث المدونة",
+          create: "إنشاء المدونة",
         },
         status: {
-          draft: "Draft",
-          published: "Published",
+          draft: "مسودة",
+          published: "منشور",
         },
         visibility: {
-          public: "Public",
-          private: "Private",
-          subscribers: "Subscribers",
+          public: "عام",
+          private: "خاص",
+          subscribers: "المشتركين",
         },
       },
     },

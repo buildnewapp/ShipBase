@@ -1,5 +1,5 @@
 {
-  "entry": "src/i18n/locales/en.ts",
+  "entry": "src/i18n/locales/en.json",
   "entryLocale": "en_US",
   "output": "src/i18n/locales",
   "outputLocales": ["de", "es"]
